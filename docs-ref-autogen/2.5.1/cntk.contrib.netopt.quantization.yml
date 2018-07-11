@@ -105,7 +105,7 @@ items:
         '
       id: init
     - defaultValue: <cntk.cntk_py.Dictionary; proxy of <Swig Object of type 'CNTK::ImageTransform
-        *' at 0x00000282C3898D80> >
+        *' at 0x00000248BD4F1D80> >
       description: 'padding enabled or not for the filter
 
         '
