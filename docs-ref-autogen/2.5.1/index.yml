@@ -1,0 +1,15 @@
+### YamlMime:UniversalReference
+items:
+- children:
+  - cntk
+  langs:
+  - python
+  name: pyexample
+  summary: ''
+  type: package
+  uid: project-pyexample
+references:
+- fullname: cntk
+  isExternal: false
+  name: cntk
+  uid: cntk
