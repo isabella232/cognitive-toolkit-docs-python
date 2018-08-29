@@ -58,7 +58,6 @@ tuple, strings, etc.):
         @staticmethod
         def deserialize(inputs, name, state):
             return = MySigmoid(inputs[0], name)
-
 ```
 
 This can now be used as a normal operator like:
@@ -286,8 +285,8 @@ source. This is possible in pure Python as simple matter of
 
 - inheriting from <xref:cntk.io.UserMinibatchSource> and
 - implementing the following methods
-   - ``stream_infos()``: returns a list of <xref:cntk.io.StreamInformation> instances that describe the streams the minibatch source is providing
-  - ``next_minibatch()``: returns the next minibatch data as a dictionary of <xref:cntk.io.StreamInformation> instance to the data (instance of <xref:cntk.io.MinibatchData>, which basically wraps the data).
+  - ``stream_infos()``: returns a list of <xref:cntk.io.StreamInformation> instances that describe the streams the minibatch source is providing
+    - ``next_minibatch()``: returns the next minibatch data as a dictionary of <xref:cntk.io.StreamInformation> instance to the data (instance of <xref:cntk.io.MinibatchData>, which basically wraps the data).
 
 In the following example, we reimplement parts of the CNTKTextFormatReader to show how it
 is done in an end-to-end manner. As we can see, the majority of the lines below is
@@ -300,13 +299,13 @@ scenario-specific code that deals with parsing, etc.:
     # Our toy test data contains two sequences. 'x' is a sparse representation of the
     # features (numbers representing the words in our training data). 'y' is the one-hot
     # label.
-    MBDATA = r'''0	|x 560:1	|y 1 0 0 0 0
-    0	|x 0:1
-    0	|x 0:1
-    1	|x 560:1	|y 0 1 0 0 0
-    1	|x 0:1
-    1	|x 0:1
-    1	|x 424:1
+    MBDATA = r'''0  |x 560:1    |y 1 0 0 0 0
+    0   |x 0:1
+    0   |x 0:1
+    1   |x 560:1    |y 0 1 0 0 0
+    1   |x 0:1
+    1   |x 0:1
+    1   |x 424:1
     '''
 
     class MyDataSource(UserMinibatchSource):
