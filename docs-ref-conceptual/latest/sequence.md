@@ -69,19 +69,19 @@ in which case we use another dynamic axis. In this case we have the following ne
      - Accelerate
      - AI
 
- - Query: flower
+  - Query: flower
 
-   - Document 1:
+    - Document 1:
 
-     - Flower
-     - Wikipedia
+      - Flower
+      - Wikipedia
 
-   - Document 2:
+    - Document 2:
 
-     - Local 
-     - Florist
-     - Flower
-     - Delivery
+      - Local 
+      - Florist
+      - Flower
+      - Delivery
 
 The outermost level is the batch axis. The document level should have 
 a dynamic axis because we have a variable number of candidate documents per query. 
@@ -235,7 +235,6 @@ def train_sequence_classifier():
 if __name__ == '__main__':
     error, _ = train_sequence_classifier()
     print(" error: %f" % error)
-
 ```
 
 Running this script should generate this output:

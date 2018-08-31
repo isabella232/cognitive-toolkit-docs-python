@@ -660,7 +660,7 @@ handles automatic minibatching even if not all sequences are of the same length)
         s = step_function(s, x_n)  # pass previous state and new data to step_function -> new state
         y.append(s)
 ```
- 
+
 
 The `step_function` must be a CNTK Function that takes the previous state
 and a new input, and outputs a new state.
@@ -901,8 +901,7 @@ Batch normalization currently requires a GPU for training.
 
 ``LayerNormalization()`` implements [Layer Normalization (Jimmy Lei Ba,
 Jamie Ryan Kiros, Geoffrey E.
-Hinton)] 
-(https://arxiv.org/abs/1607.06450). It normalizes each input
+Hinton)](https://arxiv.org/abs/1607.06450). It normalizes each input
 sample by subtracting the mean across all elements of the sample, and
 then dividing by the standard deviation over all elements of the sample.
 
