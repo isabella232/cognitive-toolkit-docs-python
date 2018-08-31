@@ -1,0 +1,252 @@
+{
+  "homepages": [],
+  "xrefmap": [
+    "cntk-py-2.0.xrefmap.yml",
+    "cntk-py-2.1.xrefmap.yml",
+    "cntk-py-2.2.xrefmap.yml",
+    "cntk-py-2.3.xrefmap.yml",
+    "cntk-py-2.4.xrefmap.yml",
+    "cntk-py-2.5.xrefmap.yml",
+    "cntk-py-2.5.1.xrefmap.yml"
+  ],
+  "files": [
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.0/images/lstm_cell.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.0/cognitive-toolkit/images/lstm_cell.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.0",
+      "group": "cntk-py-2.0"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.0/images/nn_layers.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.0/cognitive-toolkit/images/nn_layers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.0",
+      "group": "cntk-py-2.0"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.1/images/lstm_cell.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.1/cognitive-toolkit/images/lstm_cell.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.1",
+      "group": "cntk-py-2.1"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.1/images/nn_layers.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.1/cognitive-toolkit/images/nn_layers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.1",
+      "group": "cntk-py-2.1"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.2/images/lstm_cell.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.2/cognitive-toolkit/images/lstm_cell.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.2",
+      "group": "cntk-py-2.2"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.2/images/nn_layers.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.2/cognitive-toolkit/images/nn_layers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.2",
+      "group": "cntk-py-2.2"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.3/images/lstm_cell.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.3/cognitive-toolkit/images/lstm_cell.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.3",
+      "group": "cntk-py-2.3"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.3/images/nn_layers.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.3/cognitive-toolkit/images/nn_layers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.3",
+      "group": "cntk-py-2.3"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.4/images/lstm_cell.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.4/cognitive-toolkit/images/lstm_cell.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.4",
+      "group": "cntk-py-2.4"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.4/images/nn_layers.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.4/cognitive-toolkit/images/nn_layers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.4",
+      "group": "cntk-py-2.4"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.5.1/images/lstm_cell.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.5.1/cognitive-toolkit/images/lstm_cell.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.5.1",
+      "group": "cntk-py-2.5.1"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.5.1/images/nn_layers.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.5.1/cognitive-toolkit/images/nn_layers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.5.1",
+      "group": "cntk-py-2.5.1"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.5/images/lstm_cell.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.5/cognitive-toolkit/images/lstm_cell.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.5",
+      "group": "cntk-py-2.5"
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs-ref-conceptual/2.5/images/nn_layers.png",
+      "output": {
+        "resource": {
+          "relative_path": "cntk-py-2.5/cognitive-toolkit/images/nn_layers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": "cntk-py-2.5",
+      "group": "cntk-py-2.5"
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {
+    "cntk-py-2.0": {
+      "version_folder": "cntk-py-2.0/"
+    },
+    "cntk-py-2.1": {
+      "version_folder": "cntk-py-2.1/"
+    },
+    "cntk-py-2.2": {
+      "version_folder": "cntk-py-2.2/"
+    },
+    "cntk-py-2.3": {
+      "version_folder": "cntk-py-2.3/"
+    },
+    "cntk-py-2.4": {
+      "version_folder": "cntk-py-2.4/"
+    },
+    "cntk-py-2.5": {
+      "version_folder": "cntk-py-2.5/"
+    },
+    "cntk-py-2.5.1": {
+      "version_folder": "cntk-py-2.5.1/"
+    }
+  },
+  "groups": [
+    {
+      "name": "cntk-py-2.0",
+      "dest": "cntk-py-2.0",
+      "xrefmap": "cntk-py-2.0.xrefmap.yml"
+    },
+    {
+      "name": "cntk-py-2.1",
+      "dest": "cntk-py-2.1",
+      "xrefmap": "cntk-py-2.1.xrefmap.yml"
+    },
+    {
+      "name": "cntk-py-2.2",
+      "dest": "cntk-py-2.2",
+      "xrefmap": "cntk-py-2.2.xrefmap.yml"
+    },
+    {
+      "name": "cntk-py-2.3",
+      "dest": "cntk-py-2.3",
+      "xrefmap": "cntk-py-2.3.xrefmap.yml"
+    },
+    {
+      "name": "cntk-py-2.4",
+      "dest": "cntk-py-2.4",
+      "xrefmap": "cntk-py-2.4.xrefmap.yml"
+    },
+    {
+      "name": "cntk-py-2.5",
+      "dest": "cntk-py-2.5",
+      "xrefmap": "cntk-py-2.5.xrefmap.yml"
+    },
+    {
+      "name": "cntk-py-2.5.1",
+      "dest": "cntk-py-2.5.1",
+      "xrefmap": "cntk-py-2.5.1.xrefmap.yml"
+    }
+  ]
+}

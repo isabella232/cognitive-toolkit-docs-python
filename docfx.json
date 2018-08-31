@@ -488,6 +488,7 @@
       }
     },
     "template": [],
-    "dest": "cntk"
+    "dest": "cntk",
+    "markdownEngineName": "markdig"
   }
 }
