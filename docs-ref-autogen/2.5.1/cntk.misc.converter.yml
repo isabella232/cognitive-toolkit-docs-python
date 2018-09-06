@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.misc.converter
   name: converter
-  source:
-    id: converter
-    path: bindings/python/cntk\misc\converter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\misc\converter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: module
   uid: cntk.misc.converter
 - fullName: cntk.misc.converter.convert
@@ -23,14 +15,6 @@ items:
   - python
   module: cntk.misc.converter
   name: convert
-  source:
-    id: convert
-    path: bindings/python/cntk\misc\converter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\misc\converter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 8
   summary: 'Clones the graph underlying root_func and in the clone substitutes
 
     all Functions obtained by applying ''filter'', with a new Function obtained by

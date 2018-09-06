@@ -10,14 +10,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: cntkinstance
-  source:
-    id: cntkinstance
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: module
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
 references:

@@ -6,18 +6,16 @@ items:
   - cntk.train.distributed.DistributedLearner.total_number_of_samples_seen
   class: cntk.train.distributed.DistributedLearner
   fullName: cntk.train.distributed.DistributedLearner
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: cntk.cntk_py.Learner
+    type: cntk.cntk_py.DistributedLearner
   langs:
   - python
   module: cntk.train.distributed
   name: DistributedLearner
-  source:
-    id: DistributedLearner
-    path: bindings/python/cntk\train\distributed.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\distributed.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 100
   summary: 'A distributed learner that handles data like gradients/momentums across
     multiple MPI workers
 
@@ -34,14 +32,6 @@ items:
   - python
   module: cntk.train.distributed
   name: communicator
-  source:
-    id: communicator
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 105
   summary: 'Returns the distributed communicator that talks to other MPI workers
 
     '
@@ -61,14 +51,6 @@ items:
   - python
   module: cntk.train.distributed
   name: total_number_of_samples_seen
-  source:
-    id: total_number_of_samples_seen
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The number of samples seen by the distributed learner.
 
     '

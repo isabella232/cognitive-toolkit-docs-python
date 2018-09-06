@@ -23,14 +23,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: MultibitKernel
-  source:
-    id: MultibitKernel
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 98
   summary: '
 
 
@@ -47,14 +39,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: backward
-  source:
-    id: backward
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 173
   syntax:
     content: backward(state, root_gradients)
     parameters:
@@ -68,14 +52,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: forward
-  source:
-    id: forward
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 162
   syntax:
     content: forward(argument, device, outputs_to_retain)
     parameters:
@@ -90,14 +66,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: gradFunc
-  source:
-    id: gradFunc
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 146
   syntax:
     content: gradFunc(arg)
     parameters:
@@ -110,14 +78,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: infer_outputs
-  source:
-    id: infer_outputs
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 183
   syntax:
     content: infer_outputs()
     parameters: []
@@ -129,14 +89,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: multiFunc
-  source:
-    id: multiFunc
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 112
   syntax:
     content: multiFunc(arg1)
     parameters:

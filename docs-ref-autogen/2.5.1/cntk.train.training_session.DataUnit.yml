@@ -20,14 +20,6 @@ items:
   - python
   module: cntk.train.training_session
   name: DataUnit
-  source:
-    id: DataUnit
-    path: bindings/python/cntk\train\training_session.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\training_session.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 13
   summary: 'Indicates that whether the processing steps in the training data is counted
     by samples, minibatch or epoch.
 
@@ -44,14 +36,6 @@ items:
   - python
   module: cntk.train.training_session
   name: minibatch
-  source:
-    id: minibatch
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Steps on data are counted by samples.
 
     '
@@ -65,14 +49,6 @@ items:
   - python
   module: cntk.train.training_session
   name: sample
-  source:
-    id: sample
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Steps on data are counted by samples.
 
     '
@@ -86,14 +62,6 @@ items:
   - python
   module: cntk.train.training_session
   name: sweep
-  source:
-    id: sweep
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Steps on data are counted by sweeps of epochs.
 
     '

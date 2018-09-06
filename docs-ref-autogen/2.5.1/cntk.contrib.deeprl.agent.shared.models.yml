@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.models
   name: models
-  source:
-    id: models
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\models.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\models.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'A set of predefined models used by Q learning or Actor-Critic.
 
     '

@@ -13,14 +13,6 @@ items:
   - python
   module: cntk.logging.graph
   name: graph
-  source:
-    id: graph
-    path: bindings/python/cntk\logging\graph.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\graph.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: module
   uid: cntk.logging.graph
 - fullName: cntk.logging.graph.depth_first_search
@@ -28,14 +20,6 @@ items:
   - python
   module: cntk.logging.graph
   name: depth_first_search
-  source:
-    id: depth_first_search
-    path: bindings/python/cntk\logging\graph.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\graph.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 11
   summary: 'Generic function that walks through the graph starting at `root` and
 
     uses function `visitor` on each node to check whether it should be
@@ -82,16 +66,7 @@ items:
   - python
   module: cntk.logging.graph
   name: find_all_with_name
-  seealsoContent: "See also: @cntk.ops.functions.Function.find_all_with_name in class\
-    \ @cntk.ops.functions.Function. \n"
-  source:
-    id: find_all_with_name
-    path: bindings/python/cntk\logging\graph.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\graph.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 78
+  seealsoContent: "  @cntk.ops.functions.Function.find_all_with_name in class\n  @cntk.ops.functions.Function.\n"
   summary: 'Finds functions in the graph starting from `node` and doing a depth-first
 
     search.
@@ -133,16 +108,7 @@ items:
   - python
   module: cntk.logging.graph
   name: find_by_name
-  seealsoContent: "See also: @cntk.ops.functions.Function.find_by_name in class @cntk.ops.functions.Function.\
-    \ \n"
-  source:
-    id: find_by_name
-    path: bindings/python/cntk\logging\graph.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\graph.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 99
+  seealsoContent: "  @cntk.ops.functions.Function.find_by_name in class\n  @cntk.ops.functions.Function.\n"
   summary: 'Finds a function in the graph starting from `node` and doing a depth-first
 
     search. It assumes that the name occurs only once.
@@ -184,16 +150,7 @@ items:
   - python
   module: cntk.logging.graph
   name: find_by_uid
-  seealsoContent: "See also: @cntk.ops.functions.Function.find_by_uid in class @cntk.ops.functions.Function.\
-    \ \n"
-  source:
-    id: find_by_uid
-    path: bindings/python/cntk\logging\graph.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\graph.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 134
+  seealsoContent: "  @cntk.ops.functions.Function.find_by_uid in class\n  @cntk.ops.functions.Function.\n"
   summary: 'Finds a function in the graph based on its UID starting from `node` and
     doing a depth-first
 
@@ -237,14 +194,6 @@ items:
   - python
   module: cntk.logging.graph
   name: get_node_outputs
-  source:
-    id: get_node_outputs
-    path: bindings/python/cntk\logging\graph.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\graph.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 390
   summary: 'Walks through every node of the graph starting at `node`
 
     and returns a list of all node outputs.
@@ -272,14 +221,6 @@ items:
   - python
   module: cntk.logging.graph
   name: plot
-  source:
-    id: plot
-    path: bindings/python/cntk\logging\graph.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\graph.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 179
   summary: "Walks through every node of the graph starting at `root`,\ncreates a network\
     \ graph, and returns a network description. If `filename` is\nspecified, it outputs\
     \ a DOT, PNG, PDF, or SVG file depending on the file name's suffix.\n\nRequirements:\n\

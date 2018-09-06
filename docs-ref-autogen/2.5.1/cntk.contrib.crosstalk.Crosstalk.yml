@@ -22,14 +22,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: Crosstalk
-  source:
-    id: Crosstalk
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 131
   summary: 'Base class of Crosstalk.
 
     Please refer to crosstalk unittests for examples of how to exchange/compare values
@@ -58,14 +50,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: assign
-  source:
-    id: assign
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 203
   summary: 'Set value to var, with option to load from working directory
 
     '
@@ -107,14 +91,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: compare
-  source:
-    id: compare
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 242
   summary: 'Compare var with name to value in file in working directory
 
     '
@@ -163,14 +139,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: fetch
-  source:
-    id: fetch
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 224
   summary: 'Fetch/evaluate var with name and optionally save to working directory
 
     '
@@ -198,14 +166,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: load
-  source:
-    id: load
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 277
   summary: 'Load variables in list of names
 
     '
@@ -224,14 +184,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: load_raw_value
-  source:
-    id: load_raw_value
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 185
   summary: 'Load raw value from npy|pkl file in working directory
 
     '
@@ -256,14 +208,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: next_pass
-  source:
-    id: next_pass
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 151
   summary: 'Bump up passes so save won''t overwrite existing files
 
     '
@@ -278,14 +222,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: register_funcs
-  source:
-    id: register_funcs
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 171
   summary: 'Register setter/getter functions for a given variable type
 
     '
@@ -314,14 +250,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: reset
-  source:
-    id: reset
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 301
   summary: 'Reset all variables and passes, setter/getter functions for variable types
     are kept
 
@@ -337,14 +265,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: save
-  source:
-    id: save
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 286
   summary: 'Save variables in list of names
 
     '
@@ -363,14 +283,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: save_all
-  source:
-    id: save_all
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 295
   summary: 'Save all variables
 
     '
@@ -385,14 +297,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: set_workdir
-  source:
-    id: set_workdir
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 140
   summary: 'Set up a working directory for save/load numpy values(.npy) or python
     data (.pkl)
 
@@ -414,14 +318,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: watch
-  source:
-    id: watch
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 157
   summary: 'Add variables to watch with a unique name.
 
     '

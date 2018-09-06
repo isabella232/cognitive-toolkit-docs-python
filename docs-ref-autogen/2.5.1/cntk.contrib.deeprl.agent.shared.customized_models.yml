@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.customized_models
   name: customized_models
-  source:
-    id: customized_models
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\customized_models.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\customized_models.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Customized Q function or (unnormalized) log of policy function.
 
 
@@ -42,14 +34,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.customized_models
   name: conv_dqn
-  source:
-    id: conv_dqn
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\customized_models.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\customized_models.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 21
   summary: "Example convolutional neural network for approximating the Q value function.\n\
     \nThis is the model used in the original DQN paper\n[https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf](https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf).\n\
     \nReturns: a Python dictionary with string-valued keys including\n   'inputs',\

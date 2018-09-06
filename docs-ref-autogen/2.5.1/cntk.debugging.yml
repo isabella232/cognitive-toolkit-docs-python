@@ -12,14 +12,6 @@ items:
   - python
   module: cntk.debugging
   name: debugging
-  source:
-    id: debugging
-    path: bindings/python/cntk\debugging\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: package
   uid: cntk.debugging
 - fullName: cntk.debugging.dump_function
@@ -27,14 +19,6 @@ items:
   - python
   module: cntk.debugging
   name: dump_function
-  source:
-    id: dump_function
-    path: bindings/python/cntk\debugging\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 35
   syntax:
     content: dump_function(root, tag=None)
     parameters:
@@ -48,14 +32,6 @@ items:
   - python
   module: cntk.debugging
   name: dump_signature
-  source:
-    id: dump_signature
-    path: bindings/python/cntk\debugging\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 29
   summary: 'Debug helper that prints the signature of a Function.
 
     '
@@ -72,14 +48,6 @@ items:
   - python
   module: cntk.debugging
   name: force_deterministic
-  source:
-    id: force_deterministic
-    path: bindings/python/cntk\debugging\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 14
   summary: 'Force most of the computation nodes to run deterministically.
 
     '

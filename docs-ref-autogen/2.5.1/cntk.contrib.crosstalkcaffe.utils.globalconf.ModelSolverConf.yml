@@ -10,14 +10,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.utils.globalconf
   name: ModelSolverConf
-  source:
-    id: ModelSolverConf
-    path: bindings/python/cntk\contrib\crosstalkcaffe\utils\globalconf.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\utils\globalconf.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 45
   summary: 'The model solver
 
     '

@@ -19,18 +19,16 @@ items:
   - cntk.train.trainer.Trainer.train_minibatch
   class: cntk.train.trainer.Trainer
   fullName: cntk.train.trainer.Trainer
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: cntk.cntk_py.Evaluator
+    type: cntk.cntk_py.Trainer
   langs:
   - python
   module: cntk.train.trainer
   name: Trainer
-  source:
-    id: Trainer
-    path: bindings/python/cntk\train\trainer.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\trainer.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 22
   summary: 'Class for training the model parameters of a models'' specified loss function,
     using the
 
@@ -41,8 +39,6 @@ items:
     An optional specified metric function, which can be non-differentiable,
 
     can be used for tracking the trained model''s quality.
-
-
 
 
 
@@ -107,14 +103,6 @@ items:
   - python
   module: cntk.train.trainer
   name: evaluation_function
-  source:
-    id: evaluation_function
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The evaluation function that the trainer is using.
 
     '
@@ -127,14 +115,6 @@ items:
   - python
   module: cntk.train.trainer
   name: loss_function
-  source:
-    id: loss_function
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The loss function that the trainer is using.
 
     '
@@ -147,14 +127,6 @@ items:
   - python
   module: cntk.train.trainer
   name: model
-  source:
-    id: model
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The model that the trainer is training.
 
     '
@@ -167,14 +139,6 @@ items:
   - python
   module: cntk.train.trainer
   name: parameter_learners
-  source:
-    id: parameter_learners
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The parameter learners that the trainer is using.
 
     '
@@ -187,14 +151,6 @@ items:
   - python
   module: cntk.train.trainer
   name: previous_minibatch_evaluation_average
-  source:
-    id: previous_minibatch_evaluation_average
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The average evaluation criterion value per sample for the last minibatch
     trained
 
@@ -208,14 +164,6 @@ items:
   - python
   module: cntk.train.trainer
   name: previous_minibatch_loss_average
-  source:
-    id: previous_minibatch_loss_average
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The average training loss per sample for the last minibatch trained
 
     '
@@ -228,14 +176,6 @@ items:
   - python
   module: cntk.train.trainer
   name: previous_minibatch_sample_count
-  source:
-    id: previous_minibatch_sample_count
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The number of samples in the last minibatch trained with
 
     '
@@ -248,14 +188,6 @@ items:
   - python
   module: cntk.train.trainer
   name: print_node_timing
-  source:
-    id: print_node_timing
-    path: bindings/python/cntk\train\trainer.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\trainer.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 336
   summary: 'Prints per-node average timing per-minibatch for each primitive function
 
     statistics would reset after print
@@ -272,14 +204,6 @@ items:
   - python
   module: cntk.train.trainer
   name: restore_from_checkpoint
-  source:
-    id: restore_from_checkpoint
-    path: bindings/python/cntk\train\trainer.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\trainer.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 251
   summary: 'Restores a checkpoint of the model and Trainer state from the
 
     specified file location.
@@ -302,14 +226,6 @@ items:
   - python
   module: cntk.train.trainer
   name: save_checkpoint
-  source:
-    id: save_checkpoint
-    path: bindings/python/cntk\train\trainer.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\trainer.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 236
   summary: 'Saves a checkpoint of the model and other Trainer state at the
 
     specified file location.
@@ -344,14 +260,6 @@ items:
   - python
   module: cntk.train.trainer
   name: summarize_test_progress
-  source:
-    id: summarize_test_progress
-    path: bindings/python/cntk\train\trainer.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\trainer.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 329
   summary: 'Updates the progress writers with the summary of test progress since start
     and resets the internal
 
@@ -369,14 +277,6 @@ items:
   - python
   module: cntk.train.trainer
   name: summarize_training_progress
-  source:
-    id: summarize_training_progress
-    path: bindings/python/cntk\train\trainer.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\trainer.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 322
   summary: 'Updates the progress writers with the summary of training progress since
     start and resets the internal
 
@@ -394,14 +294,6 @@ items:
   - python
   module: cntk.train.trainer
   name: test_minibatch
-  source:
-    id: test_minibatch
-    path: bindings/python/cntk\train\trainer.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\trainer.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 188
   summary: "Test the model on the specified batch of samples using the evaluation\n\
     Function specified during construction of the Trainer.\n\nNote: See @cntk.ops.functions.Function.forward\
     \ for examples on passing input data. \n"
@@ -427,14 +319,6 @@ items:
   - python
   module: cntk.train.trainer
   name: total_number_of_samples_seen
-  source:
-    id: total_number_of_samples_seen
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The number of samples seen globally between all workers from the beginning
     of training.
 
@@ -448,14 +332,6 @@ items:
   - python
   module: cntk.train.trainer
   name: train_minibatch
-  source:
-    id: train_minibatch
-    path: bindings/python/cntk\train\trainer.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\trainer.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 96
   summary: "Optimize model parameters using the specified 'arguments' minibatch of\
     \ training samples.\n\nNote: See @cntk.ops.functions.Function.forward for examples\
     \ on passing input data. \n"

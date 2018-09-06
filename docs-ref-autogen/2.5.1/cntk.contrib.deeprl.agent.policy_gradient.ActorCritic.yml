@@ -18,14 +18,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.policy_gradient
   name: ActorCritic
-  source:
-    id: ActorCritic
-    path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 19
   summary: 'Actor-Critic Policy Gradient.
 
 
@@ -49,14 +41,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.policy_gradient
   name: end
-  source:
-    id: end
-    path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 118
   summary: 'Last observed reward/state of the episode (which then terminates).
 
     '
@@ -83,14 +67,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.policy_gradient
   name: save
-  source:
-    id: save
-    path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 276
   summary: 'Save model to file.
 
     '
@@ -106,14 +82,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.policy_gradient
   name: save_parameter_settings
-  source:
-    id: save_parameter_settings
-    path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 280
   summary: 'Save parameter settings to file.
 
     '
@@ -129,14 +97,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.policy_gradient
   name: set_as_best_model
-  source:
-    id: set_as_best_model
-    path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 134
   summary: 'Copy current model to best model.
 
     '
@@ -151,14 +111,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.policy_gradient
   name: start
-  source:
-    id: start
-    path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 63
   summary: 'Start a new episode.
 
     '
@@ -187,14 +139,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.policy_gradient
   name: step
-  source:
-    id: step
-    path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 92
   summary: 'Observe one transition and choose an action.
 
     '

@@ -19,14 +19,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.tabular_qlearning
   name: TabularQLearning
-  source:
-    id: TabularQLearning
-    path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 16
   summary: 'Q-learning agent with tabular representation.
 
 
@@ -47,14 +39,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.tabular_qlearning
   name: end
-  source:
-    id: end
-    path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 73
   summary: 'Last observed reward/state of the episode (which then terminates).
 
     '
@@ -71,14 +55,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.tabular_qlearning
   name: enter_evaluation
-  source:
-    id: enter_evaluation
-    path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 95
   summary: 'Setup before evaluation.
 
     '
@@ -93,14 +69,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.tabular_qlearning
   name: save
-  source:
-    id: save
-    path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 85
   summary: 'Save best model to file.
 
     '
@@ -116,14 +84,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.tabular_qlearning
   name: save_parameter_settings
-  source:
-    id: save_parameter_settings
-    path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 91
   summary: 'Save parameter settings to file.
 
     '
@@ -139,14 +99,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.tabular_qlearning
   name: set_as_best_model
-  source:
-    id: set_as_best_model
-    path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 81
   summary: 'Copy current model to best model.
 
     '
@@ -161,14 +113,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.tabular_qlearning
   name: start
-  source:
-    id: start
-    path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 43
   summary: 'Start a new episode.
 
     '
@@ -184,14 +128,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.tabular_qlearning
   name: step
-  source:
-    id: step
-    path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 54
   summary: 'Observe one transition and choose an action.
 
     '

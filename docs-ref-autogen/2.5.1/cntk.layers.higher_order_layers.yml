@@ -11,14 +11,6 @@ items:
   - python
   module: cntk.layers.higher_order_layers
   name: higher_order_layers
-  source:
-    id: higher_order_layers
-    path: bindings/python/cntk\layers\higher_order_layers.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\higher_order_layers.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Higher-order functions, like @Sequential and @ResNetBlock. Note that
 
     sequential higher-order functions like @cntk.layers.sequence.Recurrence are in
@@ -52,14 +44,6 @@ items:
   - python
   module: cntk.layers.higher_order_layers
   name: For
-  source:
-    id: For
-    path: bindings/python/cntk\layers\higher_order_layers.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\higher_order_layers.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 95
   summary: 'Layer factory function to create a composite through a pattern similar
     to Python''s *for* statement.
 
@@ -125,14 +109,6 @@ items:
   - python
   module: cntk.layers.higher_order_layers
   name: ResNetBlock
-  source:
-    id: ResNetBlock
-    path: bindings/python/cntk\layers\higher_order_layers.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\higher_order_layers.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 204
   summary: 'Layer factory function to create a composite that adds a skip connection
     to a function.
 
@@ -195,14 +171,6 @@ items:
   - python
   module: cntk.layers.higher_order_layers
   name: Sequential
-  source:
-    id: Sequential
-    path: bindings/python/cntk\layers\higher_order_layers.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\higher_order_layers.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 20
   summary: 'Layer factory function to create a composite that applies a sequence of
     layers (or any functions) onto an input.
 
@@ -263,14 +231,6 @@ items:
   - python
   module: cntk.layers.higher_order_layers
   name: SequentialClique
-  source:
-    id: SequentialClique
-    path: bindings/python/cntk\layers\higher_order_layers.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\higher_order_layers.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 167
   summary: 'Layer factory function to create a composite that applies a sequence of
     functions onto an input,
 

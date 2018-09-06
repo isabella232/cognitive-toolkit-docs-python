@@ -15,14 +15,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared
   name: shared
-  source:
-    id: shared
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: package
   uid: cntk.contrib.deeprl.agent.shared
 references:

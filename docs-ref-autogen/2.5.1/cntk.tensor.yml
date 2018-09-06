@@ -9,14 +9,6 @@ items:
   - python
   module: cntk.tensor
   name: tensor
-  source:
-    id: tensor
-    path: bindings/python/cntk\tensor.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\tensor.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Tensor operations.
 
     '

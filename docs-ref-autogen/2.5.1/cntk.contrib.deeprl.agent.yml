@@ -7,21 +7,13 @@ items:
   - cntk.contrib.deeprl.agent.policy_gradient
   - cntk.contrib.deeprl.agent.qlearning
   - cntk.contrib.deeprl.agent.random_agent
-  - cntk.contrib.deeprl.agent.shared
   - cntk.contrib.deeprl.agent.tabular_qlearning
+  - cntk.contrib.deeprl.agent.shared
   fullName: cntk.contrib.deeprl.agent
   langs:
   - python
   module: cntk.contrib.deeprl.agent
   name: agent
-  source:
-    id: agent
-    path: bindings/python/cntk\contrib\deeprl\agent\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: package
   uid: cntk.contrib.deeprl.agent
 references:
@@ -50,13 +42,13 @@ references:
   name: random_agent
   parent: cntk.contrib.deeprl.agent
   uid: cntk.contrib.deeprl.agent.random_agent
-- fullName: cntk.contrib.deeprl.agent.shared
-  isExternal: false
-  name: shared
-  parent: cntk.contrib.deeprl.agent
-  uid: cntk.contrib.deeprl.agent.shared
 - fullName: cntk.contrib.deeprl.agent.tabular_qlearning
   isExternal: false
   name: tabular_qlearning
   parent: cntk.contrib.deeprl.agent
   uid: cntk.contrib.deeprl.agent.tabular_qlearning
+- fullName: cntk.contrib.deeprl.agent.shared
+  isExternal: false
+  name: shared
+  parent: cntk.contrib.deeprl.agent
+  uid: cntk.contrib.deeprl.agent.shared

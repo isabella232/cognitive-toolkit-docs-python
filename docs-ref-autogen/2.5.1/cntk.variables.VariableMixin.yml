@@ -23,14 +23,6 @@ items:
   - python
   module: cntk.variables
   name: VariableMixin
-  source:
-    id: VariableMixin
-    path: bindings/python/cntk\variables.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\variables.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 65
   summary: 'Standard properties for @cntk.variables.Variable and its derived classes
 
     @cntk.variables.Parameter and @cntk.variables.Constant.
@@ -58,14 +50,6 @@ items:
   - python
   module: cntk.variables
   name: dtype
-  source:
-    id: dtype
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The NumPy type of this variable.
 
     '
@@ -78,14 +62,6 @@ items:
   - python
   module: cntk.variables
   name: dynamic_axes
-  source:
-    id: dynamic_axes
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The dynamic axes of this variable.
 
     '
@@ -98,14 +74,6 @@ items:
   - python
   module: cntk.variables
   name: is_constant
-  source:
-    id: is_constant
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Whether this variable is a constant.
 
     '
@@ -118,14 +86,6 @@ items:
   - python
   module: cntk.variables
   name: is_input
-  source:
-    id: is_input
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Whether this variable is an input.
 
     '
@@ -138,14 +98,6 @@ items:
   - python
   module: cntk.variables
   name: is_output
-  source:
-    id: is_output
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Whether this variable is an output.
 
     '
@@ -158,14 +110,6 @@ items:
   - python
   module: cntk.variables
   name: is_parameter
-  source:
-    id: is_parameter
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Whether this variable is a parameter.
 
     '
@@ -178,14 +122,6 @@ items:
   - python
   module: cntk.variables
   name: is_placeholder
-  source:
-    id: is_placeholder
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Whether this variable is a placeholder.
 
     '
@@ -198,14 +134,6 @@ items:
   - python
   module: cntk.variables
   name: is_sparse
-  source:
-    id: is_sparse
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Whether this variable is sparse.
 
     '
@@ -218,14 +146,6 @@ items:
   - python
   module: cntk.variables
   name: name
-  source:
-    id: name
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The name of this variable.
 
     '
@@ -238,14 +158,6 @@ items:
   - python
   module: cntk.variables
   name: needs_gradient
-  source:
-    id: needs_gradient
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Whether this variable needs gradients.
 
     '
@@ -258,14 +170,6 @@ items:
   - python
   module: cntk.variables
   name: owner
-  source:
-    id: owner
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The function this variable is an output of.
 
     '
@@ -278,14 +182,6 @@ items:
   - python
   module: cntk.variables
   name: shape
-  source:
-    id: shape
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The shape of this variable as a tuple.
 
     '
@@ -298,14 +194,6 @@ items:
   - python
   module: cntk.variables
   name: uid
-  source:
-    id: uid
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The internally generated unique name of the variable.
 
     '

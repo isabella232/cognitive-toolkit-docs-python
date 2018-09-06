@@ -12,14 +12,6 @@ items:
   - python
   module: cntk.debugging.debug
   name: debug
-  source:
-    id: debug
-    path: bindings/python/cntk\debugging\debug.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\debug.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: "In order to debug a graph one simply needs to wrap the root node as follows::\n\
     \n\n    # ... setting up the model in z\n    from cntk.debugging import debug_model\n\
     \    z = debug_model(z)\n\n\nThen, when ``z`` is evaluated or trained (i.e. when\
@@ -59,14 +51,6 @@ items:
   - python
   module: cntk.debugging.debug
   name: debug_model
-  source:
-    id: debug_model
-    path: bindings/python/cntk\debugging\debug.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\debug.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 411
   summary: 'Returns a cloned model that has debug nodes inserted everywhere. When
     the
 
@@ -119,14 +103,6 @@ items:
   - python
   module: cntk.debugging.debug
   name: save_as_legacy_model
-  source:
-    id: save_as_legacy_model
-    path: bindings/python/cntk\debugging\debug.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\debug.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 84
   summary: 'Save the network of `root_op` in `filename`.
 
     For debugging purposes only, very likely to be deprecated in the future.
@@ -154,14 +130,6 @@ items:
   - python
   module: cntk.debugging.debug
   name: set_checked_mode
-  source:
-    id: set_checked_mode
-    path: bindings/python/cntk\debugging\debug.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\debug.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 107
   summary: "Checked mode enables additional runtime verification such as:\n   * Tracking\
     \ NaN occurrences in sequence gaps. \n\n   * Function graph verification after\
     \ binding of free static axes to actual values at runtime \n\nEnabling checked\
@@ -183,14 +151,6 @@ items:
   - python
   module: cntk.debugging.debug
   name: set_computation_network_trace_level
-  source:
-    id: set_computation_network_trace_level
-    path: bindings/python/cntk\debugging\debug.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\debug.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 121
   summary: "Set trace level to the computation network. Currently supported values:\n\
     \n   0\n      turn off trace\n\n   1\n      output nodes' dimensions and some\
     \ other static info\n\n   1000\n      output each node's abs sum of elements in\
@@ -212,14 +172,6 @@ items:
   - python
   module: cntk.debugging.debug
   name: set_node_timing
-  source:
-    id: set_node_timing
-    path: bindings/python/cntk\debugging\debug.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\debug.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 139
   summary: 'Node-timing records per-node average execution time per-minibatch.
 
     Enabling checked mode incurs a little runtime costs and is meant to be used as

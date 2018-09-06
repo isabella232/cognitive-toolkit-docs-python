@@ -24,14 +24,6 @@ items:
   - python
   module: cntk.io
   name: io
-  source:
-    id: io
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'CNTK IO utilities.
 
     '
@@ -42,16 +34,9 @@ items:
   - python
   module: cntk.io
   name: Base64ImageDeserializer
-  seealsoContent: "See also: [Base64ImageDeserializer options](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-and-Python---Understanding-and-Extending-Readers#base64imagedeserializer-options)\
-    \ \n"
-  source:
-    id: Base64ImageDeserializer
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 885
+  seealsoContent: '  [Base64ImageDeserializer options](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-and-Python---Understanding-and-Extending-Readers#base64imagedeserializer-options)
+
+    '
   summary: "Configures the image reader that reads base64 encoded images and corresponding\n\
     labels from a file of the form:\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"\
@@ -77,16 +62,9 @@ items:
   - python
   module: cntk.io
   name: CBFDeserializer
-  seealsoContent: "See also: [CNTKBinaryReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKBinary-Reader)\
-    \ \n"
-  source:
-    id: CBFDeserializer
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 933
+  seealsoContent: '  [CNTKBinaryReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKBinary-Reader)
+
+    '
   summary: 'Configures the CNTK binary-format deserializer.
 
     '
@@ -115,16 +93,9 @@ items:
   - python
   module: cntk.io
   name: CTFDeserializer
-  seealsoContent: "See also: [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)\
-    \ \n"
-  source:
-    id: CTFDeserializer
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 905
+  seealsoContent: '  [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)
+
+    '
   summary: "Configures the CNTK text-format reader that reads text-based files with\n\
     lines of the form:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
     : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n\
@@ -156,14 +127,6 @@ items:
   - python
   module: cntk.io
   name: HTKFeatureDeserializer
-  source:
-    id: HTKFeatureDeserializer
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 761
   summary: 'Configures the HTK feature reader that reads speech data from scp files.
 
     '
@@ -185,14 +148,6 @@ items:
   - python
   module: cntk.io
   name: HTKMLFDeserializer
-  source:
-    id: HTKMLFDeserializer
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 794
   summary: 'Configures an HTK label reader that reads speech HTK format MLF (Master
 
     Label File)
@@ -230,16 +185,9 @@ items:
   - python
   module: cntk.io
   name: ImageDeserializer
-  seealsoContent: "See also: [Image reader definition](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-Image-reader)\
-    \ \n"
-  source:
-    id: ImageDeserializer
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 863
+  seealsoContent: '  [Image reader definition](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-Image-reader)
+
+    '
   summary: "Configures the image reader that reads images and corresponding\nlabels\
     \ from a file of the form:\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
     \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"\
@@ -266,14 +214,6 @@ items:
   - python
   module: cntk.io
   name: LatticeDeserializer
-  source:
-    id: LatticeDeserializer
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 820
   summary: 'Configures a lattice deserializer
 
     '
@@ -295,14 +235,6 @@ items:
   - python
   module: cntk.io
   name: StreamDef
-  source:
-    id: StreamDef
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 976
   summary: "   Configuration of a stream for use with the builtin Deserializers.\n\
     \   The meanings of some configuration keys have a mild dependency on the\n  \
     \ exact deserializer, and certain keys are meaningless for certain\n   deserializers.\n"
@@ -414,14 +346,6 @@ items:
   - python
   module: cntk.io
   name: sequence_to_cntk_text_format
-  source:
-    id: sequence_to_cntk_text_format
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 1090
   summary: 'Converts a list of NumPy arrays representing tensors of inputs into a
 
     format that is readable by @cntk.io.CTFDeserializer.

@@ -10,18 +10,16 @@ items:
   - cntk.io.UserMinibatchSource.stream_infos
   class: cntk.io.UserMinibatchSource
   fullName: cntk.io.UserMinibatchSource
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: cntk.cntk_py.MinibatchSource
+    type: cntk.cntk_py.SwigMinibatchSource
   langs:
   - python
   module: cntk.io
   name: UserMinibatchSource
-  source:
-    id: UserMinibatchSource
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 411
   summary: 'Base class of all user minibatch sources.
 
 
@@ -41,14 +39,6 @@ items:
   - python
   module: cntk.io
   name: get_checkpoint_state
-  source:
-    id: get_checkpoint_state
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 480
   summary: 'Returns a dictionary describing the current state of the minibatch
 
     source. Needs to be overwritten if the state of the minibatch source
@@ -71,14 +61,6 @@ items:
   - python
   module: cntk.io
   name: is_infinite
-  source:
-    id: is_infinite
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 514
   summary: 'Should return true if the user has not specified any limit on the number
     of sweeps and samples.
 
@@ -94,14 +76,6 @@ items:
   - python
   module: cntk.io
   name: next_minibatch
-  source:
-    id: next_minibatch
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 443
   summary: 'Function to be implemented by the user.
 
     '
@@ -149,14 +123,6 @@ items:
   - python
   module: cntk.io
   name: restore_from_checkpoint
-  source:
-    id: restore_from_checkpoint
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 491
   summary: 'Sets the state of the checkpoint.
 
     '
@@ -177,14 +143,6 @@ items:
   - python
   module: cntk.io
   name: stream_info
-  source:
-    id: stream_info
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 435
   summary: 'Gets the description of the stream with given name.
 
     Throws an exception if there are none or multiple streams with this
@@ -204,14 +162,6 @@ items:
   - python
   module: cntk.io
   name: stream_infos
-  source:
-    id: stream_infos
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 421
   summary: 'Function to be implemented by the user.
 
     '

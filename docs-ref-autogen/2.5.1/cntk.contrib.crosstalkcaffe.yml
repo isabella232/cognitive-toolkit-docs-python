@@ -2,8 +2,8 @@
 api_name: []
 items:
 - children:
-  - cntk.contrib.crosstalkcaffe.adapter
   - cntk.contrib.crosstalkcaffe.convert
+  - cntk.contrib.crosstalkcaffe.adapter
   - cntk.contrib.crosstalkcaffe.unimodel
   - cntk.contrib.crosstalkcaffe.utils
   - cntk.contrib.crosstalkcaffe.validation
@@ -12,27 +12,19 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe
   name: crosstalkcaffe
-  source:
-    id: crosstalkcaffe
-    path: bindings/python/cntk\contrib\crosstalkcaffe\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: package
   uid: cntk.contrib.crosstalkcaffe
 references:
-- fullName: cntk.contrib.crosstalkcaffe.adapter
-  isExternal: false
-  name: adapter
-  parent: cntk.contrib.crosstalkcaffe
-  uid: cntk.contrib.crosstalkcaffe.adapter
 - fullName: cntk.contrib.crosstalkcaffe.convert
   isExternal: false
   name: convert
   parent: cntk.contrib.crosstalkcaffe
   uid: cntk.contrib.crosstalkcaffe.convert
+- fullName: cntk.contrib.crosstalkcaffe.adapter
+  isExternal: false
+  name: adapter
+  parent: cntk.contrib.crosstalkcaffe
+  uid: cntk.contrib.crosstalkcaffe.adapter
 - fullName: cntk.contrib.crosstalkcaffe.unimodel
   isExternal: false
   name: unimodel

@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.policy_gradient
   name: policy_gradient
-  source:
-    id: policy_gradient
-    path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\policy_gradient.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Actor-Critic Policy Gradient.
 
     '

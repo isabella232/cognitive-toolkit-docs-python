@@ -15,14 +15,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: AtariPreprocessing
-  source:
-    id: AtariPreprocessing
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 43
   summary: 'Preprocess screen images from Atari 2600 games.
 
 
@@ -46,14 +38,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: output_shape
-  source:
-    id: output_shape
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 57
   summary: 'Return shape of preprocessed Atari images.
 
     '
@@ -68,14 +52,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: preprocess
-  source:
-    id: preprocess
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 68
   summary: 'Return preprocessed screen images from Atari 2600 games.
 
     '
@@ -91,14 +67,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: reset
-  source:
-    id: reset
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 61
   summary: 'Reset preprocessing pipeline for new episode.
 
     '

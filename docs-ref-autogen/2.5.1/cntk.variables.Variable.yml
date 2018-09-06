@@ -13,18 +13,13 @@ items:
   - inheritance:
     - type: builtins.object
     type: cntk.tensor.TensorOpsMixin
+  - inheritance:
+    - type: builtins.object
+    type: cntk.cntk_py.Variable
   langs:
   - python
   module: cntk.variables
   name: Variable
-  source:
-    id: Variable
-    path: bindings/python/cntk\variables.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\variables.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 285
   summary: 'Denotes a symbolic entity corresponding to the inputs and outputs of a
     Function.
 
@@ -87,14 +82,6 @@ items:
   - python
   module: cntk.variables
   name: as_constant
-  source:
-    id: as_constant
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 323
   summary: 'Converts this instance into a @cntk.variables.Constant
 
     '
@@ -108,14 +95,6 @@ items:
   - python
   module: cntk.variables
   name: as_parameter
-  source:
-    id: as_parameter
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 313
   summary: 'Converts this instance into a @cntk.variables.Parameter
 
     '

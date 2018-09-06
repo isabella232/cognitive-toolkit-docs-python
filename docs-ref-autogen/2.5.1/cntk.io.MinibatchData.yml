@@ -15,19 +15,14 @@ items:
   inheritance:
   - inheritance:
     - type: builtins.object
+    type: cntk.cntk_py.MinibatchData
+  - inheritance:
+    - type: builtins.object
     type: cntk.tensor.ArrayMixin
   langs:
   - python
   module: cntk.io
   name: MinibatchData
-  source:
-    id: MinibatchData
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 32
   summary: 'Holds a minibatch of input data. This is never directly created, but
 
     only returned by @cntk.io.MinibatchSource instances.
@@ -51,14 +46,6 @@ items:
   - python
   module: cntk.io
   name: as_sequences
-  source:
-    id: as_sequences
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 57
   summary: 'Convert the value of this minibatch instance to a sequence of NumPy
 
     arrays that have their masked entries removed.
@@ -81,14 +68,6 @@ items:
   - python
   module: cntk.io
   name: data
-  source:
-    id: data
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Retrieves the underlying @cntk.core.Value instance.
 
     '
@@ -101,14 +80,6 @@ items:
   - python
   module: cntk.io
   name: end_of_sweep
-  source:
-    id: end_of_sweep
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Indicates whether the data in this minibatch comes from a sweep end
 
     or crosses a sweep boundary (and as a result includes data from
@@ -125,14 +96,6 @@ items:
   - python
   module: cntk.io
   name: is_sparse
-  source:
-    id: is_sparse
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Whether the data in this minibatch is sparse.
 
     '
@@ -145,14 +108,6 @@ items:
   - python
   module: cntk.io
   name: mask
-  source:
-    id: mask
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The mask object of the minibatch. In it, *2* marks the beginning of a
 
     sequence, *1* marks a sequence element as valid, and *0* marks it as
@@ -169,14 +124,6 @@ items:
   - python
   module: cntk.io
   name: num_samples
-  source:
-    id: num_samples
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The number of samples in this minibatch
 
     '
@@ -189,14 +136,6 @@ items:
   - python
   module: cntk.io
   name: num_sequences
-  source:
-    id: num_sequences
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The number of sequences in this minibatch
 
     '
@@ -209,14 +148,6 @@ items:
   - python
   module: cntk.io
   name: shape
-  source:
-    id: shape
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The shape of the data in this minibatch as tuple.
 
     '

@@ -15,14 +15,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: SlidingWindow
-  source:
-    id: SlidingWindow
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 92
   summary: 'Stack windowed inputs (x(t-m+1), ... x(t)).
 
 
@@ -39,14 +31,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: output_shape
-  source:
-    id: output_shape
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 102
   summary: 'Return shape of preprocessed input.
 
     '
@@ -61,14 +45,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: preprocess
-  source:
-    id: preprocess
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 112
   summary: 'Return preprocessed input x.
 
     '
@@ -84,14 +60,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: reset
-  source:
-    id: reset
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 106
   summary: 'Reset preprocessing pipeline for new episode.
 
     '

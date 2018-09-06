@@ -9,14 +9,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.utils
   name: utils
-  source:
-    id: utils
-    path: bindings/python/cntk\contrib\crosstalkcaffe\utils\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\utils\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: package
   uid: cntk.contrib.crosstalkcaffe.utils
 references:

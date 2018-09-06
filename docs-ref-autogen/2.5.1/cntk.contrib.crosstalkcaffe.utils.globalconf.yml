@@ -13,14 +13,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.utils.globalconf
   name: globalconf
-  source:
-    id: globalconf
-    path: bindings/python/cntk\contrib\crosstalkcaffe\utils\globalconf.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\utils\globalconf.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: module
   uid: cntk.contrib.crosstalkcaffe.utils.globalconf
 - fullName: cntk.contrib.crosstalkcaffe.utils.globalconf.load_conf
@@ -28,14 +20,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.utils.globalconf
   name: load_conf
-  source:
-    id: load_conf
-    path: bindings/python/cntk\contrib\crosstalkcaffe\utils\globalconf.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\utils\globalconf.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 81
   summary: '   Analysis global configuration file into dict
 
     '

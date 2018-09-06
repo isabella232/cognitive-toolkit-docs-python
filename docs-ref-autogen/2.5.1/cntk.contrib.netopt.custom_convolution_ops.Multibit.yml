@@ -26,14 +26,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: Multibit
-  source:
-    id: Multibit
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 189
   summary: '
 
 
@@ -53,14 +45,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: backward
-  source:
-    id: backward
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 244
   syntax:
     content: backward(state, root_gradients)
     parameters:
@@ -74,14 +58,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: clone
-  source:
-    id: clone
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 269
   syntax:
     content: clone(cloned_inputs)
     parameters:
@@ -94,14 +70,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: deserialize
-  source:
-    id: deserialize
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 265
   syntax:
     content: deserialize(inputs, name, state)
     parameters:
@@ -116,14 +84,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: forward
-  source:
-    id: forward
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 233
   syntax:
     content: forward(argument, device, outputs_to_retain)
     parameters:
@@ -138,14 +98,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: gradFunc
-  source:
-    id: gradFunc
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 216
   syntax:
     content: gradFunc(arg)
     parameters:
@@ -158,14 +110,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: infer_outputs
-  source:
-    id: infer_outputs
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 254
   syntax:
     content: infer_outputs()
     parameters: []
@@ -177,14 +121,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: multiFunc
-  source:
-    id: multiFunc
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 195
   syntax:
     content: multiFunc(arg1)
     parameters:
@@ -197,14 +133,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: serialize
-  source:
-    id: serialize
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 262
   syntax:
     content: serialize()
     parameters: []

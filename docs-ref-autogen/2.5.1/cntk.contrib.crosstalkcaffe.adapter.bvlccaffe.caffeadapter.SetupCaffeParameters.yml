@@ -22,14 +22,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: SetupCaffeParameters
-  source:
-    id: SetupCaffeParameters
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 56
   summary: 'Setup Caffe parameters into CNTK format
 
 
@@ -54,14 +46,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: batch_norm
-  source:
-    id: batch_norm
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 158
   summary: '   The batch normalization parameter setup from Caffe to CNTK
 
     '
@@ -102,14 +86,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: convolution
-  source:
-    id: convolution
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 94
   summary: '   The convolution parameter setup from Caffe to CNTK
 
     '
@@ -150,14 +126,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: default
-  source:
-    id: default
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 60
   summary: '   The default Caffe to CNTK uniform model setup
 
     '
@@ -205,14 +173,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: dense
-  source:
-    id: dense
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 177
   summary: '   The dense parameter setup from Caffe to CNTK
 
     '
@@ -253,14 +213,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: dropout
-  source:
-    id: dropout
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 263
   summary: '   The dropout parameter setup from Caffe to CNTK
 
     '
@@ -301,14 +253,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: lrn
-  source:
-    id: lrn
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 280
   summary: '   The lrn parameter setup from Caffe to CNTK
 
     '
@@ -349,14 +293,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: plus
-  source:
-    id: plus
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 246
   summary: '   The plus parameter setup from Caffe to CNTK
 
     '
@@ -397,14 +333,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: pooling
-  source:
-    id: pooling
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 125
   summary: '   The pooling parameter setup from Caffe to CNTK
 
     '
@@ -445,14 +373,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: psroi_pooling
-  source:
-    id: psroi_pooling
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 302
   summary: '   The psroipooling parameter setup from Caffe to CNTK
 
     '
@@ -493,14 +413,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: relu
-  source:
-    id: relu
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 229
   summary: '   The ReLU parameter setup from Caffe to CNTK
 
     '
@@ -541,14 +453,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: softmax
-  source:
-    id: softmax
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 322
   summary: '   The softmax parameter setup from Caffe to CNTK
 
     '
@@ -589,14 +493,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: splice
-  source:
-    id: splice
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 200
   summary: '   The splice parameter setup from Caffe to CNTK
 
     '

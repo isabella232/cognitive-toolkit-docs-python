@@ -11,14 +11,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters
   name: PolicyGradientParameters
-  source:
-    id: PolicyGradientParameters
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\policy_gradient_parameters.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\policy_gradient_parameters.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 11
   summary: 'Parameters used by Policy Gradient algorithms.
 
 
@@ -33,14 +25,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters
   name: save
-  source:
-    id: save
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\policy_gradient_parameters.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\policy_gradient_parameters.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 111
   syntax:
     content: save(config_file)
     parameters:

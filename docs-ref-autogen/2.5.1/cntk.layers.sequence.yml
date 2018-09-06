@@ -13,14 +13,6 @@ items:
   - python
   module: cntk.layers.sequence
   name: sequence
-  source:
-    id: sequence
-    path: bindings/python/cntk\layers\sequence.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\sequence.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'First / higher-order functions over sequences, like @Recurrence.
 
     '
@@ -43,14 +35,6 @@ items:
   - python
   module: cntk.layers.sequence
   name: Delay
-  source:
-    id: Delay
-    path: bindings/python/cntk\layers\sequence.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\sequence.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 17
   summary: 'Layer factory function to create a layer that delays input the input by
     a given number of time steps. Negative means future.
 
@@ -110,14 +94,6 @@ items:
   - python
   module: cntk.layers.sequence
   name: Fold
-  source:
-    id: Fold
-    path: bindings/python/cntk\layers\sequence.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\sequence.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 449
   summary: "Layer factory function to create a function that runs a step function\
     \ recurrently over an input sequence,\nand returns the final state.\nThis is often\
     \ used for embeddings of sequences, e.g. in a sequence-to-sequence model.\nPseudo-code:\n\
@@ -224,14 +200,6 @@ items:
   - python
   module: cntk.layers.sequence
   name: PastValueWindow
-  source:
-    id: PastValueWindow
-    path: bindings/python/cntk\layers\sequence.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\sequence.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 72
   summary: 'Layer factory function to create a function that returns a static, maskable
     view for N past steps over a sequence along the given ''axis''.
 
@@ -314,14 +282,6 @@ items:
   - python
   module: cntk.layers.sequence
   name: Recurrence
-  source:
-    id: Recurrence
-    path: bindings/python/cntk\layers\sequence.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\sequence.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 315
   summary: "Layer factory function that implements a recurrent model, including the\
     \ common RNN, LSTM, and GRU recurrences.\nThis factory function creates a function\
     \ that runs a step function recurrently over an input sequence,\nwhere in each\
@@ -481,14 +441,6 @@ items:
   - python
   module: cntk.layers.sequence
   name: RecurrenceFrom
-  source:
-    id: RecurrenceFrom
-    path: bindings/python/cntk\layers\sequence.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\sequence.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 194
   summary: "Layer factory function to create a function that runs a step function\
     \ recurrently over an input sequence, with initial state.\nThis layer is very\
     \ similar to @cntk.layers.sequence.Recurrence,\nexcept that the initial state\
@@ -587,14 +539,6 @@ items:
   - python
   module: cntk.layers.sequence
   name: UnfoldFrom
-  source:
-    id: UnfoldFrom
-    path: bindings/python/cntk\layers\sequence.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\sequence.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 543
   summary: "Layer factory function to create a function that implements a recurrent\
     \ generator.\nStarting with a seed state, the `UnfoldFrom()` layer\nrepeatedly\
     \ applies `generator_function` and emits the sequence of results.\nIt stops after\

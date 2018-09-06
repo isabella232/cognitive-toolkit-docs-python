@@ -10,14 +10,6 @@ items:
   - python
   module: cntk.contrib.netopt.test.factorization_test
   name: factorization_test
-  source:
-    id: factorization_test
-    path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: module
   uid: cntk.contrib.netopt.test.factorization_test
 - fullName: cntk.contrib.netopt.test.factorization_test.test_factor_dense
@@ -25,14 +17,6 @@ items:
   - python
   module: cntk.contrib.netopt.test.factorization_test
   name: test_factor_dense
-  source:
-    id: test_factor_dense
-    path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 72
   syntax:
     content: test_factor_dense()
   type: function
@@ -42,14 +26,6 @@ items:
   - python
   module: cntk.contrib.netopt.test.factorization_test
   name: test_factor_dense_for_prediction
-  source:
-    id: test_factor_dense_for_prediction
-    path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 107
   syntax:
     content: test_factor_dense_for_prediction()
   type: function
@@ -59,14 +35,6 @@ items:
   - python
   module: cntk.contrib.netopt.test.factorization_test
   name: test_svd_factorization
-  source:
-    id: test_svd_factorization
-    path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 48
   syntax:
     content: test_svd_factorization()
   type: function

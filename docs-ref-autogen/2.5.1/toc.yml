@@ -12,6 +12,11 @@
             uid: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk
           name: cntk.contrib.crosstalk.crosstalk_cntk
           uid: cntk.contrib.crosstalk.crosstalk_cntk
+        - items:
+          - name: cntk.contrib.crosstalk.crosstalk_tensorflow.TensorFlowCrosstalk
+            uid: cntk.contrib.crosstalk.crosstalk_tensorflow.TensorFlowCrosstalk
+          name: cntk.contrib.crosstalk.crosstalk_tensorflow
+          uid: cntk.contrib.crosstalk.crosstalk_tensorflow
         - name: cntk.contrib.crosstalk.Conv2DArgs
           uid: cntk.contrib.crosstalk.Conv2DArgs
         - name: cntk.contrib.crosstalk.Conv2DAttr
@@ -34,6 +39,8 @@
             name: cntk.contrib.crosstalkcaffe.adapter.baseadapter
             uid: cntk.contrib.crosstalkcaffe.adapter.baseadapter
           - items:
+            - name: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffe_pb2
+              uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffe_pb2
             - items:
               - name: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter
                 uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter
@@ -423,5 +430,6 @@
       uid: cntk.variables
     name: cntk
     uid: cntk
-  name: Reference
-  uid: project-pyexample
+  name: cntk
+  uid: project-cntk
+

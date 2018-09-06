@@ -13,14 +13,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: Preprocessing
-  source:
-    id: Preprocessing
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 15
   summary: 'Base class for defining preprocessing.
 
 
@@ -40,14 +32,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: output_shape
-  source:
-    id: output_shape
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 27
   summary: 'Return shape of preprocessed observation.
 
     '
@@ -62,14 +46,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: preprocess
-  source:
-    id: preprocess
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 37
   summary: 'Return preprocessed observation.
 
     '
@@ -85,14 +61,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: reset
-  source:
-    id: reset
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 32
   summary: 'Reset preprocessing pipeline for new episode.
 
     '

@@ -9,14 +9,6 @@ items:
   - python
   module: cntk.contrib.netopt.test.quantization_test
   name: quantization_test
-  source:
-    id: quantization_test
-    path: bindings/python/cntk\contrib\netopt\test\quantization_test.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\test\quantization_test.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: module
   uid: cntk.contrib.netopt.test.quantization_test
 - fullName: cntk.contrib.netopt.test.quantization_test.test_binarization
@@ -24,14 +16,6 @@ items:
   - python
   module: cntk.contrib.netopt.test.quantization_test
   name: test_binarization
-  source:
-    id: test_binarization
-    path: bindings/python/cntk\contrib\netopt\test\quantization_test.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\test\quantization_test.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 105
   syntax:
     content: test_binarization()
   type: function
@@ -41,14 +25,6 @@ items:
   - python
   module: cntk.contrib.netopt.test.quantization_test
   name: test_native_convolution
-  source:
-    id: test_native_convolution
-    path: bindings/python/cntk\contrib\netopt\test\quantization_test.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\test\quantization_test.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 123
   syntax:
     content: test_native_convolution(tmpdir)
     parameters:

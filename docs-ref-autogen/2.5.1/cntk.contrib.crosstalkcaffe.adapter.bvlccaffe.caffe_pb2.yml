@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffe_pb2
+  langs:
+  - python
+  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffe_pb2
+  name: caffe_pb2
+  type: module
+  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffe_pb2
+references: []

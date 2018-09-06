@@ -14,14 +14,6 @@ items:
   - python
   module: cntk.layers.blocks
   name: blocks
-  source:
-    id: blocks
-    path: bindings/python/cntk\layers\blocks.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\blocks.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Basic building blocks that are semantically not layers (not used in a
     layered fashion),
 
@@ -45,14 +37,6 @@ items:
   - python
   module: cntk.layers.blocks
   name: ForwardDeclaration
-  source:
-    id: ForwardDeclaration
-    path: bindings/python/cntk\layers\blocks.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\blocks.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 83
   summary: 'Helper for recurrent network declarations.
 
     Returns a placeholder variable with an added method `resolve_to()` to be called
@@ -96,14 +80,6 @@ items:
   - python
   module: cntk.layers.blocks
   name: GRU
-  source:
-    id: GRU
-    path: bindings/python/cntk\layers\blocks.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\blocks.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 468
   summary: 'Layer factory function to create a GRU block for use inside a recurrence.
 
     The GRU block implements one step of the recurrence and is stateless. It accepts
@@ -145,7 +121,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk.initializer, defaults to glorot_uniform
+      - cntk, defaults to glorot_uniform
     - description: 'initial value of weights *b*
 
         '
@@ -153,7 +129,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk.initializer, defaults to 0
+      - cntk, defaults to 0
     - description: 'if *True* then add a @cntk.layers.blocks.Stabilizer
 
         to all state-related projections (but not the data input)
@@ -198,14 +174,6 @@ items:
   - python
   module: cntk.layers.blocks
   name: LSTM
-  source:
-    id: LSTM
-    path: bindings/python/cntk\layers\blocks.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\blocks.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 356
   summary: 'Layer factory function to create an LSTM block for use inside a recurrence.
 
     The LSTM block implements one step of the recurrence and is stateless. It accepts
@@ -251,7 +219,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk.initializer, defaults to glorot_uniform
+      - cntk, defaults to glorot_uniform
     - description: 'initial value of weights *b*
 
         '
@@ -259,7 +227,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk.initializer, defaults to 0
+      - cntk, defaults to 0
     - description: 'if *True* then add a @cntk.layers.blocks.Stabilizer
 
         to all state-related projections (but not the data input)
@@ -304,14 +272,6 @@ items:
   - python
   module: cntk.layers.blocks
   name: RNNStep
-  source:
-    id: RNNStep
-    path: bindings/python/cntk\layers\blocks.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\blocks.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 400
   summary: 'Layer factory function to create a plain RNN block for use inside a recurrence.
 
     The RNN block implements one step of the recurrence and is stateless. It accepts
@@ -353,7 +313,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk.initializer, defaults to glorot_uniform
+      - cntk, defaults to glorot_uniform
     - description: 'initial value of weights *b*
 
         '
@@ -361,7 +321,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk.initializer, defaults to 0
+      - cntk, defaults to 0
     - description: 'if *True* then add a @cntk.layers.blocks.Stabilizer
 
         to all state-related projections (but not the data input)
@@ -391,14 +351,6 @@ items:
   - python
   module: cntk.layers.blocks
   name: RNNUnit
-  source:
-    id: RNNUnit
-    path: bindings/python/cntk\layers\blocks.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\blocks.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 444
   summary: 'This is a deprecated name for @cntk.layers.blocks.RNNStep. Use that name
     instead.
 
@@ -454,14 +406,6 @@ items:
   - python
   module: cntk.layers.blocks
   name: Stabilizer
-  source:
-    id: Stabilizer
-    path: bindings/python/cntk\layers\blocks.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\blocks.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 137
   summary: "Layer factory function to create a [Droppo self-stabilizer](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/SelfLR.pdf).\n\
     It multiplies its input with a scalar that is learned.\n\nThis takes *enable_self_stabilization*\
     \ as a flag that allows to disable itself. Useful if this is a global default.\n\
@@ -511,14 +455,6 @@ items:
   - python
   module: cntk.layers.blocks
   name: UntestedBranchError
-  source:
-    id: UntestedBranchError
-    path: bindings/python/cntk\layers\blocks.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\blocks.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 28
   syntax:
     content: UntestedBranchError(name)
     parameters:
@@ -585,30 +521,30 @@ references:
     name: tanh
     uid: defaults to cntk.ops.tanh
   uid: cntk.ops.functions.Function, defaults to cntk.ops.tanh
-- fullName: cntk.initializer, defaults to glorot_uniform
-  name: initializer, defaults to glorot_uniform
+- fullName: cntk, defaults to glorot_uniform
+  name: cntk, defaults to glorot_uniform
   spec.python:
-  - fullName: cntk.initializer
-    name: initializer
-    uid: cntk.initializer
+  - fullName: cntk
+    name: cntk
+    uid: cntk
   - fullName: ', '
     name: ', '
   - fullName: defaults to glorot_uniform
     name: defaults to glorot_uniform
     uid: defaults to glorot_uniform
-  uid: cntk.initializer, defaults to glorot_uniform
-- fullName: cntk.initializer, defaults to 0
-  name: initializer, defaults to 0
+  uid: cntk, defaults to glorot_uniform
+- fullName: cntk, defaults to 0
+  name: cntk, defaults to 0
   spec.python:
-  - fullName: cntk.initializer
-    name: initializer
-    uid: cntk.initializer
+  - fullName: cntk
+    name: cntk
+    uid: cntk
   - fullName: ', '
     name: ', '
   - fullName: defaults to 0
     name: defaults to 0
     uid: defaults to 0
-  uid: cntk.initializer, defaults to 0
+  uid: cntk, defaults to 0
 - fullName: bool, defaults to False
   name: bool, defaults to False
   spec.python:

@@ -15,14 +15,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: custom_convolution_ops
-  source:
-    id: custom_convolution_ops
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: module
   uid: cntk.contrib.netopt.custom_convolution_ops
 - fullName: cntk.contrib.netopt.custom_convolution_ops.CustomMultibit
@@ -30,14 +22,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: CustomMultibit
-  source:
-    id: CustomMultibit
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 280
   syntax:
     content: CustomMultibit(input, bit_map, mean_bits=None)
     parameters:
@@ -52,14 +36,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: CustomMultibitKernel
-  source:
-    id: CustomMultibitKernel
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 295
   syntax:
     content: CustomMultibitKernel(input, bit_map, mean_bits=None)
     parameters:
@@ -74,14 +50,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: CustomPySign
-  source:
-    id: CustomPySign
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 277
   syntax:
     content: CustomPySign(input)
     parameters:
@@ -93,14 +61,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: CustomSign
-  source:
-    id: CustomSign
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 274
   syntax:
     content: CustomSign(input)
     parameters:

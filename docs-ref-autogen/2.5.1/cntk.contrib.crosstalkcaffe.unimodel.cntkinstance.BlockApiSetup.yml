@@ -13,14 +13,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: BlockApiSetup
-  source:
-    id: BlockApiSetup
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 19
   summary: 'Implement some special requirement ops
 
 
@@ -36,14 +28,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: convolution
-  source:
-    id: convolution
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 23
   summary: '   Implement convolution ops
 
     '
@@ -119,14 +103,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: linear
-  source:
-    id: linear
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 87
   summary: '   Implement linear ops, also known as full connection in Caffe
 
     '
@@ -177,14 +153,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: lrn
-  source:
-    id: lrn
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 112
   summary: '   Implement LRN ops
 
     '

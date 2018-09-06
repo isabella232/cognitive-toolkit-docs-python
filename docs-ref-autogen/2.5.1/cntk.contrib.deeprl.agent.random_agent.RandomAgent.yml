@@ -18,14 +18,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.random_agent
   name: RandomAgent
-  source:
-    id: RandomAgent
-    path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 13
   summary: 'Agent that selects action uniformly randomly.
 
 
@@ -45,14 +37,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.random_agent
   name: end
-  source:
-    id: end
-    path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 39
   summary: 'Last observed reward/state of the episode (which then terminates).
 
     '
@@ -69,14 +53,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.random_agent
   name: save
-  source:
-    id: save
-    path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 47
   summary: 'Save best model to file.
 
     '
@@ -92,14 +68,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.random_agent
   name: save_parameter_settings
-  source:
-    id: save_parameter_settings
-    path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 51
   summary: 'Save parameter settings to file.
 
     '
@@ -115,14 +83,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.random_agent
   name: set_as_best_model
-  source:
-    id: set_as_best_model
-    path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 43
   summary: 'Copy current model to best model.
 
     '
@@ -137,14 +97,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.random_agent
   name: start
-  source:
-    id: start
-    path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 27
   summary: 'Start a new episode.
 
     '
@@ -160,14 +112,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.random_agent
   name: step
-  source:
-    id: step
-    path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\random_agent.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 33
   summary: 'Observe one transition and choose an action.
 
     '

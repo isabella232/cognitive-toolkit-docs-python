@@ -10,14 +10,6 @@ items:
   - python
   module: cntk.train
   name: train
-  source:
-    id: train
-    path: bindings/python/cntk\train\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Utilities for training.
 
     '

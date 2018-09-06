@@ -11,14 +11,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.qlearning_parameters
   name: QLearningParameters
-  source:
-    id: QLearningParameters
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\qlearning_parameters.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\qlearning_parameters.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 14
   summary: 'Parameters used by Q learning algorithm.
 
 
@@ -33,14 +25,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.qlearning_parameters
   name: save
-  source:
-    id: save
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\qlearning_parameters.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\qlearning_parameters.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 153
   syntax:
     content: save(config_file)
     parameters:

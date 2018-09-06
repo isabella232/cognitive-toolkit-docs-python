@@ -11,18 +11,14 @@ items:
   - cntk.io.MinibatchSource.streams
   class: cntk.io.MinibatchSource
   fullName: cntk.io.MinibatchSource
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.cntk_py.MinibatchSource
   langs:
   - python
   module: cntk.io
   name: MinibatchSource
-  source:
-    id: MinibatchSource
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 111
   summary: '
 
 
@@ -176,14 +172,6 @@ items:
   - python
   module: cntk.io
   name: current_position
-  source:
-    id: current_position
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Gets current position in the minibatch source.
 
     '
@@ -213,14 +201,6 @@ items:
   - python
   module: cntk.io
   name: get_checkpoint_state
-  source:
-    id: get_checkpoint_state
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 343
   summary: 'Gets the checkpoint state of the MinibatchSource.
 
     '
@@ -239,14 +219,6 @@ items:
   - python
   module: cntk.io
   name: next_minibatch
-  source:
-    id: next_minibatch
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 281
   summary: 'Reads a minibatch that contains data for all input streams.  The
 
     minibatch size is specified in terms of #samples and/or #sequences for
@@ -328,14 +300,6 @@ items:
   - python
   module: cntk.io
   name: restore_from_checkpoint
-  source:
-    id: restore_from_checkpoint
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 352
   summary: 'Restores the MinibatchSource state from the specified checkpoint.
 
     '
@@ -356,14 +320,6 @@ items:
   - python
   module: cntk.io
   name: stream_info
-  source:
-    id: stream_info
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 255
   summary: 'Gets the description of the stream with given name.
 
     Throws an exception if there are none or multiple streams with this
@@ -394,14 +350,6 @@ items:
   - python
   module: cntk.io
   name: stream_infos
-  source:
-    id: stream_infos
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 232
   summary: 'Describes the streams this minibatch source produces.
 
     '
@@ -420,14 +368,6 @@ items:
   - python
   module: cntk.io
   name: streams
-  source:
-    id: streams
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Describes the streams ''this'' minibatch source produces.
 
     '

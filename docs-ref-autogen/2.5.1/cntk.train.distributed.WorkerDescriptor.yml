@@ -6,18 +6,14 @@ items:
   - cntk.train.distributed.WorkerDescriptor.host_id
   class: cntk.train.distributed.WorkerDescriptor
   fullName: cntk.train.distributed.WorkerDescriptor
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.cntk_py.DistributedWorkerDescriptor
   langs:
   - python
   module: cntk.train.distributed
   name: WorkerDescriptor
-  source:
-    id: WorkerDescriptor
-    path: bindings/python/cntk\train\distributed.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\distributed.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 22
   summary: 'Distributed worker descriptor, returned by @cntk.train.distributed.Communicator
     instance.
 
@@ -34,14 +30,6 @@ items:
   - python
   module: cntk.train.distributed
   name: global_rank
-  source:
-    id: global_rank
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The global rank of the worker.
 
     '
@@ -54,14 +42,6 @@ items:
   - python
   module: cntk.train.distributed
   name: host_id
-  source:
-    id: host_id
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The host id of the worker.
 
     '

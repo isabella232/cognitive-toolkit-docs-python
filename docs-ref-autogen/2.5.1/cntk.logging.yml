@@ -12,14 +12,6 @@ items:
   - python
   module: cntk.logging
   name: logging
-  source:
-    id: logging
-    path: bindings/python/cntk\logging\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Utilities for logging.
 
     '
@@ -30,14 +22,6 @@ items:
   - python
   module: cntk.logging
   name: get_trace_level
-  source:
-    id: get_trace_level
-    path: bindings/python/cntk\logging\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 44
   summary: 'Returns current logging verbosity level.
 
     '
@@ -56,14 +40,6 @@ items:
   - python
   module: cntk.logging
   name: set_trace_level
-  source:
-    id: set_trace_level
-    path: bindings/python/cntk\logging\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 32
   summary: 'Specifies global logging verbosity level.
 
     '

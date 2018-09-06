@@ -13,14 +13,6 @@ items:
   - python
   module: cntk.train.distributed
   name: distributed
-  source:
-    id: distributed
-    path: bindings/python/cntk\train\distributed.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\train\distributed.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Distributed learners manage learners in distributed environment.
 
     '
@@ -31,18 +23,10 @@ items:
   - python
   module: cntk.train.distributed
   name: block_momentum_distributed_learner
-  seealsoContent: "See also: [1] K. Chen and Q. Huo. [Scalable training of deep learning\
-    \ machines by incremental block training with intra-block parallel optimization\
-    \ and blockwise model-update filtering](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/0005880.pdf).\
-    \ Proceedings of ICASSP, 2016. \n"
-  source:
-    id: block_momentum_distributed_learner
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 148
+  seealsoContent: "  [1] K. Chen and Q. Huo. [Scalable training of deep learning machines\n\
+    \  by incremental block training with intra-block parallel optimization\n  and\
+    \ blockwise model-update filtering](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/0005880.pdf).\n\
+    \  Proceedings of ICASSP, 2016.\n"
   summary: 'Creates a block momentum distributed learner. See [1] for more
 
     information.
@@ -114,14 +98,6 @@ items:
   - python
   module: cntk.train.distributed
   name: data_parallel_distributed_learner
-  source:
-    id: data_parallel_distributed_learner
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 122
   summary: 'Creates a data parallel distributed learner
 
     '
@@ -162,14 +138,6 @@ items:
   - python
   module: cntk.train.distributed
   name: mpi_communicator
-  source:
-    id: mpi_communicator
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 199
   summary: 'Creates a non quantized MPI communicator.
 
     '

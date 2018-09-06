@@ -16,14 +16,6 @@ items:
   - python
   module: cntk.device
   name: device
-  source:
-    id: device
-    path: bindings/python/cntk\device.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\device.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Utilities to specify device on which CNTK computation can be executed.
 
     '
@@ -34,14 +26,6 @@ items:
   - python
   module: cntk.device
   name: all_devices
-  source:
-    id: all_devices
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 66
   summary: 'Returns a device descriptor list with all the available devices
 
     '
@@ -60,14 +44,6 @@ items:
   - python
   module: cntk.device
   name: cpu
-  source:
-    id: cpu
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 77
   summary: 'Returns CPU device descriptor
 
     '
@@ -86,14 +62,6 @@ items:
   - python
   module: cntk.device
   name: get_gpu_properties
-  source:
-    id: get_gpu_properties
-    path: bindings/python/cntk\device.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\device.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 169
   summary: 'Retrieves and returns additional properties (total memory, number of CUDA
 
     cores, etc.) for the specified GPU device. This method will raise an
@@ -117,14 +85,6 @@ items:
   - python
   module: cntk.device
   name: gpu
-  source:
-    id: gpu
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 88
   summary: 'Returns GPU device descriptor
 
     '
@@ -143,14 +103,6 @@ items:
   - python
   module: cntk.device
   name: set_excluded_devices
-  source:
-    id: set_excluded_devices
-    path: bindings/python/cntk\device.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\device.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 152
   summary: 'Allows to specify a list of excluded devices that cannot be used as
 
     globally default (neither auto-selected nor explicitly specified by
@@ -184,14 +136,6 @@ items:
   - python
   module: cntk.device
   name: try_set_default_device
-  source:
-    id: try_set_default_device
-    path: bindings/python/cntk\device.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\device.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 117
   summary: "Tries to set the specified device as the globally default, optionally\n\
     acquiring an exclusive (cooperative) lock on the device (only a GPU device\ncan\
     \ be locked).\n\nThe default device can only be changed if it has not yet been\
@@ -235,14 +179,6 @@ items:
   - python
   module: cntk.device
   name: use_default_device
-  source:
-    id: use_default_device
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 99
   summary: 'Freezes the default device of the current CNTK process disallowing further
 
     changes through calls to @cntk.device.try_set_default_device. This default

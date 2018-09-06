@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters
   name: policy_gradient_parameters
-  source:
-    id: policy_gradient_parameters
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\policy_gradient_parameters.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\policy_gradient_parameters.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Policy Gradient parameters.
 
     '

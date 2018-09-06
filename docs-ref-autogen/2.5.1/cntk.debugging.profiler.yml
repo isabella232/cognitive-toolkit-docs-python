@@ -11,14 +11,6 @@ items:
   - python
   module: cntk.debugging.profiler
   name: profiler
-  source:
-    id: profiler
-    path: bindings/python/cntk\debugging\profiler.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\profiler.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: module
   uid: cntk.debugging.profiler
 - fullName: cntk.debugging.profiler.disable_profiler
@@ -26,14 +18,6 @@ items:
   - python
   module: cntk.debugging.profiler
   name: disable_profiler
-  source:
-    id: disable_profiler
-    path: bindings/python/cntk\debugging\profiler.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\profiler.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 37
   summary: 'Disable profiler from gathering data.
 
     '
@@ -46,14 +30,6 @@ items:
   - python
   module: cntk.debugging.profiler
   name: enable_profiler
-  source:
-    id: enable_profiler
-    path: bindings/python/cntk\debugging\profiler.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\profiler.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 30
   summary: 'Enable profiler to gather data. Note that in training_session, profiler
     would be enabled automatically after the first check point
 
@@ -67,14 +43,6 @@ items:
   - python
   module: cntk.debugging.profiler
   name: start_profiler
-  source:
-    id: start_profiler
-    path: bindings/python/cntk\debugging\profiler.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\profiler.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 9
   summary: 'Start profiler to prepare performance statistics gathering. Note that
 
     the profiler is not enabled after start
@@ -107,14 +75,6 @@ items:
   - python
   module: cntk.debugging.profiler
   name: stop_profiler
-  source:
-    id: stop_profiler
-    path: bindings/python/cntk\debugging\profiler.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\debugging\profiler.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 23
   summary: 'Stop profiler from gathering performance statistics and flush them to
     file
 

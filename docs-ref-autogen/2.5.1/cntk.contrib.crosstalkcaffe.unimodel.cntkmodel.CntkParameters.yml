@@ -10,14 +10,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
   name: CntkParameters
-  source:
-    id: CntkParameters
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkmodel.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkmodel.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 10
   summary: 'The parameter of all CNTK op
 
     '

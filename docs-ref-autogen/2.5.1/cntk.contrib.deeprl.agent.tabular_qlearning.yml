@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.tabular_qlearning
   name: tabular_qlearning
-  source:
-    id: tabular_qlearning
-    path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\tabular_qlearning.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Tabular Q-learning.
 
     '

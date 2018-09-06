@@ -10,14 +10,6 @@ items:
   - python
   module: cntk.contrib.netopt.factorization
   name: factorization
-  source:
-    id: factorization
-    path: bindings/python/cntk\contrib\netopt\factorization.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\factorization.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: module
   uid: cntk.contrib.netopt.factorization
 - fullName: cntk.contrib.netopt.factorization.dense_factored
@@ -25,14 +17,6 @@ items:
   - python
   module: cntk.contrib.netopt.factorization
   name: dense_factored
-  source:
-    id: dense_factored
-    path: bindings/python/cntk\contrib\netopt\factorization.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\factorization.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 89
   summary: 'Perform the new model creation using the factored inputs W1 and W2.
 
     The returend function represents the new model.
@@ -91,14 +75,6 @@ items:
   - python
   module: cntk.contrib.netopt.factorization
   name: factor_dense
-  source:
-    id: factor_dense
-    path: bindings/python/cntk\contrib\netopt\factorization.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\factorization.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 40
   summary: 'Reduce the size of a dense model using the provided factor_function
 
     and the projection_function. filter_function is used to select dense
@@ -147,14 +123,6 @@ items:
   - python
   module: cntk.contrib.netopt.factorization
   name: svd_subprojection
-  source:
-    id: svd_subprojection
-    path: bindings/python/cntk\contrib\netopt\factorization.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\factorization.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 11
   summary: 'Calculate svd of the matrix and produce a subprojection based on k
 
     '

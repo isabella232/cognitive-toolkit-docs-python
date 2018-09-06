@@ -15,14 +15,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: CntkApiInstance
-  source:
-    id: CntkApiInstance
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 394
   summary: 'Instace CNTK ops and network
 
 
@@ -41,14 +33,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: export_model
-  source:
-    id: export_model
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 453
   summary: '   Save instanced CNTK model
 
     '
@@ -69,14 +53,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: get_functions
-  source:
-    id: get_functions
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 478
   summary: '   Return the functions of CNTK network
 
     '
@@ -99,14 +75,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: get_model
-  source:
-    id: get_model
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 466
   summary: '   Get instaced CNTK model
 
     '
@@ -129,14 +97,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: instance_functions
-  source:
-    id: instance_functions
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 428
   summary: '   Instace all nodes into CNTK ops
 
     '
@@ -169,14 +129,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: instance_input
-  source:
-    id: instance_input
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 409
   summary: '   Instace the inputs into CNTK variable
 
     '

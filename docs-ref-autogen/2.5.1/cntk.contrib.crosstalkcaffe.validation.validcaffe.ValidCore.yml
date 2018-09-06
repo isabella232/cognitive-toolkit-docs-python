@@ -11,14 +11,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.validation.validcaffe
   name: ValidCore
-  source:
-    id: ValidCore
-    path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcaffe.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcaffe.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 15
   summary: 'The abstract class to support different validation methods
 
 
@@ -32,14 +24,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.validation.validcaffe
   name: execute
-  source:
-    id: execute
-    path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcaffe.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcaffe.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 21
   summary: 'execute the validation
 
     '

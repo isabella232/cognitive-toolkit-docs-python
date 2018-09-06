@@ -11,14 +11,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.baseadapter
   name: Adapter
-  source:
-    id: Adapter
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\baseadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\baseadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 10
   summary: 'The abstact class of model reader
 
 
@@ -33,14 +25,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.baseadapter
   name: load_model
-  source:
-    id: load_model
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\baseadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\baseadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 19
   summary: 'load the network weights
 
     '

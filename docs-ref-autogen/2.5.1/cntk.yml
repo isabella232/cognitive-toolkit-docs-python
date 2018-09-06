@@ -3,13 +3,16 @@ api_name: []
 items:
 - children:
   - cntk.axis
-  - cntk.contrib
   - cntk.core
-  - cntk.debugging
   - cntk.default_options
   - cntk.device
-  - cntk.eval
   - cntk.initializer
+  - cntk.sample_installer
+  - cntk.tensor
+  - cntk.variables
+  - cntk.contrib
+  - cntk.debugging
+  - cntk.eval
   - cntk.io
   - cntk.layers
   - cntk.learners
@@ -19,23 +22,12 @@ items:
   - cntk.misc
   - cntk.ops
   - cntk.random
-  - cntk.sample_installer
-  - cntk.tensor
   - cntk.train
-  - cntk.variables
   fullName: cntk
   langs:
   - python
   module: cntk
   name: cntk
-  source:
-    id: cntk
-    path: bindings/python/cntk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: package
   uid: cntk
 references:
@@ -44,21 +36,11 @@ references:
   name: axis
   parent: cntk
   uid: cntk.axis
-- fullName: cntk.contrib
-  isExternal: false
-  name: contrib
-  parent: cntk
-  uid: cntk.contrib
 - fullName: cntk.core
   isExternal: false
   name: core
   parent: cntk
   uid: cntk.core
-- fullName: cntk.debugging
-  isExternal: false
-  name: debugging
-  parent: cntk
-  uid: cntk.debugging
 - fullName: cntk.default_options
   isExternal: false
   name: default_options
@@ -69,16 +51,41 @@ references:
   name: device
   parent: cntk
   uid: cntk.device
-- fullName: cntk.eval
-  isExternal: false
-  name: eval
-  parent: cntk
-  uid: cntk.eval
 - fullName: cntk.initializer
   isExternal: false
   name: initializer
   parent: cntk
   uid: cntk.initializer
+- fullName: cntk.sample_installer
+  isExternal: false
+  name: sample_installer
+  parent: cntk
+  uid: cntk.sample_installer
+- fullName: cntk.tensor
+  isExternal: false
+  name: tensor
+  parent: cntk
+  uid: cntk.tensor
+- fullName: cntk.variables
+  isExternal: false
+  name: variables
+  parent: cntk
+  uid: cntk.variables
+- fullName: cntk.contrib
+  isExternal: false
+  name: contrib
+  parent: cntk
+  uid: cntk.contrib
+- fullName: cntk.debugging
+  isExternal: false
+  name: debugging
+  parent: cntk
+  uid: cntk.debugging
+- fullName: cntk.eval
+  isExternal: false
+  name: eval
+  parent: cntk
+  uid: cntk.eval
 - fullName: cntk.io
   isExternal: false
   name: io
@@ -124,23 +131,8 @@ references:
   name: random
   parent: cntk
   uid: cntk.random
-- fullName: cntk.sample_installer
-  isExternal: false
-  name: sample_installer
-  parent: cntk
-  uid: cntk.sample_installer
-- fullName: cntk.tensor
-  isExternal: false
-  name: tensor
-  parent: cntk
-  uid: cntk.tensor
 - fullName: cntk.train
   isExternal: false
   name: train
   parent: cntk
   uid: cntk.train
-- fullName: cntk.variables
-  isExternal: false
-  name: variables
-  parent: cntk
-  uid: cntk.variables

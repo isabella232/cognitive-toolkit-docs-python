@@ -9,18 +9,14 @@ items:
   - cntk.logging.progress_print.TrainingSummaryProgressCallback.write
   class: cntk.logging.progress_print.TrainingSummaryProgressCallback
   fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.cntk_py.ProgressWriter
   langs:
   - python
   module: cntk.logging.progress_print
   name: TrainingSummaryProgressCallback
-  source:
-    id: TrainingSummaryProgressCallback
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 533
   summary: 'Helper to pass a callback function to be called after each training epoch
 
     to @cntk.train.trainer.Trainer,
@@ -61,14 +57,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: on_write_test_summary
-  source:
-    id: on_write_test_summary
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 558
   syntax:
     content: on_write_test_summary(samples, updates, summaries, aggregate_metric,
       elapsed_milliseconds)
@@ -86,14 +74,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: on_write_test_update
-  source:
-    id: on_write_test_update
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 553
   syntax:
     content: on_write_test_update(*args, **kwargs)
     parameters: []
@@ -105,14 +85,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: on_write_training_summary
-  source:
-    id: on_write_training_summary
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 555
   syntax:
     content: on_write_training_summary(samples, updates, summaries, aggregate_loss,
       aggregate_metric, elapsed_milliseconds)
@@ -131,14 +103,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: on_write_training_update
-  source:
-    id: on_write_training_update
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 551
   syntax:
     content: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
     parameters:
@@ -154,14 +118,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: write
-  source:
-    id: write
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 560
   syntax:
     content: write(*args, **kwargs)
     parameters: []

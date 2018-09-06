@@ -14,14 +14,6 @@ items:
   - python
   module: cntk.contrib.crosstalk
   name: RnnArgs
-  source:
-    id: RnnArgs
-    path: bindings/python/cntk\contrib\crosstalk\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalk\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 82
   summary: "Args inside RNN variable.\n\nfw_W\n   The numpy ndarray of input projection\
     \ parameter for RNN forward in shape (input_dim, num_gates * hidden_dim)\n\nfw_H\n\
     \   The numpy ndarray of hidden projection parameter for RNN forward in shape\

@@ -12,18 +12,14 @@ items:
   - cntk.logging.progress_print.TensorBoardProgressWriter.write_value
   class: cntk.logging.progress_print.TensorBoardProgressWriter
   fullName: cntk.logging.progress_print.TensorBoardProgressWriter
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.cntk_py.ProgressWriter
   langs:
   - python
   module: cntk.logging.progress_print
   name: TensorBoardProgressWriter
-  source:
-    id: TensorBoardProgressWriter
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 430
   summary: 'Allows writing various statistics (e.g. loss and metric) to TensorBoard
     event files during training/evaluation.
 
@@ -83,14 +79,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: close
-  source:
-    id: close
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 492
   summary: 'Make sure that any outstanding records are immediately persisted, then
     close any open files.
 
@@ -108,14 +96,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: flush
-  source:
-    id: flush
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 484
   summary: 'Make sure that any outstanding records are immediately persisted.
 
     '
@@ -130,14 +110,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: on_write_test_summary
-  source:
-    id: on_write_test_summary
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 522
   syntax:
     content: on_write_test_summary(samples, updates, summaries, aggregate_metric,
       elapsed_milliseconds)
@@ -155,14 +127,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: on_write_test_update
-  source:
-    id: on_write_test_update
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 509
   syntax:
     content: on_write_test_update(samples, updates, aggregate_metric)
     parameters:
@@ -177,14 +141,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: on_write_training_summary
-  source:
-    id: on_write_training_summary
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 516
   syntax:
     content: on_write_training_summary(samples, updates, summaries, aggregate_loss,
       aggregate_metric, elapsed_milliseconds)
@@ -203,14 +159,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: on_write_training_update
-  source:
-    id: on_write_training_update
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 504
   syntax:
     content: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
     parameters:
@@ -226,14 +174,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: write_image
-  source:
-    id: write_image
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 474
   syntax:
     content: write_image(name, data, step)
     parameters:
@@ -248,14 +188,6 @@ items:
   - python
   module: cntk.logging.progress_print
   name: write_value
-  source:
-    id: write_value
-    path: bindings/python/cntk\logging\progress_print.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\logging\progress_print.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 459
   summary: 'Record value of a scalar variable at the given time step.
 
     '

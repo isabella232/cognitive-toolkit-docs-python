@@ -10,14 +10,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.preprocessing
   name: preprocessing
-  source:
-    id: preprocessing
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\preprocessing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Base class for defining preprocessing, as well as two concrete examples.
 
     '

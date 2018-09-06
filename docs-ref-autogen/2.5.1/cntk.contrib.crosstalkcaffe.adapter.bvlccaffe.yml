@@ -2,6 +2,7 @@
 api_name: []
 items:
 - children:
+  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffe_pb2
   - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeimpl
   fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe
@@ -9,17 +10,14 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe
   name: bvlccaffe
-  source:
-    id: bvlccaffe
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: package
   uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe
 references:
+- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffe_pb2
+  isExternal: false
+  name: caffe_pb2
+  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe
+  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffe_pb2
 - fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   isExternal: false
   name: caffeadapter

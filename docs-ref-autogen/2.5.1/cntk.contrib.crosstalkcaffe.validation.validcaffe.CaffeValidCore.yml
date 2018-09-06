@@ -13,14 +13,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.validation.validcaffe
   name: CaffeValidCore
-  source:
-    id: CaffeValidCore
-    path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcaffe.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcaffe.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 30
   summary: 'Validation module of Caffe side.
 
 
@@ -34,14 +26,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.validation.validcaffe
   name: execute
-  source:
-    id: execute
-    path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcaffe.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcaffe.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 34
   summary: '   Execute the validation in Caffe side.
 
     '

@@ -14,14 +14,6 @@ items:
   - python
   module: cntk.layers.typing
   name: typing
-  source:
-    id: typing
-    path: bindings/python/cntk\layers\typing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\typing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: "The CNTK typing module contains basic CNTK type meta-classes for @cntk.functions.Function.update_signature\
     \ and type signatures for the CNTK @cntk.ops.functions.Function decorator.\n\n\
     \nThe type of a CNTK @cntk.variables.Variable is defined by five properties: `shape`,\
@@ -103,14 +95,6 @@ items:
   - python
   module: cntk.layers.typing
   name: Signature
-  source:
-    id: Signature
-    path: bindings/python/cntk\layers\typing.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\layers\typing.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 210
   summary: "`@Signature` is a decorator to implement the function-argument annotations\
     \ in Python-2.7,\nas needed by the `@Function` decorator.\nThis is only needed\
     \ when you have not yet migrated to Python 3.x.\n\nNote: Although this is aimed\

@@ -15,18 +15,10 @@ items:
   - python
   module: cntk.random
   name: random
-  source:
-    id: random
-    path: bindings/python/cntk\random\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\random\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Functions that generate random numbers with respect to designated distributions.
 
     '
-  type: package
+  type: module
   uid: cntk.random
 - example:
   - "\n```\n\n>>> b = C.random.bernoulli((2,3), seed=98052)\n>>> b.eval(device=C.cpu())\
@@ -38,14 +30,6 @@ items:
   - python
   module: cntk.random
   name: bernoulli
-  source:
-    id: bernoulli
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 105
   summary: 'Generates samples from the Bernoulli distribution with success probability
     *mean*.
 
@@ -105,14 +89,6 @@ items:
   - python
   module: cntk.random
   name: bernoulli_like
-  source:
-    id: bernoulli_like
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 229
   summary: 'Generates samples from the Bernoulli distribution with success probability
     *mean*.
 
@@ -160,16 +136,9 @@ items:
   - python
   module: cntk.random
   name: gumbel
-  seealsoContent: "See also: [The Gumbel-Max Trick](https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/).\
-    \ \n"
-  source:
-    id: gumbel
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 74
+  seealsoContent: '  [The Gumbel-Max Trick](https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/).
+
+    '
   summary: 'Generates samples from the Gumbel distribution with location *loc* and
     scale *scale*.
 
@@ -237,16 +206,9 @@ items:
   - python
   module: cntk.random
   name: gumbel_like
-  seealsoContent: "See also: [The Gumbel-Max Trick](https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/).\
-    \ \n"
-  source:
-    id: gumbel_like
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 192
+  seealsoContent: '  [The Gumbel-Max Trick](https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/).
+
+    '
   summary: 'Generates samples from the Gumbel distribution with location *loc* and
     scale *scale*.
 
@@ -300,14 +262,6 @@ items:
   - python
   module: cntk.random
   name: normal
-  source:
-    id: normal
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 47
   summary: 'Generates samples from the normal distribution with mean *mean* and standard
     deviation *scale*.
 
@@ -375,14 +329,6 @@ items:
   - python
   module: cntk.random
   name: normal_like
-  source:
-    id: normal_like
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 160
   summary: 'Generates samples from the normal distribution with mean *mean* and standard
     deviation *scale*.
 
@@ -436,14 +382,6 @@ items:
   - python
   module: cntk.random
   name: uniform
-  source:
-    id: uniform
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 19
   summary: 'Generates samples from the uniform distribution in the interval [*low*,`high`).
 
     '
@@ -508,14 +446,6 @@ items:
   - python
   module: cntk.random
   name: uniform_like
-  source:
-    id: uniform_like
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 131
   summary: 'Generates samples from the uniform distribution in the interval [*low*,`high`).
 
     '

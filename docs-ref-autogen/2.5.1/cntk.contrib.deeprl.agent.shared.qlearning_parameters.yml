@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.qlearning_parameters
   name: qlearning_parameters
-  source:
-    id: qlearning_parameters
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\qlearning_parameters.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\qlearning_parameters.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Q learning parameters.
 
     '

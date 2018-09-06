@@ -14,14 +14,6 @@ items:
   - python
   module: cntk.ops.functions
   name: ModelFormat
-  source:
-    id: ModelFormat
-    path: bindings/python/cntk\ops\functions.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\ops\functions.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 31
   summary: 'Describes the supported disk format for CNTK model.
 
 
@@ -38,14 +30,6 @@ items:
   module: cntk.ops.functions
   name: CNTKv2
   parent: cntk.ops.functions.ModelFormat
-  source:
-    id: CNTKv2
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Default CNTK version 2 format, it supports all CNTK functionalities.
 
     '
@@ -64,14 +48,6 @@ items:
   module: cntk.ops.functions
   name: ONNX
   parent: cntk.ops.functions.ModelFormat
-  source:
-    id: ONNX
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: '*Open Neural Network Exchange format from https* -- //github.com/onnx/onnx,
     ONNX currently support
 

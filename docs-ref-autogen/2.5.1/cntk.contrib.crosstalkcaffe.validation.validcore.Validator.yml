@@ -12,14 +12,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.validation.validcore
   name: Validator
-  source:
-    id: Validator
-    path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcore.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcore.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 18
   summary: 'The validation module to check the difference between original Caffe and
     converted CNTK models
 
@@ -36,14 +28,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.validation.validcore
   name: activate
-  source:
-    id: activate
-    path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcore.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcore.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 76
   summary: '   The function executes target validation core
 
     '
@@ -64,14 +48,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.validation.validcore
   name: val_network
-  source:
-    id: val_network
-    path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcore.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcore.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 27
   summary: "   The function executes CNTK forward and dumps watched nodes into temporary\
     \ files with\n      numpy.mat formats\n"
   syntax:

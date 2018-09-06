@@ -14,14 +14,6 @@ items:
   - python
   module: cntk.learners
   name: UnitType
-  source:
-    id: UnitType
-    path: bindings/python/cntk\learners\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\learners\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 33
   summary: 'Deprecated:: 2.2
 
 
@@ -43,14 +35,6 @@ items:
   module: cntk.learners
   name: minibatch
   parent: cntk.learners.UnitType
-  source:
-    id: minibatch
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Schedule contains per-minibatch values (and need to be re-scaled by the
     learner
 
@@ -72,14 +56,6 @@ items:
   module: cntk.learners
   name: sample
   parent: cntk.learners.UnitType
-  source:
-    id: sample
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Schedule contains per-sample values.
 
     '

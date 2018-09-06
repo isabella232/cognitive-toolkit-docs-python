@@ -12,14 +12,6 @@ items:
   - python
   module: cntk.contrib.netopt
   name: netopt
-  source:
-    id: netopt
-    path: bindings/python/cntk\contrib\netopt\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Netowrk optimization alogorithms.
 
     '
@@ -30,14 +22,6 @@ items:
   - python
   module: cntk.contrib.netopt
   name: try_register_native_convolve_function
-  source:
-    id: try_register_native_convolve_function
-    path: bindings/python/cntk\contrib\netopt\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 12
   summary: 'Register the native binary convolution function that calls halide
 
     operations internally.

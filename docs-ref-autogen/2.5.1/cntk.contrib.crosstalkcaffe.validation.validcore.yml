@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.validation.validcore
   name: validcore
-  source:
-    id: validcore
-    path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcore.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\validation\validcore.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   type: module
   uid: cntk.contrib.crosstalkcaffe.validation.validcore
 references:

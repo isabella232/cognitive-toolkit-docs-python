@@ -14,14 +14,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: CaffeAdapter
-  source:
-    id: CaffeAdapter
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 342
   summary: 'Adapt Caffe prototxt and weights into uniform format
 
 
@@ -37,14 +29,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: adapt_solver
-  source:
-    id: adapt_solver
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 396
   summary: '   Adapt Caffe solver into CNTK format
 
     '
@@ -65,14 +49,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   name: load_model
-  source:
-    id: load_model
-    path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 355
   summary: '   Load prototxt and weights of Caffe, parsing them into uniform model
 
     '

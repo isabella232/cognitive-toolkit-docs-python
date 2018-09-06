@@ -23,14 +23,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: SignWithEstimation
-  source:
-    id: SignWithEstimation
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 12
   summary: '
 
 
@@ -47,14 +39,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: backward
-  source:
-    id: backward
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 57
   syntax:
     content: backward(state, root_gradients)
     parameters:
@@ -68,14 +52,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: forward
-  source:
-    id: forward
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 46
   syntax:
     content: forward(argument, device, outputs_to_retain)
     parameters:
@@ -90,14 +66,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: gradFunc
-  source:
-    id: gradFunc
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 33
   syntax:
     content: gradFunc(arg)
     parameters:
@@ -110,14 +78,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: infer_outputs
-  source:
-    id: infer_outputs
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 68
   syntax:
     content: infer_outputs()
     parameters: []
@@ -129,14 +89,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: signFunc
-  source:
-    id: signFunc
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 24
   syntax:
     content: signFunc(arg)
     parameters:

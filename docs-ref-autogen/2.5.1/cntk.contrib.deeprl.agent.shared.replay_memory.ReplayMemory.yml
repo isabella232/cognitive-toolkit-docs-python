@@ -14,14 +14,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.replay_memory
   name: ReplayMemory
-  source:
-    id: ReplayMemory
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\replay_memory.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\replay_memory.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 28
   summary: 'Replay memory to store samples of experience.
 
 
@@ -46,14 +38,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.replay_memory
   name: sample_minibatch
-  source:
-    id: sample_minibatch
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\replay_memory.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\replay_memory.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 126
   summary: 'Sample minibatch of size batch_size.
 
     '
@@ -69,14 +53,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.replay_memory
   name: size
-  source:
-    id: size
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\replay_memory.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\replay_memory.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 119
   summary: 'Return the current number of transitions.
 
     '
@@ -91,14 +67,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.replay_memory
   name: store
-  source:
-    id: store
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\replay_memory.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\replay_memory.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 49
   summary: 'Store a transition in replay memory.
 
 
@@ -116,14 +84,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.replay_memory
   name: update_priority
-  source:
-    id: update_priority
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\replay_memory.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\replay_memory.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 65
   summary: 'Update priority of transitions.
 
     '

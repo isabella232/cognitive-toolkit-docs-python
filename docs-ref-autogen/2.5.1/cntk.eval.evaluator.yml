@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.eval.evaluator
   name: evaluator
-  source:
-    id: evaluator
-    path: bindings/python/cntk\eval\evaluator.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\eval\evaluator.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'An evaluator provides functionality to evaluate minibatches against the
     specified evaluation function.
 

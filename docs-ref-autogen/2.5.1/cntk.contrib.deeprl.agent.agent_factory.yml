@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.agent_factory
   name: agent_factory
-  source:
-    id: agent_factory
-    path: bindings/python/cntk\contrib\deeprl\agent\agent_factory.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\agent_factory.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Factory method to create an agent.
 
     '
@@ -26,14 +18,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.agent_factory
   name: make_agent
-  source:
-    id: make_agent
-    path: bindings/python/cntk\contrib\deeprl\agent\agent_factory.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\agent_factory.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 16
   summary: 'Choose appropriate method to create an agent.
 
     '

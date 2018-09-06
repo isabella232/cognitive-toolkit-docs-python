@@ -15,14 +15,6 @@ items:
   - python
   module: cntk.variables
   name: Record
-  source:
-    id: Record
-    path: bindings/python/cntk\variables.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\variables.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 16
   summary: 'Easy construction of a record (=immutable singleton class) from keyword
     arguments.
 
@@ -51,14 +43,6 @@ items:
   - python
   module: cntk.variables
   name: updated_with
-  source:
-    id: updated_with
-    path: bindings/python/cntk\variables.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\variables.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 42
   summary: 'Create a new Record from an existing one with members modified or added.
 
     '

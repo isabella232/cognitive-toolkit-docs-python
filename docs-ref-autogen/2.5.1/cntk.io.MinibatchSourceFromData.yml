@@ -52,14 +52,6 @@ items:
   - python
   module: cntk.io
   name: MinibatchSourceFromData
-  source:
-    id: MinibatchSourceFromData
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 521
   summary: 'This wraps in-memory data as a CNTK MinibatchSource object (aka "reader"),
     used to feed the data into a TrainingSession.
 
@@ -137,14 +129,6 @@ items:
   - python
   module: cntk.io
   name: get_checkpoint_state
-  source:
-    id: get_checkpoint_state
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 739
   summary: 'Gets the checkpoint state of the MinibatchSource.
 
     '
@@ -167,14 +151,6 @@ items:
   - python
   module: cntk.io
   name: next_minibatch
-  source:
-    id: next_minibatch
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 684
   syntax:
     content: next_minibatch(num_samples, number_of_workers=1, worker_rank=0, device=None)
     parameters:
@@ -193,14 +169,6 @@ items:
   - python
   module: cntk.io
   name: restore_from_checkpoint
-  source:
-    id: restore_from_checkpoint
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 750
   summary: 'Restores the MinibatchSource state from the specified checkpoint.
 
     '
@@ -221,14 +189,6 @@ items:
   - python
   module: cntk.io
   name: stream_infos
-  source:
-    id: stream_infos
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 679
   syntax:
     content: stream_infos()
     parameters: []

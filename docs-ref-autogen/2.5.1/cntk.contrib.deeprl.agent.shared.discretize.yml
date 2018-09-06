@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.discretize
   name: discretize
-  source:
-    id: discretize
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\discretize.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\discretize.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Discretize continuous environment space.
 
     '

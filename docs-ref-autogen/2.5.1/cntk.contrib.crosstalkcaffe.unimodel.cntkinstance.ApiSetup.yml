@@ -20,14 +20,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: ApiSetup
-  source:
-    id: ApiSetup
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 144
   summary: 'Setup CNTK ops with given parameters
 
 
@@ -50,14 +42,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: batch_norm
-  source:
-    id: batch_norm
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 184
   summary: '   Setup batch normalization op with given parameters
 
     '
@@ -92,14 +76,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: convolution
-  source:
-    id: convolution
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 148
   summary: '   Setup convolution op with given parameters
 
     '
@@ -134,14 +110,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: dense
-  source:
-    id: dense
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 269
   summary: '   Setup dense op with given parameters
 
     '
@@ -176,14 +144,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: dropout
-  source:
-    id: dropout
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 324
   summary: '   Setup dropout op with given parameters
 
     '
@@ -218,14 +178,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: lrn
-  source:
-    id: lrn
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 341
   summary: '   Setup lrn op with given parameters
 
     '
@@ -260,14 +212,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: plus
-  source:
-    id: plus
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 306
   summary: '   Setup plus op with given parameters
 
     '
@@ -302,14 +246,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: pooling
-  source:
-    id: pooling
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 230
   summary: '   Setup pooling op with given parameters
 
     '
@@ -344,14 +280,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: relu
-  source:
-    id: relu
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 252
   summary: '   Setup ReLU op with given parameters
 
     '
@@ -386,14 +314,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: softmax
-  source:
-    id: softmax
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 376
   summary: '   Setup softmax op with given parameters
 
     '
@@ -428,14 +348,6 @@ items:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   name: splice
-  source:
-    id: splice
-    path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\crosstalkcaffe\unimodel\cntkinstance.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 360
   summary: '   Setup splice op with given parameters
 
     '

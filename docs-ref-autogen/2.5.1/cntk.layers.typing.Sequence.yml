@@ -10,14 +10,6 @@ items:
   - python
   module: cntk.layers.typing
   name: Sequence
-  source:
-    id: Sequence
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Meta-meta class to denote a sequence of data tensors. Example: `Sequence[Tensor[13,42]]`
 
     '

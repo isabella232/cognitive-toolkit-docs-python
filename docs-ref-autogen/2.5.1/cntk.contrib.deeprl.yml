@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.contrib.deeprl
   name: deeprl
-  source:
-    id: deeprl
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   type: package
   uid: cntk.contrib.deeprl
 references:

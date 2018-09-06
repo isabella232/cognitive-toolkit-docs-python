@@ -4,10 +4,10 @@ items:
   - cntk
   langs:
   - python
-  name: pyexample
+  name: cntk
   summary: ''
   type: package
-  uid: project-pyexample
+  uid: project-cntk
 references:
 - fullname: cntk
   isExternal: false

@@ -7,18 +7,16 @@ items:
   - cntk.io.UserDeserializer.stream_infos
   class: cntk.io.UserDeserializer
   fullName: cntk.io.UserDeserializer
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: cntk.cntk_py.DataDeserializer
+    type: cntk.cntk_py.SwigDataDeserializer
   langs:
   - python
   module: cntk.io
   name: UserDeserializer
-  source:
-    id: UserDeserializer
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 1136
   summary: "User deserializer is a base class for all user defined deserializers.\n\
     To support deserialization of a custom format, please implement the public\nmethods\
     \ of this class and pass an instance of it to MinibatchSource.\nA UserDeserializer\
@@ -42,14 +40,6 @@ items:
   - python
   module: cntk.io
   name: get_chunk
-  source:
-    id: get_chunk
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 1180
   summary: 'Should return a dictionary of stream name -> data of the chunk, where
     data is csr_matrix/numpy array in sample mode,
 
@@ -77,14 +67,6 @@ items:
   - python
   module: cntk.io
   name: num_chunks
-  source:
-    id: num_chunks
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 1174
   summary: 'Should return the total number of chunks.
 
     '
@@ -99,14 +81,6 @@ items:
   - python
   module: cntk.io
   name: stream_infos
-  source:
-    id: stream_infos
-    path: bindings/python/cntk\io\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\io\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 1164
   summary: 'Should return a list of meta information @cntk.io.StreamInformation about
     all
 

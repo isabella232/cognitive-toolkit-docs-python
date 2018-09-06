@@ -17,36 +17,18 @@ items:
   - python
   module: cntk.losses
   name: losses
-  source:
-    id: losses
-    path: bindings/python/cntk\losses\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\losses\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Loss functions.
 
     '
-  type: package
+  type: module
   uid: cntk.losses
 - fullName: cntk.losses.binary_cross_entropy
   langs:
   - python
   module: cntk.losses
   name: binary_cross_entropy
-  source:
-    id: binary_cross_entropy
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 94
   summary: 'Computes the binary cross entropy (aka logistic loss) between the `output`
     and `target`.
-
-
 
     '
   syntax:
@@ -84,14 +66,6 @@ items:
   - python
   module: cntk.losses
   name: cosine_distance
-  source:
-    id: cosine_distance
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 22
   summary: 'Computes the cosine distance between `x` and `y`:
 
     '
@@ -128,14 +102,6 @@ items:
   - python
   module: cntk.losses
   name: cosine_distance_with_negative_samples
-  source:
-    id: cosine_distance_with_negative_samples
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 51
   summary: 'Given minibatches for `x` and `y`, this function computes for each element
     in *x* the cosine distance between
 
@@ -225,14 +191,6 @@ items:
   - python
   module: cntk.losses
   name: cross_entropy_with_softmax
-  source:
-    id: cross_entropy_with_softmax
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 140
   summary: 'This operation computes the cross entropy between the `target_vector`
     and
 
@@ -293,14 +251,6 @@ items:
   - python
   module: cntk.losses
   name: hierarchical_softmax_layer
-  source:
-    id: hierarchical_softmax_layer
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 366
   summary: 'A two layers hierarchical softmax function:
 
     '
@@ -348,14 +298,6 @@ items:
   - python
   module: cntk.losses
   name: lambda_rank
-  source:
-    id: lambda_rank
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 212
   summary: 'Groups samples according to `group`, sorts
 
     them within each group based on `output` and
@@ -419,14 +361,6 @@ items:
   - python
   module: cntk.losses
   name: lattice_sequence_with_softmax
-  source:
-    id: lattice_sequence_with_softmax
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 354
   syntax:
     content: lattice_sequence_with_softmax(label, prediction, loglikelihood, lattice,
       symListPath, phonePath, stateListPath, transProbPath, latticeConfigPath='LatticeNode.config',
@@ -504,16 +438,10 @@ items:
   - python
   module: cntk.losses
   name: nce_loss
-  seealsoContent: "See also: [1] C. Dyer. [Notes on Noise Contrastive Estimation and\
-    \ Negative Sampling [pdf]](http://demo.clab.cs.cmu.edu/cdyer/nce_notes.pdf). \n"
-  source:
-    id: nce_loss
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 268
+  seealsoContent: '  [1] C. Dyer. [Notes on Noise Contrastive Estimation and Negative
+    Sampling [pdf]](http://demo.clab.cs.cmu.edu/cdyer/nce_notes.pdf).
+
+    '
   summary: 'Computes the noise contrastive estimation loss. This implementation mostly
 
     follows Chris Dyer''s notes [1]. At a high level, this layer draws
@@ -654,14 +582,6 @@ items:
   - python
   module: cntk.losses
   name: squared_error
-  source:
-    id: squared_error
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 182
   summary: 'This operation computes the sum of the squared difference between elements
 
     in the two input matrices. The result is a scalar (i.e., one by one matrix).
@@ -699,18 +619,8 @@ items:
   - python
   module: cntk.losses
   name: weighted_binary_cross_entropy
-  source:
-    id: weighted_binary_cross_entropy
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 116
   summary: 'This operation computes the weighted binary cross entropy (aka logistic
     loss) between the `output` and `target`.
-
-
 
     '
   syntax:

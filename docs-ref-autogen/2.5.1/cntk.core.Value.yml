@@ -16,18 +16,14 @@ items:
   - cntk.core.Value.ONE_HOT_SKIP
   class: cntk.core.Value
   fullName: cntk.core.Value
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.cntk_py.Value
   langs:
   - python
   module: cntk.core
   name: Value
-  source:
-    id: Value
-    path: bindings/python/cntk\core.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\core.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 244
   summary: 'Internal representation of minibatch data.
 
 
@@ -82,14 +78,6 @@ items:
   - python
   module: cntk.core
   name: as_sequences
-  source:
-    id: as_sequences
-    path: bindings/python/cntk\core.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\core.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 280
   summary: 'Convert a Value to a sequence of NumPy arrays that have their masked
 
     entries removed.
@@ -117,14 +105,6 @@ items:
   - python
   module: cntk.core
   name: create
-  source:
-    id: create
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 366
   summary: 'Creates a @cntk.core.Value object.
 
     '
@@ -184,14 +164,6 @@ items:
   - python
   module: cntk.core
   name: data
-  source:
-    id: data
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Retrieves the underlying @cntk.core.NDArrayView instance.
 
     '
@@ -204,14 +176,6 @@ items:
   - python
   module: cntk.core
   name: device
-  source:
-    id: device
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Retrieves the @cntk.device.DeviceDescriptor instance.
 
     '
@@ -224,14 +188,6 @@ items:
   - python
   module: cntk.core
   name: dtype
-  source:
-    id: dtype
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'NumPy data type of the instance
 
     '
@@ -244,14 +200,6 @@ items:
   - python
   module: cntk.core
   name: is_read_only
-  source:
-    id: is_read_only
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Whether the data is read-only
 
     '
@@ -264,14 +212,6 @@ items:
   - python
   module: cntk.core
   name: is_sparse
-  source:
-    id: is_sparse
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Whether the data is sparse or dense
 
     '
@@ -284,14 +224,6 @@ items:
   - python
   module: cntk.core
   name: is_valid
-  source:
-    id: is_valid
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'Whether the value is valid or has been invalidated by another forward
     and/or backward pass
 
@@ -319,14 +251,6 @@ items:
   - python
   module: cntk.core
   name: mask
-  source:
-    id: mask
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: "The mask matrix of this value. Each row denotes a sequence with its\n\
     elements describing the mask of the element:\n\n   * 2: beginning of sequence\
     \ (e.g. an LSTM would be reset) \n\n   * 1: valid element \n\n   * 0: invalid\
@@ -360,14 +284,6 @@ items:
   - python
   module: cntk.core
   name: one_hot
-  source:
-    id: one_hot
-    path: bindings/python/cntk\internal\swig_helper.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\internal\swig_helper.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 472
   summary: 'Converts `batch` into a @cntk.core.Value object of `dtype`
 
     such that the integer data in `batch` is interpreted as the indices
@@ -422,14 +338,6 @@ items:
   - python
   module: cntk.core
   name: shape
-  source:
-    id: shape
-    path: null
-    remote:
-      branch: release/2.5.1
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
   summary: 'The rectangular shape of this value. I.e., if this value has sequences
 
     of varying lengths, the shape will have the max sequence length in the

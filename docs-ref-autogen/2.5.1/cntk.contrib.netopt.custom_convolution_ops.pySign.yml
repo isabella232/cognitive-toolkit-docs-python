@@ -21,14 +21,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: pySign
-  source:
-    id: pySign
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 74
   summary: '
 
 
@@ -43,14 +35,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: backward
-  source:
-    id: backward
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 83
   syntax:
     content: backward(state, root_gradients)
     parameters:
@@ -64,14 +48,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: forward
-  source:
-    id: forward
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 78
   syntax:
     content: forward(argument, device=None, outputs_to_retain=None)
     parameters:
@@ -88,14 +64,6 @@ items:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
   name: infer_outputs
-  source:
-    id: infer_outputs
-    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 89
   syntax:
     content: infer_outputs()
     parameters: []

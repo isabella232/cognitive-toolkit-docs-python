@@ -8,14 +8,6 @@ items:
   - python
   module: cntk.contrib.deeprl.agent.shared.replay_memory
   name: replay_memory
-  source:
-    id: replay_memory
-    path: bindings/python/cntk\contrib\deeprl\agent\shared\replay_memory.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\contrib\deeprl\agent\shared\replay_memory.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 0
   summary: 'Replay memory for Q learning.
 
     '

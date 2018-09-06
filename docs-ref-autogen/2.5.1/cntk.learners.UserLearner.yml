@@ -5,18 +5,14 @@ items:
   - cntk.learners.UserLearner.update
   class: cntk.learners.UserLearner
   fullName: cntk.learners.UserLearner
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.cntk_py.Learner
   langs:
   - python
   module: cntk.learners
   name: UserLearner
-  source:
-    id: UserLearner
-    path: bindings/python/cntk\learners\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\learners\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 160
   summary: 'Base class of all user-defined learners. To implement your own learning
 
     algorithm, derive from this class and override the @cntk.learners.UserLearner.update.
@@ -38,14 +34,6 @@ items:
   - python
   module: cntk.learners
   name: update
-  source:
-    id: update
-    path: bindings/python/cntk\learners\__init__.py
-    remote:
-      branch: release/2.5.1
-      path: bindings/python/cntk\learners\__init__.py
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: 201
   summary: 'Update the parameters associated with this learner.
 
     '
