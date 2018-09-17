@@ -29,7 +29,8 @@ items:
     of floating point numbers that cannot be modified.
 
 
-    A Constant is a @cntk.variables.Variable and therefore inherits all its methods.
+    A Constant is a <xref:cntk.variables.Variable> and therefore inherits all its
+    methods.
 
 
     '
@@ -59,7 +60,7 @@ items:
         '
       id: device
       type:
-      - cntk.device.DeviceDescriptor
+      - <xref:cntk.device.DeviceDescriptor>
     - description: 'an optional name for this constant.
 
         '

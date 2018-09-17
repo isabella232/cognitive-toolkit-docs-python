@@ -64,7 +64,7 @@ items:
         '
       id: model
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
     - description: 'Function with one or two outputs, representing loss and, if given,
         evaluation metric
 
@@ -76,9 +76,9 @@ items:
         '
       id: criterion
       type:
-      - tuple of cntk.ops.functions.Function
-      - cntk.variables.Variable
-    - description: 'list of learners from @cntk.learners
+      - tuple of <xref:cntk.ops.functions.Function>
+      - <xref:cntk.variables.Variable>
+    - description: 'list of learners from <xref:cntk.learners>
 
         '
       id: parameter_learners
@@ -86,7 +86,7 @@ items:
       - list
     - description: 'optionally, list of
 
-        progress writers from @cntk.logging to automatically track training
+        progress writers from <xref:cntk.logging> to automatically track training
 
         progress.
 
@@ -295,7 +295,7 @@ items:
   module: cntk.train.trainer
   name: test_minibatch
   summary: "Test the model on the specified batch of samples using the evaluation\n\
-    Function specified during construction of the Trainer.\n\nNote: See @cntk.ops.functions.Function.forward\
+    Function specified during construction of the Trainer.\n\nNote: See <xref:cntk.ops.functions.Function.forward>\
     \ for examples on passing input data. \n"
   syntax:
     content: test_minibatch(arguments, device=None)
@@ -333,8 +333,8 @@ items:
   module: cntk.train.trainer
   name: train_minibatch
   summary: "Optimize model parameters using the specified 'arguments' minibatch of\
-    \ training samples.\n\nNote: See @cntk.ops.functions.Function.forward for examples\
-    \ on passing input data. \n"
+    \ training samples.\n\nNote: See <xref:cntk.ops.functions.Function.forward> for\
+    \ examples on passing input data. \n"
   syntax:
     content: train_minibatch(arguments, outputs=None, device=None, is_sweep_end=None)
     parameters:

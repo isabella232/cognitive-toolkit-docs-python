@@ -57,7 +57,7 @@ items:
         '
       id: caffe_parameters
       type:
-      - caffe.Parameters
+      - <xref:caffe.Parameters>
     - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
 
         The input information of current layer
@@ -97,7 +97,7 @@ items:
         '
       id: caffe_parameters
       type:
-      - caffe.Parameters
+      - <xref:caffe.Parameters>
     - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
 
         The input information of current layer
@@ -137,7 +137,7 @@ items:
         '
       id: caffe_parameters
       type:
-      - caffe.Parameters
+      - <xref:caffe.Parameters>
     - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
 
         The input information of current layer
@@ -184,7 +184,7 @@ items:
         '
       id: caffe_parameters
       type:
-      - caffe.Parameters
+      - <xref:caffe.Parameters>
     - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
 
         The input information of current layer
@@ -224,7 +224,7 @@ items:
         '
       id: caffe_parameters
       type:
-      - caffe.Parameters
+      - <xref:caffe.Parameters>
     - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
 
         The input information of current layer
@@ -264,7 +264,7 @@ items:
         '
       id: caffe_parameters
       type:
-      - caffe.Parameters
+      - <xref:caffe.Parameters>
     - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
 
         The input information of current layer
@@ -304,7 +304,7 @@ items:
         '
       id: caffe_parameters
       type:
-      - caffe.Parameters
+      - <xref:caffe.Parameters>
     - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
 
         The input information of current layer
@@ -344,7 +344,7 @@ items:
         '
       id: caffe_parameters
       type:
-      - caffe.Parameters
+      - <xref:caffe.Parameters>
     - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
 
         The input information of current layer
@@ -384,7 +384,7 @@ items:
         '
       id: caffe_parameters
       type:
-      - caffe.Parameters
+      - <xref:caffe.Parameters>
     - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
 
         The input information of current layer
@@ -424,7 +424,7 @@ items:
         '
       id: caffe_parameters
       type:
-      - caffe.Parameters
+      - <xref:caffe.Parameters>
     - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
 
         The input information of current layer
@@ -464,7 +464,7 @@ items:
         '
       id: caffe_parameters
       type:
-      - caffe.Parameters
+      - <xref:caffe.Parameters>
     - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
 
         The input information of current layer
@@ -504,7 +504,7 @@ items:
         '
       id: caffe_parameters
       type:
-      - caffe.Parameters
+      - <xref:caffe.Parameters>
     - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
 
         The input information of current layer

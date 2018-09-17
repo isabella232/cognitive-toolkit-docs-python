@@ -66,7 +66,7 @@ items:
 
         '
       type:
-      - cntk.train.distributed.WorkerDescriptor
+      - <xref:cntk.train.distributed.WorkerDescriptor>
   type: method
   uid: cntk.train.distributed.Communicator.current_worker
 - class: cntk.train.distributed.Communicator
@@ -140,7 +140,7 @@ items:
 
         '
       type:
-      - (*list*) of cntk.train.distributed.WorkerDescriptor
+      - (*list*) of <xref:cntk.train.distributed.WorkerDescriptor>
   type: method
   uid: cntk.train.distributed.Communicator.workers
 references:
@@ -179,8 +179,8 @@ references:
   name: workers
   parent: cntk.train.distributed.Communicator
   uid: cntk.train.distributed.Communicator.workers
-- fullName: (*list*) of cntk.train.distributed.WorkerDescriptor
-  name: (*list*)WorkerDescriptor
+- fullName: (*list*) of <xref:cntk.train.distributed.WorkerDescriptor>
+  name: (*list*)WorkerDescriptor>
   spec.python:
   - fullName: (
     name: (
@@ -189,7 +189,7 @@ references:
     uid: '*list*'
   - fullName: )
     name: )
-  - fullName: ' of cntk.train.distributed.WorkerDescriptor'
-    name: WorkerDescriptor
-    uid: ' of cntk.train.distributed.WorkerDescriptor'
-  uid: (*list*) of cntk.train.distributed.WorkerDescriptor
+  - fullName: ' of <xref:cntk.train.distributed.WorkerDescriptor>'
+    name: WorkerDescriptor>
+    uid: ' of <xref:cntk.train.distributed.WorkerDescriptor>'
+  uid: (*list*) of <xref:cntk.train.distributed.WorkerDescriptor>

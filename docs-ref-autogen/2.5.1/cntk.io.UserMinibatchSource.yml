@@ -50,7 +50,7 @@ items:
     content: get_checkpoint_state()
     parameters: []
     return:
-      description: 'dictionary, that can be later used on @cntk.io.UserMinibatchSource.restore_from_checkpoint.
+      description: 'dictionary, that can be later used on <xref:cntk.io.UserMinibatchSource.restore_from_checkpoint>.
 
         '
   type: method
@@ -112,7 +112,7 @@ items:
       type:
       - DeviceDescriptor, defaults to None
     return:
-      description: 'mapping of @cntk.io.StreamInformation to @cntk.io.MinibatchData
+      description: 'mapping of <xref:cntk.io.StreamInformation> to <xref:cntk.io.MinibatchData>
 
         '
   type: method
@@ -169,7 +169,7 @@ items:
     content: stream_infos()
     parameters: []
     return:
-      description: 'list of @cntk.io.StreamInformation instances
+      description: 'list of <xref:cntk.io.StreamInformation> instances
 
         '
   type: method

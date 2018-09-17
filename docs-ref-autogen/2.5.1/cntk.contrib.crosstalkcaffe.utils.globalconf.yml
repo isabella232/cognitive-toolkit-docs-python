@@ -33,7 +33,7 @@ items:
       type:
       - str
     return:
-      description: '@cntk.contrib.crosstalkcaffe.utils.GlobalConf
+      description: '<xref:cntk.contrib.crosstalkcaffe.utils.GlobalConf>
 
         '
   type: function

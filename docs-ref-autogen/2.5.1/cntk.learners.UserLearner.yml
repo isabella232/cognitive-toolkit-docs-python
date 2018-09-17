@@ -15,7 +15,7 @@ items:
   name: UserLearner
   summary: 'Base class of all user-defined learners. To implement your own learning
 
-    algorithm, derive from this class and override the @cntk.learners.UserLearner.update.
+    algorithm, derive from this class and override the <xref:cntk.learners.UserLearner.update>.
 
 
     Certain optimizers (such as AdaGrad) require additional storage.
@@ -40,7 +40,7 @@ items:
   syntax:
     content: update(gradient_values, training_sample_count, sweep_end)
     parameters:
-    - description: 'maps @cntk.variables.Parameter to
+    - description: 'maps <xref:cntk.variables.Parameter> to
 
         a NumPy array containing the first order gradient values for the
 

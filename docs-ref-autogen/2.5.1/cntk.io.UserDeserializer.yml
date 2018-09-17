@@ -81,8 +81,8 @@ items:
   - python
   module: cntk.io
   name: stream_infos
-  summary: 'Should return a list of meta information @cntk.io.StreamInformation about
-    all
+  summary: 'Should return a list of meta information <xref:cntk.io.StreamInformation>
+    about all
 
     streams exposed by the deserializer.
 
@@ -91,7 +91,7 @@ items:
     content: stream_infos()
     parameters: []
     return:
-      description: 'list of @cntk.io.StreamInformation exposed by the deserializer
+      description: 'list of <xref:cntk.io.StreamInformation> exposed by the deserializer
 
         '
   type: method

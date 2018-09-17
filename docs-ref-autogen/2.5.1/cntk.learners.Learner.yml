@@ -84,7 +84,7 @@ items:
         '
       id: learning_rate
       type:
-      - output of cntk.learners.learning_parameter_schedule
+      - output of <xref:cntk.learners.learning_parameter_schedule>
   type: method
   uid: cntk.learners.Learner.reset_learning_rate
 - class: cntk.learners.Learner
@@ -99,7 +99,7 @@ items:
   syntax:
     content: update(gradient_values, training_sample_count, is_sweep_end=False)
     parameters:
-    - description: 'maps @cntk.variables.Parameter to
+    - description: 'maps <xref:cntk.variables.Parameter> to
 
         a NumPy array containing the first order gradient values for the
 

@@ -94,7 +94,7 @@ items:
 
         '
       type:
-      - cntk.ops.as_block
+      - <xref:cntk.ops.as_block>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.BlockApiSetup.convolution
 - class: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.BlockApiSetup
@@ -144,7 +144,7 @@ items:
 
         '
       type:
-      - cntk.ops.as_block
+      - <xref:cntk.ops.as_block>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.BlockApiSetup.linear
 - class: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.BlockApiSetup
@@ -194,7 +194,7 @@ items:
 
         '
       type:
-      - cntk.ops.as_block
+      - <xref:cntk.ops.as_block>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.BlockApiSetup.lrn
 references:

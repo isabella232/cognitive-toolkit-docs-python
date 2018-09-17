@@ -64,10 +64,10 @@ items:
     While CNTK allows user code to iterate through minibatches by itself and feed
     data minibatch
 
-    by minibatch through @cntk.train.trainer.Trainer.train_minibatch, the standard
+    by minibatch through <xref:cntk.train.trainer.Trainer.train_minibatch>, the standard
     way is to iterate
 
-    through data using a MinibatchSource object. For example, the high-level @cntk.train.training_session.TrainingSession
+    through data using a MinibatchSource object. For example, the high-level <xref:cntk.train.training_session.TrainingSession>
 
     interface, which manages a full training including checkpointing and cross validation,
     operates on this level.
@@ -104,7 +104,7 @@ items:
 
         After this number has been reached, the reader
 
-        returns empty minibatches on subsequent calls to @cntk.io.MinibatchSourceFromData.next_minibatch.
+        returns empty minibatches on subsequent calls to <xref:cntk.io.MinibatchSourceFromData.next_minibatch>.
 
         **Important:**
 
@@ -115,10 +115,10 @@ items:
         '
       id: max_samples
       type:
-      - int, defaults to cntk.io.INFINITELY_REPEAT
+      - int, defaults to <xref:cntk.io.INFINITELY_REPEAT>
     return:
-      description: 'An implementation of a @cntk.io.MinibatchSource that will iterate
-        through the data.
+      description: 'An implementation of a <xref:cntk.io.MinibatchSource> that will
+        iterate through the data.
 
         '
   type: class
@@ -136,7 +136,7 @@ items:
     content: get_checkpoint_state()
     parameters: []
     return:
-      description: 'A @cntk.cntk_py.Dictionary that has the checkpoint state
+      description: 'A <xref:cntk.cntk_py.Dictionary> that has the checkpoint state
 
         of the MinibatchSource
 
@@ -180,7 +180,7 @@ items:
         '
       id: checkpoint
       type:
-      - cntk.cntk_py.Dictionary
+      - <xref:cntk.cntk_py.Dictionary>
   type: method
   uid: cntk.io.MinibatchSourceFromData.restore_from_checkpoint
 - class: cntk.io.MinibatchSourceFromData
@@ -215,15 +215,15 @@ references:
   name: stream_infos
   parent: cntk.io.MinibatchSourceFromData
   uid: cntk.io.MinibatchSourceFromData.stream_infos
-- fullName: int, defaults to cntk.io.INFINITELY_REPEAT
-  name: int, INFINITELY_REPEAT
+- fullName: int, defaults to <xref:cntk.io.INFINITELY_REPEAT>
+  name: int, INFINITELY_REPEAT>
   spec.python:
   - fullName: int
     name: int
     uid: int
   - fullName: ', '
     name: ', '
-  - fullName: defaults to cntk.io.INFINITELY_REPEAT
-    name: INFINITELY_REPEAT
-    uid: defaults to cntk.io.INFINITELY_REPEAT
-  uid: int, defaults to cntk.io.INFINITELY_REPEAT
+  - fullName: defaults to <xref:cntk.io.INFINITELY_REPEAT>
+    name: INFINITELY_REPEAT>
+    uid: defaults to <xref:cntk.io.INFINITELY_REPEAT>
+  uid: int, defaults to <xref:cntk.io.INFINITELY_REPEAT>

@@ -25,7 +25,7 @@ items:
   name: MinibatchData
   summary: 'Holds a minibatch of input data. This is never directly created, but
 
-    only returned by @cntk.io.MinibatchSource instances.
+    only returned by <xref:cntk.io.MinibatchSource> instances.
 
 
 
@@ -68,7 +68,7 @@ items:
   - python
   module: cntk.io
   name: data
-  summary: 'Retrieves the underlying @cntk.core.Value instance.
+  summary: 'Retrieves the underlying <xref:cntk.core.Value> instance.
 
     '
   syntax: {}

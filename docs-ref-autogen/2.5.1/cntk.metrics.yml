@@ -92,7 +92,7 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -100,7 +100,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -170,7 +170,7 @@ items:
     Primary objective of this node is for error evaluation of CTC training, see formula
     (1) in "Connectionist Temporal Classification: Labelling Unsegmented
 
-    Sequence Data with Recurrent Neural Networks", @ftp://ftp.idsia.ch/pub/juergen/icml2006.pdf
+    Sequence Data with Recurrent Neural Networks", <xref:ftp://ftp.idsia.ch/pub/juergen/icml2006.pdf>
 
     '
   syntax:
@@ -217,7 +217,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -300,7 +300,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function

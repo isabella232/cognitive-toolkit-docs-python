@@ -15,7 +15,7 @@ items:
   - python
   module: cntk.ops.functions
   name: CloneMethod
-  summary: 'Describes different ways how @cntk.ops.functions.Function.clone
+  summary: 'Describes different ways how <xref:cntk.ops.functions.Function.clone>
 
     works.
 

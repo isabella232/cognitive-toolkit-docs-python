@@ -53,10 +53,10 @@ items:
         '
       id: cntk_layer
       type:
-      - cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-    - description: 'a list contains all @cntk.ops.functions.Function or
+      - <xref:cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition>
+    - description: 'a list contains all <xref:cntk.ops.functions.Function> or
 
-        @cntk.input
+        <xref:cntk.input>
 
         '
       id: inputs
@@ -67,7 +67,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.batch_norm
 - class: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
@@ -87,10 +87,10 @@ items:
         '
       id: cntk_layer
       type:
-      - cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-    - description: 'a list contains all @cntk.ops.functions.Function or
+      - <xref:cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition>
+    - description: 'a list contains all <xref:cntk.ops.functions.Function> or
 
-        @cntk.input
+        <xref:cntk.input>
 
         '
       id: inputs
@@ -101,7 +101,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.convolution
 - class: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
@@ -121,10 +121,10 @@ items:
         '
       id: cntk_layer
       type:
-      - cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-    - description: 'a list contains all @cntk.ops.functions.Function or
+      - <xref:cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition>
+    - description: 'a list contains all <xref:cntk.ops.functions.Function> or
 
-        @cntk.input
+        <xref:cntk.input>
 
         '
       id: inputs
@@ -135,7 +135,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.dense
 - class: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
@@ -155,10 +155,10 @@ items:
         '
       id: cntk_layer
       type:
-      - cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-    - description: 'a list contains all @cntk.ops.functions.Function or
+      - <xref:cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition>
+    - description: 'a list contains all <xref:cntk.ops.functions.Function> or
 
-        @cntk.input
+        <xref:cntk.input>
 
         '
       id: inputs
@@ -169,7 +169,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.dropout
 - class: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
@@ -189,10 +189,10 @@ items:
         '
       id: cntk_layer
       type:
-      - cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-    - description: 'a list contains all @cntk.ops.functions.Function or
+      - <xref:cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition>
+    - description: 'a list contains all <xref:cntk.ops.functions.Function> or
 
-        @cntk.input
+        <xref:cntk.input>
 
         '
       id: inputs
@@ -203,7 +203,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.lrn
 - class: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
@@ -223,10 +223,10 @@ items:
         '
       id: cntk_layer
       type:
-      - cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-    - description: 'a list contains all @cntk.ops.functions.Function or
+      - <xref:cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition>
+    - description: 'a list contains all <xref:cntk.ops.functions.Function> or
 
-        @cntk.input
+        <xref:cntk.input>
 
         '
       id: inputs
@@ -237,7 +237,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.plus
 - class: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
@@ -257,10 +257,10 @@ items:
         '
       id: cntk_layer
       type:
-      - cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-    - description: 'a list contains all @cntk.ops.functions.Function or
+      - <xref:cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition>
+    - description: 'a list contains all <xref:cntk.ops.functions.Function> or
 
-        @cntk.input
+        <xref:cntk.input>
 
         '
       id: inputs
@@ -271,7 +271,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.pooling
 - class: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
@@ -291,10 +291,10 @@ items:
         '
       id: cntk_layer
       type:
-      - cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-    - description: 'a list contains all @cntk.ops.functions.Function or
+      - <xref:cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition>
+    - description: 'a list contains all <xref:cntk.ops.functions.Function> or
 
-        @cntk.input
+        <xref:cntk.input>
 
         '
       id: inputs
@@ -305,7 +305,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.relu
 - class: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
@@ -325,10 +325,10 @@ items:
         '
       id: cntk_layer
       type:
-      - cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-    - description: 'a list contains all @cntk.ops.functions.Function or
+      - <xref:cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition>
+    - description: 'a list contains all <xref:cntk.ops.functions.Function> or
 
-        @cntk.input
+        <xref:cntk.input>
 
         '
       id: inputs
@@ -339,7 +339,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.softmax
 - class: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
@@ -359,10 +359,10 @@ items:
         '
       id: cntk_layer
       type:
-      - cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-    - description: 'a list contains all @cntk.ops.functions.Function or
+      - <xref:cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition>
+    - description: 'a list contains all <xref:cntk.ops.functions.Function> or
 
-        @cntk.input
+        <xref:cntk.input>
 
         '
       id: inputs
@@ -373,7 +373,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.splice
 references:

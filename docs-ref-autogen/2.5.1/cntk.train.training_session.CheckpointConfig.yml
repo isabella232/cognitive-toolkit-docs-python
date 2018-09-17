@@ -30,10 +30,11 @@ items:
 
         If `sys.maxsize`, a single checkpoint is taken at the end of the training.
 
-        If a tuple of (*frequency*, @cntk.train.training_session.DataUnit), the *frequency*
-        is in terms of either *DataUnit.sample*, *DataUnit.minibatch* or *DataUnit.sweep*.
+        If a tuple of (*frequency*, <xref:cntk.train.training_session.DataUnit>),
+        the *frequency* is in terms of either *DataUnit.sample*, *DataUnit.minibatch*
+        or *DataUnit.sweep*.
 
-        See @cntk.train.training_session.DataUnit for more information on frequency
+        See <xref:cntk.train.training_session.DataUnit> for more information on frequency
         data unit.
 
         '

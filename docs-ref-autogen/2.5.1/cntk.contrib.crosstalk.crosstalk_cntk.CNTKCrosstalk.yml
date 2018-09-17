@@ -87,7 +87,7 @@ items:
   syntax:
     content: set_data(data)
     parameters:
-    - description: 'The input data as arguments parameter in @cntk.ops.functions.Function.eval
+    - description: 'The input data as arguments parameter in <xref:cntk.ops.functions.Function.eval>
 
         '
       id: data

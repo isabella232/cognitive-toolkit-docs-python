@@ -37,23 +37,23 @@ items:
 
 
 
-    - @adadelta
+    - <xref:adadelta>
 
-    - @adagrad
+    - <xref:adagrad>
 
-    - @fsadagrad
+    - <xref:fsadagrad>
 
-    - @adam
+    - <xref:adam>
 
-    - @momentum_sgd
+    - <xref:momentum_sgd>
 
-    - @nesterov
+    - <xref:nesterov>
 
-    - @rmsprop
+    - <xref:rmsprop>
 
-    - @sgd
+    - <xref:sgd>
 
-    - @universal
+    - <xref:universal>
 
     '
   type: module
@@ -81,12 +81,12 @@ items:
       - list of parameters
     - description: 'a learning rate in float, or a learning rate schedule.
 
-        See also:  @cntk.learners.learning_parameter_schedule
+        See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: lr
       type:
-      - float, list, output of cntk.learners.learning_parameter_schedule
+      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
     - description: 'exponential smooth factor for each minibatch.
 
         '
@@ -157,17 +157,17 @@ items:
         size from the learning rate schedule;
 
         if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to @cntk.learners.IGNORE. Setting minibatch_size to @cntk.learners.IGNORE
+        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
         will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  @cntk.learners.learning_parameter_schedule
+        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: minibatch_size
       type:
       - int, default None
     - description: 'number of samples as a scheduling unit for learning rate. See
-        also:  @cntk.learners.learning_parameter_schedule
+        also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: epoch_size
@@ -176,11 +176,11 @@ items:
     return:
       description: 'learner instance that can be passed to
 
-        the @cntk.train.trainer.Trainer
+        the <xref:cntk.train.trainer.Trainer>
 
         '
       type:
-      - cntk.learners.Learner
+      - <xref:cntk.learners.Learner>
   type: function
   uid: cntk.learners.adadelta
 - fullName: cntk.learners.adagrad
@@ -211,12 +211,12 @@ items:
       - list of parameters
     - description: 'a learning rate in float, or a learning rate schedule.
 
-        See also:  @cntk.learners.learning_parameter_schedule
+        See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: lr
       type:
-      - float, list, output of cntk.learners.learning_parameter_schedule
+      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
     - description: ''
       id: need_ave_multiplier
       type:
@@ -279,17 +279,17 @@ items:
         size from the learning rate schedule;
 
         if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to @cntk.learners.IGNORE. Setting minibatch_size to @cntk.learners.IGNORE
+        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
         will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  @cntk.learners.learning_parameter_schedule
+        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: minibatch_size
       type:
       - int, default None
     - description: 'number of samples as a scheduling unit for learning rate. See
-        also:  @cntk.learners.learning_parameter_schedule
+        also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: epoch_size
@@ -298,11 +298,11 @@ items:
     return:
       description: 'learner instance that can be passed to
 
-        the @cntk.train.trainer.Trainer
+        the <xref:cntk.train.trainer.Trainer>
 
         '
       type:
-      - cntk.learners.Learner
+      - <xref:cntk.learners.Learner>
   type: function
   uid: cntk.learners.adagrad
 - fullName: cntk.learners.adam
@@ -334,12 +334,12 @@ items:
       - list of parameters
     - description: 'a learning rate in float, or a learning rate schedule.
 
-        See also:  @cntk.learners.learning_parameter_schedule
+        See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: lr
       type:
-      - float, list, output of cntk.learners.learning_parameter_schedule
+      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
     - description: 'momentum schedule. Note that this is the beta1 parameter in the
         Adam paper [1].
 
@@ -348,10 +348,10 @@ items:
         '
       id: momentum
       type:
-      - float, list, output of cntk.learners.momentum_schedule
+      - float, list, output of <xref:cntk.learners.momentum_schedule>
     - description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
-        to the value returned by @cntk.learners.default_unit_gain_value.
+        to the value returned by <xref:cntk.learners.default_unit_gain_value>.
 
         '
       id: unit_gain
@@ -362,7 +362,7 @@ items:
         '
       id: variance_momentum
       type:
-      - float, list, output of cntk.learners.momentum_schedule
+      - float, list, output of <xref:cntk.learners.momentum_schedule>
     - description: 'the L1 regularization weight per sample,
 
         defaults to 0.0
@@ -436,17 +436,17 @@ items:
         size from the learning rate schedule;
 
         if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to @cntk.learners.IGNORE. Setting minibatch_size to @cntk.learners.IGNORE
+        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
         will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  @cntk.learners.learning_parameter_schedule
+        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: minibatch_size
       type:
       - int, default None
     - description: 'number of samples as a scheduling unit for learning rate, momentum
-        and variance_momentum. See also:  @cntk.learners.learning_parameter_schedule
+        and variance_momentum. See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: epoch_size
@@ -455,11 +455,11 @@ items:
     return:
       description: 'learner instance that can be passed to
 
-        the @cntk.train.trainer.Trainer
+        the <xref:cntk.train.trainer.Trainer>
 
         '
       type:
-      - cntk.learners.Learner
+      - <xref:cntk.learners.Learner>
   type: function
   uid: cntk.learners.adam
 - fullName: cntk.learners.default_unit_gain_value
@@ -498,12 +498,12 @@ items:
       - list of parameters
     - description: 'a learning rate in float, or a learning rate schedule.
 
-        See also:  @cntk.learners.learning_parameter_schedule
+        See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: lr
       type:
-      - float, list, output of cntk.learners.learning_parameter_schedule
+      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
     - description: 'momentum schedule.
 
         For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).
@@ -511,10 +511,10 @@ items:
         '
       id: momentum
       type:
-      - float, list, output of cntk.learners.momentum_schedule
+      - float, list, output of <xref:cntk.learners.momentum_schedule>
     - description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
-        to the value returned by @cntk.learners.default_unit_gain_value.
+        to the value returned by <xref:cntk.learners.default_unit_gain_value>.
 
         '
       id: unit_gain
@@ -525,7 +525,7 @@ items:
         '
       id: variance_momentum
       type:
-      - float, list, output of cntk.learners.momentum_schedule
+      - float, list, output of <xref:cntk.learners.momentum_schedule>
     - description: 'the L1 regularization weight per sample,
 
         defaults to 0.0
@@ -584,17 +584,17 @@ items:
         size from the learning rate schedule;
 
         if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to @cntk.learners.IGNORE. Setting minibatch_size to @cntk.learners.IGNORE
+        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
         will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  @cntk.learners.learning_parameter_schedule
+        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: minibatch_size
       type:
       - int, default None
     - description: 'number of samples as a scheduling unit for learning rate, momentum
-        and variance_momentum. See also:  @cntk.learners.learning_parameter_schedule
+        and variance_momentum. See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: epoch_size
@@ -603,11 +603,11 @@ items:
     return:
       description: 'learner instance that can be passed to
 
-        the @cntk.train.trainer.Trainer
+        the <xref:cntk.train.trainer.Trainer>
 
         '
       type:
-      - cntk.learners.Learner
+      - <xref:cntk.learners.Learner>
   type: function
   uid: cntk.learners.fsadagrad
 - fullName: cntk.learners.learning_parameter_schedule
@@ -650,7 +650,7 @@ items:
         the schedule as much as possible
 
         to match the designed effect. If it is not specified, CNTK will set to the
-        special value @cntk.learners.IGNORE.
+        special value <xref:cntk.learners.IGNORE>.
 
         '
       id: minibatch_size
@@ -746,7 +746,7 @@ items:
   - python
   module: cntk.learners
   name: learning_rate_schedule
-  seealsoContent: '  @cntk.learners.training_parameter_schedule
+  seealsoContent: '  <xref:cntk.learners.training_parameter_schedule>
 
     '
   summary: 'Deprecated:: 2.2
@@ -754,7 +754,7 @@ items:
 
     Create a learning rate schedule (using the same semantics as
 
-    @cntk.learners.training_parameter_schedule).
+    <xref:cntk.learners.training_parameter_schedule>).
 
     '
   syntax:
@@ -762,22 +762,22 @@ items:
     parameters:
     - description: 'see parameter `schedule` in
 
-        @cntk.learners.training_parameter_schedule.
+        <xref:cntk.learners.training_parameter_schedule>.
 
         '
       id: lr
       type:
       - float
       - list
-    - description: "see parameter\n`unit` in @cntk.learners.training_parameter_schedule.\n\
+    - description: "see parameter\n`unit` in <xref:cntk.learners.training_parameter_schedule>.\n\
         \n   deprecated:: 2.2\n      Use minibatch_size parameter to specify the reference\
         \ minbiatch size instead.\n"
       id: unit
       type:
-      - cntk.learners.UnitType
+      - <xref:cntk.learners.UnitType>
     - description: 'see parameter `epoch_size` in
 
-        @cntk.learners.training_parameter_schedule.
+        <xref:cntk.learners.training_parameter_schedule>.
 
         '
       id: epoch_size
@@ -821,7 +821,7 @@ items:
   module: cntk.learners
   name: momentum_as_time_constant_schedule
   summary: "Create a momentum schedule in a minibatch-size agnostic way\n(using the\
-    \ same semantics as @cntk.learners.training_parameter_schedule\nwith *unit=UnitType.sample*).\n\
+    \ same semantics as <xref:cntk.learners.training_parameter_schedule>\nwith *unit=UnitType.sample*).\n\
     \nDeprecated:: 2.2\n   This is for legacy API.\n   In this legacy API,:\n\n  \
     \ <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n   ````\n\n      #assume\
@@ -835,7 +835,7 @@ items:
     \ minibatch-size agnostic way as the time\nconstant (in samples) of a unit-gain\
     \ 1st-order IIR filter. The value\nspecifies the number of samples after which\
     \ a gradient has an effect of\n1/e=37%.\n\nIf you want to specify the momentum\
-    \ per N samples (or per minibatch),\nuse @cntk.learners.momentum_schedule.\n"
+    \ per N samples (or per minibatch),\nuse <xref:cntk.learners.momentum_schedule>.\n"
   syntax:
     content: momentum_as_time_constant_schedule(momentum, epoch_size=None)
     return:
@@ -900,7 +900,7 @@ items:
   name: momentum_schedule
   summary: 'Create a momentum schedule (using the same semantics as
 
-    @cntk.learners.learning_parameter_schedule) which applies the momentum
+    <xref:cntk.learners.learning_parameter_schedule>) which applies the momentum
 
     decay every N samples where N is specified by the argument *minibatch_size*.
 
@@ -920,7 +920,8 @@ items:
   name: momentum_schedule_per_sample
   summary: 'Create a per-sample momentum schedule (using the same semantics as
 
-    @cntk.learners.momentum_schedule but specializing in per sample momentum schedule).
+    <xref:cntk.learners.momentum_schedule> but specializing in per sample momentum
+    schedule).
 
     '
   syntax:
@@ -928,7 +929,7 @@ items:
     parameters:
     - description: 'see parameter `schedule` in
 
-        @cntk.learners.training_parameter_schedule.
+        <xref:cntk.learners.training_parameter_schedule>.
 
         '
       id: momentum
@@ -937,7 +938,7 @@ items:
       - list
     - description: 'see parameter `epoch_size` in
 
-        @cntk.learners.momentum_schedule.
+        <xref:cntk.learners.momentum_schedule>.
 
         '
       id: epoch_size
@@ -972,12 +973,12 @@ items:
       - list of parameters
     - description: 'a learning rate in float, or a learning rate schedule.
 
-        See also:  @cntk.learners.learning_parameter_schedule
+        See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: lr
       type:
-      - float, list, output of cntk.learners.learning_parameter_schedule
+      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
     - description: 'momentum schedule.
 
         For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).
@@ -985,10 +986,10 @@ items:
         '
       id: momentum
       type:
-      - float, list, output of cntk.learners.momentum_schedule
+      - float, list, output of <xref:cntk.learners.momentum_schedule>
     - description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
-        to the value returned by @cntk.learners.default_unit_gain_value.
+        to the value returned by <xref:cntk.learners.default_unit_gain_value>.
 
         '
       id: unit_gain
@@ -1050,17 +1051,17 @@ items:
         size from the learning rate schedule;
 
         if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to @cntk.learners.IGNORE. Setting minibatch_size to @cntk.learners.IGNORE
+        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
         will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  @cntk.learners.learning_parameter_schedule
+        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: minibatch_size
       type:
       - int, default None
     - description: 'number of samples as a scheduling unit for learning rate and momentum.
-        See also:  @cntk.learners.learning_parameter_schedule
+        See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: epoch_size
@@ -1069,11 +1070,11 @@ items:
     return:
       description: 'learner instance that can be passed to
 
-        the @cntk.train.trainer.Trainer
+        the <xref:cntk.train.trainer.Trainer>
 
         '
       type:
-      - cntk.learners.Learner
+      - <xref:cntk.learners.Learner>
   type: function
   uid: cntk.learners.momentum_sgd
 - fullName: cntk.learners.nesterov
@@ -1109,12 +1110,12 @@ items:
       - list of parameters
     - description: 'a learning rate in float, or a learning rate schedule.
 
-        See also:  @cntk.learners.learning_parameter_schedule
+        See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: lr
       type:
-      - float, list, output of cntk.learners.learning_parameter_schedule
+      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
     - description: 'momentum schedule.
 
         For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).
@@ -1122,10 +1123,10 @@ items:
         '
       id: momentum
       type:
-      - float, list, output of cntk.learners.momentum_schedule
+      - float, list, output of <xref:cntk.learners.momentum_schedule>
     - description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
-        to the value returned by @cntk.learners.default_unit_gain_value.
+        to the value returned by <xref:cntk.learners.default_unit_gain_value>.
 
         '
       id: unit_gain
@@ -1187,17 +1188,17 @@ items:
         size from the learning rate schedule;
 
         if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to @cntk.learners.IGNORE. Setting minibatch_size to @cntk.learners.IGNORE
+        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
         will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  @cntk.learners.learning_parameter_schedule
+        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: minibatch_size
       type:
       - int, default None
     - description: 'number of samples as a scheduling unit for learning rate and momentum.
-        See also:  @cntk.learners.learning_parameter_schedule
+        See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: epoch_size
@@ -1206,11 +1207,11 @@ items:
     return:
       description: 'learner instance that can be passed to
 
-        the @cntk.train.trainer.Trainer
+        the <xref:cntk.train.trainer.Trainer>
 
         '
       type:
-      - cntk.learners.Learner
+      - <xref:cntk.learners.Learner>
   type: function
   uid: cntk.learners.nesterov
 - fullName: cntk.learners.rmsprop
@@ -1236,12 +1237,12 @@ items:
       - list of parameters
     - description: 'a learning rate in float, or a learning rate schedule.
 
-        See also:  @cntk.learners.learning_parameter_schedule
+        See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: lr
       type:
-      - float, list, output of cntk.learners.learning_parameter_schedule
+      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
     - description: 'Trade-off factor for current and previous gradients. Common value
         is 0.95. Should be in range (0.0, 1.0)
 
@@ -1339,17 +1340,17 @@ items:
         size from the learning rate schedule;
 
         if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to @cntk.learners.IGNORE. Setting minibatch_size to @cntk.learners.IGNORE
+        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
         will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  @cntk.learners.learning_parameter_schedule
+        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: minibatch_size
       type:
       - int, default None
     - description: 'number of samples as a scheduling unit for learning rate. See
-        also:  @cntk.learners.learning_parameter_schedule
+        also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: epoch_size
@@ -1358,11 +1359,11 @@ items:
     return:
       description: 'learner instance that can be passed to
 
-        the @cntk.train.trainer.Trainer
+        the <xref:cntk.train.trainer.Trainer>
 
         '
       type:
-      - cntk.learners.Learner
+      - <xref:cntk.learners.Learner>
   type: function
   uid: cntk.learners.rmsprop
 - fullName: cntk.learners.set_default_unit_gain_value
@@ -1408,12 +1409,12 @@ items:
       - list of parameters
     - description: 'a learning rate in float, or a learning rate schedule.
 
-        See also:  @cntk.learners.learning_parameter_schedule
+        See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: lr
       type:
-      - float, list, output of cntk.learners.learning_parameter_schedule
+      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
     - description: 'the L1 regularization weight per sample,
 
         defaults to 0.0
@@ -1472,17 +1473,17 @@ items:
         size from the learning rate schedule;
 
         if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to @cntk.learners.IGNORE. Setting minibatch_size to @cntk.learners.IGNORE
+        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
         will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  @cntk.learners.learning_parameter_schedule
+        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: minibatch_size
       type:
       - int, default None
     - description: 'number of samples as a scheduling unit for learning rate. See
-        also:  @cntk.learners.learning_parameter_schedule
+        also:  <xref:cntk.learners.learning_parameter_schedule>
 
         '
       id: epoch_size
@@ -1491,11 +1492,11 @@ items:
     return:
       description: 'learner instance that can be passed to
 
-        the @cntk.train.trainer.Trainer
+        the <xref:cntk.train.trainer.Trainer>
 
         '
       type:
-      - cntk.learners.Learner
+      - <xref:cntk.learners.Learner>
   type: function
   uid: cntk.learners.sgd
 - example:
@@ -1552,7 +1553,7 @@ items:
   - python
   module: cntk.learners
   name: training_parameter_schedule
-  seealsoContent: '  @cntk.learners.learning_parameter_schedule
+  seealsoContent: '  <xref:cntk.learners.learning_parameter_schedule>
 
     '
   summary: 'Deprecated:: 2.2
@@ -1587,7 +1588,7 @@ items:
         \ minbiatch size.\n"
       id: unit
       type:
-      - cntk.learners.UnitType
+      - <xref:cntk.learners.UnitType>
     - description: 'number of samples as a scheduling unit.
 
         Parameters in the schedule change their values every `epoch_size`
@@ -1666,13 +1667,13 @@ items:
     parameters:
     - description: 'function that takes parameters and gradients as arguments and
 
-        returns a @cntk.ops.functions.Function that performs the
+        returns a <xref:cntk.ops.functions.Function> that performs the
 
         desired updates. The returned function updates the parameters by
 
-        means of containing @cntk.ops.assign operations.
+        means of containing <xref:cntk.ops.assign> operations.
 
-        If `update_func` does not contain @cntk.ops.assign operations
+        If `update_func` does not contain <xref:cntk.ops.assign> operations
 
         the parameters will not be updated.
 
@@ -1689,11 +1690,11 @@ items:
     return:
       description: 'learner instance that can be passed to
 
-        the @cntk.train.trainer.Trainer
+        the <xref:cntk.train.trainer.Trainer>
 
         '
       type:
-      - cntk.learners.Learner
+      - <xref:cntk.learners.Learner>
   type: function
   uid: cntk.learners.universal
 references:
@@ -1802,8 +1803,8 @@ references:
   name: universal
   parent: cntk.learners
   uid: cntk.learners.universal
-- fullName: float, list, output of cntk.learners.learning_parameter_schedule
-  name: float, list, learning_parameter_schedule
+- fullName: float, list, output of <xref:cntk.learners.learning_parameter_schedule>
+  name: float, list, learning_parameter_schedule>
   spec.python:
   - fullName: float
     name: float
@@ -1815,10 +1816,10 @@ references:
     uid: list
   - fullName: ', '
     name: ', '
-  - fullName: output of cntk.learners.learning_parameter_schedule
-    name: learning_parameter_schedule
-    uid: output of cntk.learners.learning_parameter_schedule
-  uid: float, list, output of cntk.learners.learning_parameter_schedule
+  - fullName: output of <xref:cntk.learners.learning_parameter_schedule>
+    name: learning_parameter_schedule>
+    uid: output of <xref:cntk.learners.learning_parameter_schedule>
+  uid: float, list, output of <xref:cntk.learners.learning_parameter_schedule>
 - fullName: float, optional
   name: float, optional
   spec.python:
@@ -1927,8 +1928,8 @@ references:
     name: default
     uid: default
   uid: bool, default
-- fullName: float, list, output of cntk.learners.momentum_schedule
-  name: float, list, momentum_schedule
+- fullName: float, list, output of <xref:cntk.learners.momentum_schedule>
+  name: float, list, momentum_schedule>
   spec.python:
   - fullName: float
     name: float
@@ -1940,12 +1941,12 @@ references:
     uid: list
   - fullName: ', '
     name: ', '
-  - fullName: output of cntk.learners.momentum_schedule
-    name: momentum_schedule
-    uid: output of cntk.learners.momentum_schedule
-  uid: float, list, output of cntk.learners.momentum_schedule
-- fullName: float, list, output of cntk.learners.momentum_schedule
-  name: float, list, momentum_schedule
+  - fullName: output of <xref:cntk.learners.momentum_schedule>
+    name: momentum_schedule>
+    uid: output of <xref:cntk.learners.momentum_schedule>
+  uid: float, list, output of <xref:cntk.learners.momentum_schedule>
+- fullName: float, list, output of <xref:cntk.learners.momentum_schedule>
+  name: float, list, momentum_schedule>
   spec.python:
   - fullName: float
     name: float
@@ -1957,7 +1958,7 @@ references:
     uid: list
   - fullName: ', '
     name: ', '
-  - fullName: output of cntk.learners.momentum_schedule
-    name: momentum_schedule
-    uid: output of cntk.learners.momentum_schedule
-  uid: float, list, output of cntk.learners.momentum_schedule
+  - fullName: output of <xref:cntk.learners.momentum_schedule>
+    name: momentum_schedule>
+    uid: output of <xref:cntk.learners.momentum_schedule>
+  uid: float, list, output of <xref:cntk.learners.momentum_schedule>

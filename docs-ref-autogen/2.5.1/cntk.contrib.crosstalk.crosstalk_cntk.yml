@@ -30,7 +30,7 @@ items:
         '
       id: func
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
     - defaultValue: None
       description: 'The name of the parameter
 
@@ -53,7 +53,7 @@ items:
       type:
       - bool
     return:
-      description: 'The @cntk.variables.Parameter that is found
+      description: 'The <xref:cntk.variables.Parameter> that is found
 
         '
   type: function

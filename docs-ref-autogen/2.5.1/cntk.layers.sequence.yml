@@ -13,7 +13,7 @@ items:
   - python
   module: cntk.layers.sequence
   name: sequence
-  summary: 'First / higher-order functions over sequences, like @Recurrence.
+  summary: 'First / higher-order functions over sequences, like <xref:Recurrence>.
 
     '
   type: module
@@ -38,8 +38,8 @@ items:
   summary: 'Layer factory function to create a layer that delays input the input by
     a given number of time steps. Negative means future.
 
-    This is provided as a layer that wraps @cntk.ops.sequence.delay so that it can
-    easily be used in a Sequential() expression.
+    This is provided as a layer that wraps <xref:cntk.ops.sequence.delay> so that
+    it can easily be used in a Sequential() expression.
 
     '
   syntax:
@@ -106,17 +106,17 @@ items:
     \ looping over all steps of input sequence along its dynamic axis\n       h =\
     \ step_function(h, x_n)  # pass previous state and new data to step_function ->\
     \ new state\n   # now h is the result of the final invocation of the step function\n\
-    \   ````\n\n`Fold()` is the same as @cntk.layers.sequence.Recurrence except that\
-    \ only the final state is returned\n(whereas `Recurrence()` returns the entire\
+    \   ````\n\n`Fold()` is the same as <xref:cntk.layers.sequence.Recurrence> except\
+    \ that only the final state is returned\n(whereas `Recurrence()` returns the entire\
     \ state sequence).\nHence, this documentation will only focus on the differences\
-    \ to `Recurrence()`,\nplease see @cntk.layers.sequence.Recurrence for a detailed\
-    \ information on parameters.\n\nCommonly, the `folder_function` is a recurrent\
-    \ block such as an LSTM.\nHowever, one can pass any binary function. E.g. passing\
-    \ `plus` will sum\nup all items of a sequence; while `element_max` would perform\
-    \ a max-pooling over all items of the sequence.\n\nNote: CNTK's Fold() is similar\
-    \ to the fold() catamorphism known from functional programming.\n`go_backwards=False`\
-    \ corresponds to a fold-left, and `True` to a fold-right,\nexcept that the `folder_function`\
-    \ signature is always the one of fold-left.\n"
+    \ to `Recurrence()`,\nplease see <xref:cntk.layers.sequence.Recurrence> for a\
+    \ detailed information on parameters.\n\nCommonly, the `folder_function` is a\
+    \ recurrent block such as an LSTM.\nHowever, one can pass any binary function.\
+    \ E.g. passing `plus` will sum\nup all items of a sequence; while `element_max`\
+    \ would perform a max-pooling over all items of the sequence.\n\nNote: CNTK's\
+    \ Fold() is similar to the fold() catamorphism known from functional programming.\n\
+    `go_backwards=False` corresponds to a fold-left, and `True` to a fold-right,\n\
+    except that the `folder_function` signature is always the one of fold-left.\n"
   syntax:
     content: Fold(folder_function, go_backwards=False, initial_state=0, return_full_state=False,
       name='')
@@ -129,7 +129,7 @@ items:
         '
       id: folder_function
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
       - equivalent Python function
     - description: 'if `True` then run the recurrence from the end of the sequence
         to the start.
@@ -178,7 +178,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: function
   uid: cntk.layers.sequence.Fold
 - example:
@@ -239,7 +239,7 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis, optional, keyword only
+      - <xref:cntk.axis.Axis>, optional, keyword only
     - description: 'the name of the Function instance in the network
 
         '
@@ -256,7 +256,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: function
   uid: cntk.layers.sequence.PastValueWindow
 - example:
@@ -296,21 +296,21 @@ items:
     state\")\n   for x_n in x:       # pseudo-code for looping over all steps of input\
     \ sequence along its dynamic axis\n       s = step_function(s, x_n)  # pass previous\
     \ state and new data to step_function -> new state\n       y.append(s)\n   ````\n\
-    \nThe common step functions are @cntk.layers.blocks.LSTM, @cntk.layers.blocks.GRU,\
-    \ and @cntk.layers.blocks.RNNStep,\nbut the step function can be any @cntk.ops.functions.Function\
+    \nThe common step functions are <xref:cntk.layers.blocks.LSTM>, <xref:cntk.layers.blocks.GRU>,\
+    \ and <xref:cntk.layers.blocks.RNNStep>,\nbut the step function can be any <xref:cntk.ops.functions.Function>\
     \ or Python function.\nThe signature of a step function with a single state variable\
     \ must be\n`(h_prev, x) -> h`, where `h_prev` is the previous state, `x` is the\
     \ new\ndata input, and the output is the new state.\nThe step function will be\
     \ called item by item, resulting in a sequence of the same length as the input.\n\
-    \nStep functions can have more than one state output, e.g. @cntk.layers.blocks.LSTM.\n\
+    \nStep functions can have more than one state output, e.g. <xref:cntk.layers.blocks.LSTM>.\n\
     In this case, the first N arguments are the previous state, followed by one more\
     \ argument that\nis the data input; and its output must be a tuple of N values.\n\
     In this case, the recurrence operation will, by default, return the first of the\
     \ state variables\n(in the LSTM case, the `h`), while additional state variables\
     \ are internal (like the LSTM's `c`).\nIf all state variables should be returned,\
     \ pass `return_full_state=True`.\n\nTo provide your own step function, just use\
-    \ any @cntk.ops.functions.Function (or equivalent Python function) that\nhas a\
-    \ signature as described above.\nFor example, a cumulative sum over a sequence\
+    \ any <xref:cntk.ops.functions.Function> (or equivalent Python function) that\n\
+    has a signature as described above.\nFor example, a cumulative sum over a sequence\
     \ can be computed as `Recurrence(plus)`,\nwhere each step consists of *plus(s,x_n)*,\
     \ where *s* is the output of the previous call\nand hence the cumulative sum of\
     \ all elements up to *x_n*.\nAnother example is a GRU layer with projection, which\
@@ -319,7 +319,7 @@ items:
     \ for `Sequential([F, G])`.\n\nOptionally, the recurrence can run backwards. This\
     \ is useful for constructing bidirectional models.\n\n`initial_state` must be\
     \ a constant. To pass initial_state as a data input, e.g. for a sequence-to-sequence\n\
-    model, use @cntk.layers.sequence.RecurrenceFrom instead.\n\nNote: `Recurrence()`\
+    model, use <xref:cntk.layers.sequence.RecurrenceFrom> instead.\n\nNote: `Recurrence()`\
     \ is the equivalent to what in functional programming is often called `scanl()`.\n"
   syntax:
     content: Recurrence(step_function, go_backwards=False, initial_state=0, return_full_state=False,
@@ -333,7 +333,7 @@ items:
         '
       id: step_function
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
       - equivalent Python function
     - description: 'if `True` then run the recurrence from the end of the sequence
         to the start.
@@ -381,7 +381,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: function
   uid: cntk.layers.sequence.Recurrence
 - example:
@@ -443,12 +443,12 @@ items:
   name: RecurrenceFrom
   summary: "Layer factory function to create a function that runs a step function\
     \ recurrently over an input sequence, with initial state.\nThis layer is very\
-    \ similar to @cntk.layers.sequence.Recurrence,\nexcept that the initial state\
-    \ is not a constant but computed from input data.\nThus, in *RecurrenceFrom()*,\
+    \ similar to <xref:cntk.layers.sequence.Recurrence>,\nexcept that the initial\
+    \ state is not a constant but computed from input data.\nThus, in *RecurrenceFrom()*,\
     \ the initial state is passed to the layer function as a data input\nrather than,\
     \ like *Recurrence()*, as an initialization parameter to the factory function.\n\
     This form is meant for use in sequence-to-sequence scenarios.\nThis documentation\
-    \ only covers this case; for additional information on parameters, see @cntk.layers.sequence.Recurrence.\n\
+    \ only covers this case; for additional information on parameters, see <xref:cntk.layers.sequence.Recurrence>.\n\
     In pseudo-code:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
     : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n\
     ````\n\n   # pseudo-code for y = RecurrenceFrom(step_function)(s,x)\n   #  x:\
@@ -474,7 +474,7 @@ items:
         '
       id: step_function
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
       - equivalent Python function
     - description: 'if `True` then run the recurrence from the end of the sequence
         to the start.
@@ -527,7 +527,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: function
   uid: cntk.layers.sequence.RecurrenceFrom
 - example:
@@ -561,15 +561,15 @@ items:
     \ emitted word, and the second being an internal recurrent state.\nThe initial\
     \ state would be a tuple `(w0, h0)`\nwhere `w0` represents the sentence-start\
     \ symbol,\nand `h0` is a thought vector that encodes the input sequence (as obtained\n\
-    from a @cntk.layers.sequence.Fold operation).\n\nA variant allows the state and\
-    \ the emitted sequence to be different. In that case,\n`f` returns a tuple (output\
-    \ value, new state), and\n`UnfoldFrom(f)(s)`\nwould emit the sequence `f(s)[0],\
-    \ f(f(s)[1])[0], f(f(f(s)[1])[1])[0], ...`.\n\nThe maximum length of the output\
-    \ sequence is not unlimited, but determined by the argument to\nthe layer function,\
-    \ multiplied by an optional increase factor.\n\nOptionally, a function can be\
-    \ provided to denote that the end of the sequence has been reached.\n\nNote: In\
-    \ the context of functional programming, the first form of this operation is known\
-    \ as the unfold() anamorphism.\n"
+    from a <xref:cntk.layers.sequence.Fold> operation).\n\nA variant allows the state\
+    \ and the emitted sequence to be different. In that case,\n`f` returns a tuple\
+    \ (output value, new state), and\n`UnfoldFrom(f)(s)`\nwould emit the sequence\
+    \ `f(s)[0], f(f(s)[1])[0], f(f(f(s)[1])[1])[0], ...`.\n\nThe maximum length of\
+    \ the output sequence is not unlimited, but determined by the argument to\nthe\
+    \ layer function, multiplied by an optional increase factor.\n\nOptionally, a\
+    \ function can be provided to denote that the end of the sequence has been reached.\n\
+    \nNote: In the context of functional programming, the first form of this operation\
+    \ is known as the unfold() anamorphism.\n"
   syntax:
     content: UnfoldFrom(generator_function, until_predicate=None, length_increase=1,
       name='')
@@ -586,7 +586,7 @@ items:
         '
       id: generator_function
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
       - equivalent Python function
     - defaultValue: None
       description: 'A function that denotes when the last element of the unfold has
@@ -606,7 +606,7 @@ items:
         '
       id: until_predicate
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
       - equivalent Python function
     - defaultValue: '1'
       description: 'the maximum number of output items is equal to the
@@ -639,7 +639,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: function
   uid: cntk.layers.sequence.UnfoldFrom
 references:
@@ -697,12 +697,12 @@ references:
     name: defaults to False
     uid: defaults to False
   uid: bool, defaults to False
-- fullName: cntk.axis.Axis, optional, keyword only
-  name: Axis, optional, keyword only
+- fullName: <xref:cntk.axis.Axis>, optional, keyword only
+  name: Axis>, optional, keyword only
   spec.python:
-  - fullName: cntk.axis.Axis
-    name: Axis
-    uid: cntk.axis.Axis
+  - fullName: <xref:cntk.axis.Axis>
+    name: Axis>
+    uid: <xref:cntk.axis.Axis>
   - fullName: ', '
     name: ', '
   - fullName: optional
@@ -713,7 +713,7 @@ references:
   - fullName: keyword only
     name: keyword only
     uid: keyword only
-  uid: cntk.axis.Axis, optional, keyword only
+  uid: <xref:cntk.axis.Axis>, optional, keyword only
 - fullName: str, optional, keyword only
   name: str, optional, keyword only
   spec.python:

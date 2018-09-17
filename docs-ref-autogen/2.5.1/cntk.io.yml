@@ -80,7 +80,7 @@ items:
     - defaultValue: '{}'
       description: 'any dictionary-like object that contains a mapping from stream
 
-        names to @cntk.io.StreamDef objects. Each StreamDef object configures
+        names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
 
         an input stream.
 
@@ -114,7 +114,7 @@ items:
       - str
     - description: 'any dictionary-like object that contains a mapping from stream
 
-        names to @cntk.io.StreamDef objects. Each StreamDef object configures
+        names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
 
         an input stream.
 
@@ -135,7 +135,7 @@ items:
     parameters:
     - description: 'any dictionary-like object that contains a mapping from stream
 
-        names to @cntk.io.StreamDef objects. Each StreamDef object configures
+        names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
 
         a feature stream.
 
@@ -164,7 +164,7 @@ items:
       - str
     - description: 'any dictionary-like object that contains a mapping from stream
 
-        names to @cntk.io.StreamDef objects. Each StreamDef object configures
+        names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
 
         a label stream.
 
@@ -257,7 +257,7 @@ items:
 
         CTFDeserializer read data as flat arrays. If you need different
 
-        shapes you can @cntk.ops.reshape it later.
+        shapes you can <xref:cntk.ops.reshape> it later.
 
         '
       id: shape
@@ -348,7 +348,7 @@ items:
   name: sequence_to_cntk_text_format
   summary: 'Converts a list of NumPy arrays representing tensors of inputs into a
 
-    format that is readable by @cntk.io.CTFDeserializer.
+    format that is readable by <xref:cntk.io.CTFDeserializer>.
 
     '
   syntax:

@@ -25,16 +25,17 @@ items:
         '
       id: minibatch_source
       type:
-      - cntk.io.MinibatchSource
+      - <xref:cntk.io.MinibatchSource>
     - description: 'frequency in samples for cross validation
 
         If None or `sys.maxsize`, a single cross validation is performed at the end
         of training.
 
-        If a tuple of (*frequency*, @cntk.train.training_session.DataUnit), the *frequency*
-        is in terms of either *DataUnit.sample*, *DataUnit.minibatch* or *DataUnit.sweep*.
+        If a tuple of (*frequency*, <xref:cntk.train.training_session.DataUnit>),
+        the *frequency* is in terms of either *DataUnit.sample*, *DataUnit.minibatch*
+        or *DataUnit.sweep*.
 
-        See @cntk.train.training_session.DataUnit for more information on frequency
+        See <xref:cntk.train.training_session.DataUnit> for more information on frequency
         data unit.
 
         '
@@ -47,7 +48,7 @@ items:
       id: minibatch_size
       type:
       - int
-      - cntk.cntk_py.minibatch_size_schedule, defaults to 32
+      - <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32
     - description: 'Callback that will
 
         be called with frequency which can implement custom cross validation logic,
@@ -83,20 +84,20 @@ items:
         '
       id: criterion
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
     - description: 'DEPRECATED, use minibatch_source instead
 
         '
       id: source
       type:
-      - cntk.io.MinibatchSource
+      - <xref:cntk.io.MinibatchSource>
     - description: 'DEPRECATED, use minibatch_size instead
 
         '
       id: mb_size
       type:
       - int
-      - cntk.cntk_py.minibatch_size_schedule, defaults to 32
+      - <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32
   type: class
   uid: cntk.train.training_session.CrossValidationConfig
 references:
@@ -112,18 +113,18 @@ references:
     name: tuple
     uid: tuple
   uid: int, tuple
-- fullName: cntk.cntk_py.minibatch_size_schedule, defaults to 32
-  name: minibatch_size_schedule, defaults to 32
+- fullName: <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32
+  name: minibatch_size_schedule>, defaults to 32
   spec.python:
-  - fullName: cntk.cntk_py.minibatch_size_schedule
-    name: minibatch_size_schedule
-    uid: cntk.cntk_py.minibatch_size_schedule
+  - fullName: <xref:cntk.cntk_py.minibatch_size_schedule>
+    name: minibatch_size_schedule>
+    uid: <xref:cntk.cntk_py.minibatch_size_schedule>
   - fullName: ', '
     name: ', '
   - fullName: defaults to 32
     name: defaults to 32
     uid: defaults to 32
-  uid: cntk.cntk_py.minibatch_size_schedule, defaults to 32
+  uid: <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32
 - fullName: func (index, average_error, cv_num_samples, cv_num_minibatches)
   name: func (index, average_error, cv_num_samples, cv_num_minibatches)
   spec.python:
@@ -165,15 +166,15 @@ references:
     name: default None
     uid: default None
   uid: int, default None
-- fullName: cntk.cntk_py.minibatch_size_schedule, defaults to 32
-  name: minibatch_size_schedule, defaults to 32
+- fullName: <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32
+  name: minibatch_size_schedule>, defaults to 32
   spec.python:
-  - fullName: cntk.cntk_py.minibatch_size_schedule
-    name: minibatch_size_schedule
-    uid: cntk.cntk_py.minibatch_size_schedule
+  - fullName: <xref:cntk.cntk_py.minibatch_size_schedule>
+    name: minibatch_size_schedule>
+    uid: <xref:cntk.cntk_py.minibatch_size_schedule>
   - fullName: ', '
     name: ', '
   - fullName: defaults to 32
     name: defaults to 32
     uid: defaults to 32
-  uid: cntk.cntk_py.minibatch_size_schedule, defaults to 32
+  uid: <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32

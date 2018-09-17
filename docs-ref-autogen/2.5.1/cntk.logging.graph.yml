@@ -35,8 +35,8 @@ items:
         '
       id: root
       type:
-      - cntk.ops.functions.Function
-      - cntk.variables.Variable
+      - <xref:cntk.ops.functions.Function>
+      - <xref:cntk.variables.Variable>
     - description: 'function that takes a node as
 
         argument and returns `True` if that node should be returned.
@@ -66,7 +66,8 @@ items:
   - python
   module: cntk.logging.graph
   name: find_all_with_name
-  seealsoContent: "  @cntk.ops.functions.Function.find_all_with_name in class\n  @cntk.ops.functions.Function.\n"
+  seealsoContent: "  <xref:cntk.ops.functions.Function.find_all_with_name> in class\n\
+    \  <xref:cntk.ops.functions.Function>.\n"
   summary: 'Finds functions in the graph starting from `node` and doing a depth-first
 
     search.
@@ -80,8 +81,8 @@ items:
         '
       id: node
       type:
-      - cntk.ops.functions.Function
-      - cntk.variables.Variable
+      - <xref:cntk.ops.functions.Function>
+      - <xref:cntk.variables.Variable>
     - description: 'name for which we are search nodes
 
         '
@@ -108,7 +109,7 @@ items:
   - python
   module: cntk.logging.graph
   name: find_by_name
-  seealsoContent: "  @cntk.ops.functions.Function.find_by_name in class\n  @cntk.ops.functions.Function.\n"
+  seealsoContent: "  <xref:cntk.ops.functions.Function.find_by_name> in class\n  <xref:cntk.ops.functions.Function>.\n"
   summary: 'Finds a function in the graph starting from `node` and doing a depth-first
 
     search. It assumes that the name occurs only once.
@@ -122,8 +123,8 @@ items:
         '
       id: node
       type:
-      - cntk.ops.functions.Function
-      - cntk.variables.Variable
+      - <xref:cntk.ops.functions.Function>
+      - <xref:cntk.variables.Variable>
     - description: 'name for which we are search nodes
 
         '
@@ -150,7 +151,7 @@ items:
   - python
   module: cntk.logging.graph
   name: find_by_uid
-  seealsoContent: "  @cntk.ops.functions.Function.find_by_uid in class\n  @cntk.ops.functions.Function.\n"
+  seealsoContent: "  <xref:cntk.ops.functions.Function.find_by_uid> in class\n  <xref:cntk.ops.functions.Function>.\n"
   summary: 'Finds a function in the graph based on its UID starting from `node` and
     doing a depth-first
 
@@ -165,8 +166,8 @@ items:
         '
       id: node
       type:
-      - cntk.ops.functions.Function
-      - cntk.variables.Variable
+      - <xref:cntk.ops.functions.Function>
+      - <xref:cntk.variables.Variable>
     - description: 'uid for which we are search nodes.
 
         '

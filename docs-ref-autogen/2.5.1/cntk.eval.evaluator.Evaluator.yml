@@ -31,8 +31,9 @@ items:
         '
       id: eval_function
       type:
-      - cntk.ops.functions.Function
-    - description: 'optionally, list of progress writers from @cntk.utils to track
+      - <xref:cntk.ops.functions.Function>
+    - description: 'optionally, list of progress writers from <xref:cntk.utils> to
+        track
 
         training progress.
 
@@ -94,8 +95,8 @@ items:
   module: cntk.eval.evaluator
   name: test_minibatch
   summary: "Test the evaluation function on the specified batch of samples.\n\nNote:\
-    \ See @cntk.ops.functions.Function.forward for examples on passing input data.\
-    \ \n"
+    \ See <xref:cntk.ops.functions.Function.forward> for examples on passing input\
+    \ data. \n"
   syntax:
     content: test_minibatch(arguments, device=None, distributed=False)
     parameters:

@@ -14,7 +14,7 @@ items:
   - python
   module: cntk.train.distributed
   name: WorkerDescriptor
-  summary: 'Distributed worker descriptor, returned by @cntk.train.distributed.Communicator
+  summary: 'Distributed worker descriptor, returned by <xref:cntk.train.distributed.Communicator>
     instance.
 
 

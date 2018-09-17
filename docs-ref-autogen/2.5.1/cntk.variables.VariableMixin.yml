@@ -23,9 +23,10 @@ items:
   - python
   module: cntk.variables
   name: VariableMixin
-  summary: 'Standard properties for @cntk.variables.Variable and its derived classes
+  summary: 'Standard properties for <xref:cntk.variables.Variable> and its derived
+    classes
 
-    @cntk.variables.Parameter and @cntk.variables.Constant.
+    <xref:cntk.variables.Parameter> and <xref:cntk.variables.Constant>.
 
 
 

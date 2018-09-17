@@ -42,7 +42,7 @@ items:
 
         '
       type:
-      - cntk.train.distributed.Communicator
+      - <xref:cntk.train.distributed.Communicator>
   type: method
   uid: cntk.train.distributed.DistributedLearner.communicator
 - class: cntk.train.distributed.DistributedLearner

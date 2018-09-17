@@ -14,7 +14,7 @@ items:
   name: StreamInformation
   summary: 'Stream information container that is used to describe streams when
 
-    implementing custom minibatch source through @cntk.io.UserMinibatchSource.
+    implementing custom minibatch source through <xref:cntk.io.UserMinibatchSource>.
 
 
     '

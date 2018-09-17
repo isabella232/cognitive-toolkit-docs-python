@@ -50,7 +50,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -72,8 +72,8 @@ items:
   syntax:
     content: cosine_distance(x, y, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -84,7 +84,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -131,13 +131,13 @@ items:
     content: cosine_distance_with_negative_samples(x, y, shift, num_negative_samples,
       name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: y
@@ -157,7 +157,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -233,7 +233,7 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis, optional
+      - <xref:cntk.axis.Axis>, optional
     - description: 'the name of the Function instance in the network
 
         '
@@ -241,7 +241,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -351,7 +351,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -542,7 +542,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -609,7 +609,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -645,7 +645,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -713,15 +713,15 @@ references:
     name: optional
     uid: optional
   uid: str, optional
-- fullName: cntk.axis.Axis, optional
-  name: Axis, optional
+- fullName: <xref:cntk.axis.Axis>, optional
+  name: Axis>, optional
   spec.python:
-  - fullName: cntk.axis.Axis
-    name: Axis
-    uid: cntk.axis.Axis
+  - fullName: <xref:cntk.axis.Axis>
+    name: Axis>
+    uid: <xref:cntk.axis.Axis>
   - fullName: ', '
     name: ', '
   - fullName: optional
     name: optional
     uid: optional
-  uid: cntk.axis.Axis, optional
+  uid: <xref:cntk.axis.Axis>, optional

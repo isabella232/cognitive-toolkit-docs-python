@@ -60,7 +60,7 @@ items:
         '
       id: global_conf
       type:
-      - cntk.contrib.crosstalkcaffe.utils.globalconf.GlobalConf
+      - <xref:cntk.contrib.crosstalkcaffe.utils.globalconf.GlobalConf>
     return:
       description: 'None
 

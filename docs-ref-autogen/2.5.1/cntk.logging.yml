@@ -32,7 +32,7 @@ items:
 
         '
       type:
-      - cntk.logging.TraceLevel
+      - <xref:cntk.logging.TraceLevel>
   type: function
   uid: cntk.logging.get_trace_level
 - fullName: cntk.logging.set_trace_level
@@ -51,7 +51,7 @@ items:
         '
       id: value
       type:
-      - cntk.logging.TraceLevel
+      - <xref:cntk.logging.TraceLevel>
   type: function
   uid: cntk.logging.set_trace_level
 references:

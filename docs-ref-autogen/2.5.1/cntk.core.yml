@@ -16,9 +16,9 @@ items:
 
 
 
-    * @NDArrayView
+    * <xref:NDArrayView>
 
-    * @Value
+    * <xref:Value>
 
     '
   type: module

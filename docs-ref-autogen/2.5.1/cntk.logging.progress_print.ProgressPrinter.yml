@@ -489,7 +489,7 @@ items:
         '
       id: trainer
       type:
-      - cntk.train.trainer.Trainer
+      - <xref:cntk.train.trainer.Trainer>
     - defaultValue: 'False'
       description: 'whether to update the metric accumulators
 

@@ -67,7 +67,7 @@ items:
         '
       id: dynamic_axes
       type:
-      - list of cntk.axis.Axis
+      - list of <xref:cntk.axis.Axis>
     - description: 'an optional name for this parameter.
 
         '
@@ -82,7 +82,7 @@ items:
   - python
   module: cntk.variables
   name: as_constant
-  summary: 'Converts this instance into a @cntk.variables.Constant
+  summary: 'Converts this instance into a <xref:cntk.variables.Constant>
 
     '
   syntax:
@@ -95,7 +95,7 @@ items:
   - python
   module: cntk.variables
   name: as_parameter
-  summary: 'Converts this instance into a @cntk.variables.Parameter
+  summary: 'Converts this instance into a <xref:cntk.variables.Parameter>
 
     '
   syntax:

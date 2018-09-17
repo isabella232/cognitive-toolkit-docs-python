@@ -11,10 +11,11 @@ items:
   - python
   module: cntk.layers.higher_order_layers
   name: higher_order_layers
-  summary: 'Higher-order functions, like @Sequential and @ResNetBlock. Note that
+  summary: 'Higher-order functions, like <xref:Sequential> and <xref:ResNetBlock>.
+    Note that
 
-    sequential higher-order functions like @cntk.layers.sequence.Recurrence are in
-    @cntk.layers.sequence.
+    sequential higher-order functions like <xref:cntk.layers.sequence.Recurrence>
+    are in <xref:cntk.layers.sequence>.
 
     '
   type: module
@@ -123,7 +124,7 @@ items:
         '
       id: f
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
       - equivalent Python function
     - defaultValue: ''
       id: name
@@ -207,8 +208,8 @@ items:
         '
       id: layers
       type:
-      - list of cntk.ops.functions.Function, equivalent Python functions, tuples of
-        functions,
+      - list of <xref:cntk.ops.functions.Function>, equivalent Python functions, tuples
+        of functions,
       - lists thereof
     - defaultValue: ''
       id: name
@@ -249,7 +250,7 @@ items:
       id: functions
       type:
       - single
-      - list of cntk.ops.functions.Function
+      - list of <xref:cntk.ops.functions.Function>
     - defaultValue: ''
       id: name
     return:
@@ -282,13 +283,13 @@ references:
   name: SequentialClique
   parent: cntk.layers.higher_order_layers
   uid: cntk.layers.higher_order_layers.SequentialClique
-- fullName: list of cntk.ops.functions.Function, equivalent Python functions, tuples
-    of functions,
-  name: Function, equivalent Python functions, tuples of functions,
+- fullName: list of <xref:cntk.ops.functions.Function>, equivalent Python functions,
+    tuples of functions,
+  name: Function>, equivalent Python functions, tuples of functions,
   spec.python:
-  - fullName: list of cntk.ops.functions.Function
-    name: Function
-    uid: list of cntk.ops.functions.Function
+  - fullName: list of <xref:cntk.ops.functions.Function>
+    name: Function>
+    uid: list of <xref:cntk.ops.functions.Function>
   - fullName: ', '
     name: ', '
   - fullName: equivalent Python functions
@@ -299,5 +300,5 @@ references:
   - fullName: tuples of functions,
     name: tuples of functions,
     uid: tuples of functions,
-  uid: list of cntk.ops.functions.Function, equivalent Python functions, tuples of
-    functions,
+  uid: list of <xref:cntk.ops.functions.Function>, equivalent Python functions, tuples
+    of functions,

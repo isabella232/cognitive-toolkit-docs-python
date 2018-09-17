@@ -14,24 +14,25 @@ items:
   - python
   module: cntk.layers.typing
   name: typing
-  summary: "The CNTK typing module contains basic CNTK type meta-classes for @cntk.functions.Function.update_signature\
-    \ and type signatures for the CNTK @cntk.ops.functions.Function decorator.\n\n\
-    \nThe type of a CNTK @cntk.variables.Variable is defined by five properties: `shape`,\
-    \ `dynamic_axes`, `is_sparse`, `dtype`, and `needs_gradient`.\nSome API functions\
-    \ accept these variables as independent arguments, e.g. @cntk.input.\nThe typing\
-    \ module provides a Pythonic way to represent the variable type properties as\
-    \ a single data object.\n\n\nPython type syntax can be used to create such a record\
-    \ for the three main properties, `shape`, `dynamic_axes`, and `is_sparse`,\nusing\
-    \ @cntk.layers.typing.Tensor,  @cntk.layers.typing.SparseTensor,  @cntk.layers.typing.ParameterTensor,\n\
-    @cntk.layers.typing.Sequence,  and @cntk.layers.typing.SequenceOver.\n\n\nNote:\
-    \ This new type system may undergo changes. Please give us feedback on github\
-    \ or stackoverflow\n\n\n### Example\n\n\n\n    >>> # Tensor[...] denotes a data\
-    \ variable (with implied batch dimension)\n    >>> from cntk.layers.typing import\
-    \ *\n    >>> tp = Tensor[13,42]\n    >>> tp.shape\n    (13, 42)\n    >>> tp.is_sparse\n\
-    \    False\n    >>> [str(axis.name) for axis in tp.dynamic_axes]\n    ['defaultBatchAxis']\n\
-    \n\n    >>> # SparseTensor[...] is a sparse Tensor\n    >>> tp = SparseTensor[9000]\n\
-    \    >>> tp.is_sparse\n    True\n\n\n    >>> # if the first argument is np.float32\
-    \ or np.float64 or np.float16, then this sets the dtype\n    >>> tp = Tensor[np.float32,13,42]\n\
+  summary: "The CNTK typing module contains basic CNTK type meta-classes for <xref:cntk.functions.Function.update_signature>\
+    \ and type signatures for the CNTK <xref:cntk.ops.functions.Function> decorator.\n\
+    \n\nThe type of a CNTK <xref:cntk.variables.Variable> is defined by five properties:\
+    \ `shape`, `dynamic_axes`, `is_sparse`, `dtype`, and `needs_gradient`.\nSome API\
+    \ functions accept these variables as independent arguments, e.g. <xref:cntk.input>.\n\
+    The typing module provides a Pythonic way to represent the variable type properties\
+    \ as a single data object.\n\n\nPython type syntax can be used to create such\
+    \ a record for the three main properties, `shape`, `dynamic_axes`, and `is_sparse`,\n\
+    using <xref:cntk.layers.typing.Tensor>,  <xref:cntk.layers.typing.SparseTensor>,\
+    \  <xref:cntk.layers.typing.ParameterTensor>,\n<xref:cntk.layers.typing.Sequence>,\
+    \  and <xref:cntk.layers.typing.SequenceOver>.\n\n\nNote: This new type system\
+    \ may undergo changes. Please give us feedback on github or stackoverflow\n\n\n\
+    ### Example\n\n\n\n    >>> # Tensor[...] denotes a data variable (with implied\
+    \ batch dimension)\n    >>> from cntk.layers.typing import *\n    >>> tp = Tensor[13,42]\n\
+    \    >>> tp.shape\n    (13, 42)\n    >>> tp.is_sparse\n    False\n    >>> [str(axis.name)\
+    \ for axis in tp.dynamic_axes]\n    ['defaultBatchAxis']\n\n\n    >>> # SparseTensor[...]\
+    \ is a sparse Tensor\n    >>> tp = SparseTensor[9000]\n    >>> tp.is_sparse\n\
+    \    True\n\n\n    >>> # if the first argument is np.float32 or np.float64 or\
+    \ np.float16, then this sets the dtype\n    >>> tp = Tensor[np.float32,13,42]\n\
     \    >>> print(tp.dtype == np.float32)\n    True\n\n\nThis record can be directly\
     \ passed to update_signature().\n\n\n### Example\n\n\n\n    >>> from cntk.layers\
     \ import *\n    >>> f = Dense(500)\n    >>> f.update_signature(Tensor[13,42])\n\
@@ -87,7 +88,7 @@ items:
     \ not allow to specify the special-purpose type property `needs_gradient`,\nnor\
     \ to `dtype` which instead should be specified as a global setting.\nIf these\
     \ properties are needed on a type object, please use construct an input using\
-    \ @cntk.input_var and get its `type` property.\n"
+    \ <xref:cntk.input_var> and get its `type` property.\n"
   type: module
   uid: cntk.layers.typing
 - fullName: cntk.layers.typing.Signature

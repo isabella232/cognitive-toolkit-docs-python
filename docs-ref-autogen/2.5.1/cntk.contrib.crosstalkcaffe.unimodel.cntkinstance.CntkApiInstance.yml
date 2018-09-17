@@ -88,7 +88,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance.get_model
 - class: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance

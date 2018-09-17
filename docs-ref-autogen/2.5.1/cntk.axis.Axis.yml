@@ -84,7 +84,7 @@ items:
 
         '
       type:
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
   type: method
   uid: cntk.axis.Axis.all_axes
 - class: cntk.axis.Axis
@@ -103,7 +103,7 @@ items:
 
         '
       type:
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
   type: method
   uid: cntk.axis.Axis.all_static_axes
 - class: cntk.axis.Axis
@@ -122,7 +122,7 @@ items:
 
         '
       type:
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
   type: method
   uid: cntk.axis.Axis.default_batch_axis
 - class: cntk.axis.Axis
@@ -141,7 +141,7 @@ items:
 
         '
       type:
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
   type: method
   uid: cntk.axis.Axis.default_dynamic_axis
 - class: cntk.axis.Axis
@@ -160,7 +160,7 @@ items:
 
         '
       type:
-      - tuple of cntk.axis.Axis
+      - tuple of <xref:cntk.axis.Axis>
   type: method
   uid: cntk.axis.Axis.default_input_variable_dynamic_axes
 - class: cntk.axis.Axis
@@ -270,7 +270,7 @@ items:
 
         '
       type:
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
   type: method
   uid: cntk.axis.Axis.new_leading_axis
 - class: cntk.axis.Axis
@@ -296,7 +296,7 @@ items:
 
         '
       type:
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
   type: method
   uid: cntk.axis.Axis.new_unique_dynamic_axis
 - class: cntk.axis.Axis
@@ -344,7 +344,7 @@ items:
 
         '
       type:
-      - tuple of cntk.axis.Axis
+      - tuple of <xref:cntk.axis.Axis>
   type: method
   uid: cntk.axis.Axis.unknown_dynamic_axes
 references:

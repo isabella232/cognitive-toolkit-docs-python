@@ -37,7 +37,7 @@ items:
         '
       id: source_solver
       type:
-      - cntk.contrib.crosstalkcaffe.utils.globalconf.SourceSolverConf
+      - <xref:cntk.contrib.crosstalkcaffe.utils.globalconf.SourceSolverConf>
     - description: 'the path to save temporary CNTK forward results
 
         '

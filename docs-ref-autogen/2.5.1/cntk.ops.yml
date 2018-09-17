@@ -160,8 +160,8 @@ items:
   syntax:
     content: abs(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -172,7 +172,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -194,8 +194,8 @@ items:
   syntax:
     content: acos(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -206,7 +206,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -238,7 +238,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -264,20 +264,20 @@ items:
   syntax:
     content: argmax(x, axis=None, name='')
     parameters:
-    - description: 'any @cntk.ops.functions.Function that outputs a tensor.
+    - description: 'any <xref:cntk.ops.functions.Function> that outputs a tensor.
 
         '
       id: x
       type:
       - numpy.array
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
     - description: 'axis along which the reduction will be performed
 
         '
       id: axis
       type:
       - int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -285,7 +285,7 @@ items:
       type:
       - str, default to ''
     return:
-      description: 'An instance of @cntk.ops.functions.Function
+      description: 'An instance of <xref:cntk.ops.functions.Function>
 
         '
       type:
@@ -313,20 +313,20 @@ items:
   syntax:
     content: argmin(x, axis=None, name='')
     parameters:
-    - description: 'any @cntk.ops.functions.Function that outputs a tensor.
+    - description: 'any <xref:cntk.ops.functions.Function> that outputs a tensor.
 
         '
       id: x
       type:
       - numpy.array
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
     - description: 'axis along which the reduction will be performed
 
         '
       id: axis
       type:
       - int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -334,7 +334,7 @@ items:
       type:
       - str, default to ''
     return:
-      description: 'An instance of @cntk.ops.functions.Function
+      description: 'An instance of <xref:cntk.ops.functions.Function>
 
         '
       type:
@@ -381,7 +381,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -409,7 +409,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -431,8 +431,8 @@ items:
   syntax:
     content: asin(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -443,7 +443,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -465,8 +465,8 @@ items:
   syntax:
     content: asinh(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -477,7 +477,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -563,7 +563,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -656,7 +656,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -678,8 +678,8 @@ items:
   syntax:
     content: atanh(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -690,7 +690,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -799,7 +799,7 @@ items:
       type:
       - bool, default False
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -832,7 +832,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -866,7 +866,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -943,7 +943,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -987,7 +987,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1041,7 +1041,7 @@ items:
         '
       id: device
       type:
-      - cntk.device.DeviceDescriptor
+      - <xref:cntk.device.DeviceDescriptor>
     - description: 'the name of the Function instance in the network
 
         '
@@ -1049,7 +1049,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.variables.Constant
+      description: '<xref:cntk.variables.Constant>
 
         '
   type: function
@@ -1184,7 +1184,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1309,7 +1309,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1331,8 +1331,8 @@ items:
   syntax:
     content: cos(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -1343,7 +1343,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1365,8 +1365,8 @@ items:
   syntax:
     content: cosh(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -1377,7 +1377,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1423,7 +1423,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1500,7 +1500,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1548,7 +1548,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1610,7 +1610,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1667,9 +1667,9 @@ items:
         '
       id: name
       type:
-      - cntk.ops.str, optional
+      - <xref:cntk.ops.str>, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1698,8 +1698,8 @@ items:
   syntax:
     content: element_and(x, y, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -1710,7 +1710,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1767,7 +1767,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1805,7 +1805,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1843,7 +1843,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1872,8 +1872,8 @@ items:
   syntax:
     content: element_not(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: y
@@ -1886,7 +1886,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1915,8 +1915,8 @@ items:
   syntax:
     content: element_or(x, y, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: y
@@ -1929,7 +1929,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -1983,7 +1983,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2056,7 +2056,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2085,8 +2085,8 @@ items:
   syntax:
     content: element_xor(x, y, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: y
@@ -2099,7 +2099,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2134,13 +2134,13 @@ items:
   syntax:
     content: elu(x, name='')
     parameters:
-    - description: 'any @cntk.ops.functions.Function that outputs a tensor.
+    - description: 'any <xref:cntk.ops.functions.Function> that outputs a tensor.
 
         '
       id: x
       type:
       - numpy.array
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
     - description: 'the name of the Function instance in the network
 
         '
@@ -2148,7 +2148,7 @@ items:
       type:
       - str, default to ''
     return:
-      description: 'An instance of @cntk.ops.functions.Function
+      description: 'An instance of <xref:cntk.ops.functions.Function>
 
         '
       type:
@@ -2206,7 +2206,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2236,8 +2236,8 @@ items:
   syntax:
     content: exp(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -2248,7 +2248,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2285,7 +2285,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2329,7 +2329,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2366,7 +2366,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2407,7 +2407,7 @@ items:
         '
       id: delayConstraint
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2449,7 +2449,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2505,7 +2505,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2561,7 +2561,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2595,8 +2595,8 @@ items:
   syntax:
     content: hard_sigmoid(x, alpha, beta, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -2619,7 +2619,7 @@ items:
       type:
       - str
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2663,8 +2663,8 @@ items:
   syntax:
     content: hardmax(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -2675,7 +2675,7 @@ items:
       type:
       - str
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2691,13 +2691,13 @@ items:
   syntax:
     content: image_scaler(x, scalar, biases, name='')
     parameters:
-    - description: 'any @cntk.ops.functions.Function that outputs a tensor.
+    - description: 'any <xref:cntk.ops.functions.Function> that outputs a tensor.
 
         '
       id: x
       type:
       - numpy.array
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
     - description: 'Scalar channel factor.
 
         '
@@ -2711,7 +2711,7 @@ items:
       type:
       - numpy array
     return:
-      description: 'An instance of @cntk.ops.functions.Function
+      description: 'An instance of <xref:cntk.ops.functions.Function>
 
         '
       type:
@@ -2777,7 +2777,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.variables.Variable
+      description: '<xref:cntk.variables.Variable>
 
         '
   type: function
@@ -2837,7 +2837,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.variables.Variable
+      description: '<xref:cntk.variables.Variable>
 
         '
   type: function
@@ -2877,7 +2877,7 @@ items:
         '
       id: labels
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -2912,13 +2912,13 @@ items:
   syntax:
     content: leaky_relu(x, alpha=0.01, name='')
     parameters:
-    - description: 'any @cntk.ops.functions.Function that outputs a tensor.
+    - description: 'any <xref:cntk.ops.functions.Function> that outputs a tensor.
 
         '
       id: x
       type:
       - numpy.array
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
     - description: 'the alpha term of the above equation.
 
         '
@@ -2932,7 +2932,7 @@ items:
       type:
       - str, default to ''
     return:
-      description: 'An instance of @cntk.ops.functions.Function
+      description: 'An instance of <xref:cntk.ops.functions.Function>
 
         '
       type:
@@ -2990,7 +2990,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3046,7 +3046,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3101,7 +3101,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3132,8 +3132,8 @@ items:
   syntax:
     content: log(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -3144,7 +3144,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3200,7 +3200,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3217,8 +3217,8 @@ items:
   syntax:
     content: log_softmax(x, axis=None, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -3235,7 +3235,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3288,7 +3288,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3359,7 +3359,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3394,7 +3394,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3424,8 +3424,8 @@ items:
   syntax:
     content: negate(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -3436,7 +3436,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3492,7 +3492,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3538,7 +3538,7 @@ items:
       type:
       - str, optional, keyword only
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3560,8 +3560,8 @@ items:
   syntax:
     content: ones_like(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -3572,7 +3572,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3595,7 +3595,7 @@ items:
   name: optimized_rnnstack
   summary: 'An RNN implementation that uses the primitives in cuDNN.
 
-    If cuDNN is not available it fails. You can use @cntk.misc.optimized_rnnstack_converter.convert_optimized_rnnstack
+    If cuDNN is not available it fails. You can use <xref:cntk.misc.optimized_rnnstack_converter.convert_optimized_rnnstack>
 
     to convert a model to GEMM-based implementation when no cuDNN.
 
@@ -3604,7 +3604,7 @@ items:
     content: optimized_rnnstack(operand, weights, hidden_size, num_layers, bidirectional=False,
       recurrent_op='lstm', name='')
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3649,7 +3649,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.variables.Variable that is of output type
+      description: '<xref:cntk.variables.Variable> that is of output type
 
         '
   type: function
@@ -3709,7 +3709,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3751,14 +3751,14 @@ items:
         '
       id: alpha
       type:
-      - cntk.variables.Parameter
-    - description: 'any @cntk.ops.functions.Function that outputs a tensor.
+      - <xref:cntk.variables.Parameter>
+    - description: 'any <xref:cntk.ops.functions.Function> that outputs a tensor.
 
         '
       id: x
       type:
       - numpy.array
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
     - description: 'the name of the Function instance in the network
 
         '
@@ -3766,7 +3766,7 @@ items:
       type:
       - str, default to ''
     return:
-      description: 'An instance of @cntk.ops.functions.Function
+      description: 'An instance of <xref:cntk.ops.functions.Function>
 
         '
       type:
@@ -3803,7 +3803,7 @@ items:
 
         NumPy array. If it is the output of an initializer form
 
-        @cntk it will be used to initialize the tensor at
+        <xref:cntk> it will be used to initialize the tensor at
 
         the first forward pass. If *None*, the tensor will be initialized
 
@@ -3829,7 +3829,7 @@ items:
         '
       id: device
       type:
-      - cntk.device.DeviceDescriptor
+      - <xref:cntk.device.DeviceDescriptor>
     - description: 'the name of the Parameter instance in the network
 
         '
@@ -3837,7 +3837,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.variables.Parameter
+      description: '<xref:cntk.variables.Parameter>
 
         '
   type: function
@@ -3877,7 +3877,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -3921,7 +3921,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.variables.Variable
+      description: '<xref:cntk.variables.Variable>
 
         '
   type: function
@@ -4003,7 +4003,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4038,7 +4038,7 @@ items:
 
         '
       id: operand
-    - description: 'one of @cntk.ops.MAX_POOLING or @cntk.ops.AVG_POOLING
+    - description: 'one of <xref:cntk.ops.MAX_POOLING> or <xref:cntk.ops.AVG_POOLING>
 
         '
       id: pooling_type
@@ -4077,7 +4077,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4122,7 +4122,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4191,9 +4191,9 @@ items:
         '
       id: name
       type:
-      - cntk.ops.str, optional
+      - <xref:cntk.ops.str>, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4266,14 +4266,14 @@ items:
 
     This operation will be typically used together
 
-    with @cntk.ops.random_sample.
+    with <xref:cntk.ops.random_sample>.
 
     '
   syntax:
     content: random_sample_inclusion_frequency(weights, num_samples, allow_duplicates,
       seed=4294967293, name='')
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4302,8 +4302,8 @@ items:
   syntax:
     content: reciprocal(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -4314,7 +4314,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4349,7 +4349,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4384,10 +4384,10 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis
-      - a list
-      - tuple of int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
+      - a <xref:list>
+      - <xref:tuple> of int
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -4395,7 +4395,7 @@ items:
       type:
       - str
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4429,10 +4429,10 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis
-      - a list
-      - tuple of int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
+      - a <xref:list>
+      - <xref:tuple> of int
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -4440,7 +4440,7 @@ items:
       type:
       - str
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4485,10 +4485,10 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis
-      - a list
-      - tuple of int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
+      - a <xref:list>
+      - <xref:tuple> of int
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -4496,7 +4496,7 @@ items:
       type:
       - str
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4537,10 +4537,10 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis
-      - a list
-      - tuple of int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
+      - a <xref:list>
+      - <xref:tuple> of int
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -4548,7 +4548,7 @@ items:
       type:
       - str
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4588,10 +4588,10 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis
-      - a list
-      - tuple of int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
+      - a <xref:list>
+      - <xref:tuple> of int
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -4599,7 +4599,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
 
         Note that CNTK keeps the shape of the resulting tensors when reducing over
@@ -4640,9 +4640,9 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
       - a list of integers
-      - a list of cntk.axis.Axis
+      - a list of <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -4650,7 +4650,7 @@ items:
       type:
       - str
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
 
         Note that CNTK keeps the shape of the resulting tensors when reducing over
@@ -4696,10 +4696,10 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis
-      - a list
-      - tuple of int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
+      - a <xref:list>
+      - <xref:tuple> of int
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -4707,7 +4707,7 @@ items:
       type:
       - str
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4761,10 +4761,10 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis
-      - a list
-      - tuple of int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
+      - a <xref:list>
+      - <xref:tuple> of int
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -4772,7 +4772,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4806,10 +4806,10 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis
-      - a list
-      - tuple of int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
+      - a <xref:list>
+      - <xref:tuple> of int
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -4817,7 +4817,7 @@ items:
       type:
       - str
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4851,8 +4851,8 @@ items:
   syntax:
     content: relu(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -4863,7 +4863,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4935,7 +4935,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -4979,7 +4979,7 @@ items:
 
         '
       id: operand
-    - description: 'only @cntk.ops.MAX_POOLING
+    - description: 'only <xref:cntk.ops.MAX_POOLING>
 
         '
       id: pooling_type
@@ -5003,7 +5003,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5046,7 +5046,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5081,13 +5081,13 @@ items:
   syntax:
     content: selu(x, scale=1.0507009873554805, alpha=1.6732632423543772, name='')
     parameters:
-    - description: 'any @cntk.ops.functions.Function that outputs a tensor.
+    - description: 'any <xref:cntk.ops.functions.Function> that outputs a tensor.
 
         '
       id: x
       type:
       - numpy.array
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
     - description: 'the name of the Function instance in the network
 
         '
@@ -5095,7 +5095,7 @@ items:
       type:
       - str, default to ''
     return:
-      description: 'An instance of @cntk.ops.functions.Function
+      description: 'An instance of <xref:cntk.ops.functions.Function>
 
         '
       type:
@@ -5130,8 +5130,8 @@ items:
   syntax:
     content: sigmoid(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -5142,7 +5142,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5164,8 +5164,8 @@ items:
   syntax:
     content: sin(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -5176,7 +5176,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5198,8 +5198,8 @@ items:
   syntax:
     content: sinh(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -5210,7 +5210,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5256,7 +5256,7 @@ items:
   syntax:
     content: slice(x, axis, begin_index, end_index, strides=None, name='')
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5300,8 +5300,8 @@ items:
   syntax:
     content: softmax(x, axis=None, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -5311,7 +5311,7 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -5319,7 +5319,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5371,13 +5371,13 @@ items:
   syntax:
     content: softplus(x, steepness=1, name='')
     parameters:
-    - description: 'any @cntk.ops.functions.Function that outputs a tensor.
+    - description: 'any <xref:cntk.ops.functions.Function> that outputs a tensor.
 
         '
       id: x
       type:
       - numpy.array
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
     - description: 'optional steepness factor
 
         '
@@ -5391,7 +5391,7 @@ items:
       type:
       - str, default to ''
     return:
-      description: 'An instance of @cntk.ops.functions.Function
+      description: 'An instance of <xref:cntk.ops.functions.Function>
 
         '
       type:
@@ -5426,8 +5426,8 @@ items:
   syntax:
     content: softsign(x, steepness=1, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -5438,7 +5438,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5505,7 +5505,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5543,7 +5543,7 @@ items:
       id: axis
       type:
       - int
-      - cntk.axis.Axis, optional, keyword only
+      - <xref:cntk.axis.Axis>, optional, keyword only
     - description: 'the name of the Function instance in the network
 
         '
@@ -5551,7 +5551,7 @@ items:
       type:
       - str, optional, keyword only
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5579,8 +5579,8 @@ items:
   syntax:
     content: sqrt(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -5591,7 +5591,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5620,8 +5620,8 @@ items:
   syntax:
     content: square(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -5632,7 +5632,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5667,7 +5667,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5695,7 +5695,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5746,7 +5746,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5778,14 +5778,14 @@ items:
       id: axis1
       type:
       - int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
     - description: 'the axis to swap with `axis1`
 
         '
       id: axis2
       type:
       - int
-      - cntk.axis.Axis
+      - <xref:cntk.axis.Axis>
     - description: 'the name of the Function instance in the network
 
         '
@@ -5793,7 +5793,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5815,8 +5815,8 @@ items:
   syntax:
     content: tanh(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -5827,7 +5827,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5893,7 +5893,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5951,7 +5951,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -5996,7 +5996,7 @@ items:
         '
       id: name
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -6047,7 +6047,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -6086,7 +6086,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -6126,7 +6126,7 @@ items:
 
     along the specified axis (default the last axis). The returned
 
-    @cntk.ops.functions.Function has two outputs. The first one
+    <xref:cntk.ops.functions.Function> has two outputs. The first one
 
     contains the top `k` values in sorted order, and the second one contains
 
@@ -6136,8 +6136,8 @@ items:
   syntax:
     content: top_k(x, k, axis=-1, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -6158,7 +6158,7 @@ items:
       type:
       - str
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -6210,7 +6210,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -6243,7 +6243,7 @@ items:
         '
       id: name
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -6284,7 +6284,7 @@ items:
 
         '
       id: pooling_input
-    - description: 'only @cntk.ops.MAX_UNPOOLING is supported now
+    - description: 'only <xref:cntk.ops.MAX_UNPOOLING> is supported now
 
         '
       id: unpooling_type
@@ -6309,7 +6309,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -6331,8 +6331,8 @@ items:
   syntax:
     content: zeros_like(x, name='')
     parameters:
-    - description: 'numpy array or any @cntk.ops.functions.Function that outputs a
-        tensor
+    - description: 'numpy array or any <xref:cntk.ops.functions.Function> that outputs
+        a tensor
 
         '
       id: x
@@ -6343,7 +6343,7 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function
+      description: '<xref:cntk.ops.functions.Function>
 
         '
   type: function
@@ -7107,18 +7107,18 @@ references:
   - fullName: )
     name: )
   uid: float, [0,1)
-- fullName: cntk.ops.str, optional
-  name: str, optional
+- fullName: <xref:cntk.ops.str>, optional
+  name: str>, optional
   spec.python:
-  - fullName: cntk.ops.str
-    name: str
-    uid: cntk.ops.str
+  - fullName: <xref:cntk.ops.str>
+    name: str>
+    uid: <xref:cntk.ops.str>
   - fullName: ', '
     name: ', '
   - fullName: optional
     name: optional
     uid: optional
-  uid: cntk.ops.str, optional
+  uid: <xref:cntk.ops.str>, optional
 - fullName: bool, optional
   name: bool, optional
   spec.python:
@@ -7198,12 +7198,12 @@ references:
     name: optional
     uid: optional
   uid: float, optional
-- fullName: cntk.axis.Axis, optional, keyword only
-  name: Axis, optional, keyword only
+- fullName: <xref:cntk.axis.Axis>, optional, keyword only
+  name: Axis>, optional, keyword only
   spec.python:
-  - fullName: cntk.axis.Axis
-    name: Axis
-    uid: cntk.axis.Axis
+  - fullName: <xref:cntk.axis.Axis>
+    name: Axis>
+    uid: <xref:cntk.axis.Axis>
   - fullName: ', '
     name: ', '
   - fullName: optional
@@ -7214,4 +7214,4 @@ references:
   - fullName: keyword only
     name: keyword only
     uid: keyword only
-  uid: cntk.axis.Axis, optional, keyword only
+  uid: <xref:cntk.axis.Axis>, optional, keyword only

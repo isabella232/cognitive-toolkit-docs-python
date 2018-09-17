@@ -14,7 +14,7 @@ items:
   - python
   module: cntk.train.training_session
   name: TrainingSession
-  summary: 'The instance of the class should be created by using @cntk.train.training_session.training_session
+  summary: 'The instance of the class should be created by using <xref:cntk.train.training_session.training_session>
     function.
 
 
@@ -37,19 +37,19 @@ items:
         '
       id: trainer
       type:
-      - cntk.train.trainer.Trainer
+      - <xref:cntk.train.trainer.Trainer>
     - description: 'minibatch source used for training
 
         '
       id: mb_source
       type:
-      - cntk.io.MinibatchSource
+      - <xref:cntk.io.MinibatchSource>
     - description: 'minibatch size schedule for training
 
         '
       id: mb_size
       type:
-      - cntk.cntk_py.minibatch_size_schedule
+      - <xref:cntk.cntk_py.minibatch_size_schedule>
       - int
     - description: 'mapping between input variables and input streams
 
@@ -66,10 +66,11 @@ items:
     - description: 'the number of samples, minibatches, sweeps of epochs per which
         aggregated progress is printed
 
-        If a tuple of (*frequency*, @cntk.train.training_session.DataUnit), the *frequency*
-        is in terms of either *DataUnit.sample*, *DataUnit.minibatch* or *DataUnit.sweep*.
+        If a tuple of (*frequency*, <xref:cntk.train.training_session.DataUnit>),
+        the *frequency* is in terms of either *DataUnit.sample*, *DataUnit.minibatch*
+        or *DataUnit.sweep*.
 
-        See @cntk.train.training_session.DataUnit for more information on frequency
+        See <xref:cntk.train.training_session.DataUnit> for more information on frequency
         data unit.
 
         '
@@ -81,19 +82,19 @@ items:
         '
       id: checkpoint_config
       type:
-      - cntk.train.training_session.CheckpointConfig
+      - <xref:cntk.train.training_session.CheckpointConfig>
     - description: 'cross validation configuration
 
         '
       id: cv_config
       type:
-      - cntk.train.training_session.CrossValidationConfig
+      - <xref:cntk.train.training_session.CrossValidationConfig>
     - description: 'test configuration
 
         '
       id: test_config
       type:
-      - cntk.train.training_session.TestConfig
+      - <xref:cntk.train.training_session.TestConfig>
   type: class
   uid: cntk.train.training_session.TrainingSession
 - class: cntk.train.training_session.TrainingSession
@@ -157,7 +158,7 @@ items:
         '
       id: device
       type:
-      - cntk.device.DeviceDescriptor
+      - <xref:cntk.device.DeviceDescriptor>
   type: method
   uid: cntk.train.training_session.TrainingSession.train
 references:

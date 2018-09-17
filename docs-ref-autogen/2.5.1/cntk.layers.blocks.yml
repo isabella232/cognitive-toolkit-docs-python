@@ -57,7 +57,7 @@ items:
 
         '
       type:
-      - cntk.variables.Variable
+      - <xref:cntk.variables.Variable>
   type: function
   uid: cntk.layers.blocks.ForwardDeclaration
 - example:
@@ -113,7 +113,7 @@ items:
         '
       id: activation
       type:
-      - cntk.ops.functions.Function, defaults to cntk.ops.tanh
+      - <xref:cntk.ops.functions.Function>, defaults to <xref:cntk.ops.tanh>
     - description: 'initial value of weights *W*
 
         '
@@ -121,7 +121,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to glorot_uniform
+      - <xref:cntk>, defaults to glorot_uniform
     - description: 'initial value of weights *b*
 
         '
@@ -129,8 +129,8 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to 0
-    - description: 'if *True* then add a @cntk.layers.blocks.Stabilizer
+      - <xref:cntk>, defaults to 0
+    - description: 'if *True* then add a <xref:cntk.layers.blocks.Stabilizer>
 
         to all state-related projections (but not the data input)
 
@@ -151,7 +151,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: function
   uid: cntk.layers.blocks.GRU
 - example:
@@ -207,7 +207,7 @@ items:
         '
       id: activation
       type:
-      - cntk.ops.functions.Function, defaults to cntk.ops.tanh
+      - <xref:cntk.ops.functions.Function>, defaults to <xref:cntk.ops.tanh>
     - description: ''
       id: use_peepholes
       type:
@@ -219,7 +219,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to glorot_uniform
+      - <xref:cntk>, defaults to glorot_uniform
     - description: 'initial value of weights *b*
 
         '
@@ -227,8 +227,8 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to 0
-    - description: 'if *True* then add a @cntk.layers.blocks.Stabilizer
+      - <xref:cntk>, defaults to 0
+    - description: 'if *True* then add a <xref:cntk.layers.blocks.Stabilizer>
 
         to all state-related projections (but not the data input)
 
@@ -249,7 +249,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: function
   uid: cntk.layers.blocks.LSTM
 - example:
@@ -305,7 +305,7 @@ items:
         '
       id: activation
       type:
-      - cntk.ops.functions.Function, defaults to signmoid
+      - <xref:cntk.ops.functions.Function>, defaults to signmoid
     - description: 'initial value of weights *W*
 
         '
@@ -313,7 +313,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to glorot_uniform
+      - <xref:cntk>, defaults to glorot_uniform
     - description: 'initial value of weights *b*
 
         '
@@ -321,8 +321,8 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to 0
-    - description: 'if *True* then add a @cntk.layers.blocks.Stabilizer
+      - <xref:cntk>, defaults to 0
+    - description: 'if *True* then add a <xref:cntk.layers.blocks.Stabilizer>
 
         to all state-related projections (but not the data input)
 
@@ -343,7 +343,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: function
   uid: cntk.layers.blocks.RNNStep
 - fullName: cntk.layers.blocks.RNNUnit
@@ -351,8 +351,8 @@ items:
   - python
   module: cntk.layers.blocks
   name: RNNUnit
-  summary: 'This is a deprecated name for @cntk.layers.blocks.RNNStep. Use that name
-    instead.
+  summary: 'This is a deprecated name for <xref:cntk.layers.blocks.RNNStep>. Use that
+    name instead.
 
     '
   syntax:
@@ -409,7 +409,7 @@ items:
   summary: "Layer factory function to create a [Droppo self-stabilizer](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/SelfLR.pdf).\n\
     It multiplies its input with a scalar that is learned.\n\nThis takes *enable_self_stabilization*\
     \ as a flag that allows to disable itself. Useful if this is a global default.\n\
-    \nNote: Some other layers (specifically, recurrent units like @cntk.layers.blocks.LSTM)\
+    \nNote: Some other layers (specifically, recurrent units like <xref:cntk.layers.blocks.LSTM>)\
     \ also have the option to use the `Stabilizer()` layer internally. That is enabled\
     \ by passing *enable_self_stabilization=True* to those layers. In conjunction\
     \ with those, the rule is that an explicit `Stabilizer()` must be inserted by\
@@ -447,7 +447,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: function
   uid: cntk.layers.blocks.Stabilizer
 - fullName: cntk.layers.blocks.UntestedBranchError
@@ -509,42 +509,42 @@ references:
     name: defaults to None
     uid: defaults to None
   uid: tuple, defaults to None
-- fullName: cntk.ops.functions.Function, defaults to cntk.ops.tanh
-  name: Function, tanh
+- fullName: <xref:cntk.ops.functions.Function>, defaults to <xref:cntk.ops.tanh>
+  name: Function>, tanh>
   spec.python:
-  - fullName: cntk.ops.functions.Function
-    name: Function
-    uid: cntk.ops.functions.Function
+  - fullName: <xref:cntk.ops.functions.Function>
+    name: Function>
+    uid: <xref:cntk.ops.functions.Function>
   - fullName: ', '
     name: ', '
-  - fullName: defaults to cntk.ops.tanh
-    name: tanh
-    uid: defaults to cntk.ops.tanh
-  uid: cntk.ops.functions.Function, defaults to cntk.ops.tanh
-- fullName: cntk, defaults to glorot_uniform
-  name: cntk, defaults to glorot_uniform
+  - fullName: defaults to <xref:cntk.ops.tanh>
+    name: tanh>
+    uid: defaults to <xref:cntk.ops.tanh>
+  uid: <xref:cntk.ops.functions.Function>, defaults to <xref:cntk.ops.tanh>
+- fullName: <xref:cntk>, defaults to glorot_uniform
+  name: <xref:cntk>, defaults to glorot_uniform
   spec.python:
-  - fullName: cntk
-    name: cntk
-    uid: cntk
+  - fullName: <xref:cntk>
+    name: <xref:cntk>
+    uid: <xref:cntk>
   - fullName: ', '
     name: ', '
   - fullName: defaults to glorot_uniform
     name: defaults to glorot_uniform
     uid: defaults to glorot_uniform
-  uid: cntk, defaults to glorot_uniform
-- fullName: cntk, defaults to 0
-  name: cntk, defaults to 0
+  uid: <xref:cntk>, defaults to glorot_uniform
+- fullName: <xref:cntk>, defaults to 0
+  name: <xref:cntk>, defaults to 0
   spec.python:
-  - fullName: cntk
-    name: cntk
-    uid: cntk
+  - fullName: <xref:cntk>
+    name: <xref:cntk>
+    uid: <xref:cntk>
   - fullName: ', '
     name: ', '
   - fullName: defaults to 0
     name: defaults to 0
     uid: defaults to 0
-  uid: cntk, defaults to 0
+  uid: <xref:cntk>, defaults to 0
 - fullName: bool, defaults to False
   name: bool, defaults to False
   spec.python:
@@ -569,18 +569,18 @@ references:
     name: defaults to ''
     uid: defaults to ''
   uid: str, defaults to ''
-- fullName: cntk.ops.functions.Function, defaults to signmoid
-  name: Function, defaults to signmoid
+- fullName: <xref:cntk.ops.functions.Function>, defaults to signmoid
+  name: Function>, defaults to signmoid
   spec.python:
-  - fullName: cntk.ops.functions.Function
-    name: Function
-    uid: cntk.ops.functions.Function
+  - fullName: <xref:cntk.ops.functions.Function>
+    name: Function>
+    uid: <xref:cntk.ops.functions.Function>
   - fullName: ', '
     name: ', '
   - fullName: defaults to signmoid
     name: defaults to signmoid
     uid: defaults to signmoid
-  uid: cntk.ops.functions.Function, defaults to signmoid
+  uid: <xref:cntk.ops.functions.Function>, defaults to signmoid
 - fullName: int, defaults to 4
   name: int, defaults to 4
   spec.python:

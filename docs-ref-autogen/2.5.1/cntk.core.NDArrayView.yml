@@ -23,11 +23,11 @@ items:
   name: NDArrayView
   summary: 'Creates an empty dense internal data representation of a
 
-    @cntk.core.Value object.
+    <xref:cntk.core.Value> object.
 
-    To create an NDArrayView from a NumPy array, use @cntk.core.NDArrayView.from_dense.
+    To create an NDArrayView from a NumPy array, use <xref:cntk.core.NDArrayView.from_dense>.
 
-    To create an NDArrayView from a sparse array, use @cntk.core.NDArrayView.from_csr.
+    To create an NDArrayView from a sparse array, use <xref:cntk.core.NDArrayView.from_csr>.
 
 
 
@@ -61,7 +61,7 @@ items:
         '
       id: device
       type:
-      - cntk.device.DeviceDescriptor
+      - <xref:cntk.device.DeviceDescriptor>
   type: class
   uid: cntk.core.NDArrayView
 - class: cntk.core.NDArrayView
@@ -70,7 +70,7 @@ items:
   - python
   module: cntk.core
   name: device
-  summary: 'Retrieves the @cntk.device.DeviceDescriptor instance.
+  summary: 'Retrieves the <xref:cntk.device.DeviceDescriptor> instance.
 
     '
   syntax: {}
@@ -94,8 +94,8 @@ items:
   - python
   module: cntk.core
   name: from_csr
-  summary: 'Create an @cntk.core.NDArrayView instance from a SciPy sparse array in
-    CSR
+  summary: 'Create an <xref:cntk.core.NDArrayView> instance from a SciPy sparse array
+    in CSR
 
     format.
 
@@ -118,7 +118,7 @@ items:
         '
       id: device
       type:
-      - cntk.device.DeviceDescriptor
+      - <xref:cntk.device.DeviceDescriptor>
     - description: 'whether the data can be modified or
 
         not (default False)
@@ -149,7 +149,7 @@ items:
       type:
       - tuple, default None
     return:
-      description: '@cntk.core.NDArrayView instance
+      description: '<xref:cntk.core.NDArrayView> instance
 
         '
   type: method
@@ -160,7 +160,8 @@ items:
   - python
   module: cntk.core
   name: from_data
-  summary: 'Create an @cntk.core.NDArrayView instance from a NumPy or SciPy sparse
+  summary: 'Create an <xref:cntk.core.NDArrayView> instance from a NumPy or SciPy
+    sparse
 
     array in CSR format.
 
@@ -182,7 +183,7 @@ items:
         '
       id: device
       type:
-      - cntk.device.DeviceDescriptor
+      - <xref:cntk.device.DeviceDescriptor>
     - description: 'whether the data can be modified or
 
         not (default False)
@@ -200,7 +201,7 @@ items:
       type:
       - bool, default False
     return:
-      description: '@cntk.core.NDArrayView instance
+      description: '<xref:cntk.core.NDArrayView> instance
 
         '
   type: method
@@ -211,7 +212,7 @@ items:
   - python
   module: cntk.core
   name: from_dense
-  summary: 'Create an @cntk.core.NDArrayView instance from a NumPy array.
+  summary: 'Create an <xref:cntk.core.NDArrayView> instance from a NumPy array.
 
     '
   syntax:
@@ -230,7 +231,7 @@ items:
         '
       id: device
       type:
-      - cntk.device.DeviceDescriptor
+      - <xref:cntk.device.DeviceDescriptor>
     - description: 'whether nd_array memory can be
 
         borrowed internally to speed up the data creation
@@ -248,7 +249,7 @@ items:
       type:
       - bool, optional
     return:
-      description: '@cntk.core.NDArrayView instance
+      description: '<xref:cntk.core.NDArrayView> instance
 
         '
   type: method

@@ -87,13 +87,13 @@ items:
     \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
     : [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   @Function\n   def f(x:Tensor[13]):\n\
     \       return x * x\n   ````\n\nIf you are working with Python 2.7, use CNTK's\
-    \ @cntk.layers.typing.Signature decorator instead:\n\n<!-- literal_block {\"ids\"\
-    : [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
-    : \"preserve\"} -->\n\n````\n\n   >>> from cntk.layers.typing import *\n   >>>\
-    \ @Function\n   ... @Signature(Tensor[13])\n   ... def f(x):\n   ...     return\
-    \ x * x\n   >>> print(f)\n   ElementTimes(x: Tensor[13]) -> Tensor[13]\n   ````\n\
-    \n`make_block=True` is an internal parameter used to implement @cntk.ops.functions.BlockFunction.\n\
-    If *BlockFunction()* passes *True*, then the result will be wrapped\nin @cntk.ops.as_block,\
+    \ <xref:cntk.layers.typing.Signature> decorator instead:\n\n<!-- literal_block\
+    \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
+    : [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   >>> from cntk.layers.typing\
+    \ import *\n   >>> @Function\n   ... @Signature(Tensor[13])\n   ... def f(x):\n\
+    \   ...     return x * x\n   >>> print(f)\n   ElementTimes(x: Tensor[13]) -> Tensor[13]\n\
+    \   ````\n\n`make_block=True` is an internal parameter used to implement <xref:cntk.ops.functions.BlockFunction>.\n\
+    If *BlockFunction()* passes *True*, then the result will be wrapped\nin <xref:cntk.ops.as_block>,\
     \ using the supplied `op_name` and `name` parameters, which are otherwise ignored.\n\
     \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
     \n\n"
@@ -192,7 +192,7 @@ items:
     variables of the Function, to calculate gradients with respect to\n`variables`.\
     \ Formally, multiplies the values of `root_gradients` by\nthe Jacobian of the\
     \ Function and returns the subset of the output that\ncorresponds to `variables`.\n\
-    \nNote: See @cntk.ops.functions.Function.forward for more examples on passing\
+    \nNote: See <xref:cntk.ops.functions.Function.forward> for more examples on passing\
     \ input data. \n"
   syntax:
     content: backward(state, root_gradients, variables, as_numpy=True)
@@ -257,7 +257,7 @@ items:
         \ (constant). \n"
       id: method
       type:
-      - cntk.ops.functions.CloneMethod
+      - <xref:cntk.ops.functions.CloneMethod>
     - description: 'a dictionary mapping variables in this
 
         function to variables in the cloned function
@@ -271,7 +271,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.ops.functions.Function.clone
 - class: cntk.ops.functions.Function
@@ -280,7 +280,7 @@ items:
   - python
   module: cntk.ops.functions
   name: constants
-  summary: 'List of all *Constant* variables of this @cntk.ops.functions.Function
+  summary: 'List of all *Constant* variables of this <xref:cntk.ops.functions.Function>
 
     '
   syntax: {}
@@ -320,8 +320,8 @@ items:
   module: cntk.ops.functions
   name: eval
   summary: "Evaluate the Function's outputs using the specified `arguments` as input.\n\
-    \nNote: See @cntk.ops.functions.Function.forward for examples on passing input\
-    \ data. \n"
+    \nNote: See <xref:cntk.ops.functions.Function.forward> for examples on passing\
+    \ input data. \n"
   syntax:
     content: eval(arguments=None, outputs=None, device=None, as_numpy=True)
     parameters:
@@ -373,7 +373,7 @@ items:
   - python
   module: cntk.ops.functions
   name: find_all_with_name
-  seealsoContent: '  @cntk.ops.functions.find_by_name
+  seealsoContent: '  <xref:cntk.ops.functions.find_by_name>
 
     '
   summary: 'Returns a list of primitive function with `name` in the graph
@@ -382,7 +382,7 @@ items:
 
     multiple times. If you expect only one function to be returned, use
 
-    @cntk.ops.functions.find_by_name.
+    <xref:cntk.ops.functions.find_by_name>.
 
     '
   syntax:
@@ -403,7 +403,7 @@ items:
       type:
       - int, default 0
     return:
-      description: 'list of @cntk.ops.functions.Function objects matching `name`
+      description: 'list of <xref:cntk.ops.functions.Function> objects matching `name`
 
         '
   type: method
@@ -453,7 +453,7 @@ items:
   - python
   module: cntk.ops.functions
   name: find_by_name
-  seealsoContent: '  @cntk.ops.functions.Function.find_all_with_name
+  seealsoContent: '  <xref:cntk.ops.functions.Function.find_all_with_name>
 
     '
   summary: 'Returns a primitive function with `name` in the graph starting from
@@ -462,7 +462,7 @@ items:
 
     you expect multiple functions to be returned, use
 
-    @cntk.ops.functions.Function.find_all_with_name.
+    <xref:cntk.ops.functions.Function.find_all_with_name>.
 
     '
   syntax:
@@ -483,7 +483,7 @@ items:
       type:
       - int, default 0
     return:
-      description: '@cntk.ops.functions.Function object matching `name`
+      description: '<xref:cntk.ops.functions.Function> object matching `name`
 
         '
   type: method
@@ -544,7 +544,7 @@ items:
         \ a list of bools, denoting whether a sequence is a new one (*True*) or a\
         \ continuation of the sequence in the same slot of the previous minibatch\
         \ (*False*). This will be applied to all batches. \n\nData should be either\
-        \ NumPy arrays or a\n@cntk.io.MinibatchData instance.\n"
+        \ NumPy arrays or a\n<xref:cntk.io.MinibatchData> instance.\n"
       id: arguments
     - description: 'outputs to fetch values for. If not
 
@@ -560,8 +560,8 @@ items:
 
         in a subsequent backward call. If *None*, the returned state will
 
-        be *None* and a subsequent call to @cntk.ops.functions.Function.backward will
-        not be
+        be *None* and a subsequent call to <xref:cntk.ops.functions.Function.backward>
+        will not be
 
         possible.
 
@@ -578,7 +578,7 @@ items:
         '
       id: device
       type:
-      - cntk.device.DeviceDescriptor, default None
+      - <xref:cntk.device.DeviceDescriptor>, default None
     - description: 'whether to return the result as a NumPy array. Default True.
 
         Specifying this as False returns a CNTK Value which avoids a
@@ -598,7 +598,7 @@ items:
     return:
       description: 'A tuple (BackPropState, map of outputs to NumPy arrays). The
 
-        BackPropState is a handle taken by @cntk.ops.functions.Function.backward.
+        BackPropState is a handle taken by <xref:cntk.ops.functions.Function.backward>.
 
         '
   type: method
@@ -657,7 +657,7 @@ items:
         '
       id: device
       type:
-      - cntk.device.DeviceDescriptor, default None
+      - <xref:cntk.device.DeviceDescriptor>, default None
     - description: 'whether to return the gradients as a NumPy array. Default True.
 
         Specifying this as False returns a CNTK Value which avoids a
@@ -681,7 +681,7 @@ items:
         '
       id: grad_root
       type:
-      - cntk.variables.Variable, optional
+      - <xref:cntk.variables.Variable>, optional
     return:
       description: 'Dict with keys of `wrt` variables and gradient values of
 
@@ -779,7 +779,7 @@ items:
   - python
   module: cntk.ops.functions
   name: load
-  summary: 'Load the `model`, that has been saved using @cntk.ops.functions.Function.save.
+  summary: 'Load the `model`, that has been saved using <xref:cntk.ops.functions.Function.save>.
 
     '
   syntax:
@@ -799,7 +799,8 @@ items:
         '
       id: device
       type:
-      - cntk.device.DeviceDescriptor, defaults to the current globally default device
+      - <xref:cntk.device.DeviceDescriptor>, defaults to the current globally default
+        device
     - description: 'specifies the format of the file to load.
 
         if the specified format is ONNX, then model must be a filename.
@@ -807,7 +808,7 @@ items:
         '
       id: format
       type:
-      - cntk.ModelFormat, defaults to CNTKv2 format
+      - <xref:cntk.ModelFormat>, defaults to CNTKv2 format
     return:
       description: 'root node
 
@@ -936,7 +937,7 @@ items:
 
     (non-native) user-defined functions by invoking a static
 
-    @cntk.ops.functions.UserFunction.deserialize method of the
+    <xref:cntk.ops.functions.UserFunction.deserialize> method of the
 
     corresponding UserFunction sub-class. This method allows to override
 
@@ -960,7 +961,7 @@ items:
 
         inputs to the UserFunction, a string name, and a state dictionary
 
-        generated by the corresponding @cntk.ops.functions.UserFunction.serialize
+        generated by the corresponding <xref:cntk.ops.functions.UserFunction.serialize>
 
         method) and returns an instance of the user-defined function.
 
@@ -996,13 +997,13 @@ items:
         '
       id: substitution
       type:
-      - cntk.variables.Variable
+      - <xref:cntk.variables.Variable>
     return:
       description: 'itself
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.ops.functions.Function.replace_placeholder
 - class: cntk.ops.functions.Function
@@ -1030,7 +1031,7 @@ items:
 
         '
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
   type: method
   uid: cntk.ops.functions.Function.replace_placeholders
 - class: cntk.ops.functions.Function
@@ -1112,10 +1113,11 @@ items:
     parameters:
     - description: "one of\n\n* 'dropoutRate': modifies the dropout rate of a dropout\
         \ function (can only be invoked on a function instance returned either from\
-        \ @cntk.ops.dropout or @cntk.ops.functions.Function.find_by_name). \n\n* 'rngSeed':\
-        \ modifies the seed of a stateful function (can only be invoked on  function\
-        \ instance returned from @cntk.ops.dropout, @cntk.ops.random_sample, @cntk.ops.random_sample_inclusion_frequency\
-        \ or @cntk.ops.functions.Function.find_by_name) \n"
+        \ <xref:cntk.ops.dropout> or <xref:cntk.ops.functions.Function.find_by_name>).\
+        \ \n\n* 'rngSeed': modifies the seed of a stateful function (can only be invoked\
+        \ on  function instance returned from <xref:cntk.ops.dropout>, <xref:cntk.ops.random_sample>,\
+        \ <xref:cntk.ops.random_sample_inclusion_frequency> or <xref:cntk.ops.functions.Function.find_by_name>)\
+        \ \n"
       id: name
       type:
       - string
@@ -1156,7 +1158,7 @@ items:
     average metric value (or loss if model has only one output) on a set of data.
 
 
-    This is a convenience wrapper around @cntk.eval.evaluator.Evaluator.
+    This is a convenience wrapper around <xref:cntk.eval.evaluator.Evaluator>.
 
     '
   syntax:
@@ -1168,14 +1170,14 @@ items:
         '
       id: minibatch_source
       type:
-      - cntk.io.MinibatchSource
+      - <xref:cntk.io.MinibatchSource>
     - defaultValue: '32'
       description: 'minibatch size for evaluation
 
         '
       id: minibatch_size
       type:
-      - cntk.cntk_py.minibatch_size_schedule
+      - <xref:cntk.cntk_py.minibatch_size_schedule>
       - int
     - defaultValue: None
       description: 'the streams of the minibatch_source in argument order
@@ -1194,7 +1196,7 @@ items:
     - defaultValue: None
       description: 'optionally, list of
 
-        progress writers from @cntk.logging to automatically track training
+        progress writers from <xref:cntk.logging> to automatically track training
 
         progress.
 
@@ -1279,7 +1281,7 @@ items:
     can be configured using the corresponding config classes.
 
 
-    The input data can be specified as a data reader (@cntk.io.MinibatchSource)
+    The input data can be specified as a data reader (<xref:cntk.io.MinibatchSource>)
 
     for large corpora; or directly as numpy/scipy arrays if the data is so small that
     it
@@ -1339,26 +1341,26 @@ items:
     CNTK has a fixed set of callback types, and only those types are allowed in the
     *callbacks* list:
 
-    An object of type @cntk.cntk_py.ProgressWriter from @cntk.logging is used for
-    progress logging;
+    An object of type <xref:cntk.cntk_py.ProgressWriter> from <xref:cntk.logging>
+    is used for progress logging;
 
-    a @cntk.train.training_session.CheckpointConfig configures the checkpointing mechanism,
-    which
+    a <xref:cntk.train.training_session.CheckpointConfig> configures the checkpointing
+    mechanism, which
 
     keeps copies of models at regular intervals and allows to seamlessly restart from
     a last checkpoint;
 
-    a @cntk.train.training_session.TestConfig allows to specify a test set that is
-    evaluated at the end of the training;
+    a <xref:cntk.train.training_session.TestConfig> allows to specify a test set that
+    is evaluated at the end of the training;
 
-    and a @cntk.train.training_session.CrossValidationConfig specifies a user callback
-    that can be used to adjust learning
+    and a <xref:cntk.train.training_session.CrossValidationConfig> specifies a user
+    callback that can be used to adjust learning
 
     hyper-parameters or to denote to stop training, optionally based on a separate
     cross-validation data set.
 
 
-    This is a convenience wrapper around @cntk.train.trainer.Trainer @cntk.train.training_session.TrainingSession.
+    This is a convenience wrapper around <xref:cntk.train.trainer.Trainer> <xref:cntk.train.training_session.TrainingSession>.
 
     '
   syntax:
@@ -1730,18 +1732,18 @@ references:
     name: default None
     uid: default None
   uid: set, default None
-- fullName: cntk.device.DeviceDescriptor, default None
-  name: DeviceDescriptor, default None
+- fullName: <xref:cntk.device.DeviceDescriptor>, default None
+  name: DeviceDescriptor>, default None
   spec.python:
-  - fullName: cntk.device.DeviceDescriptor
-    name: DeviceDescriptor
-    uid: cntk.device.DeviceDescriptor
+  - fullName: <xref:cntk.device.DeviceDescriptor>
+    name: DeviceDescriptor>
+    uid: <xref:cntk.device.DeviceDescriptor>
   - fullName: ', '
     name: ', '
   - fullName: default None
     name: default None
     uid: default None
-  uid: cntk.device.DeviceDescriptor, default None
+  uid: <xref:cntk.device.DeviceDescriptor>, default None
 - fullName: list, default None
   name: list, default None
   spec.python:
@@ -1766,18 +1768,18 @@ references:
     name: default True
     uid: default True
   uid: bool, default True
-- fullName: cntk.variables.Variable, optional
-  name: Variable, optional
+- fullName: <xref:cntk.variables.Variable>, optional
+  name: Variable>, optional
   spec.python:
-  - fullName: cntk.variables.Variable
-    name: Variable
-    uid: cntk.variables.Variable
+  - fullName: <xref:cntk.variables.Variable>
+    name: Variable>
+    uid: <xref:cntk.variables.Variable>
   - fullName: ', '
     name: ', '
   - fullName: optional
     name: optional
     uid: optional
-  uid: cntk.variables.Variable, optional
+  uid: <xref:cntk.variables.Variable>, optional
 - fullName: str, bytes
   name: str, bytes
   spec.python:
@@ -1790,31 +1792,32 @@ references:
     name: bytes
     uid: bytes
   uid: str, bytes
-- fullName: cntk.device.DeviceDescriptor, defaults to the current globally default
-    device
-  name: DeviceDescriptor, defaults to the current globally default device
+- fullName: <xref:cntk.device.DeviceDescriptor>, defaults to the current globally
+    default device
+  name: DeviceDescriptor>, defaults to the current globally default device
   spec.python:
-  - fullName: cntk.device.DeviceDescriptor
-    name: DeviceDescriptor
-    uid: cntk.device.DeviceDescriptor
+  - fullName: <xref:cntk.device.DeviceDescriptor>
+    name: DeviceDescriptor>
+    uid: <xref:cntk.device.DeviceDescriptor>
   - fullName: ', '
     name: ', '
   - fullName: defaults to the current globally default device
     name: defaults to the current globally default device
     uid: defaults to the current globally default device
-  uid: cntk.device.DeviceDescriptor, defaults to the current globally default device
-- fullName: cntk.ModelFormat, defaults to CNTKv2 format
-  name: ModelFormat, defaults to CNTKv2 format
+  uid: <xref:cntk.device.DeviceDescriptor>, defaults to the current globally default
+    device
+- fullName: <xref:cntk.ModelFormat>, defaults to CNTKv2 format
+  name: ModelFormat>, defaults to CNTKv2 format
   spec.python:
-  - fullName: cntk.ModelFormat
-    name: ModelFormat
-    uid: cntk.ModelFormat
+  - fullName: <xref:cntk.ModelFormat>
+    name: ModelFormat>
+    uid: <xref:cntk.ModelFormat>
   - fullName: ', '
     name: ', '
   - fullName: defaults to CNTKv2 format
     name: defaults to CNTKv2 format
     uid: defaults to CNTKv2 format
-  uid: cntk.ModelFormat, defaults to CNTKv2 format
+  uid: <xref:cntk.ModelFormat>, defaults to CNTKv2 format
 - fullName: float in case of 'dropoutRate', int for 'rngSeed'
   name: float in case of 'dropoutRate', int for 'rngSeed'
   spec.python:

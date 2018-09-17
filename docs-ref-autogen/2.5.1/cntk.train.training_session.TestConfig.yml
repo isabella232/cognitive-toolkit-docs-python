@@ -24,14 +24,14 @@ items:
         '
       id: minibatch_source
       type:
-      - cntk.io.MinibatchSource
+      - <xref:cntk.io.MinibatchSource>
     - description: 'minibatch schedule for cross validation
 
         '
       id: minibatch_size
       type:
       - int
-      - cntk.cntk_py.minibatch_size_schedule, defaults to 32
+      - <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32
     - description: 'mapping between input variables and input streams
 
         If None, the mapping provided to the training session constructor is used.
@@ -49,32 +49,32 @@ items:
         '
       id: criterion
       type:
-      - cntk.ops.functions.Function
+      - <xref:cntk.ops.functions.Function>
     - description: 'DEPRECATED, use minibatch_source instead
 
         '
       id: source
       type:
-      - cntk.io.MinibatchSource
+      - <xref:cntk.io.MinibatchSource>
     - description: 'DEPRECATED, use minibatch_size instead
 
         '
       id: mb_size
       type:
       - int
-      - cntk.cntk_py.minibatch_size_schedule, defaults to 32
+      - <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32
   type: class
   uid: cntk.train.training_session.TestConfig
 references:
-- fullName: cntk.cntk_py.minibatch_size_schedule, defaults to 32
-  name: minibatch_size_schedule, defaults to 32
+- fullName: <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32
+  name: minibatch_size_schedule>, defaults to 32
   spec.python:
-  - fullName: cntk.cntk_py.minibatch_size_schedule
-    name: minibatch_size_schedule
-    uid: cntk.cntk_py.minibatch_size_schedule
+  - fullName: <xref:cntk.cntk_py.minibatch_size_schedule>
+    name: minibatch_size_schedule>
+    uid: <xref:cntk.cntk_py.minibatch_size_schedule>
   - fullName: ', '
     name: ', '
   - fullName: defaults to 32
     name: defaults to 32
     uid: defaults to 32
-  uid: cntk.cntk_py.minibatch_size_schedule, defaults to 32
+  uid: <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32

@@ -46,7 +46,7 @@ items:
       type:
       - int
     return:
-      description: 'initializer for @cntk.variables.Parameter
+      description: 'initializer for <xref:cntk.variables.Parameter>
 
         useful for deconvolution layer
 
@@ -94,7 +94,7 @@ items:
       type:
       - int
     return:
-      description: 'initializer for @cntk.variables.Parameter
+      description: 'initializer for <xref:cntk.variables.Parameter>
 
         initialized to Gaussian distribution with mean *0* and standard
 
@@ -144,7 +144,7 @@ items:
       type:
       - int
     return:
-      description: 'initializer for @cntk.variables.Parameter
+      description: 'initializer for <xref:cntk.variables.Parameter>
 
         initialized to uniform distribution between
 
@@ -193,7 +193,7 @@ items:
       type:
       - int
     return:
-      description: 'initializer for @cntk.variables.Parameter
+      description: 'initializer for <xref:cntk.variables.Parameter>
 
         initialized to Gaussian distribution with mean *0* and standard
 
@@ -242,7 +242,7 @@ items:
       type:
       - int
     return:
-      description: 'initializer for @cntk.variables.Parameter
+      description: 'initializer for <xref:cntk.variables.Parameter>
 
         initialized to uniform distribution between
 
@@ -284,8 +284,8 @@ items:
       type:
       - int
     return:
-      description: 'new initializer for @cntk.variables.Parameter with specified output_rank
-        and filter_rank
+      description: 'new initializer for <xref:cntk.variables.Parameter> with specified
+        output_rank and filter_rank
 
         '
   type: function
@@ -329,7 +329,7 @@ items:
       type:
       - int
     return:
-      description: 'initializer for @cntk.variables.Parameter
+      description: 'initializer for <xref:cntk.variables.Parameter>
 
         initialized to normal distribution with mean *0* and standard deviation *scale*.
 
@@ -365,7 +365,7 @@ items:
       type:
       - int
     return:
-      description: 'initializer for @cntk.variables.Parameter
+      description: 'initializer for <xref:cntk.variables.Parameter>
 
         initialized to truncated Gaussian distribution between *2*stdev[-1, 1]*
 
@@ -397,7 +397,7 @@ items:
       type:
       - int
     return:
-      description: 'initializer for @cntk.variables.Parameter
+      description: 'initializer for <xref:cntk.variables.Parameter>
 
         initialized to uniform distribution between *scale*[-1.0, 1.0]*.
 
@@ -446,7 +446,7 @@ items:
       type:
       - int
     return:
-      description: 'initializer for @cntk.variables.Parameter
+      description: 'initializer for <xref:cntk.variables.Parameter>
 
         initialized to Gaussian distribution with mean *0* and standard
 

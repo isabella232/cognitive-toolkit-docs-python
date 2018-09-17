@@ -78,7 +78,7 @@ items:
         '
       id: activation
       type:
-      - cntk.ops.functions.Function, defaults to identity
+      - <xref:cntk.ops.functions.Function>, defaults to identity
     - defaultValue: ''
       description: 'the name of the function instance in the network
 
@@ -402,7 +402,7 @@ items:
         '
       id: activation
       type:
-      - cntk.ops.functions.Function, defaults to identity
+      - <xref:cntk.ops.functions.Function>, defaults to identity
     - description: 'initial value of weights *W*
 
         '
@@ -410,7 +410,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to cntk.initializer.glorot_uniform
+      - <xref:cntk>, defaults to <xref:cntk.initializer.glorot_uniform>
     - description: 'if *False*, then the filter will be shifted over the "valid"
 
         area of input, that is, no value outside the area is used. If `pad=True` on
@@ -457,7 +457,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to 0
+      - <xref:cntk>, defaults to 0
     - defaultValue: '1'
       description: 'set to 0 if input items are scalars (input has no depth axis),
         e.g. an audio signal or a black-and-white image
@@ -564,7 +564,7 @@ items:
         '
       id: activation
       type:
-      - cntk.ops.functions.Function, defaults to identity
+      - <xref:cntk.ops.functions.Function>, defaults to identity
     - description: 'initial value of weights *W*
 
         '
@@ -572,7 +572,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to cntk.initializer.glorot_uniform
+      - <xref:cntk>, defaults to <xref:cntk.initializer.glorot_uniform>
     - description: 'if *False*, then the filter will be shifted over the "valid"
 
         area of input, that is, no value outside the area is used. If `pad=True` on
@@ -610,7 +610,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to 0
+      - <xref:cntk>, defaults to 0
     - defaultValue: '1'
       description: 'set to 0 if input items are scalars (input has no depth axis),
         e.g. an audio signal or a black-and-white image
@@ -682,7 +682,7 @@ items:
         '
       id: activation
       type:
-      - cntk.ops.functions.Function, defaults to identity
+      - <xref:cntk.ops.functions.Function>, defaults to identity
     - description: 'initial value of weights *W*
 
         '
@@ -690,7 +690,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to cntk.initializer.glorot_uniform
+      - <xref:cntk>, defaults to <xref:cntk.initializer.glorot_uniform>
     - description: 'if *False*, then the filter will be shifted over the "valid"
 
         area of input, that is, no value outside the area is used. If `pad=True` on
@@ -728,7 +728,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to 0
+      - <xref:cntk>, defaults to 0
     - defaultValue: '1'
       description: 'set to 0 if input items are scalars (input has no depth axis),
         e.g. an audio signal or a black-and-white image
@@ -817,7 +817,7 @@ items:
         '
       id: activation
       type:
-      - cntk.ops.functions.Function, defaults to identity
+      - <xref:cntk.ops.functions.Function>, defaults to identity
     - description: 'initial value of weights *W*
 
         '
@@ -825,7 +825,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to cntk.initializer.glorot_uniform
+      - <xref:cntk>, defaults to <xref:cntk.initializer.glorot_uniform>
     - description: 'if *False*, then the filter will be shifted over the "valid"
 
         area of input, that is, no value outside the area is used. If `pad=True` on
@@ -863,7 +863,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to 0
+      - <xref:cntk>, defaults to 0
     - defaultValue: '1'
       description: 'set to 0 if input items are scalars (input has no depth axis),
         e.g. an audio signal or a black-and-white image
@@ -1011,14 +1011,14 @@ items:
         '
       id: activation
       type:
-      - cntk.ops.functions.Function, optional
+      - <xref:cntk.ops.functions.Function>, optional
     - description: 'initial value of weights *W*
 
         '
       id: init
       type:
       - scalar
-      - cntk, default cntk.initializer.glorot_uniform
+      - <xref:cntk>, default <xref:cntk.initializer.glorot_uniform>
     - description: 'if *False*, then the filter will be shifted over the "valid"
 
         area of input, that is, no value outside the area is used. If `pad=True` on
@@ -1063,7 +1063,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk
+      - <xref:cntk>
     - defaultValue: None
       description: 'output shape. When strides > 2, the output shape is non-deterministic.
         User can specify the wanted output shape. Note the
@@ -1110,8 +1110,8 @@ items:
       type:
       - str, optional
     return:
-      description: '@cntk.ops.functions.Function that accepts one argument and applies
-        the convolution operation to it
+      description: '<xref:cntk.ops.functions.Function> that accepts one argument and
+        applies the convolution operation to it
 
         '
   type: function
@@ -1338,7 +1338,7 @@ items:
         '
       id: activation
       type:
-      - cntk.ops.functions.Function, defaults to identity
+      - <xref:cntk.ops.functions.Function>, defaults to identity
     - description: 'initial value of weights *W*
 
         '
@@ -1346,7 +1346,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to cntk.initializer.glorot_uniform
+      - <xref:cntk>, defaults to <xref:cntk.initializer.glorot_uniform>
     - defaultValue: None
       description: 'number of inferred axes to add to W (*map_rank* must not be given)
 
@@ -1375,7 +1375,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to 0
+      - <xref:cntk>, defaults to 0
     - defaultValue: ''
       description: 'the name of the function instance in the network
 
@@ -1535,7 +1535,7 @@ items:
       type:
       - scalar
       - NumPy array
-      - cntk, defaults to cntk.initializer.glorot_uniform
+      - <xref:cntk>, defaults to <xref:cntk.initializer.glorot_uniform>
     - defaultValue: None
       description: '(user-supplied embedding only) the lookup table.
 
@@ -1934,18 +1934,18 @@ references:
   name: MaxUnpooling
   parent: cntk.layers.layers
   uid: cntk.layers.layers.MaxUnpooling
-- fullName: cntk.ops.functions.Function, defaults to identity
-  name: Function, defaults to identity
+- fullName: <xref:cntk.ops.functions.Function>, defaults to identity
+  name: Function>, defaults to identity
   spec.python:
-  - fullName: cntk.ops.functions.Function
-    name: Function
-    uid: cntk.ops.functions.Function
+  - fullName: <xref:cntk.ops.functions.Function>
+    name: Function>
+    uid: <xref:cntk.ops.functions.Function>
   - fullName: ', '
     name: ', '
   - fullName: defaults to identity
     name: defaults to identity
     uid: defaults to identity
-  uid: cntk.ops.functions.Function, defaults to identity
+  uid: <xref:cntk.ops.functions.Function>, defaults to identity
 - fullName: str, defaults to ''
   name: str, defaults to ''
   spec.python:
@@ -2078,18 +2078,18 @@ references:
     name: defaults to False
     uid: defaults to False
   uid: bool, defaults to False
-- fullName: cntk, defaults to cntk.initializer.glorot_uniform
-  name: cntk, glorot_uniform
+- fullName: <xref:cntk>, defaults to <xref:cntk.initializer.glorot_uniform>
+  name: <xref:cntk>, glorot_uniform>
   spec.python:
-  - fullName: cntk
-    name: cntk
-    uid: cntk
+  - fullName: <xref:cntk>
+    name: <xref:cntk>
+    uid: <xref:cntk>
   - fullName: ', '
     name: ', '
-  - fullName: defaults to cntk.initializer.glorot_uniform
-    name: glorot_uniform
-    uid: defaults to cntk.initializer.glorot_uniform
-  uid: cntk, defaults to cntk.initializer.glorot_uniform
+  - fullName: defaults to <xref:cntk.initializer.glorot_uniform>
+    name: glorot_uniform>
+    uid: defaults to <xref:cntk.initializer.glorot_uniform>
+  uid: <xref:cntk>, defaults to <xref:cntk.initializer.glorot_uniform>
 - fullName: bool, defaults to True
   name: bool, defaults to True
   spec.python:
@@ -2119,18 +2119,18 @@ references:
     name: defaults to True
     uid: defaults to True
   uid: bool, optional, defaults to True
-- fullName: cntk, defaults to 0
-  name: cntk, defaults to 0
+- fullName: <xref:cntk>, defaults to 0
+  name: <xref:cntk>, defaults to 0
   spec.python:
-  - fullName: cntk
-    name: cntk
-    uid: cntk
+  - fullName: <xref:cntk>
+    name: <xref:cntk>
+    uid: <xref:cntk>
   - fullName: ', '
     name: ', '
   - fullName: defaults to 0
     name: defaults to 0
     uid: defaults to 0
-  uid: cntk, defaults to 0
+  uid: <xref:cntk>, defaults to 0
 - fullName: int, defaults to 1
   name: int, defaults to 1
   spec.python:
@@ -2191,30 +2191,30 @@ references:
     name: defaults to 0
     uid: defaults to 0
   uid: int, defaults to 0
-- fullName: cntk.ops.functions.Function, optional
-  name: Function, optional
+- fullName: <xref:cntk.ops.functions.Function>, optional
+  name: Function>, optional
   spec.python:
-  - fullName: cntk.ops.functions.Function
-    name: Function
-    uid: cntk.ops.functions.Function
+  - fullName: <xref:cntk.ops.functions.Function>
+    name: Function>
+    uid: <xref:cntk.ops.functions.Function>
   - fullName: ', '
     name: ', '
   - fullName: optional
     name: optional
     uid: optional
-  uid: cntk.ops.functions.Function, optional
-- fullName: cntk, default cntk.initializer.glorot_uniform
-  name: cntk, glorot_uniform
+  uid: <xref:cntk.ops.functions.Function>, optional
+- fullName: <xref:cntk>, default <xref:cntk.initializer.glorot_uniform>
+  name: <xref:cntk>, glorot_uniform>
   spec.python:
-  - fullName: cntk
-    name: cntk
-    uid: cntk
+  - fullName: <xref:cntk>
+    name: <xref:cntk>
+    uid: <xref:cntk>
   - fullName: ', '
     name: ', '
-  - fullName: default cntk.initializer.glorot_uniform
-    name: glorot_uniform
-    uid: default cntk.initializer.glorot_uniform
-  uid: cntk, default cntk.initializer.glorot_uniform
+  - fullName: default <xref:cntk.initializer.glorot_uniform>
+    name: glorot_uniform>
+    uid: default <xref:cntk.initializer.glorot_uniform>
+  uid: <xref:cntk>, default <xref:cntk.initializer.glorot_uniform>
 - fullName: tuple of bools, default False
   name: tuple of bools, default False
   spec.python:

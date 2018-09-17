@@ -36,7 +36,7 @@ items:
 
         '
       type:
-      - cntk.device.DeviceDescriptor list
+      - <xref:cntk.device.DeviceDescriptor> list
   type: function
   uid: cntk.device.all_devices
 - fullName: cntk.device.cpu
@@ -54,7 +54,7 @@ items:
 
         '
       type:
-      - cntk.device.DeviceDescriptor
+      - <xref:cntk.device.DeviceDescriptor>
   type: function
   uid: cntk.device.cpu
 - fullName: cntk.device.get_gpu_properties
@@ -95,7 +95,7 @@ items:
 
         '
       type:
-      - cntk.device.DeviceDescriptor
+      - <xref:cntk.device.DeviceDescriptor>
   type: function
   uid: cntk.device.gpu
 - fullName: cntk.device.set_excluded_devices
@@ -107,13 +107,14 @@ items:
 
     globally default (neither auto-selected nor explicitly specified by
 
-    @cntk.device.try_set_default_device). For example, to avoid auto-selecting the
+    <xref:cntk.device.try_set_default_device>). For example, to avoid auto-selecting
+    the
 
     CPU, invoke `set_excluded_devices([cpu()])`. However, after the default
 
     device has been selected and frozen (by a call to
 
-    @cntk.device.use_default_device), invoking this methods has no effect, it
+    <xref:cntk.device.use_default_device>), invoking this methods has no effect, it
 
     becomes essentially a no-op.
 
@@ -128,7 +129,7 @@ items:
         '
       id: excluded_devices
       type:
-      - list of cntk.device.DeviceDescriptor
+      - list of <xref:cntk.device.DeviceDescriptor>
   type: function
   uid: cntk.device.set_excluded_devices
 - fullName: cntk.device.try_set_default_device
@@ -162,7 +163,7 @@ items:
         '
       id: new_default_device
       type:
-      - cntk.device.DeviceDescriptor
+      - <xref:cntk.device.DeviceDescriptor>
     - defaultValue: 'False'
       description: 'whether or not a lock
 
@@ -181,13 +182,13 @@ items:
   name: use_default_device
   summary: 'Freezes the default device of the current CNTK process disallowing further
 
-    changes through calls to @cntk.device.try_set_default_device. This default
+    changes through calls to <xref:cntk.device.try_set_default_device>. This default
 
     device will used for all CNTK operations where a device needs to be
 
     specified and where none was explicitly provided. If no device has been
 
-    specified with a call to @cntk.device.try_set_default_device, on the first
+    specified with a call to <xref:cntk.device.try_set_default_device>, on the first
 
     invocation, this methods will auto-select one of the available (non-locked)
 
@@ -203,7 +204,7 @@ items:
 
         '
       type:
-      - cntk.device.DeviceDescriptor
+      - <xref:cntk.device.DeviceDescriptor>
   type: function
   uid: cntk.device.use_default_device
 references:
