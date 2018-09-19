@@ -2,6 +2,7 @@
 items:
 - children:
   - cntk
+  fullName: cntk
   langs:
   - python
   name: cntk
