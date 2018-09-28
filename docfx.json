@@ -159,6 +159,43 @@
         ],
         "src": "breadcrumb",
         "dest": "cntk_py_breadcrumb",
+        "version": "cntk-py-2.4",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "cntk_py_breadcrumb",
+        "version": "cntk-py-2.5",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "cntk_py_breadcrumb",
+        "version": "cntk-py-2.5.1",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "cntk_py_breadcrumb",
+        "version": "cntk-py-2.6",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
