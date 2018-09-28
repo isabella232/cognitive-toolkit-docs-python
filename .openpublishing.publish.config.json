@@ -58,46 +58,28 @@
   ],
   "JoinTOCPlugin": [
     {
-      "TopLevelTOC": "docs-ref-autogen/2.0/toc.yml",
-      "ConceptualTOC": "docs-ref-conceptual/2.0/toc.yml",
-      "ReferenceTOCUrl": "/python/api/cognitive-toolkit/toc.json?view=cntk-py-2.0",
-      "ConceptualTOCUrl": "/python/cognitive-toolkit/toc.json?view=cntk-py-2.0"
-    },
-    {
-      "TopLevelTOC": "docs-ref-autogen/2.1/toc.yml",
-      "ConceptualTOC": "docs-ref-conceptual/2.1/toc.yml",
-      "ReferenceTOCUrl": "/python/api/cognitive-toolkit/toc.json?view=cntk-py-2.1",
-      "ConceptualTOCUrl": "/python/cognitive-toolkit/toc.json?view=cntk-py-2.1"
-    },
-    {
-      "TopLevelTOC": "docs-ref-autogen/2.2/toc.yml",
-      "ConceptualTOC": "docs-ref-conceptual/2.2/toc.yml",
-      "ReferenceTOCUrl": "/python/api/cognitive-toolkit/toc.json?view=cntk-py-2.2",
-      "ConceptualTOCUrl": "/python/cognitive-toolkit/toc.json?view=cntk-py-2.2"
-    },
-    {
-      "TopLevelTOC": "docs-ref-autogen/2.3/toc.yml",
-      "ConceptualTOC": "docs-ref-conceptual/2.3/toc.yml",
-      "ReferenceTOCUrl": "/python/api/cognitive-toolkit/toc.json?view=cntk-py-2.3",
-      "ConceptualTOCUrl": "/python/cognitive-toolkit/toc.json?view=cntk-py-2.3"
-    },
-    {
-      "TopLevelTOC": "docs-ref-autogen/2.4/toc.yml",
+      "TopLevelTOC": "api-docs/cntk-2.4/docs-ref-autogen/toc.yml",
       "ConceptualTOC": "docs-ref-conceptual/2.4/toc.yml",
       "ReferenceTOCUrl": "/python/api/cognitive-toolkit/toc.json?view=cntk-py-2.4",
       "ConceptualTOCUrl": "/python/cognitive-toolkit/toc.json?view=cntk-py-2.4"
     },
     {
-      "TopLevelTOC": "docs-ref-autogen/2.5/toc.yml",
+      "TopLevelTOC": "api-docs/cntk-2.5/docs-ref-autogen/toc.yml",
       "ConceptualTOC": "docs-ref-conceptual/2.5/toc.yml",
       "ReferenceTOCUrl": "/python/api/cognitive-toolkit/toc.json?view=cntk-py-2.5",
       "ConceptualTOCUrl": "/python/cognitive-toolkit/toc.json?view=cntk-py-2.5"
     },
     {
-      "TopLevelTOC": "docs-ref-autogen/2.5.1/toc.yml",
+      "TopLevelTOC": "api-docs/cntk-2.5.1/docs-ref-autogen/toc.yml",
       "ConceptualTOC": "docs-ref-conceptual/2.5.1/toc.yml",
       "ReferenceTOCUrl": "/python/api/cognitive-toolkit/toc.json?view=cntk-py-2.5.1",
       "ConceptualTOCUrl": "/python/cognitive-toolkit/toc.json?view=cntk-py-2.5.1"
+    }
+    {
+      "TopLevelTOC": "api-docs/cntk-2.6/docs-ref-autogen/toc.yml",
+      "ConceptualTOC": "docs-ref-conceptual/2.6/toc.yml",
+      "ReferenceTOCUrl": "/python/api/cognitive-toolkit/toc.json?view=cntk-py-2.6",
+      "ConceptualTOCUrl": "/python/cognitive-toolkit/toc.json?view=cntk-py-2.6"
     }
   ],
   "need_generate_pdf_url_template": false
