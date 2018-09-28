@@ -237,6 +237,7 @@
     "externalReference": [],
     "globalMetadata": {
       "feedback_system": "GitHub",
+      "extendBreadcrumb": true,
       "feedback_github_repo": "MicrosoftDocs/cognitive-toolkit-docs-python",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "searchScope": [
