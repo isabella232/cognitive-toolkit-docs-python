@@ -1,0 +1,787 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.cntk_py.Function.arguments
+  - cntk.cntk_py.Function.as_string
+  - cntk.cntk_py.Function.attributes
+  - cntk.cntk_py.Function.block_arguments_mapping
+  - cntk.cntk_py.Function.block_root
+  - cntk.cntk_py.Function.clone
+  - cntk.cntk_py.Function.clone_flattened
+  - cntk.cntk_py.Function.constants
+  - cntk.cntk_py.Function.current_version
+  - cntk.cntk_py.Function.deserialize_method_name
+  - cntk.cntk_py.Function.evaluate
+  - cntk.cntk_py.Function.find_all_with_name
+  - cntk.cntk_py.Function.find_by_name
+  - cntk.cntk_py.Function.get_custom_attributes
+  - cntk.cntk_py.Function.gradients
+  - cntk.cntk_py.Function.inputs
+  - cntk.cntk_py.Function.is_block
+  - cntk.cntk_py.Function.is_composite
+  - cntk.cntk_py.Function.is_primitive
+  - cntk.cntk_py.Function.load
+  - cntk.cntk_py.Function.load_from_buffer
+  - cntk.cntk_py.Function.module_name
+  - cntk.cntk_py.Function.name
+  - cntk.cntk_py.Function.native_user_function
+  - cntk.cntk_py.Function.op_name
+  - cntk.cntk_py.Function.output
+  - cntk.cntk_py.Function.outputs
+  - cntk.cntk_py.Function.parameters
+  - cntk.cntk_py.Function.placeholders
+  - cntk.cntk_py.Function.register_native_user_function
+  - cntk.cntk_py.Function.replace_placeholder
+  - cntk.cntk_py.Function.replace_placeholders
+  - cntk.cntk_py.Function.reset_custom_attributes
+  - cntk.cntk_py.Function.restore
+  - cntk.cntk_py.Function.restore_from_checkpoint
+  - cntk.cntk_py.Function.root_function
+  - cntk.cntk_py.Function.save
+  - cntk.cntk_py.Function.set_attribute
+  - cntk.cntk_py.Function.set_name
+  - cntk.cntk_py.Function.set_native
+  - cntk.cntk_py.Function.uid
+  - cntk.cntk_py.Function.max_num_outputs
+  class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.cntk_py.IDictionarySerializable
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Function
+  summary: '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '
+  syntax:
+    content: Function(*args)
+  type: class
+  uid: cntk.cntk_py.Function
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.arguments
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: arguments
+  syntax:
+    content: arguments(rowMajor=False)
+    parameters:
+    - defaultValue: 'False'
+      id: rowMajor
+  type: method
+  uid: cntk.cntk_py.Function.arguments
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.as_string
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: as_string
+  syntax:
+    content: as_string(doNotInferOutputs=True)
+    parameters:
+    - defaultValue: 'True'
+      id: doNotInferOutputs
+  type: method
+  uid: cntk.cntk_py.Function.as_string
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.attributes
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: attributes
+  syntax:
+    content: attributes()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.attributes
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.block_arguments_mapping
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: block_arguments_mapping
+  syntax:
+    content: block_arguments_mapping()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.block_arguments_mapping
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.block_root
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: block_root
+  syntax:
+    content: block_root()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.block_root
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.clone
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: clone
+  syntax:
+    content: clone(*args)
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.clone
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.clone_flattened
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: clone_flattened
+  syntax:
+    content: clone_flattened(*args)
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.clone_flattened
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.constants
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: constants
+  syntax:
+    content: constants()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.constants
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.current_version
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: current_version
+  syntax:
+    content: current_version()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.current_version
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.deserialize_method_name
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: deserialize_method_name
+  syntax:
+    content: deserialize_method_name()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.deserialize_method_name
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.evaluate
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: evaluate
+  syntax:
+    content: evaluate(*args)
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.evaluate
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.find_all_with_name
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: find_all_with_name
+  syntax:
+    content: find_all_with_name(name, nestedSearchInsideBlockFunction=False)
+    parameters:
+    - id: name
+    - defaultValue: 'False'
+      id: nestedSearchInsideBlockFunction
+  type: method
+  uid: cntk.cntk_py.Function.find_all_with_name
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.find_by_name
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: find_by_name
+  syntax:
+    content: find_by_name(name, nestedSearchInsideBlockFunction=False)
+    parameters:
+    - id: name
+    - defaultValue: 'False'
+      id: nestedSearchInsideBlockFunction
+  type: method
+  uid: cntk.cntk_py.Function.find_by_name
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.get_custom_attributes
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: get_custom_attributes
+  syntax:
+    content: get_custom_attributes()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.get_custom_attributes
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.gradients
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: gradients
+  syntax:
+    content: gradients(*args)
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.gradients
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.inputs
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: inputs
+  syntax:
+    content: inputs(pythonOperandOrder=False)
+    parameters:
+    - defaultValue: 'False'
+      id: pythonOperandOrder
+  type: method
+  uid: cntk.cntk_py.Function.inputs
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.is_block
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_block
+  syntax:
+    content: is_block()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.is_block
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.is_composite
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_composite
+  syntax:
+    content: is_composite()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.is_composite
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.is_primitive
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_primitive
+  syntax:
+    content: is_primitive()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.is_primitive
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.load
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: load
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Function.load
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.load_from_buffer
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: load_from_buffer
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Function.load_from_buffer
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.module_name
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: module_name
+  syntax:
+    content: module_name()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.module_name
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.name
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: name
+  syntax:
+    content: name()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.name
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.native_user_function
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: native_user_function
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Function.native_user_function
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.op_name
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: op_name
+  syntax:
+    content: op_name()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.op_name
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.output
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: output
+  syntax:
+    content: output()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.output
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.outputs
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: outputs
+  syntax:
+    content: outputs()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.outputs
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.parameters
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: parameters
+  syntax:
+    content: parameters()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.parameters
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.placeholders
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: placeholders
+  syntax:
+    content: placeholders()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.placeholders
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.register_native_user_function
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: register_native_user_function
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Function.register_native_user_function
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.replace_placeholder
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: replace_placeholder
+  syntax:
+    content: replace_placeholder(placeholderReplacement)
+    parameters:
+    - id: placeholderReplacement
+  type: method
+  uid: cntk.cntk_py.Function.replace_placeholder
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.replace_placeholders
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: replace_placeholders
+  syntax:
+    content: replace_placeholders(placeholderReplacements)
+    parameters:
+    - id: placeholderReplacements
+  type: method
+  uid: cntk.cntk_py.Function.replace_placeholders
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.reset_custom_attributes
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: reset_custom_attributes
+  syntax:
+    content: reset_custom_attributes()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.reset_custom_attributes
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.restore
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: restore
+  syntax:
+    content: restore(filepath)
+    parameters:
+    - id: filepath
+  type: method
+  uid: cntk.cntk_py.Function.restore
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.restore_from_checkpoint
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: restore_from_checkpoint
+  syntax:
+    content: restore_from_checkpoint(dictionary)
+    parameters:
+    - id: dictionary
+  type: method
+  uid: cntk.cntk_py.Function.restore_from_checkpoint
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.root_function
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: root_function
+  syntax:
+    content: root_function()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.root_function
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.save
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: save
+  syntax:
+    content: save(*args)
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.save
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.set_attribute
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: set_attribute
+  syntax:
+    content: set_attribute(name, value)
+    parameters:
+    - id: name
+    - id: value
+  type: method
+  uid: cntk.cntk_py.Function.set_attribute
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.set_name
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: set_name
+  syntax:
+    content: set_name(name)
+    parameters:
+    - id: name
+  type: method
+  uid: cntk.cntk_py.Function.set_name
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.set_native
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: set_native
+  syntax:
+    content: set_native(native)
+    parameters:
+    - id: native
+  type: method
+  uid: cntk.cntk_py.Function.set_native
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.uid
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: uid
+  syntax:
+    content: uid()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Function.uid
+- class: cntk.cntk_py.Function
+  fullName: cntk.cntk_py.Function.max_num_outputs
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: max_num_outputs
+  syntax:
+    content: max_num_outputs = 64
+  type: attribute
+  uid: cntk.cntk_py.Function.max_num_outputs
+references:
+- fullName: cntk.cntk_py.Function.arguments
+  isExternal: false
+  name: arguments
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.arguments
+- fullName: cntk.cntk_py.Function.as_string
+  isExternal: false
+  name: as_string
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.as_string
+- fullName: cntk.cntk_py.Function.attributes
+  isExternal: false
+  name: attributes
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.attributes
+- fullName: cntk.cntk_py.Function.block_arguments_mapping
+  isExternal: false
+  name: block_arguments_mapping
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.block_arguments_mapping
+- fullName: cntk.cntk_py.Function.block_root
+  isExternal: false
+  name: block_root
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.block_root
+- fullName: cntk.cntk_py.Function.clone
+  isExternal: false
+  name: clone
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.clone
+- fullName: cntk.cntk_py.Function.clone_flattened
+  isExternal: false
+  name: clone_flattened
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.clone_flattened
+- fullName: cntk.cntk_py.Function.constants
+  isExternal: false
+  name: constants
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.constants
+- fullName: cntk.cntk_py.Function.current_version
+  isExternal: false
+  name: current_version
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.current_version
+- fullName: cntk.cntk_py.Function.deserialize_method_name
+  isExternal: false
+  name: deserialize_method_name
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.deserialize_method_name
+- fullName: cntk.cntk_py.Function.evaluate
+  isExternal: false
+  name: evaluate
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.evaluate
+- fullName: cntk.cntk_py.Function.find_all_with_name
+  isExternal: false
+  name: find_all_with_name
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.find_all_with_name
+- fullName: cntk.cntk_py.Function.find_by_name
+  isExternal: false
+  name: find_by_name
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.find_by_name
+- fullName: cntk.cntk_py.Function.get_custom_attributes
+  isExternal: false
+  name: get_custom_attributes
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.get_custom_attributes
+- fullName: cntk.cntk_py.Function.gradients
+  isExternal: false
+  name: gradients
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.gradients
+- fullName: cntk.cntk_py.Function.inputs
+  isExternal: false
+  name: inputs
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.inputs
+- fullName: cntk.cntk_py.Function.is_block
+  isExternal: false
+  name: is_block
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.is_block
+- fullName: cntk.cntk_py.Function.is_composite
+  isExternal: false
+  name: is_composite
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.is_composite
+- fullName: cntk.cntk_py.Function.is_primitive
+  isExternal: false
+  name: is_primitive
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.is_primitive
+- fullName: cntk.cntk_py.Function.load
+  isExternal: false
+  name: load
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.load
+- fullName: cntk.cntk_py.Function.load_from_buffer
+  isExternal: false
+  name: load_from_buffer
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.load_from_buffer
+- fullName: cntk.cntk_py.Function.module_name
+  isExternal: false
+  name: module_name
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.module_name
+- fullName: cntk.cntk_py.Function.name
+  isExternal: false
+  name: name
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.name
+- fullName: cntk.cntk_py.Function.native_user_function
+  isExternal: false
+  name: native_user_function
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.native_user_function
+- fullName: cntk.cntk_py.Function.op_name
+  isExternal: false
+  name: op_name
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.op_name
+- fullName: cntk.cntk_py.Function.output
+  isExternal: false
+  name: output
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.output
+- fullName: cntk.cntk_py.Function.outputs
+  isExternal: false
+  name: outputs
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.outputs
+- fullName: cntk.cntk_py.Function.parameters
+  isExternal: false
+  name: parameters
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.parameters
+- fullName: cntk.cntk_py.Function.placeholders
+  isExternal: false
+  name: placeholders
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.placeholders
+- fullName: cntk.cntk_py.Function.register_native_user_function
+  isExternal: false
+  name: register_native_user_function
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.register_native_user_function
+- fullName: cntk.cntk_py.Function.replace_placeholder
+  isExternal: false
+  name: replace_placeholder
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.replace_placeholder
+- fullName: cntk.cntk_py.Function.replace_placeholders
+  isExternal: false
+  name: replace_placeholders
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.replace_placeholders
+- fullName: cntk.cntk_py.Function.reset_custom_attributes
+  isExternal: false
+  name: reset_custom_attributes
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.reset_custom_attributes
+- fullName: cntk.cntk_py.Function.restore
+  isExternal: false
+  name: restore
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.restore
+- fullName: cntk.cntk_py.Function.restore_from_checkpoint
+  isExternal: false
+  name: restore_from_checkpoint
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.restore_from_checkpoint
+- fullName: cntk.cntk_py.Function.root_function
+  isExternal: false
+  name: root_function
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.root_function
+- fullName: cntk.cntk_py.Function.save
+  isExternal: false
+  name: save
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.save
+- fullName: cntk.cntk_py.Function.set_attribute
+  isExternal: false
+  name: set_attribute
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.set_attribute
+- fullName: cntk.cntk_py.Function.set_name
+  isExternal: false
+  name: set_name
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.set_name
+- fullName: cntk.cntk_py.Function.set_native
+  isExternal: false
+  name: set_native
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.set_native
+- fullName: cntk.cntk_py.Function.uid
+  isExternal: false
+  name: uid
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.uid
+- fullName: cntk.cntk_py.Function.max_num_outputs
+  isExternal: false
+  name: max_num_outputs
+  parent: cntk.cntk_py.Function
+  uid: cntk.cntk_py.Function.max_num_outputs

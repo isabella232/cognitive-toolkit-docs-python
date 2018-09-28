@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  fullName: cntk.learners.tests
+  langs:
+  - python
+  module: cntk.learners.tests
+  name: tests
+  type: module
+  uid: cntk.learners.tests
+references: []

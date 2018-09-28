@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.cntk_py.GilStateGuard
+  fullName: cntk.cntk_py.GilStateGuard
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: GilStateGuard
+  syntax:
+    content: GilStateGuard()
+  type: class
+  uid: cntk.cntk_py.GilStateGuard
+references: []

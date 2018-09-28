@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.cntk_py.HTKFeatureConfiguration
+  fullName: cntk.cntk_py.HTKFeatureConfiguration
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: HTKFeatureConfiguration
+  summary: '
+
+
+
+
+
+
+
+    '
+  syntax:
+    content: HTKFeatureConfiguration(*args)
+  type: class
+  uid: cntk.cntk_py.HTKFeatureConfiguration
+references: []

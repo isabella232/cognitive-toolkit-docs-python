@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.cntk_py.TestConfig
+  fullName: cntk.cntk_py.TestConfig
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: TestConfig
+  syntax:
+    content: TestConfig(*args)
+  type: class
+  uid: cntk.cntk_py.TestConfig
+references: []

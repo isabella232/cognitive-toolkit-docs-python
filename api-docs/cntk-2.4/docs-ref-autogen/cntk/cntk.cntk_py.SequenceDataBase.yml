@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.cntk_py.SequenceDataBase.get_data_buffer
+  - cntk.cntk_py.SequenceDataBase.get_sample_shape
+  class: cntk.cntk_py.SequenceDataBase
+  fullName: cntk.cntk_py.SequenceDataBase
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: SequenceDataBase
+  summary: '
+
+
+
+
+
+    '
+  syntax:
+    content: SequenceDataBase(*args, **kwargs)
+  type: class
+  uid: cntk.cntk_py.SequenceDataBase
+- class: cntk.cntk_py.SequenceDataBase
+  fullName: cntk.cntk_py.SequenceDataBase.get_data_buffer
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: get_data_buffer
+  syntax:
+    content: get_data_buffer()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.SequenceDataBase.get_data_buffer
+- class: cntk.cntk_py.SequenceDataBase
+  fullName: cntk.cntk_py.SequenceDataBase.get_sample_shape
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: get_sample_shape
+  syntax:
+    content: get_sample_shape()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.SequenceDataBase.get_sample_shape
+references:
+- fullName: cntk.cntk_py.SequenceDataBase.get_data_buffer
+  isExternal: false
+  name: get_data_buffer
+  parent: cntk.cntk_py.SequenceDataBase
+  uid: cntk.cntk_py.SequenceDataBase.get_data_buffer
+- fullName: cntk.cntk_py.SequenceDataBase.get_sample_shape
+  isExternal: false
+  name: get_sample_shape
+  parent: cntk.cntk_py.SequenceDataBase
+  uid: cntk.cntk_py.SequenceDataBase.get_sample_shape

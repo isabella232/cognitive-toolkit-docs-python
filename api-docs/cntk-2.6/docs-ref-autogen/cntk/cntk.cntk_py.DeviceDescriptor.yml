@@ -1,0 +1,202 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.cntk_py.DeviceDescriptor.all_devices
+  - cntk.cntk_py.DeviceDescriptor.as_string
+  - cntk.cntk_py.DeviceDescriptor.cpu_device
+  - cntk.cntk_py.DeviceDescriptor.get_gpu_properties
+  - cntk.cntk_py.DeviceDescriptor.gpu_device
+  - cntk.cntk_py.DeviceDescriptor.id
+  - cntk.cntk_py.DeviceDescriptor.is_locked
+  - cntk.cntk_py.DeviceDescriptor.set_excluded_devices
+  - cntk.cntk_py.DeviceDescriptor.try_set_default_device
+  - cntk.cntk_py.DeviceDescriptor.type
+  - cntk.cntk_py.DeviceDescriptor.use_default_device
+  class: cntk.cntk_py.DeviceDescriptor
+  fullName: cntk.cntk_py.DeviceDescriptor
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: DeviceDescriptor
+  summary: '
+
+
+
+
+
+
+
+
+
+
+    '
+  syntax:
+    content: DeviceDescriptor(*args, **kwargs)
+  type: class
+  uid: cntk.cntk_py.DeviceDescriptor
+- class: cntk.cntk_py.DeviceDescriptor
+  fullName: cntk.cntk_py.DeviceDescriptor.all_devices
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: all_devices
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.DeviceDescriptor.all_devices
+- class: cntk.cntk_py.DeviceDescriptor
+  fullName: cntk.cntk_py.DeviceDescriptor.as_string
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: as_string
+  syntax:
+    content: as_string()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.DeviceDescriptor.as_string
+- class: cntk.cntk_py.DeviceDescriptor
+  fullName: cntk.cntk_py.DeviceDescriptor.cpu_device
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: cpu_device
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.DeviceDescriptor.cpu_device
+- class: cntk.cntk_py.DeviceDescriptor
+  fullName: cntk.cntk_py.DeviceDescriptor.get_gpu_properties
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: get_gpu_properties
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.DeviceDescriptor.get_gpu_properties
+- class: cntk.cntk_py.DeviceDescriptor
+  fullName: cntk.cntk_py.DeviceDescriptor.gpu_device
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: gpu_device
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.DeviceDescriptor.gpu_device
+- class: cntk.cntk_py.DeviceDescriptor
+  fullName: cntk.cntk_py.DeviceDescriptor.id
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: id
+  syntax:
+    content: id()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.DeviceDescriptor.id
+- class: cntk.cntk_py.DeviceDescriptor
+  fullName: cntk.cntk_py.DeviceDescriptor.is_locked
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_locked
+  syntax:
+    content: is_locked()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.DeviceDescriptor.is_locked
+- class: cntk.cntk_py.DeviceDescriptor
+  fullName: cntk.cntk_py.DeviceDescriptor.set_excluded_devices
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: set_excluded_devices
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.DeviceDescriptor.set_excluded_devices
+- class: cntk.cntk_py.DeviceDescriptor
+  fullName: cntk.cntk_py.DeviceDescriptor.try_set_default_device
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: try_set_default_device
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.DeviceDescriptor.try_set_default_device
+- class: cntk.cntk_py.DeviceDescriptor
+  fullName: cntk.cntk_py.DeviceDescriptor.type
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: type
+  syntax:
+    content: type()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.DeviceDescriptor.type
+- class: cntk.cntk_py.DeviceDescriptor
+  fullName: cntk.cntk_py.DeviceDescriptor.use_default_device
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: use_default_device
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.DeviceDescriptor.use_default_device
+references:
+- fullName: cntk.cntk_py.DeviceDescriptor.all_devices
+  isExternal: false
+  name: all_devices
+  parent: cntk.cntk_py.DeviceDescriptor
+  uid: cntk.cntk_py.DeviceDescriptor.all_devices
+- fullName: cntk.cntk_py.DeviceDescriptor.as_string
+  isExternal: false
+  name: as_string
+  parent: cntk.cntk_py.DeviceDescriptor
+  uid: cntk.cntk_py.DeviceDescriptor.as_string
+- fullName: cntk.cntk_py.DeviceDescriptor.cpu_device
+  isExternal: false
+  name: cpu_device
+  parent: cntk.cntk_py.DeviceDescriptor
+  uid: cntk.cntk_py.DeviceDescriptor.cpu_device
+- fullName: cntk.cntk_py.DeviceDescriptor.get_gpu_properties
+  isExternal: false
+  name: get_gpu_properties
+  parent: cntk.cntk_py.DeviceDescriptor
+  uid: cntk.cntk_py.DeviceDescriptor.get_gpu_properties
+- fullName: cntk.cntk_py.DeviceDescriptor.gpu_device
+  isExternal: false
+  name: gpu_device
+  parent: cntk.cntk_py.DeviceDescriptor
+  uid: cntk.cntk_py.DeviceDescriptor.gpu_device
+- fullName: cntk.cntk_py.DeviceDescriptor.id
+  isExternal: false
+  name: id
+  parent: cntk.cntk_py.DeviceDescriptor
+  uid: cntk.cntk_py.DeviceDescriptor.id
+- fullName: cntk.cntk_py.DeviceDescriptor.is_locked
+  isExternal: false
+  name: is_locked
+  parent: cntk.cntk_py.DeviceDescriptor
+  uid: cntk.cntk_py.DeviceDescriptor.is_locked
+- fullName: cntk.cntk_py.DeviceDescriptor.set_excluded_devices
+  isExternal: false
+  name: set_excluded_devices
+  parent: cntk.cntk_py.DeviceDescriptor
+  uid: cntk.cntk_py.DeviceDescriptor.set_excluded_devices
+- fullName: cntk.cntk_py.DeviceDescriptor.try_set_default_device
+  isExternal: false
+  name: try_set_default_device
+  parent: cntk.cntk_py.DeviceDescriptor
+  uid: cntk.cntk_py.DeviceDescriptor.try_set_default_device
+- fullName: cntk.cntk_py.DeviceDescriptor.type
+  isExternal: false
+  name: type
+  parent: cntk.cntk_py.DeviceDescriptor
+  uid: cntk.cntk_py.DeviceDescriptor.type
+- fullName: cntk.cntk_py.DeviceDescriptor.use_default_device
+  isExternal: false
+  name: use_default_device
+  parent: cntk.cntk_py.DeviceDescriptor
+  uid: cntk.cntk_py.DeviceDescriptor.use_default_device

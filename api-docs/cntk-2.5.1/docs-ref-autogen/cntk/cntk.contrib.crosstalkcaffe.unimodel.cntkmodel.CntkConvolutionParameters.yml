@@ -1,0 +1,22 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkConvolutionParameters
+  fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkConvolutionParameters
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
+  langs:
+  - python
+  module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+  name: CntkConvolutionParameters
+  summary: 'The parameter definition of convolution op
+
+    '
+  syntax:
+    content: CntkConvolutionParameters()
+  type: class
+  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkConvolutionParameters
+references: []

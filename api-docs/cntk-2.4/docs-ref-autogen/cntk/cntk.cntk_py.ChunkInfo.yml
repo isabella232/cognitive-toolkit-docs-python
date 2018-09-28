@@ -1,0 +1,21 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.cntk_py.ChunkInfo
+  fullName: cntk.cntk_py.ChunkInfo
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: ChunkInfo
+  summary: '
+
+
+    '
+  syntax:
+    content: ChunkInfo()
+  type: class
+  uid: cntk.cntk_py.ChunkInfo
+references: []

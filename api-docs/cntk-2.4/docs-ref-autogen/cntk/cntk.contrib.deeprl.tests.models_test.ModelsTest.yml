@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.deeprl.tests.models_test.ModelsTest.test_parse_dueling_network_structure
+  class: cntk.contrib.deeprl.tests.models_test.ModelsTest
+  fullName: cntk.contrib.deeprl.tests.models_test.ModelsTest
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: unittest.case.TestCase
+  langs:
+  - python
+  module: cntk.contrib.deeprl.tests.models_test
+  name: ModelsTest
+  summary: 'Unit tests for Models.
+
+
+    '
+  syntax:
+    content: ModelsTest(methodName='runTest')
+  type: class
+  uid: cntk.contrib.deeprl.tests.models_test.ModelsTest
+- class: cntk.contrib.deeprl.tests.models_test.ModelsTest
+  fullName: cntk.contrib.deeprl.tests.models_test.ModelsTest.test_parse_dueling_network_structure
+  langs:
+  - python
+  module: cntk.contrib.deeprl.tests.models_test
+  name: test_parse_dueling_network_structure
+  syntax:
+    content: test_parse_dueling_network_structure()
+    parameters: []
+  type: method
+  uid: cntk.contrib.deeprl.tests.models_test.ModelsTest.test_parse_dueling_network_structure
+references:
+- fullName: cntk.contrib.deeprl.tests.models_test.ModelsTest.test_parse_dueling_network_structure
+  isExternal: false
+  name: test_parse_dueling_network_structure
+  parent: cntk.contrib.deeprl.tests.models_test.ModelsTest
+  uid: cntk.contrib.deeprl.tests.models_test.ModelsTest.test_parse_dueling_network_structure

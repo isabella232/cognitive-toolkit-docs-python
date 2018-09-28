@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save
+  class: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
+  fullName: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.contrib.deeprl.agent.shared.qlearning_parameters
+  name: QLearningParameters
+  summary: 'Parameters used by Q learning algorithm.
+
+
+    '
+  syntax:
+    content: QLearningParameters(config_file)
+  type: class
+  uid: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
+- class: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
+  fullName: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save
+  langs:
+  - python
+  module: cntk.contrib.deeprl.agent.shared.qlearning_parameters
+  name: save
+  syntax:
+    content: save(config_file)
+    parameters:
+    - id: config_file
+  type: method
+  uid: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save
+references:
+- fullName: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save
+  isExternal: false
+  name: save
+  parent: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
+  uid: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save

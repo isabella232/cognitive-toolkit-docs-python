@@ -1,0 +1,15 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  fullName: cntk.contrib.netopt.test
+  langs:
+  - python
+  module: cntk.contrib.netopt.test
+  name: test
+  summary: 'Tests for netowrk optimization alogorithms.
+
+    '
+  type: module
+  uid: cntk.contrib.netopt.test
+references: []
