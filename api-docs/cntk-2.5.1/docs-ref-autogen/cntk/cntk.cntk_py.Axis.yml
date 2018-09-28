@@ -1,0 +1,308 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.cntk_py.Axis.all_axes
+  - cntk.cntk_py.Axis.all_static_axes
+  - cntk.cntk_py.Axis.as_string
+  - cntk.cntk_py.Axis.default_batch_axis
+  - cntk.cntk_py.Axis.default_dynamic_axis
+  - cntk.cntk_py.Axis.default_input_variable_dynamic_axes
+  - cntk.cntk_py.Axis.end_static_axis
+  - cntk.cntk_py.Axis.is_batch_axis
+  - cntk.cntk_py.Axis.is_dynamic_axis
+  - cntk.cntk_py.Axis.is_ordered
+  - cntk.cntk_py.Axis.is_sequence_axis
+  - cntk.cntk_py.Axis.is_static_axis
+  - cntk.cntk_py.Axis.name
+  - cntk.cntk_py.Axis.new_unique_dynamic_axis
+  - cntk.cntk_py.Axis.operand_sequence_axis
+  - cntk.cntk_py.Axis.static_axis_index
+  - cntk.cntk_py.Axis.unknown_dynamic_axes
+  class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Axis
+  summary: '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '
+  syntax:
+    content: Axis(*args)
+  type: class
+  uid: cntk.cntk_py.Axis
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.all_axes
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: all_axes
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Axis.all_axes
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.all_static_axes
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: all_static_axes
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Axis.all_static_axes
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.as_string
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: as_string
+  syntax:
+    content: as_string()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Axis.as_string
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.default_batch_axis
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: default_batch_axis
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Axis.default_batch_axis
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.default_dynamic_axis
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: default_dynamic_axis
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Axis.default_dynamic_axis
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.default_input_variable_dynamic_axes
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: default_input_variable_dynamic_axes
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Axis.default_input_variable_dynamic_axes
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.end_static_axis
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: end_static_axis
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Axis.end_static_axis
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.is_batch_axis
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_batch_axis
+  syntax:
+    content: is_batch_axis()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Axis.is_batch_axis
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.is_dynamic_axis
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_dynamic_axis
+  syntax:
+    content: is_dynamic_axis()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Axis.is_dynamic_axis
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.is_ordered
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_ordered
+  syntax:
+    content: is_ordered()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Axis.is_ordered
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.is_sequence_axis
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_sequence_axis
+  syntax:
+    content: is_sequence_axis()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Axis.is_sequence_axis
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.is_static_axis
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_static_axis
+  syntax:
+    content: is_static_axis()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Axis.is_static_axis
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.name
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: name
+  syntax:
+    content: name()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Axis.name
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.new_unique_dynamic_axis
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: new_unique_dynamic_axis
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Axis.new_unique_dynamic_axis
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.operand_sequence_axis
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: operand_sequence_axis
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Axis.operand_sequence_axis
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.static_axis_index
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: static_axis_index
+  syntax:
+    content: static_axis_index(checked=True)
+    parameters:
+    - defaultValue: 'True'
+      id: checked
+  type: method
+  uid: cntk.cntk_py.Axis.static_axis_index
+- class: cntk.cntk_py.Axis
+  fullName: cntk.cntk_py.Axis.unknown_dynamic_axes
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: unknown_dynamic_axes
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Axis.unknown_dynamic_axes
+references:
+- fullName: cntk.cntk_py.Axis.all_axes
+  isExternal: false
+  name: all_axes
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.all_axes
+- fullName: cntk.cntk_py.Axis.all_static_axes
+  isExternal: false
+  name: all_static_axes
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.all_static_axes
+- fullName: cntk.cntk_py.Axis.as_string
+  isExternal: false
+  name: as_string
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.as_string
+- fullName: cntk.cntk_py.Axis.default_batch_axis
+  isExternal: false
+  name: default_batch_axis
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.default_batch_axis
+- fullName: cntk.cntk_py.Axis.default_dynamic_axis
+  isExternal: false
+  name: default_dynamic_axis
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.default_dynamic_axis
+- fullName: cntk.cntk_py.Axis.default_input_variable_dynamic_axes
+  isExternal: false
+  name: default_input_variable_dynamic_axes
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.default_input_variable_dynamic_axes
+- fullName: cntk.cntk_py.Axis.end_static_axis
+  isExternal: false
+  name: end_static_axis
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.end_static_axis
+- fullName: cntk.cntk_py.Axis.is_batch_axis
+  isExternal: false
+  name: is_batch_axis
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.is_batch_axis
+- fullName: cntk.cntk_py.Axis.is_dynamic_axis
+  isExternal: false
+  name: is_dynamic_axis
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.is_dynamic_axis
+- fullName: cntk.cntk_py.Axis.is_ordered
+  isExternal: false
+  name: is_ordered
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.is_ordered
+- fullName: cntk.cntk_py.Axis.is_sequence_axis
+  isExternal: false
+  name: is_sequence_axis
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.is_sequence_axis
+- fullName: cntk.cntk_py.Axis.is_static_axis
+  isExternal: false
+  name: is_static_axis
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.is_static_axis
+- fullName: cntk.cntk_py.Axis.name
+  isExternal: false
+  name: name
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.name
+- fullName: cntk.cntk_py.Axis.new_unique_dynamic_axis
+  isExternal: false
+  name: new_unique_dynamic_axis
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.new_unique_dynamic_axis
+- fullName: cntk.cntk_py.Axis.operand_sequence_axis
+  isExternal: false
+  name: operand_sequence_axis
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.operand_sequence_axis
+- fullName: cntk.cntk_py.Axis.static_axis_index
+  isExternal: false
+  name: static_axis_index
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.static_axis_index
+- fullName: cntk.cntk_py.Axis.unknown_dynamic_axes
+  isExternal: false
+  name: unknown_dynamic_axes
+  parent: cntk.cntk_py.Axis
+  uid: cntk.cntk_py.Axis.unknown_dynamic_axes

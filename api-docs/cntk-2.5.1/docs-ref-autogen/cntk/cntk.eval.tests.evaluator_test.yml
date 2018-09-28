@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.eval.tests.evaluator_test.test_eval
+  fullName: cntk.eval.tests.evaluator_test
+  langs:
+  - python
+  module: cntk.eval.tests.evaluator_test
+  name: evaluator_test
+  type: module
+  uid: cntk.eval.tests.evaluator_test
+- fullName: cntk.eval.tests.evaluator_test.test_eval
+  langs:
+  - python
+  module: cntk.eval.tests.evaluator_test
+  name: test_eval
+  syntax:
+    content: test_eval()
+  type: function
+  uid: cntk.eval.tests.evaluator_test.test_eval
+references:
+- fullName: cntk.eval.tests.evaluator_test.test_eval
+  isExternal: false
+  name: test_eval
+  parent: cntk.eval.tests.evaluator_test
+  uid: cntk.eval.tests.evaluator_test.test_eval

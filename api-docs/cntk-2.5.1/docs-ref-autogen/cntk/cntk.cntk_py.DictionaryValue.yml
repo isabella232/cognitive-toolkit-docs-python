@@ -1,0 +1,326 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.cntk_py.DictionaryValue.has_value
+  - cntk.cntk_py.DictionaryValue.load
+  - cntk.cntk_py.DictionaryValue.save
+  - cntk.cntk_py.DictionaryValue.type_name
+  - cntk.cntk_py.DictionaryValue.value_type
+  - cntk.cntk_py.DictionaryValue.Type_Axis
+  - cntk.cntk_py.DictionaryValue.Type_Bool
+  - cntk.cntk_py.DictionaryValue.Type_Dictionary
+  - cntk.cntk_py.DictionaryValue.Type_Double
+  - cntk.cntk_py.DictionaryValue.Type_Float
+  - cntk.cntk_py.DictionaryValue.Type_Int
+  - cntk.cntk_py.DictionaryValue.Type_NDArrayView
+  - cntk.cntk_py.DictionaryValue.Type_NDShape
+  - cntk.cntk_py.DictionaryValue.Type_SizeT
+  - cntk.cntk_py.DictionaryValue.Type_String
+  - cntk.cntk_py.DictionaryValue.Type_TrainingParameterSchedule
+  - cntk.cntk_py.DictionaryValue.Type_Vector
+  - cntk.cntk_py.DictionaryValue.Type__none
+  class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: DictionaryValue
+  summary: '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    '
+  syntax:
+    content: DictionaryValue(*args)
+  type: class
+  uid: cntk.cntk_py.DictionaryValue
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.has_value
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: has_value
+  syntax:
+    content: has_value()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.DictionaryValue.has_value
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.load
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: load
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.DictionaryValue.load
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.save
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: save
+  syntax:
+    content: save(filename)
+    parameters:
+    - id: filename
+  type: method
+  uid: cntk.cntk_py.DictionaryValue.save
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.type_name
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: type_name
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.DictionaryValue.type_name
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.value_type
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: value_type
+  syntax:
+    content: value_type()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.DictionaryValue.value_type
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type_Axis
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type_Axis
+  syntax:
+    content: Type_Axis = 8
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type_Axis
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type_Bool
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type_Bool
+  syntax:
+    content: Type_Bool = 1
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type_Bool
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type_Dictionary
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type_Dictionary
+  syntax:
+    content: Type_Dictionary = 10
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type_Dictionary
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type_Double
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type_Double
+  syntax:
+    content: Type_Double = 5
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type_Double
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type_Float
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type_Float
+  syntax:
+    content: Type_Float = 4
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type_Float
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type_Int
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type_Int
+  syntax:
+    content: Type_Int = 2
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type_Int
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type_NDArrayView
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type_NDArrayView
+  syntax:
+    content: Type_NDArrayView = 11
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type_NDArrayView
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type_NDShape
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type_NDShape
+  syntax:
+    content: Type_NDShape = 7
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type_NDShape
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type_SizeT
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type_SizeT
+  syntax:
+    content: Type_SizeT = 3
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type_SizeT
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type_String
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type_String
+  syntax:
+    content: Type_String = 6
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type_String
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type_TrainingParameterSchedule
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type_TrainingParameterSchedule
+  syntax:
+    content: Type_TrainingParameterSchedule = 12
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type_TrainingParameterSchedule
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type_Vector
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type_Vector
+  syntax:
+    content: Type_Vector = 9
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type_Vector
+- class: cntk.cntk_py.DictionaryValue
+  fullName: cntk.cntk_py.DictionaryValue.Type__none
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Type__none
+  syntax:
+    content: Type__none = 0
+  type: attribute
+  uid: cntk.cntk_py.DictionaryValue.Type__none
+references:
+- fullName: cntk.cntk_py.DictionaryValue.has_value
+  isExternal: false
+  name: has_value
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.has_value
+- fullName: cntk.cntk_py.DictionaryValue.load
+  isExternal: false
+  name: load
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.load
+- fullName: cntk.cntk_py.DictionaryValue.save
+  isExternal: false
+  name: save
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.save
+- fullName: cntk.cntk_py.DictionaryValue.type_name
+  isExternal: false
+  name: type_name
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.type_name
+- fullName: cntk.cntk_py.DictionaryValue.value_type
+  isExternal: false
+  name: value_type
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.value_type
+- fullName: cntk.cntk_py.DictionaryValue.Type_Axis
+  isExternal: false
+  name: Type_Axis
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type_Axis
+- fullName: cntk.cntk_py.DictionaryValue.Type_Bool
+  isExternal: false
+  name: Type_Bool
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type_Bool
+- fullName: cntk.cntk_py.DictionaryValue.Type_Dictionary
+  isExternal: false
+  name: Type_Dictionary
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type_Dictionary
+- fullName: cntk.cntk_py.DictionaryValue.Type_Double
+  isExternal: false
+  name: Type_Double
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type_Double
+- fullName: cntk.cntk_py.DictionaryValue.Type_Float
+  isExternal: false
+  name: Type_Float
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type_Float
+- fullName: cntk.cntk_py.DictionaryValue.Type_Int
+  isExternal: false
+  name: Type_Int
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type_Int
+- fullName: cntk.cntk_py.DictionaryValue.Type_NDArrayView
+  isExternal: false
+  name: Type_NDArrayView
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type_NDArrayView
+- fullName: cntk.cntk_py.DictionaryValue.Type_NDShape
+  isExternal: false
+  name: Type_NDShape
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type_NDShape
+- fullName: cntk.cntk_py.DictionaryValue.Type_SizeT
+  isExternal: false
+  name: Type_SizeT
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type_SizeT
+- fullName: cntk.cntk_py.DictionaryValue.Type_String
+  isExternal: false
+  name: Type_String
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type_String
+- fullName: cntk.cntk_py.DictionaryValue.Type_TrainingParameterSchedule
+  isExternal: false
+  name: Type_TrainingParameterSchedule
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type_TrainingParameterSchedule
+- fullName: cntk.cntk_py.DictionaryValue.Type_Vector
+  isExternal: false
+  name: Type_Vector
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type_Vector
+- fullName: cntk.cntk_py.DictionaryValue.Type__none
+  isExternal: false
+  name: Type__none
+  parent: cntk.cntk_py.DictionaryValue
+  uid: cntk.cntk_py.DictionaryValue.Type__none
