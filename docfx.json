@@ -283,6 +283,32 @@
       "apiPlatform": "python"
     },
     "fileMetadata": {
+      "monikers": {
+        "api-docs/cntk-2.4/**": [
+          "cntk-py-2.4"
+        ],
+        "api-docs/cntk-2.5/**": [
+          "cntk-py-2.5"
+        ],
+        "api-docs/cntk-2.5.1/**": [
+          "cntk-py-2.5.1"
+        ],
+        "api-docs/cntk-2.6/**": [
+          "cntk-py-2.6"
+        ],
+        "docs-ref-conceptual/2.4/**": [
+          "cntk-py-2.4"
+        ],
+        "docs-ref-conceptual/2.5/**": [
+          "cntk-py-2.5"
+        ],
+        "docs-ref-conceptual/2.5.1/**": [
+          "cntk-py-2.5.1"
+        ],
+        "docs-ref-conceptual/2.6/**": [
+          "cntk-py-2.6"
+        ]
+      },
       "author": {
         "api-docs/**/*.yml": "mahilleb-msft",
         "docs-ref-conceptual/**/*.md": "mahilleb-msft"
@@ -312,6 +338,8 @@
     "template": [],
     "dest": "cntk",
     "markdownEngineName": "markdig",
-    "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
+    "xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ]
   }
 }
