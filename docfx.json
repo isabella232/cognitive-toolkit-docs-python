@@ -236,11 +236,12 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/python/cntk_py_breadcrumb/toc.json",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/cognitive-toolkit-docs-python",
+      "breadcrumb_path": "~/breadcrumb/toc.yml",
       "searchScope": [
         "Cognitive Toolkit"
       ],
-      "showPowerShellPicker": "true",
       "apiPlatform": "python"
     },
     "fileMetadata": {
