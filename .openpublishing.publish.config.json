@@ -74,7 +74,7 @@
       "ConceptualTOC": "docs-ref-conceptual/2.5.1/toc.yml",
       "ReferenceTOCUrl": "/python/api/cognitive-toolkit/toc.json?view=cntk-py-2.5.1",
       "ConceptualTOCUrl": "/python/cognitive-toolkit/toc.json?view=cntk-py-2.5.1"
-    }
+    },
     {
       "TopLevelTOC": "api-docs/cntk-2.6/docs-ref-autogen/toc.yml",
       "ConceptualTOC": "docs-ref-conceptual/2.6/toc.yml",
