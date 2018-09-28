@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.cntk_py.UDFDeserializeCallbackWrapper
+  fullName: cntk.cntk_py.UDFDeserializeCallbackWrapper
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: UDFDeserializeCallbackWrapper
+  syntax:
+    content: UDFDeserializeCallbackWrapper()
+  type: class
+  uid: cntk.cntk_py.UDFDeserializeCallbackWrapper
+references: []

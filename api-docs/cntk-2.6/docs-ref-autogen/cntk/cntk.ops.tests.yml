@@ -1,0 +1,18 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.ops.tests.transpose_test
+  fullName: cntk.ops.tests
+  langs:
+  - python
+  module: cntk.ops.tests
+  name: tests
+  type: package
+  uid: cntk.ops.tests
+references:
+- fullName: cntk.ops.tests.transpose_test
+  isExternal: false
+  name: transpose_test
+  parent: cntk.ops.tests
+  uid: cntk.ops.tests.transpose_test

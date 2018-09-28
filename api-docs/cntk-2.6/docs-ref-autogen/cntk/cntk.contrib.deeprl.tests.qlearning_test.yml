@@ -1,0 +1,18 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.deeprl.tests.qlearning_test.QLearningTest
+  fullName: cntk.contrib.deeprl.tests.qlearning_test
+  langs:
+  - python
+  module: cntk.contrib.deeprl.tests.qlearning_test
+  name: qlearning_test
+  type: module
+  uid: cntk.contrib.deeprl.tests.qlearning_test
+references:
+- fullName: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest
+  isExternal: false
+  name: QLearningTest
+  parent: cntk.contrib.deeprl.tests.qlearning_test
+  uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest

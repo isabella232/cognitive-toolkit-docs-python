@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.tests.device_test.test_device_kind
+  fullName: cntk.tests.device_test
+  langs:
+  - python
+  module: cntk.tests.device_test
+  name: device_test
+  summary: 'Unit tests for the device module
+
+    '
+  type: module
+  uid: cntk.tests.device_test
+- fullName: cntk.tests.device_test.test_device_kind
+  langs:
+  - python
+  module: cntk.tests.device_test
+  name: test_device_kind
+  syntax:
+    content: test_device_kind()
+  type: function
+  uid: cntk.tests.device_test.test_device_kind
+references:
+- fullName: cntk.tests.device_test.test_device_kind
+  isExternal: false
+  name: test_device_kind
+  parent: cntk.tests.device_test
+  uid: cntk.tests.device_test.test_device_kind

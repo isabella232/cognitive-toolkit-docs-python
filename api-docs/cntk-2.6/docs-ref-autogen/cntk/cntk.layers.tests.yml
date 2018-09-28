@@ -1,0 +1,18 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.layers.tests.models_tests
+  fullName: cntk.layers.tests
+  langs:
+  - python
+  module: cntk.layers.tests
+  name: tests
+  type: package
+  uid: cntk.layers.tests
+references:
+- fullName: cntk.layers.tests.models_tests
+  isExternal: false
+  name: models_tests
+  parent: cntk.layers.tests
+  uid: cntk.layers.tests.models_tests
