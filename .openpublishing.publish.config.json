@@ -8,6 +8,9 @@
       "build_output_subfolder": "cognitive-toolkit-docs-python",
       "locale": "en-us",
       "monikers": [],
+      "xref_query_tags": [
+        "/python"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
