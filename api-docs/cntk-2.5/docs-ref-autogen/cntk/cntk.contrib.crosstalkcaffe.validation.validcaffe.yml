@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.crosstalkcaffe.validation.validcaffe.CaffeValidCore
+  - cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
+  fullName: cntk.contrib.crosstalkcaffe.validation.validcaffe
+  langs:
+  - python
+  module: cntk.contrib.crosstalkcaffe.validation.validcaffe
+  name: validcaffe
+  type: module
+  uid: cntk.contrib.crosstalkcaffe.validation.validcaffe
+references:
+- fullName: cntk.contrib.crosstalkcaffe.validation.validcaffe.CaffeValidCore
+  isExternal: false
+  name: CaffeValidCore
+  parent: cntk.contrib.crosstalkcaffe.validation.validcaffe
+  uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.CaffeValidCore
+- fullName: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
+  isExternal: false
+  name: ValidCore
+  parent: cntk.contrib.crosstalkcaffe.validation.validcaffe
+  uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore

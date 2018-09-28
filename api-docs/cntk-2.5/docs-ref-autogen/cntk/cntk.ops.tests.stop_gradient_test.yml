@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.ops.tests.stop_gradient_test.test_stop_gradient
+  fullName: cntk.ops.tests.stop_gradient_test
+  langs:
+  - python
+  module: cntk.ops.tests.stop_gradient_test
+  name: stop_gradient_test
+  summary: 'Unit tests for the stop_gradient.
+
+    '
+  type: module
+  uid: cntk.ops.tests.stop_gradient_test
+- fullName: cntk.ops.tests.stop_gradient_test.test_stop_gradient
+  langs:
+  - python
+  module: cntk.ops.tests.stop_gradient_test
+  name: test_stop_gradient
+  syntax:
+    content: test_stop_gradient()
+  type: function
+  uid: cntk.ops.tests.stop_gradient_test.test_stop_gradient
+references:
+- fullName: cntk.ops.tests.stop_gradient_test.test_stop_gradient
+  isExternal: false
+  name: test_stop_gradient
+  parent: cntk.ops.tests.stop_gradient_test
+  uid: cntk.ops.tests.stop_gradient_test.test_stop_gradient

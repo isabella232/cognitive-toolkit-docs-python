@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.losses.tests.h_softmax_test.test_h_softmax
+  fullName: cntk.losses.tests.h_softmax_test
+  langs:
+  - python
+  module: cntk.losses.tests.h_softmax_test
+  name: h_softmax_test
+  summary: 'Unit tests for the hierarchical softmax class.
+
+    '
+  type: module
+  uid: cntk.losses.tests.h_softmax_test
+- fullName: cntk.losses.tests.h_softmax_test.test_h_softmax
+  langs:
+  - python
+  module: cntk.losses.tests.h_softmax_test
+  name: test_h_softmax
+  syntax:
+    content: test_h_softmax()
+  type: function
+  uid: cntk.losses.tests.h_softmax_test.test_h_softmax
+references:
+- fullName: cntk.losses.tests.h_softmax_test.test_h_softmax
+  isExternal: false
+  name: test_h_softmax
+  parent: cntk.losses.tests.h_softmax_test
+  uid: cntk.losses.tests.h_softmax_test.test_h_softmax
