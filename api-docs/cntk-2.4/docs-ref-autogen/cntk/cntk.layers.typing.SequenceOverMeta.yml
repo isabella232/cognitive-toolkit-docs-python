@@ -1,0 +1,18 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.layers.typing.SequenceOverMeta
+  fullName: cntk.layers.typing.SequenceOverMeta
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: builtins.type
+  langs:
+  - python
+  module: cntk.layers.typing
+  name: SequenceOverMeta
+  syntax: {}
+  type: class
+  uid: cntk.layers.typing.SequenceOverMeta
+references: []
