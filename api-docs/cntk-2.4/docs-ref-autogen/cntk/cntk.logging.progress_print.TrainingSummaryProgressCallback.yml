@@ -56,7 +56,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_test_summary
+  name: on_write_test_summary(samples, updates, summaries, aggregate_metric, elapsed_milliseconds)
   syntax:
     content: on_write_test_summary(samples, updates, summaries, aggregate_metric,
       elapsed_milliseconds)
@@ -73,7 +73,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_test_update
+  name: on_write_test_update(*args, **kwargs)
   syntax:
     content: on_write_test_update(*args, **kwargs)
     parameters: []
@@ -84,7 +84,8 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_training_summary
+  name: on_write_training_summary(samples, updates, summaries, aggregate_loss, aggregate_metric,
+    elapsed_milliseconds)
   syntax:
     content: on_write_training_summary(samples, updates, summaries, aggregate_loss,
       aggregate_metric, elapsed_milliseconds)
@@ -102,7 +103,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_training_update
+  name: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
   syntax:
     content: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
     parameters:
@@ -117,7 +118,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: write
+  name: write(*args, **kwargs)
   syntax:
     content: write(*args, **kwargs)
     parameters: []
@@ -126,26 +127,27 @@ items:
 references:
 - fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_summary
   isExternal: false
-  name: on_write_test_summary
+  name: on_write_test_summary(samples, updates, summaries, aggregate_metric, elapsed_milliseconds)
   parent: cntk.logging.progress_print.TrainingSummaryProgressCallback
   uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_summary
 - fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_update
   isExternal: false
-  name: on_write_test_update
+  name: on_write_test_update(*args, **kwargs)
   parent: cntk.logging.progress_print.TrainingSummaryProgressCallback
   uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_update
 - fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_summary
   isExternal: false
-  name: on_write_training_summary
+  name: on_write_training_summary(samples, updates, summaries, aggregate_loss, aggregate_metric,
+    elapsed_milliseconds)
   parent: cntk.logging.progress_print.TrainingSummaryProgressCallback
   uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_summary
 - fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_update
   isExternal: false
-  name: on_write_training_update
+  name: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
   parent: cntk.logging.progress_print.TrainingSummaryProgressCallback
   uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_update
 - fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.write
   isExternal: false
-  name: write
+  name: write(*args, **kwargs)
   parent: cntk.logging.progress_print.TrainingSummaryProgressCallback
   uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.write

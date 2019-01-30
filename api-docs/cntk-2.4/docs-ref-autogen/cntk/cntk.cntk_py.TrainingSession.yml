@@ -40,7 +40,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: get_minibatch_size
+  name: get_minibatch_size()
   syntax:
     content: get_minibatch_size()
     parameters: []
@@ -51,7 +51,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: on_checkpoint_end
+  name: on_checkpoint_end(arg0)
   syntax:
     content: on_checkpoint_end(arg0)
     parameters:
@@ -63,7 +63,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: on_checkpoint_start
+  name: on_checkpoint_start(arg2)
   syntax:
     content: on_checkpoint_start(arg2)
     parameters:
@@ -75,7 +75,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: on_cross_validation_end
+  name: on_cross_validation_end(arg0, arg1, arg2, arg3)
   syntax:
     content: on_cross_validation_end(arg0, arg1, arg2, arg3)
     parameters:
@@ -90,7 +90,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: on_cross_validation_start
+  name: on_cross_validation_start(arg0)
   syntax:
     content: on_cross_validation_start(arg0)
     parameters:
@@ -102,7 +102,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: on_minibatch_end
+  name: on_minibatch_end()
   syntax:
     content: on_minibatch_end()
     parameters: []
@@ -113,7 +113,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: on_minibatch_start
+  name: on_minibatch_start()
   syntax:
     content: on_minibatch_start()
     parameters: []
@@ -124,7 +124,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: restore_from_checkpoint
+  name: restore_from_checkpoint(checkpointFileName)
   syntax:
     content: restore_from_checkpoint(checkpointFileName)
     parameters:
@@ -136,7 +136,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: train
+  name: train(computeDevice)
   syntax:
     content: train(computeDevice)
     parameters:
@@ -146,46 +146,46 @@ items:
 references:
 - fullName: cntk.cntk_py.TrainingSession.get_minibatch_size
   isExternal: false
-  name: get_minibatch_size
+  name: get_minibatch_size()
   parent: cntk.cntk_py.TrainingSession
   uid: cntk.cntk_py.TrainingSession.get_minibatch_size
 - fullName: cntk.cntk_py.TrainingSession.on_checkpoint_end
   isExternal: false
-  name: on_checkpoint_end
+  name: on_checkpoint_end(arg0)
   parent: cntk.cntk_py.TrainingSession
   uid: cntk.cntk_py.TrainingSession.on_checkpoint_end
 - fullName: cntk.cntk_py.TrainingSession.on_checkpoint_start
   isExternal: false
-  name: on_checkpoint_start
+  name: on_checkpoint_start(arg2)
   parent: cntk.cntk_py.TrainingSession
   uid: cntk.cntk_py.TrainingSession.on_checkpoint_start
 - fullName: cntk.cntk_py.TrainingSession.on_cross_validation_end
   isExternal: false
-  name: on_cross_validation_end
+  name: on_cross_validation_end(arg0, arg1, arg2, arg3)
   parent: cntk.cntk_py.TrainingSession
   uid: cntk.cntk_py.TrainingSession.on_cross_validation_end
 - fullName: cntk.cntk_py.TrainingSession.on_cross_validation_start
   isExternal: false
-  name: on_cross_validation_start
+  name: on_cross_validation_start(arg0)
   parent: cntk.cntk_py.TrainingSession
   uid: cntk.cntk_py.TrainingSession.on_cross_validation_start
 - fullName: cntk.cntk_py.TrainingSession.on_minibatch_end
   isExternal: false
-  name: on_minibatch_end
+  name: on_minibatch_end()
   parent: cntk.cntk_py.TrainingSession
   uid: cntk.cntk_py.TrainingSession.on_minibatch_end
 - fullName: cntk.cntk_py.TrainingSession.on_minibatch_start
   isExternal: false
-  name: on_minibatch_start
+  name: on_minibatch_start()
   parent: cntk.cntk_py.TrainingSession
   uid: cntk.cntk_py.TrainingSession.on_minibatch_start
 - fullName: cntk.cntk_py.TrainingSession.restore_from_checkpoint
   isExternal: false
-  name: restore_from_checkpoint
+  name: restore_from_checkpoint(checkpointFileName)
   parent: cntk.cntk_py.TrainingSession
   uid: cntk.cntk_py.TrainingSession.restore_from_checkpoint
 - fullName: cntk.cntk_py.TrainingSession.train
   isExternal: false
-  name: train
+  name: train(computeDevice)
   parent: cntk.cntk_py.TrainingSession
   uid: cntk.cntk_py.TrainingSession.train

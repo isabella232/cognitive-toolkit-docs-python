@@ -5,6 +5,7 @@ items:
   - cntk.misc.converter
   - cntk.misc.optimized_rnnstack_converter
   fullName: cntk.misc
+  kind: import
   langs:
   - python
   module: cntk.misc

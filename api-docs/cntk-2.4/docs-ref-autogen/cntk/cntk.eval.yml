@@ -5,6 +5,7 @@ items:
   - cntk.eval.evaluator
   - cntk.eval.tests
   fullName: cntk.eval
+  kind: import
   langs:
   - python
   module: cntk.eval

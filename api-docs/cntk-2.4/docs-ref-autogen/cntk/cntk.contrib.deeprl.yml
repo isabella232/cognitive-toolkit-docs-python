@@ -5,6 +5,7 @@ items:
   - cntk.contrib.deeprl.agent
   - cntk.contrib.deeprl.tests
   fullName: cntk.contrib.deeprl
+  kind: import
   langs:
   - python
   module: cntk.contrib.deeprl

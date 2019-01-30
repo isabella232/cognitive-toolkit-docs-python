@@ -18,7 +18,7 @@ items:
   langs:
   - python
   module: cntk.logging.graph
-  name: depth_first_search
+  name: depth_first_search(root, visitor, depth=0)
   summary: 'Generic function that walks through the graph starting at `root` and
 
     uses function `visitor` on each node to check whether it should be
@@ -64,7 +64,7 @@ items:
   langs:
   - python
   module: cntk.logging.graph
-  name: find_all_with_name
+  name: find_all_with_name(node, node_name, depth=0)
   seealsoContent: "  <xref:cntk.ops.functions.Function.find_all_with_name> in class\n\
     \  <xref:cntk.ops.functions.Function>.\n"
   summary: 'Finds functions in the graph starting from `node` and doing a depth-first
@@ -107,7 +107,7 @@ items:
   langs:
   - python
   module: cntk.logging.graph
-  name: find_by_name
+  name: find_by_name(node, node_name, depth=0)
   seealsoContent: "  <xref:cntk.ops.functions.Function.find_by_name> in class\n  <xref:cntk.ops.functions.Function>.\n"
   summary: 'Finds a function in the graph starting from `node` and doing a depth-first
 
@@ -149,7 +149,7 @@ items:
   langs:
   - python
   module: cntk.logging.graph
-  name: get_node_outputs
+  name: get_node_outputs(node, depth=0)
   summary: 'Walks through every node of the graph starting at `node`
 
     and returns a list of all node outputs.
@@ -176,7 +176,7 @@ items:
   langs:
   - python
   module: cntk.logging.graph
-  name: plot
+  name: plot(root, filename=None)
   summary: "Walks through every node of the graph starting at `root`,\ncreates a network\
     \ graph, and returns a network description. If `filename` is\nspecified, it outputs\
     \ a DOT, PNG, PDF, or SVG file depending on the file name's suffix.\n\nRequirements:\n\
@@ -213,27 +213,27 @@ items:
 references:
 - fullName: cntk.logging.graph.depth_first_search
   isExternal: false
-  name: depth_first_search
+  name: depth_first_search(root, visitor, depth=0)
   parent: cntk.logging.graph
   uid: cntk.logging.graph.depth_first_search
 - fullName: cntk.logging.graph.find_all_with_name
   isExternal: false
-  name: find_all_with_name
+  name: find_all_with_name(node, node_name, depth=0)
   parent: cntk.logging.graph
   uid: cntk.logging.graph.find_all_with_name
 - fullName: cntk.logging.graph.find_by_name
   isExternal: false
-  name: find_by_name
+  name: find_by_name(node, node_name, depth=0)
   parent: cntk.logging.graph
   uid: cntk.logging.graph.find_by_name
 - fullName: cntk.logging.graph.get_node_outputs
   isExternal: false
-  name: get_node_outputs
+  name: get_node_outputs(node, depth=0)
   parent: cntk.logging.graph
   uid: cntk.logging.graph.get_node_outputs
 - fullName: cntk.logging.graph.plot
   isExternal: false
-  name: plot
+  name: plot(root, filename=None)
   parent: cntk.logging.graph
   uid: cntk.logging.graph.plot
 - fullName: int, default 0

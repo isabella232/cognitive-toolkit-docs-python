@@ -17,7 +17,7 @@ items:
   langs:
   - python
   module: cntk.io.transforms
-  name: color
+  name: color(brightness_radius=0.0, contrast_radius=0.0, saturation_radius=0.0)
   summary: 'Color transform that can be used to pass to *map_features* for data augmentation.
 
     '
@@ -76,7 +76,8 @@ items:
   langs:
   - python
   module: cntk.io.transforms
-  name: crop
+  name: crop(crop_type='center', crop_size=0, side_ratio=0.0, area_ratio=0.0, aspect_ratio=1.0,
+    jitter_type='none')
   summary: 'Crop transform that can be used to pass to *map_features*
 
     '
@@ -227,7 +228,7 @@ items:
   langs:
   - python
   module: cntk.io.transforms
-  name: mean
+  name: mean(filename)
   summary: 'Mean transform that can be used to pass to *map_features* for data augmentation.
 
     '
@@ -254,7 +255,8 @@ items:
   langs:
   - python
   module: cntk.io.transforms
-  name: scale
+  name: scale(width, height, channels, interpolations='linear', scale_mode='fill',
+    pad_value=-1)
   summary: 'Scale transform that can be used to pass to *map_features* for data augmentation.
 
     '
@@ -322,22 +324,24 @@ items:
 references:
 - fullName: cntk.io.transforms.color
   isExternal: false
-  name: color
+  name: color(brightness_radius=0.0, contrast_radius=0.0, saturation_radius=0.0)
   parent: cntk.io.transforms
   uid: cntk.io.transforms.color
 - fullName: cntk.io.transforms.crop
   isExternal: false
-  name: crop
+  name: crop(crop_type='center', crop_size=0, side_ratio=0.0, area_ratio=0.0, aspect_ratio=1.0,
+    jitter_type='none')
   parent: cntk.io.transforms
   uid: cntk.io.transforms.crop
 - fullName: cntk.io.transforms.mean
   isExternal: false
-  name: mean
+  name: mean(filename)
   parent: cntk.io.transforms
   uid: cntk.io.transforms.mean
 - fullName: cntk.io.transforms.scale
   isExternal: false
-  name: scale
+  name: scale(width, height, channels, interpolations='linear', scale_mode='fill',
+    pad_value=-1)
   parent: cntk.io.transforms
   uid: cntk.io.transforms.scale
 - fullName: float, default 0.0

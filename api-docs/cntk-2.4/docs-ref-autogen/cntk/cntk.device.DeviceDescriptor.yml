@@ -32,7 +32,7 @@ items:
   langs:
   - python
   module: cntk.device
-  name: id
+  name: id()
   summary: 'Returns id of device descriptor
 
     '
@@ -52,7 +52,7 @@ items:
   langs:
   - python
   module: cntk.device
-  name: is_locked
+  name: is_locked()
   summary: 'Returns *True* if another CNTK process already holds an exclusive lock
 
     on this device.
@@ -68,7 +68,7 @@ items:
   langs:
   - python
   module: cntk.device
-  name: type
+  name: type()
   summary: 'Returns type of device descriptor. 1 if it is a GPU device or 0 if CPU.
 
     '
@@ -86,16 +86,16 @@ items:
 references:
 - fullName: cntk.device.DeviceDescriptor.id
   isExternal: false
-  name: id
+  name: id()
   parent: cntk.device.DeviceDescriptor
   uid: cntk.device.DeviceDescriptor.id
 - fullName: cntk.device.DeviceDescriptor.is_locked
   isExternal: false
-  name: is_locked
+  name: is_locked()
   parent: cntk.device.DeviceDescriptor
   uid: cntk.device.DeviceDescriptor.is_locked
 - fullName: cntk.device.DeviceDescriptor.type
   isExternal: false
-  name: type
+  name: type()
   parent: cntk.device.DeviceDescriptor
   uid: cntk.device.DeviceDescriptor.type

@@ -23,7 +23,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.validation.validcaffe
-  name: execute
+  name: execute(source_solver, valid_dir)
   summary: 'execute the validation
 
     '
@@ -37,6 +37,6 @@ items:
 references:
 - fullName: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore.execute
   isExternal: false
-  name: execute
+  name: execute(source_solver, valid_dir)
   parent: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
   uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore.execute

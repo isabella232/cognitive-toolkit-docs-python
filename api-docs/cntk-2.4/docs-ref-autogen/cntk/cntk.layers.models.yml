@@ -4,6 +4,7 @@ items:
 - children:
   - cntk.layers.models.attention
   fullName: cntk.layers.models
+  kind: import
   langs:
   - python
   module: cntk.layers.models

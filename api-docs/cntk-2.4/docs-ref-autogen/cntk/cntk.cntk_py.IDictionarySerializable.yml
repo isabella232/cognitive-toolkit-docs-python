@@ -24,7 +24,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: current_version
+  name: current_version()
   syntax:
     content: current_version()
     parameters: []
@@ -35,7 +35,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: serialize
+  name: serialize()
   syntax:
     content: serialize()
     parameters: []
@@ -44,11 +44,11 @@ items:
 references:
 - fullName: cntk.cntk_py.IDictionarySerializable.current_version
   isExternal: false
-  name: current_version
+  name: current_version()
   parent: cntk.cntk_py.IDictionarySerializable
   uid: cntk.cntk_py.IDictionarySerializable.current_version
 - fullName: cntk.cntk_py.IDictionarySerializable.serialize
   isExternal: false
-  name: serialize
+  name: serialize()
   parent: cntk.cntk_py.IDictionarySerializable
   uid: cntk.cntk_py.IDictionarySerializable.serialize

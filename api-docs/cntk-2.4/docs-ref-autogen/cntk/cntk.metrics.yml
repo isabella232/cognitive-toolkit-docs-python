@@ -7,6 +7,7 @@ items:
   - cntk.metrics.ndcg_at_1
   - cntk.metrics.tests
   fullName: cntk.metrics
+  kind: import
   langs:
   - python
   module: cntk.metrics
@@ -57,7 +58,7 @@ items:
   langs:
   - python
   module: cntk.metrics
-  name: classification_error
+  name: classification_error(output_vector, target_vector, axis=-1, topN=1, name='')
   summary: 'This operation computes the classification error. It finds the index of
     the highest
 
@@ -131,7 +132,8 @@ items:
   langs:
   - python
   module: cntk.metrics
-  name: edit_distance_error
+  name: edit_distance_error(input_a, input_b, subPen=1, delPen=1, insPen=1, squashInputs=False,
+    tokensToIgnore=[], name='')
   summary: 'Edit distance error evaluation function with the option of specifying
     penalty of substitution, deletion and insertion, as well as squashing the input
     sequences and ignoring certain samples.
@@ -252,7 +254,7 @@ items:
   langs:
   - python
   module: cntk.metrics
-  name: ndcg_at_1
+  name: ndcg_at_1(output, gain, group, name='')
   summary: 'Groups samples according to `group`, sorts
 
     them within each group based on `output` and
@@ -309,17 +311,18 @@ items:
 references:
 - fullName: cntk.metrics.classification_error
   isExternal: false
-  name: classification_error
+  name: classification_error(output_vector, target_vector, axis=-1, topN=1, name='')
   parent: cntk.metrics
   uid: cntk.metrics.classification_error
 - fullName: cntk.metrics.edit_distance_error
   isExternal: false
-  name: edit_distance_error
+  name: edit_distance_error(input_a, input_b, subPen=1, delPen=1, insPen=1, squashInputs=False,
+    tokensToIgnore=[], name='')
   parent: cntk.metrics
   uid: cntk.metrics.edit_distance_error
 - fullName: cntk.metrics.ndcg_at_1
   isExternal: false
-  name: ndcg_at_1
+  name: ndcg_at_1(output, gain, group, name='')
   parent: cntk.metrics
   uid: cntk.metrics.ndcg_at_1
 - fullName: cntk.metrics.tests

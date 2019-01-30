@@ -17,7 +17,7 @@ items:
   langs:
   - python
   module: cntk.debugging.profiler
-  name: disable_profiler
+  name: disable_profiler()
   summary: 'Disable profiler from gathering data.
 
     '
@@ -29,7 +29,7 @@ items:
   langs:
   - python
   module: cntk.debugging.profiler
-  name: enable_profiler
+  name: enable_profiler()
   summary: 'Enable profiler to gather data. Note that in training_session, profiler
     would be enabled automatically after the first check point
 
@@ -42,7 +42,7 @@ items:
   langs:
   - python
   module: cntk.debugging.profiler
-  name: start_profiler
+  name: start_profiler(dir='profiler', sync_gpu=True, reserve_mem=33554432)
   summary: 'Start profiler to prepare performance statistics gathering. Note that
 
     the profiler is not enabled after start
@@ -74,7 +74,7 @@ items:
   langs:
   - python
   module: cntk.debugging.profiler
-  name: stop_profiler
+  name: stop_profiler()
   summary: 'Stop profiler from gathering performance statistics and flush them to
     file
 
@@ -86,21 +86,21 @@ items:
 references:
 - fullName: cntk.debugging.profiler.disable_profiler
   isExternal: false
-  name: disable_profiler
+  name: disable_profiler()
   parent: cntk.debugging.profiler
   uid: cntk.debugging.profiler.disable_profiler
 - fullName: cntk.debugging.profiler.enable_profiler
   isExternal: false
-  name: enable_profiler
+  name: enable_profiler()
   parent: cntk.debugging.profiler
   uid: cntk.debugging.profiler.enable_profiler
 - fullName: cntk.debugging.profiler.start_profiler
   isExternal: false
-  name: start_profiler
+  name: start_profiler(dir='profiler', sync_gpu=True, reserve_mem=33554432)
   parent: cntk.debugging.profiler
   uid: cntk.debugging.profiler.start_profiler
 - fullName: cntk.debugging.profiler.stop_profiler
   isExternal: false
-  name: stop_profiler
+  name: stop_profiler()
   parent: cntk.debugging.profiler
   uid: cntk.debugging.profiler.stop_profiler

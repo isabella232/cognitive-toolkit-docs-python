@@ -105,7 +105,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: argument_map
+  name: argument_map(*args, **kwargs)
   summary: 'Determines the {placeholder: variable} map for use with various call operations
 
     Returns a dictionary from this function''s placeholders to whatever arguments
@@ -186,13 +186,30 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: backward
-  summary: "Backpropagates supplied `root_gradients` for one or more of the output\n\
-    variables of the Function, to calculate gradients with respect to\n`variables`.\
-    \ Formally, multiplies the values of `root_gradients` by\nthe Jacobian of the\
-    \ Function and returns the subset of the output that\ncorresponds to `variables`.\n\
-    \nNote: See <xref:cntk.ops.functions.Function.forward> for more examples on passing\
-    \ input data. \n"
+  name: backward(state, root_gradients, variables, as_numpy=True)
+  summary: 'Backpropagates supplied `root_gradients` for one or more of the output
+
+    variables of the Function, to calculate gradients with respect to
+
+    `variables`. Formally, multiplies the values of `root_gradients` by
+
+    the Jacobian of the Function and returns the subset of the output that
+
+    corresponds to `variables`.
+
+
+
+    > [!NOTE]
+
+    > See <xref:cntk.ops.functions.Function.forward> for more examples
+
+    >
+
+    > on passing input data.
+
+    >
+
+    '
   syntax:
     content: backward(state, root_gradients, variables, as_numpy=True)
     return:
@@ -239,7 +256,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: clone
+  name: clone(method, substitutions=None)
   summary: 'Clones the function. The parameters of the Function are either cloned,
 
     shared or frozen as specified by the method argument and any variable
@@ -303,7 +320,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: declare_args
+  name: declare_args(*arg_types)
   summary: 'Back-compat wrapper for update_signature() (beta12 and before).
 
     '
@@ -317,10 +334,22 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: eval
-  summary: "Evaluate the Function's outputs using the specified `arguments` as input.\n\
-    \nNote: See <xref:cntk.ops.functions.Function.forward> for examples on passing\
-    \ input data. \n"
+  name: eval(arguments=None, outputs=None, device=None, as_numpy=True)
+  summary: 'Evaluate the Function''s outputs using the specified `arguments` as input.
+
+
+
+    > [!NOTE]
+
+    > See <xref:cntk.ops.functions.Function.forward> for examples on
+
+    >
+
+    > passing input data.
+
+    >
+
+    '
   syntax:
     content: eval(arguments=None, outputs=None, device=None, as_numpy=True)
     parameters:
@@ -371,7 +400,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: find_all_with_name
+  name: find_all_with_name(name, depth=0)
   seealsoContent: '  <xref:cntk.ops.functions.find_by_name>
 
     '
@@ -451,7 +480,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: find_by_name
+  name: find_by_name(name, depth=0)
   seealsoContent: '  <xref:cntk.ops.functions.Function.find_all_with_name>
 
     '
@@ -511,7 +540,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: forward
+  name: forward(arguments, outputs=None, keep_for_backward=None, device=None, as_numpy=True)
   summary: 'Computes the values of speficied variables in `outputs`, using values
 
     provided in `arguments` that correspond to each input *Variable* of
@@ -612,7 +641,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: grad
+  name: grad(at, wrt=None, outputs=None, device=None, as_numpy=True, grad_root=None)
   summary: 'Computes the gradient of this Function at location `at` with respect to
     `wrt`.
 
@@ -777,7 +806,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: load
+  name: 'load(model, device=None, format=<ModelFormat.CNTKv2: 0>)'
   summary: 'Load the `model`, that has been saved using <xref:cntk.ops.functions.Function.save>.
 
     '
@@ -910,7 +939,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: register_udf_deserialize_callback
+  name: register_udf_deserialize_callback(op_name, callback)
   summary: 'Register a callback function to be invoked when deserializing a user-
 
     defined function with the corresponding op name.
@@ -964,7 +993,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: replace_placeholder
+  name: replace_placeholder(substitution)
   summary: 'In-place replace the only placeholder in the function graph with the
 
     specified substitution.
@@ -994,7 +1023,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: replace_placeholders
+  name: replace_placeholders(substitutions)
   summary: 'In-place replace specified placeholders in the Function graph with the
 
     specified replacements in the map.
@@ -1022,7 +1051,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: restore
+  name: restore(filename)
   summary: 'Restore the models parameters (in-place) from a saved model file
 
     '
@@ -1062,7 +1091,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: save
+  name: 'save(filename, format=<ModelFormat.CNTKv2: 0>)'
   summary: 'Save this function graph into a model file using the specified format.
 
 
@@ -1087,7 +1116,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: set_attribute
+  name: set_attribute(name, value)
   summary: 'Allows to change a function attribute.
 
     '
@@ -1134,7 +1163,8 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: test
+  name: test(minibatch_source, minibatch_size=32, streams=None, model_inputs_to_streams=None,
+    callbacks=None)
   summary: 'Measures the performance of a model, given by its criterion function,
     in the form of
 
@@ -1254,7 +1284,9 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: train
+  name: train(minibatch_source, minibatch_size=32, streams=None, model_inputs_to_streams=None,
+    parameter_learners=[], callbacks=[], progress_frequency=None, max_epochs=None,
+    epoch_size=None, max_samples=None)
   summary: 'Trains a model, given by its criterion function, using the specified training
     parameters and configs.
 
@@ -1407,7 +1439,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: update_signature
+  name: update_signature(*arg_types, **kwarg_types)
   summary: 'Defines input shapes, in-place
 
     e.g.
@@ -1464,7 +1496,7 @@ items:
   langs:
   - python
   module: cntk.ops.functions
-  name: with_signature
+  name: with_signature(*args, **kwargs)
   summary: 'Decorator for defining a @Function with a given signature. Same as @Function
     followed by @Signature.
 
@@ -1476,7 +1508,7 @@ items:
 references:
 - fullName: cntk.ops.functions.Function.argument_map
   isExternal: false
-  name: argument_map
+  name: argument_map(*args, **kwargs)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.argument_map
 - fullName: cntk.ops.functions.Function.arguments
@@ -1491,7 +1523,7 @@ references:
   uid: cntk.ops.functions.Function.attributes
 - fullName: cntk.ops.functions.Function.backward
   isExternal: false
-  name: backward
+  name: backward(state, root_gradients, variables, as_numpy=True)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.backward
 - fullName: cntk.ops.functions.Function.block_arguments_mapping
@@ -1506,7 +1538,7 @@ references:
   uid: cntk.ops.functions.Function.block_root
 - fullName: cntk.ops.functions.Function.clone
   isExternal: false
-  name: clone
+  name: clone(method, substitutions=None)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.clone
 - fullName: cntk.ops.functions.Function.constants
@@ -1521,32 +1553,32 @@ references:
   uid: cntk.ops.functions.Function.custom_attributes
 - fullName: cntk.ops.functions.Function.declare_args
   isExternal: false
-  name: declare_args
+  name: declare_args(*arg_types)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.declare_args
 - fullName: cntk.ops.functions.Function.eval
   isExternal: false
-  name: eval
+  name: eval(arguments=None, outputs=None, device=None, as_numpy=True)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.eval
 - fullName: cntk.ops.functions.Function.find_all_with_name
   isExternal: false
-  name: find_all_with_name
+  name: find_all_with_name(name, depth=0)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.find_all_with_name
 - fullName: cntk.ops.functions.Function.find_by_name
   isExternal: false
-  name: find_by_name
+  name: find_by_name(name, depth=0)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.find_by_name
 - fullName: cntk.ops.functions.Function.forward
   isExternal: false
-  name: forward
+  name: forward(arguments, outputs=None, keep_for_backward=None, device=None, as_numpy=True)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.forward
 - fullName: cntk.ops.functions.Function.grad
   isExternal: false
-  name: grad
+  name: grad(at, wrt=None, outputs=None, device=None, as_numpy=True, grad_root=None)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.grad
 - fullName: cntk.ops.functions.Function.inputs
@@ -1571,7 +1603,7 @@ references:
   uid: cntk.ops.functions.Function.is_primitive
 - fullName: cntk.ops.functions.Function.load
   isExternal: false
-  name: load
+  name: 'load(model, device=None, format=<ModelFormat.CNTKv2: 0>)'
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.load
 - fullName: cntk.ops.functions.Function.name
@@ -1606,22 +1638,22 @@ references:
   uid: cntk.ops.functions.Function.placeholders
 - fullName: cntk.ops.functions.Function.register_udf_deserialize_callback
   isExternal: false
-  name: register_udf_deserialize_callback
+  name: register_udf_deserialize_callback(op_name, callback)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.register_udf_deserialize_callback
 - fullName: cntk.ops.functions.Function.replace_placeholder
   isExternal: false
-  name: replace_placeholder
+  name: replace_placeholder(substitution)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.replace_placeholder
 - fullName: cntk.ops.functions.Function.replace_placeholders
   isExternal: false
-  name: replace_placeholders
+  name: replace_placeholders(substitutions)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.replace_placeholders
 - fullName: cntk.ops.functions.Function.restore
   isExternal: false
-  name: restore
+  name: restore(filename)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.restore
 - fullName: cntk.ops.functions.Function.root_function
@@ -1631,12 +1663,12 @@ references:
   uid: cntk.ops.functions.Function.root_function
 - fullName: cntk.ops.functions.Function.save
   isExternal: false
-  name: save
+  name: 'save(filename, format=<ModelFormat.CNTKv2: 0>)'
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.save
 - fullName: cntk.ops.functions.Function.set_attribute
   isExternal: false
-  name: set_attribute
+  name: set_attribute(name, value)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.set_attribute
 - fullName: cntk.ops.functions.Function.signature
@@ -1646,12 +1678,15 @@ references:
   uid: cntk.ops.functions.Function.signature
 - fullName: cntk.ops.functions.Function.test
   isExternal: false
-  name: test
+  name: test(minibatch_source, minibatch_size=32, streams=None, model_inputs_to_streams=None,
+    callbacks=None)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.test
 - fullName: cntk.ops.functions.Function.train
   isExternal: false
-  name: train
+  name: train(minibatch_source, minibatch_size=32, streams=None, model_inputs_to_streams=None,
+    parameter_learners=[], callbacks=[], progress_frequency=None, max_epochs=None,
+    epoch_size=None, max_samples=None)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.train
 - fullName: cntk.ops.functions.Function.type
@@ -1666,12 +1701,12 @@ references:
   uid: cntk.ops.functions.Function.uid
 - fullName: cntk.ops.functions.Function.update_signature
   isExternal: false
-  name: update_signature
+  name: update_signature(*arg_types, **kwarg_types)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.update_signature
 - fullName: cntk.ops.functions.Function.with_signature
   isExternal: false
-  name: with_signature
+  name: with_signature(*args, **kwargs)
   parent: cntk.ops.functions.Function
   uid: cntk.ops.functions.Function.with_signature
 - fullName: int, default 0
