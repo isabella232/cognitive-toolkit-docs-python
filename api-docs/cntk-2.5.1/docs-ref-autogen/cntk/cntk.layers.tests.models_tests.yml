@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.layers.tests.models_tests.test_attention_model
+  fullName: cntk.layers.tests.models_tests
+  langs:
+  - python
+  module: cntk.layers.tests.models_tests
+  name: models_tests
+  type: module
+  uid: cntk.layers.tests.models_tests
+- fullName: cntk.layers.tests.models_tests.test_attention_model
+  langs:
+  - python
+  module: cntk.layers.tests.models_tests
+  name: test_attention_model
+  syntax:
+    content: test_attention_model()
+  type: function
+  uid: cntk.layers.tests.models_tests.test_attention_model
+references:
+- fullName: cntk.layers.tests.models_tests.test_attention_model
+  isExternal: false
+  name: test_attention_model
+  parent: cntk.layers.tests.models_tests
+  uid: cntk.layers.tests.models_tests.test_attention_model

@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.tensor.ArrayMixin
+  - cntk.tensor.TensorOpsMixin
+  fullName: cntk.tensor
+  langs:
+  - python
+  module: cntk.tensor
+  name: tensor
+  summary: 'Tensor operations.
+
+    '
+  type: module
+  uid: cntk.tensor
+references:
+- fullName: cntk.tensor.ArrayMixin
+  isExternal: false
+  name: ArrayMixin
+  parent: cntk.tensor
+  uid: cntk.tensor.ArrayMixin
+- fullName: cntk.tensor.TensorOpsMixin
+  isExternal: false
+  name: TensorOpsMixin
+  parent: cntk.tensor
+  uid: cntk.tensor.TensorOpsMixin

@@ -1,0 +1,96 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.cntk_py.TensorBoardFileWriter.close
+  - cntk.cntk_py.TensorBoardFileWriter.flush
+  - cntk.cntk_py.TensorBoardFileWriter.write_image
+  - cntk.cntk_py.TensorBoardFileWriter.write_value
+  class: cntk.cntk_py.TensorBoardFileWriter
+  fullName: cntk.cntk_py.TensorBoardFileWriter
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: TensorBoardFileWriter
+  summary: '
+
+
+
+    '
+  syntax:
+    content: TensorBoardFileWriter(dir, modelToVisualize=0)
+  type: class
+  uid: cntk.cntk_py.TensorBoardFileWriter
+- class: cntk.cntk_py.TensorBoardFileWriter
+  fullName: cntk.cntk_py.TensorBoardFileWriter.close
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: close
+  syntax:
+    content: close()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.TensorBoardFileWriter.close
+- class: cntk.cntk_py.TensorBoardFileWriter
+  fullName: cntk.cntk_py.TensorBoardFileWriter.flush
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: flush
+  syntax:
+    content: flush()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.TensorBoardFileWriter.flush
+- class: cntk.cntk_py.TensorBoardFileWriter
+  fullName: cntk.cntk_py.TensorBoardFileWriter.write_image
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: write_image
+  syntax:
+    content: write_image(name, NDPtr, step)
+    parameters:
+    - id: name
+    - id: NDPtr
+    - id: step
+  type: method
+  uid: cntk.cntk_py.TensorBoardFileWriter.write_image
+- class: cntk.cntk_py.TensorBoardFileWriter
+  fullName: cntk.cntk_py.TensorBoardFileWriter.write_value
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: write_value
+  syntax:
+    content: write_value(name, value, step)
+    parameters:
+    - id: name
+    - id: value
+    - id: step
+  type: method
+  uid: cntk.cntk_py.TensorBoardFileWriter.write_value
+references:
+- fullName: cntk.cntk_py.TensorBoardFileWriter.close
+  isExternal: false
+  name: close
+  parent: cntk.cntk_py.TensorBoardFileWriter
+  uid: cntk.cntk_py.TensorBoardFileWriter.close
+- fullName: cntk.cntk_py.TensorBoardFileWriter.flush
+  isExternal: false
+  name: flush
+  parent: cntk.cntk_py.TensorBoardFileWriter
+  uid: cntk.cntk_py.TensorBoardFileWriter.flush
+- fullName: cntk.cntk_py.TensorBoardFileWriter.write_image
+  isExternal: false
+  name: write_image
+  parent: cntk.cntk_py.TensorBoardFileWriter
+  uid: cntk.cntk_py.TensorBoardFileWriter.write_image
+- fullName: cntk.cntk_py.TensorBoardFileWriter.write_value
+  isExternal: false
+  name: write_value
+  parent: cntk.cntk_py.TensorBoardFileWriter
+  uid: cntk.cntk_py.TensorBoardFileWriter.write_value

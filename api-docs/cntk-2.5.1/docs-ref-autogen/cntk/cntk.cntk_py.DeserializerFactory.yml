@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.cntk_py.DeserializerFactory
+  fullName: cntk.cntk_py.DeserializerFactory
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: DeserializerFactory
+  syntax:
+    content: DeserializerFactory()
+  type: class
+  uid: cntk.cntk_py.DeserializerFactory
+references: []

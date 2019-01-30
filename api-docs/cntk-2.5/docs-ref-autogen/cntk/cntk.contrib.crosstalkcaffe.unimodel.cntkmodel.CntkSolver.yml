@@ -1,0 +1,20 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkSolver
+  fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkSolver
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+  name: CntkSolver
+  summary: 'Record the solver state
+
+    '
+  syntax:
+    content: CntkSolver()
+  type: class
+  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkSolver
+references: []

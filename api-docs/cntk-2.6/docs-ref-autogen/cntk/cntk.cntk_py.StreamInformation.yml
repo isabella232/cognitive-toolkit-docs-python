@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.cntk_py.StreamInformation.as_string
+  class: cntk.cntk_py.StreamInformation
+  fullName: cntk.cntk_py.StreamInformation
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: StreamInformation
+  summary: '
+
+
+
+
+
+
+
+    '
+  syntax:
+    content: StreamInformation()
+  type: class
+  uid: cntk.cntk_py.StreamInformation
+- class: cntk.cntk_py.StreamInformation
+  fullName: cntk.cntk_py.StreamInformation.as_string
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: as_string
+  syntax:
+    content: as_string()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.StreamInformation.as_string
+references:
+- fullName: cntk.cntk_py.StreamInformation.as_string
+  isExternal: false
+  name: as_string
+  parent: cntk.cntk_py.StreamInformation
+  uid: cntk.cntk_py.StreamInformation.as_string
