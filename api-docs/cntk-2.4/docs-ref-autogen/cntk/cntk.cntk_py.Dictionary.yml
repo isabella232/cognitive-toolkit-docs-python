@@ -40,7 +40,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: add
+  name: add(*args)
   syntax:
     content: add(*args)
     parameters: []
@@ -51,7 +51,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: begin
+  name: begin()
   syntax:
     content: begin()
     parameters: []
@@ -62,7 +62,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: cbegin
+  name: cbegin()
   syntax:
     content: cbegin()
     parameters: []
@@ -73,7 +73,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: cend
+  name: cend()
   syntax:
     content: cend()
     parameters: []
@@ -84,7 +84,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: contains
+  name: contains(*args)
   syntax:
     content: contains(*args)
     parameters: []
@@ -95,7 +95,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: end
+  name: end()
   syntax:
     content: end()
     parameters: []
@@ -106,7 +106,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: keys
+  name: keys()
   syntax:
     content: keys()
     parameters: []
@@ -126,7 +126,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: save
+  name: save(filename)
   syntax:
     content: save(filename)
     parameters:
@@ -138,7 +138,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: size
+  name: size()
   syntax:
     content: size()
     parameters: []
@@ -147,37 +147,37 @@ items:
 references:
 - fullName: cntk.cntk_py.Dictionary.add
   isExternal: false
-  name: add
+  name: add(*args)
   parent: cntk.cntk_py.Dictionary
   uid: cntk.cntk_py.Dictionary.add
 - fullName: cntk.cntk_py.Dictionary.begin
   isExternal: false
-  name: begin
+  name: begin()
   parent: cntk.cntk_py.Dictionary
   uid: cntk.cntk_py.Dictionary.begin
 - fullName: cntk.cntk_py.Dictionary.cbegin
   isExternal: false
-  name: cbegin
+  name: cbegin()
   parent: cntk.cntk_py.Dictionary
   uid: cntk.cntk_py.Dictionary.cbegin
 - fullName: cntk.cntk_py.Dictionary.cend
   isExternal: false
-  name: cend
+  name: cend()
   parent: cntk.cntk_py.Dictionary
   uid: cntk.cntk_py.Dictionary.cend
 - fullName: cntk.cntk_py.Dictionary.contains
   isExternal: false
-  name: contains
+  name: contains(*args)
   parent: cntk.cntk_py.Dictionary
   uid: cntk.cntk_py.Dictionary.contains
 - fullName: cntk.cntk_py.Dictionary.end
   isExternal: false
-  name: end
+  name: end()
   parent: cntk.cntk_py.Dictionary
   uid: cntk.cntk_py.Dictionary.end
 - fullName: cntk.cntk_py.Dictionary.keys
   isExternal: false
-  name: keys
+  name: keys()
   parent: cntk.cntk_py.Dictionary
   uid: cntk.cntk_py.Dictionary.keys
 - fullName: cntk.cntk_py.Dictionary.load
@@ -187,11 +187,11 @@ references:
   uid: cntk.cntk_py.Dictionary.load
 - fullName: cntk.cntk_py.Dictionary.save
   isExternal: false
-  name: save
+  name: save(filename)
   parent: cntk.cntk_py.Dictionary
   uid: cntk.cntk_py.Dictionary.save
 - fullName: cntk.cntk_py.Dictionary.size
   isExternal: false
-  name: size
+  name: size()
   parent: cntk.cntk_py.Dictionary
   uid: cntk.cntk_py.Dictionary.size

@@ -45,7 +45,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: as_sequences
+  name: as_sequences(variable=None)
   summary: 'Convert the value of this minibatch instance to a sequence of NumPy
 
     arrays that have their masked entries removed.
@@ -157,7 +157,7 @@ items:
 references:
 - fullName: cntk.io.MinibatchData.as_sequences
   isExternal: false
-  name: as_sequences
+  name: as_sequences(variable=None)
   parent: cntk.io.MinibatchData
   uid: cntk.io.MinibatchData.as_sequences
 - fullName: cntk.io.MinibatchData.data

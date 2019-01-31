@@ -28,7 +28,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.cntk_utils_test
-  name: test_entropy
+  name: test_entropy()
   syntax:
     content: test_entropy()
     parameters: []
@@ -39,7 +39,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.cntk_utils_test
-  name: test_huber_loss
+  name: test_huber_loss()
   syntax:
     content: test_huber_loss()
     parameters: []
@@ -48,11 +48,11 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_entropy
   isExternal: false
-  name: test_entropy
+  name: test_entropy()
   parent: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
   uid: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_entropy
 - fullName: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_huber_loss
   isExternal: false
-  name: test_huber_loss
+  name: test_huber_loss()
   parent: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
   uid: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_huber_loss

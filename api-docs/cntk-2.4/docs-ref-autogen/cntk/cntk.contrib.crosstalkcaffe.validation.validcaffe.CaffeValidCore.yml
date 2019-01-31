@@ -25,7 +25,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.validation.validcaffe
-  name: execute
+  name: execute(source_solver, valid_dir)
   summary: '   Execute the validation in Caffe side.
 
     '
@@ -53,6 +53,6 @@ items:
 references:
 - fullName: cntk.contrib.crosstalkcaffe.validation.validcaffe.CaffeValidCore.execute
   isExternal: false
-  name: execute
+  name: execute(source_solver, valid_dir)
   parent: cntk.contrib.crosstalkcaffe.validation.validcaffe.CaffeValidCore
   uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.CaffeValidCore.execute

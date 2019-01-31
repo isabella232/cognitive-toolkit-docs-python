@@ -14,7 +14,7 @@ items:
   langs:
   - python
   module: cntk.misc.optimized_rnnstack_converter
-  name: convert_optimized_rnnstack
+  name: convert_optimized_rnnstack(cudnn_model)
   summary: 'Converts model that contains cudnn optimized_rnnstack to use non-cudnn
     functions,
 
@@ -38,6 +38,6 @@ items:
 references:
 - fullName: cntk.misc.optimized_rnnstack_converter.convert_optimized_rnnstack
   isExternal: false
-  name: convert_optimized_rnnstack
+  name: convert_optimized_rnnstack(cudnn_model)
   parent: cntk.misc.optimized_rnnstack_converter
   uid: cntk.misc.optimized_rnnstack_converter.convert_optimized_rnnstack

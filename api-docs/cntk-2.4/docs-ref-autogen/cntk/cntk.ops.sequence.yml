@@ -44,7 +44,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: broadcast_as
+  name: broadcast_as(operand, broadcast_as_operand, name='')
   summary: 'Creates a sequence out of a non-sequence by endowing the `operand`
 
     with dynamic axes of the same type as the `broadcast_as_operand`
@@ -81,7 +81,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: delay
+  name: delay(x, initial_state=None, time_step=1, name='')
   summary: 'This function combines <xref:cntk.ops.sequence.past_value> and <xref:cntk.ops.sequence.future_value>
     into a single function.
 
@@ -128,7 +128,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: first
+  name: first(seq, name='')
   summary: 'Returns the first element of its symbolic input sequence `seq`
 
     '
@@ -164,7 +164,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: future_value
+  name: future_value(x, initial_state=None, time_step=1, name='')
   summary: 'This function returns the future value w.r.t. `x`. It is most often used
     when
 
@@ -226,7 +226,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: gather
+  name: gather(seq, condition, new_sequence_axis_typeinfo=None, name='')
   summary: 'Takes two sequences of the same length and returns a new sequence whose
 
     elements are those elements of sequence `seq` whose corresponding element
@@ -278,7 +278,8 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: input
+  name: input(shape, dtype=<cntk.default_options.default_override_or object>, needs_gradient=False,
+    is_sparse=False, sequence_axis=Axis('defaultDynamicAxis'), name='')
   summary: 'DEPRECATED.
 
 
@@ -341,7 +342,8 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: input_variable
+  name: input_variable(shape, dtype=np.float32, needs_gradient=False, is_sparse=False,
+    sequence_axis=Axis.default_dynamic_axis(), name='')
   summary: 'It creates an input in the network: a place where data,
 
     such as features and labels, should be provided.
@@ -421,7 +423,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: is_first
+  name: is_first(seq, name='')
   summary: 'Returns a symbolic sequence of booleans with the same length as `seq`.
     The
 
@@ -472,7 +474,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: is_last
+  name: is_last(seq, name='')
   summary: 'Returns a symbolic sequence of booleans with the same length as `seq`.
     The
 
@@ -507,7 +509,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: last
+  name: last(seq, name='')
   summary: 'Returns the last element of its symbolic input sequence `seq`
 
     '
@@ -560,7 +562,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: past_value
+  name: past_value(x, initial_state=None, time_step=1, name='')
   summary: 'This function returns the past value w.r.t. `x`. It is most often used
     when
 
@@ -615,7 +617,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: reduce_max
+  name: reduce_max(seq, name='')
   summary: 'Computes the max of the input sequence''s elements across the sequence
     axis.
 
@@ -648,7 +650,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: reduce_sum
+  name: reduce_sum(seq, name='')
   summary: 'Computes the sum of the input sequence''s elements across the sequence
     axis.
 
@@ -685,7 +687,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: scatter
+  name: scatter(seq, condition, new_sequence_axis_typeinfo=None, name='')
   summary: 'Performs the inverse of gather. The sequence `seq` must have as many
 
     elements as the number of True values in the sequence `condition`.
@@ -742,7 +744,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: slice
+  name: slice(seq, begin_index, end_index, name='')
   seealsoContent: '  Indexing in NumPy: [https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html](https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html)
 
     '
@@ -761,7 +763,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: softmax
+  name: softmax(seq, name='')
   summary: 'Computes the softmax of the input across the sequence axis.
 
     '
@@ -788,7 +790,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: unpack
+  name: unpack(x, padding_value, no_mask_output=False, name='')
   summary: 'This function unpacks the specified sequence operand ''x'' along the most
 
     significant static axis [-1] and pads any gaps with the specified ''padding_value''.
@@ -854,7 +856,7 @@ items:
   langs:
   - python
   module: cntk.ops.sequence
-  name: where
+  name: where(condition, name='')
   summary: 'Given a symbolic sequence `condition` of boolean-like (1/0) values, it
     will return
 
@@ -892,92 +894,94 @@ items:
 references:
 - fullName: cntk.ops.sequence.broadcast_as
   isExternal: false
-  name: broadcast_as
+  name: broadcast_as(operand, broadcast_as_operand, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.broadcast_as
 - fullName: cntk.ops.sequence.delay
   isExternal: false
-  name: delay
+  name: delay(x, initial_state=None, time_step=1, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.delay
 - fullName: cntk.ops.sequence.first
   isExternal: false
-  name: first
+  name: first(seq, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.first
 - fullName: cntk.ops.sequence.future_value
   isExternal: false
-  name: future_value
+  name: future_value(x, initial_state=None, time_step=1, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.future_value
 - fullName: cntk.ops.sequence.gather
   isExternal: false
-  name: gather
+  name: gather(seq, condition, new_sequence_axis_typeinfo=None, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.gather
 - fullName: cntk.ops.sequence.input
   isExternal: false
-  name: input
+  name: input(shape, dtype=<cntk.default_options.default_override_or object>, needs_gradient=False,
+    is_sparse=False, sequence_axis=Axis('defaultDynamicAxis'), name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.input
 - fullName: cntk.ops.sequence.input_variable
   isExternal: false
-  name: input_variable
+  name: input_variable(shape, dtype=np.float32, needs_gradient=False, is_sparse=False,
+    sequence_axis=Axis.default_dynamic_axis(), name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.input_variable
 - fullName: cntk.ops.sequence.is_first
   isExternal: false
-  name: is_first
+  name: is_first(seq, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.is_first
 - fullName: cntk.ops.sequence.is_last
   isExternal: false
-  name: is_last
+  name: is_last(seq, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.is_last
 - fullName: cntk.ops.sequence.last
   isExternal: false
-  name: last
+  name: last(seq, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.last
 - fullName: cntk.ops.sequence.past_value
   isExternal: false
-  name: past_value
+  name: past_value(x, initial_state=None, time_step=1, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.past_value
 - fullName: cntk.ops.sequence.reduce_max
   isExternal: false
-  name: reduce_max
+  name: reduce_max(seq, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.reduce_max
 - fullName: cntk.ops.sequence.reduce_sum
   isExternal: false
-  name: reduce_sum
+  name: reduce_sum(seq, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.reduce_sum
 - fullName: cntk.ops.sequence.scatter
   isExternal: false
-  name: scatter
+  name: scatter(seq, condition, new_sequence_axis_typeinfo=None, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.scatter
 - fullName: cntk.ops.sequence.slice
   isExternal: false
-  name: slice
+  name: slice(seq, begin_index, end_index, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.slice
 - fullName: cntk.ops.sequence.softmax
   isExternal: false
-  name: softmax
+  name: softmax(seq, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.softmax
 - fullName: cntk.ops.sequence.unpack
   isExternal: false
-  name: unpack
+  name: unpack(x, padding_value, no_mask_output=False, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.unpack
 - fullName: cntk.ops.sequence.where
   isExternal: false
-  name: where
+  name: where(condition, name='')
   parent: cntk.ops.sequence
   uid: cntk.ops.sequence.where
 - fullName: str, optional

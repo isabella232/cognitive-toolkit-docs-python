@@ -73,7 +73,7 @@ items:
   langs:
   - python
   module: cntk.axis
-  name: all_axes
+  name: all_axes()
   summary: 'Axis object representing all the axes--static and dynamic--of an operand.
 
     '
@@ -92,7 +92,7 @@ items:
   langs:
   - python
   module: cntk.axis
-  name: all_static_axes
+  name: all_static_axes()
   summary: 'Axis object representing all the static axes of an operand.
 
     '
@@ -111,7 +111,7 @@ items:
   langs:
   - python
   module: cntk.axis
-  name: default_batch_axis
+  name: default_batch_axis()
   summary: 'Returns an Axis object representing the batch axis
 
     '
@@ -130,7 +130,7 @@ items:
   langs:
   - python
   module: cntk.axis
-  name: default_dynamic_axis
+  name: default_dynamic_axis()
   summary: 'Returns an Axis object representing the default dynamic axis
 
     '
@@ -149,7 +149,7 @@ items:
   langs:
   - python
   module: cntk.axis
-  name: default_input_variable_dynamic_axes
+  name: default_input_variable_dynamic_axes()
   summary: 'Default dynamic axes of the input variable
 
     '
@@ -259,7 +259,7 @@ items:
   langs:
   - python
   module: cntk.axis
-  name: new_leading_axis
+  name: new_leading_axis()
   summary: 'Creates an Axis object representing a new leading static axis.
 
     '
@@ -278,7 +278,7 @@ items:
   langs:
   - python
   module: cntk.axis
-  name: new_unique_dynamic_axis
+  name: new_unique_dynamic_axis(name)
   summary: 'Creates an Axis object representing a new unique dynamic axis.
 
     '
@@ -304,7 +304,7 @@ items:
   langs:
   - python
   module: cntk.axis
-  name: static_axis_index
+  name: static_axis_index(checked=True)
   summary: 'Returns the integer with which the static axis is defined. For example,
     0 = first axis, 1 = second axis, etc.
 
@@ -333,7 +333,7 @@ items:
   langs:
   - python
   module: cntk.axis
-  name: unknown_dynamic_axes
+  name: unknown_dynamic_axes()
   summary: 'Unknown dynamic axes
 
     '
@@ -350,27 +350,27 @@ items:
 references:
 - fullName: cntk.axis.Axis.all_axes
   isExternal: false
-  name: all_axes
+  name: all_axes()
   parent: cntk.axis.Axis
   uid: cntk.axis.Axis.all_axes
 - fullName: cntk.axis.Axis.all_static_axes
   isExternal: false
-  name: all_static_axes
+  name: all_static_axes()
   parent: cntk.axis.Axis
   uid: cntk.axis.Axis.all_static_axes
 - fullName: cntk.axis.Axis.default_batch_axis
   isExternal: false
-  name: default_batch_axis
+  name: default_batch_axis()
   parent: cntk.axis.Axis
   uid: cntk.axis.Axis.default_batch_axis
 - fullName: cntk.axis.Axis.default_dynamic_axis
   isExternal: false
-  name: default_dynamic_axis
+  name: default_dynamic_axis()
   parent: cntk.axis.Axis
   uid: cntk.axis.Axis.default_dynamic_axis
 - fullName: cntk.axis.Axis.default_input_variable_dynamic_axes
   isExternal: false
-  name: default_input_variable_dynamic_axes
+  name: default_input_variable_dynamic_axes()
   parent: cntk.axis.Axis
   uid: cntk.axis.Axis.default_input_variable_dynamic_axes
 - fullName: cntk.axis.Axis.is_batch_axis
@@ -400,21 +400,21 @@ references:
   uid: cntk.axis.Axis.name
 - fullName: cntk.axis.Axis.new_leading_axis
   isExternal: false
-  name: new_leading_axis
+  name: new_leading_axis()
   parent: cntk.axis.Axis
   uid: cntk.axis.Axis.new_leading_axis
 - fullName: cntk.axis.Axis.new_unique_dynamic_axis
   isExternal: false
-  name: new_unique_dynamic_axis
+  name: new_unique_dynamic_axis(name)
   parent: cntk.axis.Axis
   uid: cntk.axis.Axis.new_unique_dynamic_axis
 - fullName: cntk.axis.Axis.static_axis_index
   isExternal: false
-  name: static_axis_index
+  name: static_axis_index(checked=True)
   parent: cntk.axis.Axis
   uid: cntk.axis.Axis.static_axis_index
 - fullName: cntk.axis.Axis.unknown_dynamic_axes
   isExternal: false
-  name: unknown_dynamic_axes
+  name: unknown_dynamic_axes()
   parent: cntk.axis.Axis
   uid: cntk.axis.Axis.unknown_dynamic_axes

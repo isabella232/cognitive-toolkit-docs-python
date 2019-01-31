@@ -76,7 +76,7 @@ items:
   langs:
   - python
   module: cntk.train.training_session
-  name: minibatch_size_schedule
+  name: minibatch_size_schedule(schedule, epoch_size=1)
   summary: 'Creates a minibatch size schedule.
 
     '
@@ -112,7 +112,8 @@ items:
   langs:
   - python
   module: cntk.train.training_session
-  name: training_session
+  name: training_session(trainer, mb_source, mb_size, model_inputs_to_streams, progress_frequency=None,
+    max_samples=None, checkpoint_config=None, cv_config=None, test_config=None)
   summary: 'A factory function to create a training session object.
 
     '
@@ -216,12 +217,13 @@ references:
   uid: cntk.train.training_session.TrainingSession
 - fullName: cntk.train.training_session.minibatch_size_schedule
   isExternal: false
-  name: minibatch_size_schedule
+  name: minibatch_size_schedule(schedule, epoch_size=1)
   parent: cntk.train.training_session
   uid: cntk.train.training_session.minibatch_size_schedule
 - fullName: cntk.train.training_session.training_session
   isExternal: false
-  name: training_session
+  name: training_session(trainer, mb_source, mb_size, model_inputs_to_streams, progress_frequency=None,
+    max_samples=None, checkpoint_config=None, cv_config=None, test_config=None)
   parent: cntk.train.training_session
   uid: cntk.train.training_session.training_session
 - fullName: int, tuple

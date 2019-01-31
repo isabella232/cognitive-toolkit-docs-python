@@ -17,7 +17,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: log_number_of_parameters
+  name: log_number_of_parameters(model, trace_level=0)
   syntax:
     content: log_number_of_parameters(model, trace_level=0)
     parameters:
@@ -44,6 +44,6 @@ references:
   uid: cntk.logging.progress_print.TrainingSummaryProgressCallback
 - fullName: cntk.logging.progress_print.log_number_of_parameters
   isExternal: false
-  name: log_number_of_parameters
+  name: log_number_of_parameters(model, trace_level=0)
   parent: cntk.logging.progress_print
   uid: cntk.logging.progress_print.log_number_of_parameters

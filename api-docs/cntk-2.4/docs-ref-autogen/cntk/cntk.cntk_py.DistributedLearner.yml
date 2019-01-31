@@ -36,7 +36,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: do_aggregate_metrics_if_needed
+  name: do_aggregate_metrics_if_needed(arg2, arg3)
   syntax:
     content: do_aggregate_metrics_if_needed(arg2, arg3)
     parameters:
@@ -49,7 +49,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: get_communicator
+  name: get_communicator()
   syntax:
     content: get_communicator()
     parameters: []
@@ -60,7 +60,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: learning_rate
+  name: learning_rate()
   syntax:
     content: learning_rate()
     parameters: []
@@ -71,7 +71,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: minibatch_size_scale_factor
+  name: minibatch_size_scale_factor()
   syntax:
     content: minibatch_size_scale_factor()
     parameters: []
@@ -82,7 +82,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: parallelization_after
+  name: parallelization_after()
   syntax:
     content: parallelization_after()
     parameters: []
@@ -93,7 +93,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: reset_learning_rate
+  name: reset_learning_rate(learningRateSchedule)
   syntax:
     content: reset_learning_rate(learningRateSchedule)
     parameters:
@@ -105,7 +105,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: reset_smoothed_gradients
+  name: reset_smoothed_gradients()
   syntax:
     content: reset_smoothed_gradients()
     parameters: []
@@ -114,36 +114,36 @@ items:
 references:
 - fullName: cntk.cntk_py.DistributedLearner.do_aggregate_metrics_if_needed
   isExternal: false
-  name: do_aggregate_metrics_if_needed
+  name: do_aggregate_metrics_if_needed(arg2, arg3)
   parent: cntk.cntk_py.DistributedLearner
   uid: cntk.cntk_py.DistributedLearner.do_aggregate_metrics_if_needed
 - fullName: cntk.cntk_py.DistributedLearner.get_communicator
   isExternal: false
-  name: get_communicator
+  name: get_communicator()
   parent: cntk.cntk_py.DistributedLearner
   uid: cntk.cntk_py.DistributedLearner.get_communicator
 - fullName: cntk.cntk_py.DistributedLearner.learning_rate
   isExternal: false
-  name: learning_rate
+  name: learning_rate()
   parent: cntk.cntk_py.DistributedLearner
   uid: cntk.cntk_py.DistributedLearner.learning_rate
 - fullName: cntk.cntk_py.DistributedLearner.minibatch_size_scale_factor
   isExternal: false
-  name: minibatch_size_scale_factor
+  name: minibatch_size_scale_factor()
   parent: cntk.cntk_py.DistributedLearner
   uid: cntk.cntk_py.DistributedLearner.minibatch_size_scale_factor
 - fullName: cntk.cntk_py.DistributedLearner.parallelization_after
   isExternal: false
-  name: parallelization_after
+  name: parallelization_after()
   parent: cntk.cntk_py.DistributedLearner
   uid: cntk.cntk_py.DistributedLearner.parallelization_after
 - fullName: cntk.cntk_py.DistributedLearner.reset_learning_rate
   isExternal: false
-  name: reset_learning_rate
+  name: reset_learning_rate(learningRateSchedule)
   parent: cntk.cntk_py.DistributedLearner
   uid: cntk.cntk_py.DistributedLearner.reset_learning_rate
 - fullName: cntk.cntk_py.DistributedLearner.reset_smoothed_gradients
   isExternal: false
-  name: reset_smoothed_gradients
+  name: reset_smoothed_gradients()
   parent: cntk.cntk_py.DistributedLearner
   uid: cntk.cntk_py.DistributedLearner.reset_smoothed_gradients

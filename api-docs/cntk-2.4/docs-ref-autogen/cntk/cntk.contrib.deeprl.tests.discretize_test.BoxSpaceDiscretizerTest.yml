@@ -30,7 +30,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.discretize_test
-  name: test_array
+  name: test_array()
   syntax:
     content: test_array()
     parameters: []
@@ -41,7 +41,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.discretize_test
-  name: test_list
+  name: test_list()
   syntax:
     content: test_list()
     parameters: []
@@ -52,7 +52,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.discretize_test
-  name: test_scalar
+  name: test_scalar()
   syntax:
     content: test_scalar()
     parameters: []
@@ -61,16 +61,16 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_array
   isExternal: false
-  name: test_array
+  name: test_array()
   parent: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
   uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_array
 - fullName: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_list
   isExternal: false
-  name: test_list
+  name: test_list()
   parent: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
   uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_list
 - fullName: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_scalar
   isExternal: false
-  name: test_scalar
+  name: test_scalar()
   parent: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
   uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_scalar

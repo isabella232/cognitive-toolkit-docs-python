@@ -5,6 +5,7 @@ items:
   - cntk.contrib.crosstalkcaffe.validation.validcaffe
   - cntk.contrib.crosstalkcaffe.validation.validcore
   fullName: cntk.contrib.crosstalkcaffe.validation
+  kind: import
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.validation

@@ -3,6 +3,7 @@ items:
 - children:
   - cntk
   fullName: cntk
+  kind: distribution
   langs:
   - python
   name: cntk

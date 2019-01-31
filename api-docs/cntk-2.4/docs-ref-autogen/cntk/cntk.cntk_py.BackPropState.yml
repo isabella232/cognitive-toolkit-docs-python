@@ -26,7 +26,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: device
+  name: device()
   syntax:
     content: device()
     parameters: []
@@ -37,7 +37,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: function
+  name: function()
   syntax:
     content: function()
     parameters: []
@@ -48,7 +48,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: saved_forward_prop_values
+  name: saved_forward_prop_values()
   syntax:
     content: saved_forward_prop_values()
     parameters: []
@@ -57,16 +57,16 @@ items:
 references:
 - fullName: cntk.cntk_py.BackPropState.device
   isExternal: false
-  name: device
+  name: device()
   parent: cntk.cntk_py.BackPropState
   uid: cntk.cntk_py.BackPropState.device
 - fullName: cntk.cntk_py.BackPropState.function
   isExternal: false
-  name: function
+  name: function()
   parent: cntk.cntk_py.BackPropState
   uid: cntk.cntk_py.BackPropState.function
 - fullName: cntk.cntk_py.BackPropState.saved_forward_prop_values
   isExternal: false
-  name: saved_forward_prop_values
+  name: saved_forward_prop_values()
   parent: cntk.cntk_py.BackPropState
   uid: cntk.cntk_py.BackPropState.saved_forward_prop_values

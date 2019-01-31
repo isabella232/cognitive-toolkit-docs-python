@@ -17,7 +17,8 @@ items:
   langs:
   - python
   module: cntk.internal.utils
-  name: eval
+  name: eval(op, arguments=None, precision=None, device=None, backward_pass=False,
+    expected_backward=None)
   summary: 'It evaluates `op` on the data provided by the reader. This is useful
 
     mainly to explore the operators and for convenient unit testing.
@@ -111,7 +112,7 @@ items:
   langs:
   - python
   module: cntk.internal.utils
-  name: get_data_type
+  name: get_data_type(*args)
   summary: 'Calculates the highest precision numpy data type of the provided parameters.
 
     If the parameter is a Function instance, it calculates it based on its
@@ -139,7 +140,7 @@ items:
   langs:
   - python
   module: cntk.internal.utils
-  name: get_python_function_arguments
+  name: get_python_function_arguments(f)
   summary: 'Helper to get the parameter names and annotations of a Python function.
 
     '
@@ -153,7 +154,7 @@ items:
   langs:
   - python
   module: cntk.internal.utils
-  name: map_function_arguments
+  name: map_function_arguments(params, params_dict, *args, **kwargs)
   summary: 'Helper to determine the argument map for use with various call operations.
 
     Returns a dictionary from parameters to whatever arguments are passed.
@@ -177,22 +178,23 @@ items:
 references:
 - fullName: cntk.internal.utils.eval
   isExternal: false
-  name: eval
+  name: eval(op, arguments=None, precision=None, device=None, backward_pass=False,
+    expected_backward=None)
   parent: cntk.internal.utils
   uid: cntk.internal.utils.eval
 - fullName: cntk.internal.utils.get_data_type
   isExternal: false
-  name: get_data_type
+  name: get_data_type(*args)
   parent: cntk.internal.utils
   uid: cntk.internal.utils.get_data_type
 - fullName: cntk.internal.utils.get_python_function_arguments
   isExternal: false
-  name: get_python_function_arguments
+  name: get_python_function_arguments(f)
   parent: cntk.internal.utils
   uid: cntk.internal.utils.get_python_function_arguments
 - fullName: cntk.internal.utils.map_function_arguments
   isExternal: false
-  name: map_function_arguments
+  name: map_function_arguments(params, params_dict, *args, **kwargs)
   parent: cntk.internal.utils
   uid: cntk.internal.utils.map_function_arguments
 - fullName: <xref:cntk.device.DeviceDescriptor>, default None

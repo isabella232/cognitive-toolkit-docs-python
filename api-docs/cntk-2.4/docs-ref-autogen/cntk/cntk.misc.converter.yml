@@ -14,7 +14,7 @@ items:
   langs:
   - python
   module: cntk.misc.converter
-  name: convert
+  name: convert(root_func, filter, converter)
   summary: 'Clones the graph underlying root_func and in the clone substitutes
 
     all Functions obtained by applying ''filter'', with a new Function obtained by
@@ -46,6 +46,6 @@ items:
 references:
 - fullName: cntk.misc.converter.convert
   isExternal: false
-  name: convert
+  name: convert(root_func, filter, converter)
   parent: cntk.misc.converter
   uid: cntk.misc.converter.convert
