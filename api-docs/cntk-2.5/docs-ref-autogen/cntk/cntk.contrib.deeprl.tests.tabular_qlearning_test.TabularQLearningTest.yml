@@ -30,7 +30,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.tabular_qlearning_test
-  name: test_init
+  name: test_init()
   syntax:
     content: test_init()
     parameters: []
@@ -41,7 +41,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.tabular_qlearning_test
-  name: test_init_unsupported_q
+  name: test_init_unsupported_q(mock_qlearn_parameters)
   syntax:
     content: test_init_unsupported_q(mock_qlearn_parameters)
   type: method
@@ -51,7 +51,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.tabular_qlearning_test
-  name: test_update
+  name: test_update(mock_qlearn_parameters)
   syntax:
     content: test_update(mock_qlearn_parameters)
   type: method
@@ -59,16 +59,16 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init
   isExternal: false
-  name: test_init
+  name: test_init()
   parent: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
   uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init
 - fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init_unsupported_q
   isExternal: false
-  name: test_init_unsupported_q
+  name: test_init_unsupported_q(mock_qlearn_parameters)
   parent: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
   uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init_unsupported_q
 - fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_update
   isExternal: false
-  name: test_update
+  name: test_update(mock_qlearn_parameters)
   parent: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
   uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_update

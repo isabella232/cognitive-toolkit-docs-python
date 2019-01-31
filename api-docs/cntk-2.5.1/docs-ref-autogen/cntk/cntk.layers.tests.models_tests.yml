@@ -14,7 +14,7 @@ items:
   langs:
   - python
   module: cntk.layers.tests.models_tests
-  name: test_attention_model
+  name: test_attention_model()
   syntax:
     content: test_attention_model()
   type: function
@@ -22,6 +22,6 @@ items:
 references:
 - fullName: cntk.layers.tests.models_tests.test_attention_model
   isExternal: false
-  name: test_attention_model
+  name: test_attention_model()
   parent: cntk.layers.tests.models_tests
   uid: cntk.layers.tests.models_tests.test_attention_model

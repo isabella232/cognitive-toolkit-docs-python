@@ -18,7 +18,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.shared.cntk_utils
-  name: huber_loss
+  name: huber_loss(output, target)
   summary: 'See [https://en.wikipedia.org/wiki/Huber_loss](https://en.wikipedia.org/wiki/Huber_loss)
     for definition.
 
@@ -39,7 +39,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.shared.cntk_utils
-  name: negative_of_entropy_with_softmax
+  name: negative_of_entropy_with_softmax(p)
   summary: 'See [https://en.wikipedia.org/wiki/Entropy_(information_theory](https://en.wikipedia.org/wiki/Entropy_(information_theory)).
 
     '
@@ -52,11 +52,11 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.agent.shared.cntk_utils.huber_loss
   isExternal: false
-  name: huber_loss
+  name: huber_loss(output, target)
   parent: cntk.contrib.deeprl.agent.shared.cntk_utils
   uid: cntk.contrib.deeprl.agent.shared.cntk_utils.huber_loss
 - fullName: cntk.contrib.deeprl.agent.shared.cntk_utils.negative_of_entropy_with_softmax
   isExternal: false
-  name: negative_of_entropy_with_softmax
+  name: negative_of_entropy_with_softmax(p)
   parent: cntk.contrib.deeprl.agent.shared.cntk_utils
   uid: cntk.contrib.deeprl.agent.shared.cntk_utils.negative_of_entropy_with_softmax

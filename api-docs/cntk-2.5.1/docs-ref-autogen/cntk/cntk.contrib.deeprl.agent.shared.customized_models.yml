@@ -33,7 +33,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.shared.customized_models
-  name: conv_dqn
+  name: conv_dqn(shape_of_inputs, number_of_outputs, loss_function=None, use_placeholder_for_input=False)
   summary: "Example convolutional neural network for approximating the Q value function.\n\
     \nThis is the model used in the original DQN paper\n[https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf](https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf).\n\
     \nReturns: a Python dictionary with string-valued keys including\n   'inputs',\
@@ -68,6 +68,6 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.agent.shared.customized_models.conv_dqn
   isExternal: false
-  name: conv_dqn
+  name: conv_dqn(shape_of_inputs, number_of_outputs, loss_function=None, use_placeholder_for_input=False)
   parent: cntk.contrib.deeprl.agent.shared.customized_models
   uid: cntk.contrib.deeprl.agent.shared.customized_models.conv_dqn

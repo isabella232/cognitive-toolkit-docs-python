@@ -77,7 +77,7 @@ items:
   langs:
   - python
   module: cntk.core
-  name: as_sequences
+  name: as_sequences(variable=None)
   summary: 'Convert a Value to a sequence of NumPy arrays that have their masked
 
     entries removed.
@@ -104,7 +104,7 @@ items:
   langs:
   - python
   module: cntk.core
-  name: create
+  name: create(var, data, seq_starts=None, device=None, read_only=False)
   summary: 'Creates a <xref:cntk.core.Value> object.
 
     '
@@ -283,7 +283,7 @@ items:
   langs:
   - python
   module: cntk.core
-  name: one_hot
+  name: one_hot(batch, num_classes, dtype=None, device=None)
   summary: 'Converts `batch` into a <xref:cntk.core.Value> object of `dtype`
 
     such that the integer data in `batch` is interpreted as the indices
@@ -361,12 +361,12 @@ items:
 references:
 - fullName: cntk.core.Value.as_sequences
   isExternal: false
-  name: as_sequences
+  name: as_sequences(variable=None)
   parent: cntk.core.Value
   uid: cntk.core.Value.as_sequences
 - fullName: cntk.core.Value.create
   isExternal: false
-  name: create
+  name: create(var, data, seq_starts=None, device=None, read_only=False)
   parent: cntk.core.Value
   uid: cntk.core.Value.create
 - fullName: cntk.core.Value.data
@@ -406,7 +406,7 @@ references:
   uid: cntk.core.Value.mask
 - fullName: cntk.core.Value.one_hot
   isExternal: false
-  name: one_hot
+  name: one_hot(batch, num_classes, dtype=None, device=None)
   parent: cntk.core.Value
   uid: cntk.core.Value.one_hot
 - fullName: cntk.core.Value.shape

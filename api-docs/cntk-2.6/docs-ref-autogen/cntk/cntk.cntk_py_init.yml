@@ -18,7 +18,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py_init
-  name: cntk_check_distro_info
+  name: cntk_check_distro_info()
   syntax:
     content: cntk_check_distro_info()
   type: function
@@ -27,7 +27,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py_init
-  name: cntk_check_libs
+  name: cntk_check_libs()
   syntax:
     content: cntk_check_libs()
   type: function
@@ -35,11 +35,11 @@ items:
 references:
 - fullName: cntk.cntk_py_init.cntk_check_distro_info
   isExternal: false
-  name: cntk_check_distro_info
+  name: cntk_check_distro_info()
   parent: cntk.cntk_py_init
   uid: cntk.cntk_py_init.cntk_check_distro_info
 - fullName: cntk.cntk_py_init.cntk_check_libs
   isExternal: false
-  name: cntk_check_libs
+  name: cntk_check_libs()
   parent: cntk.cntk_py_init
   uid: cntk.cntk_py_init.cntk_check_libs

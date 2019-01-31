@@ -26,7 +26,7 @@ items:
   langs:
   - python
   module: cntk.initializer
-  name: bilinear
+  name: bilinear(kernel_width, kernel_height)
   summary: 'initializer
 
     '
@@ -57,7 +57,7 @@ items:
   langs:
   - python
   module: cntk.initializer
-  name: glorot_normal
+  name: glorot_normal(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
   summary: 'initializer
 
     '
@@ -107,7 +107,7 @@ items:
   langs:
   - python
   module: cntk.initializer
-  name: glorot_uniform
+  name: glorot_uniform(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
   summary: 'Glorot initializer
 
     '
@@ -157,7 +157,7 @@ items:
   langs:
   - python
   module: cntk.initializer
-  name: he_normal
+  name: he_normal(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
   summary: 'initializer
 
     '
@@ -206,7 +206,7 @@ items:
   langs:
   - python
   module: cntk.initializer
-  name: he_uniform
+  name: he_uniform(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
   summary: 'initializer
 
     '
@@ -255,7 +255,7 @@ items:
   langs:
   - python
   module: cntk.initializer
-  name: initializer_with_rank
+  name: initializer_with_rank(initializer, output_rank=None, filter_rank=None)
   summary: 'override output_rank and filter_rank specification in a random initializer
 
     constructed without an explicit output_rank and filter_rank specification
@@ -294,7 +294,7 @@ items:
   langs:
   - python
   module: cntk.initializer
-  name: normal
+  name: normal(scale, output_rank=2147483647, filter_rank=2147483647, seed=None)
   summary: 'Normal initializer
 
     '
@@ -340,7 +340,7 @@ items:
   langs:
   - python
   module: cntk.initializer
-  name: truncated_normal
+  name: truncated_normal(stdev, seed=None)
   summary: 'Truncated normal initializer. The resulting values are drawn from
 
     a truncated normal distribution and are always within two
@@ -376,7 +376,7 @@ items:
   langs:
   - python
   module: cntk.initializer
-  name: uniform
+  name: uniform(scale, seed=None)
   summary: 'Uniform initializer
 
     '
@@ -410,7 +410,7 @@ items:
   langs:
   - python
   module: cntk.initializer
-  name: xavier
+  name: xavier(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
   summary: 'Xavier initializer
 
     '
@@ -458,51 +458,51 @@ items:
 references:
 - fullName: cntk.initializer.bilinear
   isExternal: false
-  name: bilinear
+  name: bilinear(kernel_width, kernel_height)
   parent: cntk.initializer
   uid: cntk.initializer.bilinear
 - fullName: cntk.initializer.glorot_normal
   isExternal: false
-  name: glorot_normal
+  name: glorot_normal(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
   parent: cntk.initializer
   uid: cntk.initializer.glorot_normal
 - fullName: cntk.initializer.glorot_uniform
   isExternal: false
-  name: glorot_uniform
+  name: glorot_uniform(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
   parent: cntk.initializer
   uid: cntk.initializer.glorot_uniform
 - fullName: cntk.initializer.he_normal
   isExternal: false
-  name: he_normal
+  name: he_normal(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
   parent: cntk.initializer
   uid: cntk.initializer.he_normal
 - fullName: cntk.initializer.he_uniform
   isExternal: false
-  name: he_uniform
+  name: he_uniform(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
   parent: cntk.initializer
   uid: cntk.initializer.he_uniform
 - fullName: cntk.initializer.initializer_with_rank
   isExternal: false
-  name: initializer_with_rank
+  name: initializer_with_rank(initializer, output_rank=None, filter_rank=None)
   parent: cntk.initializer
   uid: cntk.initializer.initializer_with_rank
 - fullName: cntk.initializer.normal
   isExternal: false
-  name: normal
+  name: normal(scale, output_rank=2147483647, filter_rank=2147483647, seed=None)
   parent: cntk.initializer
   uid: cntk.initializer.normal
 - fullName: cntk.initializer.truncated_normal
   isExternal: false
-  name: truncated_normal
+  name: truncated_normal(stdev, seed=None)
   parent: cntk.initializer
   uid: cntk.initializer.truncated_normal
 - fullName: cntk.initializer.uniform
   isExternal: false
-  name: uniform
+  name: uniform(scale, seed=None)
   parent: cntk.initializer
   uid: cntk.initializer.uniform
 - fullName: cntk.initializer.xavier
   isExternal: false
-  name: xavier
+  name: xavier(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
   parent: cntk.initializer
   uid: cntk.initializer.xavier

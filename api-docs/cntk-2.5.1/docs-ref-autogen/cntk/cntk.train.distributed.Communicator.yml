@@ -41,7 +41,7 @@ items:
   langs:
   - python
   module: cntk.train.distributed
-  name: barrier
+  name: barrier()
   summary: 'Sync point to make sure all workers reach the same state.
 
     '
@@ -55,7 +55,7 @@ items:
   langs:
   - python
   module: cntk.train.distributed
-  name: current_worker
+  name: current_worker()
   summary: 'Returns worker descriptor of current process.
 
     '
@@ -74,7 +74,7 @@ items:
   langs:
   - python
   module: cntk.train.distributed
-  name: finalize
+  name: finalize()
   summary: 'Should be called when all communication is finished. No more communication
     should happen after this call.
 
@@ -88,7 +88,7 @@ items:
   langs:
   - python
   module: cntk.train.distributed
-  name: is_main
+  name: is_main()
   summary: 'Indicates if the current communicator is instantiated on the main node.
     The node with rank 0 is considered the main.
 
@@ -103,7 +103,7 @@ items:
   langs:
   - python
   module: cntk.train.distributed
-  name: num_workers
+  name: num_workers()
   summary: 'Returns information about all MPI workers.
 
     '
@@ -116,7 +116,7 @@ items:
   langs:
   - python
   module: cntk.train.distributed
-  name: rank
+  name: rank()
   summary: 'Returns rank of current process.
 
     '
@@ -129,7 +129,7 @@ items:
   langs:
   - python
   module: cntk.train.distributed
-  name: workers
+  name: workers()
   summary: 'Returns workers in this communicator.
 
     '
@@ -146,37 +146,37 @@ items:
 references:
 - fullName: cntk.train.distributed.Communicator.barrier
   isExternal: false
-  name: barrier
+  name: barrier()
   parent: cntk.train.distributed.Communicator
   uid: cntk.train.distributed.Communicator.barrier
 - fullName: cntk.train.distributed.Communicator.current_worker
   isExternal: false
-  name: current_worker
+  name: current_worker()
   parent: cntk.train.distributed.Communicator
   uid: cntk.train.distributed.Communicator.current_worker
 - fullName: cntk.train.distributed.Communicator.finalize
   isExternal: false
-  name: finalize
+  name: finalize()
   parent: cntk.train.distributed.Communicator
   uid: cntk.train.distributed.Communicator.finalize
 - fullName: cntk.train.distributed.Communicator.is_main
   isExternal: false
-  name: is_main
+  name: is_main()
   parent: cntk.train.distributed.Communicator
   uid: cntk.train.distributed.Communicator.is_main
 - fullName: cntk.train.distributed.Communicator.num_workers
   isExternal: false
-  name: num_workers
+  name: num_workers()
   parent: cntk.train.distributed.Communicator
   uid: cntk.train.distributed.Communicator.num_workers
 - fullName: cntk.train.distributed.Communicator.rank
   isExternal: false
-  name: rank
+  name: rank()
   parent: cntk.train.distributed.Communicator
   uid: cntk.train.distributed.Communicator.rank
 - fullName: cntk.train.distributed.Communicator.workers
   isExternal: false
-  name: workers
+  name: workers()
   parent: cntk.train.distributed.Communicator
   uid: cntk.train.distributed.Communicator.workers
 - fullName: (*list*) of <xref:cntk.train.distributed.WorkerDescriptor>

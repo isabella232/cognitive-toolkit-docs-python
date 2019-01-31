@@ -15,7 +15,7 @@ items:
   langs:
   - python
   module: cntk.internal.swig_helper
-  name: map_if_possible
+  name: map_if_possible(obj)
   syntax:
     content: map_if_possible(obj)
     parameters:
@@ -26,7 +26,7 @@ items:
   langs:
   - python
   module: cntk.internal.swig_helper
-  name: typemap
+  name: typemap(f)
   summary: 'Decorator that upcasts return types from Swig types to cntk types that
 
     inherit from Swig. It does so recursively, e.g. if the return type is a
@@ -45,11 +45,11 @@ items:
 references:
 - fullName: cntk.internal.swig_helper.map_if_possible
   isExternal: false
-  name: map_if_possible
+  name: map_if_possible(obj)
   parent: cntk.internal.swig_helper
   uid: cntk.internal.swig_helper.map_if_possible
 - fullName: cntk.internal.swig_helper.typemap
   isExternal: false
-  name: typemap
+  name: typemap(f)
   parent: cntk.internal.swig_helper
   uid: cntk.internal.swig_helper.typemap

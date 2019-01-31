@@ -17,7 +17,7 @@ items:
   langs:
   - python
   module: cntk.ops.tests.stop_gradient_test
-  name: test_stop_gradient
+  name: test_stop_gradient()
   syntax:
     content: test_stop_gradient()
   type: function
@@ -25,6 +25,6 @@ items:
 references:
 - fullName: cntk.ops.tests.stop_gradient_test.test_stop_gradient
   isExternal: false
-  name: test_stop_gradient
+  name: test_stop_gradient()
   parent: cntk.ops.tests.stop_gradient_test
   uid: cntk.ops.tests.stop_gradient_test.test_stop_gradient

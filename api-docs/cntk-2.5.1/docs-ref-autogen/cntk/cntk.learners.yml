@@ -25,6 +25,7 @@ items:
   - cntk.learners.universal
   - cntk.learners.tests
   fullName: cntk.learners
+  kind: import
   langs:
   - python
   module: cntk.learners
@@ -63,7 +64,9 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: adadelta
+  name: adadelta(parameters, lr, rho, epsilon, l1_regularization_weight=0, l2_regularization_weight=0,
+    gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True)
   summary: "Creates an AdaDelta learner instance to learn the parameters. See [1]\
     \ for\nmore information.\n\nSee also\n   [1]  Matthew D. Zeiler, [ADADELTA: An\
     \ Adaptive Learning Rate Method](https://arxiv.org/pdf/1212.5701.pdf).\n"
@@ -188,7 +191,9 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: adagrad
+  name: adagrad(parameters, lr, need_ave_multiplier=True, l1_regularization_weight=0,
+    l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True)
   seealsoContent: "  [1]  J. Duchi, E. Hazan, and Y. Singer. [Adaptive Subgradient\
     \ Methods\n  for Online Learning and Stochastic Optimization](http://www.magicbroom.info/Papers/DuchiHaSi10.pdf).\
     \ The Journal of\n  Machine Learning Research, 2011.\n"
@@ -310,7 +315,10 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: adam
+  name: adam(parameters, lr, momentum, unit_gain=default_unit_gain_value(), variance_momentum=momentum_schedule_per_sample(0.9999986111120757),
+    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
+    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True,
+    epsilon=1e-8, adamax=False)
   seealsoContent: "  [1] D. Kingma, J. Ba. [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980).\
     \ International Conference for\n  Learning Representations, 2015.\n"
   summary: 'Creates an Adam learner instance to learn the parameters. See [1] for
@@ -467,7 +475,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: default_unit_gain_value
+  name: default_unit_gain_value()
   summary: 'Returns true if by default momentum is applied in the unit-gain fashion.
 
     '
@@ -479,7 +487,9 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: fsadagrad
+  name: fsadagrad(parameters, lr, momentum, unit_gain=default_unit_gain_value(), variance_momentum=momentum_schedule_per_sample(0.9999986111120757),
+    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
+    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
   summary: 'Creates an FSAdaGrad learner instance to learn the parameters.
 
     '
@@ -615,7 +625,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: learning_parameter_schedule
+  name: learning_parameter_schedule(schedule, minibatch_size=None, epoch_size=None)
   summary: 'Create a learning parameter schedule.
 
     '
@@ -685,7 +695,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: learning_parameter_schedule_per_sample
+  name: learning_parameter_schedule_per_sample(schedule, epoch_size=None)
   summary: 'Create a learning parameter schedule as if the parameter is applied to
     minibatches of size 1. CNTK
 
@@ -746,7 +756,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: learning_rate_schedule
+  name: learning_rate_schedule(lr, unit, epoch_size=None)
   seealsoContent: '  <xref:cntk.learners.training_parameter_schedule>
 
     '
@@ -820,7 +830,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: momentum_as_time_constant_schedule
+  name: momentum_as_time_constant_schedule(momentum, epoch_size=None)
   summary: "Create a momentum schedule in a minibatch-size agnostic way\n(using the\
     \ same semantics as <xref:cntk.learners.training_parameter_schedule>\nwith *unit=UnitType.sample*).\n\
     \nDeprecated:: 2.2\n   This is for legacy API.\n   In this legacy API,:\n\n  \
@@ -898,7 +908,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: momentum_schedule
+  name: momentum_schedule(momentum, epoch_size=None, minibatch_size=None)
   summary: 'Create a momentum schedule (using the same semantics as
 
     <xref:cntk.learners.learning_parameter_schedule>) which applies the momentum
@@ -918,7 +928,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: momentum_schedule_per_sample
+  name: momentum_schedule_per_sample(momentum, epoch_size=None)
   summary: 'Create a per-sample momentum schedule (using the same semantics as
 
     <xref:cntk.learners.momentum_schedule> but specializing in per sample momentum
@@ -955,7 +965,9 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: momentum_sgd
+  name: momentum_sgd(parameters, lr, momentum, unit_gain=default_unit_gain_value(),
+    l1_regularization_weight=0.0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
+    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
   summary: 'Creates a Momentum SGD learner instance to learn the parameters.
 
     '
@@ -1082,7 +1094,9 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: nesterov
+  name: nesterov(parameters, lr, momentum, unit_gain=default_unit_gain_value(), l1_regularization_weight=0,
+    l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True)
   seealsoContent: "  [1] Y. Nesterov. A Method of Solving a Convex Programming Problem\
     \ with Convergence Rate O(1/ sqrt(k)). Soviet Mathematics Doklady, 1983.\n\n \
     \ [2] I. Sutskever, J. Martens, G. Dahl, and G. Hinton. [On the\n  Importance\
@@ -1219,7 +1233,9 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: rmsprop
+  name: rmsprop(parameters, lr, gamma, inc, dec, max, min, need_ave_multiplier=True,
+    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
+    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
   summary: 'Creates an RMSProp learner instance to learn the parameters.
 
     '
@@ -1371,7 +1387,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: set_default_unit_gain_value
+  name: set_default_unit_gain_value(value)
   summary: 'Sets globally default unit-gain flag value.
 
     '
@@ -1385,7 +1401,9 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: sgd
+  name: sgd(parameters, lr, l1_regularization_weight=0, l2_regularization_weight=0,
+    gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True)
   seealsoContent: "  [1] L. Bottou. [Stochastic Gradient Descent Tricks](https://www.microsoft.com/en-us/research/publication/stochastic-gradient-tricks).\
     \ Neural\n  Networks: Tricks of the Trade: Springer, 2012.\n"
   summary: 'Creates an SGD learner instance to learn the parameters. See [1] for more
@@ -1553,7 +1571,8 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: training_parameter_schedule
+  name: 'training_parameter_schedule(schedule, unit=<UnitType.minibatch: ''minibatch''>,
+    epoch_size=None)'
   seealsoContent: '  <xref:cntk.learners.learning_parameter_schedule>
 
     '
@@ -1659,7 +1678,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: universal
+  name: universal(update_func, parameters)
   summary: 'Creates a learner which uses a CNTK function to update the parameters.
 
     '
@@ -1716,92 +1735,110 @@ references:
   uid: cntk.learners.UserLearner
 - fullName: cntk.learners.adadelta
   isExternal: false
-  name: adadelta
+  name: adadelta(parameters, lr, rho, epsilon, l1_regularization_weight=0, l2_regularization_weight=0,
+    gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True)
   parent: cntk.learners
   uid: cntk.learners.adadelta
 - fullName: cntk.learners.adagrad
   isExternal: false
-  name: adagrad
+  name: adagrad(parameters, lr, need_ave_multiplier=True, l1_regularization_weight=0,
+    l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True)
   parent: cntk.learners
   uid: cntk.learners.adagrad
 - fullName: cntk.learners.adam
   isExternal: false
-  name: adam
+  name: adam(parameters, lr, momentum, unit_gain=default_unit_gain_value(), variance_momentum=momentum_schedule_per_sample(0.9999986111120757),
+    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
+    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True,
+    epsilon=1e-8, adamax=False)
   parent: cntk.learners
   uid: cntk.learners.adam
 - fullName: cntk.learners.default_unit_gain_value
   isExternal: false
-  name: default_unit_gain_value
+  name: default_unit_gain_value()
   parent: cntk.learners
   uid: cntk.learners.default_unit_gain_value
 - fullName: cntk.learners.fsadagrad
   isExternal: false
-  name: fsadagrad
+  name: fsadagrad(parameters, lr, momentum, unit_gain=default_unit_gain_value(), variance_momentum=momentum_schedule_per_sample(0.9999986111120757),
+    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
+    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
   parent: cntk.learners
   uid: cntk.learners.fsadagrad
 - fullName: cntk.learners.learning_parameter_schedule
   isExternal: false
-  name: learning_parameter_schedule
+  name: learning_parameter_schedule(schedule, minibatch_size=None, epoch_size=None)
   parent: cntk.learners
   uid: cntk.learners.learning_parameter_schedule
 - fullName: cntk.learners.learning_parameter_schedule_per_sample
   isExternal: false
-  name: learning_parameter_schedule_per_sample
+  name: learning_parameter_schedule_per_sample(schedule, epoch_size=None)
   parent: cntk.learners
   uid: cntk.learners.learning_parameter_schedule_per_sample
 - fullName: cntk.learners.learning_rate_schedule
   isExternal: false
-  name: learning_rate_schedule
+  name: learning_rate_schedule(lr, unit, epoch_size=None)
   parent: cntk.learners
   uid: cntk.learners.learning_rate_schedule
 - fullName: cntk.learners.momentum_as_time_constant_schedule
   isExternal: false
-  name: momentum_as_time_constant_schedule
+  name: momentum_as_time_constant_schedule(momentum, epoch_size=None)
   parent: cntk.learners
   uid: cntk.learners.momentum_as_time_constant_schedule
 - fullName: cntk.learners.momentum_schedule
   isExternal: false
-  name: momentum_schedule
+  name: momentum_schedule(momentum, epoch_size=None, minibatch_size=None)
   parent: cntk.learners
   uid: cntk.learners.momentum_schedule
 - fullName: cntk.learners.momentum_schedule_per_sample
   isExternal: false
-  name: momentum_schedule_per_sample
+  name: momentum_schedule_per_sample(momentum, epoch_size=None)
   parent: cntk.learners
   uid: cntk.learners.momentum_schedule_per_sample
 - fullName: cntk.learners.momentum_sgd
   isExternal: false
-  name: momentum_sgd
+  name: momentum_sgd(parameters, lr, momentum, unit_gain=default_unit_gain_value(),
+    l1_regularization_weight=0.0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
+    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
   parent: cntk.learners
   uid: cntk.learners.momentum_sgd
 - fullName: cntk.learners.nesterov
   isExternal: false
-  name: nesterov
+  name: nesterov(parameters, lr, momentum, unit_gain=default_unit_gain_value(), l1_regularization_weight=0,
+    l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True)
   parent: cntk.learners
   uid: cntk.learners.nesterov
 - fullName: cntk.learners.rmsprop
   isExternal: false
-  name: rmsprop
+  name: rmsprop(parameters, lr, gamma, inc, dec, max, min, need_ave_multiplier=True,
+    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
+    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
   parent: cntk.learners
   uid: cntk.learners.rmsprop
 - fullName: cntk.learners.set_default_unit_gain_value
   isExternal: false
-  name: set_default_unit_gain_value
+  name: set_default_unit_gain_value(value)
   parent: cntk.learners
   uid: cntk.learners.set_default_unit_gain_value
 - fullName: cntk.learners.sgd
   isExternal: false
-  name: sgd
+  name: sgd(parameters, lr, l1_regularization_weight=0, l2_regularization_weight=0,
+    gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True)
   parent: cntk.learners
   uid: cntk.learners.sgd
 - fullName: cntk.learners.training_parameter_schedule
   isExternal: false
-  name: training_parameter_schedule
+  name: 'training_parameter_schedule(schedule, unit=<UnitType.minibatch: ''minibatch''>,
+    epoch_size=None)'
   parent: cntk.learners
   uid: cntk.learners.training_parameter_schedule
 - fullName: cntk.learners.universal
   isExternal: false
-  name: universal
+  name: universal(update_func, parameters)
   parent: cntk.learners
   uid: cntk.learners.universal
 - fullName: cntk.learners.tests

@@ -12,6 +12,7 @@ items:
   - cntk.random.uniform_like
   - cntk.random.tests
   fullName: cntk.random
+  kind: import
   langs:
   - python
   module: cntk.random
@@ -30,7 +31,8 @@ items:
   langs:
   - python
   module: cntk.random
-  name: bernoulli
+  name: bernoulli(shape, dtype=default_override_or(np.float32), mean=0.5, seed=auto_select,
+    name='')
   summary: 'Generates samples from the Bernoulli distribution with success probability
     *mean*.
 
@@ -89,7 +91,7 @@ items:
   langs:
   - python
   module: cntk.random
-  name: bernoulli_like
+  name: bernoulli_like(x, mean=0.5, seed=auto_select, name='')
   summary: 'Generates samples from the Bernoulli distribution with success probability
     *mean*.
 
@@ -136,7 +138,8 @@ items:
   langs:
   - python
   module: cntk.random
-  name: gumbel
+  name: gumbel(shape, dtype=default_override_or(np.float32), loc=0.0, scale=1.0, seed=auto_select,
+    name='')
   seealsoContent: '  [The Gumbel-Max Trick](https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/).
 
     '
@@ -206,7 +209,7 @@ items:
   langs:
   - python
   module: cntk.random
-  name: gumbel_like
+  name: gumbel_like(x, mean=0.0, scale=1.0, seed=auto_select, name='')
   seealsoContent: '  [The Gumbel-Max Trick](https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/).
 
     '
@@ -262,7 +265,8 @@ items:
   langs:
   - python
   module: cntk.random
-  name: normal
+  name: normal(shape, dtype=default_override_or(np.float32), mean=0.0, scale=1.0,
+    seed=auto_select, name='')
   summary: 'Generates samples from the normal distribution with mean *mean* and standard
     deviation *scale*.
 
@@ -329,7 +333,7 @@ items:
   langs:
   - python
   module: cntk.random
-  name: normal_like
+  name: normal_like(x, mean=0.0, scale=1.0, seed=auto_select, name='')
   summary: 'Generates samples from the normal distribution with mean *mean* and standard
     deviation *scale*.
 
@@ -382,7 +386,8 @@ items:
   langs:
   - python
   module: cntk.random
-  name: uniform
+  name: uniform(shape, dtype=default_override_or(np.float32), low=0.0, high=1.0, seed=auto_select,
+    name='')
   summary: 'Generates samples from the uniform distribution in the interval [*low*,`high`).
 
     '
@@ -446,7 +451,7 @@ items:
   langs:
   - python
   module: cntk.random
-  name: uniform_like
+  name: uniform_like(x, low=0.0, high=1.0, seed=auto_select, name='')
   summary: 'Generates samples from the uniform distribution in the interval [*low*,`high`).
 
     '
@@ -492,42 +497,46 @@ items:
 references:
 - fullName: cntk.random.bernoulli
   isExternal: false
-  name: bernoulli
+  name: bernoulli(shape, dtype=default_override_or(np.float32), mean=0.5, seed=auto_select,
+    name='')
   parent: cntk.random
   uid: cntk.random.bernoulli
 - fullName: cntk.random.bernoulli_like
   isExternal: false
-  name: bernoulli_like
+  name: bernoulli_like(x, mean=0.5, seed=auto_select, name='')
   parent: cntk.random
   uid: cntk.random.bernoulli_like
 - fullName: cntk.random.gumbel
   isExternal: false
-  name: gumbel
+  name: gumbel(shape, dtype=default_override_or(np.float32), loc=0.0, scale=1.0, seed=auto_select,
+    name='')
   parent: cntk.random
   uid: cntk.random.gumbel
 - fullName: cntk.random.gumbel_like
   isExternal: false
-  name: gumbel_like
+  name: gumbel_like(x, mean=0.0, scale=1.0, seed=auto_select, name='')
   parent: cntk.random
   uid: cntk.random.gumbel_like
 - fullName: cntk.random.normal
   isExternal: false
-  name: normal
+  name: normal(shape, dtype=default_override_or(np.float32), mean=0.0, scale=1.0,
+    seed=auto_select, name='')
   parent: cntk.random
   uid: cntk.random.normal
 - fullName: cntk.random.normal_like
   isExternal: false
-  name: normal_like
+  name: normal_like(x, mean=0.0, scale=1.0, seed=auto_select, name='')
   parent: cntk.random
   uid: cntk.random.normal_like
 - fullName: cntk.random.uniform
   isExternal: false
-  name: uniform
+  name: uniform(shape, dtype=default_override_or(np.float32), low=0.0, high=1.0, seed=auto_select,
+    name='')
   parent: cntk.random
   uid: cntk.random.uniform
 - fullName: cntk.random.uniform_like
   isExternal: false
-  name: uniform_like
+  name: uniform_like(x, low=0.0, high=1.0, seed=auto_select, name='')
   parent: cntk.random
   uid: cntk.random.uniform_like
 - fullName: cntk.random.tests

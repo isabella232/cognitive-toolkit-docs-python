@@ -34,7 +34,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: asarray
+  name: asarray()
   summary: 'Converts the instance''s data to a NumPy array.
 
     '
@@ -48,7 +48,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: clone_as
+  name: clone_as(dataType)
   syntax:
     content: clone_as(dataType)
     parameters:
@@ -60,7 +60,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: record_value_update
+  name: record_value_update()
   syntax:
     content: record_value_update()
     parameters: []
@@ -80,7 +80,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: set_value
+  name: set_value(value)
   syntax:
     content: set_value(value)
     parameters:
@@ -92,7 +92,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: value
+  name: value()
   syntax:
     content: value()
     parameters: []
@@ -101,17 +101,17 @@ items:
 references:
 - fullName: cntk.cntk_py.Constant.asarray
   isExternal: false
-  name: asarray
+  name: asarray()
   parent: cntk.cntk_py.Constant
   uid: cntk.cntk_py.Constant.asarray
 - fullName: cntk.cntk_py.Constant.clone_as
   isExternal: false
-  name: clone_as
+  name: clone_as(dataType)
   parent: cntk.cntk_py.Constant
   uid: cntk.cntk_py.Constant.clone_as
 - fullName: cntk.cntk_py.Constant.record_value_update
   isExternal: false
-  name: record_value_update
+  name: record_value_update()
   parent: cntk.cntk_py.Constant
   uid: cntk.cntk_py.Constant.record_value_update
 - fullName: cntk.cntk_py.Constant.scalar
@@ -121,11 +121,11 @@ references:
   uid: cntk.cntk_py.Constant.scalar
 - fullName: cntk.cntk_py.Constant.set_value
   isExternal: false
-  name: set_value
+  name: set_value(value)
   parent: cntk.cntk_py.Constant
   uid: cntk.cntk_py.Constant.set_value
 - fullName: cntk.cntk_py.Constant.value
   isExternal: false
-  name: value
+  name: value()
   parent: cntk.cntk_py.Constant
   uid: cntk.cntk_py.Constant.value

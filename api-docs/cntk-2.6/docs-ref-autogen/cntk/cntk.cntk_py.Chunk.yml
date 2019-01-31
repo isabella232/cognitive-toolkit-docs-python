@@ -24,7 +24,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: get_sequence
+  name: get_sequence(sequenceIndex, result)
   syntax:
     content: get_sequence(sequenceIndex, result)
     parameters:
@@ -37,7 +37,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: sequence_infos
+  name: sequence_infos(arg2)
   syntax:
     content: sequence_infos(arg2)
     parameters:
@@ -47,11 +47,11 @@ items:
 references:
 - fullName: cntk.cntk_py.Chunk.get_sequence
   isExternal: false
-  name: get_sequence
+  name: get_sequence(sequenceIndex, result)
   parent: cntk.cntk_py.Chunk
   uid: cntk.cntk_py.Chunk.get_sequence
 - fullName: cntk.cntk_py.Chunk.sequence_infos
   isExternal: false
-  name: sequence_infos
+  name: sequence_infos(arg2)
   parent: cntk.cntk_py.Chunk
   uid: cntk.cntk_py.Chunk.sequence_infos

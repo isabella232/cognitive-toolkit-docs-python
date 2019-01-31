@@ -40,7 +40,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: learning_rate
+  name: learning_rate()
   summary: 'Current learning rate schedule.
 
     '
@@ -66,7 +66,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: reset_learning_rate
+  name: reset_learning_rate(learning_rate)
   summary: 'Resets the learning rate. The new schedule is adjusted to be relative
 
     to the current number of elapsed samples/sweeps: the 0 offset in
@@ -92,7 +92,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: update
+  name: update(gradient_values, training_sample_count, is_sweep_end=False)
   summary: 'Update the parameters associated with this learner.
 
     '
@@ -134,7 +134,7 @@ items:
 references:
 - fullName: cntk.learners.Learner.learning_rate
   isExternal: false
-  name: learning_rate
+  name: learning_rate()
   parent: cntk.learners.Learner
   uid: cntk.learners.Learner.learning_rate
 - fullName: cntk.learners.Learner.parameters
@@ -144,11 +144,11 @@ references:
   uid: cntk.learners.Learner.parameters
 - fullName: cntk.learners.Learner.reset_learning_rate
   isExternal: false
-  name: reset_learning_rate
+  name: reset_learning_rate(learning_rate)
   parent: cntk.learners.Learner
   uid: cntk.learners.Learner.reset_learning_rate
 - fullName: cntk.learners.Learner.update
   isExternal: false
-  name: update
+  name: update(gradient_values, training_sample_count, is_sweep_end=False)
   parent: cntk.learners.Learner
   uid: cntk.learners.Learner.update

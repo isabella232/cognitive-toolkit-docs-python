@@ -28,7 +28,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: close
+  name: close()
   syntax:
     content: close()
     parameters: []
@@ -39,7 +39,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: flush
+  name: flush()
   syntax:
     content: flush()
     parameters: []
@@ -50,7 +50,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: write_image
+  name: write_image(name, NDPtr, step)
   syntax:
     content: write_image(name, NDPtr, step)
     parameters:
@@ -64,7 +64,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: write_value
+  name: write_value(name, value, step)
   syntax:
     content: write_value(name, value, step)
     parameters:
@@ -76,21 +76,21 @@ items:
 references:
 - fullName: cntk.cntk_py.TensorBoardFileWriter.close
   isExternal: false
-  name: close
+  name: close()
   parent: cntk.cntk_py.TensorBoardFileWriter
   uid: cntk.cntk_py.TensorBoardFileWriter.close
 - fullName: cntk.cntk_py.TensorBoardFileWriter.flush
   isExternal: false
-  name: flush
+  name: flush()
   parent: cntk.cntk_py.TensorBoardFileWriter
   uid: cntk.cntk_py.TensorBoardFileWriter.flush
 - fullName: cntk.cntk_py.TensorBoardFileWriter.write_image
   isExternal: false
-  name: write_image
+  name: write_image(name, NDPtr, step)
   parent: cntk.cntk_py.TensorBoardFileWriter
   uid: cntk.cntk_py.TensorBoardFileWriter.write_image
 - fullName: cntk.cntk_py.TensorBoardFileWriter.write_value
   isExternal: false
-  name: write_value
+  name: write_value(name, value, step)
   parent: cntk.cntk_py.TensorBoardFileWriter
   uid: cntk.cntk_py.TensorBoardFileWriter.write_value

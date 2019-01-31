@@ -128,7 +128,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: get_checkpoint_state
+  name: get_checkpoint_state()
   summary: 'Gets the checkpoint state of the MinibatchSource.
 
     '
@@ -150,7 +150,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: next_minibatch
+  name: next_minibatch(num_samples, number_of_workers=1, worker_rank=0, device=None)
   syntax:
     content: next_minibatch(num_samples, number_of_workers=1, worker_rank=0, device=None)
     parameters:
@@ -168,7 +168,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: restore_from_checkpoint
+  name: restore_from_checkpoint(checkpoint)
   summary: 'Restores the MinibatchSource state from the specified checkpoint.
 
     '
@@ -188,7 +188,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: stream_infos
+  name: stream_infos()
   syntax:
     content: stream_infos()
     parameters: []
@@ -197,22 +197,22 @@ items:
 references:
 - fullName: cntk.io.MinibatchSourceFromData.get_checkpoint_state
   isExternal: false
-  name: get_checkpoint_state
+  name: get_checkpoint_state()
   parent: cntk.io.MinibatchSourceFromData
   uid: cntk.io.MinibatchSourceFromData.get_checkpoint_state
 - fullName: cntk.io.MinibatchSourceFromData.next_minibatch
   isExternal: false
-  name: next_minibatch
+  name: next_minibatch(num_samples, number_of_workers=1, worker_rank=0, device=None)
   parent: cntk.io.MinibatchSourceFromData
   uid: cntk.io.MinibatchSourceFromData.next_minibatch
 - fullName: cntk.io.MinibatchSourceFromData.restore_from_checkpoint
   isExternal: false
-  name: restore_from_checkpoint
+  name: restore_from_checkpoint(checkpoint)
   parent: cntk.io.MinibatchSourceFromData
   uid: cntk.io.MinibatchSourceFromData.restore_from_checkpoint
 - fullName: cntk.io.MinibatchSourceFromData.stream_infos
   isExternal: false
-  name: stream_infos
+  name: stream_infos()
   parent: cntk.io.MinibatchSourceFromData
   uid: cntk.io.MinibatchSourceFromData.stream_infos
 - fullName: int, defaults to <xref:cntk.io.INFINITELY_REPEAT>

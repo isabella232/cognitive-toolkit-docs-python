@@ -32,7 +32,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: chunk_infos
+  name: chunk_infos()
   syntax:
     content: chunk_infos()
     parameters: []
@@ -43,7 +43,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: get_chunk
+  name: get_chunk(chunkId)
   syntax:
     content: get_chunk(chunkId)
     parameters:
@@ -55,7 +55,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: get_sequence_info
+  name: get_sequence_info(primary, description)
   syntax:
     content: get_sequence_info(primary, description)
     parameters:
@@ -68,7 +68,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: sequence_infos_for_chunk
+  name: sequence_infos_for_chunk(chunkId, descriptions)
   syntax:
     content: sequence_infos_for_chunk(chunkId, descriptions)
     parameters:
@@ -81,7 +81,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: stream_infos
+  name: stream_infos()
   syntax:
     content: stream_infos()
     parameters: []
@@ -90,26 +90,26 @@ items:
 references:
 - fullName: cntk.cntk_py.SwigDataDeserializer.chunk_infos
   isExternal: false
-  name: chunk_infos
+  name: chunk_infos()
   parent: cntk.cntk_py.SwigDataDeserializer
   uid: cntk.cntk_py.SwigDataDeserializer.chunk_infos
 - fullName: cntk.cntk_py.SwigDataDeserializer.get_chunk
   isExternal: false
-  name: get_chunk
+  name: get_chunk(chunkId)
   parent: cntk.cntk_py.SwigDataDeserializer
   uid: cntk.cntk_py.SwigDataDeserializer.get_chunk
 - fullName: cntk.cntk_py.SwigDataDeserializer.get_sequence_info
   isExternal: false
-  name: get_sequence_info
+  name: get_sequence_info(primary, description)
   parent: cntk.cntk_py.SwigDataDeserializer
   uid: cntk.cntk_py.SwigDataDeserializer.get_sequence_info
 - fullName: cntk.cntk_py.SwigDataDeserializer.sequence_infos_for_chunk
   isExternal: false
-  name: sequence_infos_for_chunk
+  name: sequence_infos_for_chunk(chunkId, descriptions)
   parent: cntk.cntk_py.SwigDataDeserializer
   uid: cntk.cntk_py.SwigDataDeserializer.sequence_infos_for_chunk
 - fullName: cntk.cntk_py.SwigDataDeserializer.stream_infos
   isExternal: false
-  name: stream_infos
+  name: stream_infos()
   parent: cntk.cntk_py.SwigDataDeserializer
   uid: cntk.cntk_py.SwigDataDeserializer.stream_infos

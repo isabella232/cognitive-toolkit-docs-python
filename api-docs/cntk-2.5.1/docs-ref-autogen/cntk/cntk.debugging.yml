@@ -9,6 +9,7 @@ items:
   - cntk.debugging.profiler
   - cntk.debugging.tests
   fullName: cntk.debugging
+  kind: import
   langs:
   - python
   module: cntk.debugging
@@ -19,7 +20,7 @@ items:
   langs:
   - python
   module: cntk.debugging
-  name: dump_function
+  name: dump_function(root, tag=None)
   syntax:
     content: dump_function(root, tag=None)
     parameters:
@@ -32,7 +33,7 @@ items:
   langs:
   - python
   module: cntk.debugging
-  name: dump_signature
+  name: dump_signature(root, tag=None)
   summary: 'Debug helper that prints the signature of a Function.
 
     '
@@ -48,7 +49,7 @@ items:
   langs:
   - python
   module: cntk.debugging
-  name: force_deterministic
+  name: force_deterministic(seed)
   summary: 'Force most of the computation nodes to run deterministically.
 
     '
@@ -66,17 +67,17 @@ items:
 references:
 - fullName: cntk.debugging.dump_function
   isExternal: false
-  name: dump_function
+  name: dump_function(root, tag=None)
   parent: cntk.debugging
   uid: cntk.debugging.dump_function
 - fullName: cntk.debugging.dump_signature
   isExternal: false
-  name: dump_signature
+  name: dump_signature(root, tag=None)
   parent: cntk.debugging
   uid: cntk.debugging.dump_signature
 - fullName: cntk.debugging.force_deterministic
   isExternal: false
-  name: force_deterministic
+  name: force_deterministic(seed)
   parent: cntk.debugging
   uid: cntk.debugging.force_deterministic
 - fullName: cntk.debugging.debug

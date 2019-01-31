@@ -4,6 +4,7 @@ items:
 - children:
   - cntk.losses.tests.h_softmax_test
   fullName: cntk.losses.tests
+  kind: import
   langs:
   - python
   module: cntk.losses.tests

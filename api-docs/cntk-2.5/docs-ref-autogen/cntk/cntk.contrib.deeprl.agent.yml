@@ -10,6 +10,7 @@ items:
   - cntk.contrib.deeprl.agent.tabular_qlearning
   - cntk.contrib.deeprl.agent.shared
   fullName: cntk.contrib.deeprl.agent
+  kind: import
   langs:
   - python
   module: cntk.contrib.deeprl.agent

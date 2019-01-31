@@ -40,7 +40,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: aggregate
+  name: aggregate(values, outputValues, sendToWorkers)
   syntax:
     content: aggregate(values, outputValues, sendToWorkers)
     parameters:
@@ -54,7 +54,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: aggregate_in_place
+  name: aggregate_in_place(values, sendToWorkers)
   syntax:
     content: aggregate_in_place(values, sendToWorkers)
     parameters:
@@ -67,7 +67,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: all_reduce_sparse_block_column
+  name: all_reduce_sparse_block_column(arg2)
   syntax:
     content: all_reduce_sparse_block_column(arg2)
     parameters:
@@ -79,7 +79,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: barrier
+  name: barrier()
   syntax:
     content: barrier()
     parameters: []
@@ -90,7 +90,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: concatenate
+  name: concatenate(*args)
   syntax:
     content: concatenate(*args)
     parameters: []
@@ -101,7 +101,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: current_worker
+  name: current_worker()
   syntax:
     content: current_worker()
     parameters: []
@@ -121,7 +121,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: gather
+  name: gather(input, output, sendToWorkers)
   syntax:
     content: gather(input, output, sendToWorkers)
     parameters:
@@ -135,7 +135,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: sub_group
+  name: sub_group(subGroupWorkers)
   syntax:
     content: sub_group(subGroupWorkers)
     parameters:
@@ -147,7 +147,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: workers
+  name: workers()
   syntax:
     content: workers()
     parameters: []
@@ -156,32 +156,32 @@ items:
 references:
 - fullName: cntk.cntk_py.DistributedCommunicator.aggregate
   isExternal: false
-  name: aggregate
+  name: aggregate(values, outputValues, sendToWorkers)
   parent: cntk.cntk_py.DistributedCommunicator
   uid: cntk.cntk_py.DistributedCommunicator.aggregate
 - fullName: cntk.cntk_py.DistributedCommunicator.aggregate_in_place
   isExternal: false
-  name: aggregate_in_place
+  name: aggregate_in_place(values, sendToWorkers)
   parent: cntk.cntk_py.DistributedCommunicator
   uid: cntk.cntk_py.DistributedCommunicator.aggregate_in_place
 - fullName: cntk.cntk_py.DistributedCommunicator.all_reduce_sparse_block_column
   isExternal: false
-  name: all_reduce_sparse_block_column
+  name: all_reduce_sparse_block_column(arg2)
   parent: cntk.cntk_py.DistributedCommunicator
   uid: cntk.cntk_py.DistributedCommunicator.all_reduce_sparse_block_column
 - fullName: cntk.cntk_py.DistributedCommunicator.barrier
   isExternal: false
-  name: barrier
+  name: barrier()
   parent: cntk.cntk_py.DistributedCommunicator
   uid: cntk.cntk_py.DistributedCommunicator.barrier
 - fullName: cntk.cntk_py.DistributedCommunicator.concatenate
   isExternal: false
-  name: concatenate
+  name: concatenate(*args)
   parent: cntk.cntk_py.DistributedCommunicator
   uid: cntk.cntk_py.DistributedCommunicator.concatenate
 - fullName: cntk.cntk_py.DistributedCommunicator.current_worker
   isExternal: false
-  name: current_worker
+  name: current_worker()
   parent: cntk.cntk_py.DistributedCommunicator
   uid: cntk.cntk_py.DistributedCommunicator.current_worker
 - fullName: cntk.cntk_py.DistributedCommunicator.finalize
@@ -191,16 +191,16 @@ references:
   uid: cntk.cntk_py.DistributedCommunicator.finalize
 - fullName: cntk.cntk_py.DistributedCommunicator.gather
   isExternal: false
-  name: gather
+  name: gather(input, output, sendToWorkers)
   parent: cntk.cntk_py.DistributedCommunicator
   uid: cntk.cntk_py.DistributedCommunicator.gather
 - fullName: cntk.cntk_py.DistributedCommunicator.sub_group
   isExternal: false
-  name: sub_group
+  name: sub_group(subGroupWorkers)
   parent: cntk.cntk_py.DistributedCommunicator
   uid: cntk.cntk_py.DistributedCommunicator.sub_group
 - fullName: cntk.cntk_py.DistributedCommunicator.workers
   isExternal: false
-  name: workers
+  name: workers()
   parent: cntk.cntk_py.DistributedCommunicator
   uid: cntk.cntk_py.DistributedCommunicator.workers

@@ -27,7 +27,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.validation.validcore
-  name: activate
+  name: activate()
   summary: '   The function executes target validation core
 
     '
@@ -47,7 +47,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.validation.validcore
-  name: val_network
+  name: val_network()
   summary: "   The function executes CNTK forward and dumps watched nodes into temporary\
     \ files with\n      numpy.mat formats\n"
   syntax:
@@ -66,11 +66,11 @@ items:
 references:
 - fullName: cntk.contrib.crosstalkcaffe.validation.validcore.Validator.activate
   isExternal: false
-  name: activate
+  name: activate()
   parent: cntk.contrib.crosstalkcaffe.validation.validcore.Validator
   uid: cntk.contrib.crosstalkcaffe.validation.validcore.Validator.activate
 - fullName: cntk.contrib.crosstalkcaffe.validation.validcore.Validator.val_network
   isExternal: false
-  name: val_network
+  name: val_network()
   parent: cntk.contrib.crosstalkcaffe.validation.validcore.Validator
   uid: cntk.contrib.crosstalkcaffe.validation.validcore.Validator.val_network

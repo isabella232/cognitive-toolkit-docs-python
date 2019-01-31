@@ -19,7 +19,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.utils.globalconf
-  name: load_conf
+  name: load_conf(conf_path)
   summary: '   Analysis global configuration file into dict
 
     '
@@ -66,6 +66,6 @@ references:
   uid: cntk.contrib.crosstalkcaffe.utils.globalconf.ValidConf
 - fullName: cntk.contrib.crosstalkcaffe.utils.globalconf.load_conf
   isExternal: false
-  name: load_conf
+  name: load_conf(conf_path)
   parent: cntk.contrib.crosstalkcaffe.utils.globalconf
   uid: cntk.contrib.crosstalkcaffe.utils.globalconf.load_conf

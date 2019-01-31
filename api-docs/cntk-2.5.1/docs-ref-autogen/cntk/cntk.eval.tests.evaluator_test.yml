@@ -14,7 +14,7 @@ items:
   langs:
   - python
   module: cntk.eval.tests.evaluator_test
-  name: test_eval
+  name: test_eval()
   syntax:
     content: test_eval()
   type: function
@@ -22,6 +22,6 @@ items:
 references:
 - fullName: cntk.eval.tests.evaluator_test.test_eval
   isExternal: false
-  name: test_eval
+  name: test_eval()
   parent: cntk.eval.tests.evaluator_test
   uid: cntk.eval.tests.evaluator_test.test_eval
