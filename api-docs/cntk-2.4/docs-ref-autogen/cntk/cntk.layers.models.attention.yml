@@ -17,7 +17,8 @@ items:
   langs:
   - python
   module: cntk.layers.models.attention
-  name: AttentionModel
+  name: AttentionModel(attention_dim, attention_span=None, attention_axis=None, init=glorot_uniform(),
+    go_backwards=False, enable_self_stabilization=True, name='')
   summary: 'Layer factory function to create a function object that implements an
     attention model
 
@@ -44,6 +45,7 @@ items:
 references:
 - fullName: cntk.layers.models.attention.AttentionModel
   isExternal: false
-  name: AttentionModel
+  name: AttentionModel(attention_dim, attention_span=None, attention_axis=None, init=glorot_uniform(),
+    go_backwards=False, enable_self_stabilization=True, name='')
   parent: cntk.layers.models.attention
   uid: cntk.layers.models.attention.AttentionModel

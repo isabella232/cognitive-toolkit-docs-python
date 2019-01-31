@@ -14,7 +14,7 @@ items:
   langs:
   - python
   module: cntk.logging.tests.progress_print_test
-  name: test_tensorboard_write_image
+  name: test_tensorboard_write_image(tmpdir)
   syntax:
     content: test_tensorboard_write_image(tmpdir)
     parameters:
@@ -24,6 +24,6 @@ items:
 references:
 - fullName: cntk.logging.tests.progress_print_test.test_tensorboard_write_image
   isExternal: false
-  name: test_tensorboard_write_image
+  name: test_tensorboard_write_image(tmpdir)
   parent: cntk.logging.tests.progress_print_test
   uid: cntk.logging.tests.progress_print_test.test_tensorboard_write_image

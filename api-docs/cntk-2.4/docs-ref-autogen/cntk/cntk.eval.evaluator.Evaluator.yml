@@ -58,7 +58,7 @@ items:
   langs:
   - python
   module: cntk.eval.evaluator
-  name: summarize_test_progress
+  name: summarize_test_progress()
   summary: 'Updates the progress writers with the summary of test progress since start
     and resets the internal
 
@@ -75,10 +75,22 @@ items:
   langs:
   - python
   module: cntk.eval.evaluator
-  name: test_minibatch
-  summary: "Test the evaluation function on the specified batch of samples.\n\nNote:\
-    \ See <xref:cntk.ops.functions.Function.forward> for examples on passing input\
-    \ data. \n"
+  name: test_minibatch(arguments, device=None, distributed=False)
+  summary: 'Test the evaluation function on the specified batch of samples.
+
+
+
+    > [!NOTE]
+
+    > See <xref:cntk.ops.functions.Function.forward> for examples on
+
+    >
+
+    > passing input data.
+
+    >
+
+    '
   syntax:
     content: test_minibatch(arguments, device=None, distributed=False)
     parameters:
@@ -105,11 +117,11 @@ references:
   uid: cntk.eval.evaluator.Evaluator.evaluation_function
 - fullName: cntk.eval.evaluator.Evaluator.summarize_test_progress
   isExternal: false
-  name: summarize_test_progress
+  name: summarize_test_progress()
   parent: cntk.eval.evaluator.Evaluator
   uid: cntk.eval.evaluator.Evaluator.summarize_test_progress
 - fullName: cntk.eval.evaluator.Evaluator.test_minibatch
   isExternal: false
-  name: test_minibatch
+  name: test_minibatch(arguments, device=None, distributed=False)
   parent: cntk.eval.evaluator.Evaluator
   uid: cntk.eval.evaluator.Evaluator.test_minibatch

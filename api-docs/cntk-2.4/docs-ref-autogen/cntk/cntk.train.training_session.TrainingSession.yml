@@ -102,7 +102,7 @@ items:
   langs:
   - python
   module: cntk.train.training_session
-  name: on_cross_validation_end
+  name: on_cross_validation_end(index, average_error, num_samples, num_minibatches)
   summary: 'Callback that gets executed at the end of cross validation.
 
     '
@@ -144,7 +144,7 @@ items:
   langs:
   - python
   module: cntk.train.training_session
-  name: train
+  name: train(device=None)
   summary: 'Perform training on a specified device.
 
     '
@@ -164,12 +164,12 @@ items:
 references:
 - fullName: cntk.train.training_session.TrainingSession.on_cross_validation_end
   isExternal: false
-  name: on_cross_validation_end
+  name: on_cross_validation_end(index, average_error, num_samples, num_minibatches)
   parent: cntk.train.training_session.TrainingSession
   uid: cntk.train.training_session.TrainingSession.on_cross_validation_end
 - fullName: cntk.train.training_session.TrainingSession.train
   isExternal: false
-  name: train
+  name: train(device=None)
   parent: cntk.train.training_session.TrainingSession
   uid: cntk.train.training_session.TrainingSession.train
 - fullName: int, tuple

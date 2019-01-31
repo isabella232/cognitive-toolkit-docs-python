@@ -40,7 +40,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: as_string
+  name: as_string()
   syntax:
     content: as_string()
     parameters: []
@@ -51,7 +51,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: dimensions
+  name: dimensions()
   syntax:
     content: dimensions()
     parameters: []
@@ -62,7 +62,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: has_free_dimension
+  name: has_free_dimension()
   syntax:
     content: has_free_dimension()
     parameters: []
@@ -73,7 +73,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: has_inferred_dimension
+  name: has_inferred_dimension()
   syntax:
     content: has_inferred_dimension()
     parameters: []
@@ -84,7 +84,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: has_unbound_dimension
+  name: has_unbound_dimension()
   syntax:
     content: has_unbound_dimension()
     parameters: []
@@ -95,7 +95,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: is_unknown
+  name: is_unknown()
   syntax:
     content: is_unknown()
     parameters: []
@@ -106,7 +106,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: rank
+  name: rank()
   syntax:
     content: rank()
     parameters: []
@@ -117,7 +117,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: sub_shape
+  name: sub_shape(*args)
   syntax:
     content: sub_shape(*args)
     parameters: []
@@ -128,7 +128,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: total_size
+  name: total_size()
   syntax:
     content: total_size()
     parameters: []
@@ -146,47 +146,47 @@ items:
 references:
 - fullName: cntk.cntk_py.NDShape.as_string
   isExternal: false
-  name: as_string
+  name: as_string()
   parent: cntk.cntk_py.NDShape
   uid: cntk.cntk_py.NDShape.as_string
 - fullName: cntk.cntk_py.NDShape.dimensions
   isExternal: false
-  name: dimensions
+  name: dimensions()
   parent: cntk.cntk_py.NDShape
   uid: cntk.cntk_py.NDShape.dimensions
 - fullName: cntk.cntk_py.NDShape.has_free_dimension
   isExternal: false
-  name: has_free_dimension
+  name: has_free_dimension()
   parent: cntk.cntk_py.NDShape
   uid: cntk.cntk_py.NDShape.has_free_dimension
 - fullName: cntk.cntk_py.NDShape.has_inferred_dimension
   isExternal: false
-  name: has_inferred_dimension
+  name: has_inferred_dimension()
   parent: cntk.cntk_py.NDShape
   uid: cntk.cntk_py.NDShape.has_inferred_dimension
 - fullName: cntk.cntk_py.NDShape.has_unbound_dimension
   isExternal: false
-  name: has_unbound_dimension
+  name: has_unbound_dimension()
   parent: cntk.cntk_py.NDShape
   uid: cntk.cntk_py.NDShape.has_unbound_dimension
 - fullName: cntk.cntk_py.NDShape.is_unknown
   isExternal: false
-  name: is_unknown
+  name: is_unknown()
   parent: cntk.cntk_py.NDShape
   uid: cntk.cntk_py.NDShape.is_unknown
 - fullName: cntk.cntk_py.NDShape.rank
   isExternal: false
-  name: rank
+  name: rank()
   parent: cntk.cntk_py.NDShape
   uid: cntk.cntk_py.NDShape.rank
 - fullName: cntk.cntk_py.NDShape.sub_shape
   isExternal: false
-  name: sub_shape
+  name: sub_shape(*args)
   parent: cntk.cntk_py.NDShape
   uid: cntk.cntk_py.NDShape.sub_shape
 - fullName: cntk.cntk_py.NDShape.total_size
   isExternal: false
-  name: total_size
+  name: total_size()
   parent: cntk.cntk_py.NDShape
   uid: cntk.cntk_py.NDShape.total_size
 - fullName: cntk.cntk_py.NDShape.unknown

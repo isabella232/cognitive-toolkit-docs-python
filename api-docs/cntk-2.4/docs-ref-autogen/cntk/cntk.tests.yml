@@ -7,6 +7,7 @@ items:
   - cntk.tests.device_test
   - cntk.tests.persist_test
   fullName: cntk.tests
+  kind: import
   langs:
   - python
   module: cntk.tests

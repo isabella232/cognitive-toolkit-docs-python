@@ -40,7 +40,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.agent
-  name: end
+  name: end(reward, next_state)
   summary: 'Last observed reward/state of the episode (which then terminates).
 
     '
@@ -66,7 +66,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.agent
-  name: enter_evaluation
+  name: enter_evaluation()
   summary: 'Setup before evaluation.
 
     '
@@ -80,7 +80,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.agent
-  name: evaluate
+  name: evaluate(o)
   summary: 'Choose action for given observation without updating agent''s status.
 
     '
@@ -106,7 +106,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.agent
-  name: exit_evaluation
+  name: exit_evaluation()
   summary: 'Tear-down after evaluation.
 
     '
@@ -120,7 +120,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.agent
-  name: save
+  name: save(filename)
   summary: 'Save model to file.
 
     '
@@ -135,7 +135,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.agent
-  name: save_parameter_settings
+  name: save_parameter_settings(filename)
   summary: 'Save parameter settings to file.
 
     '
@@ -150,7 +150,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.agent
-  name: set_as_best_model
+  name: set_as_best_model()
   summary: 'Copy current model to best model.
 
     '
@@ -164,7 +164,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.agent
-  name: start
+  name: start(state)
   summary: 'Start a new episode.
 
     '
@@ -192,7 +192,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.agent
-  name: step
+  name: step(reward, next_state)
   summary: 'Observe one transition and choose an action.
 
     '
@@ -224,47 +224,47 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.agent.agent.AgentBaseClass.end
   isExternal: false
-  name: end
+  name: end(reward, next_state)
   parent: cntk.contrib.deeprl.agent.agent.AgentBaseClass
   uid: cntk.contrib.deeprl.agent.agent.AgentBaseClass.end
 - fullName: cntk.contrib.deeprl.agent.agent.AgentBaseClass.enter_evaluation
   isExternal: false
-  name: enter_evaluation
+  name: enter_evaluation()
   parent: cntk.contrib.deeprl.agent.agent.AgentBaseClass
   uid: cntk.contrib.deeprl.agent.agent.AgentBaseClass.enter_evaluation
 - fullName: cntk.contrib.deeprl.agent.agent.AgentBaseClass.evaluate
   isExternal: false
-  name: evaluate
+  name: evaluate(o)
   parent: cntk.contrib.deeprl.agent.agent.AgentBaseClass
   uid: cntk.contrib.deeprl.agent.agent.AgentBaseClass.evaluate
 - fullName: cntk.contrib.deeprl.agent.agent.AgentBaseClass.exit_evaluation
   isExternal: false
-  name: exit_evaluation
+  name: exit_evaluation()
   parent: cntk.contrib.deeprl.agent.agent.AgentBaseClass
   uid: cntk.contrib.deeprl.agent.agent.AgentBaseClass.exit_evaluation
 - fullName: cntk.contrib.deeprl.agent.agent.AgentBaseClass.save
   isExternal: false
-  name: save
+  name: save(filename)
   parent: cntk.contrib.deeprl.agent.agent.AgentBaseClass
   uid: cntk.contrib.deeprl.agent.agent.AgentBaseClass.save
 - fullName: cntk.contrib.deeprl.agent.agent.AgentBaseClass.save_parameter_settings
   isExternal: false
-  name: save_parameter_settings
+  name: save_parameter_settings(filename)
   parent: cntk.contrib.deeprl.agent.agent.AgentBaseClass
   uid: cntk.contrib.deeprl.agent.agent.AgentBaseClass.save_parameter_settings
 - fullName: cntk.contrib.deeprl.agent.agent.AgentBaseClass.set_as_best_model
   isExternal: false
-  name: set_as_best_model
+  name: set_as_best_model()
   parent: cntk.contrib.deeprl.agent.agent.AgentBaseClass
   uid: cntk.contrib.deeprl.agent.agent.AgentBaseClass.set_as_best_model
 - fullName: cntk.contrib.deeprl.agent.agent.AgentBaseClass.start
   isExternal: false
-  name: start
+  name: start(state)
   parent: cntk.contrib.deeprl.agent.agent.AgentBaseClass
   uid: cntk.contrib.deeprl.agent.agent.AgentBaseClass.start
 - fullName: cntk.contrib.deeprl.agent.agent.AgentBaseClass.step
   isExternal: false
-  name: step
+  name: step(reward, next_state)
   parent: cntk.contrib.deeprl.agent.agent.AgentBaseClass
   uid: cntk.contrib.deeprl.agent.agent.AgentBaseClass.step
 - fullName: action (int)

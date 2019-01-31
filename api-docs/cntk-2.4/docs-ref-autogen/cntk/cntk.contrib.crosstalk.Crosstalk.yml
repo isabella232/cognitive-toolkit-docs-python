@@ -49,7 +49,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: assign
+  name: assign(name, value=None, load=False, load_name=None)
   summary: 'Set value to var, with option to load from working directory
 
     '
@@ -90,7 +90,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: compare
+  name: compare(name, compare_name=None, rtol=1e-05, atol=1e-08, equal_nan=False)
   summary: 'Compare var with name to value in file in working directory
 
     '
@@ -138,7 +138,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: fetch
+  name: fetch(name, save=False)
   summary: 'Fetch/evaluate var with name and optionally save to working directory
 
     '
@@ -165,7 +165,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: load
+  name: load(names)
   summary: 'Load variables in list of names
 
     '
@@ -183,7 +183,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: load_raw_value
+  name: load_raw_value(name)
   summary: 'Load raw value from npy|pkl file in working directory
 
     '
@@ -207,7 +207,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: next_pass
+  name: next_pass()
   summary: 'Bump up passes so save won''t overwrite existing files
 
     '
@@ -221,7 +221,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: register_funcs
+  name: register_funcs(var_type, setter=None, getter=None)
   summary: 'Register setter/getter functions for a given variable type
 
     '
@@ -249,7 +249,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: reset
+  name: reset()
   summary: 'Reset all variables and passes, setter/getter functions for variable types
     are kept
 
@@ -264,7 +264,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: save
+  name: save(names)
   summary: 'Save variables in list of names
 
     '
@@ -282,7 +282,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: save_all
+  name: save_all()
   summary: 'Save all variables
 
     '
@@ -296,7 +296,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: set_workdir
+  name: set_workdir(dir)
   summary: 'Set up a working directory for save/load numpy values(.npy) or python
     data (.pkl)
 
@@ -317,7 +317,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: watch
+  name: watch(var, name, var_type=None, attr=None)
   summary: 'Add variables to watch with a unique name.
 
     '
@@ -351,61 +351,61 @@ items:
 references:
 - fullName: cntk.contrib.crosstalk.Crosstalk.assign
   isExternal: false
-  name: assign
+  name: assign(name, value=None, load=False, load_name=None)
   parent: cntk.contrib.crosstalk.Crosstalk
   uid: cntk.contrib.crosstalk.Crosstalk.assign
 - fullName: cntk.contrib.crosstalk.Crosstalk.compare
   isExternal: false
-  name: compare
+  name: compare(name, compare_name=None, rtol=1e-05, atol=1e-08, equal_nan=False)
   parent: cntk.contrib.crosstalk.Crosstalk
   uid: cntk.contrib.crosstalk.Crosstalk.compare
 - fullName: cntk.contrib.crosstalk.Crosstalk.fetch
   isExternal: false
-  name: fetch
+  name: fetch(name, save=False)
   parent: cntk.contrib.crosstalk.Crosstalk
   uid: cntk.contrib.crosstalk.Crosstalk.fetch
 - fullName: cntk.contrib.crosstalk.Crosstalk.load
   isExternal: false
-  name: load
+  name: load(names)
   parent: cntk.contrib.crosstalk.Crosstalk
   uid: cntk.contrib.crosstalk.Crosstalk.load
 - fullName: cntk.contrib.crosstalk.Crosstalk.load_raw_value
   isExternal: false
-  name: load_raw_value
+  name: load_raw_value(name)
   parent: cntk.contrib.crosstalk.Crosstalk
   uid: cntk.contrib.crosstalk.Crosstalk.load_raw_value
 - fullName: cntk.contrib.crosstalk.Crosstalk.next_pass
   isExternal: false
-  name: next_pass
+  name: next_pass()
   parent: cntk.contrib.crosstalk.Crosstalk
   uid: cntk.contrib.crosstalk.Crosstalk.next_pass
 - fullName: cntk.contrib.crosstalk.Crosstalk.register_funcs
   isExternal: false
-  name: register_funcs
+  name: register_funcs(var_type, setter=None, getter=None)
   parent: cntk.contrib.crosstalk.Crosstalk
   uid: cntk.contrib.crosstalk.Crosstalk.register_funcs
 - fullName: cntk.contrib.crosstalk.Crosstalk.reset
   isExternal: false
-  name: reset
+  name: reset()
   parent: cntk.contrib.crosstalk.Crosstalk
   uid: cntk.contrib.crosstalk.Crosstalk.reset
 - fullName: cntk.contrib.crosstalk.Crosstalk.save
   isExternal: false
-  name: save
+  name: save(names)
   parent: cntk.contrib.crosstalk.Crosstalk
   uid: cntk.contrib.crosstalk.Crosstalk.save
 - fullName: cntk.contrib.crosstalk.Crosstalk.save_all
   isExternal: false
-  name: save_all
+  name: save_all()
   parent: cntk.contrib.crosstalk.Crosstalk
   uid: cntk.contrib.crosstalk.Crosstalk.save_all
 - fullName: cntk.contrib.crosstalk.Crosstalk.set_workdir
   isExternal: false
-  name: set_workdir
+  name: set_workdir(dir)
   parent: cntk.contrib.crosstalk.Crosstalk
   uid: cntk.contrib.crosstalk.Crosstalk.set_workdir
 - fullName: cntk.contrib.crosstalk.Crosstalk.watch
   isExternal: false
-  name: watch
+  name: watch(var, name, var_type=None, attr=None)
   parent: cntk.contrib.crosstalk.Crosstalk
   uid: cntk.contrib.crosstalk.Crosstalk.watch

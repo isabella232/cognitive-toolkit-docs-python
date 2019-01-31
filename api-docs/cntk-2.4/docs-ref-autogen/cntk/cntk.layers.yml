@@ -10,6 +10,7 @@ items:
   - cntk.layers.models
   - cntk.layers.tests
   fullName: cntk.layers
+  kind: import
   langs:
   - python
   module: cntk.layers
