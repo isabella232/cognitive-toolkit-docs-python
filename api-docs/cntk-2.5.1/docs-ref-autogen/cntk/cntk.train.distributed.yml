@@ -22,7 +22,9 @@ items:
   langs:
   - python
   module: cntk.train.distributed
-  name: block_momentum_distributed_learner
+  name: block_momentum_distributed_learner(learner, block_size, block_momentum_as_time_constant=None,
+    use_nestrov_momentum=True, reset_sgd_momentum_after_aggregation=True, block_learning_rate=1.0,
+    distributed_after=0)
   seealsoContent: "  [1] K. Chen and Q. Huo. [Scalable training of deep learning machines\n\
     \  by incremental block training with intra-block parallel optimization\n  and\
     \ blockwise model-update filtering](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/0005880.pdf).\n\
@@ -97,7 +99,8 @@ items:
   langs:
   - python
   module: cntk.train.distributed
-  name: data_parallel_distributed_learner
+  name: data_parallel_distributed_learner(learner, distributed_after=0, num_quantization_bits=32,
+    use_async_buffered_parameter_update=False)
   summary: 'Creates a data parallel distributed learner
 
     '
@@ -137,7 +140,7 @@ items:
   langs:
   - python
   module: cntk.train.distributed
-  name: mpi_communicator
+  name: mpi_communicator()
   summary: 'Creates a non quantized MPI communicator.
 
     '
@@ -163,16 +166,19 @@ references:
   uid: cntk.train.distributed.WorkerDescriptor
 - fullName: cntk.train.distributed.block_momentum_distributed_learner
   isExternal: false
-  name: block_momentum_distributed_learner
+  name: block_momentum_distributed_learner(learner, block_size, block_momentum_as_time_constant=None,
+    use_nestrov_momentum=True, reset_sgd_momentum_after_aggregation=True, block_learning_rate=1.0,
+    distributed_after=0)
   parent: cntk.train.distributed
   uid: cntk.train.distributed.block_momentum_distributed_learner
 - fullName: cntk.train.distributed.data_parallel_distributed_learner
   isExternal: false
-  name: data_parallel_distributed_learner
+  name: data_parallel_distributed_learner(learner, distributed_after=0, num_quantization_bits=32,
+    use_async_buffered_parameter_update=False)
   parent: cntk.train.distributed
   uid: cntk.train.distributed.data_parallel_distributed_learner
 - fullName: cntk.train.distributed.mpi_communicator
   isExternal: false
-  name: mpi_communicator
+  name: mpi_communicator()
   parent: cntk.train.distributed
   uid: cntk.train.distributed.mpi_communicator

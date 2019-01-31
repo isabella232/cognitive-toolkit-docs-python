@@ -18,7 +18,7 @@ items:
   langs:
   - python
   module: cntk.tests.axis_test
-  name: test_axis
+  name: test_axis()
   syntax:
     content: test_axis()
   type: function
@@ -27,7 +27,7 @@ items:
   langs:
   - python
   module: cntk.tests.axis_test
-  name: test_axis_comparison
+  name: test_axis_comparison()
   syntax:
     content: test_axis_comparison()
   type: function
@@ -36,7 +36,7 @@ items:
   langs:
   - python
   module: cntk.tests.axis_test
-  name: test_axis_str
+  name: test_axis_str()
   syntax:
     content: test_axis_str()
   type: function
@@ -45,7 +45,7 @@ items:
   langs:
   - python
   module: cntk.tests.axis_test
-  name: test_default_axis
+  name: test_default_axis()
   syntax:
     content: test_default_axis()
   type: function
@@ -54,7 +54,7 @@ items:
   langs:
   - python
   module: cntk.tests.axis_test
-  name: test_dyn_axis
+  name: test_dyn_axis()
   syntax:
     content: test_dyn_axis()
   type: function
@@ -62,26 +62,26 @@ items:
 references:
 - fullName: cntk.tests.axis_test.test_axis
   isExternal: false
-  name: test_axis
+  name: test_axis()
   parent: cntk.tests.axis_test
   uid: cntk.tests.axis_test.test_axis
 - fullName: cntk.tests.axis_test.test_axis_comparison
   isExternal: false
-  name: test_axis_comparison
+  name: test_axis_comparison()
   parent: cntk.tests.axis_test
   uid: cntk.tests.axis_test.test_axis_comparison
 - fullName: cntk.tests.axis_test.test_axis_str
   isExternal: false
-  name: test_axis_str
+  name: test_axis_str()
   parent: cntk.tests.axis_test
   uid: cntk.tests.axis_test.test_axis_str
 - fullName: cntk.tests.axis_test.test_default_axis
   isExternal: false
-  name: test_default_axis
+  name: test_default_axis()
   parent: cntk.tests.axis_test
   uid: cntk.tests.axis_test.test_default_axis
 - fullName: cntk.tests.axis_test.test_dyn_axis
   isExternal: false
-  name: test_dyn_axis
+  name: test_dyn_axis()
   parent: cntk.tests.axis_test
   uid: cntk.tests.axis_test.test_dyn_axis

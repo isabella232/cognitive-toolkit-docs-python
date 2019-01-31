@@ -27,7 +27,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: is_empty
+  name: is_empty()
   syntax:
     content: is_empty()
     parameters: []
@@ -36,6 +36,6 @@ items:
 references:
 - fullName: cntk.cntk_py.MinibatchInfo.is_empty
   isExternal: false
-  name: is_empty
+  name: is_empty()
   parent: cntk.cntk_py.MinibatchInfo
   uid: cntk.cntk_py.MinibatchInfo.is_empty

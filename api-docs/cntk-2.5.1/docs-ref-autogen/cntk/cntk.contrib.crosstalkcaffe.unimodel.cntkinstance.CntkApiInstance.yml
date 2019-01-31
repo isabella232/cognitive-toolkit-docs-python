@@ -32,7 +32,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: export_model
+  name: export_model()
   summary: '   Save instanced CNTK model
 
     '
@@ -52,7 +52,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: get_functions
+  name: get_functions()
   summary: '   Return the functions of CNTK network
 
     '
@@ -74,7 +74,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: get_model
+  name: get_model()
   summary: '   Get instaced CNTK model
 
     '
@@ -96,7 +96,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: instance_functions
+  name: instance_functions(cntk_sorted_layers, cntk_layers)
   summary: '   Instace all nodes into CNTK ops
 
     '
@@ -128,7 +128,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: instance_input
+  name: instance_input(data_providers)
   summary: '   Instace the inputs into CNTK variable
 
     '
@@ -150,26 +150,26 @@ items:
 references:
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance.export_model
   isExternal: false
-  name: export_model
+  name: export_model()
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance.export_model
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance.get_functions
   isExternal: false
-  name: get_functions
+  name: get_functions()
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance.get_functions
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance.get_model
   isExternal: false
-  name: get_model
+  name: get_model()
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance.get_model
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance.instance_functions
   isExternal: false
-  name: instance_functions
+  name: instance_functions(cntk_sorted_layers, cntk_layers)
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance.instance_functions
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance.instance_input
   isExternal: false
-  name: instance_input
+  name: instance_input(data_providers)
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance.instance_input

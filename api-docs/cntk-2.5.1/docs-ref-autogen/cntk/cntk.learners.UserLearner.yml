@@ -33,7 +33,7 @@ items:
   langs:
   - python
   module: cntk.learners
-  name: update
+  name: update(gradient_values, training_sample_count, sweep_end)
   summary: 'Update the parameters associated with this learner.
 
     '
@@ -77,6 +77,6 @@ items:
 references:
 - fullName: cntk.learners.UserLearner.update
   isExternal: false
-  name: update
+  name: update(gradient_values, training_sample_count, sweep_end)
   parent: cntk.learners.UserLearner
   uid: cntk.learners.UserLearner.update

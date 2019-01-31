@@ -28,7 +28,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: get_data_buffer
+  name: get_data_buffer()
   syntax:
     content: get_data_buffer()
     parameters: []
@@ -39,7 +39,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: get_sample_shape
+  name: get_sample_shape()
   syntax:
     content: get_sample_shape()
     parameters: []
@@ -48,11 +48,11 @@ items:
 references:
 - fullName: cntk.cntk_py.DenseDataFromPy.get_data_buffer
   isExternal: false
-  name: get_data_buffer
+  name: get_data_buffer()
   parent: cntk.cntk_py.DenseDataFromPy
   uid: cntk.cntk_py.DenseDataFromPy.get_data_buffer
 - fullName: cntk.cntk_py.DenseDataFromPy.get_sample_shape
   isExternal: false
-  name: get_sample_shape
+  name: get_sample_shape()
   parent: cntk.cntk_py.DenseDataFromPy
   uid: cntk.cntk_py.DenseDataFromPy.get_sample_shape

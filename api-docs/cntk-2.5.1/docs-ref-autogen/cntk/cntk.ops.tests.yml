@@ -5,6 +5,7 @@ items:
   - cntk.ops.tests.stop_gradient_test
   - cntk.ops.tests.transpose_test
   fullName: cntk.ops.tests
+  kind: import
   langs:
   - python
   module: cntk.ops.tests

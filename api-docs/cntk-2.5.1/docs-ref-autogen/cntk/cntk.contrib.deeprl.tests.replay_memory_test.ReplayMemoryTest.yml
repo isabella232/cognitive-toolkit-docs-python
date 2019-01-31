@@ -28,7 +28,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.replay_memory_test
-  name: test_prioritized_sampling
+  name: test_prioritized_sampling()
   syntax:
     content: test_prioritized_sampling()
     parameters: []
@@ -39,7 +39,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.replay_memory_test
-  name: test_uniform_sampling
+  name: test_uniform_sampling()
   syntax:
     content: test_uniform_sampling()
     parameters: []
@@ -48,11 +48,11 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_prioritized_sampling
   isExternal: false
-  name: test_prioritized_sampling
+  name: test_prioritized_sampling()
   parent: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
   uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_prioritized_sampling
 - fullName: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_uniform_sampling
   isExternal: false
-  name: test_uniform_sampling
+  name: test_uniform_sampling()
   parent: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
   uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_uniform_sampling

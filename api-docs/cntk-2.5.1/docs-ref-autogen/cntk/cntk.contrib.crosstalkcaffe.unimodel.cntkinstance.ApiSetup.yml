@@ -41,7 +41,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: batch_norm
+  name: batch_norm(cntk_layer, inputs)
   summary: '   Setup batch normalization op with given parameters
 
     '
@@ -75,7 +75,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: convolution
+  name: convolution(cntk_layer, inputs)
   summary: '   Setup convolution op with given parameters
 
     '
@@ -109,7 +109,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: dense
+  name: dense(cntk_layer, inputs)
   summary: '   Setup dense op with given parameters
 
     '
@@ -143,7 +143,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: dropout
+  name: dropout(cntk_layer, inputs)
   summary: '   Setup dropout op with given parameters
 
     '
@@ -177,7 +177,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: lrn
+  name: lrn(cntk_layer, inputs)
   summary: '   Setup lrn op with given parameters
 
     '
@@ -211,7 +211,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: plus
+  name: plus(cntk_layer, inputs)
   summary: '   Setup plus op with given parameters
 
     '
@@ -245,7 +245,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: pooling
+  name: pooling(cntk_layer, inputs)
   summary: '   Setup pooling op with given parameters
 
     '
@@ -279,7 +279,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: relu
+  name: relu(cntk_layer, inputs)
   summary: '   Setup ReLU op with given parameters
 
     '
@@ -313,7 +313,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: softmax
+  name: softmax(cntk_layer, inputs)
   summary: '   Setup softmax op with given parameters
 
     '
@@ -347,7 +347,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  name: splice
+  name: splice(cntk_layer, inputs)
   summary: '   Setup splice op with given parameters
 
     '
@@ -379,51 +379,51 @@ items:
 references:
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.batch_norm
   isExternal: false
-  name: batch_norm
+  name: batch_norm(cntk_layer, inputs)
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.batch_norm
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.convolution
   isExternal: false
-  name: convolution
+  name: convolution(cntk_layer, inputs)
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.convolution
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.dense
   isExternal: false
-  name: dense
+  name: dense(cntk_layer, inputs)
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.dense
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.dropout
   isExternal: false
-  name: dropout
+  name: dropout(cntk_layer, inputs)
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.dropout
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.lrn
   isExternal: false
-  name: lrn
+  name: lrn(cntk_layer, inputs)
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.lrn
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.plus
   isExternal: false
-  name: plus
+  name: plus(cntk_layer, inputs)
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.plus
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.pooling
   isExternal: false
-  name: pooling
+  name: pooling(cntk_layer, inputs)
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.pooling
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.relu
   isExternal: false
-  name: relu
+  name: relu(cntk_layer, inputs)
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.relu
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.softmax
   isExternal: false
-  name: softmax
+  name: softmax(cntk_layer, inputs)
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.softmax
 - fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.splice
   isExternal: false
-  name: splice
+  name: splice(cntk_layer, inputs)
   parent: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
   uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.splice

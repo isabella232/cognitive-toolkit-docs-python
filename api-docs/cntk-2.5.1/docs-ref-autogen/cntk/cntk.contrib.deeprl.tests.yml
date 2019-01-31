@@ -12,6 +12,7 @@ items:
   - cntk.contrib.deeprl.tests.spaces
   - cntk.contrib.deeprl.tests.tabular_qlearning_test
   fullName: cntk.contrib.deeprl.tests
+  kind: import
   langs:
   - python
   module: cntk.contrib.deeprl.tests

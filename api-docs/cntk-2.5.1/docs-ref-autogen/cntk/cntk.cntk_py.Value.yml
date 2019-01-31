@@ -80,7 +80,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: alias
+  name: alias(readOnly=False)
   syntax:
     content: alias(readOnly=False)
     parameters:
@@ -93,7 +93,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: as_string
+  name: as_string()
   syntax:
     content: as_string()
     parameters: []
@@ -104,7 +104,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: asarray
+  name: asarray()
   summary: 'Converts the instance''s data to a NumPy array.
 
     '
@@ -118,7 +118,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: copy_from
+  name: copy_from(source)
   syntax:
     content: copy_from(source)
     parameters:
@@ -130,7 +130,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: copy_variable_value_to
+  name: copy_variable_value_to(outputVariable, sequences)
   syntax:
     content: copy_variable_value_to(outputVariable, sequences)
     parameters:
@@ -143,7 +143,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: copy_variable_value_to_double
+  name: copy_variable_value_to_double(*args)
   syntax:
     content: copy_variable_value_to_double(*args)
     parameters: []
@@ -154,7 +154,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: copy_variable_value_to_float
+  name: copy_variable_value_to_float(*args)
   syntax:
     content: copy_variable_value_to_float(*args)
     parameters: []
@@ -246,7 +246,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: data
+  name: data()
   syntax:
     content: data()
     parameters: []
@@ -257,7 +257,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: deep_clone
+  name: deep_clone(*args)
   syntax:
     content: deep_clone(*args)
     parameters: []
@@ -268,7 +268,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: device
+  name: device()
   syntax:
     content: device()
     parameters: []
@@ -279,7 +279,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: erase
+  name: erase()
   syntax:
     content: erase()
     parameters: []
@@ -290,7 +290,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: get_data_type
+  name: get_data_type()
   syntax:
     content: get_data_type()
     parameters: []
@@ -301,7 +301,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: get_storage_format
+  name: get_storage_format()
   syntax:
     content: get_storage_format()
     parameters: []
@@ -312,7 +312,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: is_read_only
+  name: is_read_only()
   syntax:
     content: is_read_only()
     parameters: []
@@ -323,7 +323,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: is_sparse
+  name: is_sparse()
   syntax:
     content: is_sparse()
     parameters: []
@@ -334,7 +334,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: is_valid
+  name: is_valid()
   syntax:
     content: is_valid()
     parameters: []
@@ -345,7 +345,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: mask
+  name: mask()
   syntax:
     content: mask()
     parameters: []
@@ -356,7 +356,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: masked_count
+  name: masked_count()
   syntax:
     content: masked_count()
     parameters: []
@@ -367,7 +367,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: shape
+  name: shape()
   syntax:
     content: shape()
     parameters: []
@@ -378,7 +378,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: unpack_variable_value
+  name: unpack_variable_value(*args)
   syntax:
     content: unpack_variable_value(*args)
     parameters: []
@@ -397,37 +397,37 @@ items:
 references:
 - fullName: cntk.cntk_py.Value.alias
   isExternal: false
-  name: alias
+  name: alias(readOnly=False)
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.alias
 - fullName: cntk.cntk_py.Value.as_string
   isExternal: false
-  name: as_string
+  name: as_string()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.as_string
 - fullName: cntk.cntk_py.Value.asarray
   isExternal: false
-  name: asarray
+  name: asarray()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.asarray
 - fullName: cntk.cntk_py.Value.copy_from
   isExternal: false
-  name: copy_from
+  name: copy_from(source)
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.copy_from
 - fullName: cntk.cntk_py.Value.copy_variable_value_to
   isExternal: false
-  name: copy_variable_value_to
+  name: copy_variable_value_to(outputVariable, sequences)
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.copy_variable_value_to
 - fullName: cntk.cntk_py.Value.copy_variable_value_to_double
   isExternal: false
-  name: copy_variable_value_to_double
+  name: copy_variable_value_to_double(*args)
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.copy_variable_value_to_double
 - fullName: cntk.cntk_py.Value.copy_variable_value_to_float
   isExternal: false
-  name: copy_variable_value_to_float
+  name: copy_variable_value_to_float(*args)
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.copy_variable_value_to_float
 - fullName: cntk.cntk_py.Value.create
@@ -477,67 +477,67 @@ references:
   uid: cntk.cntk_py.Value.create_sequence_float
 - fullName: cntk.cntk_py.Value.data
   isExternal: false
-  name: data
+  name: data()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.data
 - fullName: cntk.cntk_py.Value.deep_clone
   isExternal: false
-  name: deep_clone
+  name: deep_clone(*args)
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.deep_clone
 - fullName: cntk.cntk_py.Value.device
   isExternal: false
-  name: device
+  name: device()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.device
 - fullName: cntk.cntk_py.Value.erase
   isExternal: false
-  name: erase
+  name: erase()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.erase
 - fullName: cntk.cntk_py.Value.get_data_type
   isExternal: false
-  name: get_data_type
+  name: get_data_type()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.get_data_type
 - fullName: cntk.cntk_py.Value.get_storage_format
   isExternal: false
-  name: get_storage_format
+  name: get_storage_format()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.get_storage_format
 - fullName: cntk.cntk_py.Value.is_read_only
   isExternal: false
-  name: is_read_only
+  name: is_read_only()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.is_read_only
 - fullName: cntk.cntk_py.Value.is_sparse
   isExternal: false
-  name: is_sparse
+  name: is_sparse()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.is_sparse
 - fullName: cntk.cntk_py.Value.is_valid
   isExternal: false
-  name: is_valid
+  name: is_valid()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.is_valid
 - fullName: cntk.cntk_py.Value.mask
   isExternal: false
-  name: mask
+  name: mask()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.mask
 - fullName: cntk.cntk_py.Value.masked_count
   isExternal: false
-  name: masked_count
+  name: masked_count()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.masked_count
 - fullName: cntk.cntk_py.Value.shape
   isExternal: false
-  name: shape
+  name: shape()
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.shape
 - fullName: cntk.cntk_py.Value.unpack_variable_value
   isExternal: false
-  name: unpack_variable_value
+  name: unpack_variable_value(*args)
   parent: cntk.cntk_py.Value
   uid: cntk.cntk_py.Value.unpack_variable_value
 - fullName: cntk.cntk_py.Value.one_hot_skip

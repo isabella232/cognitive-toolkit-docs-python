@@ -95,7 +95,7 @@ items:
   langs:
   - python
   module: cntk.layers.typing
-  name: Signature
+  name: Signature(*args, **kwargs)
   summary: "`@Signature` is a decorator to implement the function-argument annotations\
     \ in Python-2.7,\nas needed by the `@Function` decorator.\nThis is only needed\
     \ when you have not yet migrated to Python 3.x.\n\nNote: Although this is aimed\
@@ -148,7 +148,7 @@ references:
   uid: cntk.layers.typing.SequenceOverMeta
 - fullName: cntk.layers.typing.Signature
   isExternal: false
-  name: Signature
+  name: Signature(*args, **kwargs)
   parent: cntk.layers.typing
   uid: cntk.layers.typing.Signature
 - fullName: cntk.layers.typing.SparseTensor

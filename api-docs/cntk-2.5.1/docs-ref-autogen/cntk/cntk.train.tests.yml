@@ -4,6 +4,7 @@ items:
 - children:
   - cntk.train.tests.distributed_test
   fullName: cntk.train.tests
+  kind: import
   langs:
   - python
   module: cntk.train.tests

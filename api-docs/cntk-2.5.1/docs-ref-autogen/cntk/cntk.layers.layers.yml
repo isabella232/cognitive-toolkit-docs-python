@@ -58,7 +58,7 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: Activation
+  name: Activation(activation=identity, name='')
   summary: 'Layer factory function to create an activation layer.
 
     Activation functions can be used directly in CNTK, so there is no difference between
@@ -111,7 +111,7 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: AveragePooling
+  name: AveragePooling(filter_shape, strides=1, pad=False, name='')
   summary: 'Layer factory function to create an average-pooling layer.
 
 
@@ -191,7 +191,9 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: BatchNormalization
+  name: BatchNormalization(map_rank=None, init_scale=1, normalization_time_constant=5000,
+    blend_time_constant=0, epsilon=0.00001, use_cntk_engine=False, disable_regularization=False,
+    name='')
   summary: 'Layer factory function to create a batch-normalization layer.
 
 
@@ -300,7 +302,10 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: Convolution
+  name: Convolution(filter_shape, num_filters=None, sequential=False, activation=identity,
+    init=glorot_uniform(), pad=False, strides=1, sharing=True, bias=True, init_bias=0,
+    reduction_rank=1, transpose_weight=False, max_temp_mem_size_in_samples=0, op_name='Convolution',
+    name='')
   summary: 'Layer factory function to create a convolution layer.
 
 
@@ -530,7 +535,8 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: Convolution1D
+  name: Convolution1D(filter_shape, num_filters=None, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, bias=True, init_bias=0, reduction_rank=1, name='')
   summary: 'Layer factory function to create a 1D convolution layer with optional
     non-linearity.
 
@@ -648,7 +654,8 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: Convolution2D
+  name: Convolution2D(filter_shape, num_filters=None, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, bias=True, init_bias=0, reduction_rank=1, name='')
   summary: 'Layer factory function to create a 2D convolution layer with optional
     non-linearity.
 
@@ -783,7 +790,8 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: Convolution3D
+  name: Convolution3D(filter_shape, num_filters=None, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, bias=True, init_bias=0, reduction_rank=1, name='')
   summary: 'Layer factory function to create a 3D convolution layer with optional
     non-linearity.
 
@@ -924,7 +932,9 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: ConvolutionTranspose
+  name: ConvolutionTranspose(filter_shape, num_filters, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, sharing=True, bias=True, init_bias=0, output_shape=None,
+    reduction_rank=1, max_temp_mem_size_in_samples=0, name='')
   summary: 'Layer factory function to create a convolution transpose layer.
 
 
@@ -1120,7 +1130,8 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: ConvolutionTranspose1D
+  name: ConvolutionTranspose1D(filter_shape, num_filters, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, bias=True, init_bias=0, output_shape=None, name='')
   summary: 'Layer factory function to create a 1D convolution transpose layer with
     optional non-linearity.
 
@@ -1157,7 +1168,8 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: ConvolutionTranspose2D
+  name: ConvolutionTranspose2D(filter_shape, num_filters, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, bias=True, init_bias=0, output_shape=None, name='')
   summary: 'Layer factory function to create a 2D convolution transpose layer with
     optional non-linearity.
 
@@ -1194,7 +1206,8 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: ConvolutionTranspose3D
+  name: ConvolutionTranspose3D(filter_shape, num_filters, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, bias=True, init_bias=0, output_shape=None, name='')
   summary: 'Layer factory function to create a 3D convolution transpose layer with
     optional non-linearity.
 
@@ -1285,7 +1298,8 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: Dense
+  name: Dense(shape, activation=identity, init=glorot_uniform(), input_rank=None,
+    map_rank=None, bias=True, init_bias=0, name='')
   summary: 'Layer factory function to create an instance of a fully-connected linear
     layer of the form
 
@@ -1424,7 +1438,7 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: Dropout
+  name: Dropout(dropout_rate=None, keep_prob=None, seed=4294967293, name='')
   summary: 'Layer factory function to create a drop-out layer.
 
 
@@ -1499,7 +1513,7 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: Embedding
+  name: Embedding(shape=None, init=glorot_uniform(), weights=None, name='')
   summary: "Layer factory function to create a embedding layer.\n\nAn embedding is\
     \ conceptually a lookup table. For every input token (e.g. a word or any category\
     \ label), the corresponding\nentry in the lookup table is returned.\n\nIn CNTK,\
@@ -1572,7 +1586,7 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: GlobalAveragePooling
+  name: GlobalAveragePooling(name='')
   summary: 'Layer factory function to create a global average-pooling layer.
 
 
@@ -1612,7 +1626,7 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: GlobalMaxPooling
+  name: GlobalMaxPooling(name='')
   summary: 'Layer factory function to create a global max-pooling layer.
 
 
@@ -1650,7 +1664,7 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: Label
+  name: Label(name)
   summary: 'Layer factory function to create a dummy layer with a given name.
 
     This can be used to access an intermediate value flowing through computation.
@@ -1678,7 +1692,7 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: LayerNormalization
+  name: LayerNormalization(initial_scale=1, initial_bias=0, epsilon=0.00001, name='')
   summary: 'Layer factory function to create a function that implements layer normalization.
 
 
@@ -1745,7 +1759,7 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: MaxPooling
+  name: MaxPooling(filter_shape, strides=1, pad=False, name='')
   summary: 'Layer factory function to create a max-pooling layer.
 
 
@@ -1820,7 +1834,7 @@ items:
   langs:
   - python
   module: cntk.layers.layers
-  name: MaxUnpooling
+  name: MaxUnpooling(filter_shape, strides=1, pad=False, name='')
   syntax:
     content: MaxUnpooling(filter_shape, strides=1, pad=False, name='')
     parameters:
@@ -1836,102 +1850,116 @@ items:
 references:
 - fullName: cntk.layers.layers.Activation
   isExternal: false
-  name: Activation
+  name: Activation(activation=identity, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.Activation
 - fullName: cntk.layers.layers.AveragePooling
   isExternal: false
-  name: AveragePooling
+  name: AveragePooling(filter_shape, strides=1, pad=False, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.AveragePooling
 - fullName: cntk.layers.layers.BatchNormalization
   isExternal: false
-  name: BatchNormalization
+  name: BatchNormalization(map_rank=None, init_scale=1, normalization_time_constant=5000,
+    blend_time_constant=0, epsilon=0.00001, use_cntk_engine=False, disable_regularization=False,
+    name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.BatchNormalization
 - fullName: cntk.layers.layers.Convolution
   isExternal: false
-  name: Convolution
+  name: Convolution(filter_shape, num_filters=None, sequential=False, activation=identity,
+    init=glorot_uniform(), pad=False, strides=1, sharing=True, bias=True, init_bias=0,
+    reduction_rank=1, transpose_weight=False, max_temp_mem_size_in_samples=0, op_name='Convolution',
+    name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.Convolution
 - fullName: cntk.layers.layers.Convolution1D
   isExternal: false
-  name: Convolution1D
+  name: Convolution1D(filter_shape, num_filters=None, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, bias=True, init_bias=0, reduction_rank=1, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.Convolution1D
 - fullName: cntk.layers.layers.Convolution2D
   isExternal: false
-  name: Convolution2D
+  name: Convolution2D(filter_shape, num_filters=None, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, bias=True, init_bias=0, reduction_rank=1, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.Convolution2D
 - fullName: cntk.layers.layers.Convolution3D
   isExternal: false
-  name: Convolution3D
+  name: Convolution3D(filter_shape, num_filters=None, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, bias=True, init_bias=0, reduction_rank=1, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.Convolution3D
 - fullName: cntk.layers.layers.ConvolutionTranspose
   isExternal: false
-  name: ConvolutionTranspose
+  name: ConvolutionTranspose(filter_shape, num_filters, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, sharing=True, bias=True, init_bias=0, output_shape=None,
+    reduction_rank=1, max_temp_mem_size_in_samples=0, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.ConvolutionTranspose
 - fullName: cntk.layers.layers.ConvolutionTranspose1D
   isExternal: false
-  name: ConvolutionTranspose1D
+  name: ConvolutionTranspose1D(filter_shape, num_filters, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, bias=True, init_bias=0, output_shape=None, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.ConvolutionTranspose1D
 - fullName: cntk.layers.layers.ConvolutionTranspose2D
   isExternal: false
-  name: ConvolutionTranspose2D
+  name: ConvolutionTranspose2D(filter_shape, num_filters, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, bias=True, init_bias=0, output_shape=None, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.ConvolutionTranspose2D
 - fullName: cntk.layers.layers.ConvolutionTranspose3D
   isExternal: false
-  name: ConvolutionTranspose3D
+  name: ConvolutionTranspose3D(filter_shape, num_filters, activation=identity, init=glorot_uniform(),
+    pad=False, strides=1, bias=True, init_bias=0, output_shape=None, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.ConvolutionTranspose3D
 - fullName: cntk.layers.layers.Dense
   isExternal: false
-  name: Dense
+  name: Dense(shape, activation=identity, init=glorot_uniform(), input_rank=None,
+    map_rank=None, bias=True, init_bias=0, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.Dense
 - fullName: cntk.layers.layers.Dropout
   isExternal: false
-  name: Dropout
+  name: Dropout(dropout_rate=None, keep_prob=None, seed=4294967293, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.Dropout
 - fullName: cntk.layers.layers.Embedding
   isExternal: false
-  name: Embedding
+  name: Embedding(shape=None, init=glorot_uniform(), weights=None, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.Embedding
 - fullName: cntk.layers.layers.GlobalAveragePooling
   isExternal: false
-  name: GlobalAveragePooling
+  name: GlobalAveragePooling(name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.GlobalAveragePooling
 - fullName: cntk.layers.layers.GlobalMaxPooling
   isExternal: false
-  name: GlobalMaxPooling
+  name: GlobalMaxPooling(name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.GlobalMaxPooling
 - fullName: cntk.layers.layers.Label
   isExternal: false
-  name: Label
+  name: Label(name)
   parent: cntk.layers.layers
   uid: cntk.layers.layers.Label
 - fullName: cntk.layers.layers.LayerNormalization
   isExternal: false
-  name: LayerNormalization
+  name: LayerNormalization(initial_scale=1, initial_bias=0, epsilon=0.00001, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.LayerNormalization
 - fullName: cntk.layers.layers.MaxPooling
   isExternal: false
-  name: MaxPooling
+  name: MaxPooling(filter_shape, strides=1, pad=False, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.MaxPooling
 - fullName: cntk.layers.layers.MaxUnpooling
   isExternal: false
-  name: MaxUnpooling
+  name: MaxUnpooling(filter_shape, strides=1, pad=False, name='')
   parent: cntk.layers.layers
   uid: cntk.layers.layers.MaxUnpooling
 - fullName: <xref:cntk.ops.functions.Function>, defaults to identity

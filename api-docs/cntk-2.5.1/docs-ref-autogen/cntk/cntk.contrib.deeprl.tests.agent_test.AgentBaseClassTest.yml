@@ -34,7 +34,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.agent_test
-  name: test_init_box_observation_space
+  name: test_init_box_observation_space()
   syntax:
     content: test_init_box_observation_space()
     parameters: []
@@ -45,7 +45,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.agent_test
-  name: test_init_discrete_observation_space
+  name: test_init_discrete_observation_space()
   syntax:
     content: test_init_discrete_observation_space()
     parameters: []
@@ -56,7 +56,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.agent_test
-  name: test_init_multibinary_observation_space
+  name: test_init_multibinary_observation_space()
   syntax:
     content: test_init_multibinary_observation_space()
     parameters: []
@@ -67,7 +67,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.agent_test
-  name: test_init_unsupported_action_space
+  name: test_init_unsupported_action_space()
   syntax:
     content: test_init_unsupported_action_space()
     parameters: []
@@ -78,7 +78,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.agent_test
-  name: test_init_unsupported_observation_space
+  name: test_init_unsupported_observation_space()
   syntax:
     content: test_init_unsupported_observation_space()
     parameters: []
@@ -87,26 +87,26 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_box_observation_space
   isExternal: false
-  name: test_init_box_observation_space
+  name: test_init_box_observation_space()
   parent: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
   uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_box_observation_space
 - fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_discrete_observation_space
   isExternal: false
-  name: test_init_discrete_observation_space
+  name: test_init_discrete_observation_space()
   parent: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
   uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_discrete_observation_space
 - fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_multibinary_observation_space
   isExternal: false
-  name: test_init_multibinary_observation_space
+  name: test_init_multibinary_observation_space()
   parent: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
   uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_multibinary_observation_space
 - fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_action_space
   isExternal: false
-  name: test_init_unsupported_action_space
+  name: test_init_unsupported_action_space()
   parent: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
   uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_action_space
 - fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_observation_space
   isExternal: false
-  name: test_init_unsupported_observation_space
+  name: test_init_unsupported_observation_space()
   parent: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
   uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_observation_space

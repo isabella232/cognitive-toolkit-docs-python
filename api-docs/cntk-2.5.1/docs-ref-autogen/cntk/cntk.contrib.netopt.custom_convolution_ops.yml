@@ -21,7 +21,7 @@ items:
   langs:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
-  name: CustomMultibit
+  name: CustomMultibit(input, bit_map, mean_bits=None)
   syntax:
     content: CustomMultibit(input, bit_map, mean_bits=None)
     parameters:
@@ -35,7 +35,7 @@ items:
   langs:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
-  name: CustomMultibitKernel
+  name: CustomMultibitKernel(input, bit_map, mean_bits=None)
   syntax:
     content: CustomMultibitKernel(input, bit_map, mean_bits=None)
     parameters:
@@ -49,7 +49,7 @@ items:
   langs:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
-  name: CustomPySign
+  name: CustomPySign(input)
   syntax:
     content: CustomPySign(input)
     parameters:
@@ -60,7 +60,7 @@ items:
   langs:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
-  name: CustomSign
+  name: CustomSign(input)
   syntax:
     content: CustomSign(input)
     parameters:
@@ -70,22 +70,22 @@ items:
 references:
 - fullName: cntk.contrib.netopt.custom_convolution_ops.CustomMultibit
   isExternal: false
-  name: CustomMultibit
+  name: CustomMultibit(input, bit_map, mean_bits=None)
   parent: cntk.contrib.netopt.custom_convolution_ops
   uid: cntk.contrib.netopt.custom_convolution_ops.CustomMultibit
 - fullName: cntk.contrib.netopt.custom_convolution_ops.CustomMultibitKernel
   isExternal: false
-  name: CustomMultibitKernel
+  name: CustomMultibitKernel(input, bit_map, mean_bits=None)
   parent: cntk.contrib.netopt.custom_convolution_ops
   uid: cntk.contrib.netopt.custom_convolution_ops.CustomMultibitKernel
 - fullName: cntk.contrib.netopt.custom_convolution_ops.CustomPySign
   isExternal: false
-  name: CustomPySign
+  name: CustomPySign(input)
   parent: cntk.contrib.netopt.custom_convolution_ops
   uid: cntk.contrib.netopt.custom_convolution_ops.CustomPySign
 - fullName: cntk.contrib.netopt.custom_convolution_ops.CustomSign
   isExternal: false
-  name: CustomSign
+  name: CustomSign(input)
   parent: cntk.contrib.netopt.custom_convolution_ops
   uid: cntk.contrib.netopt.custom_convolution_ops.CustomSign
 - fullName: cntk.contrib.netopt.custom_convolution_ops.Multibit
