@@ -5,6 +5,7 @@ items:
   - cntk.contrib.crosstalkcaffe.utils.format
   - cntk.contrib.crosstalkcaffe.utils.globalconf
   fullName: cntk.contrib.crosstalkcaffe.utils
+  kind: import
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.utils

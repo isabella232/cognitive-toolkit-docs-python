@@ -28,6 +28,7 @@ items:
   - cntk.tests
   - cntk.train
   fullName: cntk
+  kind: import
   langs:
   - python
   module: cntk

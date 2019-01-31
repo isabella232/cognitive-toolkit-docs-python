@@ -165,7 +165,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: avg_loss_since_last
+  name: avg_loss_since_last()
   summary: 'DEPRECATED.
 
 
@@ -182,7 +182,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: avg_loss_since_start
+  name: avg_loss_since_start()
   summary: 'DEPRECATED.
 
 
@@ -199,7 +199,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: avg_metric_since_last
+  name: avg_metric_since_last()
   summary: 'DEPRECATED.
 
 
@@ -216,7 +216,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: avg_metric_since_start
+  name: avg_metric_since_start()
   summary: 'DEPRECATED.
 
 
@@ -233,7 +233,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: end_progress_print
+  name: end_progress_print(msg='')
   summary: 'Prints the given message signifying the end of training.
 
     '
@@ -254,7 +254,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: epoch_summary
+  name: epoch_summary(with_metric=False)
   summary: 'DEPRECATED.
 
 
@@ -281,7 +281,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: log
+  name: log(message)
   summary: 'Prints any message the user wishes to place in the log.
 
     '
@@ -301,7 +301,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_training_update_end
+  name: on_training_update_end()
   syntax:
     content: on_training_update_end()
     parameters: []
@@ -312,7 +312,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_distributed_sync_update
+  name: on_write_distributed_sync_update(samples, updates, aggregate_metric)
   syntax:
     content: on_write_distributed_sync_update(samples, updates, aggregate_metric)
     parameters:
@@ -326,7 +326,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_test_summary
+  name: on_write_test_summary(samples, updates, summaries, aggregate_metric, elapsed_milliseconds)
   syntax:
     content: on_write_test_summary(samples, updates, summaries, aggregate_metric,
       elapsed_milliseconds)
@@ -343,7 +343,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_test_update
+  name: on_write_test_update(samples, updates, aggregate_metric)
   syntax:
     content: on_write_test_update(samples, updates, aggregate_metric)
     parameters:
@@ -357,7 +357,8 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_training_summary
+  name: on_write_training_summary(samples, updates, summaries, aggregate_loss, aggregate_metric,
+    elapsed_milliseconds)
   syntax:
     content: on_write_training_summary(samples, updates, summaries, aggregate_loss,
       aggregate_metric, elapsed_milliseconds)
@@ -375,7 +376,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_training_update
+  name: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
   syntax:
     content: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
     parameters:
@@ -390,7 +391,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: reset_last
+  name: reset_last()
   summary: 'DEPRECATED.
 
 
@@ -411,7 +412,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: reset_start
+  name: reset_start()
   summary: 'DEPRECATED.
 
 
@@ -432,7 +433,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: update
+  name: update(loss, minibatch_size, metric=None)
   summary: 'DEPRECATED.
 
 
@@ -471,7 +472,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: update_with_trainer
+  name: update_with_trainer(trainer, with_metric=False)
   summary: 'DEPRECATED.
 
 
@@ -504,7 +505,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: write
+  name: write(key, value)
   syntax:
     content: write(key, value)
     parameters:
@@ -515,92 +516,93 @@ items:
 references:
 - fullName: cntk.logging.progress_print.ProgressPrinter.avg_loss_since_last
   isExternal: false
-  name: avg_loss_since_last
+  name: avg_loss_since_last()
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.avg_loss_since_last
 - fullName: cntk.logging.progress_print.ProgressPrinter.avg_loss_since_start
   isExternal: false
-  name: avg_loss_since_start
+  name: avg_loss_since_start()
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.avg_loss_since_start
 - fullName: cntk.logging.progress_print.ProgressPrinter.avg_metric_since_last
   isExternal: false
-  name: avg_metric_since_last
+  name: avg_metric_since_last()
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.avg_metric_since_last
 - fullName: cntk.logging.progress_print.ProgressPrinter.avg_metric_since_start
   isExternal: false
-  name: avg_metric_since_start
+  name: avg_metric_since_start()
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.avg_metric_since_start
 - fullName: cntk.logging.progress_print.ProgressPrinter.end_progress_print
   isExternal: false
-  name: end_progress_print
+  name: end_progress_print(msg='')
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.end_progress_print
 - fullName: cntk.logging.progress_print.ProgressPrinter.epoch_summary
   isExternal: false
-  name: epoch_summary
+  name: epoch_summary(with_metric=False)
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.epoch_summary
 - fullName: cntk.logging.progress_print.ProgressPrinter.log
   isExternal: false
-  name: log
+  name: log(message)
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.log
 - fullName: cntk.logging.progress_print.ProgressPrinter.on_training_update_end
   isExternal: false
-  name: on_training_update_end
+  name: on_training_update_end()
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.on_training_update_end
 - fullName: cntk.logging.progress_print.ProgressPrinter.on_write_distributed_sync_update
   isExternal: false
-  name: on_write_distributed_sync_update
+  name: on_write_distributed_sync_update(samples, updates, aggregate_metric)
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.on_write_distributed_sync_update
 - fullName: cntk.logging.progress_print.ProgressPrinter.on_write_test_summary
   isExternal: false
-  name: on_write_test_summary
+  name: on_write_test_summary(samples, updates, summaries, aggregate_metric, elapsed_milliseconds)
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.on_write_test_summary
 - fullName: cntk.logging.progress_print.ProgressPrinter.on_write_test_update
   isExternal: false
-  name: on_write_test_update
+  name: on_write_test_update(samples, updates, aggregate_metric)
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.on_write_test_update
 - fullName: cntk.logging.progress_print.ProgressPrinter.on_write_training_summary
   isExternal: false
-  name: on_write_training_summary
+  name: on_write_training_summary(samples, updates, summaries, aggregate_loss, aggregate_metric,
+    elapsed_milliseconds)
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.on_write_training_summary
 - fullName: cntk.logging.progress_print.ProgressPrinter.on_write_training_update
   isExternal: false
-  name: on_write_training_update
+  name: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.on_write_training_update
 - fullName: cntk.logging.progress_print.ProgressPrinter.reset_last
   isExternal: false
-  name: reset_last
+  name: reset_last()
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.reset_last
 - fullName: cntk.logging.progress_print.ProgressPrinter.reset_start
   isExternal: false
-  name: reset_start
+  name: reset_start()
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.reset_start
 - fullName: cntk.logging.progress_print.ProgressPrinter.update
   isExternal: false
-  name: update
+  name: update(loss, minibatch_size, metric=None)
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.update
 - fullName: cntk.logging.progress_print.ProgressPrinter.update_with_trainer
   isExternal: false
-  name: update_with_trainer
+  name: update_with_trainer(trainer, with_metric=False)
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.update_with_trainer
 - fullName: cntk.logging.progress_print.ProgressPrinter.write
   isExternal: false
-  name: write
+  name: write(key, value)
   parent: cntk.logging.progress_print.ProgressPrinter
   uid: cntk.logging.progress_print.ProgressPrinter.write
 - fullName: None, default None

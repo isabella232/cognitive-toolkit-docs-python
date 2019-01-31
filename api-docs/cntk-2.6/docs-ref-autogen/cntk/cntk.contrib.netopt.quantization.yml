@@ -17,7 +17,7 @@ items:
   langs:
   - python
   module: cntk.contrib.netopt.quantization
-  name: binarize_convolution
+  name: binarize_convolution(model, train_function, filter_function=None)
   summary: 'Replace Convolution layers in the model to Halide implementations of
 
     binarized convolutions.
@@ -57,7 +57,9 @@ items:
   langs:
   - python
   module: cntk.contrib.netopt.quantization
-  name: binary_convolution
+  name: binary_convolution(filter_shape, num_filters=1, channels=1, init=<cntk.cntk_py.Dictionary;
+    proxy of <Swig Object of type 'CNTK::ImageTransform *'> >, pad=False, strides=1,
+    name='BinaryConvolution')
   summary: 'Creates a binary convolution function based on the input parameters.
 
     '
@@ -81,7 +83,7 @@ items:
         '
       id: init
     - defaultValue: <cntk.cntk_py.Dictionary; proxy of <Swig Object of type 'CNTK::ImageTransform
-        *' at 0x0000022056F0F810> >
+        *' at 0x0000018A83C24690> >
       description: 'padding enabled or not for the filter
 
         '
@@ -108,7 +110,7 @@ items:
   langs:
   - python
   module: cntk.contrib.netopt.quantization
-  name: convert_to_binary_convolution
+  name: convert_to_binary_convolution(model, filter_function=None)
   summary: 'Replace convolution functions in the model with binary convolutions.
 
     The function replaces the convolution function inside the
@@ -140,7 +142,7 @@ items:
   langs:
   - python
   module: cntk.contrib.netopt.quantization
-  name: convert_to_native_binary_convolution
+  name: convert_to_native_binary_convolution(model)
   summary: 'Clones a binary convolution network, sharing the original parameters
 
     but substitutes the python ''BinaryConvolution'' Function instances
@@ -168,21 +170,23 @@ items:
 references:
 - fullName: cntk.contrib.netopt.quantization.binarize_convolution
   isExternal: false
-  name: binarize_convolution
+  name: binarize_convolution(model, train_function, filter_function=None)
   parent: cntk.contrib.netopt.quantization
   uid: cntk.contrib.netopt.quantization.binarize_convolution
 - fullName: cntk.contrib.netopt.quantization.binary_convolution
   isExternal: false
-  name: binary_convolution
+  name: binary_convolution(filter_shape, num_filters=1, channels=1, init=<cntk.cntk_py.Dictionary;
+    proxy of <Swig Object of type 'CNTK::ImageTransform *'> >, pad=False, strides=1,
+    name='BinaryConvolution')
   parent: cntk.contrib.netopt.quantization
   uid: cntk.contrib.netopt.quantization.binary_convolution
 - fullName: cntk.contrib.netopt.quantization.convert_to_binary_convolution
   isExternal: false
-  name: convert_to_binary_convolution
+  name: convert_to_binary_convolution(model, filter_function=None)
   parent: cntk.contrib.netopt.quantization
   uid: cntk.contrib.netopt.quantization.convert_to_binary_convolution
 - fullName: cntk.contrib.netopt.quantization.convert_to_native_binary_convolution
   isExternal: false
-  name: convert_to_native_binary_convolution
+  name: convert_to_native_binary_convolution(model)
   parent: cntk.contrib.netopt.quantization
   uid: cntk.contrib.netopt.quantization.convert_to_native_binary_convolution

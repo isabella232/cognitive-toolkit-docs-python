@@ -81,7 +81,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: ConstantDouble
+  name: ConstantDouble(*args)
   syntax:
     content: ConstantDouble(*args)
   type: function
@@ -90,7 +90,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: ConstantFloat
+  name: ConstantFloat(*args)
   syntax:
     content: ConstantFloat(*args)
   type: function
@@ -99,7 +99,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: DictionaryValueFromDict
+  name: DictionaryValueFromDict(value)
   syntax:
     content: DictionaryValueFromDict(value)
     parameters:
@@ -110,7 +110,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: DictionaryValueFromNDArrayView
+  name: DictionaryValueFromNDArrayView(value)
   syntax:
     content: DictionaryValueFromNDArrayView(value)
     parameters:
@@ -121,7 +121,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: DictionaryValueFromTrainingDoubleParameterSchedule
+  name: DictionaryValueFromTrainingDoubleParameterSchedule(value)
   syntax:
     content: DictionaryValueFromTrainingDoubleParameterSchedule(value)
     parameters:
@@ -132,7 +132,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: NDArrayViewDouble
+  name: NDArrayViewDouble(*args)
   syntax:
     content: NDArrayViewDouble(*args)
   type: function
@@ -141,7 +141,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: NDArrayViewFloat
+  name: NDArrayViewFloat(*args)
   syntax:
     content: NDArrayViewFloat(*args)
   type: function
@@ -150,7 +150,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: ParameterDouble
+  name: ParameterDouble(*args)
   syntax:
     content: ParameterDouble(*args)
   type: function
@@ -159,7 +159,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: ParameterFloat
+  name: ParameterFloat(*args)
   syntax:
     content: ParameterFloat(*args)
   type: function
@@ -202,12 +202,12 @@ references:
   uid: cntk.cntk_py.Constant
 - fullName: cntk.cntk_py.ConstantDouble
   isExternal: false
-  name: ConstantDouble
+  name: ConstantDouble(*args)
   parent: cntk.cntk_py
   uid: cntk.cntk_py.ConstantDouble
 - fullName: cntk.cntk_py.ConstantFloat
   isExternal: false
-  name: ConstantFloat
+  name: ConstantFloat(*args)
   parent: cntk.cntk_py
   uid: cntk.cntk_py.ConstantFloat
 - fullName: cntk.cntk_py.CrossValidationConfig
@@ -252,17 +252,17 @@ references:
   uid: cntk.cntk_py.DictionaryValue
 - fullName: cntk.cntk_py.DictionaryValueFromDict
   isExternal: false
-  name: DictionaryValueFromDict
+  name: DictionaryValueFromDict(value)
   parent: cntk.cntk_py
   uid: cntk.cntk_py.DictionaryValueFromDict
 - fullName: cntk.cntk_py.DictionaryValueFromNDArrayView
   isExternal: false
-  name: DictionaryValueFromNDArrayView
+  name: DictionaryValueFromNDArrayView(value)
   parent: cntk.cntk_py
   uid: cntk.cntk_py.DictionaryValueFromNDArrayView
 - fullName: cntk.cntk_py.DictionaryValueFromTrainingDoubleParameterSchedule
   isExternal: false
-  name: DictionaryValueFromTrainingDoubleParameterSchedule
+  name: DictionaryValueFromTrainingDoubleParameterSchedule(value)
   parent: cntk.cntk_py
   uid: cntk.cntk_py.DictionaryValueFromTrainingDoubleParameterSchedule
 - fullName: cntk.cntk_py.DistributedCommunicator
@@ -342,12 +342,12 @@ references:
   uid: cntk.cntk_py.NDArrayView
 - fullName: cntk.cntk_py.NDArrayViewDouble
   isExternal: false
-  name: NDArrayViewDouble
+  name: NDArrayViewDouble(*args)
   parent: cntk.cntk_py
   uid: cntk.cntk_py.NDArrayViewDouble
 - fullName: cntk.cntk_py.NDArrayViewFloat
   isExternal: false
-  name: NDArrayViewFloat
+  name: NDArrayViewFloat(*args)
   parent: cntk.cntk_py
   uid: cntk.cntk_py.NDArrayViewFloat
 - fullName: cntk.cntk_py.NDMask
@@ -372,12 +372,12 @@ references:
   uid: cntk.cntk_py.Parameter
 - fullName: cntk.cntk_py.ParameterDouble
   isExternal: false
-  name: ParameterDouble
+  name: ParameterDouble(*args)
   parent: cntk.cntk_py
   uid: cntk.cntk_py.ParameterDouble
 - fullName: cntk.cntk_py.ParameterFloat
   isExternal: false
-  name: ParameterFloat
+  name: ParameterFloat(*args)
   parent: cntk.cntk_py
   uid: cntk.cntk_py.ParameterFloat
 - fullName: cntk.cntk_py.ProgressWriter

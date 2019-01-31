@@ -131,6 +131,7 @@ items:
   - cntk.ops.sequence
   - cntk.ops.tests
   fullName: cntk.ops
+  kind: import
   langs:
   - python
   module: cntk.ops
@@ -158,7 +159,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: abs
+  name: abs(x, name='')
   summary: 'Computes the element-wise absolute of `x`:
 
 
@@ -190,7 +191,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: acos
+  name: acos(x, name='')
   summary: 'Computes the element-wise arccos (inverse cosine) of `x`:
 
 
@@ -221,7 +222,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: alias
+  name: alias(x, name='')
   summary: "   Create a new Function instance which just aliases the specified 'x'\
     \ Function/Variable\n   such that the 'Output' of the new 'Function' is same as\
     \ the 'Output' of the specified\n   'x' Function/Variable, and has the newly specified\
@@ -258,7 +259,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: argmax
+  name: argmax(x, axis=None, name='')
   summary: 'Computes the argmax of the input tensor''s elements across the specified
     axis.
 
@@ -307,7 +308,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: argmin
+  name: argmin(x, axis=None, name='')
   summary: 'Computes the argmin of the input tensor''s elements across the specified
     axis.
 
@@ -351,7 +352,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: as_block
+  name: as_block(composite, block_arguments_map, block_op_name, block_instance_name='')
   summary: "   Create a new block Function instance which just encapsulates the specified\
     \ composite Function\n   to create a new Function that appears to be a primitive.\
     \ All the arguments of the composite\n   being encapsulated must be Placeholder\
@@ -396,7 +397,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: as_composite
+  name: as_composite(root_function, name='')
   summary: "   Creates a composite Function that has the specified root_function as\
     \ its root.\n   The composite denotes a higher-level Function encapsulating the\
     \ entire graph\n   of Functions underlying the specified rootFunction.\n"
@@ -427,7 +428,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: asin
+  name: asin(x, name='')
   summary: 'Computes the element-wise arcsin (inverse sine) of `x`:
 
 
@@ -461,7 +462,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: asinh
+  name: asinh(x, name='')
   summary: 'Computes the element-wise asinh of `x`:
 
 
@@ -507,7 +508,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: assign
+  name: assign(ref, input, name='')
   summary: 'Assign the value in input to ref and return the new value, ref need to
     be the same layout as input.
 
@@ -637,7 +638,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: associative_multi_arg
+  name: associative_multi_arg(f)
   summary: 'The output of this operation is the result of an operation (*plus*, *log_add_exp*,
     *element_times*, *element_max*, *element_min*)
 
@@ -684,7 +685,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: atan
+  name: atan(x, name='')
   summary: 'Computes the element-wise arctan (inverse tangent) of `x`:
 
 
@@ -718,7 +719,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: atanh
+  name: atanh(x, name='')
   summary: 'Computes the element-wise atanh of `x`:
 
 
@@ -749,7 +750,9 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: batch_normalization
+  name: batch_normalization(operand, scale, bias, running_mean, running_inv_std, spatial,
+    normalization_time_constant=5000, blend_time_constant=0, epsilon=1e-05, use_cudnn_engine=False,
+    disable_regularization=False, name='', running_count=None)
   summary: 'Normalizes layer outputs for every minibatch for each output (feature)
     independently
 
@@ -858,7 +861,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: cast
+  name: cast(node_input, dtype, name='')
   summary: 'cast input to dtype, with the same shape and dynamic axes. This function
     currently only support forward.
 
@@ -895,7 +898,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: ceil
+  name: ceil(arg, name='')
   summary: 'The output of this operation is the element wise value rounded to the
     smallest
 
@@ -950,7 +953,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: clip
+  name: clip(x, min_value, max_value, name='')
   summary: 'Computes a tensor with all of its values clipped to fall
 
     between `min_value` and `max_value`, i.e.
@@ -1013,7 +1016,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: combine
+  name: combine(*operands, **kw_name)
   summary: "   Create a new Function instance which just combines the outputs of the\
     \ specified list of\n   'operands' Functions such that the 'Outputs' of the new\
     \ 'Function' are union of the\n   'Outputs' of each of the specified 'operands'\
@@ -1050,7 +1053,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: constant
+  name: constant(value=None, shape=None, dtype=None, device=None, name='')
   summary: 'It creates a constant tensor initialized from a numpy array.
 
     '
@@ -1116,7 +1119,9 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: convolution
+  name: convolution(convolution_map, operand, strides=(1,), sharing=[True], auto_padding=[True],
+    sequential=False, dilation=(1,), reduction_rank=1, groups=1, max_temp_mem_size_in_samples=0,
+    name='')
   summary: "Computes the convolution of `convolution_map` (typically a tensor of learnable\
     \ parameters) with\n`operand` (commonly an image or output of a previous convolution/pooling\
     \ operation).\nThis operation is used in image and language processing applications.\
@@ -1258,7 +1263,9 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: convolution_transpose
+  name: convolution_transpose(convolution_map, operand, strides=(1,), sharing=[True],
+    auto_padding=[True], output_shape=None, dilation=(1,), reduction_rank=1, max_temp_mem_size_in_samples=0,
+    name='')
   summary: "Computes the transposed convolution of `convolution_map` (typically a\
     \ tensor of learnable parameters) with\n`operand` (commonly an image or output\
     \ of a previous convolution/pooling operation).\nThis is also known as `fractionally\
@@ -1378,7 +1385,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: cos
+  name: cos(x, name='')
   summary: 'Computes the element-wise cosine of `x`:
 
 
@@ -1412,7 +1419,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: cosh
+  name: cosh(x, name='')
   summary: 'Computes the element-wise cosh of `x`:
 
 
@@ -1443,7 +1450,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: crop_automatic
+  name: crop_automatic(node_input, node_referent, name='')
   summary: 'Crops input along spatial dimensions so that it matches spatial size of
     reference input.
 
@@ -1489,7 +1496,8 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: crop_automatic_with_ancestors
+  name: crop_automatic_with_ancestors(node_input, node_referent, ancestor_input, ancestor_referent,
+    name='')
   summary: 'Crops input along spatial dimensions so that it matches spatial size of
     reference input.
 
@@ -1566,7 +1574,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: crop_manual
+  name: crop_manual(node_input, node_referent, offset_x, offset_y, name='')
   summary: 'Crops input along spatial dimensions so that it matches spatial size of
     reference input.
 
@@ -1614,7 +1622,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: custom_proxy_op
+  name: custom_proxy_op(custom_op, output_shape, output_data_type, *operands, **kw_name)
   summary: 'A proxy node that helps saving a model with different number of operands.
 
 
@@ -1646,7 +1654,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: depth_to_space
+  name: depth_to_space(operand, block_size, name='')
   seealsoContent: '  [1] W. Shi et. al. [: Real-Time Single Image and Video Super-Resolution
     Using an Efficient Sub-Pixel Convolutional Neural Network](https://arxiv.org/abs/1609.05158).
 
@@ -1705,7 +1713,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: dropout
+  name: dropout(x, dropout_rate=0.0, seed=4294967293, name='')
   summary: 'Each element of the input is independently set to 0 with probability `dropout_rate`
 
     or to 1 / (1 - `dropout_rate`) times its original value (with probability 1-`dropout_rate`).
@@ -1771,7 +1779,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: element_and
+  name: element_and(x, y, name='')
   summary: 'Computes the element-wise logic AND of `x`.
 
     '
@@ -1823,7 +1831,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: element_divide
+  name: element_divide(left, right, name='')
   summary: 'The output of this operation is the element-wise division of the two input
 
     tensors. It supports broadcasting.
@@ -1856,7 +1864,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: element_max
+  name: element_max(left, right, name='')
   summary: 'The output of this operation is the element-wise max of the two or more
     input
 
@@ -1894,7 +1902,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: element_min
+  name: element_min(left, right, name='')
   summary: 'The output of this operation is the element-wise min of the two or more
     input
 
@@ -1945,7 +1953,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: element_not
+  name: element_not(x, name='')
   summary: 'Computes the element-wise logic NOT of `x` and `y`.
 
     '
@@ -1988,7 +1996,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: element_or
+  name: element_or(x, y, name='')
   summary: 'Computes the element-wise logic OR of `x` and `y`.
 
     '
@@ -2032,7 +2040,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: element_select
+  name: element_select(flag, value_if_true, value_if_false, name='')
   summary: 'return either `value_if_true` or `value_if_false` based on the value of
     `flag`.
 
@@ -2107,7 +2115,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: element_times
+  name: element_times(left, right, name='')
   summary: 'The output of this operation is the element-wise product of the two or
     more input
 
@@ -2158,7 +2166,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: element_xor
+  name: element_xor(x, y, name='')
   summary: 'Computes the element-wise logic XOR of `x` and `y`.
 
     '
@@ -2201,7 +2209,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: elu
+  name: elu(x, alpha=1.0, name='')
   summary: 'Exponential linear unit operation. Computes the element-wise exponential
     linear
 
@@ -2263,7 +2271,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: equal
+  name: equal(left, right, name='')
   summary: 'Elementwise ''equal'' comparison of two tensors. Result is 1 if values
     are equal 0 otherwise.
 
@@ -2308,7 +2316,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: exp
+  name: exp(x, name='')
   summary: 'Computes the element-wise exponential of `x`:
 
 
@@ -2343,7 +2351,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: expand_dims
+  name: expand_dims(x, axis, name='')
   summary: '   Adds a singleton (size 1) axis at position `axis`.
 
     '
@@ -2378,7 +2386,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: eye_like
+  name: eye_like(x, sparse_output=True, name='')
   summary: "Creates a matrix with diagonal set to 1s and of the same shape and the\
     \ same dynamic axes as `x`. To be a matrix,\n   `x` must have exactly two axes\
     \ (counting both dynamic and static axes).\n"
@@ -2413,7 +2421,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: flatten
+  name: flatten(x, axis=None, name='')
   summary: 'Flattens the input tensor into a 2D matrix.
 
     If the input tensor has shape (d_0, d_1, ... d_n) then the output will have shape
@@ -2457,7 +2465,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: floor
+  name: floor(arg, name='')
   summary: 'The output of this operation is the element wise value rounded to the
     largest
 
@@ -2487,7 +2495,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: forward_backward
+  name: forward_backward(graph, features, blankTokenId, delayConstraint=-1, name='')
   summary: "Criterion node for training methods that rely on forward-backward Viterbi-like\
     \ passes, e.g. Connectionist Temporal Classification (CTC) training\nThe node\
     \ takes as the input the graph of labels, produced by the labels_to_graph operation\
@@ -2534,7 +2542,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: gather
+  name: gather(reference, indices, axis=None, name='')
   summary: 'Retrieves the elements of indices in the tensor reference.
 
     '
@@ -2598,7 +2606,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: greater
+  name: greater(left, right, name='')
   summary: 'Elementwise ''greater'' comparison of two tensors. Result is 1 if left
     > right else 0.
 
@@ -2654,7 +2662,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: greater_equal
+  name: greater_equal(left, right, name='')
   summary: 'Elementwise ''greater equal'' comparison of two tensors. Result is 1 if
     left >= right else 0.
 
@@ -2703,7 +2711,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: hard_sigmoid
+  name: hard_sigmoid(x, alpha, beta, name='')
   summary: 'Computes the element-wise HardSigmoid function, y = max(0, min(1, alpha
     * x + beta)).
 
@@ -2768,7 +2776,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: hardmax
+  name: hardmax(x, name='')
   summary: 'Creates a tensor with the same shape as the input tensor, with zeros everywhere
     and a 1.0 where the
 
@@ -2800,7 +2808,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: image_scaler
+  name: image_scaler(x, scalar, biases, name='')
   summary: 'Alteration of image by scaling its individual values.
 
     '
@@ -2838,7 +2846,8 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: input
+  name: input(shape, dtype=<cntk.default_options.default_override_or object>, needs_gradient=False,
+    is_sparse=False, dynamic_axes=[Axis('defaultBatchAxis')], name='')
   summary: 'DEPRECATED.
 
 
@@ -2902,7 +2911,8 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: input_variable
+  name: input_variable(shape, dtype=np.float32, needs_gradient=False, is_sparse=False,
+    dynamic_axes=[Axis.default_batch_axis()], name='')
   summary: 'It creates an input in the network: a place where data,
 
     such as features and labels, should be provided.
@@ -2977,7 +2987,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: labels_to_graph
+  name: labels_to_graph(labels, name='')
   summary: 'Conversion node from labels to graph. Typically used as an input to ForwardBackward
     node.
 
@@ -3015,7 +3025,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: leaky_relu
+  name: leaky_relu(x, alpha=0.01, name='')
   summary: 'Leaky Rectified linear operation. Computes the element-wise leaky rectified
     linear
 
@@ -3083,7 +3093,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: less
+  name: less(left, right, name='')
   summary: 'Elementwise ''less'' comparison of two tensors. Result is 1 if left <
     right else 0.
 
@@ -3139,7 +3149,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: less_equal
+  name: less_equal(left, right, name='')
   summary: 'Elementwise ''less equal'' comparison of two tensors. Result is 1 if left
     <= right else 0.
 
@@ -3171,7 +3181,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: local_response_normalization
+  name: local_response_normalization(operand, depth_radius, bias, alpha, beta, name='')
   summary: "Local Response Normalization layer. See Section 3.3 of the paper:\n\n\
     [https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)\n\
     \nThe mathematical equation is:\n\n`b_{x,y}^i=a_{x,y}^i/(bias+\alpha\\sum_{j=max(0,i-depth_radius)}^{min(N-1,\
@@ -3239,12 +3249,30 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: log
-  summary: "Computes the element-wise the natural logarithm of `x`:\n\nNote: CNTK\
-    \ returns -85.1 for log(x) if `x` is negative or zero. The reason is that it uses\
-    \ 1e-37 (whose natural logarithm is -85.1) as the smallest float number for *log*,\
-    \ because this is the only guaranteed precision across platforms. This will be\
-    \ changed to return *NaN* and *-inf*. \n"
+  name: log(x, name='')
+  summary: 'Computes the element-wise the natural logarithm of `x`:
+
+
+
+    > [!NOTE]
+
+    > CNTK returns -85.1 for log(x) if x is negative or zero. The reason is that
+
+    >
+
+    > it uses 1e-37 (whose natural logarithm is -85.1) as the smallest float
+
+    >
+
+    > number for log, because this is the only guaranteed precision across
+
+    >
+
+    > platforms. This will be changed to return NaN and -inf.
+
+    >
+
+    '
   syntax:
     content: log(x, name='')
     parameters:
@@ -3288,7 +3316,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: log_add_exp
+  name: log_add_exp(left, right, name='')
   summary: 'Calculates the log of the sum of the exponentials
 
     of the two or more input tensors. It supports broadcasting.
@@ -3325,7 +3353,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: log_softmax
+  name: log_softmax(x, axis=None, name='')
   summary: 'Computes the logsoftmax normalized values of x. That is, y = x - log(reduce_sum(exp(x),
     axis))
 
@@ -3392,7 +3420,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: mean
+  name: mean(*operands, **kw_name)
   summary: '   Create a new Function instance that computes element-wise mean of input
     tensors.
 
@@ -3431,7 +3459,8 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: mean_variance_normalization
+  name: mean_variance_normalization(operand, epsilon=1e-05, use_stats_across_channels=False,
+    do_variance_scaling=True, name='')
   summary: 'Computes mean-variance normalization of the specified input operand.
 
 
@@ -3497,7 +3526,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: minus
+  name: minus(left, right, name='')
   summary: 'The output of this operation is left minus right tensor. It supports broadcasting.
 
     '
@@ -3541,7 +3570,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: negate
+  name: negate(x, name='')
   summary: 'Computes the element-wise negation of `x`:
 
 
@@ -3594,7 +3623,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: not_equal
+  name: not_equal(left, right, name='')
   summary: 'Elementwise ''not equal'' comparison of two tensors. Result is 1 if left
     != right else 0.
 
@@ -3632,7 +3661,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: one_hot
+  name: one_hot(x, num_classes, sparse_output=False, axis=-1, name='')
   summary: 'Create one hot tensor based on the input tensor
 
     '
@@ -3678,7 +3707,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: ones_like
+  name: ones_like(x, name='')
   summary: 'Creates an all-ones tensor with the same shape and dynamic axes as `x`:
 
     '
@@ -3717,7 +3746,8 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: optimized_rnnstack
+  name: optimized_rnnstack(operand, weights, hidden_size, num_layers, bidirectional=False,
+    recurrent_op='lstm', name='')
   summary: 'An RNN implementation that uses the primitives in cuDNN.
 
     If cuDNN is not available it fails. You can use <xref:cntk.misc.optimized_rnnstack_converter.convert_optimized_rnnstack>
@@ -3738,7 +3768,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: output_variable
+  name: output_variable(shape, dtype, dynamic_axes, needs_gradient=True, name='')
   summary: 'It creates an output variable that is used to define a user defined function.
 
     '
@@ -3796,7 +3826,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: pad
+  name: pad(x, pattern, mode=0, constant_value=0, name='')
   summary: 'Pads a tensor according to the specified patterns.
 
     Three padding modes are supported: CONSTANT / REFLECT / SYMMETRIC.
@@ -3858,7 +3888,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: param_relu
+  name: param_relu(alpha, x, name='')
   summary: 'Parametric rectified linear operation. Computes the element-wise parameteric
     rectified linear
 
@@ -3906,7 +3936,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: parameter
+  name: parameter(shape=None, init=None, dtype=None, device=None, name='')
   summary: 'It creates a parameter tensor.
 
     '
@@ -3971,7 +4001,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: per_dim_mean_variance_normalize
+  name: per_dim_mean_variance_normalize(operand, mean, inv_stddev, name='')
   summary: 'Computes per dimension mean-variance normalization of the specified input
     operand.
 
@@ -4011,7 +4041,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: placeholder
+  name: placeholder(shape=None, dynamic_axes=None, name='')
   summary: 'It creates a placeholder variable that has to be later bound to an actual
     variable.
 
@@ -4101,7 +4131,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: plus
+  name: plus(left, right, name='')
   summary: 'The output of this operation is the sum of the two or more input tensors.
     It supports broadcasting.
 
@@ -4143,7 +4173,8 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: pooling
+  name: pooling(operand, pooling_type, pooling_window_shape, strides=(1,), auto_padding=[False],
+    ceil_out_dim=False, include_pad=False, name='')
   summary: 'The pooling operations compute a new tensor by selecting the maximum or
     average value in the pooling input.
 
@@ -4215,7 +4246,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: pow
+  name: pow(base, exponent, name='')
   summary: 'Computes *base* raised to the power of *exponent*. It supports broadcasting.
 
     This is well defined if *base* is non-negative or *exponent* is an integer.
@@ -4256,7 +4287,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: random_sample
+  name: random_sample(weights, num_samples, allow_duplicates, seed=4294967293, name='')
   summary: 'Estimates inclusion frequencies for random sampling with or without
 
     replacement.
@@ -4374,7 +4405,8 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: random_sample_inclusion_frequency
+  name: random_sample_inclusion_frequency(weights, num_samples, allow_duplicates,
+    seed=4294967293, name='')
   summary: 'For weighted sampling with the specified sample size (*num_samples*)
 
     this operation computes the expected number of occurrences of each class
@@ -4420,7 +4452,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: reciprocal
+  name: reciprocal(x, name='')
   summary: 'Computes the element-wise reciprocal of `x`:
 
     '
@@ -4448,7 +4480,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: reconcile_dynamic_axes
+  name: reconcile_dynamic_axes(x, dynamic_axes_as, name='')
   summary: "   Create a new Function instance which reconciles the dynamic axes of\
     \ the\n   specified tensor operands. The output of the returned Function has the\
     \ sample\n   layout of the 'x' operand and the dynamic axes of the 'dynamic_axes_as'\
@@ -4487,7 +4519,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: reduce_l1
+  name: reduce_l1(x, axis=None, keepdims=True, name='')
   summary: 'Computes the L1 norm of the input tensor''s element along the provided
     axes.
 
@@ -4539,7 +4571,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: reduce_l2
+  name: reduce_l2(x, axis=None, keepdims=True, name='')
   summary: 'Computes the L2 norm of the input tensor''s element along the provided
     axes.
 
@@ -4601,7 +4633,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: reduce_log_sum_exp
+  name: reduce_log_sum_exp(x, axis=None, keepdims=True, name='')
   summary: 'Computes the log of the sum of the exponentiations of the input tensor''s
 
     elements across a specified axis or a list of specified axes.
@@ -4661,7 +4693,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: reduce_max
+  name: reduce_max(x, axis=None, keepdims=True, name='')
   summary: 'Computes the max of the input tensor''s elements across a specified axis
     or a list of specified axes.
 
@@ -4723,7 +4755,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: reduce_mean
+  name: reduce_mean(x, axis=None, keepdims=True, name='')
   summary: 'Computes the mean of the input tensor''s elements across a specified axis
     or a list of specified axes.
 
@@ -4782,7 +4814,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: reduce_min
+  name: reduce_min(x, axis=None, keepdims=True, name='')
   summary: 'Computes the min of the input tensor''s elements across a specified axis
     or a list of specified axes.
 
@@ -4841,7 +4873,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: reduce_prod
+  name: reduce_prod(x, axis=None, keepdims=True, name='')
   summary: 'Computes the min of the input tensor''s elements across the specified
     axis.
 
@@ -4901,7 +4933,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: reduce_sum
+  name: reduce_sum(x, axis=None, keepdims=True, name='')
   summary: 'Computes the sum of the input tensor''s elements across one axis or a
     list of axes. If the axis parameter
 
@@ -4965,7 +4997,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: reduce_sum_square
+  name: reduce_sum_square(x, axis=None, keepdims=True, name='')
   summary: 'Computes the sum square of the input tensor''s element along the provided
     axes.
 
@@ -5027,7 +5059,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: relu
+  name: relu(x, name='')
   summary: 'Rectified linear operation. Computes the element-wise rectified linear
 
     of `x`: `max(x, 0)`
@@ -5064,7 +5096,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: reshape
+  name: reshape(x, shape, begin_axis=None, end_axis=None, name='')
   summary: 'Reinterpret input samples as having different tensor dimensions
 
     One dimension may be specified as 0 and will be inferred
@@ -5132,7 +5164,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: roipooling
+  name: roipooling(operand, rois, pooling_type, roi_output_shape, spatial_scale, name='')
   summary: 'The ROI (Region of Interest) pooling operation pools over sub-regions
     of an input volume and produces
 
@@ -5207,7 +5239,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: round
+  name: round(arg, name='')
   summary: 'The output of this operation is the element wise value rounded to the
     nearest integer.
 
@@ -5256,7 +5288,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: selu
+  name: selu(x, scale=1.0507009873554805, alpha=1.6732632423543772, name='')
   summary: 'Scaled exponential linear unit operation. Computes the element-wise exponential
     linear
 
@@ -5307,7 +5339,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: sigmoid
+  name: sigmoid(x, name='')
   summary: 'Computes the element-wise sigmoid of `x`:
 
 
@@ -5342,7 +5374,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: sin
+  name: sin(x, name='')
   summary: 'Computes the element-wise sine of `x`:
 
 
@@ -5376,7 +5408,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: sinh
+  name: sinh(x, name='')
   summary: 'Computes the element-wise sinh of `x`:
 
 
@@ -5434,7 +5466,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: slice
+  name: slice(x, axis, begin_index, end_index, strides=None, name='')
   seealsoContent: '  Indexing in NumPy: [https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html](https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html)
 
     '
@@ -5461,7 +5493,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: softmax
+  name: softmax(x, axis=None, name='')
   summary: 'Computes the gradient of  at `z = x`. Concretely,
 
 
@@ -5540,7 +5572,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: softplus
+  name: softplus(x, steepness=1, name='')
   summary: 'Softplus operation. Computes the element-wise softplus of `x`:
 
 
@@ -5603,7 +5635,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: softsign
+  name: softsign(x, steepness=1, name='')
   summary: 'Computes the element-wise softsign of `x`:
 
 
@@ -5643,7 +5675,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: space_to_depth
+  name: space_to_depth(operand, block_size, name='')
   seealsoContent: '  [1] W. Shi et. al. [: Real-Time Single Image and Video Super-Resolution
     Using an Efficient Sub-Pixel Convolutional Neural Network](https://arxiv.org/abs/1609.05158).
 
@@ -5712,7 +5744,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: splice
+  name: splice(*inputs, **kw_axis_name)
   summary: 'Concatenate the input tensors along an axis.
 
     '
@@ -5761,9 +5793,23 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: sqrt
-  summary: "Computes the element-wise square-root of `x`:\n\n\nNote: CNTK returns\
-    \ zero for sqrt of negative nubmers, this will be changed to return NaN \n"
+  name: sqrt(x, name='')
+  summary: 'Computes the element-wise square-root of `x`:
+
+
+
+
+    > [!NOTE]
+
+    > CNTK returns zero for sqrt of negative nubmers, this will be changed to
+
+    >
+
+    > return NaN
+
+    >
+
+    '
   syntax:
     content: sqrt(x, name='')
     parameters:
@@ -5801,7 +5847,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: square
+  name: square(x, name='')
   summary: 'Computes the element-wise square of `x`:
 
     '
@@ -5834,7 +5880,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: squeeze
+  name: squeeze(x, axes=None, name='')
   summary: "   Removes axes whose size is 1. If `axes` is specified, and any of\n\
     \   their size is not 1 an exception will be raised.\n"
   syntax:
@@ -5864,7 +5910,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: stop_gradient
+  name: stop_gradient(input, name='')
   summary: 'Outputs its input as it is and prevents any gradient contribution from
     its output to its input.
 
@@ -5911,7 +5957,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: straight_through_impl
+  name: straight_through_impl(x, name='')
   summary: 'element-wise binarization node using the straight through estimator
 
     '
@@ -5959,7 +6005,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: sum
+  name: sum(*operands, **kw_name)
   summary: '   Create a new Function instance that computes element-wise sum of input
     tensors.
 
@@ -5992,7 +6038,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: swapaxes
+  name: swapaxes(x, axis1=0, axis2=1, name='')
   summary: 'Swaps two axes of the tensor. The output tensor has the same data but
     with
 
@@ -6049,7 +6095,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: tan
+  name: tan(x, name='')
   summary: 'Computes the element-wise tangent of `x`:
 
 
@@ -6083,7 +6129,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: tanh
+  name: tanh(x, name='')
   summary: 'Computes the element-wise tanh of `x`:
 
 
@@ -6124,7 +6170,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: times
+  name: times(left, right, output_rank=1, infer_input_rank_to_map=-1, name='')
   summary: "The output of this operation is the matrix product of the two input matrices.\n\
     It supports broadcasting. Sparse is supported in the left operand, if it is a\
     \ matrix.\nThe operator '@' has been overloaded such that in Python 3.5 and later\
@@ -6198,7 +6244,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: times_transpose
+  name: times_transpose(left, right, name='')
   summary: 'The output of this operation is the product of the first (`left`) argument
     with the second (`right`) argument transposed.
 
@@ -6257,7 +6303,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: to_batch
+  name: to_batch(x, name='')
   summary: 'Concatenate the input tensor''s first axis to batch axis.
 
     '
@@ -6283,7 +6329,8 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: to_sequence
+  name: to_sequence(x, sequence_lengths=None, sequence_axis_name_prefix='toSequence_',
+    name='')
   summary: 'This function converts ''x'' to a sequence using the most significant
 
     static axis [0] as the sequence axis.
@@ -6334,7 +6381,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: to_sequence_like
+  name: to_sequence_like(x, dynamic_axes_like, name='')
   summary: 'This function converts ''x'' to a sequence using the most significant
 
     static axis [0] as the sequence axis. The length of the sequences are
@@ -6398,7 +6445,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: top_k
+  name: top_k(x, k, axis=-1, name='')
   summary: 'Computes the `k` largest values of the input tensor and the corresponding
     indices
 
@@ -6461,7 +6508,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: transpose
+  name: transpose(x, perm, name='')
   summary: 'Permutes the axes of the tensor. The output has the same data but the
     axes
 
@@ -6502,7 +6549,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: unpack_batch
+  name: unpack_batch(x, name='')
   summary: 'Concatenate the input tensor''s last dynamic axis to static axis.
 
     Only tensors with batch axis are supported now.
@@ -6537,7 +6584,8 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: unpooling
+  name: unpooling(operand, pooling_input, unpooling_type, unpooling_window_shape,
+    strides=(1,), auto_padding=[False], name='')
   summary: 'Unpools the `operand` using information from `pooling_input`. Unpooling
     mirrors the operations
 
@@ -6602,7 +6650,7 @@ items:
   langs:
   - python
   module: cntk.ops
-  name: zeros_like
+  name: zeros_like(x, name='')
   summary: 'Creates an all-zeros tensor with the same shape and dynamic axes as `x`:
 
     '
@@ -6629,627 +6677,642 @@ items:
 references:
 - fullName: cntk.ops.abs
   isExternal: false
-  name: abs
+  name: abs(x, name='')
   parent: cntk.ops
   uid: cntk.ops.abs
 - fullName: cntk.ops.acos
   isExternal: false
-  name: acos
+  name: acos(x, name='')
   parent: cntk.ops
   uid: cntk.ops.acos
 - fullName: cntk.ops.alias
   isExternal: false
-  name: alias
+  name: alias(x, name='')
   parent: cntk.ops
   uid: cntk.ops.alias
 - fullName: cntk.ops.argmax
   isExternal: false
-  name: argmax
+  name: argmax(x, axis=None, name='')
   parent: cntk.ops
   uid: cntk.ops.argmax
 - fullName: cntk.ops.argmin
   isExternal: false
-  name: argmin
+  name: argmin(x, axis=None, name='')
   parent: cntk.ops
   uid: cntk.ops.argmin
 - fullName: cntk.ops.as_block
   isExternal: false
-  name: as_block
+  name: as_block(composite, block_arguments_map, block_op_name, block_instance_name='')
   parent: cntk.ops
   uid: cntk.ops.as_block
 - fullName: cntk.ops.as_composite
   isExternal: false
-  name: as_composite
+  name: as_composite(root_function, name='')
   parent: cntk.ops
   uid: cntk.ops.as_composite
 - fullName: cntk.ops.asin
   isExternal: false
-  name: asin
+  name: asin(x, name='')
   parent: cntk.ops
   uid: cntk.ops.asin
 - fullName: cntk.ops.asinh
   isExternal: false
-  name: asinh
+  name: asinh(x, name='')
   parent: cntk.ops
   uid: cntk.ops.asinh
 - fullName: cntk.ops.assign
   isExternal: false
-  name: assign
+  name: assign(ref, input, name='')
   parent: cntk.ops
   uid: cntk.ops.assign
 - fullName: cntk.ops.associative_multi_arg
   isExternal: false
-  name: associative_multi_arg
+  name: associative_multi_arg(f)
   parent: cntk.ops
   uid: cntk.ops.associative_multi_arg
 - fullName: cntk.ops.atan
   isExternal: false
-  name: atan
+  name: atan(x, name='')
   parent: cntk.ops
   uid: cntk.ops.atan
 - fullName: cntk.ops.atanh
   isExternal: false
-  name: atanh
+  name: atanh(x, name='')
   parent: cntk.ops
   uid: cntk.ops.atanh
 - fullName: cntk.ops.batch_normalization
   isExternal: false
-  name: batch_normalization
+  name: batch_normalization(operand, scale, bias, running_mean, running_inv_std, spatial,
+    normalization_time_constant=5000, blend_time_constant=0, epsilon=1e-05, use_cudnn_engine=False,
+    disable_regularization=False, name='', running_count=None)
   parent: cntk.ops
   uid: cntk.ops.batch_normalization
 - fullName: cntk.ops.cast
   isExternal: false
-  name: cast
+  name: cast(node_input, dtype, name='')
   parent: cntk.ops
   uid: cntk.ops.cast
 - fullName: cntk.ops.ceil
   isExternal: false
-  name: ceil
+  name: ceil(arg, name='')
   parent: cntk.ops
   uid: cntk.ops.ceil
 - fullName: cntk.ops.clip
   isExternal: false
-  name: clip
+  name: clip(x, min_value, max_value, name='')
   parent: cntk.ops
   uid: cntk.ops.clip
 - fullName: cntk.ops.combine
   isExternal: false
-  name: combine
+  name: combine(*operands, **kw_name)
   parent: cntk.ops
   uid: cntk.ops.combine
 - fullName: cntk.ops.constant
   isExternal: false
-  name: constant
+  name: constant(value=None, shape=None, dtype=None, device=None, name='')
   parent: cntk.ops
   uid: cntk.ops.constant
 - fullName: cntk.ops.convolution
   isExternal: false
-  name: convolution
+  name: convolution(convolution_map, operand, strides=(1,), sharing=[True], auto_padding=[True],
+    sequential=False, dilation=(1,), reduction_rank=1, groups=1, max_temp_mem_size_in_samples=0,
+    name='')
   parent: cntk.ops
   uid: cntk.ops.convolution
 - fullName: cntk.ops.convolution_transpose
   isExternal: false
-  name: convolution_transpose
+  name: convolution_transpose(convolution_map, operand, strides=(1,), sharing=[True],
+    auto_padding=[True], output_shape=None, dilation=(1,), reduction_rank=1, max_temp_mem_size_in_samples=0,
+    name='')
   parent: cntk.ops
   uid: cntk.ops.convolution_transpose
 - fullName: cntk.ops.cos
   isExternal: false
-  name: cos
+  name: cos(x, name='')
   parent: cntk.ops
   uid: cntk.ops.cos
 - fullName: cntk.ops.cosh
   isExternal: false
-  name: cosh
+  name: cosh(x, name='')
   parent: cntk.ops
   uid: cntk.ops.cosh
 - fullName: cntk.ops.crop_automatic
   isExternal: false
-  name: crop_automatic
+  name: crop_automatic(node_input, node_referent, name='')
   parent: cntk.ops
   uid: cntk.ops.crop_automatic
 - fullName: cntk.ops.crop_automatic_with_ancestors
   isExternal: false
-  name: crop_automatic_with_ancestors
+  name: crop_automatic_with_ancestors(node_input, node_referent, ancestor_input, ancestor_referent,
+    name='')
   parent: cntk.ops
   uid: cntk.ops.crop_automatic_with_ancestors
 - fullName: cntk.ops.crop_manual
   isExternal: false
-  name: crop_manual
+  name: crop_manual(node_input, node_referent, offset_x, offset_y, name='')
   parent: cntk.ops
   uid: cntk.ops.crop_manual
 - fullName: cntk.ops.custom_proxy_op
   isExternal: false
-  name: custom_proxy_op
+  name: custom_proxy_op(custom_op, output_shape, output_data_type, *operands, **kw_name)
   parent: cntk.ops
   uid: cntk.ops.custom_proxy_op
 - fullName: cntk.ops.depth_to_space
   isExternal: false
-  name: depth_to_space
+  name: depth_to_space(operand, block_size, name='')
   parent: cntk.ops
   uid: cntk.ops.depth_to_space
 - fullName: cntk.ops.dropout
   isExternal: false
-  name: dropout
+  name: dropout(x, dropout_rate=0.0, seed=4294967293, name='')
   parent: cntk.ops
   uid: cntk.ops.dropout
 - fullName: cntk.ops.element_and
   isExternal: false
-  name: element_and
+  name: element_and(x, y, name='')
   parent: cntk.ops
   uid: cntk.ops.element_and
 - fullName: cntk.ops.element_divide
   isExternal: false
-  name: element_divide
+  name: element_divide(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.element_divide
 - fullName: cntk.ops.element_max
   isExternal: false
-  name: element_max
+  name: element_max(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.element_max
 - fullName: cntk.ops.element_min
   isExternal: false
-  name: element_min
+  name: element_min(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.element_min
 - fullName: cntk.ops.element_not
   isExternal: false
-  name: element_not
+  name: element_not(x, name='')
   parent: cntk.ops
   uid: cntk.ops.element_not
 - fullName: cntk.ops.element_or
   isExternal: false
-  name: element_or
+  name: element_or(x, y, name='')
   parent: cntk.ops
   uid: cntk.ops.element_or
 - fullName: cntk.ops.element_select
   isExternal: false
-  name: element_select
+  name: element_select(flag, value_if_true, value_if_false, name='')
   parent: cntk.ops
   uid: cntk.ops.element_select
 - fullName: cntk.ops.element_times
   isExternal: false
-  name: element_times
+  name: element_times(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.element_times
 - fullName: cntk.ops.element_xor
   isExternal: false
-  name: element_xor
+  name: element_xor(x, y, name='')
   parent: cntk.ops
   uid: cntk.ops.element_xor
 - fullName: cntk.ops.elu
   isExternal: false
-  name: elu
+  name: elu(x, alpha=1.0, name='')
   parent: cntk.ops
   uid: cntk.ops.elu
 - fullName: cntk.ops.equal
   isExternal: false
-  name: equal
+  name: equal(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.equal
 - fullName: cntk.ops.exp
   isExternal: false
-  name: exp
+  name: exp(x, name='')
   parent: cntk.ops
   uid: cntk.ops.exp
 - fullName: cntk.ops.expand_dims
   isExternal: false
-  name: expand_dims
+  name: expand_dims(x, axis, name='')
   parent: cntk.ops
   uid: cntk.ops.expand_dims
 - fullName: cntk.ops.eye_like
   isExternal: false
-  name: eye_like
+  name: eye_like(x, sparse_output=True, name='')
   parent: cntk.ops
   uid: cntk.ops.eye_like
 - fullName: cntk.ops.flatten
   isExternal: false
-  name: flatten
+  name: flatten(x, axis=None, name='')
   parent: cntk.ops
   uid: cntk.ops.flatten
 - fullName: cntk.ops.floor
   isExternal: false
-  name: floor
+  name: floor(arg, name='')
   parent: cntk.ops
   uid: cntk.ops.floor
 - fullName: cntk.ops.forward_backward
   isExternal: false
-  name: forward_backward
+  name: forward_backward(graph, features, blankTokenId, delayConstraint=-1, name='')
   parent: cntk.ops
   uid: cntk.ops.forward_backward
 - fullName: cntk.ops.gather
   isExternal: false
-  name: gather
+  name: gather(reference, indices, axis=None, name='')
   parent: cntk.ops
   uid: cntk.ops.gather
 - fullName: cntk.ops.greater
   isExternal: false
-  name: greater
+  name: greater(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.greater
 - fullName: cntk.ops.greater_equal
   isExternal: false
-  name: greater_equal
+  name: greater_equal(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.greater_equal
 - fullName: cntk.ops.hard_sigmoid
   isExternal: false
-  name: hard_sigmoid
+  name: hard_sigmoid(x, alpha, beta, name='')
   parent: cntk.ops
   uid: cntk.ops.hard_sigmoid
 - fullName: cntk.ops.hardmax
   isExternal: false
-  name: hardmax
+  name: hardmax(x, name='')
   parent: cntk.ops
   uid: cntk.ops.hardmax
 - fullName: cntk.ops.image_scaler
   isExternal: false
-  name: image_scaler
+  name: image_scaler(x, scalar, biases, name='')
   parent: cntk.ops
   uid: cntk.ops.image_scaler
 - fullName: cntk.ops.input
   isExternal: false
-  name: input
+  name: input(shape, dtype=<cntk.default_options.default_override_or object>, needs_gradient=False,
+    is_sparse=False, dynamic_axes=[Axis('defaultBatchAxis')], name='')
   parent: cntk.ops
   uid: cntk.ops.input
 - fullName: cntk.ops.input_variable
   isExternal: false
-  name: input_variable
+  name: input_variable(shape, dtype=np.float32, needs_gradient=False, is_sparse=False,
+    dynamic_axes=[Axis.default_batch_axis()], name='')
   parent: cntk.ops
   uid: cntk.ops.input_variable
 - fullName: cntk.ops.labels_to_graph
   isExternal: false
-  name: labels_to_graph
+  name: labels_to_graph(labels, name='')
   parent: cntk.ops
   uid: cntk.ops.labels_to_graph
 - fullName: cntk.ops.leaky_relu
   isExternal: false
-  name: leaky_relu
+  name: leaky_relu(x, alpha=0.01, name='')
   parent: cntk.ops
   uid: cntk.ops.leaky_relu
 - fullName: cntk.ops.less
   isExternal: false
-  name: less
+  name: less(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.less
 - fullName: cntk.ops.less_equal
   isExternal: false
-  name: less_equal
+  name: less_equal(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.less_equal
 - fullName: cntk.ops.local_response_normalization
   isExternal: false
-  name: local_response_normalization
+  name: local_response_normalization(operand, depth_radius, bias, alpha, beta, name='')
   parent: cntk.ops
   uid: cntk.ops.local_response_normalization
 - fullName: cntk.ops.log
   isExternal: false
-  name: log
+  name: log(x, name='')
   parent: cntk.ops
   uid: cntk.ops.log
 - fullName: cntk.ops.log_add_exp
   isExternal: false
-  name: log_add_exp
+  name: log_add_exp(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.log_add_exp
 - fullName: cntk.ops.log_softmax
   isExternal: false
-  name: log_softmax
+  name: log_softmax(x, axis=None, name='')
   parent: cntk.ops
   uid: cntk.ops.log_softmax
 - fullName: cntk.ops.mean
   isExternal: false
-  name: mean
+  name: mean(*operands, **kw_name)
   parent: cntk.ops
   uid: cntk.ops.mean
 - fullName: cntk.ops.mean_variance_normalization
   isExternal: false
-  name: mean_variance_normalization
+  name: mean_variance_normalization(operand, epsilon=1e-05, use_stats_across_channels=False,
+    do_variance_scaling=True, name='')
   parent: cntk.ops
   uid: cntk.ops.mean_variance_normalization
 - fullName: cntk.ops.minus
   isExternal: false
-  name: minus
+  name: minus(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.minus
 - fullName: cntk.ops.negate
   isExternal: false
-  name: negate
+  name: negate(x, name='')
   parent: cntk.ops
   uid: cntk.ops.negate
 - fullName: cntk.ops.not_equal
   isExternal: false
-  name: not_equal
+  name: not_equal(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.not_equal
 - fullName: cntk.ops.one_hot
   isExternal: false
-  name: one_hot
+  name: one_hot(x, num_classes, sparse_output=False, axis=-1, name='')
   parent: cntk.ops
   uid: cntk.ops.one_hot
 - fullName: cntk.ops.ones_like
   isExternal: false
-  name: ones_like
+  name: ones_like(x, name='')
   parent: cntk.ops
   uid: cntk.ops.ones_like
 - fullName: cntk.ops.optimized_rnnstack
   isExternal: false
-  name: optimized_rnnstack
+  name: optimized_rnnstack(operand, weights, hidden_size, num_layers, bidirectional=False,
+    recurrent_op='lstm', name='')
   parent: cntk.ops
   uid: cntk.ops.optimized_rnnstack
 - fullName: cntk.ops.output_variable
   isExternal: false
-  name: output_variable
+  name: output_variable(shape, dtype, dynamic_axes, needs_gradient=True, name='')
   parent: cntk.ops
   uid: cntk.ops.output_variable
 - fullName: cntk.ops.pad
   isExternal: false
-  name: pad
+  name: pad(x, pattern, mode=0, constant_value=0, name='')
   parent: cntk.ops
   uid: cntk.ops.pad
 - fullName: cntk.ops.param_relu
   isExternal: false
-  name: param_relu
+  name: param_relu(alpha, x, name='')
   parent: cntk.ops
   uid: cntk.ops.param_relu
 - fullName: cntk.ops.parameter
   isExternal: false
-  name: parameter
+  name: parameter(shape=None, init=None, dtype=None, device=None, name='')
   parent: cntk.ops
   uid: cntk.ops.parameter
 - fullName: cntk.ops.per_dim_mean_variance_normalize
   isExternal: false
-  name: per_dim_mean_variance_normalize
+  name: per_dim_mean_variance_normalize(operand, mean, inv_stddev, name='')
   parent: cntk.ops
   uid: cntk.ops.per_dim_mean_variance_normalize
 - fullName: cntk.ops.placeholder
   isExternal: false
-  name: placeholder
+  name: placeholder(shape=None, dynamic_axes=None, name='')
   parent: cntk.ops
   uid: cntk.ops.placeholder
 - fullName: cntk.ops.plus
   isExternal: false
-  name: plus
+  name: plus(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.plus
 - fullName: cntk.ops.pooling
   isExternal: false
-  name: pooling
+  name: pooling(operand, pooling_type, pooling_window_shape, strides=(1,), auto_padding=[False],
+    ceil_out_dim=False, include_pad=False, name='')
   parent: cntk.ops
   uid: cntk.ops.pooling
 - fullName: cntk.ops.pow
   isExternal: false
-  name: pow
+  name: pow(base, exponent, name='')
   parent: cntk.ops
   uid: cntk.ops.pow
 - fullName: cntk.ops.random_sample
   isExternal: false
-  name: random_sample
+  name: random_sample(weights, num_samples, allow_duplicates, seed=4294967293, name='')
   parent: cntk.ops
   uid: cntk.ops.random_sample
 - fullName: cntk.ops.random_sample_inclusion_frequency
   isExternal: false
-  name: random_sample_inclusion_frequency
+  name: random_sample_inclusion_frequency(weights, num_samples, allow_duplicates,
+    seed=4294967293, name='')
   parent: cntk.ops
   uid: cntk.ops.random_sample_inclusion_frequency
 - fullName: cntk.ops.reciprocal
   isExternal: false
-  name: reciprocal
+  name: reciprocal(x, name='')
   parent: cntk.ops
   uid: cntk.ops.reciprocal
 - fullName: cntk.ops.reconcile_dynamic_axes
   isExternal: false
-  name: reconcile_dynamic_axes
+  name: reconcile_dynamic_axes(x, dynamic_axes_as, name='')
   parent: cntk.ops
   uid: cntk.ops.reconcile_dynamic_axes
 - fullName: cntk.ops.reduce_l1
   isExternal: false
-  name: reduce_l1
+  name: reduce_l1(x, axis=None, keepdims=True, name='')
   parent: cntk.ops
   uid: cntk.ops.reduce_l1
 - fullName: cntk.ops.reduce_l2
   isExternal: false
-  name: reduce_l2
+  name: reduce_l2(x, axis=None, keepdims=True, name='')
   parent: cntk.ops
   uid: cntk.ops.reduce_l2
 - fullName: cntk.ops.reduce_log_sum_exp
   isExternal: false
-  name: reduce_log_sum_exp
+  name: reduce_log_sum_exp(x, axis=None, keepdims=True, name='')
   parent: cntk.ops
   uid: cntk.ops.reduce_log_sum_exp
 - fullName: cntk.ops.reduce_max
   isExternal: false
-  name: reduce_max
+  name: reduce_max(x, axis=None, keepdims=True, name='')
   parent: cntk.ops
   uid: cntk.ops.reduce_max
 - fullName: cntk.ops.reduce_mean
   isExternal: false
-  name: reduce_mean
+  name: reduce_mean(x, axis=None, keepdims=True, name='')
   parent: cntk.ops
   uid: cntk.ops.reduce_mean
 - fullName: cntk.ops.reduce_min
   isExternal: false
-  name: reduce_min
+  name: reduce_min(x, axis=None, keepdims=True, name='')
   parent: cntk.ops
   uid: cntk.ops.reduce_min
 - fullName: cntk.ops.reduce_prod
   isExternal: false
-  name: reduce_prod
+  name: reduce_prod(x, axis=None, keepdims=True, name='')
   parent: cntk.ops
   uid: cntk.ops.reduce_prod
 - fullName: cntk.ops.reduce_sum
   isExternal: false
-  name: reduce_sum
+  name: reduce_sum(x, axis=None, keepdims=True, name='')
   parent: cntk.ops
   uid: cntk.ops.reduce_sum
 - fullName: cntk.ops.reduce_sum_square
   isExternal: false
-  name: reduce_sum_square
+  name: reduce_sum_square(x, axis=None, keepdims=True, name='')
   parent: cntk.ops
   uid: cntk.ops.reduce_sum_square
 - fullName: cntk.ops.relu
   isExternal: false
-  name: relu
+  name: relu(x, name='')
   parent: cntk.ops
   uid: cntk.ops.relu
 - fullName: cntk.ops.reshape
   isExternal: false
-  name: reshape
+  name: reshape(x, shape, begin_axis=None, end_axis=None, name='')
   parent: cntk.ops
   uid: cntk.ops.reshape
 - fullName: cntk.ops.roipooling
   isExternal: false
-  name: roipooling
+  name: roipooling(operand, rois, pooling_type, roi_output_shape, spatial_scale, name='')
   parent: cntk.ops
   uid: cntk.ops.roipooling
 - fullName: cntk.ops.round
   isExternal: false
-  name: round
+  name: round(arg, name='')
   parent: cntk.ops
   uid: cntk.ops.round
 - fullName: cntk.ops.selu
   isExternal: false
-  name: selu
+  name: selu(x, scale=1.0507009873554805, alpha=1.6732632423543772, name='')
   parent: cntk.ops
   uid: cntk.ops.selu
 - fullName: cntk.ops.sigmoid
   isExternal: false
-  name: sigmoid
+  name: sigmoid(x, name='')
   parent: cntk.ops
   uid: cntk.ops.sigmoid
 - fullName: cntk.ops.sin
   isExternal: false
-  name: sin
+  name: sin(x, name='')
   parent: cntk.ops
   uid: cntk.ops.sin
 - fullName: cntk.ops.sinh
   isExternal: false
-  name: sinh
+  name: sinh(x, name='')
   parent: cntk.ops
   uid: cntk.ops.sinh
 - fullName: cntk.ops.slice
   isExternal: false
-  name: slice
+  name: slice(x, axis, begin_index, end_index, strides=None, name='')
   parent: cntk.ops
   uid: cntk.ops.slice
 - fullName: cntk.ops.softmax
   isExternal: false
-  name: softmax
+  name: softmax(x, axis=None, name='')
   parent: cntk.ops
   uid: cntk.ops.softmax
 - fullName: cntk.ops.softplus
   isExternal: false
-  name: softplus
+  name: softplus(x, steepness=1, name='')
   parent: cntk.ops
   uid: cntk.ops.softplus
 - fullName: cntk.ops.softsign
   isExternal: false
-  name: softsign
+  name: softsign(x, steepness=1, name='')
   parent: cntk.ops
   uid: cntk.ops.softsign
 - fullName: cntk.ops.space_to_depth
   isExternal: false
-  name: space_to_depth
+  name: space_to_depth(operand, block_size, name='')
   parent: cntk.ops
   uid: cntk.ops.space_to_depth
 - fullName: cntk.ops.splice
   isExternal: false
-  name: splice
+  name: splice(*inputs, **kw_axis_name)
   parent: cntk.ops
   uid: cntk.ops.splice
 - fullName: cntk.ops.sqrt
   isExternal: false
-  name: sqrt
+  name: sqrt(x, name='')
   parent: cntk.ops
   uid: cntk.ops.sqrt
 - fullName: cntk.ops.square
   isExternal: false
-  name: square
+  name: square(x, name='')
   parent: cntk.ops
   uid: cntk.ops.square
 - fullName: cntk.ops.squeeze
   isExternal: false
-  name: squeeze
+  name: squeeze(x, axes=None, name='')
   parent: cntk.ops
   uid: cntk.ops.squeeze
 - fullName: cntk.ops.stop_gradient
   isExternal: false
-  name: stop_gradient
+  name: stop_gradient(input, name='')
   parent: cntk.ops
   uid: cntk.ops.stop_gradient
 - fullName: cntk.ops.straight_through_impl
   isExternal: false
-  name: straight_through_impl
+  name: straight_through_impl(x, name='')
   parent: cntk.ops
   uid: cntk.ops.straight_through_impl
 - fullName: cntk.ops.sum
   isExternal: false
-  name: sum
+  name: sum(*operands, **kw_name)
   parent: cntk.ops
   uid: cntk.ops.sum
 - fullName: cntk.ops.swapaxes
   isExternal: false
-  name: swapaxes
+  name: swapaxes(x, axis1=0, axis2=1, name='')
   parent: cntk.ops
   uid: cntk.ops.swapaxes
 - fullName: cntk.ops.tan
   isExternal: false
-  name: tan
+  name: tan(x, name='')
   parent: cntk.ops
   uid: cntk.ops.tan
 - fullName: cntk.ops.tanh
   isExternal: false
-  name: tanh
+  name: tanh(x, name='')
   parent: cntk.ops
   uid: cntk.ops.tanh
 - fullName: cntk.ops.times
   isExternal: false
-  name: times
+  name: times(left, right, output_rank=1, infer_input_rank_to_map=-1, name='')
   parent: cntk.ops
   uid: cntk.ops.times
 - fullName: cntk.ops.times_transpose
   isExternal: false
-  name: times_transpose
+  name: times_transpose(left, right, name='')
   parent: cntk.ops
   uid: cntk.ops.times_transpose
 - fullName: cntk.ops.to_batch
   isExternal: false
-  name: to_batch
+  name: to_batch(x, name='')
   parent: cntk.ops
   uid: cntk.ops.to_batch
 - fullName: cntk.ops.to_sequence
   isExternal: false
-  name: to_sequence
+  name: to_sequence(x, sequence_lengths=None, sequence_axis_name_prefix='toSequence_',
+    name='')
   parent: cntk.ops
   uid: cntk.ops.to_sequence
 - fullName: cntk.ops.to_sequence_like
   isExternal: false
-  name: to_sequence_like
+  name: to_sequence_like(x, dynamic_axes_like, name='')
   parent: cntk.ops
   uid: cntk.ops.to_sequence_like
 - fullName: cntk.ops.top_k
   isExternal: false
-  name: top_k
+  name: top_k(x, k, axis=-1, name='')
   parent: cntk.ops
   uid: cntk.ops.top_k
 - fullName: cntk.ops.transpose
   isExternal: false
-  name: transpose
+  name: transpose(x, perm, name='')
   parent: cntk.ops
   uid: cntk.ops.transpose
 - fullName: cntk.ops.unpack_batch
   isExternal: false
-  name: unpack_batch
+  name: unpack_batch(x, name='')
   parent: cntk.ops
   uid: cntk.ops.unpack_batch
 - fullName: cntk.ops.unpooling
   isExternal: false
-  name: unpooling
+  name: unpooling(operand, pooling_input, unpooling_type, unpooling_window_shape,
+    strides=(1,), auto_padding=[False], name='')
   parent: cntk.ops
   uid: cntk.ops.unpooling
 - fullName: cntk.ops.zeros_like
   isExternal: false
-  name: zeros_like
+  name: zeros_like(x, name='')
   parent: cntk.ops
   uid: cntk.ops.zeros_like
 - fullName: cntk.ops.functions

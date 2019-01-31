@@ -17,7 +17,7 @@ items:
   langs:
   - python
   module: cntk.tests.device_test
-  name: test_device_kind
+  name: test_device_kind()
   syntax:
     content: test_device_kind()
   type: function
@@ -25,6 +25,6 @@ items:
 references:
 - fullName: cntk.tests.device_test.test_device_kind
   isExternal: false
-  name: test_device_kind
+  name: test_device_kind()
   parent: cntk.tests.device_test
   uid: cntk.tests.device_test.test_device_kind

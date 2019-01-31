@@ -34,7 +34,7 @@ items:
   langs:
   - python
   module: cntk.layers.sequence
-  name: Delay
+  name: Delay(T=1, initial_state=0, name='')
   summary: 'Layer factory function to create a layer that delays input the input by
     a given number of time steps. Negative means future.
 
@@ -93,7 +93,8 @@ items:
   langs:
   - python
   module: cntk.layers.sequence
-  name: Fold
+  name: Fold(folder_function, go_backwards=False, initial_state=0, return_full_state=False,
+    name='')
   summary: "Layer factory function to create a function that runs a step function\
     \ recurrently over an input sequence,\nand returns the final state.\nThis is often\
     \ used for embeddings of sequences, e.g. in a sequence-to-sequence model.\nPseudo-code:\n\
@@ -199,7 +200,7 @@ items:
   langs:
   - python
   module: cntk.layers.sequence
-  name: PastValueWindow
+  name: PastValueWindow(window_size, axis, go_backwards=False, name='')
   summary: 'Layer factory function to create a function that returns a static, maskable
     view for N past steps over a sequence along the given ''axis''.
 
@@ -281,7 +282,8 @@ items:
   langs:
   - python
   module: cntk.layers.sequence
-  name: Recurrence
+  name: Recurrence(step_function, go_backwards=False, initial_state=0, return_full_state=False,
+    name='')
   summary: "Layer factory function that implements a recurrent model, including the\
     \ common RNN, LSTM, and GRU recurrences.\nThis factory function creates a function\
     \ that runs a step function recurrently over an input sequence,\nwhere in each\
@@ -440,7 +442,8 @@ items:
   langs:
   - python
   module: cntk.layers.sequence
-  name: RecurrenceFrom
+  name: RecurrenceFrom(step_function, go_backwards=False, return_full_state=False,
+    name='')
   summary: "Layer factory function to create a function that runs a step function\
     \ recurrently over an input sequence, with initial state.\nThis layer is very\
     \ similar to <xref:cntk.layers.sequence.Recurrence>,\nexcept that the initial\
@@ -538,7 +541,7 @@ items:
   langs:
   - python
   module: cntk.layers.sequence
-  name: UnfoldFrom
+  name: UnfoldFrom(generator_function, until_predicate=None, length_increase=1, name='')
   summary: "Layer factory function to create a function that implements a recurrent\
     \ generator.\nStarting with a seed state, the `UnfoldFrom()` layer\nrepeatedly\
     \ applies `generator_function` and emits the sequence of results.\nIt stops after\
@@ -645,32 +648,35 @@ items:
 references:
 - fullName: cntk.layers.sequence.Delay
   isExternal: false
-  name: Delay
+  name: Delay(T=1, initial_state=0, name='')
   parent: cntk.layers.sequence
   uid: cntk.layers.sequence.Delay
 - fullName: cntk.layers.sequence.Fold
   isExternal: false
-  name: Fold
+  name: Fold(folder_function, go_backwards=False, initial_state=0, return_full_state=False,
+    name='')
   parent: cntk.layers.sequence
   uid: cntk.layers.sequence.Fold
 - fullName: cntk.layers.sequence.PastValueWindow
   isExternal: false
-  name: PastValueWindow
+  name: PastValueWindow(window_size, axis, go_backwards=False, name='')
   parent: cntk.layers.sequence
   uid: cntk.layers.sequence.PastValueWindow
 - fullName: cntk.layers.sequence.Recurrence
   isExternal: false
-  name: Recurrence
+  name: Recurrence(step_function, go_backwards=False, initial_state=0, return_full_state=False,
+    name='')
   parent: cntk.layers.sequence
   uid: cntk.layers.sequence.Recurrence
 - fullName: cntk.layers.sequence.RecurrenceFrom
   isExternal: false
-  name: RecurrenceFrom
+  name: RecurrenceFrom(step_function, go_backwards=False, return_full_state=False,
+    name='')
   parent: cntk.layers.sequence
   uid: cntk.layers.sequence.RecurrenceFrom
 - fullName: cntk.layers.sequence.UnfoldFrom
   isExternal: false
-  name: UnfoldFrom
+  name: UnfoldFrom(generator_function, until_predicate=None, length_increase=1, name='')
   parent: cntk.layers.sequence
   uid: cntk.layers.sequence.UnfoldFrom
 - fullName: str, optional
