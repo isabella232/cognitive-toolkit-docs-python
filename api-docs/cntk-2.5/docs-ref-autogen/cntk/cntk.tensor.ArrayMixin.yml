@@ -19,7 +19,7 @@ items:
   langs:
   - python
   module: cntk.tensor
-  name: asarray
+  name: asarray()
   summary: 'Converts the instance''s data to a NumPy array.
 
     '
@@ -31,6 +31,6 @@ items:
 references:
 - fullName: cntk.tensor.ArrayMixin.asarray
   isExternal: false
-  name: asarray
+  name: asarray()
   parent: cntk.tensor.ArrayMixin
   uid: cntk.tensor.ArrayMixin.asarray

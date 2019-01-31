@@ -81,7 +81,7 @@ items:
   langs:
   - python
   module: cntk.variables
-  name: as_constant
+  name: as_constant()
   summary: 'Converts this instance into a <xref:cntk.variables.Constant>
 
     '
@@ -94,7 +94,7 @@ items:
   langs:
   - python
   module: cntk.variables
-  name: as_parameter
+  name: as_parameter()
   summary: 'Converts this instance into a <xref:cntk.variables.Parameter>
 
     '
@@ -105,11 +105,11 @@ items:
 references:
 - fullName: cntk.variables.Variable.as_constant
   isExternal: false
-  name: as_constant
+  name: as_constant()
   parent: cntk.variables.Variable
   uid: cntk.variables.Variable.as_constant
 - fullName: cntk.variables.Variable.as_parameter
   isExternal: false
-  name: as_parameter
+  name: as_parameter()
   parent: cntk.variables.Variable
   uid: cntk.variables.Variable.as_parameter

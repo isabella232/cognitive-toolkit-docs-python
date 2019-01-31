@@ -31,7 +31,7 @@ items:
   langs:
   - python
   module: cntk.train.distributed
-  name: communicator
+  name: communicator()
   summary: 'Returns the distributed communicator that talks to other MPI workers
 
     '
@@ -60,7 +60,7 @@ items:
 references:
 - fullName: cntk.train.distributed.DistributedLearner.communicator
   isExternal: false
-  name: communicator
+  name: communicator()
   parent: cntk.train.distributed.DistributedLearner
   uid: cntk.train.distributed.DistributedLearner.communicator
 - fullName: cntk.train.distributed.DistributedLearner.total_number_of_samples_seen

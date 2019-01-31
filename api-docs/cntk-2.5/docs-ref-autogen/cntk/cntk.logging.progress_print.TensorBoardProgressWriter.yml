@@ -78,7 +78,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: close
+  name: close()
   summary: 'Make sure that any outstanding records are immediately persisted, then
     close any open files.
 
@@ -95,7 +95,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: flush
+  name: flush()
   summary: 'Make sure that any outstanding records are immediately persisted.
 
     '
@@ -109,7 +109,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_test_summary
+  name: on_write_test_summary(samples, updates, summaries, aggregate_metric, elapsed_milliseconds)
   syntax:
     content: on_write_test_summary(samples, updates, summaries, aggregate_metric,
       elapsed_milliseconds)
@@ -126,7 +126,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_test_update
+  name: on_write_test_update(samples, updates, aggregate_metric)
   syntax:
     content: on_write_test_update(samples, updates, aggregate_metric)
     parameters:
@@ -140,7 +140,8 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_training_summary
+  name: on_write_training_summary(samples, updates, summaries, aggregate_loss, aggregate_metric,
+    elapsed_milliseconds)
   syntax:
     content: on_write_training_summary(samples, updates, summaries, aggregate_loss,
       aggregate_metric, elapsed_milliseconds)
@@ -158,7 +159,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: on_write_training_update
+  name: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
   syntax:
     content: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
     parameters:
@@ -173,7 +174,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: write_image
+  name: write_image(name, data, step)
   syntax:
     content: write_image(name, data, step)
     parameters:
@@ -187,7 +188,7 @@ items:
   langs:
   - python
   module: cntk.logging.progress_print
-  name: write_value
+  name: write_value(name, value, step)
   summary: 'Record value of a scalar variable at the given time step.
 
     '
@@ -217,42 +218,43 @@ items:
 references:
 - fullName: cntk.logging.progress_print.TensorBoardProgressWriter.close
   isExternal: false
-  name: close
+  name: close()
   parent: cntk.logging.progress_print.TensorBoardProgressWriter
   uid: cntk.logging.progress_print.TensorBoardProgressWriter.close
 - fullName: cntk.logging.progress_print.TensorBoardProgressWriter.flush
   isExternal: false
-  name: flush
+  name: flush()
   parent: cntk.logging.progress_print.TensorBoardProgressWriter
   uid: cntk.logging.progress_print.TensorBoardProgressWriter.flush
 - fullName: cntk.logging.progress_print.TensorBoardProgressWriter.on_write_test_summary
   isExternal: false
-  name: on_write_test_summary
+  name: on_write_test_summary(samples, updates, summaries, aggregate_metric, elapsed_milliseconds)
   parent: cntk.logging.progress_print.TensorBoardProgressWriter
   uid: cntk.logging.progress_print.TensorBoardProgressWriter.on_write_test_summary
 - fullName: cntk.logging.progress_print.TensorBoardProgressWriter.on_write_test_update
   isExternal: false
-  name: on_write_test_update
+  name: on_write_test_update(samples, updates, aggregate_metric)
   parent: cntk.logging.progress_print.TensorBoardProgressWriter
   uid: cntk.logging.progress_print.TensorBoardProgressWriter.on_write_test_update
 - fullName: cntk.logging.progress_print.TensorBoardProgressWriter.on_write_training_summary
   isExternal: false
-  name: on_write_training_summary
+  name: on_write_training_summary(samples, updates, summaries, aggregate_loss, aggregate_metric,
+    elapsed_milliseconds)
   parent: cntk.logging.progress_print.TensorBoardProgressWriter
   uid: cntk.logging.progress_print.TensorBoardProgressWriter.on_write_training_summary
 - fullName: cntk.logging.progress_print.TensorBoardProgressWriter.on_write_training_update
   isExternal: false
-  name: on_write_training_update
+  name: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
   parent: cntk.logging.progress_print.TensorBoardProgressWriter
   uid: cntk.logging.progress_print.TensorBoardProgressWriter.on_write_training_update
 - fullName: cntk.logging.progress_print.TensorBoardProgressWriter.write_image
   isExternal: false
-  name: write_image
+  name: write_image(name, data, step)
   parent: cntk.logging.progress_print.TensorBoardProgressWriter
   uid: cntk.logging.progress_print.TensorBoardProgressWriter.write_image
 - fullName: cntk.logging.progress_print.TensorBoardProgressWriter.write_value
   isExternal: false
-  name: write_value
+  name: write_value(name, value, step)
   parent: cntk.logging.progress_print.TensorBoardProgressWriter
   uid: cntk.logging.progress_print.TensorBoardProgressWriter.write_value
 - fullName: None, default None

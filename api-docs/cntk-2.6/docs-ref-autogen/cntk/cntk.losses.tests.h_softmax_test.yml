@@ -17,7 +17,7 @@ items:
   langs:
   - python
   module: cntk.losses.tests.h_softmax_test
-  name: test_h_softmax
+  name: test_h_softmax()
   syntax:
     content: test_h_softmax()
   type: function
@@ -25,6 +25,6 @@ items:
 references:
 - fullName: cntk.losses.tests.h_softmax_test.test_h_softmax
   isExternal: false
-  name: test_h_softmax
+  name: test_h_softmax()
   parent: cntk.losses.tests.h_softmax_test
   uid: cntk.losses.tests.h_softmax_test.test_h_softmax

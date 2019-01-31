@@ -44,7 +44,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: alias
+  name: alias()
   syntax:
     content: alias()
     parameters: []
@@ -55,7 +55,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: asarray
+  name: asarray()
   summary: 'Converts the instance''s data to a NumPy array.
 
     '
@@ -69,7 +69,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: clear
+  name: clear()
   syntax:
     content: clear()
     parameters: []
@@ -80,7 +80,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: copy_from
+  name: copy_from(source)
   syntax:
     content: copy_from(source)
     parameters:
@@ -92,7 +92,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: data_buffer
+  name: data_buffer()
   syntax:
     content: data_buffer()
     parameters: []
@@ -103,7 +103,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: deep_clone
+  name: deep_clone(*args)
   syntax:
     content: deep_clone(*args)
     parameters: []
@@ -114,7 +114,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: device
+  name: device()
   syntax:
     content: device()
     parameters: []
@@ -125,7 +125,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: invalidate_section
+  name: invalidate_section(sectionOffset, sectionShape)
   syntax:
     content: invalidate_section(sectionOffset, sectionShape)
     parameters:
@@ -138,7 +138,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: mark_sequence_begin
+  name: mark_sequence_begin(*args)
   syntax:
     content: mark_sequence_begin(*args)
     parameters: []
@@ -149,7 +149,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: masked_count
+  name: masked_count()
   syntax:
     content: masked_count()
     parameters: []
@@ -160,7 +160,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: shape
+  name: shape()
   syntax:
     content: shape()
     parameters: []
@@ -171,7 +171,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: to_ndarray
+  name: to_ndarray()
   syntax:
     content: to_ndarray()
     parameters: []
@@ -180,61 +180,61 @@ items:
 references:
 - fullName: cntk.cntk_py.NDMask.alias
   isExternal: false
-  name: alias
+  name: alias()
   parent: cntk.cntk_py.NDMask
   uid: cntk.cntk_py.NDMask.alias
 - fullName: cntk.cntk_py.NDMask.asarray
   isExternal: false
-  name: asarray
+  name: asarray()
   parent: cntk.cntk_py.NDMask
   uid: cntk.cntk_py.NDMask.asarray
 - fullName: cntk.cntk_py.NDMask.clear
   isExternal: false
-  name: clear
+  name: clear()
   parent: cntk.cntk_py.NDMask
   uid: cntk.cntk_py.NDMask.clear
 - fullName: cntk.cntk_py.NDMask.copy_from
   isExternal: false
-  name: copy_from
+  name: copy_from(source)
   parent: cntk.cntk_py.NDMask
   uid: cntk.cntk_py.NDMask.copy_from
 - fullName: cntk.cntk_py.NDMask.data_buffer
   isExternal: false
-  name: data_buffer
+  name: data_buffer()
   parent: cntk.cntk_py.NDMask
   uid: cntk.cntk_py.NDMask.data_buffer
 - fullName: cntk.cntk_py.NDMask.deep_clone
   isExternal: false
-  name: deep_clone
+  name: deep_clone(*args)
   parent: cntk.cntk_py.NDMask
   uid: cntk.cntk_py.NDMask.deep_clone
 - fullName: cntk.cntk_py.NDMask.device
   isExternal: false
-  name: device
+  name: device()
   parent: cntk.cntk_py.NDMask
   uid: cntk.cntk_py.NDMask.device
 - fullName: cntk.cntk_py.NDMask.invalidate_section
   isExternal: false
-  name: invalidate_section
+  name: invalidate_section(sectionOffset, sectionShape)
   parent: cntk.cntk_py.NDMask
   uid: cntk.cntk_py.NDMask.invalidate_section
 - fullName: cntk.cntk_py.NDMask.mark_sequence_begin
   isExternal: false
-  name: mark_sequence_begin
+  name: mark_sequence_begin(*args)
   parent: cntk.cntk_py.NDMask
   uid: cntk.cntk_py.NDMask.mark_sequence_begin
 - fullName: cntk.cntk_py.NDMask.masked_count
   isExternal: false
-  name: masked_count
+  name: masked_count()
   parent: cntk.cntk_py.NDMask
   uid: cntk.cntk_py.NDMask.masked_count
 - fullName: cntk.cntk_py.NDMask.shape
   isExternal: false
-  name: shape
+  name: shape()
   parent: cntk.cntk_py.NDMask
   uid: cntk.cntk_py.NDMask.shape
 - fullName: cntk.cntk_py.NDMask.to_ndarray
   isExternal: false
-  name: to_ndarray
+  name: to_ndarray()
   parent: cntk.cntk_py.NDMask
   uid: cntk.cntk_py.NDMask.to_ndarray

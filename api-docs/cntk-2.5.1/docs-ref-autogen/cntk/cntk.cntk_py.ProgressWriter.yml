@@ -40,7 +40,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: on_training_update_end
+  name: on_training_update_end()
   syntax:
     content: on_training_update_end()
     parameters: []
@@ -51,7 +51,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: on_write_distributed_sync_update
+  name: on_write_distributed_sync_update(arg0, arg1, arg2)
   syntax:
     content: on_write_distributed_sync_update(arg0, arg1, arg2)
     parameters:
@@ -65,7 +65,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: on_write_test_summary
+  name: on_write_test_summary(arg0, arg1, arg2, arg3, arg4)
   syntax:
     content: on_write_test_summary(arg0, arg1, arg2, arg3, arg4)
     parameters:
@@ -81,7 +81,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: on_write_test_update
+  name: on_write_test_update(arg0, arg1, arg2)
   syntax:
     content: on_write_test_update(arg0, arg1, arg2)
     parameters:
@@ -95,7 +95,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: on_write_training_summary
+  name: on_write_training_summary(arg0, arg1, arg2, arg3, arg4, arg5)
   syntax:
     content: on_write_training_summary(arg0, arg1, arg2, arg3, arg4, arg5)
     parameters:
@@ -112,7 +112,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: on_write_training_update
+  name: on_write_training_update(arg0, arg1, arg2, arg3)
   syntax:
     content: on_write_training_update(arg0, arg1, arg2, arg3)
     parameters:
@@ -127,7 +127,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: total_test_updates
+  name: total_test_updates()
   syntax:
     content: total_test_updates()
     parameters: []
@@ -138,7 +138,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: total_training_updates
+  name: total_training_updates()
   syntax:
     content: total_training_updates()
     parameters: []
@@ -149,7 +149,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: write
+  name: write(arg0, arg1)
   syntax:
     content: write(arg0, arg1)
     parameters:
@@ -160,46 +160,46 @@ items:
 references:
 - fullName: cntk.cntk_py.ProgressWriter.on_training_update_end
   isExternal: false
-  name: on_training_update_end
+  name: on_training_update_end()
   parent: cntk.cntk_py.ProgressWriter
   uid: cntk.cntk_py.ProgressWriter.on_training_update_end
 - fullName: cntk.cntk_py.ProgressWriter.on_write_distributed_sync_update
   isExternal: false
-  name: on_write_distributed_sync_update
+  name: on_write_distributed_sync_update(arg0, arg1, arg2)
   parent: cntk.cntk_py.ProgressWriter
   uid: cntk.cntk_py.ProgressWriter.on_write_distributed_sync_update
 - fullName: cntk.cntk_py.ProgressWriter.on_write_test_summary
   isExternal: false
-  name: on_write_test_summary
+  name: on_write_test_summary(arg0, arg1, arg2, arg3, arg4)
   parent: cntk.cntk_py.ProgressWriter
   uid: cntk.cntk_py.ProgressWriter.on_write_test_summary
 - fullName: cntk.cntk_py.ProgressWriter.on_write_test_update
   isExternal: false
-  name: on_write_test_update
+  name: on_write_test_update(arg0, arg1, arg2)
   parent: cntk.cntk_py.ProgressWriter
   uid: cntk.cntk_py.ProgressWriter.on_write_test_update
 - fullName: cntk.cntk_py.ProgressWriter.on_write_training_summary
   isExternal: false
-  name: on_write_training_summary
+  name: on_write_training_summary(arg0, arg1, arg2, arg3, arg4, arg5)
   parent: cntk.cntk_py.ProgressWriter
   uid: cntk.cntk_py.ProgressWriter.on_write_training_summary
 - fullName: cntk.cntk_py.ProgressWriter.on_write_training_update
   isExternal: false
-  name: on_write_training_update
+  name: on_write_training_update(arg0, arg1, arg2, arg3)
   parent: cntk.cntk_py.ProgressWriter
   uid: cntk.cntk_py.ProgressWriter.on_write_training_update
 - fullName: cntk.cntk_py.ProgressWriter.total_test_updates
   isExternal: false
-  name: total_test_updates
+  name: total_test_updates()
   parent: cntk.cntk_py.ProgressWriter
   uid: cntk.cntk_py.ProgressWriter.total_test_updates
 - fullName: cntk.cntk_py.ProgressWriter.total_training_updates
   isExternal: false
-  name: total_training_updates
+  name: total_training_updates()
   parent: cntk.cntk_py.ProgressWriter
   uid: cntk.cntk_py.ProgressWriter.total_training_updates
 - fullName: cntk.cntk_py.ProgressWriter.write
   isExternal: false
-  name: write
+  name: write(arg0, arg1)
   parent: cntk.cntk_py.ProgressWriter
   uid: cntk.cntk_py.ProgressWriter.write

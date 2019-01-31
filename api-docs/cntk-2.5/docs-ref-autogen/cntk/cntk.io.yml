@@ -21,6 +21,7 @@ items:
   - cntk.io.transforms
   - cntk.io.tests
   fullName: cntk.io
+  kind: import
   langs:
   - python
   module: cntk.io
@@ -34,7 +35,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: Base64ImageDeserializer
+  name: Base64ImageDeserializer(filename, streams)
   seealsoContent: '  [Base64ImageDeserializer options](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-and-Python---Understanding-and-Extending-Readers#base64imagedeserializer-options)
 
     '
@@ -62,7 +63,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: CBFDeserializer
+  name: CBFDeserializer(filename, streams={})
   seealsoContent: '  [CNTKBinaryReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKBinary-Reader)
 
     '
@@ -93,7 +94,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: CTFDeserializer
+  name: CTFDeserializer(filename, streams)
   seealsoContent: '  [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)
 
     '
@@ -127,7 +128,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: HTKFeatureDeserializer
+  name: HTKFeatureDeserializer(streams)
   summary: 'Configures the HTK feature reader that reads speech data from scp files.
 
     '
@@ -148,7 +149,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: HTKMLFDeserializer
+  name: HTKMLFDeserializer(label_mapping_file, streams, phoneBoundaries=False)
   summary: 'Configures an HTK label reader that reads speech HTK format MLF (Master
 
     Label File)
@@ -185,7 +186,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: ImageDeserializer
+  name: ImageDeserializer(filename, streams)
   seealsoContent: '  [Image reader definition](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-Image-reader)
 
     '
@@ -214,7 +215,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: LatticeDeserializer
+  name: LatticeDeserializer(lattice_index_file, streams)
   summary: 'Configures a lattice deserializer
 
     '
@@ -235,7 +236,8 @@ items:
   langs:
   - python
   module: cntk.io
-  name: StreamDef
+  name: StreamDef(field=None, shape=None, is_sparse=False, transforms=None, context=None,
+    scp=None, mlf=None, broadcast=None, defines_mb_size=False, max_sequence_length=65535)
   summary: "   Configuration of a stream for use with the builtin Deserializers.\n\
     \   The meanings of some configuration keys have a mild dependency on the\n  \
     \ exact deserializer, and certain keys are meaningless for certain\n   deserializers.\n"
@@ -346,7 +348,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: sequence_to_cntk_text_format
+  name: sequence_to_cntk_text_format(seq_idx, alias_tensor_map)
   summary: 'Converts a list of NumPy arrays representing tensors of inputs into a
 
     format that is readable by <xref:cntk.io.CTFDeserializer>.
@@ -380,37 +382,37 @@ items:
 references:
 - fullName: cntk.io.Base64ImageDeserializer
   isExternal: false
-  name: Base64ImageDeserializer
+  name: Base64ImageDeserializer(filename, streams)
   parent: cntk.io
   uid: cntk.io.Base64ImageDeserializer
 - fullName: cntk.io.CBFDeserializer
   isExternal: false
-  name: CBFDeserializer
+  name: CBFDeserializer(filename, streams={})
   parent: cntk.io
   uid: cntk.io.CBFDeserializer
 - fullName: cntk.io.CTFDeserializer
   isExternal: false
-  name: CTFDeserializer
+  name: CTFDeserializer(filename, streams)
   parent: cntk.io
   uid: cntk.io.CTFDeserializer
 - fullName: cntk.io.HTKFeatureDeserializer
   isExternal: false
-  name: HTKFeatureDeserializer
+  name: HTKFeatureDeserializer(streams)
   parent: cntk.io
   uid: cntk.io.HTKFeatureDeserializer
 - fullName: cntk.io.HTKMLFDeserializer
   isExternal: false
-  name: HTKMLFDeserializer
+  name: HTKMLFDeserializer(label_mapping_file, streams, phoneBoundaries=False)
   parent: cntk.io
   uid: cntk.io.HTKMLFDeserializer
 - fullName: cntk.io.ImageDeserializer
   isExternal: false
-  name: ImageDeserializer
+  name: ImageDeserializer(filename, streams)
   parent: cntk.io
   uid: cntk.io.ImageDeserializer
 - fullName: cntk.io.LatticeDeserializer
   isExternal: false
-  name: LatticeDeserializer
+  name: LatticeDeserializer(lattice_index_file, streams)
   parent: cntk.io
   uid: cntk.io.LatticeDeserializer
 - fullName: cntk.io.MinibatchData
@@ -435,7 +437,8 @@ references:
   uid: cntk.io.StreamConfiguration
 - fullName: cntk.io.StreamDef
   isExternal: false
-  name: StreamDef
+  name: StreamDef(field=None, shape=None, is_sparse=False, transforms=None, context=None,
+    scp=None, mlf=None, broadcast=None, defines_mb_size=False, max_sequence_length=65535)
   parent: cntk.io
   uid: cntk.io.StreamDef
 - fullName: cntk.io.StreamInformation
@@ -455,7 +458,7 @@ references:
   uid: cntk.io.UserMinibatchSource
 - fullName: cntk.io.sequence_to_cntk_text_format
   isExternal: false
-  name: sequence_to_cntk_text_format
+  name: sequence_to_cntk_text_format(seq_idx, alias_tensor_map)
   parent: cntk.io
   uid: cntk.io.sequence_to_cntk_text_format
 - fullName: cntk.io.transforms

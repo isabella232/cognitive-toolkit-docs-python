@@ -8,6 +8,7 @@ items:
   - cntk.contrib.netopt.quantization
   - cntk.contrib.netopt.test
   fullName: cntk.contrib.netopt
+  kind: import
   langs:
   - python
   module: cntk.contrib.netopt
@@ -21,7 +22,7 @@ items:
   langs:
   - python
   module: cntk.contrib.netopt
-  name: try_register_native_convolve_function
+  name: try_register_native_convolve_function()
   summary: 'Register the native binary convolution function that calls halide
 
     operations internally.
@@ -34,7 +35,7 @@ items:
 references:
 - fullName: cntk.contrib.netopt.try_register_native_convolve_function
   isExternal: false
-  name: try_register_native_convolve_function
+  name: try_register_native_convolve_function()
   parent: cntk.contrib.netopt
   uid: cntk.contrib.netopt.try_register_native_convolve_function
 - fullName: cntk.contrib.netopt.custom_convolution_ops

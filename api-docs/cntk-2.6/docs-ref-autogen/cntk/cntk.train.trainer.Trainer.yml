@@ -187,7 +187,7 @@ items:
   langs:
   - python
   module: cntk.train.trainer
-  name: print_node_timing
+  name: print_node_timing()
   summary: 'Prints per-node average timing per-minibatch for each primitive function
 
     statistics would reset after print
@@ -203,7 +203,7 @@ items:
   langs:
   - python
   module: cntk.train.trainer
-  name: restore_from_checkpoint
+  name: restore_from_checkpoint(filename)
   summary: 'Restores a checkpoint of the model and Trainer state from the
 
     specified file location.
@@ -225,7 +225,7 @@ items:
   langs:
   - python
   module: cntk.train.trainer
-  name: save_checkpoint
+  name: save_checkpoint(filename, external_state={})
   summary: 'Saves a checkpoint of the model and other Trainer state at the
 
     specified file location.
@@ -259,7 +259,7 @@ items:
   langs:
   - python
   module: cntk.train.trainer
-  name: summarize_test_progress
+  name: summarize_test_progress()
   summary: 'Updates the progress writers with the summary of test progress since start
     and resets the internal
 
@@ -276,7 +276,7 @@ items:
   langs:
   - python
   module: cntk.train.trainer
-  name: summarize_training_progress
+  name: summarize_training_progress()
   summary: 'Updates the progress writers with the summary of training progress since
     start and resets the internal
 
@@ -293,10 +293,24 @@ items:
   langs:
   - python
   module: cntk.train.trainer
-  name: test_minibatch
-  summary: "Test the model on the specified batch of samples using the evaluation\n\
-    Function specified during construction of the Trainer.\n\nNote: See <xref:cntk.ops.functions.Function.forward>\
-    \ for examples on passing input data. \n"
+  name: test_minibatch(arguments, device=None)
+  summary: 'Test the model on the specified batch of samples using the evaluation
+
+    Function specified during construction of the Trainer.
+
+
+
+    > [!NOTE]
+
+    > See <xref:cntk.ops.functions.Function.forward> for examples on
+
+    >
+
+    > passing input data.
+
+    >
+
+    '
   syntax:
     content: test_minibatch(arguments, device=None)
     parameters:
@@ -331,10 +345,23 @@ items:
   langs:
   - python
   module: cntk.train.trainer
-  name: train_minibatch
-  summary: "Optimize model parameters using the specified 'arguments' minibatch of\
-    \ training samples.\n\nNote: See <xref:cntk.ops.functions.Function.forward> for\
-    \ examples on passing input data. \n"
+  name: train_minibatch(arguments, outputs=None, device=None, is_sweep_end=None)
+  summary: 'Optimize model parameters using the specified ''arguments'' minibatch
+    of training samples.
+
+
+
+    > [!NOTE]
+
+    > See <xref:cntk.ops.functions.Function.forward> for examples on
+
+    >
+
+    > passing input data.
+
+    >
+
+    '
   syntax:
     content: train_minibatch(arguments, outputs=None, device=None, is_sweep_end=None)
     parameters:
@@ -400,32 +427,32 @@ references:
   uid: cntk.train.trainer.Trainer.previous_minibatch_sample_count
 - fullName: cntk.train.trainer.Trainer.print_node_timing
   isExternal: false
-  name: print_node_timing
+  name: print_node_timing()
   parent: cntk.train.trainer.Trainer
   uid: cntk.train.trainer.Trainer.print_node_timing
 - fullName: cntk.train.trainer.Trainer.restore_from_checkpoint
   isExternal: false
-  name: restore_from_checkpoint
+  name: restore_from_checkpoint(filename)
   parent: cntk.train.trainer.Trainer
   uid: cntk.train.trainer.Trainer.restore_from_checkpoint
 - fullName: cntk.train.trainer.Trainer.save_checkpoint
   isExternal: false
-  name: save_checkpoint
+  name: save_checkpoint(filename, external_state={})
   parent: cntk.train.trainer.Trainer
   uid: cntk.train.trainer.Trainer.save_checkpoint
 - fullName: cntk.train.trainer.Trainer.summarize_test_progress
   isExternal: false
-  name: summarize_test_progress
+  name: summarize_test_progress()
   parent: cntk.train.trainer.Trainer
   uid: cntk.train.trainer.Trainer.summarize_test_progress
 - fullName: cntk.train.trainer.Trainer.summarize_training_progress
   isExternal: false
-  name: summarize_training_progress
+  name: summarize_training_progress()
   parent: cntk.train.trainer.Trainer
   uid: cntk.train.trainer.Trainer.summarize_training_progress
 - fullName: cntk.train.trainer.Trainer.test_minibatch
   isExternal: false
-  name: test_minibatch
+  name: test_minibatch(arguments, device=None)
   parent: cntk.train.trainer.Trainer
   uid: cntk.train.trainer.Trainer.test_minibatch
 - fullName: cntk.train.trainer.Trainer.total_number_of_samples_seen
@@ -435,6 +462,6 @@ references:
   uid: cntk.train.trainer.Trainer.total_number_of_samples_seen
 - fullName: cntk.train.trainer.Trainer.train_minibatch
   isExternal: false
-  name: train_minibatch
+  name: train_minibatch(arguments, outputs=None, device=None, is_sweep_end=None)
   parent: cntk.train.trainer.Trainer
   uid: cntk.train.trainer.Trainer.train_minibatch

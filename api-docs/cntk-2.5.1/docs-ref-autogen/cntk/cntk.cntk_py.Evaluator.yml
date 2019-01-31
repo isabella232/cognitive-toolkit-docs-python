@@ -32,7 +32,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: evaluation_function
+  name: evaluation_function()
   syntax:
     content: evaluation_function()
     parameters: []
@@ -43,7 +43,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: print_node_timing
+  name: print_node_timing()
   syntax:
     content: print_node_timing()
     parameters: []
@@ -54,7 +54,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: progress_writers
+  name: progress_writers()
   syntax:
     content: progress_writers()
     parameters: []
@@ -65,7 +65,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: summarize_test_progress
+  name: summarize_test_progress()
   syntax:
     content: summarize_test_progress()
     parameters: []
@@ -76,7 +76,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: test_minibatch
+  name: test_minibatch(*args)
   syntax:
     content: test_minibatch(*args)
     parameters: []
@@ -87,7 +87,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: test_minibatch_overload_for_minibatchdata
+  name: test_minibatch_overload_for_minibatchdata(*args)
   syntax:
     content: test_minibatch_overload_for_minibatchdata(*args)
     parameters: []
@@ -96,31 +96,31 @@ items:
 references:
 - fullName: cntk.cntk_py.Evaluator.evaluation_function
   isExternal: false
-  name: evaluation_function
+  name: evaluation_function()
   parent: cntk.cntk_py.Evaluator
   uid: cntk.cntk_py.Evaluator.evaluation_function
 - fullName: cntk.cntk_py.Evaluator.print_node_timing
   isExternal: false
-  name: print_node_timing
+  name: print_node_timing()
   parent: cntk.cntk_py.Evaluator
   uid: cntk.cntk_py.Evaluator.print_node_timing
 - fullName: cntk.cntk_py.Evaluator.progress_writers
   isExternal: false
-  name: progress_writers
+  name: progress_writers()
   parent: cntk.cntk_py.Evaluator
   uid: cntk.cntk_py.Evaluator.progress_writers
 - fullName: cntk.cntk_py.Evaluator.summarize_test_progress
   isExternal: false
-  name: summarize_test_progress
+  name: summarize_test_progress()
   parent: cntk.cntk_py.Evaluator
   uid: cntk.cntk_py.Evaluator.summarize_test_progress
 - fullName: cntk.cntk_py.Evaluator.test_minibatch
   isExternal: false
-  name: test_minibatch
+  name: test_minibatch(*args)
   parent: cntk.cntk_py.Evaluator
   uid: cntk.cntk_py.Evaluator.test_minibatch
 - fullName: cntk.cntk_py.Evaluator.test_minibatch_overload_for_minibatchdata
   isExternal: false
-  name: test_minibatch_overload_for_minibatchdata
+  name: test_minibatch_overload_for_minibatchdata(*args)
   parent: cntk.cntk_py.Evaluator
   uid: cntk.cntk_py.Evaluator.test_minibatch_overload_for_minibatchdata

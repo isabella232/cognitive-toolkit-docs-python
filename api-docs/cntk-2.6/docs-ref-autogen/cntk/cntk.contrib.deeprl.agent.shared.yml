@@ -10,6 +10,7 @@ items:
   - cntk.contrib.deeprl.agent.shared.qlearning_parameters
   - cntk.contrib.deeprl.agent.shared.replay_memory
   fullName: cntk.contrib.deeprl.agent.shared
+  kind: import
   langs:
   - python
   module: cntk.contrib.deeprl.agent.shared

@@ -27,7 +27,7 @@ items:
   langs:
   - python
   module: cntk.core
-  name: asarray
+  name: asarray(value, dtype=None)
   summary: 'Converts a Value object to a sequence of NumPy arrays (if dense) or CSR
     arrays (if sparse).
 
@@ -44,7 +44,7 @@ items:
   langs:
   - python
   module: cntk.core
-  name: asvalue
+  name: asvalue(variable, data_array)
   summary: 'Converts a sequence of NumPy arrays or CSR arrays to a Value object.
 
     '
@@ -59,7 +59,7 @@ items:
   langs:
   - python
   module: cntk.core
-  name: user_function
+  name: user_function(user_func)
   summary: 'Wraps the passed Function to create a composite representing the
 
     composite Function graph rooted at the passed root Function.
@@ -84,16 +84,16 @@ references:
   uid: cntk.core.Value
 - fullName: cntk.core.asarray
   isExternal: false
-  name: asarray
+  name: asarray(value, dtype=None)
   parent: cntk.core
   uid: cntk.core.asarray
 - fullName: cntk.core.asvalue
   isExternal: false
-  name: asvalue
+  name: asvalue(variable, data_array)
   parent: cntk.core
   uid: cntk.core.asvalue
 - fullName: cntk.core.user_function
   isExternal: false
-  name: user_function
+  name: user_function(user_func)
   parent: cntk.core
   uid: cntk.core.user_function

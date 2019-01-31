@@ -50,7 +50,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: loss_function
+  name: loss_function()
   syntax:
     content: loss_function()
     parameters: []
@@ -61,7 +61,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: model
+  name: model()
   syntax:
     content: model()
     parameters: []
@@ -72,7 +72,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: parameter_learners
+  name: parameter_learners()
   syntax:
     content: parameter_learners()
     parameters: []
@@ -83,7 +83,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: previous_minibatch_evaluation_average
+  name: previous_minibatch_evaluation_average()
   syntax:
     content: previous_minibatch_evaluation_average()
     parameters: []
@@ -94,7 +94,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: previous_minibatch_loss_average
+  name: previous_minibatch_loss_average()
   syntax:
     content: previous_minibatch_loss_average()
     parameters: []
@@ -105,7 +105,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: previous_minibatch_sample_count
+  name: previous_minibatch_sample_count()
   syntax:
     content: previous_minibatch_sample_count()
     parameters: []
@@ -116,7 +116,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: print_node_timing
+  name: print_node_timing()
   syntax:
     content: print_node_timing()
     parameters: []
@@ -127,7 +127,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: restore_from_checkpoint
+  name: restore_from_checkpoint(filePath)
   syntax:
     content: restore_from_checkpoint(filePath)
     parameters:
@@ -139,7 +139,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: save_checkpoint
+  name: save_checkpoint(*args)
   syntax:
     content: save_checkpoint(*args)
     parameters: []
@@ -150,7 +150,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: summarize_training_progress
+  name: summarize_training_progress()
   syntax:
     content: summarize_training_progress()
     parameters: []
@@ -161,7 +161,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: total_number_of_samples_seen
+  name: total_number_of_samples_seen()
   syntax:
     content: total_number_of_samples_seen()
     parameters: []
@@ -172,7 +172,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: total_number_of_units_seen
+  name: total_number_of_units_seen(*args)
   syntax:
     content: total_number_of_units_seen(*args)
     parameters: []
@@ -183,7 +183,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: train_minibatch
+  name: train_minibatch(*args)
   syntax:
     content: train_minibatch(*args)
     parameters: []
@@ -194,7 +194,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: train_minibatch_overload_for_minibatchdata
+  name: train_minibatch_overload_for_minibatchdata(*args)
   syntax:
     content: train_minibatch_overload_for_minibatchdata(*args)
     parameters: []
@@ -203,71 +203,71 @@ items:
 references:
 - fullName: cntk.cntk_py.Trainer.loss_function
   isExternal: false
-  name: loss_function
+  name: loss_function()
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.loss_function
 - fullName: cntk.cntk_py.Trainer.model
   isExternal: false
-  name: model
+  name: model()
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.model
 - fullName: cntk.cntk_py.Trainer.parameter_learners
   isExternal: false
-  name: parameter_learners
+  name: parameter_learners()
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.parameter_learners
 - fullName: cntk.cntk_py.Trainer.previous_minibatch_evaluation_average
   isExternal: false
-  name: previous_minibatch_evaluation_average
+  name: previous_minibatch_evaluation_average()
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.previous_minibatch_evaluation_average
 - fullName: cntk.cntk_py.Trainer.previous_minibatch_loss_average
   isExternal: false
-  name: previous_minibatch_loss_average
+  name: previous_minibatch_loss_average()
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.previous_minibatch_loss_average
 - fullName: cntk.cntk_py.Trainer.previous_minibatch_sample_count
   isExternal: false
-  name: previous_minibatch_sample_count
+  name: previous_minibatch_sample_count()
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.previous_minibatch_sample_count
 - fullName: cntk.cntk_py.Trainer.print_node_timing
   isExternal: false
-  name: print_node_timing
+  name: print_node_timing()
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.print_node_timing
 - fullName: cntk.cntk_py.Trainer.restore_from_checkpoint
   isExternal: false
-  name: restore_from_checkpoint
+  name: restore_from_checkpoint(filePath)
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.restore_from_checkpoint
 - fullName: cntk.cntk_py.Trainer.save_checkpoint
   isExternal: false
-  name: save_checkpoint
+  name: save_checkpoint(*args)
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.save_checkpoint
 - fullName: cntk.cntk_py.Trainer.summarize_training_progress
   isExternal: false
-  name: summarize_training_progress
+  name: summarize_training_progress()
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.summarize_training_progress
 - fullName: cntk.cntk_py.Trainer.total_number_of_samples_seen
   isExternal: false
-  name: total_number_of_samples_seen
+  name: total_number_of_samples_seen()
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.total_number_of_samples_seen
 - fullName: cntk.cntk_py.Trainer.total_number_of_units_seen
   isExternal: false
-  name: total_number_of_units_seen
+  name: total_number_of_units_seen(*args)
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.total_number_of_units_seen
 - fullName: cntk.cntk_py.Trainer.train_minibatch
   isExternal: false
-  name: train_minibatch
+  name: train_minibatch(*args)
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.train_minibatch
 - fullName: cntk.cntk_py.Trainer.train_minibatch_overload_for_minibatchdata
   isExternal: false
-  name: train_minibatch_overload_for_minibatchdata
+  name: train_minibatch_overload_for_minibatchdata(*args)
   parent: cntk.cntk_py.Trainer
   uid: cntk.cntk_py.Trainer.train_minibatch_overload_for_minibatchdata

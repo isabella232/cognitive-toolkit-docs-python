@@ -28,7 +28,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: adapt_solver
+  name: adapt_solver()
   summary: '   Adapt Caffe solver into CNTK format
 
     '
@@ -48,7 +48,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: load_model
+  name: load_model(global_conf)
   summary: '   Load prototxt and weights of Caffe, parsing them into uniform model
 
     '
@@ -70,11 +70,11 @@ items:
 references:
 - fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter.adapt_solver
   isExternal: false
-  name: adapt_solver
+  name: adapt_solver()
   parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter
   uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter.adapt_solver
 - fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter.load_model
   isExternal: false
-  name: load_model
+  name: load_model(global_conf)
   parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter
   uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter.load_model

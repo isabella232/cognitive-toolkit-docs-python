@@ -9,6 +9,7 @@ items:
   - cntk.contrib.crosstalkcaffe.utils
   - cntk.contrib.crosstalkcaffe.validation
   fullName: cntk.contrib.crosstalkcaffe
+  kind: import
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe

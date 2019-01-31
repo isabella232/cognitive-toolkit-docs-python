@@ -28,7 +28,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: get
+  name: get()
   syntax:
     content: get()
     parameters: []
@@ -39,7 +39,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: is_initialized
+  name: is_initialized()
   syntax:
     content: is_initialized()
     parameters: []
@@ -50,7 +50,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: reset
+  name: reset()
   syntax:
     content: reset()
     parameters: []
@@ -61,7 +61,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: set
+  name: set(value)
   syntax:
     content: set(value)
     parameters:
@@ -71,21 +71,21 @@ items:
 references:
 - fullName: cntk.cntk_py.OptionalBool.get
   isExternal: false
-  name: get
+  name: get()
   parent: cntk.cntk_py.OptionalBool
   uid: cntk.cntk_py.OptionalBool.get
 - fullName: cntk.cntk_py.OptionalBool.is_initialized
   isExternal: false
-  name: is_initialized
+  name: is_initialized()
   parent: cntk.cntk_py.OptionalBool
   uid: cntk.cntk_py.OptionalBool.is_initialized
 - fullName: cntk.cntk_py.OptionalBool.reset
   isExternal: false
-  name: reset
+  name: reset()
   parent: cntk.cntk_py.OptionalBool
   uid: cntk.cntk_py.OptionalBool.reset
 - fullName: cntk.cntk_py.OptionalBool.set
   isExternal: false
-  name: set
+  name: set(value)
   parent: cntk.cntk_py.OptionalBool
   uid: cntk.cntk_py.OptionalBool.set

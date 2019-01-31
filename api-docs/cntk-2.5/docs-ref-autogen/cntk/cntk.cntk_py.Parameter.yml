@@ -30,7 +30,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: asarray
+  name: asarray()
   summary: 'Converts the instance''s data to a NumPy array.
 
     '
@@ -44,7 +44,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: record_value_update
+  name: record_value_update()
   syntax:
     content: record_value_update()
     parameters: []
@@ -55,7 +55,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: set_value
+  name: set_value(value)
   syntax:
     content: set_value(value)
     parameters:
@@ -67,7 +67,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: value
+  name: value()
   syntax:
     content: value()
     parameters: []
@@ -76,21 +76,21 @@ items:
 references:
 - fullName: cntk.cntk_py.Parameter.asarray
   isExternal: false
-  name: asarray
+  name: asarray()
   parent: cntk.cntk_py.Parameter
   uid: cntk.cntk_py.Parameter.asarray
 - fullName: cntk.cntk_py.Parameter.record_value_update
   isExternal: false
-  name: record_value_update
+  name: record_value_update()
   parent: cntk.cntk_py.Parameter
   uid: cntk.cntk_py.Parameter.record_value_update
 - fullName: cntk.cntk_py.Parameter.set_value
   isExternal: false
-  name: set_value
+  name: set_value(value)
   parent: cntk.cntk_py.Parameter
   uid: cntk.cntk_py.Parameter.set_value
 - fullName: cntk.cntk_py.Parameter.value
   isExternal: false
-  name: value
+  name: value()
   parent: cntk.cntk_py.Parameter
   uid: cntk.cntk_py.Parameter.value

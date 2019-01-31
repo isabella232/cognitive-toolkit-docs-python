@@ -36,7 +36,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.agent_test
-  name: end
+  name: end(reward, next_state)
   syntax:
     content: end(reward, next_state)
     parameters:
@@ -49,7 +49,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.agent_test
-  name: save
+  name: save(filename)
   syntax:
     content: save(filename)
     parameters:
@@ -61,7 +61,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.agent_test
-  name: save_parameter_settings
+  name: save_parameter_settings(filename)
   syntax:
     content: save_parameter_settings(filename)
     parameters:
@@ -73,7 +73,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.agent_test
-  name: set_as_best_model
+  name: set_as_best_model()
   syntax:
     content: set_as_best_model()
     parameters: []
@@ -84,7 +84,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.agent_test
-  name: start
+  name: start(state)
   syntax:
     content: start(state)
     parameters:
@@ -96,7 +96,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.tests.agent_test
-  name: step
+  name: step(reward, next_state)
   syntax:
     content: step(reward, next_state)
     parameters:
@@ -107,31 +107,31 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.end
   isExternal: false
-  name: end
+  name: end(reward, next_state)
   parent: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
   uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.end
 - fullName: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.save
   isExternal: false
-  name: save
+  name: save(filename)
   parent: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
   uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.save
 - fullName: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.save_parameter_settings
   isExternal: false
-  name: save_parameter_settings
+  name: save_parameter_settings(filename)
   parent: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
   uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.save_parameter_settings
 - fullName: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.set_as_best_model
   isExternal: false
-  name: set_as_best_model
+  name: set_as_best_model()
   parent: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
   uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.set_as_best_model
 - fullName: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.start
   isExternal: false
-  name: start
+  name: start(state)
   parent: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
   uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.start
 - fullName: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.step
   isExternal: false
-  name: step
+  name: step(reward, next_state)
   parent: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
   uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.step

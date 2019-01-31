@@ -200,7 +200,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: get_checkpoint_state
+  name: get_checkpoint_state()
   summary: 'Gets the checkpoint state of the MinibatchSource.
 
     '
@@ -218,7 +218,8 @@ items:
   langs:
   - python
   module: cntk.io
-  name: next_minibatch
+  name: next_minibatch(minibatch_size_in_samples, input_map=None, device=None, num_data_partitions=None,
+    partition_index=None)
   summary: 'Reads a minibatch that contains data for all input streams.  The
 
     minibatch size is specified in terms of #samples and/or #sequences for
@@ -299,7 +300,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: restore_from_checkpoint
+  name: restore_from_checkpoint(checkpoint)
   summary: 'Restores the MinibatchSource state from the specified checkpoint.
 
     '
@@ -319,7 +320,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: stream_info
+  name: stream_info(name)
   summary: 'Gets the description of the stream with given name.
 
     Throws an exception if there are none or multiple streams with this
@@ -349,7 +350,7 @@ items:
   langs:
   - python
   module: cntk.io
-  name: stream_infos
+  name: stream_infos()
   summary: 'Describes the streams this minibatch source produces.
 
     '
@@ -388,27 +389,28 @@ references:
   uid: cntk.io.MinibatchSource.current_position
 - fullName: cntk.io.MinibatchSource.get_checkpoint_state
   isExternal: false
-  name: get_checkpoint_state
+  name: get_checkpoint_state()
   parent: cntk.io.MinibatchSource
   uid: cntk.io.MinibatchSource.get_checkpoint_state
 - fullName: cntk.io.MinibatchSource.next_minibatch
   isExternal: false
-  name: next_minibatch
+  name: next_minibatch(minibatch_size_in_samples, input_map=None, device=None, num_data_partitions=None,
+    partition_index=None)
   parent: cntk.io.MinibatchSource
   uid: cntk.io.MinibatchSource.next_minibatch
 - fullName: cntk.io.MinibatchSource.restore_from_checkpoint
   isExternal: false
-  name: restore_from_checkpoint
+  name: restore_from_checkpoint(checkpoint)
   parent: cntk.io.MinibatchSource
   uid: cntk.io.MinibatchSource.restore_from_checkpoint
 - fullName: cntk.io.MinibatchSource.stream_info
   isExternal: false
-  name: stream_info
+  name: stream_info(name)
   parent: cntk.io.MinibatchSource
   uid: cntk.io.MinibatchSource.stream_info
 - fullName: cntk.io.MinibatchSource.stream_infos
   isExternal: false
-  name: stream_infos
+  name: stream_infos()
   parent: cntk.io.MinibatchSource
   uid: cntk.io.MinibatchSource.stream_infos
 - fullName: cntk.io.MinibatchSource.streams

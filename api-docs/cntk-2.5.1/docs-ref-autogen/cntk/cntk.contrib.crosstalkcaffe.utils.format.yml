@@ -18,7 +18,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.utils.format
-  name: camel_to_snake
+  name: camel_to_snake(camel_string)
   summary: '   Convert a string from camel style to snake style
 
     '
@@ -43,7 +43,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.utils.format
-  name: json_parser
+  name: json_parser(path)
   summary: '   Parse a json file into dict
 
     '
@@ -65,12 +65,12 @@ items:
 references:
 - fullName: cntk.contrib.crosstalkcaffe.utils.format.camel_to_snake
   isExternal: false
-  name: camel_to_snake
+  name: camel_to_snake(camel_string)
   parent: cntk.contrib.crosstalkcaffe.utils.format
   uid: cntk.contrib.crosstalkcaffe.utils.format.camel_to_snake
 - fullName: cntk.contrib.crosstalkcaffe.utils.format.json_parser
   isExternal: false
-  name: json_parser
+  name: json_parser(path)
   parent: cntk.contrib.crosstalkcaffe.utils.format
   uid: cntk.contrib.crosstalkcaffe.utils.format.json_parser
 - fullName: (str)

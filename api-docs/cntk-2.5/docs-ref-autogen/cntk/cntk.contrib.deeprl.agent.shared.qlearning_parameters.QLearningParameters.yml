@@ -24,7 +24,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.shared.qlearning_parameters
-  name: save
+  name: save(config_file)
   syntax:
     content: save(config_file)
     parameters:
@@ -34,6 +34,6 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save
   isExternal: false
-  name: save
+  name: save(config_file)
   parent: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
   uid: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save

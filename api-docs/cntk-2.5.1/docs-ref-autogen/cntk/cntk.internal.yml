@@ -7,6 +7,7 @@ items:
   - cntk.internal.utils
   - cntk.internal.tests
   fullName: cntk.internal
+  kind: import
   langs:
   - python
   module: cntk.internal

@@ -34,7 +34,7 @@ items:
   langs:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
-  name: backward
+  name: backward(state, root_gradients)
   syntax:
     content: backward(state, root_gradients)
     parameters:
@@ -47,7 +47,7 @@ items:
   langs:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
-  name: forward
+  name: forward(argument, device=None, outputs_to_retain=None)
   syntax:
     content: forward(argument, device=None, outputs_to_retain=None)
     parameters:
@@ -63,7 +63,7 @@ items:
   langs:
   - python
   module: cntk.contrib.netopt.custom_convolution_ops
-  name: infer_outputs
+  name: infer_outputs()
   syntax:
     content: infer_outputs()
     parameters: []
@@ -72,16 +72,16 @@ items:
 references:
 - fullName: cntk.contrib.netopt.custom_convolution_ops.pySign.backward
   isExternal: false
-  name: backward
+  name: backward(state, root_gradients)
   parent: cntk.contrib.netopt.custom_convolution_ops.pySign
   uid: cntk.contrib.netopt.custom_convolution_ops.pySign.backward
 - fullName: cntk.contrib.netopt.custom_convolution_ops.pySign.forward
   isExternal: false
-  name: forward
+  name: forward(argument, device=None, outputs_to_retain=None)
   parent: cntk.contrib.netopt.custom_convolution_ops.pySign
   uid: cntk.contrib.netopt.custom_convolution_ops.pySign.forward
 - fullName: cntk.contrib.netopt.custom_convolution_ops.pySign.infer_outputs
   isExternal: false
-  name: infer_outputs
+  name: infer_outputs()
   parent: cntk.contrib.netopt.custom_convolution_ops.pySign
   uid: cntk.contrib.netopt.custom_convolution_ops.pySign.infer_outputs

@@ -17,7 +17,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.agent_factory
-  name: make_agent
+  name: make_agent(agent_config, o_space, a_space)
   summary: 'Choose appropriate method to create an agent.
 
     '
@@ -49,6 +49,6 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.agent.agent_factory.make_agent
   isExternal: false
-  name: make_agent
+  name: make_agent(agent_config, o_space, a_space)
   parent: cntk.contrib.deeprl.agent.agent_factory
   uid: cntk.contrib.deeprl.agent.agent_factory.make_agent

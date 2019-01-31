@@ -30,7 +30,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: chunk_infos
+  name: chunk_infos()
   syntax:
     content: chunk_infos()
     parameters: []
@@ -41,7 +41,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: get_chunk
+  name: get_chunk(chunkId)
   syntax:
     content: get_chunk(chunkId)
     parameters:
@@ -53,7 +53,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: get_sequence_info
+  name: get_sequence_info(primary, result)
   syntax:
     content: get_sequence_info(primary, result)
     parameters:
@@ -66,7 +66,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: sequence_infos_for_chunk
+  name: sequence_infos_for_chunk(chunkId, result)
   syntax:
     content: sequence_infos_for_chunk(chunkId, result)
     parameters:
@@ -79,7 +79,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: stream_infos
+  name: stream_infos()
   syntax:
     content: stream_infos()
     parameters: []
@@ -88,26 +88,26 @@ items:
 references:
 - fullName: cntk.cntk_py.DataDeserializer.chunk_infos
   isExternal: false
-  name: chunk_infos
+  name: chunk_infos()
   parent: cntk.cntk_py.DataDeserializer
   uid: cntk.cntk_py.DataDeserializer.chunk_infos
 - fullName: cntk.cntk_py.DataDeserializer.get_chunk
   isExternal: false
-  name: get_chunk
+  name: get_chunk(chunkId)
   parent: cntk.cntk_py.DataDeserializer
   uid: cntk.cntk_py.DataDeserializer.get_chunk
 - fullName: cntk.cntk_py.DataDeserializer.get_sequence_info
   isExternal: false
-  name: get_sequence_info
+  name: get_sequence_info(primary, result)
   parent: cntk.cntk_py.DataDeserializer
   uid: cntk.cntk_py.DataDeserializer.get_sequence_info
 - fullName: cntk.cntk_py.DataDeserializer.sequence_infos_for_chunk
   isExternal: false
-  name: sequence_infos_for_chunk
+  name: sequence_infos_for_chunk(chunkId, result)
   parent: cntk.cntk_py.DataDeserializer
   uid: cntk.cntk_py.DataDeserializer.sequence_infos_for_chunk
 - fullName: cntk.cntk_py.DataDeserializer.stream_infos
   isExternal: false
-  name: stream_infos
+  name: stream_infos()
   parent: cntk.cntk_py.DataDeserializer
   uid: cntk.cntk_py.DataDeserializer.stream_infos

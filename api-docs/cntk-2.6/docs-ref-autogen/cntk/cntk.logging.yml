@@ -9,6 +9,7 @@ items:
   - cntk.logging.progress_print
   - cntk.logging.tests
   fullName: cntk.logging
+  kind: import
   langs:
   - python
   module: cntk.logging
@@ -22,7 +23,7 @@ items:
   langs:
   - python
   module: cntk.logging
-  name: get_trace_level
+  name: get_trace_level()
   summary: 'Returns current logging verbosity level.
 
     '
@@ -40,7 +41,7 @@ items:
   langs:
   - python
   module: cntk.logging
-  name: set_trace_level
+  name: set_trace_level(value)
   summary: 'Specifies global logging verbosity level.
 
     '
@@ -63,12 +64,12 @@ references:
   uid: cntk.logging.TraceLevel
 - fullName: cntk.logging.get_trace_level
   isExternal: false
-  name: get_trace_level
+  name: get_trace_level()
   parent: cntk.logging
   uid: cntk.logging.get_trace_level
 - fullName: cntk.logging.set_trace_level
   isExternal: false
-  name: set_trace_level
+  name: set_trace_level(value)
   parent: cntk.logging
   uid: cntk.logging.set_trace_level
 - fullName: cntk.logging.graph

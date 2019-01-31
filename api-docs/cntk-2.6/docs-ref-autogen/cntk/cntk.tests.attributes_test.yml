@@ -17,7 +17,7 @@ items:
   langs:
   - python
   module: cntk.tests.attributes_test
-  name: test_convolution_attributes
+  name: test_convolution_attributes()
   syntax:
     content: test_convolution_attributes()
   type: function
@@ -26,7 +26,7 @@ items:
   langs:
   - python
   module: cntk.tests.attributes_test
-  name: test_convolution_transpose_attributes
+  name: test_convolution_transpose_attributes()
   syntax:
     content: test_convolution_transpose_attributes()
   type: function
@@ -35,7 +35,7 @@ items:
   langs:
   - python
   module: cntk.tests.attributes_test
-  name: test_dropout_attributes
+  name: test_dropout_attributes()
   syntax:
     content: test_dropout_attributes()
   type: function
@@ -44,7 +44,7 @@ items:
   langs:
   - python
   module: cntk.tests.attributes_test
-  name: test_slice_attributes
+  name: test_slice_attributes()
   syntax:
     content: test_slice_attributes()
   type: function
@@ -52,21 +52,21 @@ items:
 references:
 - fullName: cntk.tests.attributes_test.test_convolution_attributes
   isExternal: false
-  name: test_convolution_attributes
+  name: test_convolution_attributes()
   parent: cntk.tests.attributes_test
   uid: cntk.tests.attributes_test.test_convolution_attributes
 - fullName: cntk.tests.attributes_test.test_convolution_transpose_attributes
   isExternal: false
-  name: test_convolution_transpose_attributes
+  name: test_convolution_transpose_attributes()
   parent: cntk.tests.attributes_test
   uid: cntk.tests.attributes_test.test_convolution_transpose_attributes
 - fullName: cntk.tests.attributes_test.test_dropout_attributes
   isExternal: false
-  name: test_dropout_attributes
+  name: test_dropout_attributes()
   parent: cntk.tests.attributes_test
   uid: cntk.tests.attributes_test.test_dropout_attributes
 - fullName: cntk.tests.attributes_test.test_slice_attributes
   isExternal: false
-  name: test_slice_attributes
+  name: test_slice_attributes()
   parent: cntk.tests.attributes_test
   uid: cntk.tests.attributes_test.test_slice_attributes

@@ -56,7 +56,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: has_value
+  name: has_value()
   syntax:
     content: has_value()
     parameters: []
@@ -76,7 +76,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: save
+  name: save(filename)
   syntax:
     content: save(filename)
     parameters:
@@ -97,7 +97,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: value_type
+  name: value_type()
   syntax:
     content: value_type()
     parameters: []
@@ -236,7 +236,7 @@ items:
 references:
 - fullName: cntk.cntk_py.DictionaryValue.has_value
   isExternal: false
-  name: has_value
+  name: has_value()
   parent: cntk.cntk_py.DictionaryValue
   uid: cntk.cntk_py.DictionaryValue.has_value
 - fullName: cntk.cntk_py.DictionaryValue.load
@@ -246,7 +246,7 @@ references:
   uid: cntk.cntk_py.DictionaryValue.load
 - fullName: cntk.cntk_py.DictionaryValue.save
   isExternal: false
-  name: save
+  name: save(filename)
   parent: cntk.cntk_py.DictionaryValue
   uid: cntk.cntk_py.DictionaryValue.save
 - fullName: cntk.cntk_py.DictionaryValue.type_name
@@ -256,7 +256,7 @@ references:
   uid: cntk.cntk_py.DictionaryValue.type_name
 - fullName: cntk.cntk_py.DictionaryValue.value_type
   isExternal: false
-  name: value_type
+  name: value_type()
   parent: cntk.cntk_py.DictionaryValue
   uid: cntk.cntk_py.DictionaryValue.value_type
 - fullName: cntk.cntk_py.DictionaryValue.Type_Axis

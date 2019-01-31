@@ -15,7 +15,7 @@ items:
   langs:
   - python
   module: cntk.eval.tests.evaluator_distributed_test
-  name: mpiexec_execute
+  name: mpiexec_execute(script, mpiexec_params)
   syntax:
     content: mpiexec_execute(script, mpiexec_params)
     parameters:
@@ -27,7 +27,7 @@ items:
   langs:
   - python
   module: cntk.eval.tests.evaluator_distributed_test
-  name: test_distributed_eval
+  name: test_distributed_eval()
   syntax:
     content: test_distributed_eval()
   type: function
@@ -35,11 +35,11 @@ items:
 references:
 - fullName: cntk.eval.tests.evaluator_distributed_test.mpiexec_execute
   isExternal: false
-  name: mpiexec_execute
+  name: mpiexec_execute(script, mpiexec_params)
   parent: cntk.eval.tests.evaluator_distributed_test
   uid: cntk.eval.tests.evaluator_distributed_test.mpiexec_execute
 - fullName: cntk.eval.tests.evaluator_distributed_test.test_distributed_eval
   isExternal: false
-  name: test_distributed_eval
+  name: test_distributed_eval()
   parent: cntk.eval.tests.evaluator_distributed_test
   uid: cntk.eval.tests.evaluator_distributed_test.test_distributed_eval

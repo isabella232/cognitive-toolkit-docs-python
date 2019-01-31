@@ -49,7 +49,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.qlearning
-  name: end
+  name: end(reward, next_state)
   summary: 'Last observed reward/state of the episode (which then terminates).
 
     '
@@ -75,7 +75,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.qlearning
-  name: enter_evaluation
+  name: enter_evaluation()
   summary: 'Setup before evaluation.
 
     '
@@ -89,7 +89,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.qlearning
-  name: save
+  name: save(filename)
   summary: 'Save model to file.
 
     '
@@ -104,7 +104,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.qlearning
-  name: save_parameter_settings
+  name: save_parameter_settings(filename)
   summary: 'Save parameter settings to file.
 
     '
@@ -119,7 +119,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.qlearning
-  name: set_as_best_model
+  name: set_as_best_model()
   summary: 'Copy current model to best model.
 
     '
@@ -133,7 +133,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.qlearning
-  name: start
+  name: start(state)
   summary: 'Start a new episode.
 
     '
@@ -161,7 +161,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.qlearning
-  name: step
+  name: step(reward, next_state)
   summary: 'Observe one transition and choose an action.
 
     '
@@ -193,37 +193,37 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.agent.qlearning.QLearning.end
   isExternal: false
-  name: end
+  name: end(reward, next_state)
   parent: cntk.contrib.deeprl.agent.qlearning.QLearning
   uid: cntk.contrib.deeprl.agent.qlearning.QLearning.end
 - fullName: cntk.contrib.deeprl.agent.qlearning.QLearning.enter_evaluation
   isExternal: false
-  name: enter_evaluation
+  name: enter_evaluation()
   parent: cntk.contrib.deeprl.agent.qlearning.QLearning
   uid: cntk.contrib.deeprl.agent.qlearning.QLearning.enter_evaluation
 - fullName: cntk.contrib.deeprl.agent.qlearning.QLearning.save
   isExternal: false
-  name: save
+  name: save(filename)
   parent: cntk.contrib.deeprl.agent.qlearning.QLearning
   uid: cntk.contrib.deeprl.agent.qlearning.QLearning.save
 - fullName: cntk.contrib.deeprl.agent.qlearning.QLearning.save_parameter_settings
   isExternal: false
-  name: save_parameter_settings
+  name: save_parameter_settings(filename)
   parent: cntk.contrib.deeprl.agent.qlearning.QLearning
   uid: cntk.contrib.deeprl.agent.qlearning.QLearning.save_parameter_settings
 - fullName: cntk.contrib.deeprl.agent.qlearning.QLearning.set_as_best_model
   isExternal: false
-  name: set_as_best_model
+  name: set_as_best_model()
   parent: cntk.contrib.deeprl.agent.qlearning.QLearning
   uid: cntk.contrib.deeprl.agent.qlearning.QLearning.set_as_best_model
 - fullName: cntk.contrib.deeprl.agent.qlearning.QLearning.start
   isExternal: false
-  name: start
+  name: start(state)
   parent: cntk.contrib.deeprl.agent.qlearning.QLearning
   uid: cntk.contrib.deeprl.agent.qlearning.QLearning.start
 - fullName: cntk.contrib.deeprl.agent.qlearning.QLearning.step
   isExternal: false
-  name: step
+  name: step(reward, next_state)
   parent: cntk.contrib.deeprl.agent.qlearning.QLearning
   uid: cntk.contrib.deeprl.agent.qlearning.QLearning.step
 - fullName: action (int)

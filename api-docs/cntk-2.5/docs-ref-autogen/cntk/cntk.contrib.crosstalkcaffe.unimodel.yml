@@ -5,6 +5,7 @@ items:
   - cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
   - cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
   fullName: cntk.contrib.crosstalkcaffe.unimodel
+  kind: import
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.unimodel

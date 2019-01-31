@@ -10,6 +10,7 @@ items:
   - cntk.contrib.crosstalk.RnnAttr
   - cntk.contrib.crosstalk.crosstalk_cntk
   fullName: cntk.contrib.crosstalk
+  kind: import
   langs:
   - python
   module: cntk.contrib.crosstalk

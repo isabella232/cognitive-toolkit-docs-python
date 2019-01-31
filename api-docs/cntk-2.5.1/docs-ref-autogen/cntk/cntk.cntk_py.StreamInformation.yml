@@ -29,7 +29,7 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: as_string
+  name: as_string()
   syntax:
     content: as_string()
     parameters: []
@@ -38,6 +38,6 @@ items:
 references:
 - fullName: cntk.cntk_py.StreamInformation.as_string
   isExternal: false
-  name: as_string
+  name: as_string()
   parent: cntk.cntk_py.StreamInformation
   uid: cntk.cntk_py.StreamInformation.as_string

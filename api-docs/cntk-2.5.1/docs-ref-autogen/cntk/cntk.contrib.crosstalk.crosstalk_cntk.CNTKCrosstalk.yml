@@ -32,7 +32,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk.crosstalk_cntk
-  name: is_param
+  name: is_param(name)
   summary: 'Check if var with name is a parameter
 
     '
@@ -52,7 +52,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk.crosstalk_cntk
-  name: load_all_params
+  name: load_all_params()
   summary: 'Load all parameters from files in working directory
 
     '
@@ -66,7 +66,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk.crosstalk_cntk
-  name: save_all_params
+  name: save_all_params()
   summary: 'Save all parameters to files in working directory
 
     '
@@ -80,7 +80,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalk.crosstalk_cntk
-  name: set_data
+  name: set_data(data)
   summary: 'Set mapped data for variable evaluation
 
     '
@@ -96,21 +96,21 @@ items:
 references:
 - fullName: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk.is_param
   isExternal: false
-  name: is_param
+  name: is_param(name)
   parent: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk
   uid: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk.is_param
 - fullName: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk.load_all_params
   isExternal: false
-  name: load_all_params
+  name: load_all_params()
   parent: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk
   uid: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk.load_all_params
 - fullName: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk.save_all_params
   isExternal: false
-  name: save_all_params
+  name: save_all_params()
   parent: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk
   uid: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk.save_all_params
 - fullName: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk.set_data
   isExternal: false
-  name: set_data
+  name: set_data(data)
   parent: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk
   uid: cntk.contrib.crosstalk.crosstalk_cntk.CNTKCrosstalk.set_data
