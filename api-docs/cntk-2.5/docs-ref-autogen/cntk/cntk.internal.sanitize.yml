@@ -40,7 +40,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: bounded_cache
+  name: bounded_cache(maxsize)
   syntax:
     content: bounded_cache(maxsize)
     parameters:
@@ -51,7 +51,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: data_type_to_dtype
+  name: data_type_to_dtype(data_type)
   syntax:
     content: data_type_to_dtype(data_type)
     parameters:
@@ -62,7 +62,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: is_byte_buffer
+  name: is_byte_buffer(s)
   summary: 'Tests whether `s` is a byte buffer (not a string) in a way that
 
     works on Python 2 and 3.
@@ -78,7 +78,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: is_string
+  name: is_string(s)
   summary: 'Tests whether `s` is a string in a way that works on Python 2 and 3.
 
     '
@@ -92,7 +92,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_2d_number
+  name: sanitize_2d_number(x)
   summary: 'Convert `x` to a tuple.
 
     '
@@ -113,7 +113,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_Function_attributes
+  name: sanitize_Function_attributes(attributes)
   syntax:
     content: sanitize_Function_attributes(attributes)
     parameters:
@@ -124,7 +124,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_axis
+  name: sanitize_axis(axis)
   summary: 'Sanitizes the axis.
 
     '
@@ -146,7 +146,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_axis_list
+  name: sanitize_axis_list(axes)
   summary: 'Sanitizes a list of axes.
 
     '
@@ -168,7 +168,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_batch
+  name: sanitize_batch(var, batch, seq_starts=None, device=None)
   summary: 'Convert to <xref:cntk.core.Value>.
 
     '
@@ -224,7 +224,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_convolution_args
+  name: sanitize_convolution_args(strides, sharing, auto_padding)
   syntax:
     content: sanitize_convolution_args(strides, sharing, auto_padding)
     parameters:
@@ -237,7 +237,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_dtype_cntk
+  name: sanitize_dtype_cntk(dtype)
   syntax:
     content: sanitize_dtype_cntk(dtype)
     parameters:
@@ -248,7 +248,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_dtype_numpy
+  name: sanitize_dtype_numpy(dtype)
   syntax:
     content: sanitize_dtype_numpy(dtype)
     parameters:
@@ -259,7 +259,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_dynamic_axes
+  name: sanitize_dynamic_axes(axes)
   syntax:
     content: sanitize_dynamic_axes(axes)
     parameters:
@@ -270,7 +270,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_function
+  name: sanitize_function(arg)
   summary: 'Tries to retrieve a Function from the argument or raises a TypeError if
 
     that''s not possible.
@@ -286,7 +286,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_input
+  name: sanitize_input(arg, fallback_dtype=np.float32, reshape=None)
   summary: "Convert to <xref:cntk.variables.Variable> so that it can be passed\nas\
     \ Variable to the CNTK operators.\n\n   * If `arg` is a NumPy array and its type\
     \ is not among (*np.float32*, *np.float64*, *np.float16*), it sets it to *np.float32*.\
@@ -324,7 +324,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_multi_axis_reduction_list
+  name: sanitize_multi_axis_reduction_list(axes)
   summary: 'Sanitizes a list of axes for multi-axis reduction which can not contain
     sequence axis.
 
@@ -347,7 +347,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_permutation
+  name: sanitize_permutation(perm)
   syntax:
     content: sanitize_permutation(perm)
     parameters:
@@ -358,7 +358,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_pooling_args
+  name: sanitize_pooling_args(pooling_window_shape, strides, auto_padding)
   syntax:
     content: sanitize_pooling_args(pooling_window_shape, strides, auto_padding)
     parameters:
@@ -371,7 +371,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_precision
+  name: sanitize_precision(precision)
   summary: 'Converts precision to NumPy precision
 
     '
@@ -399,7 +399,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_random_args
+  name: sanitize_random_args(shape, dtype)
   syntax:
     content: sanitize_random_args(shape, dtype)
     parameters:
@@ -411,7 +411,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_range
+  name: sanitize_range(x)
   summary: 'Convert `x` to a tuple such as the first element is less than or equal
     to the
 
@@ -439,7 +439,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_shape
+  name: sanitize_shape(shape)
   summary: 'If shape is scalar, it creates a tuple out of it.
 
     '
@@ -453,7 +453,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_value
+  name: sanitize_value(shape, value, dtype, device)
   summary: 'Converts a given `value` to an <xref:cntk.core.NDArrayView> object
 
     that can be passed to the CNTK core.
@@ -499,7 +499,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_var_map
+  name: sanitize_var_map(op_arguments, arguments, precision=None, device=None, extract_values_from_minibatch_data=True)
   summary: 'Sanitizes a dictionary of *Variable* s to input data such that it can
     be
 
@@ -595,7 +595,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_variable_or_function
+  name: sanitize_variable_or_function(arg)
   summary: 'Tries to retrieve a Variable or Function from the argument or raises a
 
     TypeError if that''s not possible.
@@ -611,7 +611,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_variable_value_dict
+  name: sanitize_variable_value_dict(var_value_dict)
   syntax:
     content: sanitize_variable_value_dict(var_value_dict)
     parameters:
@@ -622,7 +622,7 @@ items:
   langs:
   - python
   module: cntk.internal.sanitize
-  name: sanitize_variables_or_functions
+  name: sanitize_variables_or_functions(arg)
   summary: 'Tries to retrieve a list of Variables or Functions from the argument or
 
     throws an exception if that''s not possible. If *arg* is not an iterable, it
@@ -641,137 +641,137 @@ items:
 references:
 - fullName: cntk.internal.sanitize.bounded_cache
   isExternal: false
-  name: bounded_cache
+  name: bounded_cache(maxsize)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.bounded_cache
 - fullName: cntk.internal.sanitize.data_type_to_dtype
   isExternal: false
-  name: data_type_to_dtype
+  name: data_type_to_dtype(data_type)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.data_type_to_dtype
 - fullName: cntk.internal.sanitize.is_byte_buffer
   isExternal: false
-  name: is_byte_buffer
+  name: is_byte_buffer(s)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.is_byte_buffer
 - fullName: cntk.internal.sanitize.is_string
   isExternal: false
-  name: is_string
+  name: is_string(s)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.is_string
 - fullName: cntk.internal.sanitize.sanitize_2d_number
   isExternal: false
-  name: sanitize_2d_number
+  name: sanitize_2d_number(x)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_2d_number
 - fullName: cntk.internal.sanitize.sanitize_Function_attributes
   isExternal: false
-  name: sanitize_Function_attributes
+  name: sanitize_Function_attributes(attributes)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_Function_attributes
 - fullName: cntk.internal.sanitize.sanitize_axis
   isExternal: false
-  name: sanitize_axis
+  name: sanitize_axis(axis)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_axis
 - fullName: cntk.internal.sanitize.sanitize_axis_list
   isExternal: false
-  name: sanitize_axis_list
+  name: sanitize_axis_list(axes)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_axis_list
 - fullName: cntk.internal.sanitize.sanitize_batch
   isExternal: false
-  name: sanitize_batch
+  name: sanitize_batch(var, batch, seq_starts=None, device=None)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_batch
 - fullName: cntk.internal.sanitize.sanitize_convolution_args
   isExternal: false
-  name: sanitize_convolution_args
+  name: sanitize_convolution_args(strides, sharing, auto_padding)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_convolution_args
 - fullName: cntk.internal.sanitize.sanitize_dtype_cntk
   isExternal: false
-  name: sanitize_dtype_cntk
+  name: sanitize_dtype_cntk(dtype)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_dtype_cntk
 - fullName: cntk.internal.sanitize.sanitize_dtype_numpy
   isExternal: false
-  name: sanitize_dtype_numpy
+  name: sanitize_dtype_numpy(dtype)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_dtype_numpy
 - fullName: cntk.internal.sanitize.sanitize_dynamic_axes
   isExternal: false
-  name: sanitize_dynamic_axes
+  name: sanitize_dynamic_axes(axes)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_dynamic_axes
 - fullName: cntk.internal.sanitize.sanitize_function
   isExternal: false
-  name: sanitize_function
+  name: sanitize_function(arg)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_function
 - fullName: cntk.internal.sanitize.sanitize_input
   isExternal: false
-  name: sanitize_input
+  name: sanitize_input(arg, fallback_dtype=np.float32, reshape=None)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_input
 - fullName: cntk.internal.sanitize.sanitize_multi_axis_reduction_list
   isExternal: false
-  name: sanitize_multi_axis_reduction_list
+  name: sanitize_multi_axis_reduction_list(axes)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_multi_axis_reduction_list
 - fullName: cntk.internal.sanitize.sanitize_permutation
   isExternal: false
-  name: sanitize_permutation
+  name: sanitize_permutation(perm)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_permutation
 - fullName: cntk.internal.sanitize.sanitize_pooling_args
   isExternal: false
-  name: sanitize_pooling_args
+  name: sanitize_pooling_args(pooling_window_shape, strides, auto_padding)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_pooling_args
 - fullName: cntk.internal.sanitize.sanitize_precision
   isExternal: false
-  name: sanitize_precision
+  name: sanitize_precision(precision)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_precision
 - fullName: cntk.internal.sanitize.sanitize_random_args
   isExternal: false
-  name: sanitize_random_args
+  name: sanitize_random_args(shape, dtype)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_random_args
 - fullName: cntk.internal.sanitize.sanitize_range
   isExternal: false
-  name: sanitize_range
+  name: sanitize_range(x)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_range
 - fullName: cntk.internal.sanitize.sanitize_shape
   isExternal: false
-  name: sanitize_shape
+  name: sanitize_shape(shape)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_shape
 - fullName: cntk.internal.sanitize.sanitize_value
   isExternal: false
-  name: sanitize_value
+  name: sanitize_value(shape, value, dtype, device)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_value
 - fullName: cntk.internal.sanitize.sanitize_var_map
   isExternal: false
-  name: sanitize_var_map
+  name: sanitize_var_map(op_arguments, arguments, precision=None, device=None, extract_values_from_minibatch_data=True)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_var_map
 - fullName: cntk.internal.sanitize.sanitize_variable_or_function
   isExternal: false
-  name: sanitize_variable_or_function
+  name: sanitize_variable_or_function(arg)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_variable_or_function
 - fullName: cntk.internal.sanitize.sanitize_variable_value_dict
   isExternal: false
-  name: sanitize_variable_value_dict
+  name: sanitize_variable_value_dict(var_value_dict)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_variable_value_dict
 - fullName: cntk.internal.sanitize.sanitize_variables_or_functions
   isExternal: false
-  name: sanitize_variables_or_functions
+  name: sanitize_variables_or_functions(arg)
   parent: cntk.internal.sanitize
   uid: cntk.internal.sanitize.sanitize_variables_or_functions
 - fullName: <xref:cntk.device.DeviceDescriptor>, default None

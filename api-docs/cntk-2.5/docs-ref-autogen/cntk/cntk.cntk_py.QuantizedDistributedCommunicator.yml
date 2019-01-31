@@ -26,7 +26,8 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: quantized_aggregate
+  name: quantized_aggregate(inValues, valueQuantizationResidues, stripeQuantizationResidues,
+    aggregatedOutputs, newQuantizationResidues, newStripeQuantizationResidues, sendToWorkers)
   syntax:
     content: quantized_aggregate(inValues, valueQuantizationResidues, stripeQuantizationResidues,
       aggregatedOutputs, newQuantizationResidues, newStripeQuantizationResidues, sendToWorkers)
@@ -45,7 +46,8 @@ items:
   langs:
   - python
   module: cntk.cntk_py
-  name: quantized_aggregate_in_place
+  name: quantized_aggregate_in_place(inValues, valueQuantizationResidues, stripeQuantizationResidues,
+    sendToWorkers)
   syntax:
     content: quantized_aggregate_in_place(inValues, valueQuantizationResidues, stripeQuantizationResidues,
       sendToWorkers)
@@ -59,11 +61,13 @@ items:
 references:
 - fullName: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate
   isExternal: false
-  name: quantized_aggregate
+  name: quantized_aggregate(inValues, valueQuantizationResidues, stripeQuantizationResidues,
+    aggregatedOutputs, newQuantizationResidues, newStripeQuantizationResidues, sendToWorkers)
   parent: cntk.cntk_py.QuantizedDistributedCommunicator
   uid: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate
 - fullName: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate_in_place
   isExternal: false
-  name: quantized_aggregate_in_place
+  name: quantized_aggregate_in_place(inValues, valueQuantizationResidues, stripeQuantizationResidues,
+    sendToWorkers)
   parent: cntk.cntk_py.QuantizedDistributedCommunicator
   uid: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate_in_place

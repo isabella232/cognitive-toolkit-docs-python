@@ -24,7 +24,7 @@ items:
   langs:
   - python
   module: cntk.contrib.deeprl.agent.shared.discretize
-  name: discretize
+  name: discretize(value)
   summary: 'Discretize box space observation.
 
     '
@@ -37,6 +37,6 @@ items:
 references:
 - fullName: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer.discretize
   isExternal: false
-  name: discretize
+  name: discretize(value)
   parent: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer
   uid: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer.discretize

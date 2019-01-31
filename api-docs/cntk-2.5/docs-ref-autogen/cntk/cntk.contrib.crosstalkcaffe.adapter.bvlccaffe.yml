@@ -5,6 +5,7 @@ items:
   - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
   - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeimpl
   fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe
+  kind: import
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe

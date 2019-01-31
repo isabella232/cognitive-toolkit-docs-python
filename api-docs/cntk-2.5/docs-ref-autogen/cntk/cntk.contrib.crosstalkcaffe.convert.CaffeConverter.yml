@@ -23,7 +23,7 @@ items:
   langs:
   - python
   module: cntk.contrib.crosstalkcaffe.convert
-  name: from_model
+  name: from_model(conf_path)
   summary: '   Convert a Caffe model to a CNTK model
 
     '
@@ -45,6 +45,6 @@ items:
 references:
 - fullName: cntk.contrib.crosstalkcaffe.convert.CaffeConverter.from_model
   isExternal: false
-  name: from_model
+  name: from_model(conf_path)
   parent: cntk.contrib.crosstalkcaffe.convert.CaffeConverter
   uid: cntk.contrib.crosstalkcaffe.convert.CaffeConverter.from_model
