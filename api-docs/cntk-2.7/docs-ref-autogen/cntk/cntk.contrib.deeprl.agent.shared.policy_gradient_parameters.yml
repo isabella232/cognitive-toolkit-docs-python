@@ -1,0 +1,19 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.deeprl.agent.shared.policy_gradient_parameters.PolicyGradientParameters
+  fullName: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters
+  langs:
+  - python
+  module: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters
+  name: policy_gradient_parameters
+  summary: Policy Gradient parameters.
+  type: module
+  uid: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters
+references:
+- fullName: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters.PolicyGradientParameters
+  isExternal: false
+  name: PolicyGradientParameters
+  parent: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters
+  uid: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters.PolicyGradientParameters

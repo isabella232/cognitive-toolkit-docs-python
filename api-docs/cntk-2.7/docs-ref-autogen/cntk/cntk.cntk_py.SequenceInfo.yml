@@ -1,0 +1,18 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.cntk_py.SequenceInfo
+  fullName: cntk.cntk_py.SequenceInfo
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: SequenceInfo
+  summary: ''
+  syntax:
+    content: SequenceInfo()
+  type: class
+  uid: cntk.cntk_py.SequenceInfo
+references: []

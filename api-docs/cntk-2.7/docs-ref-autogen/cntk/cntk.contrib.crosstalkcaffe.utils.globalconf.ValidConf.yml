@@ -1,0 +1,18 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.contrib.crosstalkcaffe.utils.globalconf.ValidConf
+  fullName: cntk.contrib.crosstalkcaffe.utils.globalconf.ValidConf
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.contrib.crosstalkcaffe.utils.globalconf
+  name: ValidConf
+  summary: The validation solver
+  syntax:
+    content: ValidConf()
+  type: class
+  uid: cntk.contrib.crosstalkcaffe.utils.globalconf.ValidConf
+references: []

@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.cntk_py.BackPropState.device
+  - cntk.cntk_py.BackPropState.function
+  - cntk.cntk_py.BackPropState.saved_forward_prop_values
+  class: cntk.cntk_py.BackPropState
+  fullName: cntk.cntk_py.BackPropState
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: BackPropState
+  summary: ''
+  syntax:
+    content: BackPropState(*args)
+  type: class
+  uid: cntk.cntk_py.BackPropState
+- class: cntk.cntk_py.BackPropState
+  fullName: cntk.cntk_py.BackPropState.device
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: device()
+  syntax:
+    content: device()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.BackPropState.device
+- class: cntk.cntk_py.BackPropState
+  fullName: cntk.cntk_py.BackPropState.function
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: function()
+  syntax:
+    content: function()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.BackPropState.function
+- class: cntk.cntk_py.BackPropState
+  fullName: cntk.cntk_py.BackPropState.saved_forward_prop_values
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: saved_forward_prop_values()
+  syntax:
+    content: saved_forward_prop_values()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.BackPropState.saved_forward_prop_values
+references:
+- fullName: cntk.cntk_py.BackPropState.device
+  isExternal: false
+  name: device()
+  parent: cntk.cntk_py.BackPropState
+  uid: cntk.cntk_py.BackPropState.device
+- fullName: cntk.cntk_py.BackPropState.function
+  isExternal: false
+  name: function()
+  parent: cntk.cntk_py.BackPropState
+  uid: cntk.cntk_py.BackPropState.function
+- fullName: cntk.cntk_py.BackPropState.saved_forward_prop_values
+  isExternal: false
+  name: saved_forward_prop_values()
+  parent: cntk.cntk_py.BackPropState
+  uid: cntk.cntk_py.BackPropState.saved_forward_prop_values

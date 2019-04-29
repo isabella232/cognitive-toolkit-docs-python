@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.default_options.default_override_or
+  fullName: cntk.default_options.default_override_or
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.default_options
+  name: default_override_or
+  syntax:
+    content: default_override_or(value)
+  type: class
+  uid: cntk.default_options.default_override_or
+references: []

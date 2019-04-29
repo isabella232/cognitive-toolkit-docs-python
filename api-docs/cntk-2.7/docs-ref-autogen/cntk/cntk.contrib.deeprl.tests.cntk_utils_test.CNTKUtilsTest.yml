@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_entropy
+  - cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_huber_loss
+  class: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
+  fullName: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: unittest.case.TestCase
+  langs:
+  - python
+  module: cntk.contrib.deeprl.tests.cntk_utils_test
+  name: CNTKUtilsTest
+  summary: Unit tests for cntk_utils.
+  syntax:
+    content: CNTKUtilsTest(methodName='runTest')
+  type: class
+  uid: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
+- class: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
+  fullName: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_entropy
+  langs:
+  - python
+  module: cntk.contrib.deeprl.tests.cntk_utils_test
+  name: test_entropy()
+  syntax:
+    content: test_entropy()
+    parameters: []
+  type: method
+  uid: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_entropy
+- class: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
+  fullName: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_huber_loss
+  langs:
+  - python
+  module: cntk.contrib.deeprl.tests.cntk_utils_test
+  name: test_huber_loss()
+  syntax:
+    content: test_huber_loss()
+    parameters: []
+  type: method
+  uid: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_huber_loss
+references:
+- fullName: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_entropy
+  isExternal: false
+  name: test_entropy()
+  parent: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
+  uid: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_entropy
+- fullName: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_huber_loss
+  isExternal: false
+  name: test_huber_loss()
+  parent: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
+  uid: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_huber_loss

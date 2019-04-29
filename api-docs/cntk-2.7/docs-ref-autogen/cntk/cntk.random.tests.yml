@@ -1,0 +1,13 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  fullName: cntk.random.tests
+  kind: import
+  langs:
+  - python
+  module: cntk.random.tests
+  name: tests
+  type: package
+  uid: cntk.random.tests
+references: []

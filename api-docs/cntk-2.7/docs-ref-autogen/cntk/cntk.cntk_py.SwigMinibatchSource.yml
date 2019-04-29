@@ -1,0 +1,19 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.cntk_py.SwigMinibatchSource
+  fullName: cntk.cntk_py.SwigMinibatchSource
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.cntk_py.MinibatchSource
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: SwigMinibatchSource
+  syntax:
+    content: SwigMinibatchSource()
+  type: class
+  uid: cntk.cntk_py.SwigMinibatchSource
+references: []

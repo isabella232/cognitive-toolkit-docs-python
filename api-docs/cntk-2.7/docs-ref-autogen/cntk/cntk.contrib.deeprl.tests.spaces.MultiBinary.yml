@@ -1,0 +1,19 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.contrib.deeprl.tests.spaces.MultiBinary
+  fullName: cntk.contrib.deeprl.tests.spaces.MultiBinary
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.contrib.deeprl.tests.spaces
+  name: MultiBinary
+  summary: Fake gym.spaces.multi_binary.MultiBinary to remove dependency on OpenAI
+    gym.
+  syntax:
+    content: MultiBinary(n)
+  type: class
+  uid: cntk.contrib.deeprl.tests.spaces.MultiBinary
+references: []

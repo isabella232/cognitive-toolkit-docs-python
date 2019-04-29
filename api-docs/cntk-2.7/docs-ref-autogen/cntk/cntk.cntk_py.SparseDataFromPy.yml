@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.cntk_py.SparseDataFromPy.get_data_buffer
+  - cntk.cntk_py.SparseDataFromPy.get_sample_shape
+  class: cntk.cntk_py.SparseDataFromPy
+  fullName: cntk.cntk_py.SparseDataFromPy
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: cntk.cntk_py.SequenceDataBase
+    type: cntk.cntk_py.SparseSequenceData
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: SparseDataFromPy
+  summary: ''
+  syntax:
+    content: SparseDataFromPy(data, indices, nonZeroCount, numberOfSamples, object)
+  type: class
+  uid: cntk.cntk_py.SparseDataFromPy
+- class: cntk.cntk_py.SparseDataFromPy
+  fullName: cntk.cntk_py.SparseDataFromPy.get_data_buffer
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: get_data_buffer()
+  syntax:
+    content: get_data_buffer()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.SparseDataFromPy.get_data_buffer
+- class: cntk.cntk_py.SparseDataFromPy
+  fullName: cntk.cntk_py.SparseDataFromPy.get_sample_shape
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: get_sample_shape()
+  syntax:
+    content: get_sample_shape()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.SparseDataFromPy.get_sample_shape
+references:
+- fullName: cntk.cntk_py.SparseDataFromPy.get_data_buffer
+  isExternal: false
+  name: get_data_buffer()
+  parent: cntk.cntk_py.SparseDataFromPy
+  uid: cntk.cntk_py.SparseDataFromPy.get_data_buffer
+- fullName: cntk.cntk_py.SparseDataFromPy.get_sample_shape
+  isExternal: false
+  name: get_sample_shape()
+  parent: cntk.cntk_py.SparseDataFromPy
+  uid: cntk.cntk_py.SparseDataFromPy.get_sample_shape

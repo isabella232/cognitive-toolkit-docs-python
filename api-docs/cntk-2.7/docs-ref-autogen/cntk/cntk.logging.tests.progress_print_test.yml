@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.logging.tests.progress_print_test.test_tensorboard_write_image
+  fullName: cntk.logging.tests.progress_print_test
+  langs:
+  - python
+  module: cntk.logging.tests.progress_print_test
+  name: progress_print_test
+  type: module
+  uid: cntk.logging.tests.progress_print_test
+- fullName: cntk.logging.tests.progress_print_test.test_tensorboard_write_image
+  langs:
+  - python
+  module: cntk.logging.tests.progress_print_test
+  name: test_tensorboard_write_image(tmpdir)
+  syntax:
+    content: test_tensorboard_write_image(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.logging.tests.progress_print_test.test_tensorboard_write_image
+references:
+- fullName: cntk.logging.tests.progress_print_test.test_tensorboard_write_image
+  isExternal: false
+  name: test_tensorboard_write_image(tmpdir)
+  parent: cntk.logging.tests.progress_print_test
+  uid: cntk.logging.tests.progress_print_test.test_tensorboard_write_image
