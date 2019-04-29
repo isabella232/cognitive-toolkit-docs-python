@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.deeprl.tests.agent_test
+  - cntk.contrib.deeprl.tests.cntk_utils_test
+  - cntk.contrib.deeprl.tests.discretize_test
+  - cntk.contrib.deeprl.tests.models_test
+  - cntk.contrib.deeprl.tests.policy_gradient_test
+  - cntk.contrib.deeprl.tests.qlearning_test
+  - cntk.contrib.deeprl.tests.replay_memory_test
+  - cntk.contrib.deeprl.tests.spaces
+  - cntk.contrib.deeprl.tests.tabular_qlearning_test
+  fullName: cntk.contrib.deeprl.tests
+  kind: import
+  langs:
+  - python
+  module: cntk.contrib.deeprl.tests
+  name: tests
+  type: package
+  uid: cntk.contrib.deeprl.tests
+references:
+- fullName: cntk.contrib.deeprl.tests.agent_test
+  isExternal: false
+  name: agent_test
+  parent: cntk.contrib.deeprl.tests
+  uid: cntk.contrib.deeprl.tests.agent_test
+- fullName: cntk.contrib.deeprl.tests.cntk_utils_test
+  isExternal: false
+  name: cntk_utils_test
+  parent: cntk.contrib.deeprl.tests
+  uid: cntk.contrib.deeprl.tests.cntk_utils_test
+- fullName: cntk.contrib.deeprl.tests.discretize_test
+  isExternal: false
+  name: discretize_test
+  parent: cntk.contrib.deeprl.tests
+  uid: cntk.contrib.deeprl.tests.discretize_test
+- fullName: cntk.contrib.deeprl.tests.models_test
+  isExternal: false
+  name: models_test
+  parent: cntk.contrib.deeprl.tests
+  uid: cntk.contrib.deeprl.tests.models_test
+- fullName: cntk.contrib.deeprl.tests.policy_gradient_test
+  isExternal: false
+  name: policy_gradient_test
+  parent: cntk.contrib.deeprl.tests
+  uid: cntk.contrib.deeprl.tests.policy_gradient_test
+- fullName: cntk.contrib.deeprl.tests.qlearning_test
+  isExternal: false
+  name: qlearning_test
+  parent: cntk.contrib.deeprl.tests
+  uid: cntk.contrib.deeprl.tests.qlearning_test
+- fullName: cntk.contrib.deeprl.tests.replay_memory_test
+  isExternal: false
+  name: replay_memory_test
+  parent: cntk.contrib.deeprl.tests
+  uid: cntk.contrib.deeprl.tests.replay_memory_test
+- fullName: cntk.contrib.deeprl.tests.spaces
+  isExternal: false
+  name: spaces
+  parent: cntk.contrib.deeprl.tests
+  uid: cntk.contrib.deeprl.tests.spaces
+- fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test
+  isExternal: false
+  name: tabular_qlearning_test
+  parent: cntk.contrib.deeprl.tests
+  uid: cntk.contrib.deeprl.tests.tabular_qlearning_test

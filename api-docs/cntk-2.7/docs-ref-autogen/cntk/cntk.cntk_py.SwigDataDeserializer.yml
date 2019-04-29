@@ -1,0 +1,110 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.cntk_py.SwigDataDeserializer.chunk_infos
+  - cntk.cntk_py.SwigDataDeserializer.get_chunk
+  - cntk.cntk_py.SwigDataDeserializer.get_sequence_info
+  - cntk.cntk_py.SwigDataDeserializer.sequence_infos_for_chunk
+  - cntk.cntk_py.SwigDataDeserializer.stream_infos
+  class: cntk.cntk_py.SwigDataDeserializer
+  fullName: cntk.cntk_py.SwigDataDeserializer
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.cntk_py.DataDeserializer
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: SwigDataDeserializer
+  summary: ''
+  syntax:
+    content: SwigDataDeserializer()
+  type: class
+  uid: cntk.cntk_py.SwigDataDeserializer
+- class: cntk.cntk_py.SwigDataDeserializer
+  fullName: cntk.cntk_py.SwigDataDeserializer.chunk_infos
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: chunk_infos()
+  syntax:
+    content: chunk_infos()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.SwigDataDeserializer.chunk_infos
+- class: cntk.cntk_py.SwigDataDeserializer
+  fullName: cntk.cntk_py.SwigDataDeserializer.get_chunk
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: get_chunk(chunkId)
+  syntax:
+    content: get_chunk(chunkId)
+    parameters:
+    - id: chunkId
+  type: method
+  uid: cntk.cntk_py.SwigDataDeserializer.get_chunk
+- class: cntk.cntk_py.SwigDataDeserializer
+  fullName: cntk.cntk_py.SwigDataDeserializer.get_sequence_info
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: get_sequence_info(primary, description)
+  syntax:
+    content: get_sequence_info(primary, description)
+    parameters:
+    - id: primary
+    - id: description
+  type: method
+  uid: cntk.cntk_py.SwigDataDeserializer.get_sequence_info
+- class: cntk.cntk_py.SwigDataDeserializer
+  fullName: cntk.cntk_py.SwigDataDeserializer.sequence_infos_for_chunk
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: sequence_infos_for_chunk(chunkId, descriptions)
+  syntax:
+    content: sequence_infos_for_chunk(chunkId, descriptions)
+    parameters:
+    - id: chunkId
+    - id: descriptions
+  type: method
+  uid: cntk.cntk_py.SwigDataDeserializer.sequence_infos_for_chunk
+- class: cntk.cntk_py.SwigDataDeserializer
+  fullName: cntk.cntk_py.SwigDataDeserializer.stream_infos
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: stream_infos()
+  syntax:
+    content: stream_infos()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.SwigDataDeserializer.stream_infos
+references:
+- fullName: cntk.cntk_py.SwigDataDeserializer.chunk_infos
+  isExternal: false
+  name: chunk_infos()
+  parent: cntk.cntk_py.SwigDataDeserializer
+  uid: cntk.cntk_py.SwigDataDeserializer.chunk_infos
+- fullName: cntk.cntk_py.SwigDataDeserializer.get_chunk
+  isExternal: false
+  name: get_chunk(chunkId)
+  parent: cntk.cntk_py.SwigDataDeserializer
+  uid: cntk.cntk_py.SwigDataDeserializer.get_chunk
+- fullName: cntk.cntk_py.SwigDataDeserializer.get_sequence_info
+  isExternal: false
+  name: get_sequence_info(primary, description)
+  parent: cntk.cntk_py.SwigDataDeserializer
+  uid: cntk.cntk_py.SwigDataDeserializer.get_sequence_info
+- fullName: cntk.cntk_py.SwigDataDeserializer.sequence_infos_for_chunk
+  isExternal: false
+  name: sequence_infos_for_chunk(chunkId, descriptions)
+  parent: cntk.cntk_py.SwigDataDeserializer
+  uid: cntk.cntk_py.SwigDataDeserializer.sequence_infos_for_chunk
+- fullName: cntk.cntk_py.SwigDataDeserializer.stream_infos
+  isExternal: false
+  name: stream_infos()
+  parent: cntk.cntk_py.SwigDataDeserializer
+  uid: cntk.cntk_py.SwigDataDeserializer.stream_infos

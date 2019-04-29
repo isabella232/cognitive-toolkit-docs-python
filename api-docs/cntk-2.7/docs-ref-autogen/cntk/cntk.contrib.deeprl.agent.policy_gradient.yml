@@ -1,0 +1,19 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.deeprl.agent.policy_gradient.ActorCritic
+  fullName: cntk.contrib.deeprl.agent.policy_gradient
+  langs:
+  - python
+  module: cntk.contrib.deeprl.agent.policy_gradient
+  name: policy_gradient
+  summary: Actor-Critic Policy Gradient.
+  type: module
+  uid: cntk.contrib.deeprl.agent.policy_gradient
+references:
+- fullName: cntk.contrib.deeprl.agent.policy_gradient.ActorCritic
+  isExternal: false
+  name: ActorCritic
+  parent: cntk.contrib.deeprl.agent.policy_gradient
+  uid: cntk.contrib.deeprl.agent.policy_gradient.ActorCritic

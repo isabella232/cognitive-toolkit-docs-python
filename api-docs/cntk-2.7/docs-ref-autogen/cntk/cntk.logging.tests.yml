@@ -1,0 +1,19 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.logging.tests.progress_print_test
+  fullName: cntk.logging.tests
+  kind: import
+  langs:
+  - python
+  module: cntk.logging.tests
+  name: tests
+  type: package
+  uid: cntk.logging.tests
+references:
+- fullName: cntk.logging.tests.progress_print_test
+  isExternal: false
+  name: progress_print_test
+  parent: cntk.logging.tests
+  uid: cntk.logging.tests.progress_print_test

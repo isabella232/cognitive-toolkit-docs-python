@@ -1,0 +1,19 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer
+  fullName: cntk.contrib.deeprl.agent.shared.discretize
+  langs:
+  - python
+  module: cntk.contrib.deeprl.agent.shared.discretize
+  name: discretize
+  summary: Discretize continuous environment space.
+  type: module
+  uid: cntk.contrib.deeprl.agent.shared.discretize
+references:
+- fullName: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer
+  isExternal: false
+  name: BoxSpaceDiscretizer
+  parent: cntk.contrib.deeprl.agent.shared.discretize
+  uid: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer
