@@ -1,0 +1,148 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.tests.persist_test.test_large_model_serialization_double
+  - cntk.tests.persist_test.test_large_model_serialization_float
+  - cntk.tests.persist_test.test_load_save_constant
+  - cntk.tests.persist_test.test_load_save_input_legacy_names
+  - cntk.tests.persist_test.test_load_save_inputs
+  - cntk.tests.persist_test.test_load_save_unique_input
+  - cntk.tests.persist_test.test_replace_save_restoreinplace_constant
+  - cntk.tests.persist_test.test_restore_constants
+  fullName: cntk.tests.persist_test
+  langs:
+  - python
+  module: cntk.tests.persist_test
+  name: persist_test
+  type: module
+  uid: cntk.tests.persist_test
+- fullName: cntk.tests.persist_test.test_large_model_serialization_double
+  langs:
+  - python
+  module: cntk.tests.persist_test
+  name: test_large_model_serialization_double(tmpdir)
+  syntax:
+    content: test_large_model_serialization_double(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.tests.persist_test.test_large_model_serialization_double
+- fullName: cntk.tests.persist_test.test_large_model_serialization_float
+  langs:
+  - python
+  module: cntk.tests.persist_test
+  name: test_large_model_serialization_float(tmpdir)
+  syntax:
+    content: test_large_model_serialization_float(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.tests.persist_test.test_large_model_serialization_float
+- fullName: cntk.tests.persist_test.test_load_save_constant
+  langs:
+  - python
+  module: cntk.tests.persist_test
+  name: test_load_save_constant(tmpdir)
+  syntax:
+    content: test_load_save_constant(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.tests.persist_test.test_load_save_constant
+- fullName: cntk.tests.persist_test.test_load_save_input_legacy_names
+  langs:
+  - python
+  module: cntk.tests.persist_test
+  name: test_load_save_input_legacy_names(tmpdir)
+  syntax:
+    content: test_load_save_input_legacy_names(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.tests.persist_test.test_load_save_input_legacy_names
+- fullName: cntk.tests.persist_test.test_load_save_inputs
+  langs:
+  - python
+  module: cntk.tests.persist_test
+  name: test_load_save_inputs(tmpdir)
+  syntax:
+    content: test_load_save_inputs(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.tests.persist_test.test_load_save_inputs
+- fullName: cntk.tests.persist_test.test_load_save_unique_input
+  langs:
+  - python
+  module: cntk.tests.persist_test
+  name: test_load_save_unique_input(tmpdir)
+  syntax:
+    content: test_load_save_unique_input(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.tests.persist_test.test_load_save_unique_input
+- fullName: cntk.tests.persist_test.test_replace_save_restoreinplace_constant
+  langs:
+  - python
+  module: cntk.tests.persist_test
+  name: test_replace_save_restoreinplace_constant(tmpdir)
+  syntax:
+    content: test_replace_save_restoreinplace_constant(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.tests.persist_test.test_replace_save_restoreinplace_constant
+- fullName: cntk.tests.persist_test.test_restore_constants
+  langs:
+  - python
+  module: cntk.tests.persist_test
+  name: test_restore_constants(tmpdir)
+  syntax:
+    content: test_restore_constants(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.tests.persist_test.test_restore_constants
+references:
+- fullName: cntk.tests.persist_test.test_large_model_serialization_double
+  isExternal: false
+  name: test_large_model_serialization_double(tmpdir)
+  parent: cntk.tests.persist_test
+  uid: cntk.tests.persist_test.test_large_model_serialization_double
+- fullName: cntk.tests.persist_test.test_large_model_serialization_float
+  isExternal: false
+  name: test_large_model_serialization_float(tmpdir)
+  parent: cntk.tests.persist_test
+  uid: cntk.tests.persist_test.test_large_model_serialization_float
+- fullName: cntk.tests.persist_test.test_load_save_constant
+  isExternal: false
+  name: test_load_save_constant(tmpdir)
+  parent: cntk.tests.persist_test
+  uid: cntk.tests.persist_test.test_load_save_constant
+- fullName: cntk.tests.persist_test.test_load_save_input_legacy_names
+  isExternal: false
+  name: test_load_save_input_legacy_names(tmpdir)
+  parent: cntk.tests.persist_test
+  uid: cntk.tests.persist_test.test_load_save_input_legacy_names
+- fullName: cntk.tests.persist_test.test_load_save_inputs
+  isExternal: false
+  name: test_load_save_inputs(tmpdir)
+  parent: cntk.tests.persist_test
+  uid: cntk.tests.persist_test.test_load_save_inputs
+- fullName: cntk.tests.persist_test.test_load_save_unique_input
+  isExternal: false
+  name: test_load_save_unique_input(tmpdir)
+  parent: cntk.tests.persist_test
+  uid: cntk.tests.persist_test.test_load_save_unique_input
+- fullName: cntk.tests.persist_test.test_replace_save_restoreinplace_constant
+  isExternal: false
+  name: test_replace_save_restoreinplace_constant(tmpdir)
+  parent: cntk.tests.persist_test
+  uid: cntk.tests.persist_test.test_replace_save_restoreinplace_constant
+- fullName: cntk.tests.persist_test.test_restore_constants
+  isExternal: false
+  name: test_restore_constants(tmpdir)
+  parent: cntk.tests.persist_test
+  uid: cntk.tests.persist_test.test_restore_constants

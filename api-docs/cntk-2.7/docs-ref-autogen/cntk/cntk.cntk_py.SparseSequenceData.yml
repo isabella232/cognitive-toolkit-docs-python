@@ -1,0 +1,20 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.cntk_py.SparseSequenceData
+  fullName: cntk.cntk_py.SparseSequenceData
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.cntk_py.SequenceDataBase
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: SparseSequenceData
+  summary: ''
+  syntax:
+    content: SparseSequenceData(*args, **kwargs)
+  type: class
+  uid: cntk.cntk_py.SparseSequenceData
+references: []

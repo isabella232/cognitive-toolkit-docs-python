@@ -1,0 +1,130 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.eval.evaluator.Evaluator.evaluation_function
+  - cntk.eval.evaluator.Evaluator.print_node_timing
+  - cntk.eval.evaluator.Evaluator.summarize_test_progress
+  - cntk.eval.evaluator.Evaluator.test_minibatch
+  class: cntk.eval.evaluator.Evaluator
+  fullName: cntk.eval.evaluator.Evaluator
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.cntk_py.Evaluator
+  langs:
+  - python
+  module: cntk.eval.evaluator
+  name: Evaluator
+  summary: Class for evaluation of minibatches against the specified evaluation function.
+  syntax:
+    content: Evaluator(eval_function, progress_writers=None)
+    parameters:
+    - description: evaluation function.
+      id: eval_function
+      type:
+      - <xref:cntk.ops.functions.Function>
+    - description: 'optionally, list of progress writers from <xref:cntk.utils> to
+        track
+
+        training progress.'
+      id: progress_writers
+      type:
+      - list
+  type: class
+  uid: cntk.eval.evaluator.Evaluator
+- class: cntk.eval.evaluator.Evaluator
+  fullName: cntk.eval.evaluator.Evaluator.evaluation_function
+  langs:
+  - python
+  module: cntk.eval.evaluator
+  name: evaluation_function
+  summary: The evaluation function that the evaluator is using.
+  syntax: {}
+  type: attribute
+  uid: cntk.eval.evaluator.Evaluator.evaluation_function
+- class: cntk.eval.evaluator.Evaluator
+  fullName: cntk.eval.evaluator.Evaluator.print_node_timing
+  langs:
+  - python
+  module: cntk.eval.evaluator
+  name: print_node_timing()
+  summary: 'Prints per-node average timing per-minibatch for each primitive function
+
+    statistics would reset after print'
+  syntax:
+    content: print_node_timing()
+    parameters: []
+  type: method
+  uid: cntk.eval.evaluator.Evaluator.print_node_timing
+- class: cntk.eval.evaluator.Evaluator
+  fullName: cntk.eval.evaluator.Evaluator.summarize_test_progress
+  langs:
+  - python
+  module: cntk.eval.evaluator
+  name: summarize_test_progress()
+  summary: 'Updates the progress writers with the summary of test progress since start
+    and resets the internal
+
+    accumulators.'
+  syntax:
+    content: summarize_test_progress()
+    parameters: []
+  type: method
+  uid: cntk.eval.evaluator.Evaluator.summarize_test_progress
+- class: cntk.eval.evaluator.Evaluator
+  fullName: cntk.eval.evaluator.Evaluator.test_minibatch
+  langs:
+  - python
+  module: cntk.eval.evaluator
+  name: test_minibatch(arguments, device=None, distributed=False)
+  summary: 'Test the evaluation function on the specified batch of samples.
+
+
+
+    > [!NOTE]
+
+    > See <xref:cntk.ops.functions.Function.forward> for examples on
+
+    >
+
+    > passing input data.
+
+    >'
+  syntax:
+    content: test_minibatch(arguments, device=None, distributed=False)
+    parameters:
+    - id: arguments
+    - defaultValue: None
+      id: device
+    - defaultValue: 'False'
+      id: distributed
+    return:
+      description: 'the average evaluation criterion value per sample for the
+
+        tested minibatch.'
+      type:
+      - '*float*'
+  type: method
+  uid: cntk.eval.evaluator.Evaluator.test_minibatch
+references:
+- fullName: cntk.eval.evaluator.Evaluator.evaluation_function
+  isExternal: false
+  name: evaluation_function
+  parent: cntk.eval.evaluator.Evaluator
+  uid: cntk.eval.evaluator.Evaluator.evaluation_function
+- fullName: cntk.eval.evaluator.Evaluator.print_node_timing
+  isExternal: false
+  name: print_node_timing()
+  parent: cntk.eval.evaluator.Evaluator
+  uid: cntk.eval.evaluator.Evaluator.print_node_timing
+- fullName: cntk.eval.evaluator.Evaluator.summarize_test_progress
+  isExternal: false
+  name: summarize_test_progress()
+  parent: cntk.eval.evaluator.Evaluator
+  uid: cntk.eval.evaluator.Evaluator.summarize_test_progress
+- fullName: cntk.eval.evaluator.Evaluator.test_minibatch
+  isExternal: false
+  name: test_minibatch(arguments, device=None, distributed=False)
+  parent: cntk.eval.evaluator.Evaluator
+  uid: cntk.eval.evaluator.Evaluator.test_minibatch

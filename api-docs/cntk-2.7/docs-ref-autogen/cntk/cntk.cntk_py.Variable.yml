@@ -1,0 +1,358 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.cntk_py.Variable.as_string
+  - cntk.cntk_py.Variable.current_value_time_stamp
+  - cntk.cntk_py.Variable.dynamic_axes
+  - cntk.cntk_py.Variable.get_data_type
+  - cntk.cntk_py.Variable.get_value
+  - cntk.cntk_py.Variable.has_batch_axis
+  - cntk.cntk_py.Variable.has_sequence_axis
+  - cntk.cntk_py.Variable.is_constant
+  - cntk.cntk_py.Variable.is_initialized
+  - cntk.cntk_py.Variable.is_input
+  - cntk.cntk_py.Variable.is_output
+  - cntk.cntk_py.Variable.is_parameter
+  - cntk.cntk_py.Variable.is_placeholder
+  - cntk.cntk_py.Variable.is_sparse
+  - cntk.cntk_py.Variable.kind
+  - cntk.cntk_py.Variable.name
+  - cntk.cntk_py.Variable.needs_gradient
+  - cntk.cntk_py.Variable.owner
+  - cntk.cntk_py.Variable.shape
+  - cntk.cntk_py.Variable.uid
+  class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Variable
+  summary: ''
+  syntax:
+    content: Variable(*args)
+  type: class
+  uid: cntk.cntk_py.Variable
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.as_string
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: as_string()
+  syntax:
+    content: as_string()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.as_string
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.current_value_time_stamp
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: current_value_time_stamp()
+  syntax:
+    content: current_value_time_stamp()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.current_value_time_stamp
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.dynamic_axes
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: dynamic_axes()
+  syntax:
+    content: dynamic_axes()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.dynamic_axes
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.get_data_type
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: get_data_type()
+  syntax:
+    content: get_data_type()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.get_data_type
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.get_value
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: get_value()
+  syntax:
+    content: get_value()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.get_value
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.has_batch_axis
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: has_batch_axis()
+  syntax:
+    content: has_batch_axis()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.has_batch_axis
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.has_sequence_axis
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: has_sequence_axis()
+  syntax:
+    content: has_sequence_axis()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.has_sequence_axis
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.is_constant
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_constant()
+  syntax:
+    content: is_constant()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.is_constant
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.is_initialized
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_initialized()
+  syntax:
+    content: is_initialized()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.is_initialized
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.is_input
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_input()
+  syntax:
+    content: is_input()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.is_input
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.is_output
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_output()
+  syntax:
+    content: is_output()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.is_output
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.is_parameter
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_parameter()
+  syntax:
+    content: is_parameter()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.is_parameter
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.is_placeholder
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_placeholder()
+  syntax:
+    content: is_placeholder()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.is_placeholder
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.is_sparse
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: is_sparse()
+  syntax:
+    content: is_sparse()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.is_sparse
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.kind
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: kind()
+  syntax:
+    content: kind()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.kind
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.name
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: name()
+  syntax:
+    content: name()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.name
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.needs_gradient
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: needs_gradient()
+  syntax:
+    content: needs_gradient()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.needs_gradient
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.owner
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: owner()
+  syntax:
+    content: owner()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.owner
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.shape
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: shape()
+  syntax:
+    content: shape()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.shape
+- class: cntk.cntk_py.Variable
+  fullName: cntk.cntk_py.Variable.uid
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: uid()
+  syntax:
+    content: uid()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Variable.uid
+references:
+- fullName: cntk.cntk_py.Variable.as_string
+  isExternal: false
+  name: as_string()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.as_string
+- fullName: cntk.cntk_py.Variable.current_value_time_stamp
+  isExternal: false
+  name: current_value_time_stamp()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.current_value_time_stamp
+- fullName: cntk.cntk_py.Variable.dynamic_axes
+  isExternal: false
+  name: dynamic_axes()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.dynamic_axes
+- fullName: cntk.cntk_py.Variable.get_data_type
+  isExternal: false
+  name: get_data_type()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.get_data_type
+- fullName: cntk.cntk_py.Variable.get_value
+  isExternal: false
+  name: get_value()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.get_value
+- fullName: cntk.cntk_py.Variable.has_batch_axis
+  isExternal: false
+  name: has_batch_axis()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.has_batch_axis
+- fullName: cntk.cntk_py.Variable.has_sequence_axis
+  isExternal: false
+  name: has_sequence_axis()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.has_sequence_axis
+- fullName: cntk.cntk_py.Variable.is_constant
+  isExternal: false
+  name: is_constant()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.is_constant
+- fullName: cntk.cntk_py.Variable.is_initialized
+  isExternal: false
+  name: is_initialized()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.is_initialized
+- fullName: cntk.cntk_py.Variable.is_input
+  isExternal: false
+  name: is_input()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.is_input
+- fullName: cntk.cntk_py.Variable.is_output
+  isExternal: false
+  name: is_output()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.is_output
+- fullName: cntk.cntk_py.Variable.is_parameter
+  isExternal: false
+  name: is_parameter()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.is_parameter
+- fullName: cntk.cntk_py.Variable.is_placeholder
+  isExternal: false
+  name: is_placeholder()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.is_placeholder
+- fullName: cntk.cntk_py.Variable.is_sparse
+  isExternal: false
+  name: is_sparse()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.is_sparse
+- fullName: cntk.cntk_py.Variable.kind
+  isExternal: false
+  name: kind()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.kind
+- fullName: cntk.cntk_py.Variable.name
+  isExternal: false
+  name: name()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.name
+- fullName: cntk.cntk_py.Variable.needs_gradient
+  isExternal: false
+  name: needs_gradient()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.needs_gradient
+- fullName: cntk.cntk_py.Variable.owner
+  isExternal: false
+  name: owner()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.owner
+- fullName: cntk.cntk_py.Variable.shape
+  isExternal: false
+  name: shape()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.shape
+- fullName: cntk.cntk_py.Variable.uid
+  isExternal: false
+  name: uid()
+  parent: cntk.cntk_py.Variable
+  uid: cntk.cntk_py.Variable.uid

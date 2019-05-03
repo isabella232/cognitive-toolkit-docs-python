@@ -1,0 +1,137 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.train.tests.distributed_test.create_block_momentum_distributed_learner
+  - cntk.train.tests.distributed_test.create_block_momentum_distributed_learner_with_time_constant
+  - cntk.train.tests.distributed_test.create_data_parallel_distributed_learner
+  - cntk.train.tests.distributed_test.run_distributed_training
+  - cntk.train.tests.distributed_test.test_distributed
+  - cntk.train.tests.distributed_test.test_distributed_mb_source
+  - cntk.train.tests.distributed_test.test_distributed_mb_source_again
+  fullName: cntk.train.tests.distributed_test
+  langs:
+  - python
+  module: cntk.train.tests.distributed_test
+  name: distributed_test
+  type: module
+  uid: cntk.train.tests.distributed_test
+- fullName: cntk.train.tests.distributed_test.create_block_momentum_distributed_learner
+  langs:
+  - python
+  module: cntk.train.tests.distributed_test
+  name: create_block_momentum_distributed_learner(learner, distributed_after)
+  syntax:
+    content: create_block_momentum_distributed_learner(learner, distributed_after)
+    parameters:
+    - id: learner
+    - id: distributed_after
+  type: function
+  uid: cntk.train.tests.distributed_test.create_block_momentum_distributed_learner
+- fullName: cntk.train.tests.distributed_test.create_block_momentum_distributed_learner_with_time_constant
+  langs:
+  - python
+  module: cntk.train.tests.distributed_test
+  name: create_block_momentum_distributed_learner_with_time_constant(learner, distributed_after)
+  syntax:
+    content: create_block_momentum_distributed_learner_with_time_constant(learner,
+      distributed_after)
+    parameters:
+    - id: learner
+    - id: distributed_after
+  type: function
+  uid: cntk.train.tests.distributed_test.create_block_momentum_distributed_learner_with_time_constant
+- fullName: cntk.train.tests.distributed_test.create_data_parallel_distributed_learner
+  langs:
+  - python
+  module: cntk.train.tests.distributed_test
+  name: create_data_parallel_distributed_learner(learner, quantized, distributed_after)
+  syntax:
+    content: create_data_parallel_distributed_learner(learner, quantized, distributed_after)
+    parameters:
+    - id: learner
+    - id: quantized
+    - id: distributed_after
+  type: function
+  uid: cntk.train.tests.distributed_test.create_data_parallel_distributed_learner
+- fullName: cntk.train.tests.distributed_test.run_distributed_training
+  langs:
+  - python
+  module: cntk.train.tests.distributed_test
+  name: run_distributed_training(tmpdir, create_func)
+  syntax:
+    content: run_distributed_training(tmpdir, create_func)
+    parameters:
+    - id: tmpdir
+    - id: create_func
+  type: function
+  uid: cntk.train.tests.distributed_test.run_distributed_training
+- fullName: cntk.train.tests.distributed_test.test_distributed
+  langs:
+  - python
+  module: cntk.train.tests.distributed_test
+  name: test_distributed(tmpdir)
+  syntax:
+    content: test_distributed(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.train.tests.distributed_test.test_distributed
+- fullName: cntk.train.tests.distributed_test.test_distributed_mb_source
+  langs:
+  - python
+  module: cntk.train.tests.distributed_test
+  name: test_distributed_mb_source(tmpdir)
+  syntax:
+    content: test_distributed_mb_source(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.train.tests.distributed_test.test_distributed_mb_source
+- fullName: cntk.train.tests.distributed_test.test_distributed_mb_source_again
+  langs:
+  - python
+  module: cntk.train.tests.distributed_test
+  name: test_distributed_mb_source_again(tmpdir)
+  syntax:
+    content: test_distributed_mb_source_again(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.train.tests.distributed_test.test_distributed_mb_source_again
+references:
+- fullName: cntk.train.tests.distributed_test.create_block_momentum_distributed_learner
+  isExternal: false
+  name: create_block_momentum_distributed_learner(learner, distributed_after)
+  parent: cntk.train.tests.distributed_test
+  uid: cntk.train.tests.distributed_test.create_block_momentum_distributed_learner
+- fullName: cntk.train.tests.distributed_test.create_block_momentum_distributed_learner_with_time_constant
+  isExternal: false
+  name: create_block_momentum_distributed_learner_with_time_constant(learner, distributed_after)
+  parent: cntk.train.tests.distributed_test
+  uid: cntk.train.tests.distributed_test.create_block_momentum_distributed_learner_with_time_constant
+- fullName: cntk.train.tests.distributed_test.create_data_parallel_distributed_learner
+  isExternal: false
+  name: create_data_parallel_distributed_learner(learner, quantized, distributed_after)
+  parent: cntk.train.tests.distributed_test
+  uid: cntk.train.tests.distributed_test.create_data_parallel_distributed_learner
+- fullName: cntk.train.tests.distributed_test.run_distributed_training
+  isExternal: false
+  name: run_distributed_training(tmpdir, create_func)
+  parent: cntk.train.tests.distributed_test
+  uid: cntk.train.tests.distributed_test.run_distributed_training
+- fullName: cntk.train.tests.distributed_test.test_distributed
+  isExternal: false
+  name: test_distributed(tmpdir)
+  parent: cntk.train.tests.distributed_test
+  uid: cntk.train.tests.distributed_test.test_distributed
+- fullName: cntk.train.tests.distributed_test.test_distributed_mb_source
+  isExternal: false
+  name: test_distributed_mb_source(tmpdir)
+  parent: cntk.train.tests.distributed_test
+  uid: cntk.train.tests.distributed_test.test_distributed_mb_source
+- fullName: cntk.train.tests.distributed_test.test_distributed_mb_source_again
+  isExternal: false
+  name: test_distributed_mb_source_again(tmpdir)
+  parent: cntk.train.tests.distributed_test
+  uid: cntk.train.tests.distributed_test.test_distributed_mb_source_again

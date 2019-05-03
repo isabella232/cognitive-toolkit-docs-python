@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.eval.tests.evaluator_distributed_test
+  - cntk.eval.tests.evaluator_test
+  fullName: cntk.eval.tests
+  kind: import
+  langs:
+  - python
+  module: cntk.eval.tests
+  name: tests
+  type: package
+  uid: cntk.eval.tests
+references:
+- fullName: cntk.eval.tests.evaluator_distributed_test
+  isExternal: false
+  name: evaluator_distributed_test
+  parent: cntk.eval.tests
+  uid: cntk.eval.tests.evaluator_distributed_test
+- fullName: cntk.eval.tests.evaluator_test
+  isExternal: false
+  name: evaluator_test
+  parent: cntk.eval.tests
+  uid: cntk.eval.tests.evaluator_test

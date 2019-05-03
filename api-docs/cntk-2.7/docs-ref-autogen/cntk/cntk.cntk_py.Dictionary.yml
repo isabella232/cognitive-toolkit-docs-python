@@ -1,0 +1,187 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.cntk_py.Dictionary.add
+  - cntk.cntk_py.Dictionary.begin
+  - cntk.cntk_py.Dictionary.cbegin
+  - cntk.cntk_py.Dictionary.cend
+  - cntk.cntk_py.Dictionary.contains
+  - cntk.cntk_py.Dictionary.end
+  - cntk.cntk_py.Dictionary.keys
+  - cntk.cntk_py.Dictionary.load
+  - cntk.cntk_py.Dictionary.save
+  - cntk.cntk_py.Dictionary.size
+  class: cntk.cntk_py.Dictionary
+  fullName: cntk.cntk_py.Dictionary
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: Dictionary
+  summary: ''
+  syntax:
+    content: Dictionary(*args)
+  type: class
+  uid: cntk.cntk_py.Dictionary
+- class: cntk.cntk_py.Dictionary
+  fullName: cntk.cntk_py.Dictionary.add
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: add(*args)
+  syntax:
+    content: add(*args)
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Dictionary.add
+- class: cntk.cntk_py.Dictionary
+  fullName: cntk.cntk_py.Dictionary.begin
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: begin()
+  syntax:
+    content: begin()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Dictionary.begin
+- class: cntk.cntk_py.Dictionary
+  fullName: cntk.cntk_py.Dictionary.cbegin
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: cbegin()
+  syntax:
+    content: cbegin()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Dictionary.cbegin
+- class: cntk.cntk_py.Dictionary
+  fullName: cntk.cntk_py.Dictionary.cend
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: cend()
+  syntax:
+    content: cend()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Dictionary.cend
+- class: cntk.cntk_py.Dictionary
+  fullName: cntk.cntk_py.Dictionary.contains
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: contains(*args)
+  syntax:
+    content: contains(*args)
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Dictionary.contains
+- class: cntk.cntk_py.Dictionary
+  fullName: cntk.cntk_py.Dictionary.end
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: end()
+  syntax:
+    content: end()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Dictionary.end
+- class: cntk.cntk_py.Dictionary
+  fullName: cntk.cntk_py.Dictionary.keys
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: keys()
+  syntax:
+    content: keys()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Dictionary.keys
+- class: cntk.cntk_py.Dictionary
+  fullName: cntk.cntk_py.Dictionary.load
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: load
+  syntax: {}
+  type: method
+  uid: cntk.cntk_py.Dictionary.load
+- class: cntk.cntk_py.Dictionary
+  fullName: cntk.cntk_py.Dictionary.save
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: save(filename)
+  syntax:
+    content: save(filename)
+    parameters:
+    - id: filename
+  type: method
+  uid: cntk.cntk_py.Dictionary.save
+- class: cntk.cntk_py.Dictionary
+  fullName: cntk.cntk_py.Dictionary.size
+  langs:
+  - python
+  module: cntk.cntk_py
+  name: size()
+  syntax:
+    content: size()
+    parameters: []
+  type: method
+  uid: cntk.cntk_py.Dictionary.size
+references:
+- fullName: cntk.cntk_py.Dictionary.add
+  isExternal: false
+  name: add(*args)
+  parent: cntk.cntk_py.Dictionary
+  uid: cntk.cntk_py.Dictionary.add
+- fullName: cntk.cntk_py.Dictionary.begin
+  isExternal: false
+  name: begin()
+  parent: cntk.cntk_py.Dictionary
+  uid: cntk.cntk_py.Dictionary.begin
+- fullName: cntk.cntk_py.Dictionary.cbegin
+  isExternal: false
+  name: cbegin()
+  parent: cntk.cntk_py.Dictionary
+  uid: cntk.cntk_py.Dictionary.cbegin
+- fullName: cntk.cntk_py.Dictionary.cend
+  isExternal: false
+  name: cend()
+  parent: cntk.cntk_py.Dictionary
+  uid: cntk.cntk_py.Dictionary.cend
+- fullName: cntk.cntk_py.Dictionary.contains
+  isExternal: false
+  name: contains(*args)
+  parent: cntk.cntk_py.Dictionary
+  uid: cntk.cntk_py.Dictionary.contains
+- fullName: cntk.cntk_py.Dictionary.end
+  isExternal: false
+  name: end()
+  parent: cntk.cntk_py.Dictionary
+  uid: cntk.cntk_py.Dictionary.end
+- fullName: cntk.cntk_py.Dictionary.keys
+  isExternal: false
+  name: keys()
+  parent: cntk.cntk_py.Dictionary
+  uid: cntk.cntk_py.Dictionary.keys
+- fullName: cntk.cntk_py.Dictionary.load
+  isExternal: false
+  name: load
+  parent: cntk.cntk_py.Dictionary
+  uid: cntk.cntk_py.Dictionary.load
+- fullName: cntk.cntk_py.Dictionary.save
+  isExternal: false
+  name: save(filename)
+  parent: cntk.cntk_py.Dictionary
+  uid: cntk.cntk_py.Dictionary.save
+- fullName: cntk.cntk_py.Dictionary.size
+  isExternal: false
+  name: size()
+  parent: cntk.cntk_py.Dictionary
+  uid: cntk.cntk_py.Dictionary.size

@@ -1,0 +1,20 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkPSROIPoolingParameters
+  fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkPSROIPoolingParameters
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
+  langs:
+  - python
+  module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+  name: CntkPSROIPoolingParameters
+  summary: The parameter definition of PSROIPooling op
+  syntax:
+    content: CntkPSROIPoolingParameters()
+  type: class
+  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkPSROIPoolingParameters
+references: []

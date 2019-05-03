@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+items:
+- children:
+  - cntk
+  fullName: cntk
+  kind: distribution
+  langs:
+  - python
+  name: cntk
+  summary: ''
+  type: package
+  uid: project-cntk
+references:
+- fullname: cntk
+  isExternal: false
+  name: cntk
+  uid: cntk
