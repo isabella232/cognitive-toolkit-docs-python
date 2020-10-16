@@ -1,265 +1,138 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.core.Value.as_sequences
-  - cntk.core.Value.create
-  - cntk.core.Value.data
-  - cntk.core.Value.device
-  - cntk.core.Value.dtype
-  - cntk.core.Value.is_read_only
-  - cntk.core.Value.is_sparse
-  - cntk.core.Value.is_valid
-  - cntk.core.Value.mask
-  - cntk.core.Value.one_hot
-  - cntk.core.Value.shape
-  - cntk.core.Value.ONE_HOT_SKIP
-  class: cntk.core.Value
-  fullName: cntk.core.Value
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.cntk_py.Value
-  langs:
-  - python
-  module: cntk.core
-  name: Value
-  summary: 'Internal representation of minibatch data.
+### YamlMime:PythonClass
+uid: cntk.core.Value
+name: Value
+fullName: cntk.core.Value
+module: cntk.core
+inheritances:
+- cntk.cntk_py.Value
+summary: Internal representation of minibatch data.
+constructor:
+  syntax: Value(batch, seq_starts=None, device=None)
+  parameters:
+  - name: batch
+    description: "batch input for *var*.\nIt can be:\n\n   * a pure Python structure\
+      \ (list of lists, ...), \n\n   * a list of NumPy arrays or SciPy sparse CSR\
+      \ matrices \n\n   * a <xref:cntk.core.Value> object (e.g. returned by <xref:cntk.core.Value.one_hot>)"
+  - name: seq_starts
+    description: 'if None, every sequence is
 
+      treated as a new sequence. Otherwise, it is interpreted as a list of
 
+      Booleans that tell whether a sequence is a new sequence (*True*) or a
 
+      continuation of the sequence in the same slot of the previous
 
+      minibatch (*False*)'
+    types:
+    - <xref:list of bools>
+    - <xref:None>
+  - name: device
+    description: 'device this value
 
-
-
-
-
-
-
-
-
-    '
-  syntax:
-    content: Value(batch, seq_starts=None, device=None)
-    parameters:
-    - description: "batch input for *var*.\nIt can be:\n\n   * a pure Python structure\
-        \ (list of lists, ...), \n\n   * a list of NumPy arrays or SciPy sparse CSR\
-        \ matrices \n\n   * a <xref:cntk.core.Value> object (e.g. returned by <xref:cntk.core.Value.one_hot>)\
-        \ \n"
-      id: batch
-    - description: 'if None, every sequence is
-
-        treated as a new sequence. Otherwise, it is interpreted as a list of
-
-        Booleans that tell whether a sequence is a new sequence (*True*) or a
-
-        continuation of the sequence in the same slot of the previous
-
-        minibatch (*False*)
-
-        '
-      id: seq_starts
-      type:
-      - list of bools
-      - None
-    - description: 'device this value
-
-        should be put on
-
-        '
-      id: device
-      type:
-      - <xref:cntk.device.DeviceDescriptor>
-  type: class
-  uid: cntk.core.Value
-- class: cntk.core.Value
-  fullName: cntk.core.Value.as_sequences
-  langs:
-  - python
-  module: cntk.core
-  name: as_sequences(variable=None)
+      should be put on'
+    types:
+    - <xref:cntk.device.DeviceDescriptor>
+methods:
+- uid: cntk.core.Value.as_sequences
+  name: as_sequences
   summary: 'Convert a Value to a sequence of NumPy arrays that have their masked
 
-    entries removed.
+    entries removed.'
+  signature: as_sequences(variable=None)
+  parameters:
+  - name: variable
+    defaultValue: None
+  return:
+    description: 'If variable contains more dynamic axes than the batch axis, a list
 
-    '
-  syntax:
-    content: as_sequences(variable=None)
-    parameters:
-    - defaultValue: None
-      id: variable
-    return:
-      description: 'If variable contains more dynamic axes than the batch axis, a
-        list
+      of NumPy arrays (if dense) or a SciPy CSR array (if sparse) will be
 
-        of NumPy arrays (if dense) or a SciPy CSR array (if sparse) will be
+      returned. Otherwise, the arrays will be returned directly.'
+- uid: cntk.core.Value.create
+  name: create
+  summary: Creates a <xref:cntk.core.Value> object.
+  signature: create(var, data, seq_starts=None, device=None, read_only=False)
+  parameters:
+  - name: var
+    description: 'variable into which
 
-        returned. Otherwise, the arrays will be returned directly.
+      `data` is passed'
+    isRequired: true
+    types:
+    - <xref:cntk.variables.Variable>
+  - name: data
+    description: "data for *var*.\nIt can be:\n\n   * a single NumPy array denoting\
+      \ the full minibatch \n\n   * a list of NumPy arrays or SciPy sparse CSR matrices\
+      \ \n\n   * a single NumPy array denoting one parameter or constant"
+    isRequired: true
+  - name: seq_starts
+    description: 'if None, every sequence is
 
-        '
-  type: method
-  uid: cntk.core.Value.as_sequences
-- class: cntk.core.Value
-  fullName: cntk.core.Value.create
-  langs:
-  - python
-  module: cntk.core
-  name: create(var, data, seq_starts=None, device=None, read_only=False)
-  summary: 'Creates a <xref:cntk.core.Value> object.
+      treated as a new sequence. Otherwise, it is interpreted as a list of
 
-    '
-  syntax:
-    content: create(var, data, seq_starts=None, device=None, read_only=False)
-    parameters:
-    - description: 'variable into which
+      Booleans that tell whether a sequence is a new sequence (*True*) or a
 
-        `data` is passed
+      continuation of the sequence in the same slot of the previous
 
-        '
-      id: var
-      type:
-      - <xref:cntk.variables.Variable>
-    - description: "data for *var*.\nIt can be:\n\n   * a single NumPy array denoting\
-        \ the full minibatch \n\n   * a list of NumPy arrays or SciPy sparse CSR matrices\
-        \ \n\n   * a single NumPy array denoting one parameter or constant \n"
-      id: data
-    - description: 'if None, every sequence is
+      minibatch (*False*)'
+    isRequired: true
+    types:
+    - <xref:list of bools>
+    - <xref:None>
+  - name: device
+    description: 'device
 
-        treated as a new sequence. Otherwise, it is interpreted as a list of
+      this value should be put on'
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>, <xref:default None>
+  - name: read_only
+    description: whether the data is read only
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:default False>
+  return:
+    description: <xref:cntk.core.Value> object.
+- uid: cntk.core.Value.one_hot
+  name: one_hot
+  summary: 'Converts `batch` into a <xref:cntk.core.Value> object of `dtype`
 
-        Booleans that tell whether a sequence is a new sequence (*True*) or a
+    such that the integer data in `batch` is interpreted as the indices
 
-        continuation of the sequence in the same slot of the previous
+    representing one-hot vectors. Use Value.ONE_HOT_SKIP for a zero vector'
+  signature: one_hot(batch, num_classes, dtype=None, device=None)
+  parameters:
+  - name: batch
+    description: batch input data of indices
+    isRequired: true
+    types:
+    - <xref:list of lists of integers>
+  - name: sample_shape
+    description: 'number of classes or shape of each
 
-        minibatch (*False*)
+      sample whose trailing axis is one_hot'
+    isRequired: true
+    types:
+    - <xref:int>
+    - <xref:tuple>
+  - name: dtype
+    description: data type
+    isRequired: true
+    types:
+    - <xref:np.float32>, <xref:np.float64>, <xref:np.float16>, <xref:default None>
+  - name: device
+    description: 'device
 
-        '
-      id: seq_starts
-      type:
-      - list of bools
-      - None
-    - description: 'device
+      this value should be put on'
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>, <xref:default None>
+  return:
+    description: '`batch` converted into a <xref:cntk.core.Value> object that can
+      be passed to
 
-        this value should be put on
-
-        '
-      id: device
-      type:
-      - <xref:cntk.device.DeviceDescriptor>, default None
-    - description: 'whether the data is read only
-
-        '
-      id: read_only
-      type:
-      - bool, default False
-    return:
-      description: '<xref:cntk.core.Value> object.
-
-        '
-  type: method
-  uid: cntk.core.Value.create
-- class: cntk.core.Value
-  fullName: cntk.core.Value.data
-  langs:
-  - python
-  module: cntk.core
-  name: data
-  summary: 'Retrieves the underlying <xref:cntk.core.NDArrayView> instance.
-
-    '
-  syntax: {}
-  type: attribute
-  uid: cntk.core.Value.data
-- class: cntk.core.Value
-  fullName: cntk.core.Value.device
-  langs:
-  - python
-  module: cntk.core
-  name: device
-  summary: 'Retrieves the <xref:cntk.device.DeviceDescriptor> instance.
-
-    '
-  syntax: {}
-  type: attribute
-  uid: cntk.core.Value.device
-- class: cntk.core.Value
-  fullName: cntk.core.Value.dtype
-  langs:
-  - python
-  module: cntk.core
-  name: dtype
-  summary: 'NumPy data type of the instance
-
-    '
-  syntax: {}
-  type: attribute
-  uid: cntk.core.Value.dtype
-- class: cntk.core.Value
-  fullName: cntk.core.Value.is_read_only
-  langs:
-  - python
-  module: cntk.core
-  name: is_read_only
-  summary: 'Whether the data is read-only
-
-    '
-  syntax: {}
-  type: attribute
-  uid: cntk.core.Value.is_read_only
-- class: cntk.core.Value
-  fullName: cntk.core.Value.is_sparse
-  langs:
-  - python
-  module: cntk.core
-  name: is_sparse
-  summary: 'Whether the data is sparse or dense
-
-    '
-  syntax: {}
-  type: attribute
-  uid: cntk.core.Value.is_sparse
-- class: cntk.core.Value
-  fullName: cntk.core.Value.is_valid
-  langs:
-  - python
-  module: cntk.core
-  name: is_valid
-  summary: 'Whether the value is valid or has been invalidated by another forward
-    and/or backward pass
-
-    '
-  syntax: {}
-  type: attribute
-  uid: cntk.core.Value.is_valid
-- class: cntk.core.Value
-  example:
-  - 'A mask of `[[2, 1, 1], [1, 1, 0]]` describes a batch of two
-
-    sequences. The first has three elements, of which the first element
-
-    (2) signals the beginning of a sequence. The second sequence has two
-
-    elements (last element marked ''invalid'' by ''0''). As it starts with
-
-    (1), it is a continuation of the 2nd sequence in the previous
-
-    minibatch.
-
-    '
-  fullName: cntk.core.Value.mask
-  langs:
-  - python
-  module: cntk.core
-  name: mask
-  summary: "The mask matrix of this value. Each row denotes a sequence with its\n\
-    elements describing the mask of the element:\n\n   * 2: beginning of sequence\
-    \ (e.g. an LSTM would be reset) \n\n   * 1: valid element \n\n   * 0: invalid\
-    \ element \n"
-  syntax: {}
-  type: attribute
-  uid: cntk.core.Value.mask
-- class: cntk.core.Value
-  example:
+      the forward or eval function.'
+  examples:
   - "\n```\n\n>>> num_classes = 6\n>>> sparse_indices = [[1,C.Value.ONE_HOT_SKIP,5],[4]]\n\
     >>> i0 = C.sequence.input_variable(shape=num_classes, is_sparse=True)\n>>> z =\
     \ C.times(i0, np.eye(num_classes))\n>>> value = C.Value.one_hot(sparse_indices,\
@@ -279,189 +152,53 @@ items:
     \ sample_shape)\n>>> z.eval({i0: value})\narray([[ 0.,  1.,  0.,  0.,  0.,  0.],\n\
     \       [ 0.,  0.,  0.,  0.,  0.,  1.],\n       [ 0.,  0.,  0.,  1.,  0.,  0.],\n\
     \       [ 0.,  0.,  1.,  0.,  0.,  0.]], dtype=float32)\n```\n"
-  fullName: cntk.core.Value.one_hot
-  langs:
-  - python
-  module: cntk.core
-  name: one_hot(batch, num_classes, dtype=None, device=None)
-  summary: 'Converts `batch` into a <xref:cntk.core.Value> object of `dtype`
+attributes:
+- uid: cntk.core.Value.data
+  name: data
+  summary: Retrieves the underlying <xref:cntk.core.NDArrayView> instance.
+- uid: cntk.core.Value.device
+  name: device
+  summary: Retrieves the <xref:cntk.device.DeviceDescriptor> instance.
+- uid: cntk.core.Value.dtype
+  name: dtype
+  summary: NumPy data type of the instance
+- uid: cntk.core.Value.is_read_only
+  name: is_read_only
+  summary: Whether the data is read-only
+- uid: cntk.core.Value.is_sparse
+  name: is_sparse
+  summary: Whether the data is sparse or dense
+- uid: cntk.core.Value.is_valid
+  name: is_valid
+  summary: Whether the value is valid or has been invalidated by another forward and/or
+    backward pass
+- uid: cntk.core.Value.mask
+  name: mask
+  summary: "The mask matrix of this value. Each row denotes a sequence with its\n\
+    elements describing the mask of the element:\n\n   * 2: beginning of sequence\
+    \ (e.g. an LSTM would be reset) \n\n   * 1: valid element \n\n   * 0: invalid\
+    \ element"
+  examples:
+  - 'A mask of `[[2, 1, 1], [1, 1, 0]]` describes a batch of two
 
-    such that the integer data in `batch` is interpreted as the indices
+    sequences. The first has three elements, of which the first element
 
-    representing one-hot vectors. Use Value.ONE_HOT_SKIP for a zero vector
+    (2) signals the beginning of a sequence. The second sequence has two
+
+    elements (last element marked ''invalid'' by ''0''). As it starts with
+
+    (1), it is a continuation of the 2nd sequence in the previous
+
+    minibatch.
 
     '
-  syntax:
-    content: one_hot(batch, num_classes, dtype=None, device=None)
-    parameters:
-    - description: 'batch input data of indices
-
-        '
-      id: batch
-      type:
-      - list of lists of integers
-    - description: 'number of classes or shape of each
-
-        sample whose trailing axis is one_hot
-
-        '
-      id: sample_shape
-      type:
-      - int
-      - tuple
-    - description: 'data type
-
-        '
-      id: dtype
-      type:
-      - np.float32, np.float64, np.float16, default None
-    - description: 'device
-
-        this value should be put on
-
-        '
-      id: device
-      type:
-      - <xref:cntk.device.DeviceDescriptor>, default None
-    return:
-      description: '`batch` converted into a <xref:cntk.core.Value> object that can
-        be passed to
-
-        the forward or eval function.
-
-        '
-  type: method
-  uid: cntk.core.Value.one_hot
-- class: cntk.core.Value
-  fullName: cntk.core.Value.shape
-  langs:
-  - python
-  module: cntk.core
+- uid: cntk.core.Value.shape
   name: shape
   summary: 'The rectangular shape of this value. I.e., if this value has sequences
 
     of varying lengths, the shape will have the max sequence length in the
 
-    sequence dimension.
-
-    '
-  syntax: {}
-  type: attribute
-  uid: cntk.core.Value.shape
-- class: cntk.core.Value
-  fullName: cntk.core.Value.ONE_HOT_SKIP
-  langs:
-  - python
-  module: cntk.core
+    sequence dimension.'
+- uid: cntk.core.Value.ONE_HOT_SKIP
   name: ONE_HOT_SKIP
-  syntax:
-    content: ONE_HOT_SKIP = 4294967295
-  type: attribute
-  uid: cntk.core.Value.ONE_HOT_SKIP
-references:
-- fullName: cntk.core.Value.as_sequences
-  isExternal: false
-  name: as_sequences(variable=None)
-  parent: cntk.core.Value
-  uid: cntk.core.Value.as_sequences
-- fullName: cntk.core.Value.create
-  isExternal: false
-  name: create(var, data, seq_starts=None, device=None, read_only=False)
-  parent: cntk.core.Value
-  uid: cntk.core.Value.create
-- fullName: cntk.core.Value.data
-  isExternal: false
-  name: data
-  parent: cntk.core.Value
-  uid: cntk.core.Value.data
-- fullName: cntk.core.Value.device
-  isExternal: false
-  name: device
-  parent: cntk.core.Value
-  uid: cntk.core.Value.device
-- fullName: cntk.core.Value.dtype
-  isExternal: false
-  name: dtype
-  parent: cntk.core.Value
-  uid: cntk.core.Value.dtype
-- fullName: cntk.core.Value.is_read_only
-  isExternal: false
-  name: is_read_only
-  parent: cntk.core.Value
-  uid: cntk.core.Value.is_read_only
-- fullName: cntk.core.Value.is_sparse
-  isExternal: false
-  name: is_sparse
-  parent: cntk.core.Value
-  uid: cntk.core.Value.is_sparse
-- fullName: cntk.core.Value.is_valid
-  isExternal: false
-  name: is_valid
-  parent: cntk.core.Value
-  uid: cntk.core.Value.is_valid
-- fullName: cntk.core.Value.mask
-  isExternal: false
-  name: mask
-  parent: cntk.core.Value
-  uid: cntk.core.Value.mask
-- fullName: cntk.core.Value.one_hot
-  isExternal: false
-  name: one_hot(batch, num_classes, dtype=None, device=None)
-  parent: cntk.core.Value
-  uid: cntk.core.Value.one_hot
-- fullName: cntk.core.Value.shape
-  isExternal: false
-  name: shape
-  parent: cntk.core.Value
-  uid: cntk.core.Value.shape
-- fullName: cntk.core.Value.ONE_HOT_SKIP
-  isExternal: false
-  name: ONE_HOT_SKIP
-  parent: cntk.core.Value
-  uid: cntk.core.Value.ONE_HOT_SKIP
-- fullName: <xref:cntk.device.DeviceDescriptor>, default None
-  name: DeviceDescriptor>, default None
-  spec.python:
-  - fullName: <xref:cntk.device.DeviceDescriptor>
-    name: DeviceDescriptor>
-    uid: <xref:cntk.device.DeviceDescriptor>
-  - fullName: ', '
-    name: ', '
-  - fullName: default None
-    name: default None
-    uid: default None
-  uid: <xref:cntk.device.DeviceDescriptor>, default None
-- fullName: bool, default False
-  name: bool, default False
-  spec.python:
-  - fullName: bool
-    name: bool
-    uid: bool
-  - fullName: ', '
-    name: ', '
-  - fullName: default False
-    name: default False
-    uid: default False
-  uid: bool, default False
-- fullName: np.float32, np.float64, np.float16, default None
-  name: float32, float64, float16, default None
-  spec.python:
-  - fullName: np.float32
-    name: float32
-    uid: np.float32
-  - fullName: ', '
-    name: ', '
-  - fullName: np.float64
-    name: float64
-    uid: np.float64
-  - fullName: ', '
-    name: ', '
-  - fullName: np.float16
-    name: float16
-    uid: np.float16
-  - fullName: ', '
-    name: ', '
-  - fullName: default None
-    name: default None
-    uid: default None
-  uid: np.float32, np.float64, np.float16, default None
+  signature: ONE_HOT_SKIP = 4294967295

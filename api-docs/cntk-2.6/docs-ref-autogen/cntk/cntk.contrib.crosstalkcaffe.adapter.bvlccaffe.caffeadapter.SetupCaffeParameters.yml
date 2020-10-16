@@ -1,602 +1,326 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.batch_norm
-  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.convolution
-  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.default
-  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.dense
-  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.dropout
-  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.lrn
-  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.plus
-  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.pooling
-  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.psroi_pooling
-  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.relu
-  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.softmax
-  - cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.splice
-  class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: SetupCaffeParameters
-  summary: 'Setup Caffe parameters into CNTK format
-
-
-
-
-
-
-
-
-
-
-
-
-
-    '
-  syntax: {}
-  type: class
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-- class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.batch_norm
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: batch_norm(caffe_parameters, inputs_info, cntk_layer_def)
-  summary: '   The batch normalization parameter setup from Caffe to CNTK
-
-    '
-  syntax:
-    content: batch_norm(caffe_parameters, inputs_info, cntk_layer_def)
-    parameters:
-    - description: 'the parameters of Caffe
-
-        '
-      id: caffe_parameters
-      type:
-      - <xref:caffe.Parameters>
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
-
-        The input information of current layer
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
-
-        The converted definition of CNTK layers
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    return:
-      description: 'None
-
-        '
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.batch_norm
-- class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.convolution
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: convolution(caffe_parameters, inputs_info, cntk_layer_def)
-  summary: '   The convolution parameter setup from Caffe to CNTK
-
-    '
-  syntax:
-    content: convolution(caffe_parameters, inputs_info, cntk_layer_def)
-    parameters:
-    - description: 'the parameters of Caffe
-
-        '
-      id: caffe_parameters
-      type:
-      - <xref:caffe.Parameters>
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
-
-        The input information of current layer
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
-
-        The converted definition of CNTK layers
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    return:
-      description: 'None
-
-        '
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.convolution
-- class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.default
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: default(caffe_parameters, inputs_info, cntk_layer_def, tensor_check=True)
-  summary: '   The default Caffe to CNTK uniform model setup
-
-    '
-  syntax:
-    content: default(caffe_parameters, inputs_info, cntk_layer_def, tensor_check=True)
-    parameters:
-    - description: 'the parameters of Caffe
-
-        '
-      id: caffe_parameters
-      type:
-      - <xref:caffe.Parameters>
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
-
-        The input information of current layer
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
-
-        The converted definition of CNTK layers
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - defaultValue: 'True'
-      description: 'Whether to check the tensor shape
-
-        '
-      id: tensor_check
-      type:
-      - bool, default=True
-    return:
-      description: 'None
-
-        '
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.default
-- class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.dense
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: dense(caffe_parameters, inputs_info, cntk_layer_def)
-  summary: '   The dense parameter setup from Caffe to CNTK
-
-    '
-  syntax:
-    content: dense(caffe_parameters, inputs_info, cntk_layer_def)
-    parameters:
-    - description: 'the parameters of Caffe
-
-        '
-      id: caffe_parameters
-      type:
-      - <xref:caffe.Parameters>
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
-
-        The input information of current layer
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
-
-        The converted definition of CNTK layers
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    return:
-      description: 'None
-
-        '
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.dense
-- class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.dropout
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: dropout(caffe_parameters, inputs_info, cntk_layer_def)
-  summary: '   The dropout parameter setup from Caffe to CNTK
-
-    '
-  syntax:
-    content: dropout(caffe_parameters, inputs_info, cntk_layer_def)
-    parameters:
-    - description: 'the parameters of Caffe
-
-        '
-      id: caffe_parameters
-      type:
-      - <xref:caffe.Parameters>
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
-
-        The input information of current layer
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
-
-        The converted definition of CNTK layers
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    return:
-      description: 'None
-
-        '
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.dropout
-- class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.lrn
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: lrn(caffe_parameters, inputs_info, cntk_layer_def)
-  summary: '   The lrn parameter setup from Caffe to CNTK
-
-    '
-  syntax:
-    content: lrn(caffe_parameters, inputs_info, cntk_layer_def)
-    parameters:
-    - description: 'the parameters of Caffe
-
-        '
-      id: caffe_parameters
-      type:
-      - <xref:caffe.Parameters>
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
-
-        The input information of current layer
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
-
-        The converted definition of CNTK layers
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    return:
-      description: 'None
-
-        '
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.lrn
-- class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.plus
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: plus(caffe_parameters, inputs_info, cntk_layer_def)
-  summary: '   The plus parameter setup from Caffe to CNTK
-
-    '
-  syntax:
-    content: plus(caffe_parameters, inputs_info, cntk_layer_def)
-    parameters:
-    - description: 'the parameters of Caffe
-
-        '
-      id: caffe_parameters
-      type:
-      - <xref:caffe.Parameters>
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
-
-        The input information of current layer
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
-
-        The converted definition of CNTK layers
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    return:
-      description: 'None
-
-        '
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.plus
-- class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.pooling
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: pooling(caffe_parameters, inputs_info, cntk_layer_def)
-  summary: '   The pooling parameter setup from Caffe to CNTK
-
-    '
-  syntax:
-    content: pooling(caffe_parameters, inputs_info, cntk_layer_def)
-    parameters:
-    - description: 'the parameters of Caffe
-
-        '
-      id: caffe_parameters
-      type:
-      - <xref:caffe.Parameters>
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
-
-        The input information of current layer
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
-
-        The converted definition of CNTK layers
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    return:
-      description: 'None
-
-        '
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.pooling
-- class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.psroi_pooling
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: psroi_pooling(caffe_parameters, _, cntk_layer_def)
-  summary: '   The psroipooling parameter setup from Caffe to CNTK
-
-    '
-  syntax:
-    content: psroi_pooling(caffe_parameters, _, cntk_layer_def)
-    parameters:
-    - description: 'the parameters of Caffe
-
-        '
-      id: caffe_parameters
-      type:
-      - <xref:caffe.Parameters>
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
-
-        The input information of current layer
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
-
-        The converted definition of CNTK layers
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    return:
-      description: 'None
-
-        '
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.psroi_pooling
-- class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.relu
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: relu(caffe_parameters, inputs_info, cntk_layer_def)
-  summary: '   The ReLU parameter setup from Caffe to CNTK
-
-    '
-  syntax:
-    content: relu(caffe_parameters, inputs_info, cntk_layer_def)
-    parameters:
-    - description: 'the parameters of Caffe
-
-        '
-      id: caffe_parameters
-      type:
-      - <xref:caffe.Parameters>
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
-
-        The input information of current layer
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
-
-        The converted definition of CNTK layers
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    return:
-      description: 'None
-
-        '
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.relu
-- class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.softmax
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: softmax(caffe_parameters, inputs_info, cntk_layer_def)
-  summary: '   The softmax parameter setup from Caffe to CNTK
-
-    '
-  syntax:
-    content: softmax(caffe_parameters, inputs_info, cntk_layer_def)
-    parameters:
-    - description: 'the parameters of Caffe
-
-        '
-      id: caffe_parameters
-      type:
-      - <xref:caffe.Parameters>
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
-
-        The input information of current layer
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
-
-        The converted definition of CNTK layers
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    return:
-      description: 'None
-
-        '
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.softmax
-- class: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.splice
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-  name: splice(caffe_parameters, inputs_info, cntk_layer_def)
-  summary: '   The splice parameter setup from Caffe to CNTK
-
-    '
-  syntax:
-    content: splice(caffe_parameters, inputs_info, cntk_layer_def)
-    parameters:
-    - description: 'the parameters of Caffe
-
-        '
-      id: caffe_parameters
-      type:
-      - <xref:caffe.Parameters>
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
-
-        The input information of current layer
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    - description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
-
-        The converted definition of CNTK layers
-
-        '
-      id: ('class'
-      type:
-      - cntk_layer_def
-    return:
-      description: 'None
-
-        '
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.splice
-references:
-- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.batch_norm
-  isExternal: false
-  name: batch_norm(caffe_parameters, inputs_info, cntk_layer_def)
-  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.batch_norm
-- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.convolution
-  isExternal: false
-  name: convolution(caffe_parameters, inputs_info, cntk_layer_def)
-  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.convolution
-- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.default
-  isExternal: false
-  name: default(caffe_parameters, inputs_info, cntk_layer_def, tensor_check=True)
-  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.default
-- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.dense
-  isExternal: false
-  name: dense(caffe_parameters, inputs_info, cntk_layer_def)
-  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.dense
-- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.dropout
-  isExternal: false
-  name: dropout(caffe_parameters, inputs_info, cntk_layer_def)
-  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.dropout
-- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.lrn
-  isExternal: false
-  name: lrn(caffe_parameters, inputs_info, cntk_layer_def)
-  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.lrn
-- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.plus
-  isExternal: false
-  name: plus(caffe_parameters, inputs_info, cntk_layer_def)
-  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.plus
-- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.pooling
-  isExternal: false
-  name: pooling(caffe_parameters, inputs_info, cntk_layer_def)
-  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.pooling
-- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.psroi_pooling
-  isExternal: false
-  name: psroi_pooling(caffe_parameters, _, cntk_layer_def)
-  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.psroi_pooling
-- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.relu
-  isExternal: false
-  name: relu(caffe_parameters, inputs_info, cntk_layer_def)
-  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.relu
-- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.softmax
-  isExternal: false
-  name: softmax(caffe_parameters, inputs_info, cntk_layer_def)
-  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.softmax
-- fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.splice
-  isExternal: false
-  name: splice(caffe_parameters, inputs_info, cntk_layer_def)
-  parent: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
-  uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.splice
-- fullName: bool, default=True
-  name: bool, default=True
-  spec.python:
-  - fullName: bool
-    name: bool
-    uid: bool
-  - fullName: ', '
-    name: ', '
-  - fullName: default=True
-    name: default=True
-    uid: default=True
-  uid: bool, default=True
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
+name: SetupCaffeParameters
+fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters
+module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
+inheritances:
+- builtins.object
+summary: Setup Caffe parameters into CNTK format
+methods:
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.batch_norm
+  name: batch_norm
+  summary: The batch normalization parameter setup from Caffe to CNTK
+  signature: batch_norm(caffe_parameters, inputs_info, cntk_layer_def)
+  parameters:
+  - name: caffe_parameters
+    description: the parameters of Caffe
+    isRequired: true
+    types:
+    - <xref:caffe.Parameters>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
+
+      The input information of current layer'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
+
+      The converted definition of CNTK layers'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.convolution
+  name: convolution
+  summary: The convolution parameter setup from Caffe to CNTK
+  signature: convolution(caffe_parameters, inputs_info, cntk_layer_def)
+  parameters:
+  - name: caffe_parameters
+    description: the parameters of Caffe
+    isRequired: true
+    types:
+    - <xref:caffe.Parameters>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
+
+      The input information of current layer'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
+
+      The converted definition of CNTK layers'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.default
+  name: default
+  summary: The default Caffe to CNTK uniform model setup
+  signature: default(caffe_parameters, inputs_info, cntk_layer_def, tensor_check=True)
+  parameters:
+  - name: caffe_parameters
+    description: the parameters of Caffe
+    isRequired: true
+    types:
+    - <xref:caffe.Parameters>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
+
+      The input information of current layer'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
+
+      The converted definition of CNTK layers'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: tensor_check
+    description: Whether to check the tensor shape
+    defaultValue: 'True'
+    types:
+    - <xref:bool>, <xref:default=True>
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.dense
+  name: dense
+  summary: The dense parameter setup from Caffe to CNTK
+  signature: dense(caffe_parameters, inputs_info, cntk_layer_def)
+  parameters:
+  - name: caffe_parameters
+    description: the parameters of Caffe
+    isRequired: true
+    types:
+    - <xref:caffe.Parameters>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
+
+      The input information of current layer'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
+
+      The converted definition of CNTK layers'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.dropout
+  name: dropout
+  summary: The dropout parameter setup from Caffe to CNTK
+  signature: dropout(caffe_parameters, inputs_info, cntk_layer_def)
+  parameters:
+  - name: caffe_parameters
+    description: the parameters of Caffe
+    isRequired: true
+    types:
+    - <xref:caffe.Parameters>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
+
+      The input information of current layer'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
+
+      The converted definition of CNTK layers'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.lrn
+  name: lrn
+  summary: The lrn parameter setup from Caffe to CNTK
+  signature: lrn(caffe_parameters, inputs_info, cntk_layer_def)
+  parameters:
+  - name: caffe_parameters
+    description: the parameters of Caffe
+    isRequired: true
+    types:
+    - <xref:caffe.Parameters>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
+
+      The input information of current layer'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
+
+      The converted definition of CNTK layers'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.plus
+  name: plus
+  summary: The plus parameter setup from Caffe to CNTK
+  signature: plus(caffe_parameters, inputs_info, cntk_layer_def)
+  parameters:
+  - name: caffe_parameters
+    description: the parameters of Caffe
+    isRequired: true
+    types:
+    - <xref:caffe.Parameters>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
+
+      The input information of current layer'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
+
+      The converted definition of CNTK layers'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.pooling
+  name: pooling
+  summary: The pooling parameter setup from Caffe to CNTK
+  signature: pooling(caffe_parameters, inputs_info, cntk_layer_def)
+  parameters:
+  - name: caffe_parameters
+    description: the parameters of Caffe
+    isRequired: true
+    types:
+    - <xref:caffe.Parameters>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
+
+      The input information of current layer'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
+
+      The converted definition of CNTK layers'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.psroi_pooling
+  name: psroi_pooling
+  summary: The psroipooling parameter setup from Caffe to CNTK
+  signature: psroi_pooling(caffe_parameters, _, cntk_layer_def)
+  parameters:
+  - name: caffe_parameters
+    description: the parameters of Caffe
+    isRequired: true
+    types:
+    - <xref:caffe.Parameters>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
+
+      The input information of current layer'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
+
+      The converted definition of CNTK layers'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.relu
+  name: relu
+  summary: The ReLU parameter setup from Caffe to CNTK
+  signature: relu(caffe_parameters, inputs_info, cntk_layer_def)
+  parameters:
+  - name: caffe_parameters
+    description: the parameters of Caffe
+    isRequired: true
+    types:
+    - <xref:caffe.Parameters>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
+
+      The input information of current layer'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
+
+      The converted definition of CNTK layers'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.softmax
+  name: softmax
+  summary: The softmax parameter setup from Caffe to CNTK
+  signature: softmax(caffe_parameters, inputs_info, cntk_layer_def)
+  parameters:
+  - name: caffe_parameters
+    description: the parameters of Caffe
+    isRequired: true
+    types:
+    - <xref:caffe.Parameters>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
+
+      The input information of current layer'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
+
+      The converted definition of CNTK layers'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters.splice
+  name: splice
+  summary: The splice parameter setup from Caffe to CNTK
+  signature: splice(caffe_parameters, inputs_info, cntk_layer_def)
+  parameters:
+  - name: caffe_parameters
+    description: the parameters of Caffe
+    isRequired: true
+    types:
+    - <xref:caffe.Parameters>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition*):
+
+      The input information of current layer'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  - name: ('class'
+    description: '*cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition*):
+
+      The converted definition of CNTK layers'
+    isRequired: true
+    types:
+    - <xref:cntk_layer_def>
+  return:
+    description: None

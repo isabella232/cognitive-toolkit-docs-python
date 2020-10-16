@@ -1,806 +1,603 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.learners.Learner
-  - cntk.learners.UnitType
-  - cntk.learners.UserLearner
-  - cntk.learners.adadelta
-  - cntk.learners.adagrad
-  - cntk.learners.adam
-  - cntk.learners.default_unit_gain_value
-  - cntk.learners.fsadagrad
-  - cntk.learners.learning_parameter_schedule
-  - cntk.learners.learning_parameter_schedule_per_sample
-  - cntk.learners.learning_rate_schedule
-  - cntk.learners.momentum_as_time_constant_schedule
-  - cntk.learners.momentum_schedule
-  - cntk.learners.momentum_schedule_per_sample
-  - cntk.learners.momentum_sgd
-  - cntk.learners.nesterov
-  - cntk.learners.rmsprop
-  - cntk.learners.set_default_unit_gain_value
-  - cntk.learners.sgd
-  - cntk.learners.training_parameter_schedule
-  - cntk.learners.universal
-  - cntk.learners.tests
-  fullName: cntk.learners
-  kind: import
-  langs:
-  - python
-  module: cntk.learners
-  name: learners
-  summary: 'A learner tunes a set of parameters during the training process. One can
-    use
+### YamlMime:PythonPackage
+uid: cntk.learners
+name: learners
+fullName: cntk.learners
+summary: 'A learner tunes a set of parameters during the training process. One can
+  use
 
-    different learners for different sets of parameters. Currently, CNTK supports
+  different learners for different sets of parameters. Currently, CNTK supports
 
-    the following learning algorithms:
+  the following learning algorithms:
 
 
 
-    - <xref:adadelta>
+  - <xref:adadelta>
 
-    - <xref:adagrad>
+  - <xref:adagrad>
 
-    - <xref:fsadagrad>
+  - <xref:fsadagrad>
 
-    - <xref:adam>
+  - <xref:adam>
 
-    - <xref:momentum_sgd>
+  - <xref:momentum_sgd>
 
-    - <xref:nesterov>
+  - <xref:nesterov>
 
-    - <xref:rmsprop>
+  - <xref:rmsprop>
 
-    - <xref:sgd>
+  - <xref:sgd>
 
-    - <xref:universal>
-
-    '
-  type: package
-  uid: cntk.learners
-- fullName: cntk.learners.adadelta
-  langs:
-  - python
-  module: cntk.learners
-  name: adadelta(parameters, lr, rho, epsilon, l1_regularization_weight=0, l2_regularization_weight=0,
-    gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
-    gradient_clipping_with_truncation=True)
+  - <xref:universal>'
+type: import
+functions:
+- uid: cntk.learners.adadelta
+  name: adadelta
   summary: "Creates an AdaDelta learner instance to learn the parameters. See [1]\
     \ for\nmore information.\n\nSee also\n   [1]  Matthew D. Zeiler, [ADADELTA: An\
-    \ Adaptive Learning Rate Method](https://arxiv.org/pdf/1212.5701.pdf).\n"
-  syntax:
-    content: adadelta(parameters, lr, rho, epsilon, l1_regularization_weight=0, l2_regularization_weight=0,
-      gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
-      gradient_clipping_with_truncation=True)
-    parameters:
-    - description: 'list of network parameters to tune.
-
-        These can be obtained by the root operator''s `parameters`.
-
-        '
-      id: parameters
-      type:
-      - list of parameters
-    - description: 'a learning rate in float, or a learning rate schedule.
-
-        See also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: lr
-      type:
-      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
-    - description: 'exponential smooth factor for each minibatch.
-
-        '
-      id: rho
-      type:
-      - float
-    - description: 'epsilon for sqrt.
-
-        '
-      id: epsilon
-      type:
-      - float
-    - description: 'the L1 regularization weight per sample,
-
-        defaults to 0.0
-
-        '
-      id: l1_regularization_weight
-      type:
-      - float, optional
-    - description: 'the L2 regularization weight per sample,
-
-        defaults to 0.0
-
-        '
-      id: l2_regularization_weight
-      type:
-      - float, optional
-    - description: 'the standard deviation
-
-        of the Gaussian noise added to parameters post update, defaults to 0.0
-
-        '
-      id: gaussian_noise_injection_std_dev
-      type:
-      - float, optional
-    - description: 'clipping threshold
-
-        per sample, defaults to infinity
-
-        '
-      id: gradient_clipping_threshold_per_sample
-      type:
-      - float, optional
-    - description: 'use gradient clipping
-
-        with truncation
-
-        '
-      id: gradient_clipping_with_truncation
-      type:
-      - bool, default True
-    - description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
-        \   Use minibatch_size parameter to specify the reference minibatch size.\n"
-      id: use_mean_gradient
-      type:
-      - bool, optional
-    - description: 'The minibatch size that the learner''s parameters are designed
-        or pre-tuned for. This
-
-        size is usually set to the same as the minibatch data source''s size. CNTK
-        will perform automatic scaling of the parameters
-
-        to enable efficient model parameter update implementation while approximate
-        the behavior of pre-designed and pre-tuned parameters.
-
-        In case that minibatch_size is not specified, CNTK will inherit the minibatch
-        size from the learning rate schedule;
-
-        if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
-
-        will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: minibatch_size
-      type:
-      - int, default None
-    - description: 'number of samples as a scheduling unit for learning rate. See
-        also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: epoch_size
-      type:
-      - optional, int
-    return:
-      description: 'learner instance that can be passed to
-
-        the <xref:cntk.train.trainer.Trainer>
-
-        '
-      type:
-      - <xref:cntk.learners.Learner>
-  type: function
-  uid: cntk.learners.adadelta
-- fullName: cntk.learners.adagrad
-  langs:
-  - python
-  module: cntk.learners
-  name: adagrad(parameters, lr, need_ave_multiplier=True, l1_regularization_weight=0,
-    l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    \ Adaptive Learning Rate Method](https://arxiv.org/pdf/1212.5701.pdf)."
+  signature: adadelta(parameters, lr, rho, epsilon, l1_regularization_weight=0, l2_regularization_weight=0,
+    gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
     gradient_clipping_with_truncation=True)
-  seealsoContent: "  [1]  J. Duchi, E. Hazan, and Y. Singer. [Adaptive Subgradient\
-    \ Methods\n  for Online Learning and Stochastic Optimization](http://www.magicbroom.info/Papers/DuchiHaSi10.pdf).\
-    \ The Journal of\n  Machine Learning Research, 2011.\n"
+  parameters:
+  - name: parameters
+    description: 'list of network parameters to tune.
+
+      These can be obtained by the root operator''s `parameters`.'
+    types:
+    - <xref:list of parameters>
+  - name: lr
+    description: 'a learning rate in float, or a learning rate schedule.
+
+      See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of cntk.learners.learning_parameter_schedule>
+  - name: rho
+    description: exponential smooth factor for each minibatch.
+    types:
+    - <xref:float>
+  - name: epsilon
+    description: epsilon for sqrt.
+    types:
+    - <xref:float>
+  - name: l1_regularization_weight
+    description: 'the L1 regularization weight per sample,
+
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: l2_regularization_weight
+    description: 'the L2 regularization weight per sample,
+
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gaussian_noise_injection_std_dev
+    description: 'the standard deviation
+
+      of the Gaussian noise added to parameters post update, defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_threshold_per_sample
+    description: 'clipping threshold
+
+      per sample, defaults to infinity'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_with_truncation
+    description: 'use gradient clipping
+
+      with truncation'
+    types:
+    - <xref:bool>, <xref:default True>
+  - name: use_mean_gradient
+    description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
+      \   Use minibatch_size parameter to specify the reference minibatch size."
+    types:
+    - <xref:bool>, <xref:optional>
+  - name: minibatch_size
+    description: 'The minibatch size that the learner''s parameters are designed or
+      pre-tuned for. This
+
+      size is usually set to the same as the minibatch data source''s size. CNTK will
+      perform automatic scaling of the parameters
+
+      to enable efficient model parameter update implementation while approximate
+      the behavior of pre-designed and pre-tuned parameters.
+
+      In case that minibatch_size is not specified, CNTK will inherit the minibatch
+      size from the learning rate schedule;
+
+      if the learning rate schedule does not specify the minibatch_size, CNTK will
+      set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
+
+      will have the learner apply as it is preventing CNTK performing any hyper-parameter
+      scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:int>, <xref:default None>
+  - name: epoch_size
+    description: 'number of samples as a scheduling unit for learning rate. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:optional>, <xref:int>
+  return:
+    description: 'learner instance that can be passed to
+
+      the <xref:cntk.train.trainer.Trainer>'
+    types:
+    - <xref:cntk.learners.Learner>
+- uid: cntk.learners.adagrad
+  name: adagrad
   summary: 'Creates an AdaGrad learner instance to learn the parameters. See [1] for
 
-    more information.
+    more information.'
+  signature: adagrad(parameters, lr, need_ave_multiplier=True, l1_regularization_weight=0,
+    l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True)
+  parameters:
+  - name: parameters
+    description: 'list of network parameters to tune.
 
-    '
-  syntax:
-    content: adagrad(parameters, lr, need_ave_multiplier=True, l1_regularization_weight=0,
-      l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
-      gradient_clipping_with_truncation=True)
-    parameters:
-    - description: 'list of network parameters to tune.
+      These can be obtained by the root operator''s `parameters`.'
+    types:
+    - <xref:list of parameters>
+  - name: lr
+    description: 'a learning rate in float, or a learning rate schedule.
 
-        These can be obtained by the root operator''s `parameters`.
+      See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of cntk.learners.learning_parameter_schedule>
+  - name: need_ave_multiplier
+    types:
+    - <xref:bool>, <xref:default>
+  - name: l1_regularization_weight
+    description: 'the L1 regularization weight per sample,
 
-        '
-      id: parameters
-      type:
-      - list of parameters
-    - description: 'a learning rate in float, or a learning rate schedule.
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: l2_regularization_weight
+    description: 'the L2 regularization weight per sample,
 
-        See also:  <xref:cntk.learners.learning_parameter_schedule>
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gaussian_noise_injection_std_dev
+    description: 'the standard deviation
 
-        '
-      id: lr
-      type:
-      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
-    - description: ''
-      id: need_ave_multiplier
-      type:
-      - bool, default
-    - description: 'the L1 regularization weight per sample,
+      of the Gaussian noise added to parameters post update, defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_threshold_per_sample
+    description: 'clipping threshold
 
-        defaults to 0.0
+      per sample, defaults to infinity'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_with_truncation
+    description: 'use gradient clipping
 
-        '
-      id: l1_regularization_weight
-      type:
-      - float, optional
-    - description: 'the L2 regularization weight per sample,
+      with truncation'
+    types:
+    - <xref:bool>, <xref:default True>
+  - name: use_mean_gradient
+    description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
+      \   Use minibatch_size parameter to specify the reference minibatch size."
+    types:
+    - <xref:bool>, <xref:optional>
+  - name: minibatch_size
+    description: 'The minibatch size that the learner''s parameters are designed or
+      pre-tuned for. This
 
-        defaults to 0.0
+      size is usually set to the same as the minibatch data source''s size. CNTK will
+      perform automatic scaling of the parameters
 
-        '
-      id: l2_regularization_weight
-      type:
-      - float, optional
-    - description: 'the standard deviation
+      to enable efficient model parameter update implementation while approximate
+      the behavior of pre-designed and pre-tuned parameters.
 
-        of the Gaussian noise added to parameters post update, defaults to 0.0
+      In case that minibatch_size is not specified, CNTK will inherit the minibatch
+      size from the learning rate schedule;
 
-        '
-      id: gaussian_noise_injection_std_dev
-      type:
-      - float, optional
-    - description: 'clipping threshold
+      if the learning rate schedule does not specify the minibatch_size, CNTK will
+      set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
-        per sample, defaults to infinity
+      will have the learner apply as it is preventing CNTK performing any hyper-parameter
+      scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:int>, <xref:default None>
+  - name: epoch_size
+    description: 'number of samples as a scheduling unit for learning rate. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:optional>, <xref:int>
+  return:
+    description: 'learner instance that can be passed to
 
-        '
-      id: gradient_clipping_threshold_per_sample
-      type:
-      - float, optional
-    - description: 'use gradient clipping
-
-        with truncation
-
-        '
-      id: gradient_clipping_with_truncation
-      type:
-      - bool, default True
-    - description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
-        \   Use minibatch_size parameter to specify the reference minibatch size.\n"
-      id: use_mean_gradient
-      type:
-      - bool, optional
-    - description: 'The minibatch size that the learner''s parameters are designed
-        or pre-tuned for. This
-
-        size is usually set to the same as the minibatch data source''s size. CNTK
-        will perform automatic scaling of the parameters
-
-        to enable efficient model parameter update implementation while approximate
-        the behavior of pre-designed and pre-tuned parameters.
-
-        In case that minibatch_size is not specified, CNTK will inherit the minibatch
-        size from the learning rate schedule;
-
-        if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
-
-        will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: minibatch_size
-      type:
-      - int, default None
-    - description: 'number of samples as a scheduling unit for learning rate. See
-        also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: epoch_size
-      type:
-      - optional, int
-    return:
-      description: 'learner instance that can be passed to
-
-        the <xref:cntk.train.trainer.Trainer>
-
-        '
-      type:
-      - <xref:cntk.learners.Learner>
-  type: function
-  uid: cntk.learners.adagrad
-- fullName: cntk.learners.adam
-  langs:
-  - python
-  module: cntk.learners
-  name: adam(parameters, lr, momentum, unit_gain=default_unit_gain_value(), variance_momentum=momentum_schedule_per_sample(0.9999986111120757),
-    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
-    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True,
-    epsilon=1e-8, adamax=False)
-  seealsoContent: "  [1] D. Kingma, J. Ba. [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980).\
-    \ International Conference for\n  Learning Representations, 2015.\n"
+      the <xref:cntk.train.trainer.Trainer>'
+    types:
+    - <xref:cntk.learners.Learner>
+  seeAlsoContent: "  [1]  J. Duchi, E. Hazan, and Y. Singer. [Adaptive Subgradient\
+    \ Methods\n  for Online Learning and Stochastic Optimization](http://www.magicbroom.info/Papers/DuchiHaSi10.pdf).\
+    \ The Journal of\n  Machine Learning Research, 2011.\n"
+- uid: cntk.learners.adam
+  name: adam
   summary: 'Creates an Adam learner instance to learn the parameters. See [1] for
     more
 
-    information.
-
-    '
-  syntax:
-    content: adam(parameters, lr, momentum, unit_gain=default_unit_gain_value(), variance_momentum=momentum_schedule_per_sample(0.9999986111120757),
-      l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
-      gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True,
-      epsilon=1e-8, adamax=False)
-    parameters:
-    - description: 'list of network parameters to tune.
-
-        These can be obtained by the root operator''s `parameters`.
-
-        '
-      id: parameters
-      type:
-      - list of parameters
-    - description: 'a learning rate in float, or a learning rate schedule.
-
-        See also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: lr
-      type:
-      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
-    - description: 'momentum schedule. Note that this is the beta1 parameter in the
-        Adam paper [1].
-
-        For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).
-
-        '
-      id: momentum
-      type:
-      - float, list, output of <xref:cntk.learners.momentum_schedule>
-    - description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
-
-        to the value returned by <xref:cntk.learners.default_unit_gain_value>.
-
-        '
-      id: unit_gain
-    - description: 'variance momentum schedule.
-
-        Note that this is the beta2 parameter in the Adam paper [1]. Defaults to `momentum_schedule_per_sample(0.9999986111120757)`.
-
-        '
-      id: variance_momentum
-      type:
-      - float, list, output of <xref:cntk.learners.momentum_schedule>
-    - description: 'the L1 regularization weight per sample,
-
-        defaults to 0.0
-
-        '
-      id: l1_regularization_weight
-      type:
-      - float, optional
-    - description: 'the L2 regularization weight per sample,
-
-        defaults to 0.0
-
-        '
-      id: l2_regularization_weight
-      type:
-      - float, optional
-    - description: 'the standard deviation
-
-        of the Gaussian noise added to parameters post update, defaults to 0.0
-
-        '
-      id: gaussian_noise_injection_std_dev
-      type:
-      - float, optional
-    - description: 'clipping threshold
-
-        per sample, defaults to infinity
-
-        '
-      id: gradient_clipping_threshold_per_sample
-      type:
-      - float, optional
-    - description: 'use gradient clipping
-
-        with truncation
-
-        '
-      id: gradient_clipping_with_truncation
-      type:
-      - bool, default True
-    - description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
-        \   Use minibatch_size parameter to specify the reference minibatch size.\n"
-      id: use_mean_gradient
-      type:
-      - bool, optional
-    - description: 'numerical stability constant,
-
-        defaults to 1e-8
-
-        '
-      id: epsilon
-      type:
-      - float, optional
-    - description: 'when `True`, use infinity-norm variance momentum update instead
-        of L2. Defaults
-
-        to False
-
-        '
-      id: adamax
-    - description: 'The minibatch size that the learner''s parameters are designed
-        or pre-tuned for. This
-
-        size is usually set to the same as the minibatch data source''s size. CNTK
-        will perform automatic scaling of the parameters
-
-        to enable efficient model parameter update implementation while approximate
-        the behavior of pre-designed and pre-tuned parameters.
-
-        In case that minibatch_size is not specified, CNTK will inherit the minibatch
-        size from the learning rate schedule;
-
-        if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
-
-        will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: minibatch_size
-      type:
-      - int, default None
-    - description: 'number of samples as a scheduling unit for learning rate, momentum
-        and variance_momentum. See also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: epoch_size
-      type:
-      - optional, int
-    return:
-      description: 'learner instance that can be passed to
-
-        the <xref:cntk.train.trainer.Trainer>
-
-        '
-      type:
-      - <xref:cntk.learners.Learner>
-  type: function
-  uid: cntk.learners.adam
-- fullName: cntk.learners.default_unit_gain_value
-  langs:
-  - python
-  module: cntk.learners
-  name: default_unit_gain_value()
-  summary: 'Returns true if by default momentum is applied in the unit-gain fashion.
-
-    '
-  syntax:
-    content: default_unit_gain_value()
-  type: function
-  uid: cntk.learners.default_unit_gain_value
-- fullName: cntk.learners.fsadagrad
-  langs:
-  - python
-  module: cntk.learners
-  name: fsadagrad(parameters, lr, momentum, unit_gain=default_unit_gain_value(), variance_momentum=momentum_schedule_per_sample(0.9999986111120757),
+    information.'
+  signature: adam(parameters, lr, momentum, unit_gain=default_unit_gain_value(), variance_momentum=momentum_schedule_per_sample(0.9999986111120757),
     l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
-    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
-  summary: 'Creates an FSAdaGrad learner instance to learn the parameters.
+    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True,
+    epsilon=1e-8, adamax=False)
+  parameters:
+  - name: parameters
+    description: 'list of network parameters to tune.
 
-    '
-  syntax:
-    content: fsadagrad(parameters, lr, momentum, unit_gain=default_unit_gain_value(),
-      variance_momentum=momentum_schedule_per_sample(0.9999986111120757), l1_regularization_weight=0,
-      l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
-      gradient_clipping_with_truncation=True)
-    parameters:
-    - description: 'list of network parameters to tune.
+      These can be obtained by the root operator''s `parameters`.'
+    types:
+    - <xref:list of parameters>
+  - name: lr
+    description: 'a learning rate in float, or a learning rate schedule.
 
-        These can be obtained by the root operator''s `parameters`.
+      See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of cntk.learners.learning_parameter_schedule>
+  - name: momentum
+    description: 'momentum schedule. Note that this is the beta1 parameter in the
+      Adam paper [1].
 
-        '
-      id: parameters
-      type:
-      - list of parameters
-    - description: 'a learning rate in float, or a learning rate schedule.
+      For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of cntk.learners.momentum_schedule>
+  - name: unit_gain
+    description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
-        See also:  <xref:cntk.learners.learning_parameter_schedule>
+      to the value returned by <xref:cntk.learners.default_unit_gain_value>.'
+  - name: variance_momentum
+    description: 'variance momentum schedule.
 
-        '
-      id: lr
-      type:
-      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
-    - description: 'momentum schedule.
+      Note that this is the beta2 parameter in the Adam paper [1]. Defaults to `momentum_schedule_per_sample(0.9999986111120757)`.'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of cntk.learners.momentum_schedule>
+  - name: l1_regularization_weight
+    description: 'the L1 regularization weight per sample,
 
-        For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: l2_regularization_weight
+    description: 'the L2 regularization weight per sample,
 
-        '
-      id: momentum
-      type:
-      - float, list, output of <xref:cntk.learners.momentum_schedule>
-    - description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gaussian_noise_injection_std_dev
+    description: 'the standard deviation
 
-        to the value returned by <xref:cntk.learners.default_unit_gain_value>.
+      of the Gaussian noise added to parameters post update, defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_threshold_per_sample
+    description: 'clipping threshold
 
-        '
-      id: unit_gain
-    - description: 'variance momentum schedule. Defaults
+      per sample, defaults to infinity'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_with_truncation
+    description: 'use gradient clipping
 
-        to `momentum_schedule_per_sample(0.9999986111120757)`.
+      with truncation'
+    types:
+    - <xref:bool>, <xref:default True>
+  - name: use_mean_gradient
+    description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
+      \   Use minibatch_size parameter to specify the reference minibatch size."
+    types:
+    - <xref:bool>, <xref:optional>
+  - name: epsilon
+    description: 'numerical stability constant,
 
-        '
-      id: variance_momentum
-      type:
-      - float, list, output of <xref:cntk.learners.momentum_schedule>
-    - description: 'the L1 regularization weight per sample,
+      defaults to 1e-8'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: adamax
+    description: 'when `True`, use infinity-norm variance momentum update instead
+      of L2. Defaults
 
-        defaults to 0.0
+      to False'
+  - name: minibatch_size
+    description: 'The minibatch size that the learner''s parameters are designed or
+      pre-tuned for. This
 
-        '
-      id: l1_regularization_weight
-      type:
-      - float, optional
-    - description: 'the L2 regularization weight per sample,
+      size is usually set to the same as the minibatch data source''s size. CNTK will
+      perform automatic scaling of the parameters
 
-        defaults to 0.0
+      to enable efficient model parameter update implementation while approximate
+      the behavior of pre-designed and pre-tuned parameters.
 
-        '
-      id: l2_regularization_weight
-      type:
-      - float, optional
-    - description: 'the standard deviation
+      In case that minibatch_size is not specified, CNTK will inherit the minibatch
+      size from the learning rate schedule;
 
-        of the Gaussian noise added to parameters post update, defaults to 0.0
+      if the learning rate schedule does not specify the minibatch_size, CNTK will
+      set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
-        '
-      id: gaussian_noise_injection_std_dev
-      type:
-      - float, optional
-    - description: 'clipping threshold
+      will have the learner apply as it is preventing CNTK performing any hyper-parameter
+      scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:int>, <xref:default None>
+  - name: epoch_size
+    description: 'number of samples as a scheduling unit for learning rate, momentum
+      and variance_momentum. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:optional>, <xref:int>
+  return:
+    description: 'learner instance that can be passed to
 
-        per sample, defaults to infinity
+      the <xref:cntk.train.trainer.Trainer>'
+    types:
+    - <xref:cntk.learners.Learner>
+  seeAlsoContent: "  [1] D. Kingma, J. Ba. [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980).\
+    \ International Conference for\n  Learning Representations, 2015.\n"
+- uid: cntk.learners.default_unit_gain_value
+  name: default_unit_gain_value
+  summary: Returns true if by default momentum is applied in the unit-gain fashion.
+  signature: default_unit_gain_value()
+- uid: cntk.learners.fsadagrad
+  name: fsadagrad
+  summary: Creates an FSAdaGrad learner instance to learn the parameters.
+  signature: fsadagrad(parameters, lr, momentum, unit_gain=default_unit_gain_value(),
+    variance_momentum=momentum_schedule_per_sample(0.9999986111120757), l1_regularization_weight=0,
+    l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True)
+  parameters:
+  - name: parameters
+    description: 'list of network parameters to tune.
 
-        '
-      id: gradient_clipping_threshold_per_sample
-      type:
-      - float, optional
-    - description: 'use gradient clipping
+      These can be obtained by the root operator''s `parameters`.'
+    types:
+    - <xref:list of parameters>
+  - name: lr
+    description: 'a learning rate in float, or a learning rate schedule.
 
-        with truncation
+      See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of cntk.learners.learning_parameter_schedule>
+  - name: momentum
+    description: 'momentum schedule.
 
-        '
-      id: gradient_clipping_with_truncation
-      type:
-      - bool, default True
-    - description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
-        \   Use minibatch_size parameter to specify the reference minibatch size.\n"
-      id: use_mean_gradient
-      type:
-      - bool, optional
-    - description: 'The minibatch size that the learner''s parameters are designed
-        or pre-tuned for. This
+      For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of cntk.learners.momentum_schedule>
+  - name: unit_gain
+    description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
-        size is usually set to the same as the minibatch data source''s size. CNTK
-        will perform automatic scaling of the parameters
+      to the value returned by <xref:cntk.learners.default_unit_gain_value>.'
+  - name: variance_momentum
+    description: 'variance momentum schedule. Defaults
 
-        to enable efficient model parameter update implementation while approximate
-        the behavior of pre-designed and pre-tuned parameters.
+      to `momentum_schedule_per_sample(0.9999986111120757)`.'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of cntk.learners.momentum_schedule>
+  - name: l1_regularization_weight
+    description: 'the L1 regularization weight per sample,
 
-        In case that minibatch_size is not specified, CNTK will inherit the minibatch
-        size from the learning rate schedule;
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: l2_regularization_weight
+    description: 'the L2 regularization weight per sample,
 
-        if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gaussian_noise_injection_std_dev
+    description: 'the standard deviation
 
-        will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
+      of the Gaussian noise added to parameters post update, defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_threshold_per_sample
+    description: 'clipping threshold
 
-        '
-      id: minibatch_size
-      type:
-      - int, default None
-    - description: 'number of samples as a scheduling unit for learning rate, momentum
-        and variance_momentum. See also:  <xref:cntk.learners.learning_parameter_schedule>
+      per sample, defaults to infinity'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_with_truncation
+    description: 'use gradient clipping
 
-        '
-      id: epoch_size
-      type:
-      - optional, int
-    return:
-      description: 'learner instance that can be passed to
+      with truncation'
+    types:
+    - <xref:bool>, <xref:default True>
+  - name: use_mean_gradient
+    description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
+      \   Use minibatch_size parameter to specify the reference minibatch size."
+    types:
+    - <xref:bool>, <xref:optional>
+  - name: minibatch_size
+    description: 'The minibatch size that the learner''s parameters are designed or
+      pre-tuned for. This
 
-        the <xref:cntk.train.trainer.Trainer>
+      size is usually set to the same as the minibatch data source''s size. CNTK will
+      perform automatic scaling of the parameters
 
-        '
-      type:
-      - <xref:cntk.learners.Learner>
-  type: function
-  uid: cntk.learners.fsadagrad
-- fullName: cntk.learners.learning_parameter_schedule
-  langs:
-  - python
-  module: cntk.learners
-  name: learning_parameter_schedule(schedule, minibatch_size=None, epoch_size=None)
-  summary: 'Create a learning parameter schedule.
+      to enable efficient model parameter update implementation while approximate
+      the behavior of pre-designed and pre-tuned parameters.
 
-    '
-  syntax:
-    content: learning_parameter_schedule(schedule, minibatch_size=None, epoch_size=None)
-    parameters:
-    - description: 'if float, is the parameter schedule to be used
+      In case that minibatch_size is not specified, CNTK will inherit the minibatch
+      size from the learning rate schedule;
 
-        for all samples. In case of list [p_1, p_2, .., p_n], the i-th parameter p_i
-        in the list is used as the
+      if the learning rate schedule does not specify the minibatch_size, CNTK will
+      set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
-        value from the (`epoch_size` * (i-1) + 1)-th sample to the (`epoch_size` *
-        i)-th sample. If list contains
+      will have the learner apply as it is preventing CNTK performing any hyper-parameter
+      scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:int>, <xref:default None>
+  - name: epoch_size
+    description: 'number of samples as a scheduling unit for learning rate, momentum
+      and variance_momentum. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:optional>, <xref:int>
+  return:
+    description: 'learner instance that can be passed to
 
-        pair, i.e. [(num_epoch_1, p_1), (num_epoch_n, p_2), .., (num_epoch_n, p_n)],
-        the i-th parameter is used as a
+      the <xref:cntk.train.trainer.Trainer>'
+    types:
+    - <xref:cntk.learners.Learner>
+- uid: cntk.learners.learning_parameter_schedule
+  name: learning_parameter_schedule
+  summary: Create a learning parameter schedule.
+  signature: learning_parameter_schedule(schedule, minibatch_size=None, epoch_size=None)
+  parameters:
+  - name: schedule
+    description: 'if float, is the parameter schedule to be used
 
-        value from the (`epoch_size` * (num_epoch_0 + ... + num_epoch_2 + ... + num_epoch_(i-1)
-        + 1)-th sample to the
+      for all samples. In case of list [p_1, p_2, .., p_n], the i-th parameter p_i
+      in the list is used as the
 
-        (`epoch_size` * num_epoch_i)-th sample (taking num_epoch_0 = 0 as a special
-        initialization).
+      value from the (`epoch_size` * (i-1) + 1)-th sample to the (`epoch_size` * i)-th
+      sample. If list contains
 
-        '
-      id: schedule
-      type:
-      - float
-      - list
-    - description: 'an integer to specify the minibatch size that schedule are designed
-        for.
+      pair, i.e. [(num_epoch_1, p_1), (num_epoch_n, p_2), .., (num_epoch_n, p_n)],
+      the i-th parameter is used as a
 
-        CNTK will scale the schedule internally so as to simulate the behavior of
-        the schedule as much as possible
+      value from the (`epoch_size` * (num_epoch_0 + ... + num_epoch_2 + ... + num_epoch_(i-1)
+      + 1)-th sample to the
 
-        to match the designed effect. If it is not specified, CNTK will set to the
-        special value <xref:cntk.learners.IGNORE>.
+      (`epoch_size` * num_epoch_i)-th sample (taking num_epoch_0 = 0 as a special
+      initialization).'
+    types:
+    - <xref:float>
+    - <xref:list>
+  - name: minibatch_size
+    description: 'an integer to specify the minibatch size that schedule are designed
+      for.
 
-        '
-      id: minibatch_size
-      type:
-      - int
-    - description: 'number of samples as a scheduling unit.
+      CNTK will scale the schedule internally so as to simulate the behavior of the
+      schedule as much as possible
 
-        Parameters in the schedule change their values every `epoch_size`
+      to match the designed effect. If it is not specified, CNTK will set to the special
+      value <xref:cntk.learners.IGNORE>.'
+    types:
+    - <xref:int>
+  - name: epoch_size
+    description: 'number of samples as a scheduling unit.
 
-        samples. If no `epoch_size` is provided, this parameter is substituted
+      Parameters in the schedule change their values every `epoch_size`
 
-        by the size of the full data sweep, in which case the scheduling unit is
+      samples. If no `epoch_size` is provided, this parameter is substituted
 
-        the entire data sweep (as indicated by the MinibatchSource) and parameters
+      by the size of the full data sweep, in which case the scheduling unit is
 
-        change their values on the sweep-by-sweep basis specified by the
+      the entire data sweep (as indicated by the MinibatchSource) and parameters
 
-        `schedule`.
+      change their values on the sweep-by-sweep basis specified by the
 
-        '
-      id: epoch_size
-      type:
-      - optional, int
-    return:
-      description: 'learning parameter schedule
-
-        '
-  type: function
-  uid: cntk.learners.learning_parameter_schedule
-- fullName: cntk.learners.learning_parameter_schedule_per_sample
-  langs:
-  - python
-  module: cntk.learners
-  name: learning_parameter_schedule_per_sample(schedule, epoch_size=None)
+      `schedule`.'
+    types:
+    - <xref:optional>, <xref:int>
+  return:
+    description: learning parameter schedule
+- uid: cntk.learners.learning_parameter_schedule_per_sample
+  name: learning_parameter_schedule_per_sample
   summary: 'Create a learning parameter schedule as if the parameter is applied to
     minibatches of size 1. CNTK
 
-    will scale the parameters accordingly with respect to the actual minibatch size.
+    will scale the parameters accordingly with respect to the actual minibatch size.'
+  signature: learning_parameter_schedule_per_sample(schedule, epoch_size=None)
+  parameters:
+  - name: schedule
+    description: 'if float, is the parameter schedule to be used
 
-    '
-  syntax:
-    content: learning_parameter_schedule_per_sample(schedule, epoch_size=None)
-    parameters:
-    - description: 'if float, is the parameter schedule to be used
+      for all samples. In case of list [p_1, p_2, .., p_n], the i-th parameter p_i
+      in the list is used as the
 
-        for all samples. In case of list [p_1, p_2, .., p_n], the i-th parameter p_i
-        in the list is used as the
+      value from the (`epoch_size` * (i-1) + 1)-th sample to the (`epoch_size` * i)-th
+      sample. If list contains
 
-        value from the (`epoch_size` * (i-1) + 1)-th sample to the (`epoch_size` *
-        i)-th sample. If list contains
+      pair, i.e. [(num_epoch_1, p_1), (num_epoch_n, p_2), .., (num_epoch_n, p_n)],
+      the i-th parameter is used as a
 
-        pair, i.e. [(num_epoch_1, p_1), (num_epoch_n, p_2), .., (num_epoch_n, p_n)],
-        the i-th parameter is used as a
+      value from the (`epoch_size` * (num_epoch_0 + ... + num_epoch_2 + ... + num_epoch_(i-1)
+      + 1)-th sample to the
 
-        value from the (`epoch_size` * (num_epoch_0 + ... + num_epoch_2 + ... + num_epoch_(i-1)
-        + 1)-th sample to the
+      (`epoch_size` * num_epoch_i)-th sample (taking num_epoch_0 = 0 as a special
+      initialization).'
+    types:
+    - <xref:float>
+    - <xref:list>
+  - name: epoch_size
+    description: 'number of samples as a scheduling unit.
 
-        (`epoch_size` * num_epoch_i)-th sample (taking num_epoch_0 = 0 as a special
-        initialization).
+      Parameters in the schedule change their values every `epoch_size`
 
-        '
-      id: schedule
-      type:
-      - float
-      - list
-    - description: 'number of samples as a scheduling unit.
+      samples. If no `epoch_size` is provided, this parameter is substituted
 
-        Parameters in the schedule change their values every `epoch_size`
+      by the size of the full data sweep, in which case the scheduling unit is
 
-        samples. If no `epoch_size` is provided, this parameter is substituted
+      the entire data sweep (as indicated by the MinibatchSource) and parameters
 
-        by the size of the full data sweep, in which case the scheduling unit is
+      change their values on the sweep-by-sweep basis specified by the
 
-        the entire data sweep (as indicated by the MinibatchSource) and parameters
-
-        change their values on the sweep-by-sweep basis specified by the
-
-        `schedule`.
-
-        '
-      id: epoch_size
-      type:
-      - optional, int
-    return:
-      description: 'learning parameter schedule as if it is applied to minibatches
-        of size 1.
-
-        '
-  type: function
-  uid: cntk.learners.learning_parameter_schedule_per_sample
-- fullName: cntk.learners.learning_rate_schedule
-  langs:
-  - python
-  module: cntk.learners
-  name: learning_rate_schedule(lr, unit, epoch_size=None)
-  seealsoContent: '  <xref:cntk.learners.training_parameter_schedule>
-
-    '
+      `schedule`.'
+    types:
+    - <xref:optional>, <xref:int>
+  return:
+    description: learning parameter schedule as if it is applied to minibatches of
+      size 1.
+- uid: cntk.learners.learning_rate_schedule
+  name: learning_rate_schedule
   summary: 'Deprecated:: 2.2
 
 
     Create a learning rate schedule (using the same semantics as
 
-    <xref:cntk.learners.training_parameter_schedule>).
+    <xref:cntk.learners.training_parameter_schedule>).'
+  signature: learning_rate_schedule(lr, unit, epoch_size=None)
+  parameters:
+  - name: lr
+    description: 'see parameter `schedule` in
+
+      <xref:cntk.learners.training_parameter_schedule>.'
+    types:
+    - <xref:float>
+    - <xref:list>
+  - name: unit
+    description: "see parameter\n`unit` in <xref:cntk.learners.training_parameter_schedule>.\n\
+      \n   deprecated:: 2.2\n      Use minibatch_size parameter to specify the reference\
+      \ minbiatch size instead."
+    types:
+    - <xref:cntk.learners.UnitType>
+  - name: epoch_size
+    description: 'see parameter `epoch_size` in
+
+      <xref:cntk.learners.training_parameter_schedule>.'
+    types:
+    - <xref:int>
+  return:
+    description: learning rate schedule
+  seeAlsoContent: '  <xref:cntk.learners.training_parameter_schedule>
 
     '
-  syntax:
-    content: learning_rate_schedule(lr, unit, epoch_size=None)
-    parameters:
-    - description: 'see parameter `schedule` in
-
-        <xref:cntk.learners.training_parameter_schedule>.
-
-        '
-      id: lr
-      type:
-      - float
-      - list
-    - description: "see parameter\n`unit` in <xref:cntk.learners.training_parameter_schedule>.\n\
-        \n   deprecated:: 2.2\n      Use minibatch_size parameter to specify the reference\
-        \ minbiatch size instead.\n"
-      id: unit
-      type:
-      - <xref:cntk.learners.UnitType>
-    - description: 'see parameter `epoch_size` in
-
-        <xref:cntk.learners.training_parameter_schedule>.
-
-        '
-      id: epoch_size
-      type:
-      - int
-    return:
-      description: 'learning rate schedule
-
-        '
-  type: function
-  uid: cntk.learners.learning_rate_schedule
-- example:
+- uid: cntk.learners.momentum_as_time_constant_schedule
+  name: momentum_as_time_constant_schedule
+  summary: "Create a momentum schedule in a minibatch-size agnostic way\n(using the\
+    \ same semantics as <xref:cntk.learners.training_parameter_schedule>\nwith *unit=UnitType.sample*).\n\
+    \nDeprecated:: 2.2\n   This is for legacy API.\n   In this legacy API,:\n\n  \
+    \ <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
+    : [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n   ````\n\n      #assume\
+    \ the desired minibatch size invariant constant momentum rate is: momentum_rate\n\
+    \      momentum_time_constant = -minibatch_size/np.log(momentum_rate)\n      momentum\
+    \ = momentum_as_time_constant_schedule(momentum_time_constant)\n      ````\n\n\
+    \   The equivalent code in the latest API,\n\n   <!-- literal_block {\"ids\":\
+    \ [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
+    : \"preserve\"} -->\n\n   ````\n\n      momentum = momentum_schedule(momentum_rate,\
+    \ minibatch_size = minibatch_size)\n      ````\n\nCNTK specifies momentum in a\
+    \ minibatch-size agnostic way as the time\nconstant (in samples) of a unit-gain\
+    \ 1st-order IIR filter. The value\nspecifies the number of samples after which\
+    \ a gradient has an effect of\n1/e=37%.\n\nIf you want to specify the momentum\
+    \ per N samples (or per minibatch),\nuse <xref:cntk.learners.momentum_schedule>."
+  signature: momentum_as_time_constant_schedule(momentum, epoch_size=None)
+  return:
+    description: momentum as time constant schedule
+  examples:
   - '
 
     ```
@@ -826,36 +623,17 @@ items:
     ```
 
     '
-  fullName: cntk.learners.momentum_as_time_constant_schedule
-  langs:
-  - python
-  module: cntk.learners
-  name: momentum_as_time_constant_schedule(momentum, epoch_size=None)
-  summary: "Create a momentum schedule in a minibatch-size agnostic way\n(using the\
-    \ same semantics as <xref:cntk.learners.training_parameter_schedule>\nwith *unit=UnitType.sample*).\n\
-    \nDeprecated:: 2.2\n   This is for legacy API.\n   In this legacy API,:\n\n  \
-    \ <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-    : [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n   ````\n\n      #assume\
-    \ the desired minibatch size invariant constant momentum rate is: momentum_rate\n\
-    \      momentum_time_constant = -minibatch_size/np.log(momentum_rate)\n      momentum\
-    \ = momentum_as_time_constant_schedule(momentum_time_constant)\n      ````\n\n\
-    \   The equivalent code in the latest API,\n\n   <!-- literal_block {\"ids\":\
-    \ [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
-    : \"preserve\"} -->\n\n   ````\n\n      momentum = momentum_schedule(momentum_rate,\
-    \ minibatch_size = minibatch_size)\n      ````\n\nCNTK specifies momentum in a\
-    \ minibatch-size agnostic way as the time\nconstant (in samples) of a unit-gain\
-    \ 1st-order IIR filter. The value\nspecifies the number of samples after which\
-    \ a gradient has an effect of\n1/e=37%.\n\nIf you want to specify the momentum\
-    \ per N samples (or per minibatch),\nuse <xref:cntk.learners.momentum_schedule>.\n"
-  syntax:
-    content: momentum_as_time_constant_schedule(momentum, epoch_size=None)
-    return:
-      description: 'momentum as time constant schedule
+- uid: cntk.learners.momentum_schedule
+  name: momentum_schedule
+  summary: 'Create a momentum schedule (using the same semantics as
 
-        '
-  type: function
-  uid: cntk.learners.momentum_as_time_constant_schedule
-- example:
+    <xref:cntk.learners.learning_parameter_schedule>) which applies the momentum
+
+    decay every N samples where N is specified by the argument *minibatch_size*.'
+  signature: momentum_schedule(momentum, epoch_size=None, minibatch_size=None)
+  return:
+    description: momentum schedule
+  examples:
   - '
 
     ```
@@ -904,621 +682,485 @@ items:
     ```
 
     '
-  fullName: cntk.learners.momentum_schedule
-  langs:
-  - python
-  module: cntk.learners
-  name: momentum_schedule(momentum, epoch_size=None, minibatch_size=None)
-  summary: 'Create a momentum schedule (using the same semantics as
-
-    <xref:cntk.learners.learning_parameter_schedule>) which applies the momentum
-
-    decay every N samples where N is specified by the argument *minibatch_size*.
-
-    '
-  syntax:
-    content: momentum_schedule(momentum, epoch_size=None, minibatch_size=None)
-    return:
-      description: 'momentum schedule
-
-        '
-  type: function
-  uid: cntk.learners.momentum_schedule
-- fullName: cntk.learners.momentum_schedule_per_sample
-  langs:
-  - python
-  module: cntk.learners
-  name: momentum_schedule_per_sample(momentum, epoch_size=None)
+- uid: cntk.learners.momentum_schedule_per_sample
+  name: momentum_schedule_per_sample
   summary: 'Create a per-sample momentum schedule (using the same semantics as
 
     <xref:cntk.learners.momentum_schedule> but specializing in per sample momentum
-    schedule).
+    schedule).'
+  signature: momentum_schedule_per_sample(momentum, epoch_size=None)
+  parameters:
+  - name: momentum
+    description: 'see parameter `schedule` in
 
-    '
-  syntax:
-    content: momentum_schedule_per_sample(momentum, epoch_size=None)
-    parameters:
-    - description: 'see parameter `schedule` in
+      <xref:cntk.learners.training_parameter_schedule>.'
+    types:
+    - <xref:float>
+    - <xref:list>
+  - name: epoch_size
+    description: 'see parameter `epoch_size` in
 
-        <xref:cntk.learners.training_parameter_schedule>.
-
-        '
-      id: momentum
-      type:
-      - float
-      - list
-    - description: 'see parameter `epoch_size` in
-
-        <xref:cntk.learners.momentum_schedule>.
-
-        '
-      id: epoch_size
-      type:
-      - int
-    return:
-      description: 'momentum schedule
-
-        '
-  type: function
-  uid: cntk.learners.momentum_schedule_per_sample
-- fullName: cntk.learners.momentum_sgd
-  langs:
-  - python
-  module: cntk.learners
-  name: momentum_sgd(parameters, lr, momentum, unit_gain=default_unit_gain_value(),
+      <xref:cntk.learners.momentum_schedule>.'
+    types:
+    - <xref:int>
+  return:
+    description: momentum schedule
+- uid: cntk.learners.momentum_sgd
+  name: momentum_sgd
+  summary: Creates a Momentum SGD learner instance to learn the parameters.
+  signature: momentum_sgd(parameters, lr, momentum, unit_gain=default_unit_gain_value(),
     l1_regularization_weight=0.0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
     gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
-  summary: 'Creates a Momentum SGD learner instance to learn the parameters.
+  parameters:
+  - name: parameters
+    description: 'list of network parameters to tune.
 
-    '
-  syntax:
-    content: momentum_sgd(parameters, lr, momentum, unit_gain=default_unit_gain_value(),
-      l1_regularization_weight=0.0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
-      gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
-    parameters:
-    - description: 'list of network parameters to tune.
+      These can be obtained by the root operator''s `parameters`.'
+    types:
+    - <xref:list of parameters>
+  - name: lr
+    description: 'a learning rate in float, or a learning rate schedule.
 
-        These can be obtained by the root operator''s `parameters`.
+      See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
+  - name: momentum
+    description: 'momentum schedule.
 
-        '
-      id: parameters
-      type:
-      - list of parameters
-    - description: 'a learning rate in float, or a learning rate schedule.
+      For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.momentum_schedule>>
+  - name: unit_gain
+    description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
-        See also:  <xref:cntk.learners.learning_parameter_schedule>
+      to the value returned by <xref:cntk.learners.default_unit_gain_value>.'
+  - name: l1_regularization_weight
+    description: 'the L1 regularization weight per sample,
 
-        '
-      id: lr
-      type:
-      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
-    - description: 'momentum schedule.
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: l2_regularization_weight
+    description: 'the L2 regularization weight per sample,
 
-        For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gaussian_noise_injection_std_dev
+    description: 'the standard deviation
 
-        '
-      id: momentum
-      type:
-      - float, list, output of <xref:cntk.learners.momentum_schedule>
-    - description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
+      of the Gaussian noise added to parameters post update, defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_threshold_per_sample
+    description: 'clipping threshold
 
-        to the value returned by <xref:cntk.learners.default_unit_gain_value>.
+      per sample, defaults to infinity'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_with_truncation
+    description: 'use gradient clipping
 
-        '
-      id: unit_gain
-    - description: 'the L1 regularization weight per sample,
+      with truncation'
+    types:
+    - <xref:bool>, <xref:default True>
+  - name: use_mean_gradient
+    description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
+      \   Use minibatch_size parameter to specify the reference minibatch size."
+    types:
+    - <xref:bool>, <xref:optional>
+  - name: minibatch_size
+    description: 'The minibatch size that the learner''s parameters are designed or
+      pre-tuned for. This
 
-        defaults to 0.0
+      size is usually set to the same as the minibatch data source''s size. CNTK will
+      perform automatic scaling of the parameters
 
-        '
-      id: l1_regularization_weight
-      type:
-      - float, optional
-    - description: 'the L2 regularization weight per sample,
+      to enable efficient model parameter update implementation while approximate
+      the behavior of pre-designed and pre-tuned parameters.
 
-        defaults to 0.0
+      In case that minibatch_size is not specified, CNTK will inherit the minibatch
+      size from the learning rate schedule;
 
-        '
-      id: l2_regularization_weight
-      type:
-      - float, optional
-    - description: 'the standard deviation
+      if the learning rate schedule does not specify the minibatch_size, CNTK will
+      set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
-        of the Gaussian noise added to parameters post update, defaults to 0.0
+      will have the learner apply as it is preventing CNTK performing any hyper-parameter
+      scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:int>, <xref:default None>
+  - name: epoch_size
+    description: 'number of samples as a scheduling unit for learning rate and momentum.
+      See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:optional>, <xref:int>
+  return:
+    description: 'learner instance that can be passed to
 
-        '
-      id: gaussian_noise_injection_std_dev
-      type:
-      - float, optional
-    - description: 'clipping threshold
-
-        per sample, defaults to infinity
-
-        '
-      id: gradient_clipping_threshold_per_sample
-      type:
-      - float, optional
-    - description: 'use gradient clipping
-
-        with truncation
-
-        '
-      id: gradient_clipping_with_truncation
-      type:
-      - bool, default True
-    - description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
-        \   Use minibatch_size parameter to specify the reference minibatch size.\n"
-      id: use_mean_gradient
-      type:
-      - bool, optional
-    - description: 'The minibatch size that the learner''s parameters are designed
-        or pre-tuned for. This
-
-        size is usually set to the same as the minibatch data source''s size. CNTK
-        will perform automatic scaling of the parameters
-
-        to enable efficient model parameter update implementation while approximate
-        the behavior of pre-designed and pre-tuned parameters.
-
-        In case that minibatch_size is not specified, CNTK will inherit the minibatch
-        size from the learning rate schedule;
-
-        if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
-
-        will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: minibatch_size
-      type:
-      - int, default None
-    - description: 'number of samples as a scheduling unit for learning rate and momentum.
-        See also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: epoch_size
-      type:
-      - optional, int
-    return:
-      description: 'learner instance that can be passed to
-
-        the <xref:cntk.train.trainer.Trainer>
-
-        '
-      type:
-      - <xref:cntk.learners.Learner>
-  type: function
-  uid: cntk.learners.momentum_sgd
-- fullName: cntk.learners.nesterov
-  langs:
-  - python
-  module: cntk.learners
-  name: nesterov(parameters, lr, momentum, unit_gain=default_unit_gain_value(), l1_regularization_weight=0,
-    l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
-    gradient_clipping_with_truncation=True)
-  seealsoContent: "  [1] Y. Nesterov. A Method of Solving a Convex Programming Problem\
-    \ with Convergence Rate O(1/ sqrt(k)). Soviet Mathematics Doklady, 1983.\n\n \
-    \ [2] I. Sutskever, J. Martens, G. Dahl, and G. Hinton. [On the\n  Importance\
-    \ of Initialization and Momentum in Deep Learning](http://www.cs.toronto.edu/~fritz/absps/momentum.pdf).\
-    \  Proceedings\n  of the 30th International Conference on Machine Learning, 2013.\n"
+      the <xref:cntk.train.trainer.Trainer>'
+    types:
+    - <xref:cntk.learners.Learner>
+- uid: cntk.learners.nesterov
+  name: nesterov
   summary: 'Creates a Nesterov SGD learner instance to learn the parameters. This
     was
 
     originally proposed by Nesterov [1] in 1983 and then shown to work well in
 
-    a deep learning context by Sutskever, et al. [2].
-
-    '
-  syntax:
-    content: nesterov(parameters, lr, momentum, unit_gain=default_unit_gain_value(),
-      l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
-      gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
-    parameters:
-    - description: 'list of network parameters to tune.
-
-        These can be obtained by the root operator''s `parameters`.
-
-        '
-      id: parameters
-      type:
-      - list of parameters
-    - description: 'a learning rate in float, or a learning rate schedule.
-
-        See also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: lr
-      type:
-      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
-    - description: 'momentum schedule.
-
-        For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).
-
-        '
-      id: momentum
-      type:
-      - float, list, output of <xref:cntk.learners.momentum_schedule>
-    - description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
-
-        to the value returned by <xref:cntk.learners.default_unit_gain_value>.
-
-        '
-      id: unit_gain
-    - description: 'the L1 regularization weight per sample,
-
-        defaults to 0.0
-
-        '
-      id: l1_regularization_weight
-      type:
-      - float, optional
-    - description: 'the L2 regularization weight per sample,
-
-        defaults to 0.0
-
-        '
-      id: l2_regularization_weight
-      type:
-      - float, optional
-    - description: 'the standard deviation
-
-        of the Gaussian noise added to parameters post update, defaults to 0.0
-
-        '
-      id: gaussian_noise_injection_std_dev
-      type:
-      - float, optional
-    - description: 'clipping threshold
-
-        per sample, defaults to infinity
-
-        '
-      id: gradient_clipping_threshold_per_sample
-      type:
-      - float, optional
-    - description: 'use gradient clipping
-
-        with truncation
-
-        '
-      id: gradient_clipping_with_truncation
-      type:
-      - bool, default True
-    - description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
-        \   Use minibatch_size parameter to specify the reference minibatch size.\n"
-      id: use_mean_gradient
-      type:
-      - bool, optional
-    - description: 'The minibatch size that the learner''s parameters are designed
-        or pre-tuned for. This
-
-        size is usually set to the same as the minibatch data source''s size. CNTK
-        will perform automatic scaling of the parameters
-
-        to enable efficient model parameter update implementation while approximate
-        the behavior of pre-designed and pre-tuned parameters.
-
-        In case that minibatch_size is not specified, CNTK will inherit the minibatch
-        size from the learning rate schedule;
-
-        if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
-
-        will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: minibatch_size
-      type:
-      - int, default None
-    - description: 'number of samples as a scheduling unit for learning rate and momentum.
-        See also:  <xref:cntk.learners.learning_parameter_schedule>
-
-        '
-      id: epoch_size
-      type:
-      - optional, int
-    return:
-      description: 'learner instance that can be passed to
-
-        the <xref:cntk.train.trainer.Trainer>
-
-        '
-      type:
-      - <xref:cntk.learners.Learner>
-  type: function
-  uid: cntk.learners.nesterov
-- fullName: cntk.learners.rmsprop
-  langs:
-  - python
-  module: cntk.learners
-  name: rmsprop(parameters, lr, gamma, inc, dec, max, min, need_ave_multiplier=True,
+    a deep learning context by Sutskever, et al. [2].'
+  signature: nesterov(parameters, lr, momentum, unit_gain=default_unit_gain_value(),
     l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
     gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
-  summary: 'Creates an RMSProp learner instance to learn the parameters.
+  parameters:
+  - name: parameters
+    description: 'list of network parameters to tune.
 
-    '
-  syntax:
-    content: rmsprop(parameters, lr, gamma, inc, dec, max, min, need_ave_multiplier=True,
-      l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
-      gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
-    parameters:
-    - description: 'list of network parameters to tune.
+      These can be obtained by the root operator''s `parameters`.'
+    types:
+    - <xref:list of parameters>
+  - name: lr
+    description: 'a learning rate in float, or a learning rate schedule.
 
-        These can be obtained by the root operator''s `parameters`.
+      See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
+  - name: momentum
+    description: 'momentum schedule.
 
-        '
-      id: parameters
-      type:
-      - list of parameters
-    - description: 'a learning rate in float, or a learning rate schedule.
+      For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.momentum_schedule>>
+  - name: unit_gain
+    description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
-        See also:  <xref:cntk.learners.learning_parameter_schedule>
+      to the value returned by <xref:cntk.learners.default_unit_gain_value>.'
+  - name: l1_regularization_weight
+    description: 'the L1 regularization weight per sample,
 
-        '
-      id: lr
-      type:
-      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
-    - description: 'Trade-off factor for current and previous gradients. Common value
-        is 0.95. Should be in range (0.0, 1.0)
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: l2_regularization_weight
+    description: 'the L2 regularization weight per sample,
 
-        '
-      id: gamma
-      type:
-      - float
-    - description: 'Increasing factor when trying to adjust current learning_rate.
-        Should be greater than 1
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gaussian_noise_injection_std_dev
+    description: 'the standard deviation
 
-        '
-      id: inc
-      type:
-      - float
-    - description: 'Decreasing factor when trying to adjust current learning_rate.
-        Should be in range (0.0, 1.0)
+      of the Gaussian noise added to parameters post update, defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_threshold_per_sample
+    description: 'clipping threshold
 
-        '
-      id: dec
-      type:
-      - float
-    - description: 'Maximum scale allowed for the initial learning_rate. Should be
-        greater than zero and min
+      per sample, defaults to infinity'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_with_truncation
+    description: 'use gradient clipping
 
-        '
-      id: max
-      type:
-      - float
-    - description: 'Minimum scale allowed for the initial learning_rate. Should be
-        greater than zero
+      with truncation'
+    types:
+    - <xref:bool>, <xref:default True>
+  - name: use_mean_gradient
+    description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
+      \   Use minibatch_size parameter to specify the reference minibatch size."
+    types:
+    - <xref:bool>, <xref:optional>
+  - name: minibatch_size
+    description: 'The minibatch size that the learner''s parameters are designed or
+      pre-tuned for. This
 
-        '
-      id: min
-      type:
-      - float
-    - description: ''
-      id: need_ave_multiplier
-      type:
-      - bool, default True
-    - description: 'the L1 regularization weight per sample,
+      size is usually set to the same as the minibatch data source''s size. CNTK will
+      perform automatic scaling of the parameters
 
-        defaults to 0.0
+      to enable efficient model parameter update implementation while approximate
+      the behavior of pre-designed and pre-tuned parameters.
 
-        '
-      id: l1_regularization_weight
-      type:
-      - float, optional
-    - description: 'the L2 regularization weight per sample,
+      In case that minibatch_size is not specified, CNTK will inherit the minibatch
+      size from the learning rate schedule;
 
-        defaults to 0.0
+      if the learning rate schedule does not specify the minibatch_size, CNTK will
+      set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
-        '
-      id: l2_regularization_weight
-      type:
-      - float, optional
-    - description: 'the standard deviation
+      will have the learner apply as it is preventing CNTK performing any hyper-parameter
+      scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:int>, <xref:default None>
+  - name: epoch_size
+    description: 'number of samples as a scheduling unit for learning rate and momentum.
+      See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:optional>, <xref:int>
+  return:
+    description: 'learner instance that can be passed to
 
-        of the Gaussian noise added to parameters post update, defaults to 0.0
+      the <xref:cntk.train.trainer.Trainer>'
+    types:
+    - <xref:cntk.learners.Learner>
+  seeAlsoContent: "  [1] Y. Nesterov. A Method of Solving a Convex Programming Problem\
+    \ with Convergence Rate O(1/ sqrt(k)). Soviet Mathematics Doklady, 1983.\n\n \
+    \ [2] I. Sutskever, J. Martens, G. Dahl, and G. Hinton. [On the\n  Importance\
+    \ of Initialization and Momentum in Deep Learning](http://www.cs.toronto.edu/~fritz/absps/momentum.pdf).\
+    \  Proceedings\n  of the 30th International Conference on Machine Learning, 2013.\n"
+- uid: cntk.learners.rmsprop
+  name: rmsprop
+  summary: Creates an RMSProp learner instance to learn the parameters.
+  signature: rmsprop(parameters, lr, gamma, inc, dec, max, min, need_ave_multiplier=True,
+    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
+    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
+  parameters:
+  - name: parameters
+    description: 'list of network parameters to tune.
 
-        '
-      id: gaussian_noise_injection_std_dev
-      type:
-      - float, optional
-    - description: 'clipping threshold
+      These can be obtained by the root operator''s `parameters`.'
+    types:
+    - <xref:list of parameters>
+  - name: lr
+    description: 'a learning rate in float, or a learning rate schedule.
 
-        per sample, defaults to infinity
+      See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
+  - name: gamma
+    description: Trade-off factor for current and previous gradients. Common value
+      is 0.95. Should be in range (0.0, 1.0)
+    types:
+    - <xref:float>
+  - name: inc
+    description: Increasing factor when trying to adjust current learning_rate. Should
+      be greater than 1
+    types:
+    - <xref:float>
+  - name: dec
+    description: Decreasing factor when trying to adjust current learning_rate. Should
+      be in range (0.0, 1.0)
+    types:
+    - <xref:float>
+  - name: max
+    description: Maximum scale allowed for the initial learning_rate. Should be greater
+      than zero and min
+    types:
+    - <xref:float>
+  - name: min
+    description: Minimum scale allowed for the initial learning_rate. Should be greater
+      than zero
+    types:
+    - <xref:float>
+  - name: need_ave_multiplier
+    types:
+    - <xref:bool>, <xref:default True>
+  - name: l1_regularization_weight
+    description: 'the L1 regularization weight per sample,
 
-        '
-      id: gradient_clipping_threshold_per_sample
-      type:
-      - float, optional
-    - description: 'use gradient clipping
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: l2_regularization_weight
+    description: 'the L2 regularization weight per sample,
 
-        with truncation
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gaussian_noise_injection_std_dev
+    description: 'the standard deviation
 
-        '
-      id: gradient_clipping_with_truncation
-      type:
-      - bool, default True
-    - description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
-        \   Use minibatch_size parameter to specify the reference minibatch size.\n"
-      id: use_mean_gradient
-      type:
-      - bool, optional
-    - description: 'The minibatch size that the learner''s parameters are designed
-        or pre-tuned for. This
+      of the Gaussian noise added to parameters post update, defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_threshold_per_sample
+    description: 'clipping threshold
 
-        size is usually set to the same as the minibatch data source''s size. CNTK
-        will perform automatic scaling of the parameters
+      per sample, defaults to infinity'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_with_truncation
+    description: 'use gradient clipping
 
-        to enable efficient model parameter update implementation while approximate
-        the behavior of pre-designed and pre-tuned parameters.
+      with truncation'
+    types:
+    - <xref:bool>, <xref:default True>
+  - name: use_mean_gradient
+    description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
+      \   Use minibatch_size parameter to specify the reference minibatch size."
+    types:
+    - <xref:bool>, <xref:optional>
+  - name: minibatch_size
+    description: 'The minibatch size that the learner''s parameters are designed or
+      pre-tuned for. This
 
-        In case that minibatch_size is not specified, CNTK will inherit the minibatch
-        size from the learning rate schedule;
+      size is usually set to the same as the minibatch data source''s size. CNTK will
+      perform automatic scaling of the parameters
 
-        if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
+      to enable efficient model parameter update implementation while approximate
+      the behavior of pre-designed and pre-tuned parameters.
 
-        will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
+      In case that minibatch_size is not specified, CNTK will inherit the minibatch
+      size from the learning rate schedule;
 
-        '
-      id: minibatch_size
-      type:
-      - int, default None
-    - description: 'number of samples as a scheduling unit for learning rate. See
-        also:  <xref:cntk.learners.learning_parameter_schedule>
+      if the learning rate schedule does not specify the minibatch_size, CNTK will
+      set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
-        '
-      id: epoch_size
-      type:
-      - optional, int
-    return:
-      description: 'learner instance that can be passed to
+      will have the learner apply as it is preventing CNTK performing any hyper-parameter
+      scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:int>, <xref:default None>
+  - name: epoch_size
+    description: 'number of samples as a scheduling unit for learning rate. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:optional>, <xref:int>
+  return:
+    description: 'learner instance that can be passed to
 
-        the <xref:cntk.train.trainer.Trainer>
-
-        '
-      type:
-      - <xref:cntk.learners.Learner>
-  type: function
-  uid: cntk.learners.rmsprop
-- fullName: cntk.learners.set_default_unit_gain_value
-  langs:
-  - python
-  module: cntk.learners
-  name: set_default_unit_gain_value(value)
-  summary: 'Sets globally default unit-gain flag value.
-
-    '
-  syntax:
-    content: set_default_unit_gain_value(value)
-    parameters:
-    - id: value
-  type: function
-  uid: cntk.learners.set_default_unit_gain_value
-- fullName: cntk.learners.sgd
-  langs:
-  - python
-  module: cntk.learners
-  name: sgd(parameters, lr, l1_regularization_weight=0, l2_regularization_weight=0,
-    gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
-    gradient_clipping_with_truncation=True)
-  seealsoContent: "  [1] L. Bottou. [Stochastic Gradient Descent Tricks](https://www.microsoft.com/en-us/research/publication/stochastic-gradient-tricks).\
-    \ Neural\n  Networks: Tricks of the Trade: Springer, 2012.\n"
+      the <xref:cntk.train.trainer.Trainer>'
+    types:
+    - <xref:cntk.learners.Learner>
+- uid: cntk.learners.set_default_unit_gain_value
+  name: set_default_unit_gain_value
+  summary: Sets globally default unit-gain flag value.
+  signature: set_default_unit_gain_value(value)
+  parameters:
+  - name: value
+- uid: cntk.learners.sgd
+  name: sgd
   summary: 'Creates an SGD learner instance to learn the parameters. See [1] for more
 
-    information on how to set the parameters.
+    information on how to set the parameters.'
+  signature: sgd(parameters, lr, l1_regularization_weight=0, l2_regularization_weight=0,
+    gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True)
+  parameters:
+  - name: parameters
+    description: 'list of network parameters to tune.
 
-    '
-  syntax:
-    content: sgd(parameters, lr, l1_regularization_weight=0, l2_regularization_weight=0,
-      gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
-      gradient_clipping_with_truncation=True)
-    parameters:
-    - description: 'list of network parameters to tune.
+      These can be obtained by the ''.parameters()'' method of the root
 
-        These can be obtained by the ''.parameters()'' method of the root
+      operator.'
+    types:
+    - <xref:list of parameters>
+  - name: lr
+    description: 'a learning rate in float, or a learning rate schedule.
 
-        operator.
+      See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
+  - name: l1_regularization_weight
+    description: 'the L1 regularization weight per sample,
 
-        '
-      id: parameters
-      type:
-      - list of parameters
-    - description: 'a learning rate in float, or a learning rate schedule.
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: l2_regularization_weight
+    description: 'the L2 regularization weight per sample,
 
-        See also:  <xref:cntk.learners.learning_parameter_schedule>
+      defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gaussian_noise_injection_std_dev
+    description: 'the standard deviation
 
-        '
-      id: lr
-      type:
-      - float, list, output of <xref:cntk.learners.learning_parameter_schedule>
-    - description: 'the L1 regularization weight per sample,
+      of the Gaussian noise added to parameters post update, defaults to 0.0'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_threshold_per_sample
+    description: 'clipping threshold
 
-        defaults to 0.0
+      per sample, defaults to infinity'
+    types:
+    - <xref:float>, <xref:optional>
+  - name: gradient_clipping_with_truncation
+    description: 'use gradient clipping
 
-        '
-      id: l1_regularization_weight
-      type:
-      - float, optional
-    - description: 'the L2 regularization weight per sample,
+      with truncation'
+    types:
+    - <xref:bool>, <xref:default True>
+  - name: use_mean_gradient
+    description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
+      \   Use minibatch_size parameter to specify the reference minibatch size."
+    types:
+    - <xref:bool>, <xref:optional>
+  - name: minibatch_size
+    description: 'The minibatch size that the learner''s parameters are designed or
+      pre-tuned for. This
 
-        defaults to 0.0
+      size is usually set to the same as the minibatch data source''s size. CNTK will
+      perform automatic scaling of the parameters
 
-        '
-      id: l2_regularization_weight
-      type:
-      - float, optional
-    - description: 'the standard deviation
+      to enable efficient model parameter update implementation while approximate
+      the behavior of pre-designed and pre-tuned parameters.
 
-        of the Gaussian noise added to parameters post update, defaults to 0.0
+      In case that minibatch_size is not specified, CNTK will inherit the minibatch
+      size from the learning rate schedule;
 
-        '
-      id: gaussian_noise_injection_std_dev
-      type:
-      - float, optional
-    - description: 'clipping threshold
+      if the learning rate schedule does not specify the minibatch_size, CNTK will
+      set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
 
-        per sample, defaults to infinity
+      will have the learner apply as it is preventing CNTK performing any hyper-parameter
+      scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:int>, <xref:default None>
+  - name: epoch_size
+    description: 'number of samples as a scheduling unit for learning rate. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    types:
+    - <xref:optional>, <xref:int>
+  return:
+    description: 'learner instance that can be passed to
 
-        '
-      id: gradient_clipping_threshold_per_sample
-      type:
-      - float, optional
-    - description: 'use gradient clipping
+      the <xref:cntk.train.trainer.Trainer>'
+    types:
+    - <xref:cntk.learners.Learner>
+  seeAlsoContent: "  [1] L. Bottou. [Stochastic Gradient Descent Tricks](https://www.microsoft.com/en-us/research/publication/stochastic-gradient-tricks).\
+    \ Neural\n  Networks: Tricks of the Trade: Springer, 2012.\n"
+- uid: cntk.learners.training_parameter_schedule
+  name: training_parameter_schedule
+  summary: 'Deprecated:: 2.2
 
-        with truncation
 
-        '
-      id: gradient_clipping_with_truncation
-      type:
-      - bool, default True
-    - description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
-        \   Use minibatch_size parameter to specify the reference minibatch size.\n"
-      id: use_mean_gradient
-      type:
-      - bool, optional
-    - description: 'The minibatch size that the learner''s parameters are designed
-        or pre-tuned for. This
+    Create a training parameter schedule containing either per-sample (default)
 
-        size is usually set to the same as the minibatch data source''s size. CNTK
-        will perform automatic scaling of the parameters
+    or per-minibatch values.'
+  signature: 'training_parameter_schedule(schedule, unit=<UnitType.minibatch: ''minibatch''>,
+    epoch_size=None)'
+  parameters:
+  - name: schedule
+    description: 'if float, is the parameter schedule to be used
 
-        to enable efficient model parameter update implementation while approximate
-        the behavior of pre-designed and pre-tuned parameters.
+      for all samples. In case of list, the elements are used as the
 
-        In case that minibatch_size is not specified, CNTK will inherit the minibatch
-        size from the learning rate schedule;
+      values for `epoch_size` samples. If list contains pair, the second element is
 
-        if the learning rate schedule does not specify the minibatch_size, CNTK will
-        set it to <xref:cntk.learners.IGNORE>. Setting minibatch_size to <xref:cntk.learners.IGNORE>
+      used as a value for (`epoch_size` x first element) samples'
+    types:
+    - <xref:float>
+    - <xref:list>
+  - name: unit
+    description: "one of two\n* `sample`: the returned schedule contains per-sample\
+      \ values\n* `minibatch`: the returned schedule contains per-minibatch values.\n\
+      \n   deprecated:: 2.2\n      Use minibatch_size parameter to specify the reference\
+      \ minbiatch size."
+    types:
+    - <xref:cntk.learners.UnitType>
+  - name: epoch_size
+    description: 'number of samples as a scheduling unit.
 
-        will have the learner apply as it is preventing CNTK performing any hyper-parameter
-        scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>
+      Parameters in the schedule change their values every `epoch_size`
 
-        '
-      id: minibatch_size
-      type:
-      - int, default None
-    - description: 'number of samples as a scheduling unit for learning rate. See
-        also:  <xref:cntk.learners.learning_parameter_schedule>
+      samples. If no `epoch_size` is provided, this parameter is substituted
 
-        '
-      id: epoch_size
-      type:
-      - optional, int
-    return:
-      description: 'learner instance that can be passed to
+      by the size of the full data sweep, in which case the scheduling unit is
 
-        the <xref:cntk.train.trainer.Trainer>
+      the entire data sweep (as indicated by the MinibatchSource) and parameters
 
-        '
-      type:
-      - <xref:cntk.learners.Learner>
-  type: function
-  uid: cntk.learners.sgd
-- example:
+      change their values on the sweep-by-sweep basis specified by the
+
+      `schedule`.'
+    types:
+    - <xref:optional>, <xref:int>
+  return:
+    description: training parameter schedule
+  examples:
   - '
 
     ```
@@ -1567,73 +1209,39 @@ items:
     ```
 
     '
-  fullName: cntk.learners.training_parameter_schedule
-  langs:
-  - python
-  module: cntk.learners
-  name: 'training_parameter_schedule(schedule, unit=<UnitType.minibatch: ''minibatch''>,
-    epoch_size=None)'
-  seealsoContent: '  <xref:cntk.learners.learning_parameter_schedule>
+  seeAlsoContent: '  <xref:cntk.learners.learning_parameter_schedule>
 
     '
-  summary: 'Deprecated:: 2.2
+- uid: cntk.learners.universal
+  name: universal
+  summary: Creates a learner which uses a CNTK function to update the parameters.
+  signature: universal(update_func, parameters)
+  parameters:
+  - name: update_func
+    description: 'function that takes parameters and gradients as arguments and
 
+      returns a <xref:cntk.ops.functions.Function> that performs the
 
-    Create a training parameter schedule containing either per-sample (default)
+      desired updates. The returned function updates the parameters by
 
-    or per-minibatch values.
+      means of containing <xref:cntk.ops.assign> operations.
 
-    '
-  syntax:
-    content: 'training_parameter_schedule(schedule, unit=<UnitType.minibatch: ''minibatch''>,
-      epoch_size=None)'
-    parameters:
-    - description: 'if float, is the parameter schedule to be used
+      If `update_func` does not contain <xref:cntk.ops.assign> operations
 
-        for all samples. In case of list, the elements are used as the
+      the parameters will not be updated.'
+  - name: parameters
+    description: 'list of network parameters to tune.
 
-        values for `epoch_size` samples. If list contains pair, the second element
-        is
+      These can be obtained by the root operator''s *parameters*.'
+    types:
+    - <xref:list>
+  return:
+    description: 'learner instance that can be passed to
 
-        used as a value for (`epoch_size` x first element) samples
-
-        '
-      id: schedule
-      type:
-      - float
-      - list
-    - description: "one of two\n* `sample`: the returned schedule contains per-sample\
-        \ values\n* `minibatch`: the returned schedule contains per-minibatch values.\n\
-        \n   deprecated:: 2.2\n      Use minibatch_size parameter to specify the reference\
-        \ minbiatch size.\n"
-      id: unit
-      type:
-      - <xref:cntk.learners.UnitType>
-    - description: 'number of samples as a scheduling unit.
-
-        Parameters in the schedule change their values every `epoch_size`
-
-        samples. If no `epoch_size` is provided, this parameter is substituted
-
-        by the size of the full data sweep, in which case the scheduling unit is
-
-        the entire data sweep (as indicated by the MinibatchSource) and parameters
-
-        change their values on the sweep-by-sweep basis specified by the
-
-        `schedule`.
-
-        '
-      id: epoch_size
-      type:
-      - optional, int
-    return:
-      description: 'training parameter schedule
-
-        '
-  type: function
-  uid: cntk.learners.training_parameter_schedule
-- example:
+      the <xref:cntk.train.trainer.Trainer>'
+    types:
+    - <xref:cntk.learners.Learner>
+  examples:
   - '
 
     ```
@@ -1674,334 +1282,10 @@ items:
     ```
 
     '
-  fullName: cntk.learners.universal
-  langs:
-  - python
-  module: cntk.learners
-  name: universal(update_func, parameters)
-  summary: 'Creates a learner which uses a CNTK function to update the parameters.
-
-    '
-  syntax:
-    content: universal(update_func, parameters)
-    parameters:
-    - description: 'function that takes parameters and gradients as arguments and
-
-        returns a <xref:cntk.ops.functions.Function> that performs the
-
-        desired updates. The returned function updates the parameters by
-
-        means of containing <xref:cntk.ops.assign> operations.
-
-        If `update_func` does not contain <xref:cntk.ops.assign> operations
-
-        the parameters will not be updated.
-
-        '
-      id: update_func
-    - description: 'list of network parameters to tune.
-
-        These can be obtained by the root operator''s *parameters*.
-
-        '
-      id: parameters
-      type:
-      - list
-    return:
-      description: 'learner instance that can be passed to
-
-        the <xref:cntk.train.trainer.Trainer>
-
-        '
-      type:
-      - <xref:cntk.learners.Learner>
-  type: function
-  uid: cntk.learners.universal
-references:
-- fullName: cntk.learners.Learner
-  isExternal: false
-  name: Learner
-  parent: cntk.learners
-  uid: cntk.learners.Learner
-- fullName: cntk.learners.UnitType
-  isExternal: false
-  name: UnitType
-  parent: cntk.learners
-  uid: cntk.learners.UnitType
-- fullName: cntk.learners.UserLearner
-  isExternal: false
-  name: UserLearner
-  parent: cntk.learners
-  uid: cntk.learners.UserLearner
-- fullName: cntk.learners.adadelta
-  isExternal: false
-  name: adadelta(parameters, lr, rho, epsilon, l1_regularization_weight=0, l2_regularization_weight=0,
-    gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
-    gradient_clipping_with_truncation=True)
-  parent: cntk.learners
-  uid: cntk.learners.adadelta
-- fullName: cntk.learners.adagrad
-  isExternal: false
-  name: adagrad(parameters, lr, need_ave_multiplier=True, l1_regularization_weight=0,
-    l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
-    gradient_clipping_with_truncation=True)
-  parent: cntk.learners
-  uid: cntk.learners.adagrad
-- fullName: cntk.learners.adam
-  isExternal: false
-  name: adam(parameters, lr, momentum, unit_gain=default_unit_gain_value(), variance_momentum=momentum_schedule_per_sample(0.9999986111120757),
-    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
-    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True,
-    epsilon=1e-8, adamax=False)
-  parent: cntk.learners
-  uid: cntk.learners.adam
-- fullName: cntk.learners.default_unit_gain_value
-  isExternal: false
-  name: default_unit_gain_value()
-  parent: cntk.learners
-  uid: cntk.learners.default_unit_gain_value
-- fullName: cntk.learners.fsadagrad
-  isExternal: false
-  name: fsadagrad(parameters, lr, momentum, unit_gain=default_unit_gain_value(), variance_momentum=momentum_schedule_per_sample(0.9999986111120757),
-    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
-    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
-  parent: cntk.learners
-  uid: cntk.learners.fsadagrad
-- fullName: cntk.learners.learning_parameter_schedule
-  isExternal: false
-  name: learning_parameter_schedule(schedule, minibatch_size=None, epoch_size=None)
-  parent: cntk.learners
-  uid: cntk.learners.learning_parameter_schedule
-- fullName: cntk.learners.learning_parameter_schedule_per_sample
-  isExternal: false
-  name: learning_parameter_schedule_per_sample(schedule, epoch_size=None)
-  parent: cntk.learners
-  uid: cntk.learners.learning_parameter_schedule_per_sample
-- fullName: cntk.learners.learning_rate_schedule
-  isExternal: false
-  name: learning_rate_schedule(lr, unit, epoch_size=None)
-  parent: cntk.learners
-  uid: cntk.learners.learning_rate_schedule
-- fullName: cntk.learners.momentum_as_time_constant_schedule
-  isExternal: false
-  name: momentum_as_time_constant_schedule(momentum, epoch_size=None)
-  parent: cntk.learners
-  uid: cntk.learners.momentum_as_time_constant_schedule
-- fullName: cntk.learners.momentum_schedule
-  isExternal: false
-  name: momentum_schedule(momentum, epoch_size=None, minibatch_size=None)
-  parent: cntk.learners
-  uid: cntk.learners.momentum_schedule
-- fullName: cntk.learners.momentum_schedule_per_sample
-  isExternal: false
-  name: momentum_schedule_per_sample(momentum, epoch_size=None)
-  parent: cntk.learners
-  uid: cntk.learners.momentum_schedule_per_sample
-- fullName: cntk.learners.momentum_sgd
-  isExternal: false
-  name: momentum_sgd(parameters, lr, momentum, unit_gain=default_unit_gain_value(),
-    l1_regularization_weight=0.0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
-    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
-  parent: cntk.learners
-  uid: cntk.learners.momentum_sgd
-- fullName: cntk.learners.nesterov
-  isExternal: false
-  name: nesterov(parameters, lr, momentum, unit_gain=default_unit_gain_value(), l1_regularization_weight=0,
-    l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
-    gradient_clipping_with_truncation=True)
-  parent: cntk.learners
-  uid: cntk.learners.nesterov
-- fullName: cntk.learners.rmsprop
-  isExternal: false
-  name: rmsprop(parameters, lr, gamma, inc, dec, max, min, need_ave_multiplier=True,
-    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
-    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True)
-  parent: cntk.learners
-  uid: cntk.learners.rmsprop
-- fullName: cntk.learners.set_default_unit_gain_value
-  isExternal: false
-  name: set_default_unit_gain_value(value)
-  parent: cntk.learners
-  uid: cntk.learners.set_default_unit_gain_value
-- fullName: cntk.learners.sgd
-  isExternal: false
-  name: sgd(parameters, lr, l1_regularization_weight=0, l2_regularization_weight=0,
-    gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
-    gradient_clipping_with_truncation=True)
-  parent: cntk.learners
-  uid: cntk.learners.sgd
-- fullName: cntk.learners.training_parameter_schedule
-  isExternal: false
-  name: 'training_parameter_schedule(schedule, unit=<UnitType.minibatch: ''minibatch''>,
-    epoch_size=None)'
-  parent: cntk.learners
-  uid: cntk.learners.training_parameter_schedule
-- fullName: cntk.learners.universal
-  isExternal: false
-  name: universal(update_func, parameters)
-  parent: cntk.learners
-  uid: cntk.learners.universal
-- fullName: cntk.learners.tests
-  isExternal: false
-  name: tests
-  parent: cntk.learners
-  uid: cntk.learners.tests
-- fullName: float, list, output of <xref:cntk.learners.learning_parameter_schedule>
-  name: float, list, learning_parameter_schedule>
-  spec.python:
-  - fullName: float
-    name: float
-    uid: float
-  - fullName: ', '
-    name: ', '
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: ', '
-    name: ', '
-  - fullName: output of <xref:cntk.learners.learning_parameter_schedule>
-    name: learning_parameter_schedule>
-    uid: output of <xref:cntk.learners.learning_parameter_schedule>
-  uid: float, list, output of <xref:cntk.learners.learning_parameter_schedule>
-- fullName: float, optional
-  name: float, optional
-  spec.python:
-  - fullName: float
-    name: float
-    uid: float
-  - fullName: ', '
-    name: ', '
-  - fullName: optional
-    name: optional
-    uid: optional
-  uid: float, optional
-- fullName: float, optional
-  name: float, optional
-  spec.python:
-  - fullName: float
-    name: float
-    uid: float
-  - fullName: ', '
-    name: ', '
-  - fullName: optional
-    name: optional
-    uid: optional
-  uid: float, optional
-- fullName: float, optional
-  name: float, optional
-  spec.python:
-  - fullName: float
-    name: float
-    uid: float
-  - fullName: ', '
-    name: ', '
-  - fullName: optional
-    name: optional
-    uid: optional
-  uid: float, optional
-- fullName: float, optional
-  name: float, optional
-  spec.python:
-  - fullName: float
-    name: float
-    uid: float
-  - fullName: ', '
-    name: ', '
-  - fullName: optional
-    name: optional
-    uid: optional
-  uid: float, optional
-- fullName: bool, default True
-  name: bool, default True
-  spec.python:
-  - fullName: bool
-    name: bool
-    uid: bool
-  - fullName: ', '
-    name: ', '
-  - fullName: default True
-    name: default True
-    uid: default True
-  uid: bool, default True
-- fullName: bool, optional
-  name: bool, optional
-  spec.python:
-  - fullName: bool
-    name: bool
-    uid: bool
-  - fullName: ', '
-    name: ', '
-  - fullName: optional
-    name: optional
-    uid: optional
-  uid: bool, optional
-- fullName: int, default None
-  name: int, default None
-  spec.python:
-  - fullName: int
-    name: int
-    uid: int
-  - fullName: ', '
-    name: ', '
-  - fullName: default None
-    name: default None
-    uid: default None
-  uid: int, default None
-- fullName: optional, int
-  name: optional, int
-  spec.python:
-  - fullName: optional
-    name: optional
-    uid: optional
-  - fullName: ', '
-    name: ', '
-  - fullName: int
-    name: int
-    uid: int
-  uid: optional, int
-- fullName: bool, default
-  name: bool, default
-  spec.python:
-  - fullName: bool
-    name: bool
-    uid: bool
-  - fullName: ', '
-    name: ', '
-  - fullName: default
-    name: default
-    uid: default
-  uid: bool, default
-- fullName: float, list, output of <xref:cntk.learners.momentum_schedule>
-  name: float, list, momentum_schedule>
-  spec.python:
-  - fullName: float
-    name: float
-    uid: float
-  - fullName: ', '
-    name: ', '
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: ', '
-    name: ', '
-  - fullName: output of <xref:cntk.learners.momentum_schedule>
-    name: momentum_schedule>
-    uid: output of <xref:cntk.learners.momentum_schedule>
-  uid: float, list, output of <xref:cntk.learners.momentum_schedule>
-- fullName: float, list, output of <xref:cntk.learners.momentum_schedule>
-  name: float, list, momentum_schedule>
-  spec.python:
-  - fullName: float
-    name: float
-    uid: float
-  - fullName: ', '
-    name: ', '
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: ', '
-    name: ', '
-  - fullName: output of <xref:cntk.learners.momentum_schedule>
-    name: momentum_schedule>
-    uid: output of <xref:cntk.learners.momentum_schedule>
-  uid: float, list, output of <xref:cntk.learners.momentum_schedule>
+classes:
+- cntk.learners.Learner
+- cntk.learners.UserLearner
+packages:
+- cntk.learners.tests
+enums:
+- cntk.learners.UnitType

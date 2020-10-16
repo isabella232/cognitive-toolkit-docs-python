@@ -1,57 +1,24 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py.Chunk.get_sequence
-  - cntk.cntk_py.Chunk.sequence_infos
-  class: cntk.cntk_py.Chunk
-  fullName: cntk.cntk_py.Chunk
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: Chunk
-  summary: '
-
-    '
-  syntax:
-    content: Chunk(*args, **kwargs)
-  type: class
-  uid: cntk.cntk_py.Chunk
-- class: cntk.cntk_py.Chunk
-  fullName: cntk.cntk_py.Chunk.get_sequence
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: get_sequence(sequenceIndex, result)
-  syntax:
-    content: get_sequence(sequenceIndex, result)
-    parameters:
-    - id: sequenceIndex
-    - id: result
-  type: method
-  uid: cntk.cntk_py.Chunk.get_sequence
-- class: cntk.cntk_py.Chunk
-  fullName: cntk.cntk_py.Chunk.sequence_infos
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: sequence_infos(arg2)
-  syntax:
-    content: sequence_infos(arg2)
-    parameters:
-    - id: arg2
-  type: method
-  uid: cntk.cntk_py.Chunk.sequence_infos
-references:
-- fullName: cntk.cntk_py.Chunk.get_sequence
-  isExternal: false
-  name: get_sequence(sequenceIndex, result)
-  parent: cntk.cntk_py.Chunk
-  uid: cntk.cntk_py.Chunk.get_sequence
-- fullName: cntk.cntk_py.Chunk.sequence_infos
-  isExternal: false
-  name: sequence_infos(arg2)
-  parent: cntk.cntk_py.Chunk
-  uid: cntk.cntk_py.Chunk.sequence_infos
+### YamlMime:PythonClass
+uid: cntk.cntk_py.Chunk
+name: Chunk
+fullName: cntk.cntk_py.Chunk
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: Chunk(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.Chunk.get_sequence
+  name: get_sequence
+  signature: get_sequence(sequenceIndex, result)
+  parameters:
+  - name: sequenceIndex
+    isRequired: true
+  - name: result
+    isRequired: true
+- uid: cntk.cntk_py.Chunk.sequence_infos
+  name: sequence_infos
+  signature: sequence_infos(arg2)
+  parameters:
+  - name: arg2
+    isRequired: true
