@@ -427,14 +427,14 @@ functions:
     independently
 
     and applies affine transformation to preserve representation of the layer.'
-  signature: batch_normalization(operand, scale, bias, running_mean, running_inv_std,
+  signature: 'batch_normalization(operand, scale, bias, running_mean, running_inv_std,
     spatial, normalization_time_constant=5000, blend_time_constant=0, epsilon=1e-05,
-    use_cudnn_engine=False, disable_regularization=False, name='', running_count=None)
+    use_cudnn_engine=False, disable_regularization=False, name='''', running_count=None)'
   parameters:
   - name: operand
     description: input of the batch normalization operation
   - name: scale
-    description: parameter tensor that holds the learned componentwise-scaling factors
+    description: 'parameter tensor that holds the learned componentwise-scaling factors'
   - name: bias
     description: 'parameter tensor that holds the learned bias. `scale` and `bias`
       must have the same
@@ -2309,8 +2309,8 @@ functions:
     the mean is subtracted,
 
     and the variance scaling is omitted.'
-  signature: mean_variance_normalization(operand, epsilon=1e-05, use_stats_across_channels=False,
-    do_variance_scaling=True, name='')
+  signature: 'mean_variance_normalization(operand, epsilon=1e-05, use_stats_across_channels=False,
+    do_variance_scaling=True, name='''')'
   parameters:
   - name: operand
     description: Input tensor, with dimensions .

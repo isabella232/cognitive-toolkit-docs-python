@@ -73,8 +73,8 @@ functions:
   signature: AveragePooling(filter_shape, strides=1, pad=False, name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     types:
     - <xref:int>
     - <xref:tuple of ints>
@@ -104,8 +104,8 @@ functions:
     types:
     - <xref:str>, <xref:defaults to ''>
   return:
-    description: A function that accepts one argument and applies the average-pooling
-      operation to it
+    description: 'A function that accepts one argument and applies the average-pooling
+      operation to it'
     types:
     - <xref:cntk.ops.functions.Function>
   examples:
@@ -264,14 +264,14 @@ functions:
     op_name='Convolution', name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     types:
     - <xref:int>
     - <xref:tuple of ints>
   - name: num_filters
-    description: number of filters (output feature-map depth), or `()` to denote scalar
-      output items (output shape will have no depth axis).
+    description: 'number of filters (output feature-map depth), or `()` to denote
+      scalar output items (output shape will have no depth axis).'
     defaultValue: None
     types:
     - <xref:int>, <xref:defaults to None>
@@ -408,14 +408,14 @@ functions:
     pad=False, strides=1, bias=True, init_bias=0, reduction_rank=1, name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     types:
     - <xref:int>
     - <xref:tuple of ints>
   - name: num_filters
-    description: number of filters (output feature-map depth), or `()` to denote scalar
-      output items (output shape will have no depth axis).
+    description: 'number of filters (output feature-map depth), or `()` to denote
+      scalar output items (output shape will have no depth axis).'
     defaultValue: None
     types:
     - <xref:int>, <xref:defaults to None>
@@ -493,14 +493,14 @@ functions:
     pad=False, strides=1, bias=True, init_bias=0, reduction_rank=1, name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     types:
     - <xref:int>
     - <xref:tuple of ints>
   - name: num_filters
-    description: number of filters (output feature-map depth), or `()` to denote scalar
-      output items (output shape will have no depth axis).
+    description: 'number of filters (output feature-map depth), or `()` to denote
+      scalar output items (output shape will have no depth axis).'
     defaultValue: None
     types:
     - <xref:int>, <xref:defaults to None>
@@ -593,14 +593,14 @@ functions:
     pad=False, strides=1, bias=True, init_bias=0, reduction_rank=1, name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     types:
     - <xref:int>
     - <xref:tuple of ints>
   - name: num_filters
-    description: number of filters (output feature-map depth), or `()` to denote scalar
-      output items (output shape will have no depth axis).
+    description: 'number of filters (output feature-map depth), or `()` to denote
+      scalar output items (output shape will have no depth axis).'
     defaultValue: None
     types:
     - <xref:int>, <xref:defaults to None>
@@ -747,14 +747,14 @@ functions:
     output_shape=None, reduction_rank=1, max_temp_mem_size_in_samples=0, name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     types:
     - <xref:int>
     - <xref:tuple of ints>
   - name: num_filters
-    description: number of filters (output feature-map depth), or `()` to denote scalar
-      output items (output shape will have no depth axis).
+    description: 'number of filters (output feature-map depth), or `()` to denote
+      scalar output items (output shape will have no depth axis).'
     types:
     - <xref:int>
   - name: activation
@@ -1332,8 +1332,8 @@ functions:
   signature: MaxPooling(filter_shape, strides=1, pad=False, name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     types:
     - <xref:int>
     - <xref:tuple of ints>
@@ -1433,14 +1433,14 @@ functions:
     op_name='Convolution', name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     types:
     - <xref:int>
     - <xref:tuple of ints>
   - name: num_filters
-    description: number of filters (output feature-map depth), or `()` to denote scalar
-      output items (output shape will have no depth axis).
+    description: 'number of filters (output feature-map depth), or `()` to denote
+      scalar output items (output shape will have no depth axis).'
     defaultValue: None
     types:
     - <xref:int>, <xref:defaults to None>

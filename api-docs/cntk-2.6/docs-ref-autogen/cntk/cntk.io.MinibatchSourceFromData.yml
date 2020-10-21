@@ -39,7 +39,7 @@ constructor:
   syntax: MinibatchSourceFromData(data_streams, max_samples=18446744073709551615)
   parameters:
   - name: data_streams
-    description: name-value pairs
+    description: 'name-value pairs'
   - name: max_samples
     description: 'The maximum number of samples
 

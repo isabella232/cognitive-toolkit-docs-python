@@ -611,8 +611,8 @@ methods:
     types:
     - <xref:str>
   return:
-    description: this method only has the side-effect of loading the model parameters
-      from the file
+    description: 'this method only has the side-effect of loading the model parameters
+      from the file'
     types:
     - <xref:*None*>
 - uid: cntk.ops.functions.Function.save

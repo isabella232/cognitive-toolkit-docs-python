@@ -184,8 +184,8 @@ functions:
   - name: output
     description: the output values from the network
   - name: target
-    description: it is usually a one-hot vector where the hot bit corresponds to the
-      label index
+    description: 'it is usually a one-hot vector where the hot bit corresponds to
+      the label index'
   - name: beta
     description: greater than one weights recall higher than precision, less than
       one for the opposite.
@@ -270,11 +270,11 @@ functions:
     <BLANKLINE>\n       [ 0.1486]], dtype=float32)\n```\n"
 - uid: cntk.losses.lattice_sequence_with_softmax
   name: lattice_sequence_with_softmax
-  signature: lattice_sequence_with_softmax(label, prediction, loglikelihood, lattice,
-    symListPath, phonePath, stateListPath, transProbPath, latticeConfigPath='LatticeNode.config',
+  signature: 'lattice_sequence_with_softmax(label, prediction, loglikelihood, lattice,
+    symListPath, phonePath, stateListPath, transProbPath, latticeConfigPath=''LatticeNode.config'',
     hSmoothingWeight=0.95, frameDropThresh=1e-10, doReferenceAlign=False, seqGammarUsesMBR=False,
     seqGammarAMF=14.0, seqGammarLMF=14.0, seqGammarBMMIFactor=0.0, seqGammarWordPen=0.0,
-    name='')
+    name='''')'
 - uid: cntk.losses.nce_loss
   name: nce_loss
   summary: 'Computes the noise contrastive estimation loss. This implementation mostly
@@ -328,7 +328,7 @@ functions:
 
       adding the biases gives the logits.'
   - name: labels
-    description: a one-hot vector with the ground-truth labels.
+    description: 'a one-hot vector with the ground-truth labels.'
   - name: noise_distribution
     description: 'a constant vector with dimension equal to the number
 

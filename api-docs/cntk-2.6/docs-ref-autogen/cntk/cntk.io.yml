@@ -239,7 +239,7 @@ functions:
     types:
     - <xref:dict>
   return:
-    description: String representation in [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)
+    description: 'String representation in [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)'
     types:
     - <xref:str>
 classes:

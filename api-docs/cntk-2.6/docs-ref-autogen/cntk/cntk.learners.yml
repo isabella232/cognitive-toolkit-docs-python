@@ -222,10 +222,10 @@ functions:
     more
 
     information.'
-  signature: adam(parameters, lr, momentum, unit_gain=default_unit_gain_value(), variance_momentum=momentum_schedule_per_sample(0.9999986111120757),
-    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
-    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True,
-    epsilon=1e-8, adamax=False)
+  signature: 'adam(parameters, lr, momentum, unit_gain=default_unit_gain_value(),
+    variance_momentum=momentum_schedule_per_sample(0.9999986111120757), l1_regularization_weight=0,
+    l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True, epsilon=1e-8, adamax=False)'
   parameters:
   - name: parameters
     description: 'list of network parameters to tune.
@@ -925,8 +925,8 @@ functions:
     types:
     - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
   - name: gamma
-    description: Trade-off factor for current and previous gradients. Common value
-      is 0.95. Should be in range (0.0, 1.0)
+    description: 'Trade-off factor for current and previous gradients. Common value
+      is 0.95. Should be in range (0.0, 1.0)'
     types:
     - <xref:float>
   - name: inc
