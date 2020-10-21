@@ -1,22 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkSpliceParameters
-  fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkSpliceParameters
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
-  name: CntkSpliceParameters
-  summary: 'The parameter definition of splice op
-
-    '
-  syntax:
-    content: CntkSpliceParameters()
-  type: class
-  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkSpliceParameters
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkSpliceParameters
+name: CntkSpliceParameters
+fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkSpliceParameters
+module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+inheritances:
+- cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
+summary: The parameter definition of splice op
+constructor:
+  syntax: CntkSpliceParameters()
