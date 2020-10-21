@@ -1,76 +1,20 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_array
-  - cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_list
-  - cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_scalar
-  class: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
-  fullName: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: unittest.case.TestCase
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.discretize_test
-  name: BoxSpaceDiscretizerTest
-  summary: 'Unit tests for BoxSpaceDiscretizer.
-
-
-
-
-    '
-  syntax:
-    content: BoxSpaceDiscretizerTest(methodName='runTest')
-  type: class
-  uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
-- class: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
-  fullName: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_array
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.discretize_test
-  name: test_array()
-  syntax:
-    content: test_array()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_array
-- class: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
-  fullName: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_list
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.discretize_test
-  name: test_list()
-  syntax:
-    content: test_list()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_list
-- class: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
-  fullName: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_scalar
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.discretize_test
-  name: test_scalar()
-  syntax:
-    content: test_scalar()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_scalar
-references:
-- fullName: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_array
-  isExternal: false
-  name: test_array()
-  parent: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
-  uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_array
-- fullName: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_list
-  isExternal: false
-  name: test_list()
-  parent: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
-  uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_list
-- fullName: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_scalar
-  isExternal: false
-  name: test_scalar()
-  parent: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
-  uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_scalar
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
+name: BoxSpaceDiscretizerTest
+fullName: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
+module: cntk.contrib.deeprl.tests.discretize_test
+inheritances:
+- unittest.case.TestCase
+summary: Unit tests for BoxSpaceDiscretizer.
+constructor:
+  syntax: BoxSpaceDiscretizerTest(methodName='runTest')
+methods:
+- uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_array
+  name: test_array
+  signature: test_array()
+- uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_list
+  name: test_list
+  signature: test_list()
+- uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest.test_scalar
+  name: test_scalar
+  signature: test_scalar()

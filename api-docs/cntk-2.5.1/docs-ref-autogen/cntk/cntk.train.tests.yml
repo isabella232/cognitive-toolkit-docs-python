@@ -1,19 +1,7 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.train.tests.distributed_test
-  fullName: cntk.train.tests
-  kind: import
-  langs:
-  - python
-  module: cntk.train.tests
-  name: tests
-  type: package
-  uid: cntk.train.tests
-references:
-- fullName: cntk.train.tests.distributed_test
-  isExternal: false
-  name: distributed_test
-  parent: cntk.train.tests
-  uid: cntk.train.tests.distributed_test
+### YamlMime:PythonPackage
+uid: cntk.train.tests
+name: tests
+fullName: cntk.train.tests
+type: import
+modules:
+- cntk.train.tests.distributed_test
