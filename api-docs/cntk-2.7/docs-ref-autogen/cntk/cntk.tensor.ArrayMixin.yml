@@ -1,34 +1,12 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.tensor.ArrayMixin.asarray
-  class: cntk.tensor.ArrayMixin
-  fullName: cntk.tensor.ArrayMixin
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.tensor
-  name: ArrayMixin
-  syntax: {}
-  type: class
-  uid: cntk.tensor.ArrayMixin
-- class: cntk.tensor.ArrayMixin
-  fullName: cntk.tensor.ArrayMixin.asarray
-  langs:
-  - python
-  module: cntk.tensor
-  name: asarray()
+### YamlMime:PythonClass
+uid: cntk.tensor.ArrayMixin
+name: ArrayMixin
+fullName: cntk.tensor.ArrayMixin
+module: cntk.tensor
+inheritances:
+- builtins.object
+methods:
+- uid: cntk.tensor.ArrayMixin.asarray
+  name: asarray
   summary: Converts the instance's data to a NumPy array.
-  syntax:
-    content: asarray()
-    parameters: []
-  type: method
-  uid: cntk.tensor.ArrayMixin.asarray
-references:
-- fullName: cntk.tensor.ArrayMixin.asarray
-  isExternal: false
-  name: asarray()
-  parent: cntk.tensor.ArrayMixin
-  uid: cntk.tensor.ArrayMixin.asarray
+  signature: asarray()

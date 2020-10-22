@@ -1,18 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-  fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
-  name: CntkLayersDefinition
-  summary: The definition of nodes, created by Caffe and instaced by CNTK
-  syntax:
-    content: CntkLayersDefinition()
-  type: class
-  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
+name: CntkLayersDefinition
+fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayersDefinition
+module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+inheritances:
+- builtins.object
+summary: The definition of nodes, created by Caffe and instaced by CNTK
+constructor:
+  syntax: CntkLayersDefinition()

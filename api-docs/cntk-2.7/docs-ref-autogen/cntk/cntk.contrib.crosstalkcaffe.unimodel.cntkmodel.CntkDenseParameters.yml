@@ -1,20 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkDenseParameters
-  fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkDenseParameters
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
-  name: CntkDenseParameters
-  summary: The parameter definition of dense op
-  syntax:
-    content: CntkDenseParameters()
-  type: class
-  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkDenseParameters
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkDenseParameters
+name: CntkDenseParameters
+fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkDenseParameters
+module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+inheritances:
+- cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
+summary: The parameter definition of dense op
+constructor:
+  syntax: CntkDenseParameters()

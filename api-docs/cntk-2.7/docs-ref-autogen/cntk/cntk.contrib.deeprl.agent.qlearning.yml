@@ -1,19 +1,7 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.agent.qlearning.QLearning
-  fullName: cntk.contrib.deeprl.agent.qlearning
-  langs:
-  - python
-  module: cntk.contrib.deeprl.agent.qlearning
-  name: qlearning
-  summary: Deep Q-learning and its variants.
-  type: module
-  uid: cntk.contrib.deeprl.agent.qlearning
-references:
-- fullName: cntk.contrib.deeprl.agent.qlearning.QLearning
-  isExternal: false
-  name: QLearning
-  parent: cntk.contrib.deeprl.agent.qlearning
-  uid: cntk.contrib.deeprl.agent.qlearning.QLearning
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.agent.qlearning
+name: qlearning
+fullName: cntk.contrib.deeprl.agent.qlearning
+summary: Deep Q-learning and its variants.
+classes:
+- cntk.contrib.deeprl.agent.qlearning.QLearning

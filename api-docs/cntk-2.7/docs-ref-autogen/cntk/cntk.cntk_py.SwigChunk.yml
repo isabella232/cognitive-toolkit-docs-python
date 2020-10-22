@@ -1,174 +1,78 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py.SwigChunk.fill_chunk_data
-  - cntk.cntk_py.SwigChunk.fill_data_with_dense_samples
-  - cntk.cntk_py.SwigChunk.fill_data_with_sequences
-  - cntk.cntk_py.SwigChunk.fill_data_with_sparse_samples
-  - cntk.cntk_py.SwigChunk.get_first_dimension
-  - cntk.cntk_py.SwigChunk.get_property
-  - cntk.cntk_py.SwigChunk.get_sequence
-  - cntk.cntk_py.SwigChunk.sequence_infos
-  class: cntk.cntk_py.SwigChunk
-  fullName: cntk.cntk_py.SwigChunk
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.cntk_py.Chunk
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: SwigChunk
-  summary: ''
-  syntax:
-    content: SwigChunk(chunkId, streamInfos, chunk)
-  type: class
-  uid: cntk.cntk_py.SwigChunk
-- class: cntk.cntk_py.SwigChunk
-  fullName: cntk.cntk_py.SwigChunk.fill_chunk_data
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: fill_chunk_data(streamIndex, o, dataSize)
-  syntax:
-    content: fill_chunk_data(streamIndex, o, dataSize)
-    parameters:
-    - id: streamIndex
-    - id: o
-    - id: dataSize
-  type: method
-  uid: cntk.cntk_py.SwigChunk.fill_chunk_data
-- class: cntk.cntk_py.SwigChunk
-  fullName: cntk.cntk_py.SwigChunk.fill_data_with_dense_samples
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: fill_data_with_dense_samples(streamIndex, o, dataSize)
-  syntax:
-    content: fill_data_with_dense_samples(streamIndex, o, dataSize)
-    parameters:
-    - id: streamIndex
-    - id: o
-    - id: dataSize
-  type: method
-  uid: cntk.cntk_py.SwigChunk.fill_data_with_dense_samples
-- class: cntk.cntk_py.SwigChunk
-  fullName: cntk.cntk_py.SwigChunk.fill_data_with_sequences
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: fill_data_with_sequences(streamIndex, o, dataSize)
-  syntax:
-    content: fill_data_with_sequences(streamIndex, o, dataSize)
-    parameters:
-    - id: streamIndex
-    - id: o
-    - id: dataSize
-  type: method
-  uid: cntk.cntk_py.SwigChunk.fill_data_with_sequences
-- class: cntk.cntk_py.SwigChunk
-  fullName: cntk.cntk_py.SwigChunk.fill_data_with_sparse_samples
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: fill_data_with_sparse_samples(streamIndex, o, dataSize)
-  syntax:
-    content: fill_data_with_sparse_samples(streamIndex, o, dataSize)
-    parameters:
-    - id: streamIndex
-    - id: o
-    - id: dataSize
-  type: method
-  uid: cntk.cntk_py.SwigChunk.fill_data_with_sparse_samples
-- class: cntk.cntk_py.SwigChunk
-  fullName: cntk.cntk_py.SwigChunk.get_first_dimension
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: get_first_dimension(o)
-  syntax:
-    content: get_first_dimension(o)
-    parameters:
-    - id: o
-  type: method
-  uid: cntk.cntk_py.SwigChunk.get_first_dimension
-- class: cntk.cntk_py.SwigChunk
-  fullName: cntk.cntk_py.SwigChunk.get_property
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: get_property(object, propertyName)
-  syntax:
-    content: get_property(object, propertyName)
-    parameters:
-    - id: object
-    - id: propertyName
-  type: method
-  uid: cntk.cntk_py.SwigChunk.get_property
-- class: cntk.cntk_py.SwigChunk
-  fullName: cntk.cntk_py.SwigChunk.get_sequence
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: get_sequence(sequenceIndex, result)
-  syntax:
-    content: get_sequence(sequenceIndex, result)
-    parameters:
-    - id: sequenceIndex
-    - id: result
-  type: method
-  uid: cntk.cntk_py.SwigChunk.get_sequence
-- class: cntk.cntk_py.SwigChunk
-  fullName: cntk.cntk_py.SwigChunk.sequence_infos
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: sequence_infos(descriptions)
-  syntax:
-    content: sequence_infos(descriptions)
-    parameters:
-    - id: descriptions
-  type: method
-  uid: cntk.cntk_py.SwigChunk.sequence_infos
-references:
-- fullName: cntk.cntk_py.SwigChunk.fill_chunk_data
-  isExternal: false
-  name: fill_chunk_data(streamIndex, o, dataSize)
-  parent: cntk.cntk_py.SwigChunk
-  uid: cntk.cntk_py.SwigChunk.fill_chunk_data
-- fullName: cntk.cntk_py.SwigChunk.fill_data_with_dense_samples
-  isExternal: false
-  name: fill_data_with_dense_samples(streamIndex, o, dataSize)
-  parent: cntk.cntk_py.SwigChunk
-  uid: cntk.cntk_py.SwigChunk.fill_data_with_dense_samples
-- fullName: cntk.cntk_py.SwigChunk.fill_data_with_sequences
-  isExternal: false
-  name: fill_data_with_sequences(streamIndex, o, dataSize)
-  parent: cntk.cntk_py.SwigChunk
-  uid: cntk.cntk_py.SwigChunk.fill_data_with_sequences
-- fullName: cntk.cntk_py.SwigChunk.fill_data_with_sparse_samples
-  isExternal: false
-  name: fill_data_with_sparse_samples(streamIndex, o, dataSize)
-  parent: cntk.cntk_py.SwigChunk
-  uid: cntk.cntk_py.SwigChunk.fill_data_with_sparse_samples
-- fullName: cntk.cntk_py.SwigChunk.get_first_dimension
-  isExternal: false
-  name: get_first_dimension(o)
-  parent: cntk.cntk_py.SwigChunk
-  uid: cntk.cntk_py.SwigChunk.get_first_dimension
-- fullName: cntk.cntk_py.SwigChunk.get_property
-  isExternal: false
-  name: get_property(object, propertyName)
-  parent: cntk.cntk_py.SwigChunk
-  uid: cntk.cntk_py.SwigChunk.get_property
-- fullName: cntk.cntk_py.SwigChunk.get_sequence
-  isExternal: false
-  name: get_sequence(sequenceIndex, result)
-  parent: cntk.cntk_py.SwigChunk
-  uid: cntk.cntk_py.SwigChunk.get_sequence
-- fullName: cntk.cntk_py.SwigChunk.sequence_infos
-  isExternal: false
-  name: sequence_infos(descriptions)
-  parent: cntk.cntk_py.SwigChunk
-  uid: cntk.cntk_py.SwigChunk.sequence_infos
+### YamlMime:PythonClass
+uid: cntk.cntk_py.SwigChunk
+name: SwigChunk
+fullName: cntk.cntk_py.SwigChunk
+module: cntk.cntk_py
+inheritances:
+- cntk.cntk_py.Chunk
+constructor:
+  syntax: SwigChunk(chunkId, streamInfos, chunk)
+methods:
+- uid: cntk.cntk_py.SwigChunk.fill_chunk_data
+  name: fill_chunk_data
+  signature: fill_chunk_data(streamIndex, o, dataSize)
+  parameters:
+  - name: streamIndex
+    isRequired: true
+  - name: o
+    isRequired: true
+  - name: dataSize
+    isRequired: true
+- uid: cntk.cntk_py.SwigChunk.fill_data_with_dense_samples
+  name: fill_data_with_dense_samples
+  signature: fill_data_with_dense_samples(streamIndex, o, dataSize)
+  parameters:
+  - name: streamIndex
+    isRequired: true
+  - name: o
+    isRequired: true
+  - name: dataSize
+    isRequired: true
+- uid: cntk.cntk_py.SwigChunk.fill_data_with_sequences
+  name: fill_data_with_sequences
+  signature: fill_data_with_sequences(streamIndex, o, dataSize)
+  parameters:
+  - name: streamIndex
+    isRequired: true
+  - name: o
+    isRequired: true
+  - name: dataSize
+    isRequired: true
+- uid: cntk.cntk_py.SwigChunk.fill_data_with_sparse_samples
+  name: fill_data_with_sparse_samples
+  signature: fill_data_with_sparse_samples(streamIndex, o, dataSize)
+  parameters:
+  - name: streamIndex
+    isRequired: true
+  - name: o
+    isRequired: true
+  - name: dataSize
+    isRequired: true
+- uid: cntk.cntk_py.SwigChunk.get_first_dimension
+  name: get_first_dimension
+  signature: get_first_dimension(o)
+  parameters:
+  - name: o
+    isRequired: true
+- uid: cntk.cntk_py.SwigChunk.get_property
+  name: get_property
+  signature: get_property(object, propertyName)
+  parameters:
+  - name: object
+    isRequired: true
+  - name: propertyName
+    isRequired: true
+- uid: cntk.cntk_py.SwigChunk.get_sequence
+  name: get_sequence
+  signature: get_sequence(sequenceIndex, result)
+  parameters:
+  - name: sequenceIndex
+    isRequired: true
+  - name: result
+    isRequired: true
+- uid: cntk.cntk_py.SwigChunk.sequence_infos
+  name: sequence_infos
+  signature: sequence_infos(descriptions)
+  parameters:
+  - name: descriptions
+    isRequired: true

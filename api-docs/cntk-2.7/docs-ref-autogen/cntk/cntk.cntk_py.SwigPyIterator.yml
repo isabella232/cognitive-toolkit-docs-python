@@ -1,178 +1,52 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py.SwigPyIterator.advance
-  - cntk.cntk_py.SwigPyIterator.copy
-  - cntk.cntk_py.SwigPyIterator.decr
-  - cntk.cntk_py.SwigPyIterator.distance
-  - cntk.cntk_py.SwigPyIterator.equal
-  - cntk.cntk_py.SwigPyIterator.incr
-  - cntk.cntk_py.SwigPyIterator.next
-  - cntk.cntk_py.SwigPyIterator.previous
-  - cntk.cntk_py.SwigPyIterator.value
-  class: cntk.cntk_py.SwigPyIterator
-  fullName: cntk.cntk_py.SwigPyIterator
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: SwigPyIterator
-  summary: ''
-  syntax:
-    content: SwigPyIterator(*args, **kwargs)
-  type: class
-  uid: cntk.cntk_py.SwigPyIterator
-- class: cntk.cntk_py.SwigPyIterator
-  fullName: cntk.cntk_py.SwigPyIterator.advance
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: advance(n)
-  syntax:
-    content: advance(n)
-    parameters:
-    - id: n
-  type: method
-  uid: cntk.cntk_py.SwigPyIterator.advance
-- class: cntk.cntk_py.SwigPyIterator
-  fullName: cntk.cntk_py.SwigPyIterator.copy
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: copy()
-  syntax:
-    content: copy()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.SwigPyIterator.copy
-- class: cntk.cntk_py.SwigPyIterator
-  fullName: cntk.cntk_py.SwigPyIterator.decr
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: decr(n=1)
-  syntax:
-    content: decr(n=1)
-    parameters:
-    - defaultValue: '1'
-      id: n
-  type: method
-  uid: cntk.cntk_py.SwigPyIterator.decr
-- class: cntk.cntk_py.SwigPyIterator
-  fullName: cntk.cntk_py.SwigPyIterator.distance
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: distance(x)
-  syntax:
-    content: distance(x)
-    parameters:
-    - id: x
-  type: method
-  uid: cntk.cntk_py.SwigPyIterator.distance
-- class: cntk.cntk_py.SwigPyIterator
-  fullName: cntk.cntk_py.SwigPyIterator.equal
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: equal(x)
-  syntax:
-    content: equal(x)
-    parameters:
-    - id: x
-  type: method
-  uid: cntk.cntk_py.SwigPyIterator.equal
-- class: cntk.cntk_py.SwigPyIterator
-  fullName: cntk.cntk_py.SwigPyIterator.incr
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: incr(n=1)
-  syntax:
-    content: incr(n=1)
-    parameters:
-    - defaultValue: '1'
-      id: n
-  type: method
-  uid: cntk.cntk_py.SwigPyIterator.incr
-- class: cntk.cntk_py.SwigPyIterator
-  fullName: cntk.cntk_py.SwigPyIterator.next
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: next()
-  syntax:
-    content: next()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.SwigPyIterator.next
-- class: cntk.cntk_py.SwigPyIterator
-  fullName: cntk.cntk_py.SwigPyIterator.previous
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: previous()
-  syntax:
-    content: previous()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.SwigPyIterator.previous
-- class: cntk.cntk_py.SwigPyIterator
-  fullName: cntk.cntk_py.SwigPyIterator.value
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: value()
-  syntax:
-    content: value()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.SwigPyIterator.value
-references:
-- fullName: cntk.cntk_py.SwigPyIterator.advance
-  isExternal: false
-  name: advance(n)
-  parent: cntk.cntk_py.SwigPyIterator
-  uid: cntk.cntk_py.SwigPyIterator.advance
-- fullName: cntk.cntk_py.SwigPyIterator.copy
-  isExternal: false
-  name: copy()
-  parent: cntk.cntk_py.SwigPyIterator
-  uid: cntk.cntk_py.SwigPyIterator.copy
-- fullName: cntk.cntk_py.SwigPyIterator.decr
-  isExternal: false
-  name: decr(n=1)
-  parent: cntk.cntk_py.SwigPyIterator
-  uid: cntk.cntk_py.SwigPyIterator.decr
-- fullName: cntk.cntk_py.SwigPyIterator.distance
-  isExternal: false
-  name: distance(x)
-  parent: cntk.cntk_py.SwigPyIterator
-  uid: cntk.cntk_py.SwigPyIterator.distance
-- fullName: cntk.cntk_py.SwigPyIterator.equal
-  isExternal: false
-  name: equal(x)
-  parent: cntk.cntk_py.SwigPyIterator
-  uid: cntk.cntk_py.SwigPyIterator.equal
-- fullName: cntk.cntk_py.SwigPyIterator.incr
-  isExternal: false
-  name: incr(n=1)
-  parent: cntk.cntk_py.SwigPyIterator
-  uid: cntk.cntk_py.SwigPyIterator.incr
-- fullName: cntk.cntk_py.SwigPyIterator.next
-  isExternal: false
-  name: next()
-  parent: cntk.cntk_py.SwigPyIterator
-  uid: cntk.cntk_py.SwigPyIterator.next
-- fullName: cntk.cntk_py.SwigPyIterator.previous
-  isExternal: false
-  name: previous()
-  parent: cntk.cntk_py.SwigPyIterator
-  uid: cntk.cntk_py.SwigPyIterator.previous
-- fullName: cntk.cntk_py.SwigPyIterator.value
-  isExternal: false
-  name: value()
-  parent: cntk.cntk_py.SwigPyIterator
-  uid: cntk.cntk_py.SwigPyIterator.value
+### YamlMime:PythonClass
+uid: cntk.cntk_py.SwigPyIterator
+name: SwigPyIterator
+fullName: cntk.cntk_py.SwigPyIterator
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: SwigPyIterator(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.SwigPyIterator.advance
+  name: advance
+  signature: advance(n)
+  parameters:
+  - name: n
+    isRequired: true
+- uid: cntk.cntk_py.SwigPyIterator.copy
+  name: copy
+  signature: copy()
+- uid: cntk.cntk_py.SwigPyIterator.decr
+  name: decr
+  signature: decr(n=1)
+  parameters:
+  - name: n
+    defaultValue: '1'
+- uid: cntk.cntk_py.SwigPyIterator.distance
+  name: distance
+  signature: distance(x)
+  parameters:
+  - name: x
+    isRequired: true
+- uid: cntk.cntk_py.SwigPyIterator.equal
+  name: equal
+  signature: equal(x)
+  parameters:
+  - name: x
+    isRequired: true
+- uid: cntk.cntk_py.SwigPyIterator.incr
+  name: incr
+  signature: incr(n=1)
+  parameters:
+  - name: n
+    defaultValue: '1'
+- uid: cntk.cntk_py.SwigPyIterator.next
+  name: next
+  signature: next()
+- uid: cntk.cntk_py.SwigPyIterator.previous
+  name: previous
+  signature: previous()
+- uid: cntk.cntk_py.SwigPyIterator.value
+  name: value
+  signature: value()

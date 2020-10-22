@@ -1,37 +1,18 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore.execute
-  class: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
-  fullName: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.validation.validcaffe
-  name: ValidCore
-  summary: The abstract class to support different validation methods
-  syntax: {}
-  type: class
-  uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
-- class: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
-  fullName: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore.execute
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.validation.validcaffe
-  name: execute(source_solver, valid_dir)
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
+name: ValidCore
+fullName: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
+module: cntk.contrib.crosstalkcaffe.validation.validcaffe
+inheritances:
+- builtins.object
+summary: The abstract class to support different validation methods
+methods:
+- uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore.execute
+  name: execute
   summary: execute the validation
-  syntax:
-    content: execute(source_solver, valid_dir)
-    parameters:
-    - id: source_solver
-    - id: valid_dir
-  type: method
-  uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore.execute
-references:
-- fullName: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore.execute
-  isExternal: false
-  name: execute(source_solver, valid_dir)
-  parent: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
-  uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore.execute
+  signature: execute(source_solver, valid_dir)
+  parameters:
+  - name: source_solver
+    isRequired: true
+  - name: valid_dir
+    isRequired: true

@@ -1,171 +1,43 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py.minibatch_size_schedule.current_version
-  - cntk.cntk_py.minibatch_size_schedule.deserialize
-  - cntk.cntk_py.minibatch_size_schedule.get_minibatch_size
-  - cntk.cntk_py.minibatch_size_schedule.is_sweep_based
-  - cntk.cntk_py.minibatch_size_schedule.serialize
-  - cntk.cntk_py.minibatch_size_schedule.set_minibatch_size
-  - cntk.cntk_py.minibatch_size_schedule.transform
-  - cntk.cntk_py.minibatch_size_schedule.full_data_sweep
-  - cntk.cntk_py.minibatch_size_schedule.ignored_minibatch_size
-  class: cntk.cntk_py.minibatch_size_schedule
-  fullName: cntk.cntk_py.minibatch_size_schedule
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.cntk_py.IDictionarySerializable
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: minibatch_size_schedule
-  summary: ''
-  syntax:
-    content: minibatch_size_schedule(*args)
-  type: class
-  uid: cntk.cntk_py.minibatch_size_schedule
-- class: cntk.cntk_py.minibatch_size_schedule
-  fullName: cntk.cntk_py.minibatch_size_schedule.current_version
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: current_version()
-  syntax:
-    content: current_version()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.minibatch_size_schedule.current_version
-- class: cntk.cntk_py.minibatch_size_schedule
-  fullName: cntk.cntk_py.minibatch_size_schedule.deserialize
-  langs:
-  - python
-  module: cntk.cntk_py
+### YamlMime:PythonClass
+uid: cntk.cntk_py.minibatch_size_schedule
+name: minibatch_size_schedule
+fullName: cntk.cntk_py.minibatch_size_schedule
+module: cntk.cntk_py
+inheritances:
+- cntk.cntk_py.IDictionarySerializable
+constructor:
+  syntax: minibatch_size_schedule(*args)
+methods:
+- uid: cntk.cntk_py.minibatch_size_schedule.current_version
+  name: current_version
+  signature: current_version()
+- uid: cntk.cntk_py.minibatch_size_schedule.deserialize
   name: deserialize
-  syntax: {}
-  type: method
-  uid: cntk.cntk_py.minibatch_size_schedule.deserialize
-- class: cntk.cntk_py.minibatch_size_schedule
-  fullName: cntk.cntk_py.minibatch_size_schedule.get_minibatch_size
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: get_minibatch_size()
-  syntax:
-    content: get_minibatch_size()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.minibatch_size_schedule.get_minibatch_size
-- class: cntk.cntk_py.minibatch_size_schedule
-  fullName: cntk.cntk_py.minibatch_size_schedule.is_sweep_based
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: is_sweep_based()
-  syntax:
-    content: is_sweep_based()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.minibatch_size_schedule.is_sweep_based
-- class: cntk.cntk_py.minibatch_size_schedule
-  fullName: cntk.cntk_py.minibatch_size_schedule.serialize
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: serialize()
-  syntax:
-    content: serialize()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.minibatch_size_schedule.serialize
-- class: cntk.cntk_py.minibatch_size_schedule
-  fullName: cntk.cntk_py.minibatch_size_schedule.set_minibatch_size
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: set_minibatch_size(minibatchSize)
-  syntax:
-    content: set_minibatch_size(minibatchSize)
-    parameters:
-    - id: minibatchSize
-  type: method
-  uid: cntk.cntk_py.minibatch_size_schedule.set_minibatch_size
-- class: cntk.cntk_py.minibatch_size_schedule
-  fullName: cntk.cntk_py.minibatch_size_schedule.transform
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: transform(func)
-  syntax:
-    content: transform(func)
-    parameters:
-    - id: func
-  type: method
-  uid: cntk.cntk_py.minibatch_size_schedule.transform
-- class: cntk.cntk_py.minibatch_size_schedule
-  fullName: cntk.cntk_py.minibatch_size_schedule.full_data_sweep
-  langs:
-  - python
-  module: cntk.cntk_py
+- uid: cntk.cntk_py.minibatch_size_schedule.get_minibatch_size
+  name: get_minibatch_size
+  signature: get_minibatch_size()
+- uid: cntk.cntk_py.minibatch_size_schedule.is_sweep_based
+  name: is_sweep_based
+  signature: is_sweep_based()
+- uid: cntk.cntk_py.minibatch_size_schedule.serialize
+  name: serialize
+  signature: serialize()
+- uid: cntk.cntk_py.minibatch_size_schedule.set_minibatch_size
+  name: set_minibatch_size
+  signature: set_minibatch_size(minibatchSize)
+  parameters:
+  - name: minibatchSize
+    isRequired: true
+- uid: cntk.cntk_py.minibatch_size_schedule.transform
+  name: transform
+  signature: transform(func)
+  parameters:
+  - name: func
+    isRequired: true
+attributes:
+- uid: cntk.cntk_py.minibatch_size_schedule.full_data_sweep
   name: full_data_sweep
-  syntax:
-    content: full_data_sweep = 0
-  type: attribute
-  uid: cntk.cntk_py.minibatch_size_schedule.full_data_sweep
-- class: cntk.cntk_py.minibatch_size_schedule
-  fullName: cntk.cntk_py.minibatch_size_schedule.ignored_minibatch_size
-  langs:
-  - python
-  module: cntk.cntk_py
+  signature: full_data_sweep = 0
+- uid: cntk.cntk_py.minibatch_size_schedule.ignored_minibatch_size
   name: ignored_minibatch_size
-  syntax:
-    content: ignored_minibatch_size = 0
-  type: attribute
-  uid: cntk.cntk_py.minibatch_size_schedule.ignored_minibatch_size
-references:
-- fullName: cntk.cntk_py.minibatch_size_schedule.current_version
-  isExternal: false
-  name: current_version()
-  parent: cntk.cntk_py.minibatch_size_schedule
-  uid: cntk.cntk_py.minibatch_size_schedule.current_version
-- fullName: cntk.cntk_py.minibatch_size_schedule.deserialize
-  isExternal: false
-  name: deserialize
-  parent: cntk.cntk_py.minibatch_size_schedule
-  uid: cntk.cntk_py.minibatch_size_schedule.deserialize
-- fullName: cntk.cntk_py.minibatch_size_schedule.get_minibatch_size
-  isExternal: false
-  name: get_minibatch_size()
-  parent: cntk.cntk_py.minibatch_size_schedule
-  uid: cntk.cntk_py.minibatch_size_schedule.get_minibatch_size
-- fullName: cntk.cntk_py.minibatch_size_schedule.is_sweep_based
-  isExternal: false
-  name: is_sweep_based()
-  parent: cntk.cntk_py.minibatch_size_schedule
-  uid: cntk.cntk_py.minibatch_size_schedule.is_sweep_based
-- fullName: cntk.cntk_py.minibatch_size_schedule.serialize
-  isExternal: false
-  name: serialize()
-  parent: cntk.cntk_py.minibatch_size_schedule
-  uid: cntk.cntk_py.minibatch_size_schedule.serialize
-- fullName: cntk.cntk_py.minibatch_size_schedule.set_minibatch_size
-  isExternal: false
-  name: set_minibatch_size(minibatchSize)
-  parent: cntk.cntk_py.minibatch_size_schedule
-  uid: cntk.cntk_py.minibatch_size_schedule.set_minibatch_size
-- fullName: cntk.cntk_py.minibatch_size_schedule.transform
-  isExternal: false
-  name: transform(func)
-  parent: cntk.cntk_py.minibatch_size_schedule
-  uid: cntk.cntk_py.minibatch_size_schedule.transform
-- fullName: cntk.cntk_py.minibatch_size_schedule.full_data_sweep
-  isExternal: false
-  name: full_data_sweep
-  parent: cntk.cntk_py.minibatch_size_schedule
-  uid: cntk.cntk_py.minibatch_size_schedule.full_data_sweep
-- fullName: cntk.cntk_py.minibatch_size_schedule.ignored_minibatch_size
-  isExternal: false
-  name: ignored_minibatch_size
-  parent: cntk.cntk_py.minibatch_size_schedule
-  uid: cntk.cntk_py.minibatch_size_schedule.ignored_minibatch_size
+  signature: ignored_minibatch_size = 0

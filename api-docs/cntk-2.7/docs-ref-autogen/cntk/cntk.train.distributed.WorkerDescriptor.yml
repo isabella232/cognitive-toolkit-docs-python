@@ -1,53 +1,18 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.train.distributed.WorkerDescriptor.global_rank
-  - cntk.train.distributed.WorkerDescriptor.host_id
-  class: cntk.train.distributed.WorkerDescriptor
-  fullName: cntk.train.distributed.WorkerDescriptor
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.cntk_py.DistributedWorkerDescriptor
-  langs:
-  - python
-  module: cntk.train.distributed
-  name: WorkerDescriptor
-  summary: Distributed worker descriptor, returned by <xref:cntk.train.distributed.Communicator>
-    instance.
-  syntax:
-    content: WorkerDescriptor()
-  type: class
-  uid: cntk.train.distributed.WorkerDescriptor
-- class: cntk.train.distributed.WorkerDescriptor
-  fullName: cntk.train.distributed.WorkerDescriptor.global_rank
-  langs:
-  - python
-  module: cntk.train.distributed
+### YamlMime:PythonClass
+uid: cntk.train.distributed.WorkerDescriptor
+name: WorkerDescriptor
+fullName: cntk.train.distributed.WorkerDescriptor
+module: cntk.train.distributed
+inheritances:
+- cntk.cntk_py.DistributedWorkerDescriptor
+summary: Distributed worker descriptor, returned by <xref:cntk.train.distributed.Communicator>
+  instance.
+constructor:
+  syntax: WorkerDescriptor()
+attributes:
+- uid: cntk.train.distributed.WorkerDescriptor.global_rank
   name: global_rank
   summary: The global rank of the worker.
-  syntax: {}
-  type: attribute
-  uid: cntk.train.distributed.WorkerDescriptor.global_rank
-- class: cntk.train.distributed.WorkerDescriptor
-  fullName: cntk.train.distributed.WorkerDescriptor.host_id
-  langs:
-  - python
-  module: cntk.train.distributed
+- uid: cntk.train.distributed.WorkerDescriptor.host_id
   name: host_id
   summary: The host id of the worker.
-  syntax: {}
-  type: attribute
-  uid: cntk.train.distributed.WorkerDescriptor.host_id
-references:
-- fullName: cntk.train.distributed.WorkerDescriptor.global_rank
-  isExternal: false
-  name: global_rank
-  parent: cntk.train.distributed.WorkerDescriptor
-  uid: cntk.train.distributed.WorkerDescriptor.global_rank
-- fullName: cntk.train.distributed.WorkerDescriptor.host_id
-  isExternal: false
-  name: host_id
-  parent: cntk.train.distributed.WorkerDescriptor
-  uid: cntk.train.distributed.WorkerDescriptor.host_id

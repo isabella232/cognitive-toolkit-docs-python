@@ -1,87 +1,25 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py.OptionalBool.get
-  - cntk.cntk_py.OptionalBool.is_initialized
-  - cntk.cntk_py.OptionalBool.reset
-  - cntk.cntk_py.OptionalBool.set
-  class: cntk.cntk_py.OptionalBool
-  fullName: cntk.cntk_py.OptionalBool
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: OptionalBool
-  summary: ''
-  syntax:
-    content: OptionalBool(*args)
-  type: class
-  uid: cntk.cntk_py.OptionalBool
-- class: cntk.cntk_py.OptionalBool
-  fullName: cntk.cntk_py.OptionalBool.get
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: get()
-  syntax:
-    content: get()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.OptionalBool.get
-- class: cntk.cntk_py.OptionalBool
-  fullName: cntk.cntk_py.OptionalBool.is_initialized
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: is_initialized()
-  syntax:
-    content: is_initialized()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.OptionalBool.is_initialized
-- class: cntk.cntk_py.OptionalBool
-  fullName: cntk.cntk_py.OptionalBool.reset
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: reset()
-  syntax:
-    content: reset()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.OptionalBool.reset
-- class: cntk.cntk_py.OptionalBool
-  fullName: cntk.cntk_py.OptionalBool.set
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: set(value)
-  syntax:
-    content: set(value)
-    parameters:
-    - id: value
-  type: method
-  uid: cntk.cntk_py.OptionalBool.set
-references:
-- fullName: cntk.cntk_py.OptionalBool.get
-  isExternal: false
-  name: get()
-  parent: cntk.cntk_py.OptionalBool
-  uid: cntk.cntk_py.OptionalBool.get
-- fullName: cntk.cntk_py.OptionalBool.is_initialized
-  isExternal: false
-  name: is_initialized()
-  parent: cntk.cntk_py.OptionalBool
-  uid: cntk.cntk_py.OptionalBool.is_initialized
-- fullName: cntk.cntk_py.OptionalBool.reset
-  isExternal: false
-  name: reset()
-  parent: cntk.cntk_py.OptionalBool
-  uid: cntk.cntk_py.OptionalBool.reset
-- fullName: cntk.cntk_py.OptionalBool.set
-  isExternal: false
-  name: set(value)
-  parent: cntk.cntk_py.OptionalBool
-  uid: cntk.cntk_py.OptionalBool.set
+### YamlMime:PythonClass
+uid: cntk.cntk_py.OptionalBool
+name: OptionalBool
+fullName: cntk.cntk_py.OptionalBool
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: OptionalBool(*args)
+methods:
+- uid: cntk.cntk_py.OptionalBool.get
+  name: get
+  signature: get()
+- uid: cntk.cntk_py.OptionalBool.is_initialized
+  name: is_initialized
+  signature: is_initialized()
+- uid: cntk.cntk_py.OptionalBool.reset
+  name: reset
+  signature: reset()
+- uid: cntk.cntk_py.OptionalBool.set
+  name: set
+  signature: set(value)
+  parameters:
+  - name: value
+    isRequired: true

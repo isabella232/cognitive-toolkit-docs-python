@@ -1,18 +1,6 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
-  fullName: cntk.contrib.deeprl.tests.discretize_test
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.discretize_test
-  name: discretize_test
-  type: module
-  uid: cntk.contrib.deeprl.tests.discretize_test
-references:
-- fullName: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
-  isExternal: false
-  name: BoxSpaceDiscretizerTest
-  parent: cntk.contrib.deeprl.tests.discretize_test
-  uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.discretize_test
+name: discretize_test
+fullName: cntk.contrib.deeprl.tests.discretize_test
+classes:
+- cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest

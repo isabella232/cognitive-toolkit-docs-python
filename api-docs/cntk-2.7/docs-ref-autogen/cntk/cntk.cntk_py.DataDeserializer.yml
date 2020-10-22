@@ -1,108 +1,38 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py.DataDeserializer.chunk_infos
-  - cntk.cntk_py.DataDeserializer.get_chunk
-  - cntk.cntk_py.DataDeserializer.get_sequence_info
-  - cntk.cntk_py.DataDeserializer.sequence_infos_for_chunk
-  - cntk.cntk_py.DataDeserializer.stream_infos
-  class: cntk.cntk_py.DataDeserializer
-  fullName: cntk.cntk_py.DataDeserializer
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: DataDeserializer
-  summary: ''
-  syntax:
-    content: DataDeserializer(*args, **kwargs)
-  type: class
-  uid: cntk.cntk_py.DataDeserializer
-- class: cntk.cntk_py.DataDeserializer
-  fullName: cntk.cntk_py.DataDeserializer.chunk_infos
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: chunk_infos()
-  syntax:
-    content: chunk_infos()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.DataDeserializer.chunk_infos
-- class: cntk.cntk_py.DataDeserializer
-  fullName: cntk.cntk_py.DataDeserializer.get_chunk
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: get_chunk(chunkId)
-  syntax:
-    content: get_chunk(chunkId)
-    parameters:
-    - id: chunkId
-  type: method
-  uid: cntk.cntk_py.DataDeserializer.get_chunk
-- class: cntk.cntk_py.DataDeserializer
-  fullName: cntk.cntk_py.DataDeserializer.get_sequence_info
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: get_sequence_info(primary, result)
-  syntax:
-    content: get_sequence_info(primary, result)
-    parameters:
-    - id: primary
-    - id: result
-  type: method
-  uid: cntk.cntk_py.DataDeserializer.get_sequence_info
-- class: cntk.cntk_py.DataDeserializer
-  fullName: cntk.cntk_py.DataDeserializer.sequence_infos_for_chunk
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: sequence_infos_for_chunk(chunkId, result)
-  syntax:
-    content: sequence_infos_for_chunk(chunkId, result)
-    parameters:
-    - id: chunkId
-    - id: result
-  type: method
-  uid: cntk.cntk_py.DataDeserializer.sequence_infos_for_chunk
-- class: cntk.cntk_py.DataDeserializer
-  fullName: cntk.cntk_py.DataDeserializer.stream_infos
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: stream_infos()
-  syntax:
-    content: stream_infos()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.DataDeserializer.stream_infos
-references:
-- fullName: cntk.cntk_py.DataDeserializer.chunk_infos
-  isExternal: false
-  name: chunk_infos()
-  parent: cntk.cntk_py.DataDeserializer
-  uid: cntk.cntk_py.DataDeserializer.chunk_infos
-- fullName: cntk.cntk_py.DataDeserializer.get_chunk
-  isExternal: false
-  name: get_chunk(chunkId)
-  parent: cntk.cntk_py.DataDeserializer
-  uid: cntk.cntk_py.DataDeserializer.get_chunk
-- fullName: cntk.cntk_py.DataDeserializer.get_sequence_info
-  isExternal: false
-  name: get_sequence_info(primary, result)
-  parent: cntk.cntk_py.DataDeserializer
-  uid: cntk.cntk_py.DataDeserializer.get_sequence_info
-- fullName: cntk.cntk_py.DataDeserializer.sequence_infos_for_chunk
-  isExternal: false
-  name: sequence_infos_for_chunk(chunkId, result)
-  parent: cntk.cntk_py.DataDeserializer
-  uid: cntk.cntk_py.DataDeserializer.sequence_infos_for_chunk
-- fullName: cntk.cntk_py.DataDeserializer.stream_infos
-  isExternal: false
-  name: stream_infos()
-  parent: cntk.cntk_py.DataDeserializer
-  uid: cntk.cntk_py.DataDeserializer.stream_infos
+### YamlMime:PythonClass
+uid: cntk.cntk_py.DataDeserializer
+name: DataDeserializer
+fullName: cntk.cntk_py.DataDeserializer
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: DataDeserializer(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.DataDeserializer.chunk_infos
+  name: chunk_infos
+  signature: chunk_infos()
+- uid: cntk.cntk_py.DataDeserializer.get_chunk
+  name: get_chunk
+  signature: get_chunk(chunkId)
+  parameters:
+  - name: chunkId
+    isRequired: true
+- uid: cntk.cntk_py.DataDeserializer.get_sequence_info
+  name: get_sequence_info
+  signature: get_sequence_info(primary, result)
+  parameters:
+  - name: primary
+    isRequired: true
+  - name: result
+    isRequired: true
+- uid: cntk.cntk_py.DataDeserializer.sequence_infos_for_chunk
+  name: sequence_infos_for_chunk
+  signature: sequence_infos_for_chunk(chunkId, result)
+  parameters:
+  - name: chunkId
+    isRequired: true
+  - name: result
+    isRequired: true
+- uid: cntk.cntk_py.DataDeserializer.stream_infos
+  name: stream_infos
+  signature: stream_infos()
