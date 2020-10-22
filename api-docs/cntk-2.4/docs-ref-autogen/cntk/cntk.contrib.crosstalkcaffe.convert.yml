@@ -1,18 +1,6 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.crosstalkcaffe.convert.CaffeConverter
-  fullName: cntk.contrib.crosstalkcaffe.convert
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.convert
-  name: convert
-  type: module
-  uid: cntk.contrib.crosstalkcaffe.convert
-references:
-- fullName: cntk.contrib.crosstalkcaffe.convert.CaffeConverter
-  isExternal: false
-  name: CaffeConverter
-  parent: cntk.contrib.crosstalkcaffe.convert
-  uid: cntk.contrib.crosstalkcaffe.convert.CaffeConverter
+### YamlMime:PythonModule
+uid: cntk.contrib.crosstalkcaffe.convert
+name: convert
+fullName: cntk.contrib.crosstalkcaffe.convert
+classes:
+- cntk.contrib.crosstalkcaffe.convert.CaffeConverter

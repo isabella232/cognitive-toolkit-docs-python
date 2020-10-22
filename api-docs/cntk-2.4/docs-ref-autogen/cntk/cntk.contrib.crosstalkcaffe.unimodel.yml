@@ -1,25 +1,8 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  - cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
-  fullName: cntk.contrib.crosstalkcaffe.unimodel
-  kind: import
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.unimodel
-  name: unimodel
-  type: package
-  uid: cntk.contrib.crosstalkcaffe.unimodel
-references:
-- fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-  isExternal: false
-  name: cntkinstance
-  parent: cntk.contrib.crosstalkcaffe.unimodel
-  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
-- fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
-  isExternal: false
-  name: cntkmodel
-  parent: cntk.contrib.crosstalkcaffe.unimodel
-  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+### YamlMime:PythonPackage
+uid: cntk.contrib.crosstalkcaffe.unimodel
+name: unimodel
+fullName: cntk.contrib.crosstalkcaffe.unimodel
+type: import
+modules:
+- cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
+- cntk.contrib.crosstalkcaffe.unimodel.cntkmodel

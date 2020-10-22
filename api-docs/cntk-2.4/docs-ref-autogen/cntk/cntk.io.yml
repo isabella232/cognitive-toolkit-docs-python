@@ -1,581 +1,256 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.io.Base64ImageDeserializer
-  - cntk.io.CBFDeserializer
-  - cntk.io.CTFDeserializer
-  - cntk.io.HTKFeatureDeserializer
-  - cntk.io.HTKMLFDeserializer
-  - cntk.io.ImageDeserializer
-  - cntk.io.LatticeDeserializer
-  - cntk.io.MinibatchData
-  - cntk.io.MinibatchSource
-  - cntk.io.MinibatchSourceFromData
-  - cntk.io.StreamConfiguration
-  - cntk.io.StreamDef
-  - cntk.io.StreamInformation
-  - cntk.io.UserDeserializer
-  - cntk.io.UserMinibatchSource
-  - cntk.io.sequence_to_cntk_text_format
-  - cntk.io.transforms
-  - cntk.io.tests
-  fullName: cntk.io
-  kind: import
-  langs:
-  - python
-  module: cntk.io
-  name: io
-  summary: 'CNTK IO utilities.
-
-    '
-  type: package
-  uid: cntk.io
-- fullName: cntk.io.Base64ImageDeserializer
-  langs:
-  - python
-  module: cntk.io
-  name: Base64ImageDeserializer(filename, streams)
-  seealsoContent: '  [Base64ImageDeserializer options](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-and-Python---Understanding-and-Extending-Readers#base64imagedeserializer-options)
-
-    '
+### YamlMime:PythonPackage
+uid: cntk.io
+name: io
+fullName: cntk.io
+summary: CNTK IO utilities.
+type: import
+functions:
+- uid: cntk.io.Base64ImageDeserializer
+  name: Base64ImageDeserializer
   summary: "Configures the image reader that reads base64 encoded images and corresponding\n\
     labels from a file of the form:\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"\
     } -->\n\n````\n\n   [sequenceId <tab>] <numerical label (0-based class id)> <tab>\
     \ <base64 encoded image>\n   ````\n\nSimilarly to the ImageDeserializer, the sequenceId\
-    \ prefix is optional and can be omitted.\n"
-  syntax:
-    content: Base64ImageDeserializer(filename, streams)
-    parameters:
-    - description: 'file name of the input file dataset that contains images
+    \ prefix is optional and can be omitted."
+  signature: Base64ImageDeserializer(filename, streams)
+  parameters:
+  - name: filename
+    description: 'file name of the input file dataset that contains images
 
-        and corresponding labels
-
-        '
-      id: filename
-      type:
-      - str
-    - id: streams
-  type: function
-  uid: cntk.io.Base64ImageDeserializer
-- fullName: cntk.io.CBFDeserializer
-  langs:
-  - python
-  module: cntk.io
-  name: CBFDeserializer(filename, streams={})
-  seealsoContent: '  [CNTKBinaryReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKBinary-Reader)
+      and corresponding labels'
+    types:
+    - <xref:str>
+  - name: streams
+  seeAlsoContent: '  [Base64ImageDeserializer options](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-and-Python---Understanding-and-Extending-Readers#base64imagedeserializer-options)
 
     '
-  summary: 'Configures the CNTK binary-format deserializer.
+- uid: cntk.io.CBFDeserializer
+  name: CBFDeserializer
+  summary: Configures the CNTK binary-format deserializer.
+  signature: CBFDeserializer(filename, streams={})
+  parameters:
+  - name: filename
+    description: file name containing the binary data
+    types:
+    - <xref:str>
+  - name: streams
+    description: 'any dictionary-like object that contains a mapping from stream
+
+      names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
+
+      an input stream.'
+    defaultValue: '{}'
+  seeAlsoContent: '  [CNTKBinaryReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKBinary-Reader)
 
     '
-  syntax:
-    content: CBFDeserializer(filename, streams={})
-    parameters:
-    - description: 'file name containing the binary data
-
-        '
-      id: filename
-      type:
-      - str
-    - defaultValue: '{}'
-      description: 'any dictionary-like object that contains a mapping from stream
-
-        names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
-
-        an input stream.
-
-        '
-      id: streams
-  type: function
-  uid: cntk.io.CBFDeserializer
-- fullName: cntk.io.CTFDeserializer
-  langs:
-  - python
-  module: cntk.io
-  name: CTFDeserializer(filename, streams)
-  seealsoContent: '  [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)
-
-    '
+- uid: cntk.io.CTFDeserializer
+  name: CTFDeserializer
   summary: "Configures the CNTK text-format reader that reads text-based files with\n\
     lines of the form:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
     : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n\
     ````\n\n   [Sequence_Id] (Sample)+\n   ````\n\nwhere:\n\n<!-- literal_block {\"\
     ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [],\
     \ \"xml:space\": \"preserve\"} -->\n\n````\n\n   Sample=|Input_Name (Value )*\n\
-    \   ````\n"
-  syntax:
-    content: CTFDeserializer(filename, streams)
-    parameters:
-    - description: 'file name containing the text input
+    \   ````"
+  signature: CTFDeserializer(filename, streams)
+  parameters:
+  - name: filename
+    description: file name containing the text input
+    types:
+    - <xref:str>
+  - name: streams
+    description: 'any dictionary-like object that contains a mapping from stream
 
-        '
-      id: filename
-      type:
-      - str
-    - description: 'any dictionary-like object that contains a mapping from stream
+      names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
 
-        names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
-
-        an input stream.
-
-        '
-      id: streams
-  type: function
-  uid: cntk.io.CTFDeserializer
-- fullName: cntk.io.HTKFeatureDeserializer
-  langs:
-  - python
-  module: cntk.io
-  name: HTKFeatureDeserializer(streams)
-  summary: 'Configures the HTK feature reader that reads speech data from scp files.
+      an input stream.'
+  seeAlsoContent: '  [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)
 
     '
-  syntax:
-    content: HTKFeatureDeserializer(streams)
-    parameters:
-    - description: 'any dictionary-like object that contains a mapping from stream
+- uid: cntk.io.HTKFeatureDeserializer
+  name: HTKFeatureDeserializer
+  summary: Configures the HTK feature reader that reads speech data from scp files.
+  signature: HTKFeatureDeserializer(streams)
+  parameters:
+  - name: streams
+    description: 'any dictionary-like object that contains a mapping from stream
 
-        names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
+      names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
 
-        a feature stream.
-
-        '
-      id: streams
-  type: function
-  uid: cntk.io.HTKFeatureDeserializer
-- fullName: cntk.io.HTKMLFDeserializer
-  langs:
-  - python
-  module: cntk.io
-  name: HTKMLFDeserializer(label_mapping_file, streams, phoneBoundaries=False)
+      a feature stream.'
+- uid: cntk.io.HTKMLFDeserializer
+  name: HTKMLFDeserializer
   summary: 'Configures an HTK label reader that reads speech HTK format MLF (Master
 
-    Label File)
+    Label File)'
+  signature: HTKMLFDeserializer(label_mapping_file, streams, phoneBoundaries=False)
+  parameters:
+  - name: label_mapping_file
+    description: path to the label mapping file
+    types:
+    - <xref:str>
+  - name: streams
+    description: 'any dictionary-like object that contains a mapping from stream
 
-    '
-  syntax:
-    content: HTKMLFDeserializer(label_mapping_file, streams, phoneBoundaries=False)
-    parameters:
-    - description: 'path to the label mapping file
+      names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
 
-        '
-      id: label_mapping_file
-      type:
-      - str
-    - description: 'any dictionary-like object that contains a mapping from stream
-
-        names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
-
-        a label stream.
-
-        '
-      id: streams
-    - defaultValue: 'False'
-      description: 'if phone boundaries should be considered (should be set to True
-        for CTC training, False otherwise)
-
-        '
-      id: phoneBoundaries
-      type:
-      - bool, defaults to False
-  type: function
-  uid: cntk.io.HTKMLFDeserializer
-- fullName: cntk.io.ImageDeserializer
-  langs:
-  - python
-  module: cntk.io
-  name: ImageDeserializer(filename, streams)
-  seealsoContent: '  [Image reader definition](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-Image-reader)
-
-    '
+      a label stream.'
+  - name: phoneBoundaries
+    description: if phone boundaries should be considered (should be set to True for
+      CTC training, False otherwise)
+    defaultValue: 'False'
+    types:
+    - <xref:bool>, <xref:defaults to False>
+- uid: cntk.io.ImageDeserializer
+  name: ImageDeserializer
   summary: "Configures the image reader that reads images and corresponding\nlabels\
     \ from a file of the form:\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
     \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"\
     } -->\n\n````\n\n   <full path to image> <tab> <numerical label (0-based class\
     \ id)>\n   ````\n\nor:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"\
     names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"}\
-    \ -->\n\n````\n\n   sequenceId <tab> path <tab> label\n   ````\n"
-  syntax:
-    content: ImageDeserializer(filename, streams)
-    parameters:
-    - description: 'file name of the map file that associates images to
+    \ -->\n\n````\n\n   sequenceId <tab> path <tab> label\n   ````"
+  signature: ImageDeserializer(filename, streams)
+  parameters:
+  - name: filename
+    description: 'file name of the map file that associates images to
 
-        classes
-
-        '
-      id: filename
-      type:
-      - str
-    - id: streams
-  type: function
-  uid: cntk.io.ImageDeserializer
-- fullName: cntk.io.LatticeDeserializer
-  langs:
-  - python
-  module: cntk.io
-  name: LatticeDeserializer(lattice_index_file, streams)
-  summary: 'Configures a lattice deserializer
+      classes'
+    types:
+    - <xref:str>
+  - name: streams
+  seeAlsoContent: '  [Image reader definition](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-Image-reader)
 
     '
-  syntax:
-    content: LatticeDeserializer(lattice_index_file, streams)
-    parameters:
-    - description: 'path to the file containing list of lattice TOC (table of content)
-        files
-
-        '
-      id: lattice_index_file
-      type:
-      - str
-    - id: streams
-  type: function
-  uid: cntk.io.LatticeDeserializer
-- fullName: cntk.io.StreamDef
-  langs:
-  - python
-  module: cntk.io
-  name: StreamDef(field=None, shape=None, is_sparse=False, transforms=None, context=None,
+- uid: cntk.io.LatticeDeserializer
+  name: LatticeDeserializer
+  summary: Configures a lattice deserializer
+  signature: LatticeDeserializer(lattice_index_file, streams)
+  parameters:
+  - name: lattice_index_file
+    description: path to the file containing list of lattice TOC (table of content)
+      files
+    types:
+    - <xref:str>
+  - name: streams
+- uid: cntk.io.StreamDef
+  name: StreamDef
+  summary: "Configuration of a stream for use with the builtin Deserializers.\n  \
+    \ The meanings of some configuration keys have a mild dependency on the\n   exact\
+    \ deserializer, and certain keys are meaningless for certain\n   deserializers."
+  signature: StreamDef(field=None, shape=None, is_sparse=False, transforms=None, context=None,
     scp=None, mlf=None, broadcast=None, defines_mb_size=False, max_sequence_length=65535)
-  summary: "   Configuration of a stream for use with the builtin Deserializers.\n\
-    \   The meanings of some configuration keys have a mild dependency on the\n  \
-    \ exact deserializer, and certain keys are meaningless for certain\n   deserializers.\n"
-  syntax:
-    content: StreamDef(field=None, shape=None, is_sparse=False, transforms=None, context=None,
-      scp=None, mlf=None, broadcast=None, defines_mb_size=False, max_sequence_length=65535)
-    parameters:
-    - defaultValue: None
-      description: "this is the name of the stream\n\n* for CTFDeserializer the name\
-        \ is inside the CTF file \n\n* for ImageDeserializer the acceptable names\
-        \ are *image* or *label* \n\n* for HTKFeatureDeserializer and HTKMLFDeserializer\
-        \ only the default value of None is acceptable \n"
-      id: field
-      type:
-      - str, defaults to None
-    - defaultValue: None
-      description: 'dimensions of this
+  parameters:
+  - name: field
+    description: "this is the name of the stream\n\n* for CTFDeserializer the name\
+      \ is inside the CTF file \n\n* for ImageDeserializer the acceptable names are\
+      \ *image* or *label* \n\n* for HTKFeatureDeserializer and HTKMLFDeserializer\
+      \ only the default value of None is acceptable"
+    defaultValue: None
+    types:
+    - <xref:str>, <xref:defaults to None>
+  - name: shape
+    description: 'dimensions of this
 
-        stream. HTKFeatureDeserializer, HTKMLFDeserializer, and
+      stream. HTKFeatureDeserializer, HTKMLFDeserializer, and
 
-        CTFDeserializer read data as flat arrays. If you need different
+      CTFDeserializer read data as flat arrays. If you need different
 
-        shapes you can <xref:cntk.ops.reshape> it later.
+      shapes you can <xref:cntk.ops.reshape> it later.'
+    defaultValue: None
+    types:
+    - <xref:int>
+    - <xref:tuple>, <xref:defaults to None>
+  - name: is_sparse
+    description: 'whether the provided data is
 
-        '
-      id: shape
-      type:
-      - int
-      - tuple, defaults to None
-    - defaultValue: 'False'
-      description: 'whether the provided data is
+      sparse. *False* by default, unless mlf is provided.'
+    defaultValue: 'False'
+    types:
+    - <xref:bool>, <xref:defaults to False>
+  - name: transforms
+    description: 'list of transforms to be
 
-        sparse. *False* by default, unless mlf is provided.
+      applied by the Deserializer. Currently only ImageDeserializer
 
-        '
-      id: is_sparse
-      type:
-      - bool, defaults to False
-    - defaultValue: None
-      description: 'list of transforms to be
+      supports transforms.'
+    defaultValue: None
+    types:
+    - <xref:list>, <xref:defaults to None>
+  - name: context
+    description: 'left and right context to
 
-        applied by the Deserializer. Currently only ImageDeserializer
+      consider when reading in HTK data. Only supported by
 
-        supports transforms.
+      HTKFeatureDeserializer.'
+    defaultValue: None
+    types:
+    - <xref:tuple>, <xref:defaults to None>
+  - name: scp
+    description: scp files for HTK data
+    defaultValue: None
+    types:
+    - <xref:str>
+    - <xref:list>, <xref:defaults to None>
+  - name: mlf
+    description: mlf files for HTK data
+    defaultValue: None
+    types:
+    - <xref:str>
+    - <xref:list>, <xref:defaults to None>
+  - name: broadcast
+    description: 'whether the features in this
 
-        '
-      id: transforms
-      type:
-      - list, defaults to None
-    - defaultValue: None
-      description: 'left and right context to
+      stream should be broadcast to the whole sequence (useful in e.g.
 
-        consider when reading in HTK data. Only supported by
+      ivectors with HTK)'
+    defaultValue: None
+    types:
+    - <xref:bool>, <xref:defaults to None>
+  - name: defines_mb_size
+    description: 'whether this stream defines
 
-        HTKFeatureDeserializer.
-
-        '
-      id: context
-      type:
-      - tuple, defaults to None
-    - defaultValue: None
-      description: 'scp files for HTK data
-
-        '
-      id: scp
-      type:
-      - str
-      - list, defaults to None
-    - defaultValue: None
-      description: 'mlf files for HTK data
-
-        '
-      id: mlf
-      type:
-      - str
-      - list, defaults to None
-    - defaultValue: None
-      description: 'whether the features in this
-
-        stream should be broadcast to the whole sequence (useful in e.g.
-
-        ivectors with HTK)
-
-        '
-      id: broadcast
-      type:
-      - bool, defaults to None
-    - defaultValue: 'False'
-      description: 'whether this stream defines
-
-        the minibatch size.
-
-        '
-      id: defines_mb_size
-      type:
-      - bool, defaults to False
-    - defaultValue: '65535'
-      description: 'the upper limit on the length of consumed sequences. Sequence
-        of larger size are skipped.
-
-        '
-      id: max_sequence_length
-      type:
-      - int, defaults to 65535
-  type: function
-  uid: cntk.io.StreamDef
-- fullName: cntk.io.sequence_to_cntk_text_format
-  langs:
-  - python
-  module: cntk.io
-  name: sequence_to_cntk_text_format(seq_idx, alias_tensor_map)
+      the minibatch size.'
+    defaultValue: 'False'
+    types:
+    - <xref:bool>, <xref:defaults to False>
+  - name: max_sequence_length
+    description: the upper limit on the length of consumed sequences. Sequence of
+      larger size are skipped.
+    defaultValue: '65535'
+    types:
+    - <xref:int>, <xref:defaults to 65535>
+- uid: cntk.io.sequence_to_cntk_text_format
+  name: sequence_to_cntk_text_format
   summary: 'Converts a list of NumPy arrays representing tensors of inputs into a
 
-    format that is readable by <xref:cntk.io.CTFDeserializer>.
+    format that is readable by <xref:cntk.io.CTFDeserializer>.'
+  signature: sequence_to_cntk_text_format(seq_idx, alias_tensor_map)
+  parameters:
+  - name: seq_idx
+    description: number of current sequence
+    types:
+    - <xref:int>
+  - name: alias_tensor_map
+    description: 'maps alias (str) to tensor (ndarray). Tensors
 
-    '
-  syntax:
-    content: sequence_to_cntk_text_format(seq_idx, alias_tensor_map)
-    parameters:
-    - description: 'number of current sequence
-
-        '
-      id: seq_idx
-      type:
-      - int
-    - description: 'maps alias (str) to tensor (ndarray). Tensors
-
-        are assumed to have dynamic axis.
-
-        '
-      id: alias_tensor_map
-      type:
-      - dict
-    return:
-      description: 'String representation in [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)
-
-        '
-      type:
-      - str
-  type: function
-  uid: cntk.io.sequence_to_cntk_text_format
-references:
-- fullName: cntk.io.Base64ImageDeserializer
-  isExternal: false
-  name: Base64ImageDeserializer(filename, streams)
-  parent: cntk.io
-  uid: cntk.io.Base64ImageDeserializer
-- fullName: cntk.io.CBFDeserializer
-  isExternal: false
-  name: CBFDeserializer(filename, streams={})
-  parent: cntk.io
-  uid: cntk.io.CBFDeserializer
-- fullName: cntk.io.CTFDeserializer
-  isExternal: false
-  name: CTFDeserializer(filename, streams)
-  parent: cntk.io
-  uid: cntk.io.CTFDeserializer
-- fullName: cntk.io.HTKFeatureDeserializer
-  isExternal: false
-  name: HTKFeatureDeserializer(streams)
-  parent: cntk.io
-  uid: cntk.io.HTKFeatureDeserializer
-- fullName: cntk.io.HTKMLFDeserializer
-  isExternal: false
-  name: HTKMLFDeserializer(label_mapping_file, streams, phoneBoundaries=False)
-  parent: cntk.io
-  uid: cntk.io.HTKMLFDeserializer
-- fullName: cntk.io.ImageDeserializer
-  isExternal: false
-  name: ImageDeserializer(filename, streams)
-  parent: cntk.io
-  uid: cntk.io.ImageDeserializer
-- fullName: cntk.io.LatticeDeserializer
-  isExternal: false
-  name: LatticeDeserializer(lattice_index_file, streams)
-  parent: cntk.io
-  uid: cntk.io.LatticeDeserializer
-- fullName: cntk.io.MinibatchData
-  isExternal: false
-  name: MinibatchData
-  parent: cntk.io
-  uid: cntk.io.MinibatchData
-- fullName: cntk.io.MinibatchSource
-  isExternal: false
-  name: MinibatchSource
-  parent: cntk.io
-  uid: cntk.io.MinibatchSource
-- fullName: cntk.io.MinibatchSourceFromData
-  isExternal: false
-  name: MinibatchSourceFromData
-  parent: cntk.io
-  uid: cntk.io.MinibatchSourceFromData
-- fullName: cntk.io.StreamConfiguration
-  isExternal: false
-  name: StreamConfiguration
-  parent: cntk.io
-  uid: cntk.io.StreamConfiguration
-- fullName: cntk.io.StreamDef
-  isExternal: false
-  name: StreamDef(field=None, shape=None, is_sparse=False, transforms=None, context=None,
-    scp=None, mlf=None, broadcast=None, defines_mb_size=False, max_sequence_length=65535)
-  parent: cntk.io
-  uid: cntk.io.StreamDef
-- fullName: cntk.io.StreamInformation
-  isExternal: false
-  name: StreamInformation
-  parent: cntk.io
-  uid: cntk.io.StreamInformation
-- fullName: cntk.io.UserDeserializer
-  isExternal: false
-  name: UserDeserializer
-  parent: cntk.io
-  uid: cntk.io.UserDeserializer
-- fullName: cntk.io.UserMinibatchSource
-  isExternal: false
-  name: UserMinibatchSource
-  parent: cntk.io
-  uid: cntk.io.UserMinibatchSource
-- fullName: cntk.io.sequence_to_cntk_text_format
-  isExternal: false
-  name: sequence_to_cntk_text_format(seq_idx, alias_tensor_map)
-  parent: cntk.io
-  uid: cntk.io.sequence_to_cntk_text_format
-- fullName: cntk.io.transforms
-  isExternal: false
-  name: transforms
-  parent: cntk.io
-  uid: cntk.io.transforms
-- fullName: cntk.io.tests
-  isExternal: false
-  name: tests
-  parent: cntk.io
-  uid: cntk.io.tests
-- fullName: bool, defaults to False
-  name: bool, defaults to False
-  spec.python:
-  - fullName: bool
-    name: bool
-    uid: bool
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to False
-    name: defaults to False
-    uid: defaults to False
-  uid: bool, defaults to False
-- fullName: str, defaults to None
-  name: str, defaults to None
-  spec.python:
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to None
-    name: defaults to None
-    uid: defaults to None
-  uid: str, defaults to None
-- fullName: tuple, defaults to None
-  name: tuple, defaults to None
-  spec.python:
-  - fullName: tuple
-    name: tuple
-    uid: tuple
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to None
-    name: defaults to None
-    uid: defaults to None
-  uid: tuple, defaults to None
-- fullName: list, defaults to None
-  name: list, defaults to None
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to None
-    name: defaults to None
-    uid: defaults to None
-  uid: list, defaults to None
-- fullName: tuple, defaults to None
-  name: tuple, defaults to None
-  spec.python:
-  - fullName: tuple
-    name: tuple
-    uid: tuple
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to None
-    name: defaults to None
-    uid: defaults to None
-  uid: tuple, defaults to None
-- fullName: list, defaults to None
-  name: list, defaults to None
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to None
-    name: defaults to None
-    uid: defaults to None
-  uid: list, defaults to None
-- fullName: list, defaults to None
-  name: list, defaults to None
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to None
-    name: defaults to None
-    uid: defaults to None
-  uid: list, defaults to None
-- fullName: bool, defaults to None
-  name: bool, defaults to None
-  spec.python:
-  - fullName: bool
-    name: bool
-    uid: bool
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to None
-    name: defaults to None
-    uid: defaults to None
-  uid: bool, defaults to None
-- fullName: int, defaults to 65535
-  name: int, defaults to 65535
-  spec.python:
-  - fullName: int
-    name: int
-    uid: int
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to 65535
-    name: defaults to 65535
-    uid: defaults to 65535
-  uid: int, defaults to 65535
+      are assumed to have dynamic axis.'
+    types:
+    - <xref:dict>
+  return:
+    description: 'String representation in [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)'
+    types:
+    - <xref:str>
+classes:
+- cntk.io.MinibatchData
+- cntk.io.MinibatchSource
+- cntk.io.MinibatchSourceFromData
+- cntk.io.StreamConfiguration
+- cntk.io.StreamInformation
+- cntk.io.UserDeserializer
+- cntk.io.UserMinibatchSource
+packages:
+- cntk.io.tests
+modules:
+- cntk.io.transforms

@@ -1,12 +1,5 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  fullName: cntk.contrib.crosstalkcaffe.tests
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.tests
-  name: tests
-  type: module
-  uid: cntk.contrib.crosstalkcaffe.tests
-references: []
+### YamlMime:PythonPackage
+uid: cntk.contrib.crosstalkcaffe.tests
+name: tests
+fullName: cntk.contrib.crosstalkcaffe.tests
+type: import
