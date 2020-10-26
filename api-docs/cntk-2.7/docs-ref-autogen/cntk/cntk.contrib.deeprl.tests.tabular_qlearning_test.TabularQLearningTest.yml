@@ -1,69 +1,20 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init
-  - cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init_unsupported_q
-  - cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_update
-  class: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
-  fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: unittest.case.TestCase
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.tabular_qlearning_test
-  name: TabularQLearningTest
-  summary: Unit tests for TabularQLearning.
-  syntax:
-    content: TabularQLearningTest(methodName='runTest')
-  type: class
-  uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
-- class: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
-  fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.tabular_qlearning_test
-  name: test_init()
-  syntax:
-    content: test_init()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init
-- class: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
-  fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init_unsupported_q
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.tabular_qlearning_test
-  name: test_init_unsupported_q(mock_qlearn_parameters)
-  syntax:
-    content: test_init_unsupported_q(mock_qlearn_parameters)
-  type: method
-  uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init_unsupported_q
-- class: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
-  fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_update
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.tabular_qlearning_test
-  name: test_update(mock_qlearn_parameters)
-  syntax:
-    content: test_update(mock_qlearn_parameters)
-  type: method
-  uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_update
-references:
-- fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init
-  isExternal: false
-  name: test_init()
-  parent: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
-  uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init
-- fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init_unsupported_q
-  isExternal: false
-  name: test_init_unsupported_q(mock_qlearn_parameters)
-  parent: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
-  uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init_unsupported_q
-- fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_update
-  isExternal: false
-  name: test_update(mock_qlearn_parameters)
-  parent: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
-  uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_update
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
+name: TabularQLearningTest
+fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
+module: cntk.contrib.deeprl.tests.tabular_qlearning_test
+inheritances:
+- unittest.case.TestCase
+summary: Unit tests for TabularQLearning.
+constructor:
+  syntax: TabularQLearningTest(methodName='runTest')
+methods:
+- uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init
+  name: test_init
+  signature: test_init()
+- uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_init_unsupported_q
+  name: test_init_unsupported_q
+  signature: test_init_unsupported_q(mock_qlearn_parameters)
+- uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest.test_update
+  name: test_update
+  signature: test_update(mock_qlearn_parameters)

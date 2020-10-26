@@ -1,178 +1,41 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py.MinibatchSource.get_checkpoint_state
-  - cntk.cntk_py.MinibatchSource.get_next_minibatch
-  - cntk.cntk_py.MinibatchSource.is_infinite
-  - cntk.cntk_py.MinibatchSource.restore_from_checkpoint
-  - cntk.cntk_py.MinibatchSource.stream_info
-  - cntk.cntk_py.MinibatchSource.stream_infos
-  - cntk.cntk_py.MinibatchSource.default_randomization_window_in_chunks
-  - cntk.cntk_py.MinibatchSource.full_data_sweep
-  - cntk.cntk_py.MinibatchSource.infinitely_repeat
-  class: cntk.cntk_py.MinibatchSource
-  fullName: cntk.cntk_py.MinibatchSource
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: MinibatchSource
-  summary: '
-
-
-
-
-
-
-
-
-    '
-  syntax:
-    content: MinibatchSource(*args, **kwargs)
-  type: class
-  uid: cntk.cntk_py.MinibatchSource
-- class: cntk.cntk_py.MinibatchSource
-  fullName: cntk.cntk_py.MinibatchSource.get_checkpoint_state
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: get_checkpoint_state()
-  syntax:
-    content: get_checkpoint_state()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.MinibatchSource.get_checkpoint_state
-- class: cntk.cntk_py.MinibatchSource
-  fullName: cntk.cntk_py.MinibatchSource.get_next_minibatch
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: get_next_minibatch(*args)
-  syntax:
-    content: get_next_minibatch(*args)
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.MinibatchSource.get_next_minibatch
-- class: cntk.cntk_py.MinibatchSource
-  fullName: cntk.cntk_py.MinibatchSource.is_infinite
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: is_infinite()
-  syntax:
-    content: is_infinite()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.MinibatchSource.is_infinite
-- class: cntk.cntk_py.MinibatchSource
-  fullName: cntk.cntk_py.MinibatchSource.restore_from_checkpoint
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: restore_from_checkpoint(arg2)
-  syntax:
-    content: restore_from_checkpoint(arg2)
-    parameters:
-    - id: arg2
-  type: method
-  uid: cntk.cntk_py.MinibatchSource.restore_from_checkpoint
-- class: cntk.cntk_py.MinibatchSource
-  fullName: cntk.cntk_py.MinibatchSource.stream_info
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: stream_info(*args)
-  syntax:
-    content: stream_info(*args)
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.MinibatchSource.stream_info
-- class: cntk.cntk_py.MinibatchSource
-  fullName: cntk.cntk_py.MinibatchSource.stream_infos
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: stream_infos()
-  syntax:
-    content: stream_infos()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.MinibatchSource.stream_infos
-- class: cntk.cntk_py.MinibatchSource
-  fullName: cntk.cntk_py.MinibatchSource.default_randomization_window_in_chunks
-  langs:
-  - python
-  module: cntk.cntk_py
+### YamlMime:PythonClass
+uid: cntk.cntk_py.MinibatchSource
+name: MinibatchSource
+fullName: cntk.cntk_py.MinibatchSource
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: MinibatchSource(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.MinibatchSource.get_checkpoint_state
+  name: get_checkpoint_state
+  signature: get_checkpoint_state()
+- uid: cntk.cntk_py.MinibatchSource.get_next_minibatch
+  name: get_next_minibatch
+  signature: get_next_minibatch(*args)
+- uid: cntk.cntk_py.MinibatchSource.is_infinite
+  name: is_infinite
+  signature: is_infinite()
+- uid: cntk.cntk_py.MinibatchSource.restore_from_checkpoint
+  name: restore_from_checkpoint
+  signature: restore_from_checkpoint(arg2)
+  parameters:
+  - name: arg2
+    isRequired: true
+- uid: cntk.cntk_py.MinibatchSource.stream_info
+  name: stream_info
+  signature: stream_info(*args)
+- uid: cntk.cntk_py.MinibatchSource.stream_infos
+  name: stream_infos
+  signature: stream_infos()
+attributes:
+- uid: cntk.cntk_py.MinibatchSource.default_randomization_window_in_chunks
   name: default_randomization_window_in_chunks
-  syntax:
-    content: default_randomization_window_in_chunks = 128
-  type: attribute
-  uid: cntk.cntk_py.MinibatchSource.default_randomization_window_in_chunks
-- class: cntk.cntk_py.MinibatchSource
-  fullName: cntk.cntk_py.MinibatchSource.full_data_sweep
-  langs:
-  - python
-  module: cntk.cntk_py
+  signature: default_randomization_window_in_chunks = 128
+- uid: cntk.cntk_py.MinibatchSource.full_data_sweep
   name: full_data_sweep
-  syntax:
-    content: full_data_sweep = 18446744073709551614
-  type: attribute
-  uid: cntk.cntk_py.MinibatchSource.full_data_sweep
-- class: cntk.cntk_py.MinibatchSource
-  fullName: cntk.cntk_py.MinibatchSource.infinitely_repeat
-  langs:
-  - python
-  module: cntk.cntk_py
+  signature: full_data_sweep = 18446744073709551614
+- uid: cntk.cntk_py.MinibatchSource.infinitely_repeat
   name: infinitely_repeat
-  syntax:
-    content: infinitely_repeat = 18446744073709551615
-  type: attribute
-  uid: cntk.cntk_py.MinibatchSource.infinitely_repeat
-references:
-- fullName: cntk.cntk_py.MinibatchSource.get_checkpoint_state
-  isExternal: false
-  name: get_checkpoint_state()
-  parent: cntk.cntk_py.MinibatchSource
-  uid: cntk.cntk_py.MinibatchSource.get_checkpoint_state
-- fullName: cntk.cntk_py.MinibatchSource.get_next_minibatch
-  isExternal: false
-  name: get_next_minibatch(*args)
-  parent: cntk.cntk_py.MinibatchSource
-  uid: cntk.cntk_py.MinibatchSource.get_next_minibatch
-- fullName: cntk.cntk_py.MinibatchSource.is_infinite
-  isExternal: false
-  name: is_infinite()
-  parent: cntk.cntk_py.MinibatchSource
-  uid: cntk.cntk_py.MinibatchSource.is_infinite
-- fullName: cntk.cntk_py.MinibatchSource.restore_from_checkpoint
-  isExternal: false
-  name: restore_from_checkpoint(arg2)
-  parent: cntk.cntk_py.MinibatchSource
-  uid: cntk.cntk_py.MinibatchSource.restore_from_checkpoint
-- fullName: cntk.cntk_py.MinibatchSource.stream_info
-  isExternal: false
-  name: stream_info(*args)
-  parent: cntk.cntk_py.MinibatchSource
-  uid: cntk.cntk_py.MinibatchSource.stream_info
-- fullName: cntk.cntk_py.MinibatchSource.stream_infos
-  isExternal: false
-  name: stream_infos()
-  parent: cntk.cntk_py.MinibatchSource
-  uid: cntk.cntk_py.MinibatchSource.stream_infos
-- fullName: cntk.cntk_py.MinibatchSource.default_randomization_window_in_chunks
-  isExternal: false
-  name: default_randomization_window_in_chunks
-  parent: cntk.cntk_py.MinibatchSource
-  uid: cntk.cntk_py.MinibatchSource.default_randomization_window_in_chunks
-- fullName: cntk.cntk_py.MinibatchSource.full_data_sweep
-  isExternal: false
-  name: full_data_sweep
-  parent: cntk.cntk_py.MinibatchSource
-  uid: cntk.cntk_py.MinibatchSource.full_data_sweep
-- fullName: cntk.cntk_py.MinibatchSource.infinitely_repeat
-  isExternal: false
-  name: infinitely_repeat
-  parent: cntk.cntk_py.MinibatchSource
-  uid: cntk.cntk_py.MinibatchSource.infinitely_repeat
+  signature: infinitely_repeat = 18446744073709551615

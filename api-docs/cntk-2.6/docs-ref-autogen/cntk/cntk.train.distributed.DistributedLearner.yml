@@ -1,70 +1,24 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.train.distributed.DistributedLearner.communicator
-  - cntk.train.distributed.DistributedLearner.total_number_of_samples_seen
-  class: cntk.train.distributed.DistributedLearner
-  fullName: cntk.train.distributed.DistributedLearner
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: cntk.cntk_py.Learner
-    type: cntk.cntk_py.DistributedLearner
-  langs:
-  - python
-  module: cntk.train.distributed
-  name: DistributedLearner
-  summary: 'A distributed learner that handles data like gradients/momentums across
-    multiple MPI workers
-
-
-
-    '
-  syntax:
-    content: DistributedLearner(*args, **kwargs)
-  type: class
-  uid: cntk.train.distributed.DistributedLearner
-- class: cntk.train.distributed.DistributedLearner
-  fullName: cntk.train.distributed.DistributedLearner.communicator
-  langs:
-  - python
-  module: cntk.train.distributed
-  name: communicator()
-  summary: 'Returns the distributed communicator that talks to other MPI workers
-
-    '
-  syntax:
-    content: communicator()
-    return:
-      description: 'descriptor of current process.
-
-        '
-      type:
-      - <xref:cntk.train.distributed.Communicator>
-  type: method
-  uid: cntk.train.distributed.DistributedLearner.communicator
-- class: cntk.train.distributed.DistributedLearner
-  fullName: cntk.train.distributed.DistributedLearner.total_number_of_samples_seen
-  langs:
-  - python
-  module: cntk.train.distributed
+### YamlMime:PythonClass
+uid: cntk.train.distributed.DistributedLearner
+name: DistributedLearner
+fullName: cntk.train.distributed.DistributedLearner
+module: cntk.train.distributed
+inheritances:
+- cntk.cntk_py.DistributedLearner
+summary: A distributed learner that handles data like gradients/momentums across multiple
+  MPI workers
+constructor:
+  syntax: DistributedLearner(*args, **kwargs)
+methods:
+- uid: cntk.train.distributed.DistributedLearner.communicator
+  name: communicator
+  summary: Returns the distributed communicator that talks to other MPI workers
+  signature: communicator()
+  return:
+    description: descriptor of current process.
+    types:
+    - <xref:cntk.train.distributed.Communicator>
+attributes:
+- uid: cntk.train.distributed.DistributedLearner.total_number_of_samples_seen
   name: total_number_of_samples_seen
-  summary: 'The number of samples seen by the distributed learner.
-
-    '
-  syntax: {}
-  type: attribute
-  uid: cntk.train.distributed.DistributedLearner.total_number_of_samples_seen
-references:
-- fullName: cntk.train.distributed.DistributedLearner.communicator
-  isExternal: false
-  name: communicator()
-  parent: cntk.train.distributed.DistributedLearner
-  uid: cntk.train.distributed.DistributedLearner.communicator
-- fullName: cntk.train.distributed.DistributedLearner.total_number_of_samples_seen
-  isExternal: false
-  name: total_number_of_samples_seen
-  parent: cntk.train.distributed.DistributedLearner
-  uid: cntk.train.distributed.DistributedLearner.total_number_of_samples_seen
+  summary: The number of samples seen by the distributed learner.

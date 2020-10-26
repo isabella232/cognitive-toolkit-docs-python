@@ -1,18 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.crosstalkcaffe.utils.globalconf.SourceSolverConf
-  fullName: cntk.contrib.crosstalkcaffe.utils.globalconf.SourceSolverConf
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.utils.globalconf
-  name: SourceSolverConf
-  summary: The source solver
-  syntax:
-    content: SourceSolverConf()
-  type: class
-  uid: cntk.contrib.crosstalkcaffe.utils.globalconf.SourceSolverConf
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.utils.globalconf.SourceSolverConf
+name: SourceSolverConf
+fullName: cntk.contrib.crosstalkcaffe.utils.globalconf.SourceSolverConf
+module: cntk.contrib.crosstalkcaffe.utils.globalconf
+inheritances:
+- builtins.object
+summary: The source solver
+constructor:
+  syntax: SourceSolverConf()

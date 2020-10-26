@@ -1,148 +1,106 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.train.training_session.TrainingSession.on_cross_validation_end
-  - cntk.train.training_session.TrainingSession.train
-  class: cntk.train.training_session.TrainingSession
-  fullName: cntk.train.training_session.TrainingSession
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.cntk_py.TrainingSession
-  langs:
-  - python
-  module: cntk.train.training_session
-  name: TrainingSession
-  summary: 'The instance of the class should be created by using <xref:cntk.train.training_session.training_session>
-    function.
+### YamlMime:PythonClass
+uid: cntk.train.training_session.TrainingSession
+name: TrainingSession
+fullName: cntk.train.training_session.TrainingSession
+module: cntk.train.training_session
+inheritances:
+- cntk.cntk_py.TrainingSession
+summary: 'The instance of the class should be created by using <xref:cntk.train.training_session.training_session>
+  function.
 
 
-    A training session trains a model using the specified `trainer` and configs.
+  A training session trains a model using the specified `trainer` and configs.
 
-    Different aspects of training such as data sources, checkpointing, cross validation,
-    progress printing
+  Different aspects of training such as data sources, checkpointing, cross validation,
+  progress printing
 
-    can be configured using the corresponding config classes.'
-  syntax:
-    content: TrainingSession(trainer, mb_source, mb_size, model_inputs_to_streams,
-      max_samples, progress_frequency, checkpoint_config, cv_config, test_config)
-    parameters:
-    - description: trainer
-      id: trainer
-      type:
-      - <xref:cntk.train.trainer.Trainer>
-    - description: minibatch source used for training
-      id: mb_source
-      type:
-      - <xref:cntk.io.MinibatchSource>
-    - description: minibatch size schedule for training
-      id: mb_size
-      type:
-      - <xref:cntk.cntk_py.minibatch_size_schedule>
-      - int
-    - description: mapping between input variables and input streams
-      id: model_inputs_to_streams
-      type:
-      - dict
-    - description: maximum number of samples used for training
-      id: max_samples
-      type:
-      - int
-    - description: 'the number of samples, minibatches, sweeps of epochs per which
-        aggregated progress is printed
+  can be configured using the corresponding config classes.'
+constructor:
+  syntax: TrainingSession(trainer, mb_source, mb_size, model_inputs_to_streams, max_samples,
+    progress_frequency, checkpoint_config, cv_config, test_config)
+  parameters:
+  - name: trainer
+    description: trainer
+    types:
+    - <xref:cntk.train.trainer.Trainer>
+  - name: mb_source
+    description: minibatch source used for training
+    types:
+    - <xref:cntk.io.MinibatchSource>
+  - name: mb_size
+    description: minibatch size schedule for training
+    types:
+    - <xref:cntk.cntk_py.minibatch_size_schedule>
+    - <xref:int>
+  - name: model_inputs_to_streams
+    description: mapping between input variables and input streams
+    types:
+    - <xref:dict>
+  - name: max_samples
+    description: maximum number of samples used for training
+    types:
+    - <xref:int>
+  - name: progress_frequency
+    description: 'the number of samples, minibatches, sweeps of epochs per which aggregated
+      progress is printed
 
-        If a tuple of (*frequency*, <xref:cntk.train.training_session.DataUnit>),
-        the *frequency* is in terms of either *DataUnit.sample*, *DataUnit.minibatch*
-        or *DataUnit.sweep*.
+      If a tuple of (*frequency*, <xref:cntk.train.training_session.DataUnit>), the
+      *frequency* is in terms of either *DataUnit.sample*, *DataUnit.minibatch* or
+      *DataUnit.sweep*.
 
-        See <xref:cntk.train.training_session.DataUnit> for more information on frequency
-        data unit.'
-      id: progress_frequency
-      type:
-      - int, tuple
-    - description: checkpoint configuration
-      id: checkpoint_config
-      type:
-      - <xref:cntk.train.training_session.CheckpointConfig>
-    - description: cross validation configuration
-      id: cv_config
-      type:
-      - <xref:cntk.train.training_session.CrossValidationConfig>
-    - description: test configuration
-      id: test_config
-      type:
-      - <xref:cntk.train.training_session.TestConfig>
-  type: class
-  uid: cntk.train.training_session.TrainingSession
-- class: cntk.train.training_session.TrainingSession
-  fullName: cntk.train.training_session.TrainingSession.on_cross_validation_end
-  langs:
-  - python
-  module: cntk.train.training_session
-  name: on_cross_validation_end(index, average_error, num_samples, num_minibatches)
+      See <xref:cntk.train.training_session.DataUnit> for more information on frequency
+      data unit.'
+    types:
+    - <xref:int>, <xref:tuple>
+  - name: checkpoint_config
+    description: checkpoint configuration
+    types:
+    - <xref:cntk.train.training_session.CheckpointConfig>
+  - name: cv_config
+    description: cross validation configuration
+    types:
+    - <xref:cntk.train.training_session.CrossValidationConfig>
+  - name: test_config
+    description: test configuration
+    types:
+    - <xref:cntk.train.training_session.TestConfig>
+methods:
+- uid: cntk.train.training_session.TrainingSession.on_cross_validation_end
+  name: on_cross_validation_end
   summary: Callback that gets executed at the end of cross validation.
-  syntax:
-    content: on_cross_validation_end(index, average_error, num_samples, num_minibatches)
-    parameters:
-    - description: index of the current callback.
-      id: index
-      type:
-      - int
-    - description: average error for the cross validation
-      id: average_error
-      type:
-      - float
-    - description: number of samples in cross validation
-      id: num_samples
-      type:
-      - int
-    - description: number of minibatch in cross validation
-      id: num_minibatches
-      type:
-      - int
-    return:
-      description: True if training should continue, False otherwise.
-  type: method
-  uid: cntk.train.training_session.TrainingSession.on_cross_validation_end
-- class: cntk.train.training_session.TrainingSession
-  fullName: cntk.train.training_session.TrainingSession.train
-  langs:
-  - python
-  module: cntk.train.training_session
-  name: train(device=None)
+  signature: on_cross_validation_end(index, average_error, num_samples, num_minibatches)
+  parameters:
+  - name: index
+    description: index of the current callback.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: average_error
+    description: average error for the cross validation
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: num_samples
+    description: number of samples in cross validation
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: num_minibatches
+    description: number of minibatch in cross validation
+    isRequired: true
+    types:
+    - <xref:int>
+  return:
+    description: True if training should continue, False otherwise.
+- uid: cntk.train.training_session.TrainingSession.train
+  name: train
   summary: Perform training on a specified device.
-  syntax:
-    content: train(device=None)
-    parameters:
-    - description: 'the device descriptor containing
+  signature: train(device=None)
+  parameters:
+  - name: device
+    description: 'the device descriptor containing
 
-        the type and id of the device where training takes place.'
-      id: device
-      type:
-      - <xref:cntk.device.DeviceDescriptor>
-  type: method
-  uid: cntk.train.training_session.TrainingSession.train
-references:
-- fullName: cntk.train.training_session.TrainingSession.on_cross_validation_end
-  isExternal: false
-  name: on_cross_validation_end(index, average_error, num_samples, num_minibatches)
-  parent: cntk.train.training_session.TrainingSession
-  uid: cntk.train.training_session.TrainingSession.on_cross_validation_end
-- fullName: cntk.train.training_session.TrainingSession.train
-  isExternal: false
-  name: train(device=None)
-  parent: cntk.train.training_session.TrainingSession
-  uid: cntk.train.training_session.TrainingSession.train
-- fullName: int, tuple
-  name: int, tuple
-  spec.python:
-  - fullName: int
-    name: int
-    uid: int
-  - fullName: ', '
-    name: ', '
-  - fullName: tuple
-    name: tuple
-    uid: tuple
-  uid: int, tuple
+      the type and id of the device where training takes place.'
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>

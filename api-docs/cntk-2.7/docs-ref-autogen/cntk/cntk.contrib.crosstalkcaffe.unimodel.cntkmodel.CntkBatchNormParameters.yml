@@ -1,20 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkBatchNormParameters
-  fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkBatchNormParameters
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
-  name: CntkBatchNormParameters
-  summary: The parameter definition of batch normalization op
-  syntax:
-    content: CntkBatchNormParameters()
-  type: class
-  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkBatchNormParameters
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkBatchNormParameters
+name: CntkBatchNormParameters
+fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkBatchNormParameters
+module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+inheritances:
+- cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
+summary: The parameter definition of batch normalization op
+constructor:
+  syntax: CntkBatchNormParameters()

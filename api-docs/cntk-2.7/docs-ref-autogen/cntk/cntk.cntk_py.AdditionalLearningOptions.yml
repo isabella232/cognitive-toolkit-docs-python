@@ -1,18 +1,9 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.cntk_py.AdditionalLearningOptions
-  fullName: cntk.cntk_py.AdditionalLearningOptions
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: AdditionalLearningOptions
-  summary: ''
-  syntax:
-    content: AdditionalLearningOptions()
-  type: class
-  uid: cntk.cntk_py.AdditionalLearningOptions
-references: []
+### YamlMime:PythonClass
+uid: cntk.cntk_py.AdditionalLearningOptions
+name: AdditionalLearningOptions
+fullName: cntk.cntk_py.AdditionalLearningOptions
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: AdditionalLearningOptions()

@@ -1,37 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.tests.attributes_test
-  - cntk.tests.axis_test
-  - cntk.tests.device_test
-  - cntk.tests.persist_test
-  fullName: cntk.tests
-  kind: import
-  langs:
-  - python
-  module: cntk.tests
-  name: tests
-  type: package
-  uid: cntk.tests
-references:
-- fullName: cntk.tests.attributes_test
-  isExternal: false
-  name: attributes_test
-  parent: cntk.tests
-  uid: cntk.tests.attributes_test
-- fullName: cntk.tests.axis_test
-  isExternal: false
-  name: axis_test
-  parent: cntk.tests
-  uid: cntk.tests.axis_test
-- fullName: cntk.tests.device_test
-  isExternal: false
-  name: device_test
-  parent: cntk.tests
-  uid: cntk.tests.device_test
-- fullName: cntk.tests.persist_test
-  isExternal: false
-  name: persist_test
-  parent: cntk.tests
-  uid: cntk.tests.persist_test
+### YamlMime:PythonPackage
+uid: cntk.tests
+name: tests
+fullName: cntk.tests
+type: import
+modules:
+- cntk.tests.attributes_test
+- cntk.tests.axis_test
+- cntk.tests.device_test
+- cntk.tests.persist_test

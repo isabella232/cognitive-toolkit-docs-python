@@ -1,50 +1,14 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py.UserBackPropState.create
-  - cntk.cntk_py.UserBackPropState.data
-  class: cntk.cntk_py.UserBackPropState
-  fullName: cntk.cntk_py.UserBackPropState
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.cntk_py.BackPropState
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: UserBackPropState
-  summary: ''
-  syntax:
-    content: UserBackPropState(*args, **kwargs)
-  type: class
-  uid: cntk.cntk_py.UserBackPropState
-- class: cntk.cntk_py.UserBackPropState
-  fullName: cntk.cntk_py.UserBackPropState.create
-  langs:
-  - python
-  module: cntk.cntk_py
+### YamlMime:PythonClass
+uid: cntk.cntk_py.UserBackPropState
+name: UserBackPropState
+fullName: cntk.cntk_py.UserBackPropState
+module: cntk.cntk_py
+inheritances:
+- cntk.cntk_py.BackPropState
+constructor:
+  syntax: UserBackPropState(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.UserBackPropState.create
   name: create
-  syntax: {}
-  type: method
-  uid: cntk.cntk_py.UserBackPropState.create
-- class: cntk.cntk_py.UserBackPropState
-  fullName: cntk.cntk_py.UserBackPropState.data
-  langs:
-  - python
-  module: cntk.cntk_py
+- uid: cntk.cntk_py.UserBackPropState.data
   name: data
-  syntax: {}
-  type: method
-  uid: cntk.cntk_py.UserBackPropState.data
-references:
-- fullName: cntk.cntk_py.UserBackPropState.create
-  isExternal: false
-  name: create
-  parent: cntk.cntk_py.UserBackPropState
-  uid: cntk.cntk_py.UserBackPropState.create
-- fullName: cntk.cntk_py.UserBackPropState.data
-  isExternal: false
-  name: data
-  parent: cntk.cntk_py.UserBackPropState
-  uid: cntk.cntk_py.UserBackPropState.data

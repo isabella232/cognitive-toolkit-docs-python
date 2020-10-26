@@ -1,29 +1,9 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.cntk_py.MinibatchSourceConfig
-  fullName: cntk.cntk_py.MinibatchSourceConfig
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: MinibatchSourceConfig
-  summary: '
-
-
-
-
-
-
-
-
-
-
-    '
-  syntax:
-    content: MinibatchSourceConfig(deserializers, randomize=True)
-  type: class
-  uid: cntk.cntk_py.MinibatchSourceConfig
-references: []
+### YamlMime:PythonClass
+uid: cntk.cntk_py.MinibatchSourceConfig
+name: MinibatchSourceConfig
+fullName: cntk.cntk_py.MinibatchSourceConfig
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: MinibatchSourceConfig(deserializers, randomize=True)

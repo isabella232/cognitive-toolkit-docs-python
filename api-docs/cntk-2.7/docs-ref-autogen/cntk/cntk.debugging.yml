@@ -1,91 +1,35 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.debugging.dump_function
-  - cntk.debugging.dump_signature
-  - cntk.debugging.force_deterministic
-  - cntk.debugging.debug
-  - cntk.debugging.profiler
-  - cntk.debugging.tests
-  fullName: cntk.debugging
-  kind: import
-  langs:
-  - python
-  module: cntk.debugging
-  name: debugging
-  type: package
-  uid: cntk.debugging
-- fullName: cntk.debugging.dump_function
-  langs:
-  - python
-  module: cntk.debugging
-  name: dump_function(root, tag=None)
-  syntax:
-    content: dump_function(root, tag=None)
-    parameters:
-    - id: root
-    - defaultValue: None
-      id: tag
-  type: function
-  uid: cntk.debugging.dump_function
-- fullName: cntk.debugging.dump_signature
-  langs:
-  - python
-  module: cntk.debugging
-  name: dump_signature(root, tag=None)
+### YamlMime:PythonPackage
+uid: cntk.debugging
+name: debugging
+fullName: cntk.debugging
+type: import
+functions:
+- uid: cntk.debugging.dump_function
+  name: dump_function
+  signature: dump_function(root, tag=None)
+  parameters:
+  - name: root
+  - name: tag
+    defaultValue: None
+- uid: cntk.debugging.dump_signature
+  name: dump_signature
   summary: Debug helper that prints the signature of a Function.
-  syntax:
-    content: dump_signature(root, tag=None)
-    parameters:
-    - id: root
-    - defaultValue: None
-      id: tag
-  type: function
-  uid: cntk.debugging.dump_signature
-- fullName: cntk.debugging.force_deterministic
-  langs:
-  - python
-  module: cntk.debugging
-  name: force_deterministic(seed)
+  signature: dump_signature(root, tag=None)
+  parameters:
+  - name: root
+  - name: tag
+    defaultValue: None
+- uid: cntk.debugging.force_deterministic
+  name: force_deterministic
   summary: Force most of the computation nodes to run deterministically.
-  syntax:
-    content: force_deterministic(seed)
-    parameters:
-    - description: set the random seed for all random ops in the graph and readers.
-      id: seed
-      type:
-      - int
-  type: function
-  uid: cntk.debugging.force_deterministic
-references:
-- fullName: cntk.debugging.dump_function
-  isExternal: false
-  name: dump_function(root, tag=None)
-  parent: cntk.debugging
-  uid: cntk.debugging.dump_function
-- fullName: cntk.debugging.dump_signature
-  isExternal: false
-  name: dump_signature(root, tag=None)
-  parent: cntk.debugging
-  uid: cntk.debugging.dump_signature
-- fullName: cntk.debugging.force_deterministic
-  isExternal: false
-  name: force_deterministic(seed)
-  parent: cntk.debugging
-  uid: cntk.debugging.force_deterministic
-- fullName: cntk.debugging.debug
-  isExternal: false
-  name: debug
-  parent: cntk.debugging
-  uid: cntk.debugging.debug
-- fullName: cntk.debugging.profiler
-  isExternal: false
-  name: profiler
-  parent: cntk.debugging
-  uid: cntk.debugging.profiler
-- fullName: cntk.debugging.tests
-  isExternal: false
-  name: tests
-  parent: cntk.debugging
-  uid: cntk.debugging.tests
+  signature: force_deterministic(seed)
+  parameters:
+  - name: seed
+    description: set the random seed for all random ops in the graph and readers.
+    types:
+    - <xref:int>
+packages:
+- cntk.debugging.tests
+modules:
+- cntk.debugging.debug
+- cntk.debugging.profiler

@@ -1,20 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
-  fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
-  name: CntkParameters
-  summary: 'The parameter of all CNTK op
-
-    '
-  syntax:
-    content: CntkParameters()
-  type: class
-  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
+name: CntkParameters
+fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
+module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+inheritances:
+- builtins.object
+summary: The parameter of all CNTK op
+constructor:
+  syntax: CntkParameters()

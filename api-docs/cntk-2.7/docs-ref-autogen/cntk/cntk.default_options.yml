@@ -1,141 +1,58 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.default_options.default_options
-  - cntk.default_options.default_options_for
-  - cntk.default_options.default_override_or
-  - cntk.default_options.get_default_override
-  - cntk.default_options.get_global_option
-  - cntk.default_options.is_default_override
-  - cntk.default_options.set_global_option
-  fullName: cntk.default_options
-  langs:
-  - python
-  module: cntk.default_options
+### YamlMime:PythonModule
+uid: cntk.default_options
+name: default_options
+fullName: cntk.default_options
+summary: 'Default options of CNTK functions.
+
+
+
+
+  Usage:
+
+
+
+  * ``with default_options():``, and
+
+  * ``with default_options_for():``'
+functions:
+- uid: cntk.default_options.default_options
   name: default_options
-  summary: 'Default options of CNTK functions.
-
-
-
-
-    Usage:
-
-
-
-    * ``with default_options():``, and
-
-    * ``with default_options_for():``'
-  type: module
-  uid: cntk.default_options
-- fullName: cntk.default_options.default_options
-  langs:
-  - python
-  module: cntk.default_options
-  name: default_options(**kwargs)
-  syntax:
-    content: default_options(**kwargs)
-  type: function
-  uid: cntk.default_options.default_options
-- fullName: cntk.default_options.default_options_for
-  langs:
-  - python
-  module: cntk.default_options
-  name: default_options_for(functions, **kwargs)
-  syntax:
-    content: default_options_for(functions, **kwargs)
-    parameters:
-    - id: functions
-  type: function
-  uid: cntk.default_options.default_options_for
-- fullName: cntk.default_options.get_default_override
-  langs:
-  - python
-  module: cntk.default_options
-  name: get_default_override(function_or_class, **kwargs)
+  signature: default_options(**kwargs)
+- uid: cntk.default_options.default_options_for
+  name: default_options_for
+  signature: default_options_for(functions, **kwargs)
+  parameters:
+  - name: functions
+- uid: cntk.default_options.get_default_override
+  name: get_default_override
   summary: 'Looks up an option default override.
 
     Meant to be used inside functions that use this facility.'
-  syntax:
-    content: get_default_override(function_or_class, **kwargs)
-    parameters:
-    - description: "the function that calls this.\nFor example:\n\n<!-- literal_block\
-        \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
-        : [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   def Convolution(args,\
-        \ init=default_override_or(glorot_uniform()), activation=default_override_or(identity),\
-        \ pad=default_override_or(False)):\n   init = _get_default_override(Convolution,\
-        \ init=init) # pass default under the same name\n   ````"
-      id: function
-  type: function
-  uid: cntk.default_options.get_default_override
-- fullName: cntk.default_options.get_global_option
-  langs:
-  - python
-  module: cntk.default_options
-  name: get_global_option(key, default_value)
-  syntax:
-    content: get_global_option(key, default_value)
-    parameters:
-    - id: key
-    - id: default_value
-  type: function
-  uid: cntk.default_options.get_global_option
-- fullName: cntk.default_options.is_default_override
-  langs:
-  - python
-  module: cntk.default_options
-  name: is_default_override(value)
-  syntax:
-    content: is_default_override(value)
-    parameters:
-    - id: value
-  type: function
-  uid: cntk.default_options.is_default_override
-- fullName: cntk.default_options.set_global_option
-  langs:
-  - python
-  module: cntk.default_options
-  name: set_global_option(key, value)
-  syntax:
-    content: set_global_option(key, value)
-    parameters:
-    - id: key
-    - id: value
-  type: function
-  uid: cntk.default_options.set_global_option
-references:
-- fullName: cntk.default_options.default_options
-  isExternal: false
-  name: default_options(**kwargs)
-  parent: cntk.default_options
-  uid: cntk.default_options.default_options
-- fullName: cntk.default_options.default_options_for
-  isExternal: false
-  name: default_options_for(functions, **kwargs)
-  parent: cntk.default_options
-  uid: cntk.default_options.default_options_for
-- fullName: cntk.default_options.default_override_or
-  isExternal: false
-  name: default_override_or
-  parent: cntk.default_options
-  uid: cntk.default_options.default_override_or
-- fullName: cntk.default_options.get_default_override
-  isExternal: false
-  name: get_default_override(function_or_class, **kwargs)
-  parent: cntk.default_options
-  uid: cntk.default_options.get_default_override
-- fullName: cntk.default_options.get_global_option
-  isExternal: false
-  name: get_global_option(key, default_value)
-  parent: cntk.default_options
-  uid: cntk.default_options.get_global_option
-- fullName: cntk.default_options.is_default_override
-  isExternal: false
-  name: is_default_override(value)
-  parent: cntk.default_options
-  uid: cntk.default_options.is_default_override
-- fullName: cntk.default_options.set_global_option
-  isExternal: false
-  name: set_global_option(key, value)
-  parent: cntk.default_options
-  uid: cntk.default_options.set_global_option
+  signature: get_default_override(function_or_class, **kwargs)
+  parameters:
+  - name: function
+    description: "the function that calls this.\nFor example:\n\n<!-- literal_block\
+      \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
+      : [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   def Convolution(args, init=default_override_or(glorot_uniform()),\
+      \ activation=default_override_or(identity), pad=default_override_or(False)):\n\
+      \   init = _get_default_override(Convolution, init=init) # pass default under\
+      \ the same name\n   ````"
+- uid: cntk.default_options.get_global_option
+  name: get_global_option
+  signature: get_global_option(key, default_value)
+  parameters:
+  - name: key
+  - name: default_value
+- uid: cntk.default_options.is_default_override
+  name: is_default_override
+  signature: is_default_override(value)
+  parameters:
+  - name: value
+- uid: cntk.default_options.set_global_option
+  name: set_global_option
+  signature: set_global_option(key, value)
+  parameters:
+  - name: key
+  - name: value
+classes:
+- cntk.default_options.default_override_or

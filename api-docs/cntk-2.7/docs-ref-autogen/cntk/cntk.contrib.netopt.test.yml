@@ -1,14 +1,6 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  fullName: cntk.contrib.netopt.test
-  kind: import
-  langs:
-  - python
-  module: cntk.contrib.netopt.test
-  name: test
-  summary: Tests for netowrk optimization alogorithms.
-  type: package
-  uid: cntk.contrib.netopt.test
-references: []
+### YamlMime:PythonPackage
+uid: cntk.contrib.netopt.test
+name: test
+fullName: cntk.contrib.netopt.test
+summary: Tests for netowrk optimization alogorithms.
+type: import

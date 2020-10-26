@@ -1,20 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.deeprl.tests.spaces.Discrete
-  fullName: cntk.contrib.deeprl.tests.spaces.Discrete
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.spaces
-  name: Discrete
-  summary: 'Fake gym.spaces.discrete.Discrete to remove dependency on OpenAI gym.
-
-    '
-  syntax:
-    content: Discrete(n)
-  type: class
-  uid: cntk.contrib.deeprl.tests.spaces.Discrete
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.spaces.Discrete
+name: Discrete
+fullName: cntk.contrib.deeprl.tests.spaces.Discrete
+module: cntk.contrib.deeprl.tests.spaces
+inheritances:
+- builtins.object
+summary: Fake gym.spaces.discrete.Discrete to remove dependency on OpenAI gym.
+constructor:
+  syntax: Discrete(n)

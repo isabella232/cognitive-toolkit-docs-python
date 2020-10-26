@@ -1,24 +1,7 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.tests.tabular_qlearning_test.FakeTabularQLearning
-  - cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
-  fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.tabular_qlearning_test
-  name: tabular_qlearning_test
-  type: module
-  uid: cntk.contrib.deeprl.tests.tabular_qlearning_test
-references:
-- fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.FakeTabularQLearning
-  isExternal: false
-  name: FakeTabularQLearning
-  parent: cntk.contrib.deeprl.tests.tabular_qlearning_test
-  uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.FakeTabularQLearning
-- fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
-  isExternal: false
-  name: TabularQLearningTest
-  parent: cntk.contrib.deeprl.tests.tabular_qlearning_test
-  uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.tabular_qlearning_test
+name: tabular_qlearning_test
+fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test
+classes:
+- cntk.contrib.deeprl.tests.tabular_qlearning_test.FakeTabularQLearning
+- cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest

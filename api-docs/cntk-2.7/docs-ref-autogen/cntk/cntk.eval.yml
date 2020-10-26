@@ -1,26 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.eval.evaluator
-  - cntk.eval.tests
-  fullName: cntk.eval
-  kind: import
-  langs:
-  - python
-  module: cntk.eval
-  name: eval
-  summary: Utilities for model evaluation.
-  type: package
-  uid: cntk.eval
-references:
-- fullName: cntk.eval.evaluator
-  isExternal: false
-  name: evaluator
-  parent: cntk.eval
-  uid: cntk.eval.evaluator
-- fullName: cntk.eval.tests
-  isExternal: false
-  name: tests
-  parent: cntk.eval
-  uid: cntk.eval.tests
+### YamlMime:PythonPackage
+uid: cntk.eval
+name: eval
+fullName: cntk.eval
+summary: Utilities for model evaluation.
+type: import
+packages:
+- cntk.eval.tests
+modules:
+- cntk.eval.evaluator
