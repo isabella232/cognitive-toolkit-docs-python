@@ -1,29 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.misc.converter
-  - cntk.misc.optimized_rnnstack_converter
-  fullName: cntk.misc
-  kind: import
-  langs:
-  - python
-  module: cntk.misc
-  name: misc
-  summary: 'Miscellaneous utilities for CNTK, e.g. filtering and converting nodes
-    in CNTK computation graph.
-
-    '
-  type: package
-  uid: cntk.misc
-references:
-- fullName: cntk.misc.converter
-  isExternal: false
-  name: converter
-  parent: cntk.misc
-  uid: cntk.misc.converter
-- fullName: cntk.misc.optimized_rnnstack_converter
-  isExternal: false
-  name: optimized_rnnstack_converter
-  parent: cntk.misc
-  uid: cntk.misc.optimized_rnnstack_converter
+### YamlMime:PythonPackage
+uid: cntk.misc
+name: misc
+fullName: cntk.misc
+summary: Miscellaneous utilities for CNTK, e.g. filtering and converting nodes in
+  CNTK computation graph.
+type: import
+modules:
+- cntk.misc.converter
+- cntk.misc.optimized_rnnstack_converter

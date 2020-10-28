@@ -1,108 +1,48 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.device.DeviceDescriptor
-  - cntk.device.DeviceKind
-  - cntk.device.all_devices
-  - cntk.device.cpu
-  - cntk.device.get_gpu_properties
-  - cntk.device.gpu
-  - cntk.device.set_excluded_devices
-  - cntk.device.try_set_default_device
-  - cntk.device.use_default_device
-  fullName: cntk.device
-  langs:
-  - python
-  module: cntk.device
-  name: device
-  summary: 'Utilities to specify device on which CNTK computation can be executed.
-
-    '
-  type: module
-  uid: cntk.device
-- fullName: cntk.device.all_devices
-  langs:
-  - python
-  module: cntk.device
-  name: all_devices()
-  summary: 'Returns a device descriptor list with all the available devices
-
-    '
-  syntax:
-    content: all_devices()
-    return:
-      description: 'all device descriptors
-
-        '
-      type:
-      - <xref:cntk.device.DeviceDescriptor> list
-  type: function
-  uid: cntk.device.all_devices
-- fullName: cntk.device.cpu
-  langs:
-  - python
-  module: cntk.device
-  name: cpu()
-  summary: 'Returns CPU device descriptor
-
-    '
-  syntax:
-    content: cpu()
-    return:
-      description: 'CPU device descriptor
-
-        '
-      type:
-      - <xref:cntk.device.DeviceDescriptor>
-  type: function
-  uid: cntk.device.cpu
-- fullName: cntk.device.get_gpu_properties
-  langs:
-  - python
-  module: cntk.device
-  name: get_gpu_properties(device)
+### YamlMime:PythonModule
+uid: cntk.device
+name: device
+fullName: cntk.device
+summary: Utilities to specify device on which CNTK computation can be executed.
+functions:
+- uid: cntk.device.all_devices
+  name: all_devices
+  summary: Returns a device descriptor list with all the available devices
+  signature: all_devices()
+  return:
+    description: all device descriptors
+    types:
+    - <xref:cntk.device.DeviceDescriptor> list
+- uid: cntk.device.cpu
+  name: cpu
+  summary: Returns CPU device descriptor
+  signature: cpu()
+  return:
+    description: CPU device descriptor
+    types:
+    - <xref:cntk.device.DeviceDescriptor>
+- uid: cntk.device.get_gpu_properties
+  name: get_gpu_properties
   summary: 'Retrieves and returns additional properties (total memory, number of CUDA
 
     cores, etc.) for the specified GPU device. This method will raise an
 
-    exception if a CPU device is specified as an argument.
+    exception if a CPU device is specified as an argument.'
+  signature: get_gpu_properties(device)
+  parameters:
+  - name: device
+    description: 'a GPU device
 
-    '
-  syntax:
-    content: get_gpu_properties(device)
-    parameters:
-    - description: 'a GPU device
-
-        descriptor.
-
-        '
-      id: device
-  type: function
-  uid: cntk.device.get_gpu_properties
-- fullName: cntk.device.gpu
-  langs:
-  - python
-  module: cntk.device
-  name: gpu(device_id)
-  summary: 'Returns GPU device descriptor
-
-    '
-  syntax:
-    content: gpu(device_id)
-    return:
-      description: 'GPU device descriptor
-
-        '
-      type:
-      - <xref:cntk.device.DeviceDescriptor>
-  type: function
-  uid: cntk.device.gpu
-- fullName: cntk.device.set_excluded_devices
-  langs:
-  - python
-  module: cntk.device
-  name: set_excluded_devices(excluded_devices)
+      descriptor.'
+- uid: cntk.device.gpu
+  name: gpu
+  summary: Returns GPU device descriptor
+  signature: gpu(device_id)
+  return:
+    description: GPU device descriptor
+    types:
+    - <xref:cntk.device.DeviceDescriptor>
+- uid: cntk.device.set_excluded_devices
+  name: set_excluded_devices
   summary: 'Allows to specify a list of excluded devices that cannot be used as
 
     globally default (neither auto-selected nor explicitly specified by
@@ -116,27 +56,17 @@ items:
 
     <xref:cntk.device.use_default_device>), invoking this methods has no effect, it
 
-    becomes essentially a no-op.
+    becomes essentially a no-op.'
+  signature: set_excluded_devices(excluded_devices)
+  parameters:
+  - name: excluded_devices
+    description: 'a
 
-    '
-  syntax:
-    content: set_excluded_devices(excluded_devices)
-    parameters:
-    - description: 'a
-
-        list of device descriptors to exclude.
-
-        '
-      id: excluded_devices
-      type:
-      - list of <xref:cntk.device.DeviceDescriptor>
-  type: function
-  uid: cntk.device.set_excluded_devices
-- fullName: cntk.device.try_set_default_device
-  langs:
-  - python
-  module: cntk.device
-  name: try_set_default_device(new_default_device, acquire_device_lock=False)
+      list of device descriptors to exclude.'
+    types:
+    - list of <xref:cntk.device.DeviceDescriptor>
+- uid: cntk.device.try_set_default_device
+  name: try_set_default_device
   summary: "Tries to set the specified device as the globally default, optionally\n\
     acquiring an exclusive (cooperative) lock on the device (only a GPU device\ncan\
     \ be locked).\n\nThe default device can only be changed if it has not yet been\
@@ -152,34 +82,24 @@ items:
     \   * the specified device appears in the list of excluded devices; \n\n   * *acquire_device_lock*\
     \ is *True* and another process already holds a lock on the device; \n\n   * *acquire_device_lock*\
     \ is *True* and *new_default_device* corresponds to a CPU device (which cannot\
-    \ be locked). \n"
-  syntax:
-    content: try_set_default_device(new_default_device, acquire_device_lock=False)
-    parameters:
-    - description: 'a
+    \ be locked)."
+  signature: try_set_default_device(new_default_device, acquire_device_lock=False)
+  parameters:
+  - name: new_default_device
+    description: 'a
 
-        descriptor of the device to be used as a globally default.
+      descriptor of the device to be used as a globally default.'
+    types:
+    - <xref:cntk.device.DeviceDescriptor>
+  - name: acquire_device_lock
+    description: 'whether or not a lock
 
-        '
-      id: new_default_device
-      type:
-      - <xref:cntk.device.DeviceDescriptor>
-    - defaultValue: 'False'
-      description: 'whether or not a lock
-
-        should be acquired for the specified device.
-
-        '
-      id: acquire_device_lock
-      type:
-      - bool, defaults to False
-  type: function
-  uid: cntk.device.try_set_default_device
-- fullName: cntk.device.use_default_device
-  langs:
-  - python
-  module: cntk.device
-  name: use_default_device()
+      should be acquired for the specified device.'
+    defaultValue: 'False'
+    types:
+    - <xref:bool>, <xref:defaults to False>
+- uid: cntk.device.use_default_device
+  name: use_default_device
   summary: 'Freezes the default device of the current CNTK process disallowing further
 
     changes through calls to <xref:cntk.device.try_set_default_device>. This default
@@ -192,76 +112,15 @@ items:
 
     invocation, this methods will auto-select one of the available (non-locked)
 
-    devices as the default.
+    devices as the default.'
+  signature: use_default_device()
+  return:
+    description: 'descriptor of the globally
 
-    '
-  syntax:
-    content: use_default_device()
-    return:
-      description: 'descriptor of the globally
-
-        default device
-
-        '
-      type:
-      - <xref:cntk.device.DeviceDescriptor>
-  type: function
-  uid: cntk.device.use_default_device
-references:
-- fullName: cntk.device.DeviceDescriptor
-  isExternal: false
-  name: DeviceDescriptor
-  parent: cntk.device
-  uid: cntk.device.DeviceDescriptor
-- fullName: cntk.device.DeviceKind
-  isExternal: false
-  name: DeviceKind
-  parent: cntk.device
-  uid: cntk.device.DeviceKind
-- fullName: cntk.device.all_devices
-  isExternal: false
-  name: all_devices()
-  parent: cntk.device
-  uid: cntk.device.all_devices
-- fullName: cntk.device.cpu
-  isExternal: false
-  name: cpu()
-  parent: cntk.device
-  uid: cntk.device.cpu
-- fullName: cntk.device.get_gpu_properties
-  isExternal: false
-  name: get_gpu_properties(device)
-  parent: cntk.device
-  uid: cntk.device.get_gpu_properties
-- fullName: cntk.device.gpu
-  isExternal: false
-  name: gpu(device_id)
-  parent: cntk.device
-  uid: cntk.device.gpu
-- fullName: cntk.device.set_excluded_devices
-  isExternal: false
-  name: set_excluded_devices(excluded_devices)
-  parent: cntk.device
-  uid: cntk.device.set_excluded_devices
-- fullName: cntk.device.try_set_default_device
-  isExternal: false
-  name: try_set_default_device(new_default_device, acquire_device_lock=False)
-  parent: cntk.device
-  uid: cntk.device.try_set_default_device
-- fullName: cntk.device.use_default_device
-  isExternal: false
-  name: use_default_device()
-  parent: cntk.device
-  uid: cntk.device.use_default_device
-- fullName: bool, defaults to False
-  name: bool, defaults to False
-  spec.python:
-  - fullName: bool
-    name: bool
-    uid: bool
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to False
-    name: defaults to False
-    uid: defaults to False
-  uid: bool, defaults to False
+      default device'
+    types:
+    - <xref:cntk.device.DeviceDescriptor>
+classes:
+- cntk.device.DeviceDescriptor
+enums:
+- cntk.device.DeviceKind

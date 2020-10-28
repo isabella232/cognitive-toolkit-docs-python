@@ -1,32 +1,12 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py.float16.create
-  class: cntk.cntk_py.float16
-  fullName: cntk.cntk_py.float16
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: float16
-  syntax:
-    content: float16(*args)
-  type: class
-  uid: cntk.cntk_py.float16
-- class: cntk.cntk_py.float16
-  fullName: cntk.cntk_py.float16.create
-  langs:
-  - python
-  module: cntk.cntk_py
+### YamlMime:PythonClass
+uid: cntk.cntk_py.float16
+name: float16
+fullName: cntk.cntk_py.float16
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: float16(*args)
+methods:
+- uid: cntk.cntk_py.float16.create
   name: create
-  syntax: {}
-  type: method
-  uid: cntk.cntk_py.float16.create
-references:
-- fullName: cntk.cntk_py.float16.create
-  isExternal: false
-  name: create
-  parent: cntk.cntk_py.float16
-  uid: cntk.cntk_py.float16.create

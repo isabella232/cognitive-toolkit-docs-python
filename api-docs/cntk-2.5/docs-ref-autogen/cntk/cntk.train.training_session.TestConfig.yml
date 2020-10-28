@@ -1,80 +1,44 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.train.training_session.TestConfig
-  fullName: cntk.train.training_session.TestConfig
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.cntk_py.TestConfig
-  langs:
-  - python
-  module: cntk.train.training_session
-  name: TestConfig
-  summary: 'A test configuration for the training session.
+### YamlMime:PythonClass
+uid: cntk.train.training_session.TestConfig
+name: TestConfig
+fullName: cntk.train.training_session.TestConfig
+module: cntk.train.training_session
+inheritances:
+- cntk.cntk_py.TestConfig
+summary: A test configuration for the training session.
+constructor:
+  syntax: TestConfig(minibatch_source=None, minibatch_size=32, model_inputs_to_streams=None,
+    criterion=None, source=None, mb_size=None)
+  parameters:
+  - name: minibatch_source
+    description: minibatch source used for cross validation
+    types:
+    - <xref:cntk.io.MinibatchSource>
+  - name: minibatch_size
+    description: minibatch schedule for cross validation
+    types:
+    - <xref:int>
+    - <xref:cntk.cntk_py.minibatch_size_schedule>, <xref:defaults to 32>
+  - name: model_inputs_to_streams
+    description: 'mapping between input variables and input streams
 
-    '
-  syntax:
-    content: TestConfig(minibatch_source=None, minibatch_size=32, model_inputs_to_streams=None,
-      criterion=None, source=None, mb_size=None)
-    parameters:
-    - description: 'minibatch source used for cross validation
+      If None, the mapping provided to the training session constructor is used.
 
-        '
-      id: minibatch_source
-      type:
-      - <xref:cntk.io.MinibatchSource>
-    - description: 'minibatch schedule for cross validation
+      Don''t specify this if *minibatch_source* is a tuple of numpy/scipy arrays.'
+    types:
+    - <xref:dict>
+  - name: criterion
+    description: 'criterion function.
 
-        '
-      id: minibatch_size
-      type:
-      - int
-      - <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32
-    - description: 'mapping between input variables and input streams
-
-        If None, the mapping provided to the training session constructor is used.
-
-        Don''t specify this if *minibatch_source* is a tuple of numpy/scipy arrays.
-
-        '
-      id: model_inputs_to_streams
-      type:
-      - dict
-    - description: 'criterion function.
-
-        Must be specified if *minibatch_source* is a tuple of numpy/scipy arrays.
-
-        '
-      id: criterion
-      type:
-      - <xref:cntk.ops.functions.Function>
-    - description: 'DEPRECATED, use minibatch_source instead
-
-        '
-      id: source
-      type:
-      - <xref:cntk.io.MinibatchSource>
-    - description: 'DEPRECATED, use minibatch_size instead
-
-        '
-      id: mb_size
-      type:
-      - int
-      - <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32
-  type: class
-  uid: cntk.train.training_session.TestConfig
-references:
-- fullName: <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32
-  name: minibatch_size_schedule>, defaults to 32
-  spec.python:
-  - fullName: <xref:cntk.cntk_py.minibatch_size_schedule>
-    name: minibatch_size_schedule>
-    uid: <xref:cntk.cntk_py.minibatch_size_schedule>
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to 32
-    name: defaults to 32
-    uid: defaults to 32
-  uid: <xref:cntk.cntk_py.minibatch_size_schedule>, defaults to 32
+      Must be specified if *minibatch_source* is a tuple of numpy/scipy arrays.'
+    types:
+    - <xref:cntk.ops.functions.Function>
+  - name: source
+    description: DEPRECATED, use minibatch_source instead
+    types:
+    - <xref:cntk.io.MinibatchSource>
+  - name: mb_size
+    description: DEPRECATED, use minibatch_size instead
+    types:
+    - <xref:int>
+    - <xref:cntk.cntk_py.minibatch_size_schedule>, <xref:defaults to 32>

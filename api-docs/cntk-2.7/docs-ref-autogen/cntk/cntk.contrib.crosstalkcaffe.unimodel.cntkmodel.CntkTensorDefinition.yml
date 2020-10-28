@@ -1,18 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition
-  fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
-  name: CntkTensorDefinition
-  summary: The definition of data blob
-  syntax:
-    content: CntkTensorDefinition()
-  type: class
-  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition
+name: CntkTensorDefinition
+fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkTensorDefinition
+module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+inheritances:
+- builtins.object
+summary: The definition of data blob
+constructor:
+  syntax: CntkTensorDefinition()

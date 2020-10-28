@@ -1,22 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.tensor.TensorOpsMixin
-  fullName: cntk.tensor.TensorOpsMixin
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.tensor
-  name: TensorOpsMixin
-  summary: 'This class defines math overloads so that CNTK nodes can be written in
-    math
+### YamlMime:PythonClass
+uid: cntk.tensor.TensorOpsMixin
+name: TensorOpsMixin
+fullName: cntk.tensor.TensorOpsMixin
+module: cntk.tensor
+inheritances:
+- builtins.object
+summary: 'This class defines math overloads so that CNTK nodes can be written in math
 
-    expressions.
-
-    '
-  syntax: {}
-  type: class
-  uid: cntk.tensor.TensorOpsMixin
-references: []
+  expressions.'

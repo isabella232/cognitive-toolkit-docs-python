@@ -1,13 +1,5 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  fullName: cntk.debugging.tests
-  kind: import
-  langs:
-  - python
-  module: cntk.debugging.tests
-  name: tests
-  type: package
-  uid: cntk.debugging.tests
-references: []
+### YamlMime:PythonPackage
+uid: cntk.debugging.tests
+name: tests
+fullName: cntk.debugging.tests
+type: import

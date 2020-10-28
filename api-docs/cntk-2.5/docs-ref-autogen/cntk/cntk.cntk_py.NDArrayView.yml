@@ -1,368 +1,85 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py.NDArrayView.alias
-  - cntk.cntk_py.NDArrayView.as_shape
-  - cntk.cntk_py.NDArrayView.as_string
-  - cntk.cntk_py.NDArrayView.asarray
-  - cntk.cntk_py.NDArrayView.change_device
-  - cntk.cntk_py.NDArrayView.copy_from
-  - cntk.cntk_py.NDArrayView.deep_clone
-  - cntk.cntk_py.NDArrayView.device
-  - cntk.cntk_py.NDArrayView.get_data_type
-  - cntk.cntk_py.NDArrayView.get_storage_format
-  - cntk.cntk_py.NDArrayView.is_read_only
-  - cntk.cntk_py.NDArrayView.is_slice_view
-  - cntk.cntk_py.NDArrayView.is_sparse
-  - cntk.cntk_py.NDArrayView.random_uniform_double
-  - cntk.cntk_py.NDArrayView.random_uniform_float
-  - cntk.cntk_py.NDArrayView.set_value
-  - cntk.cntk_py.NDArrayView.shape
-  - cntk.cntk_py.NDArrayView.slice_view
-  - cntk.cntk_py.NDArrayView.to_ndarray
-  class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: NDArrayView
-  summary: '
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    '
-  syntax:
-    content: NDArrayView(*args)
-  type: class
-  uid: cntk.cntk_py.NDArrayView
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.alias
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: alias(readOnly=False)
-  syntax:
-    content: alias(readOnly=False)
-    parameters:
-    - defaultValue: 'False'
-      id: readOnly
-  type: method
-  uid: cntk.cntk_py.NDArrayView.alias
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.as_shape
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: as_shape(newShape)
-  syntax:
-    content: as_shape(newShape)
-    parameters:
-    - id: newShape
-  type: method
-  uid: cntk.cntk_py.NDArrayView.as_shape
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.as_string
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: as_string()
-  syntax:
-    content: as_string()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.NDArrayView.as_string
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.asarray
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: asarray()
-  summary: 'Converts the instance''s data to a NumPy array.
-
-    '
-  syntax:
-    content: asarray()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.NDArrayView.asarray
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.change_device
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: change_device(device)
-  syntax:
-    content: change_device(device)
-    parameters:
-    - id: device
-  type: method
-  uid: cntk.cntk_py.NDArrayView.change_device
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.copy_from
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: copy_from(source)
-  syntax:
-    content: copy_from(source)
-    parameters:
-    - id: source
-  type: method
-  uid: cntk.cntk_py.NDArrayView.copy_from
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.deep_clone
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: deep_clone(*args)
-  syntax:
-    content: deep_clone(*args)
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.NDArrayView.deep_clone
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.device
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: device()
-  syntax:
-    content: device()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.NDArrayView.device
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.get_data_type
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: get_data_type()
-  syntax:
-    content: get_data_type()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.NDArrayView.get_data_type
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.get_storage_format
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: get_storage_format()
-  syntax:
-    content: get_storage_format()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.NDArrayView.get_storage_format
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.is_read_only
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: is_read_only()
-  syntax:
-    content: is_read_only()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.NDArrayView.is_read_only
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.is_slice_view
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: is_slice_view()
-  syntax:
-    content: is_slice_view()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.NDArrayView.is_slice_view
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.is_sparse
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: is_sparse()
-  syntax:
-    content: is_sparse()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.NDArrayView.is_sparse
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.random_uniform_double
-  langs:
-  - python
-  module: cntk.cntk_py
+### YamlMime:PythonClass
+uid: cntk.cntk_py.NDArrayView
+name: NDArrayView
+fullName: cntk.cntk_py.NDArrayView
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: NDArrayView(*args)
+methods:
+- uid: cntk.cntk_py.NDArrayView.alias
+  name: alias
+  signature: alias(readOnly=False)
+  parameters:
+  - name: readOnly
+    defaultValue: 'False'
+- uid: cntk.cntk_py.NDArrayView.as_shape
+  name: as_shape
+  signature: as_shape(newShape)
+  parameters:
+  - name: newShape
+    isRequired: true
+- uid: cntk.cntk_py.NDArrayView.as_string
+  name: as_string
+  signature: as_string()
+- uid: cntk.cntk_py.NDArrayView.asarray
+  name: asarray
+  summary: Converts the instance's data to a NumPy array.
+  signature: asarray()
+- uid: cntk.cntk_py.NDArrayView.change_device
+  name: change_device
+  signature: change_device(device)
+  parameters:
+  - name: device
+    isRequired: true
+- uid: cntk.cntk_py.NDArrayView.copy_from
+  name: copy_from
+  signature: copy_from(source)
+  parameters:
+  - name: source
+    isRequired: true
+- uid: cntk.cntk_py.NDArrayView.deep_clone
+  name: deep_clone
+  signature: deep_clone(*args)
+- uid: cntk.cntk_py.NDArrayView.device
+  name: device
+  signature: device()
+- uid: cntk.cntk_py.NDArrayView.get_data_type
+  name: get_data_type
+  signature: get_data_type()
+- uid: cntk.cntk_py.NDArrayView.get_storage_format
+  name: get_storage_format
+  signature: get_storage_format()
+- uid: cntk.cntk_py.NDArrayView.is_read_only
+  name: is_read_only
+  signature: is_read_only()
+- uid: cntk.cntk_py.NDArrayView.is_slice_view
+  name: is_slice_view
+  signature: is_slice_view()
+- uid: cntk.cntk_py.NDArrayView.is_sparse
+  name: is_sparse
+  signature: is_sparse()
+- uid: cntk.cntk_py.NDArrayView.random_uniform_double
   name: random_uniform_double
-  syntax: {}
-  type: method
-  uid: cntk.cntk_py.NDArrayView.random_uniform_double
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.random_uniform_float
-  langs:
-  - python
-  module: cntk.cntk_py
+- uid: cntk.cntk_py.NDArrayView.random_uniform_float
   name: random_uniform_float
-  syntax: {}
-  type: method
-  uid: cntk.cntk_py.NDArrayView.random_uniform_float
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.set_value
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: set_value(*args)
-  syntax:
-    content: set_value(*args)
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.NDArrayView.set_value
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.shape
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: shape()
-  syntax:
-    content: shape()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.NDArrayView.shape
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.slice_view
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: slice_view(startOffset, extent, readOnly=False)
-  syntax:
-    content: slice_view(startOffset, extent, readOnly=False)
-    parameters:
-    - id: startOffset
-    - id: extent
-    - defaultValue: 'False'
-      id: readOnly
-  type: method
-  uid: cntk.cntk_py.NDArrayView.slice_view
-- class: cntk.cntk_py.NDArrayView
-  fullName: cntk.cntk_py.NDArrayView.to_ndarray
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: to_ndarray()
-  syntax:
-    content: to_ndarray()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.NDArrayView.to_ndarray
-references:
-- fullName: cntk.cntk_py.NDArrayView.alias
-  isExternal: false
-  name: alias(readOnly=False)
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.alias
-- fullName: cntk.cntk_py.NDArrayView.as_shape
-  isExternal: false
-  name: as_shape(newShape)
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.as_shape
-- fullName: cntk.cntk_py.NDArrayView.as_string
-  isExternal: false
-  name: as_string()
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.as_string
-- fullName: cntk.cntk_py.NDArrayView.asarray
-  isExternal: false
-  name: asarray()
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.asarray
-- fullName: cntk.cntk_py.NDArrayView.change_device
-  isExternal: false
-  name: change_device(device)
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.change_device
-- fullName: cntk.cntk_py.NDArrayView.copy_from
-  isExternal: false
-  name: copy_from(source)
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.copy_from
-- fullName: cntk.cntk_py.NDArrayView.deep_clone
-  isExternal: false
-  name: deep_clone(*args)
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.deep_clone
-- fullName: cntk.cntk_py.NDArrayView.device
-  isExternal: false
-  name: device()
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.device
-- fullName: cntk.cntk_py.NDArrayView.get_data_type
-  isExternal: false
-  name: get_data_type()
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.get_data_type
-- fullName: cntk.cntk_py.NDArrayView.get_storage_format
-  isExternal: false
-  name: get_storage_format()
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.get_storage_format
-- fullName: cntk.cntk_py.NDArrayView.is_read_only
-  isExternal: false
-  name: is_read_only()
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.is_read_only
-- fullName: cntk.cntk_py.NDArrayView.is_slice_view
-  isExternal: false
-  name: is_slice_view()
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.is_slice_view
-- fullName: cntk.cntk_py.NDArrayView.is_sparse
-  isExternal: false
-  name: is_sparse()
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.is_sparse
-- fullName: cntk.cntk_py.NDArrayView.random_uniform_double
-  isExternal: false
-  name: random_uniform_double
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.random_uniform_double
-- fullName: cntk.cntk_py.NDArrayView.random_uniform_float
-  isExternal: false
-  name: random_uniform_float
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.random_uniform_float
-- fullName: cntk.cntk_py.NDArrayView.set_value
-  isExternal: false
-  name: set_value(*args)
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.set_value
-- fullName: cntk.cntk_py.NDArrayView.shape
-  isExternal: false
-  name: shape()
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.shape
-- fullName: cntk.cntk_py.NDArrayView.slice_view
-  isExternal: false
-  name: slice_view(startOffset, extent, readOnly=False)
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.slice_view
-- fullName: cntk.cntk_py.NDArrayView.to_ndarray
-  isExternal: false
-  name: to_ndarray()
-  parent: cntk.cntk_py.NDArrayView
-  uid: cntk.cntk_py.NDArrayView.to_ndarray
+- uid: cntk.cntk_py.NDArrayView.set_value
+  name: set_value
+  signature: set_value(*args)
+- uid: cntk.cntk_py.NDArrayView.shape
+  name: shape
+  signature: shape()
+- uid: cntk.cntk_py.NDArrayView.slice_view
+  name: slice_view
+  signature: slice_view(startOffset, extent, readOnly=False)
+  parameters:
+  - name: startOffset
+    isRequired: true
+  - name: extent
+    isRequired: true
+  - name: readOnly
+    defaultValue: 'False'
+- uid: cntk.cntk_py.NDArrayView.to_ndarray
+  name: to_ndarray
+  signature: to_ndarray()

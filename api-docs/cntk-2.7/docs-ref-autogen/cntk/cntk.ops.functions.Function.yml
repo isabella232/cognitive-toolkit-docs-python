@@ -1,110 +1,55 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.ops.functions.Function.argument_map
-  - cntk.ops.functions.Function.arguments
-  - cntk.ops.functions.Function.attributes
-  - cntk.ops.functions.Function.backward
-  - cntk.ops.functions.Function.block_arguments_mapping
-  - cntk.ops.functions.Function.block_root
-  - cntk.ops.functions.Function.clone
-  - cntk.ops.functions.Function.constants
-  - cntk.ops.functions.Function.custom_attributes
-  - cntk.ops.functions.Function.declare_args
-  - cntk.ops.functions.Function.eval
-  - cntk.ops.functions.Function.find_all_with_name
-  - cntk.ops.functions.Function.find_by_name
-  - cntk.ops.functions.Function.forward
-  - cntk.ops.functions.Function.grad
-  - cntk.ops.functions.Function.inputs
-  - cntk.ops.functions.Function.is_block
-  - cntk.ops.functions.Function.is_composite
-  - cntk.ops.functions.Function.is_primitive
-  - cntk.ops.functions.Function.load
-  - cntk.ops.functions.Function.name
-  - cntk.ops.functions.Function.op_name
-  - cntk.ops.functions.Function.output
-  - cntk.ops.functions.Function.outputs
-  - cntk.ops.functions.Function.parameters
-  - cntk.ops.functions.Function.placeholders
-  - cntk.ops.functions.Function.print_node_timing
-  - cntk.ops.functions.Function.register_udf_deserialize_callback
-  - cntk.ops.functions.Function.replace_placeholder
-  - cntk.ops.functions.Function.replace_placeholders
-  - cntk.ops.functions.Function.restore
-  - cntk.ops.functions.Function.root_function
-  - cntk.ops.functions.Function.save
-  - cntk.ops.functions.Function.set_attribute
-  - cntk.ops.functions.Function.signature
-  - cntk.ops.functions.Function.test
-  - cntk.ops.functions.Function.train
-  - cntk.ops.functions.Function.type
-  - cntk.ops.functions.Function.uid
-  - cntk.ops.functions.Function.update_signature
-  - cntk.ops.functions.Function.with_signature
-  class: cntk.ops.functions.Function
-  example:
-  - '
+### YamlMime:PythonClass
+uid: cntk.ops.functions.Function
+name: Function
+fullName: cntk.ops.functions.Function
+module: cntk.ops.functions
+inheritances:
+- cntk.cntk_py.Function
+summary: "Base class of all primitive tensor operators.\n\nIf it has only one output,\
+  \ one can invoke Variable methods on it, which it\nwill relay to its only output.\n\
+  \n*Function* objects can also be constructed directly from a Python lambda,\nby\
+  \ means of the *@Function* decorator.\nThe *Function*'s input signature is defined\
+  \ by the lambda.\n\nThe above form creates a CNTK Function whose arguments are placeholder\
+  \ variables.\nSuch a function can only be combined with other symbolic functions.\n\
+  \nTo train a Function or pass data to it, you need to declare the types\nof the\
+  \ arguments. In this case, the @Function decorator creates a CNTK Function\nwhose\
+  \ arguments are input variables.\n\nIf you use Python 3, Functions with types are\
+  \ declared using Python annotation syntax, e.g.:\n\n<!-- literal_block {\"ids\"\
+  : [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
+  : \"preserve\"} -->\n\n````\n\n   @Function\n   def f(x:Tensor[13]):\n       return\
+  \ x * x\n   ````\n\nIf you are working with Python 2.7, use CNTK's <xref:cntk.layers.typing.Signature>\
+  \ decorator instead:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
+  : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n````\n\
+  \n   >>> from cntk.layers.typing import *\n   >>> @Function\n   ... @Signature(Tensor[13])\n\
+  \   ... def f(x):\n   ...     return x * x\n   >>> print(f)\n   ElementTimes(x:\
+  \ Tensor[13]) -> Tensor[13]\n   ````\n\n`make_block=True` is an internal parameter\
+  \ used to implement <xref:cntk.ops.functions.BlockFunction>.\nIf *BlockFunction()*\
+  \ passes *True*, then the result will be wrapped\nin <xref:cntk.ops.as_block>, using\
+  \ the supplied `op_name` and `name` parameters, which are otherwise ignored."
+constructor:
+  syntax: Function(*args, **kwargs)
+examples:
+- '
 
-    ```
+  ```
 
 
-    >>> @Function
+  >>> @Function
 
-    ... def f(x):
+  ... def f(x):
 
-    ...     return x * x
+  ...     return x * x
 
-    >>> print(f)    # inspect the Function''s type
+  >>> print(f)    # inspect the Function''s type
 
-    ElementTimes(x: Sequence[tensor]) -> Sequence[tensor]
+  ElementTimes(x: Sequence[tensor]) -> Sequence[tensor]
 
-    ```
+  ```
 
-    '
-  fullName: cntk.ops.functions.Function
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: cntk.cntk_py.IDictionarySerializable
-    type: cntk.cntk_py.Function
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: Function
-  summary: "Base class of all primitive tensor operators.\n\nIf it has only one output,\
-    \ one can invoke Variable methods on it, which it\nwill relay to its only output.\n\
-    \n*Function* objects can also be constructed directly from a Python lambda,\n\
-    by means of the *@Function* decorator.\nThe *Function*'s input signature is defined\
-    \ by the lambda.\n\nThe above form creates a CNTK Function whose arguments are\
-    \ placeholder variables.\nSuch a function can only be combined with other symbolic\
-    \ functions.\n\nTo train a Function or pass data to it, you need to declare the\
-    \ types\nof the arguments. In this case, the @Function decorator creates a CNTK\
-    \ Function\nwhose arguments are input variables.\n\nIf you use Python 3, Functions\
-    \ with types are declared using Python annotation syntax, e.g.:\n\n<!-- literal_block\
-    \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
-    : [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   @Function\n   def f(x:Tensor[13]):\n\
-    \       return x * x\n   ````\n\nIf you are working with Python 2.7, use CNTK's\
-    \ <xref:cntk.layers.typing.Signature> decorator instead:\n\n<!-- literal_block\
-    \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
-    : [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   >>> from cntk.layers.typing\
-    \ import *\n   >>> @Function\n   ... @Signature(Tensor[13])\n   ... def f(x):\n\
-    \   ...     return x * x\n   >>> print(f)\n   ElementTimes(x: Tensor[13]) -> Tensor[13]\n\
-    \   ````\n\n`make_block=True` is an internal parameter used to implement <xref:cntk.ops.functions.BlockFunction>.\n\
-    If *BlockFunction()* passes *True*, then the result will be wrapped\nin <xref:cntk.ops.as_block>,\
-    \ using the supplied `op_name` and `name` parameters, which are otherwise ignored."
-  syntax:
-    content: Function(*args, **kwargs)
-  type: class
-  uid: cntk.ops.functions.Function
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.argument_map
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: argument_map(*args, **kwargs)
+  '
+methods:
+- uid: cntk.ops.functions.Function.argument_map
+  name: argument_map
   summary: 'Determines the {placeholder: variable} map for use with various call operations
 
     Returns a dictionary from this function''s placeholders to whatever arguments
@@ -119,57 +64,36 @@ items:
 
     This does not require the arguments to be Variables or Functions. It is also called
     by train_minibatch().'
-  syntax:
-    content: argument_map(*args, **kwargs)
-    parameters: []
-  type: method
-  uid: cntk.ops.functions.Function.argument_map
-- class: cntk.ops.functions.Function
-  example:
-  - "\n```\n\n>>> import cntk as C\n>>> a = C.input_variable((3,4), name='a')\n>>>\
-    \ b = C.input_variable((4,5), name='b')\n>>> c = C.times(a, b)\n>>> c.arguments\
-    \    # python order\n    (Input('a', [#], [3 x 4]), Input('b', [#], [4 x 5]))\n\
-    ```\n\n\n```\n\n>>> from cntk.default_options import set_global_option\n>>> set_global_option('python_operand_order',\
-    \ False)\n>>> c.arguments    # C++ order\n    (Input('b', [#], [4 x 5]), Input('a',\
-    \ [#], [3 x 4]))\n```\n"
-  fullName: cntk.ops.functions.Function.arguments
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: arguments
-  summary: 'List of all input variables of the Function that are not of type Parameter
-    or Constant.
+  signature: argument_map(*args, **kwargs)
+- uid: cntk.ops.functions.Function.backward
+  name: backward
+  summary: 'Backpropagates supplied `root_gradients` for one or more of the output
+
+    variables of the Function, to calculate gradients with respect to
+
+    `variables`. Formally, multiplies the values of `root_gradients` by
+
+    the Jacobian of the Function and returns the subset of the output that
+
+    corresponds to `variables`.
 
 
-    Note that due to the different matrix storage format in C++(column major) and
-    Python(row major),
 
-    the order of arguments for some ops(Times, TransposeTimes, and Gemm) in C++ and
-    Python are not the same.
+    > [!NOTE]
 
-    In previous CNTK versions, the default for this api was to return arguments in
-    C++ order.
+    > See <xref:cntk.ops.functions.Function.forward> for more examples
 
-    Now the default for this api is set to python order. This way it will return arguments
-    in the same order as they are fed into ops.
+    >
 
-    If you wish to still get arguments in C++ order, you can simply override the global
-    option.'
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.arguments
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.attributes
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: attributes
-  summary: List of the attributes of the function
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.attributes
-- class: cntk.ops.functions.Function
-  example:
+    > on passing input data.
+
+    >'
+  signature: backward(state, root_gradients, variables, as_numpy=True)
+  return:
+    description: mapping of `variables` to NumPy arrays
+    types:
+    - <xref:dict>
+  examples:
   - '
 
     ```
@@ -198,139 +122,40 @@ items:
     ```
 
     '
-  fullName: cntk.ops.functions.Function.backward
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: backward(state, root_gradients, variables, as_numpy=True)
-  summary: 'Backpropagates supplied `root_gradients` for one or more of the output
-
-    variables of the Function, to calculate gradients with respect to
-
-    `variables`. Formally, multiplies the values of `root_gradients` by
-
-    the Jacobian of the Function and returns the subset of the output that
-
-    corresponds to `variables`.
-
-
-
-    > [!NOTE]
-
-    > See <xref:cntk.ops.functions.Function.forward> for more examples
-
-    >
-
-    > on passing input data.
-
-    >'
-  syntax:
-    content: backward(state, root_gradients, variables, as_numpy=True)
-    return:
-      description: mapping of `variables` to NumPy arrays
-      type:
-      - dict
-  type: method
-  uid: cntk.ops.functions.Function.backward
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.block_arguments_mapping
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: block_arguments_mapping
-  summary: 'Returns the mapping from the arguments of the composite underlying this
-    block function
-
-    to the Variables that they are bound to in the outer graph of Functions that this
-
-    block Function is part of.'
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.block_arguments_mapping
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.block_root
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: block_root
-  summary: 'Returns the root of the Function graph underlying this block Function.
-
-    Throws an exception if this is not a block Function.'
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.block_root
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.clone
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: clone(method, substitutions=None)
+- uid: cntk.ops.functions.Function.clone
+  name: clone
   summary: 'Clones the function. The parameters of the Function are either cloned,
 
     shared or frozen as specified by the method argument and any variable
 
     substitutions requested are applied in the cloned Function instance.'
-  syntax:
-    content: clone(method, substitutions=None)
-    parameters:
-    - description: "one of\n\n* 'clone': the returned function gets its own copy of\
-        \ parameters (default) \n\n* 'share': the returned function shares its parameters\
-        \ with this function \n\n* 'freeze': parameters are cloned and made immutable\
-        \ (constant)."
-      id: method
-      type:
-      - <xref:cntk.ops.functions.CloneMethod>
-    - description: 'a dictionary mapping variables in this
+  signature: clone(method, substitutions=None)
+  parameters:
+  - name: method
+    description: "one of\n\n* 'clone': the returned function gets its own copy of\
+      \ parameters (default) \n\n* 'share': the returned function shares its parameters\
+      \ with this function \n\n* 'freeze': parameters are cloned and made immutable\
+      \ (constant)."
+    isRequired: true
+    types:
+    - <xref:cntk.ops.functions.CloneMethod>
+  - name: substitutions
+    description: 'a dictionary mapping variables in this
 
-        function to variables in the cloned function'
-      id: substitutions
-      type:
-      - dict
-    return:
-      description: the cloned Function
-      type:
-      - <xref:cntk.ops.functions.Function>
-  type: method
-  uid: cntk.ops.functions.Function.clone
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.constants
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: constants
-  summary: List of all *Constant* variables of this <xref:cntk.ops.functions.Function>
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.constants
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.custom_attributes
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: custom_attributes
-  summary: Get function custom attributes in cntk_py.Dictionary for both read and
-    write.
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.custom_attributes
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.declare_args
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: declare_args(*arg_types)
+      function to variables in the cloned function'
+    isRequired: true
+    types:
+    - <xref:dict>
+  return:
+    description: the cloned Function
+    types:
+    - <xref:cntk.ops.functions.Function>
+- uid: cntk.ops.functions.Function.declare_args
+  name: declare_args
   summary: Back-compat wrapper for update_signature() (beta12 and before).
-  syntax:
-    content: declare_args(*arg_types)
-    parameters: []
-  type: method
-  uid: cntk.ops.functions.Function.declare_args
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.eval
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: eval(arguments=None, outputs=None, device=None, as_numpy=True)
+  signature: declare_args(*arg_types)
+- uid: cntk.ops.functions.Function.eval
+  name: eval
   summary: 'Evaluate the Function''s outputs using the specified `arguments` as input.
 
 
@@ -344,28 +169,49 @@ items:
     > passing input data.
 
     >'
-  syntax:
-    content: eval(arguments=None, outputs=None, device=None, as_numpy=True)
-    parameters:
-    - defaultValue: None
-      id: arguments
-    - defaultValue: None
-      id: outputs
-    - defaultValue: None
-      id: device
-    - defaultValue: 'True'
-      id: as_numpy
-    return:
-      description: 'Dict with keys of output variable names and values of
+  signature: eval(arguments=None, outputs=None, device=None, as_numpy=True)
+  parameters:
+  - name: arguments
+    defaultValue: None
+  - name: outputs
+    defaultValue: None
+  - name: device
+    defaultValue: None
+  - name: as_numpy
+    defaultValue: 'True'
+  return:
+    description: 'Dict with keys of output variable names and values of
 
-        output variable. A single NumPy array if there is only one output value.'
-      type:
-      - dict
-      - NumPy Array
-  type: method
-  uid: cntk.ops.functions.Function.eval
-- class: cntk.ops.functions.Function
-  example:
+      output variable. A single NumPy array if there is only one output value.'
+    types:
+    - <xref:dict>
+    - <xref:NumPy Array>
+- uid: cntk.ops.functions.Function.find_all_with_name
+  name: find_all_with_name
+  summary: 'Returns a list of primitive function with `name` in the graph
+
+    starting from this node. Throws an exception if `name` occurs
+
+    multiple times. If you expect only one function to be returned, use
+
+    <xref:cntk.ops.functions.find_by_name>.'
+  signature: find_all_with_name(name, depth=0)
+  parameters:
+  - name: name
+    description: names to look for
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: depth
+    description: 'how deep into the block hierarchy the DFS
+
+      algorithm should go into. Set to -1 for infinite depth.'
+    isRequired: true
+    types:
+    - <xref:int>, <xref:default 0>
+  return:
+    description: list of <xref:cntk.ops.functions.Function> objects matching `name`
+  examples:
   - '
 
     ```
@@ -388,40 +234,35 @@ items:
     ```
 
     '
-  fullName: cntk.ops.functions.Function.find_all_with_name
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: find_all_with_name(name, depth=0)
-  seealsoContent: '  <xref:cntk.ops.functions.find_by_name>
+  seeAlsoContent: '  <xref:cntk.ops.functions.find_by_name>
 
     '
-  summary: 'Returns a list of primitive function with `name` in the graph
+- uid: cntk.ops.functions.Function.find_by_name
+  name: find_by_name
+  summary: 'Returns a primitive function with `name` in the graph starting from
 
-    starting from this node. Throws an exception if `name` occurs
+    this node. Throws an exception if `name` occurs multiple times. If
 
-    multiple times. If you expect only one function to be returned, use
+    you expect multiple functions to be returned, use
 
-    <xref:cntk.ops.functions.find_by_name>.'
-  syntax:
-    content: find_all_with_name(name, depth=0)
-    parameters:
-    - description: names to look for
-      id: name
-      type:
-      - str
-    - description: 'how deep into the block hierarchy the DFS
+    <xref:cntk.ops.functions.Function.find_all_with_name>.'
+  signature: find_by_name(name, depth=0)
+  parameters:
+  - name: name
+    description: names to look for
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: depth
+    description: 'how deep into the block hierarchy the DFS
 
-        algorithm should go into. Set to -1 for infinite depth.'
-      id: depth
-      type:
-      - int, default 0
-    return:
-      description: list of <xref:cntk.ops.functions.Function> objects matching `name`
-  type: method
-  uid: cntk.ops.functions.Function.find_all_with_name
-- class: cntk.ops.functions.Function
-  example:
+      algorithm should go into. Set to -1 for infinite depth.'
+    isRequired: true
+    types:
+    - <xref:int>, <xref:default 0>
+  return:
+    description: <xref:cntk.ops.functions.Function> object matching `name`
+  examples:
   - '
 
     ```
@@ -460,40 +301,91 @@ items:
     ```
 
     '
-  fullName: cntk.ops.functions.Function.find_by_name
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: find_by_name(name, depth=0)
-  seealsoContent: '  <xref:cntk.ops.functions.Function.find_all_with_name>
+  seeAlsoContent: '  <xref:cntk.ops.functions.Function.find_all_with_name>
 
     '
-  summary: 'Returns a primitive function with `name` in the graph starting from
+- uid: cntk.ops.functions.Function.forward
+  name: forward
+  summary: 'Computes the values of speficied variables in `outputs`, using values
 
-    this node. Throws an exception if `name` occurs multiple times. If
+    provided in `arguments` that correspond to each input *Variable* of
 
-    you expect multiple functions to be returned, use
+    the function (i.e. those that have `is_input = True`).'
+  signature: forward(arguments, outputs=None, keep_for_backward=None, device=None,
+    as_numpy=True)
+  parameters:
+  - name: arguments
+    description: "maps variables to their input data. The interpretation depends on\n\
+      the input type:\n\n   * dict: keys are input variable or names, and values are\
+      \ the input data. To specify a minibatch, provide a list of arrays. The shape\
+      \ of each array must be compatible with the shape of the dictionary key. If\
+      \ the array denotes a sequence then the elements of the sequence are grouped\
+      \ along axis 0. \n\n   * any other type: if node has a unique input, arguments\
+      \ is mapped to this input. \n\nFor nodes with more than one input, only dict\
+      \ is allowed.\n\nIn both cases, every sample in the data will be interpreted\n\
+      as a new sequence.\n\nSequences can be marked as continuations of the same sequence\
+      \ in\nthe previous minibatch (that is the sequence in the same slot).\nThere\
+      \ are two possibilities for this:\n\n   * specifying arguments as a *tuple*\
+      \ where the first element is used as arguments and the second one will be used\
+      \ as a list of bools, denoting whether a sequence is a new one (*True*) or a\
+      \ continuation of the sequence in the same slot of the previous minibatch (*False*).\
+      \ This will be applied to all batches. \n\n   * specifying arguments as a dictionary\
+      \ of variables to tuples where the first element is used as arguments and the\
+      \ second one will be used as a list of bools, denoting whether a sequence is\
+      \ a new one (*True*) or a continuation of the sequence in the same slot of the\
+      \ previous minibatch (*False*). This will be applied to all batches. \n\nData\
+      \ should be either NumPy arrays or a\n<xref:cntk.io.MinibatchData> instance."
+    isRequired: true
+  - name: outputs
+    description: 'outputs to fetch values for. If not
 
-    <xref:cntk.ops.functions.Function.find_all_with_name>.'
-  syntax:
-    content: find_by_name(name, depth=0)
-    parameters:
-    - description: names to look for
-      id: name
-      type:
-      - str
-    - description: 'how deep into the block hierarchy the DFS
+      set, all outputs of the function will be fetched.'
+    isRequired: true
+    types:
+    - <xref:iterable>, <xref:optional>
+  - name: keep_for_backward
+    description: 'the subset of the
 
-        algorithm should go into. Set to -1 for infinite depth.'
-      id: depth
-      type:
-      - int, default 0
-    return:
-      description: <xref:cntk.ops.functions.Function> object matching `name`
-  type: method
-  uid: cntk.ops.functions.Function.find_by_name
-- class: cntk.ops.functions.Function
-  example:
+      Function''s output variables for which gradients shall be calculated
+
+      in a subsequent backward call. If *None*, the returned state will
+
+      be *None* and a subsequent call to <xref:cntk.ops.functions.Function.backward>
+      will not be
+
+      possible.'
+    isRequired: true
+    types:
+    - <xref:set>, <xref:default None>
+  - name: device
+    description: 'the device
+
+      descriptor that contains the type and id of the device on which the
+
+      computation is. If *None*, the default device is used.'
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>, <xref:default None>
+  - name: as_numpy
+    description: 'whether to return the result as a NumPy array. Default True.
+
+      Specifying this as False returns a CNTK Value which avoids a
+
+      costly conversion but returns a somewhat opaque object. Also, the Value objects
+
+      are temporary and only guaranteed to be valid until the next forward/eval/backward/grad
+      call.
+
+      You must explicitly clone the temporay Value objects if they need to be accessed
+      later.'
+    isRequired: true
+    types:
+    - <xref:bool>
+  return:
+    description: 'A tuple (BackPropState, map of outputs to NumPy arrays). The
+
+      BackPropState is a handle taken by <xref:cntk.ops.functions.Function.backward>.'
+  examples:
   - "\n```\n\n>>> # Doing the same, but with a CSR matrix from scipy.sparse\n>>> vocab_size\
     \ = 5\n>>> from scipy.sparse import csr_matrix\n>>> v = C.sequence.input_variable(shape=(vocab_size,),\
     \ is_sparse=True)\n>>> f = C.times(v, np.eye(vocab_size))\n>>> # Note that csr_matrix\
@@ -512,362 +404,129 @@ items:
     \ list(fv.values())[0]\n[array([[ 0.,  1.,  0.,  0.,  0.]], dtype=float32),\n\
     \ array([[ 0.,  0.,  1.,  0.,  0.], [ 0.,  0.,  0.,  0.,  1.]], dtype=float32)]\n\
     ```\n"
-  fullName: cntk.ops.functions.Function.forward
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: forward(arguments, outputs=None, keep_for_backward=None, device=None, as_numpy=True)
-  summary: 'Computes the values of speficied variables in `outputs`, using values
-
-    provided in `arguments` that correspond to each input *Variable* of
-
-    the function (i.e. those that have `is_input = True`).'
-  syntax:
-    content: forward(arguments, outputs=None, keep_for_backward=None, device=None,
-      as_numpy=True)
-    parameters:
-    - description: "maps variables to their input data. The interpretation depends\
-        \ on\nthe input type:\n\n   * dict: keys are input variable or names, and\
-        \ values are the input data. To specify a minibatch, provide a list of arrays.\
-        \ The shape of each array must be compatible with the shape of the dictionary\
-        \ key. If the array denotes a sequence then the elements of the sequence are\
-        \ grouped along axis 0. \n\n   * any other type: if node has a unique input,\
-        \ arguments is mapped to this input. \n\nFor nodes with more than one input,\
-        \ only dict is allowed.\n\nIn both cases, every sample in the data will be\
-        \ interpreted\nas a new sequence.\n\nSequences can be marked as continuations\
-        \ of the same sequence in\nthe previous minibatch (that is the sequence in\
-        \ the same slot).\nThere are two possibilities for this:\n\n   * specifying\
-        \ arguments as a *tuple* where the first element is used as arguments and\
-        \ the second one will be used as a list of bools, denoting whether a sequence\
-        \ is a new one (*True*) or a continuation of the sequence in the same slot\
-        \ of the previous minibatch (*False*). This will be applied to all batches.\
-        \ \n\n   * specifying arguments as a dictionary of variables to tuples where\
-        \ the first element is used as arguments and the second one will be used as\
-        \ a list of bools, denoting whether a sequence is a new one (*True*) or a\
-        \ continuation of the sequence in the same slot of the previous minibatch\
-        \ (*False*). This will be applied to all batches. \n\nData should be either\
-        \ NumPy arrays or a\n<xref:cntk.io.MinibatchData> instance."
-      id: arguments
-    - description: 'outputs to fetch values for. If not
-
-        set, all outputs of the function will be fetched.'
-      id: outputs
-      type:
-      - iterable, optional
-    - description: 'the subset of the
-
-        Function''s output variables for which gradients shall be calculated
-
-        in a subsequent backward call. If *None*, the returned state will
-
-        be *None* and a subsequent call to <xref:cntk.ops.functions.Function.backward>
-        will not be
-
-        possible.'
-      id: keep_for_backward
-      type:
-      - set, default None
-    - description: 'the device
-
-        descriptor that contains the type and id of the device on which the
-
-        computation is. If *None*, the default device is used.'
-      id: device
-      type:
-      - <xref:cntk.device.DeviceDescriptor>, default None
-    - description: 'whether to return the result as a NumPy array. Default True.
-
-        Specifying this as False returns a CNTK Value which avoids a
-
-        costly conversion but returns a somewhat opaque object. Also, the Value objects
-
-        are temporary and only guaranteed to be valid until the next forward/eval/backward/grad
-        call.
-
-        You must explicitly clone the temporay Value objects if they need to be accessed
-        later.'
-      id: as_numpy
-      type:
-      - bool
-    return:
-      description: 'A tuple (BackPropState, map of outputs to NumPy arrays). The
-
-        BackPropState is a handle taken by <xref:cntk.ops.functions.Function.backward>.'
-  type: method
-  uid: cntk.ops.functions.Function.forward
-- class: cntk.ops.functions.Function
-  example:
-  - "\n```\n\n>>> x = C.input_variable(shape=(1,), needs_gradient=True)\n>>> y = C.sqrt(x)\n\
-    >>> a = np.asarray([1,4,16],dtype=np.float32).reshape(3,1)\n>>> y.grad({x:a})\n\
-    array([[ 0.5  ],\n<BLANKLINE>\n       [ 0.25 ],\n<BLANKLINE>\n       [ 0.125]],\
-    \ dtype=float32)\n```\n"
-  fullName: cntk.ops.functions.Function.grad
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: grad(at, wrt=None, outputs=None, device=None, as_numpy=True, grad_root=None)
+- uid: cntk.ops.functions.Function.grad
+  name: grad
   summary: 'Computes the gradient of this Function at location `at` with respect to
     `wrt`.
 
     The Function must have a single output.'
-  syntax:
-    content: grad(at, wrt=None, outputs=None, device=None, as_numpy=True, grad_root=None)
-    parameters:
-    - description: mapping of the Function's arguments to values
-      id: at
-      type:
-      - dict
-    - description: 'list of Variables with respect to which the
+  signature: grad(at, wrt=None, outputs=None, device=None, as_numpy=True, grad_root=None)
+  parameters:
+  - name: at
+    description: mapping of the Function's arguments to values
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: wrt
+    description: 'list of Variables with respect to which the
 
-        gradient will be computed. If omitted, the gradients with
+      gradient will be computed. If omitted, the gradients with
 
-        respect to all arguments of this Function that need gradient will be computed.'
-      id: wrt
-      type:
-      - list, default None
-    - description: 'outputs (including intermediate outputs in the graph)
+      respect to all arguments of this Function that need gradient will be computed.'
+    isRequired: true
+    types:
+    - <xref:list>, <xref:default None>
+  - name: outputs
+    description: 'outputs (including intermediate outputs in the graph)
 
-        to fetch values for. If not specified, values for none of the outputs are
-        fetched.'
-      id: outputs
-      type:
-      - iterable, optional
-    - description: 'the device
+      to fetch values for. If not specified, values for none of the outputs are fetched.'
+    isRequired: true
+    types:
+    - <xref:iterable>, <xref:optional>
+  - name: device
+    description: 'the device
 
-        descriptor that contains the type and id of the device on which the
+      descriptor that contains the type and id of the device on which the
 
-        computation is performed. If *None*, the default device is used.'
-      id: device
-      type:
-      - <xref:cntk.device.DeviceDescriptor>, default None
-    - description: 'whether to return the gradients as a NumPy array. Default True.
+      computation is performed. If *None*, the default device is used.'
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>, <xref:default None>
+  - name: as_numpy
+    description: 'whether to return the gradients as a NumPy array. Default True.
 
-        Specifying this as False returns a CNTK Value which avoids a
+      Specifying this as False returns a CNTK Value which avoids a
 
-        costly conversion but returns a somewhat opaque object. Also, the Value objects
+      costly conversion but returns a somewhat opaque object. Also, the Value objects
 
-        are temporary and only guaranteed to be valid until the next forward/eval/backward/grad
-        call.
+      are temporary and only guaranteed to be valid until the next forward/eval/backward/grad
+      call.
 
-        You must explicitly clone the temporay Value objects if they need to be accessed
-        later.'
-      id: as_numpy
-      type:
-      - bool, default True
-    - description: 'specify the root of gradients calculation.
+      You must explicitly clone the temporay Value objects if they need to be accessed
+      later.'
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:default True>
+  - name: grad_root
+    description: 'specify the root of gradients calculation.
 
-        If not specified, the output of this function will be used as gradient root.'
-      id: grad_root
-      type:
-      - <xref:cntk.variables.Variable>, optional
-    return:
-      description: 'Dict with keys of `wrt` variables and gradient values of
+      If not specified, the output of this function will be used as gradient root.'
+    isRequired: true
+    types:
+    - <xref:cntk.variables.Variable>, <xref:optional>
+  return:
+    description: 'Dict with keys of `wrt` variables and gradient values of
 
-        `wrt` variables. A single NumPy array if there is only one gradient value.
+      `wrt` variables. A single NumPy array if there is only one gradient value.
 
-        If `outputs` were specified (to fetch values for), this method returns a tuple
-        where the 2nd element
+      If `outputs` were specified (to fetch values for), this method returns a tuple
+      where the 2nd element
 
-        of the tuple is the `outputs` values; a dict with keys of specified `outputs`
-        variables and
+      of the tuple is the `outputs` values; a dict with keys of specified `outputs`
+      variables and
 
-        values of computed `outputs`, or a single NumPy array if there is only one
-        output value.
+      values of computed `outputs`, or a single NumPy array if there is only one output
+      value.
 
-        Each element has the same shape as the `wrt` or `outputs` variables including
-        dynamic axes
+      Each element has the same shape as the `wrt` or `outputs` variables including
+      dynamic axes
 
-        (such as the batch axis).'
-      type:
-      - dict
-      - NumPy Array
-      - a tuple of these
-  type: method
-  uid: cntk.ops.functions.Function.grad
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.inputs
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: inputs
-  summary: 'List of variables that are inputs of this function.
-
-    Note that ''inputs'' here denotes all Variables that feed into this Function
-
-    including any Parameter/Constant Variables that are children of this Function.'
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.inputs
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.is_block
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: is_block
-  summary: 'Returns a boolean indicating if this Function is a block function which
-    is basically
-
-    a composite encapsulated as an opaque block which appears as a primitive during
-
-    traversing the graph of Functions that this block is part of.'
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.is_block
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.is_composite
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: is_composite
-  summary: 'Returns a boolean indicating if this Function is a composite Function.
-
-    A composite Function is a Function that is composed of primitive Functions.'
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.is_composite
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.is_primitive
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: is_primitive
-  summary: 'Returns a boolean indicating if this Function is a primitive Function.
-
-    A primitive Function is the lowest level building block for composite Function
-
-    graphs and is either a CNTK built-in operator, a composite Function encapsulated
-
-    as a Block or a user-defined Function'
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.is_primitive
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.load
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: 'load(model, device=None, format=<ModelFormat.CNTKv2: 0>)'
+      (such as the batch axis).'
+    types:
+    - <xref:dict>
+    - <xref:NumPy Array>
+    - <xref:a tuple of these>
+  examples:
+  - "\n```\n\n>>> x = C.input_variable(shape=(1,), needs_gradient=True)\n>>> y = C.sqrt(x)\n\
+    >>> a = np.asarray([1,4,16],dtype=np.float32).reshape(3,1)\n>>> y.grad({x:a})\n\
+    array([[ 0.5  ],\n<BLANKLINE>\n       [ 0.25 ],\n<BLANKLINE>\n       [ 0.125]],\
+    \ dtype=float32)\n```\n"
+- uid: cntk.ops.functions.Function.load
+  name: load
   summary: Load the `model`, that has been saved using <xref:cntk.ops.functions.Function.save>.
-  syntax:
-    content: 'load(model, device=None, format=<ModelFormat.CNTKv2: 0>)'
-    parameters:
-    - description: 'either a file path of a model file or a byte buffer
+  signature: 'load(model, device=None, format=<ModelFormat.CNTKv2: 0>)'
+  parameters:
+  - name: model
+    description: 'either a file path of a model file or a byte buffer
 
-        containing the binary representation of a model.'
-      id: model
-      type:
-      - str, bytes
-      - bytearray
-    - description: specifies the device to allocate the model on.
-      id: device
-      type:
-      - <xref:cntk.device.DeviceDescriptor>, defaults to the current globally default
-        device
-    - description: 'specifies the format of the file to load.
+      containing the binary representation of a model.'
+    isRequired: true
+    types:
+    - <xref:str>, <xref:bytes>
+    - <xref:bytearray>
+  - name: device
+    description: specifies the device to allocate the model on.
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>, <xref:defaults to the current globally
+      default device>
+  - name: format
+    description: 'specifies the format of the file to load.
 
-        if the specified format is ONNX, then model must be a filename.'
-      id: format
-      type:
-      - <xref:cntk.ModelFormat>, defaults to CNTKv2 format
-    return:
-      description: root node
-  type: method
-  uid: cntk.ops.functions.Function.load
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.name
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: name
-  summary: Name of this function
-  syntax:
-    parameters:
-    - description: returns the name of the function.
-      id: getter
-      type:
-      - str
-    - description: 'sets the name of the function. Setting the name of a
-
-        Function is only allowed if the Function does not already have a
-
-        name. Calling this method, when this Function already has a name,
-
-        results in an exception.'
-      id: setter
-      type:
-      - str
-  type: attribute
-  uid: cntk.ops.functions.Function.name
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.op_name
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: op_name
-  summary: Name of the operation that this Function performs
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.op_name
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.output
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: output
-  summary: The single output variable if there is only one, or raises an exception.
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.output
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.outputs
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: outputs
-  summary: List consisting of all output variables of this function.
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.outputs
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.parameters
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: parameters
-  summary: List of all parameter variables of this function.
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.parameters
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.placeholders
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: placeholders
-  summary: List of all placeholders variables of this function.
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.placeholders
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.print_node_timing
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: print_node_timing()
+      if the specified format is ONNX, then model must be a filename.'
+    isRequired: true
+    types:
+    - <xref:cntk.ModelFormat>, <xref:defaults to CNTKv2 format>
+  return:
+    description: root node
+- uid: cntk.ops.functions.Function.print_node_timing
+  name: print_node_timing
   summary: 'Prints per-node average timing per-minibatch for each primitive function.
 
     statistics would reset after print'
-  syntax:
-    content: print_node_timing()
-    parameters: []
-  type: method
-  uid: cntk.ops.functions.Function.print_node_timing
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.register_udf_deserialize_callback
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: register_udf_deserialize_callback(op_name, callback)
+  signature: print_node_timing()
+- uid: cntk.ops.functions.Function.register_udf_deserialize_callback
+  name: register_udf_deserialize_callback
   summary: 'Register a callback function to be invoked when deserializing a user-
 
     defined function with the corresponding op name.
@@ -886,180 +545,122 @@ items:
     function op name and the corresponding callback that should be invoked
 
     instead of the `deserialize` method.'
-  syntax:
-    content: register_udf_deserialize_callback(op_name, callback)
-    parameters:
-    - description: unique op name of the user-defined function.
-      id: op_name
-      type:
-      - str
-    - description: 'a function taking three arguments (a list of
+  signature: register_udf_deserialize_callback(op_name, callback)
+  parameters:
+  - name: op_name
+    description: unique op name of the user-defined function.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: callback
+    description: 'a function taking three arguments (a list of
 
-        inputs to the UserFunction, a string name, and a state dictionary
+      inputs to the UserFunction, a string name, and a state dictionary
 
-        generated by the corresponding <xref:cntk.ops.functions.UserFunction.serialize>
+      generated by the corresponding <xref:cntk.ops.functions.UserFunction.serialize>
 
-        method) and returns an instance of the user-defined function.'
-      id: callback
-      type:
-      - function
-  type: method
-  uid: cntk.ops.functions.Function.register_udf_deserialize_callback
-- class: cntk.ops.functions.Function
-  exceptions:
-  - description: when the function has multiple placeholders.
-    type: Exception
-  fullName: cntk.ops.functions.Function.replace_placeholder
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: replace_placeholder(substitution)
+      method) and returns an instance of the user-defined function.'
+    isRequired: true
+    types:
+    - <xref:function>
+- uid: cntk.ops.functions.Function.replace_placeholder
+  name: replace_placeholder
   summary: 'In-place replace the only placeholder in the function graph with the
 
     specified substitution.'
-  syntax:
-    content: replace_placeholder(substitution)
-    parameters:
-    - description: 'the variable
+  signature: replace_placeholder(substitution)
+  parameters:
+  - name: substitution
+    description: 'the variable
 
-        that will replace the placeholder'
-      id: substitution
-      type:
-      - <xref:cntk.variables.Variable>
-    return:
-      description: itself
-      type:
-      - <xref:cntk.ops.functions.Function>
-  type: method
-  uid: cntk.ops.functions.Function.replace_placeholder
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.replace_placeholders
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: replace_placeholders(substitutions)
+      that will replace the placeholder'
+    isRequired: true
+    types:
+    - <xref:cntk.variables.Variable>
+  return:
+    description: itself
+    types:
+    - <xref:cntk.ops.functions.Function>
+  exceptions:
+  - description: when the function has multiple placeholders.
+    type: Exception
+- uid: cntk.ops.functions.Function.replace_placeholders
+  name: replace_placeholders
   summary: 'In-place replace specified placeholders in the Function graph with the
 
     specified replacements in the map.'
-  syntax:
-    content: replace_placeholders(substitutions)
-    parameters:
-    - description: map from placeholder to variables
-      id: substitutions
-      type:
-      - dict
-    return:
-      description: itself
-      type:
-      - <xref:cntk.ops.functions.Function>
-  type: method
-  uid: cntk.ops.functions.Function.replace_placeholders
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.restore
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: restore(filename)
+  signature: replace_placeholders(substitutions)
+  parameters:
+  - name: substitutions
+    description: map from placeholder to variables
+    isRequired: true
+    types:
+    - <xref:dict>
+  return:
+    description: itself
+    types:
+    - <xref:cntk.ops.functions.Function>
+- uid: cntk.ops.functions.Function.restore
+  name: restore
   summary: Restore the models parameters (in-place) from a saved model file
-  syntax:
-    content: restore(filename)
-    parameters:
-    - description: saved model path
-      id: filename
-      type:
-      - str
-    return:
-      description: this method only has the side-effect of loading the model parameters
-        from the file
-      type:
-      - '*None*'
-  type: method
-  uid: cntk.ops.functions.Function.restore
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.root_function
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: root_function
-  summary: The primitive function at the root of the graph of functions underlying
-    this function.
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.root_function
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.save
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: 'save(filename, format=<ModelFormat.CNTKv2: 0>, use_external_files_to_store_parameters=False)'
+  signature: restore(filename)
+  parameters:
+  - name: filename
+    description: saved model path
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: 'this method only has the side-effect of loading the model parameters
+      from the file'
+    types:
+    - <xref:*None*>
+- uid: cntk.ops.functions.Function.save
+  name: save
   summary: 'Save this function graph into a model file using the specified format.
 
 
     Use distributed.Communicator.is_main() to gate your call to save()
 
     in distributed environment.'
-  syntax:
-    content: 'save(filename, format=<ModelFormat.CNTKv2: 0>, use_external_files_to_store_parameters=False)'
-    parameters:
-    - description: model path
-      id: filename
-      type:
-      - str
-    - description: 'whether to save model parameters
+  signature: 'save(filename, format=<ModelFormat.CNTKv2: 0>, use_external_files_to_store_parameters=False)'
+  parameters:
+  - name: filename
+    description: model path
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: use_external_files_to_store_parameters
+    description: 'whether to save model parameters
 
-        to external files. This is for models larger than 2GB. Defaults to False.'
-      id: use_external_files_to_store_parameters
-      type:
-      - bool, optional
-  type: method
-  uid: cntk.ops.functions.Function.save
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.set_attribute
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: set_attribute(name, value)
+      to external files. This is for models larger than 2GB. Defaults to False.'
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:optional>
+- uid: cntk.ops.functions.Function.set_attribute
+  name: set_attribute
   summary: Allows to change a function attribute.
-  syntax:
-    content: set_attribute(name, value)
-    parameters:
-    - description: "one of\n\n* 'dropoutRate': modifies the dropout rate of a dropout\
-        \ function (can only be invoked on a function instance returned either from\
-        \ <xref:cntk.ops.dropout> or <xref:cntk.ops.functions.Function.find_by_name>).\
-        \ \n\n* 'rngSeed': modifies the seed of a stateful function (can only be invoked\
-        \ on  function instance returned from <xref:cntk.ops.dropout>, <xref:cntk.ops.random_sample>,\
-        \ <xref:cntk.ops.random_sample_inclusion_frequency> or <xref:cntk.ops.functions.Function.find_by_name>)"
-      id: name
-      type:
-      - string
-    - description: 'the new value
+  signature: set_attribute(name, value)
+  parameters:
+  - name: name
+    description: "one of\n\n* 'dropoutRate': modifies the dropout rate of a dropout\
+      \ function (can only be invoked on a function instance returned either from\
+      \ <xref:cntk.ops.dropout> or <xref:cntk.ops.functions.Function.find_by_name>).\
+      \ \n\n* 'rngSeed': modifies the seed of a stateful function (can only be invoked\
+      \ on  function instance returned from <xref:cntk.ops.dropout>, <xref:cntk.ops.random_sample>,\
+      \ <xref:cntk.ops.random_sample_inclusion_frequency> or <xref:cntk.ops.functions.Function.find_by_name>)"
+    isRequired: true
+    types:
+    - <xref:string>
+  - name: value
+    description: 'the new value
 
-        of the corresponding attribute.'
-      id: value
-      type:
-      - float in case of 'dropoutRate', int for 'rngSeed'
-  type: method
-  uid: cntk.ops.functions.Function.set_attribute
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.signature
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: signature
-  summary: 'Returns the signature of a Function.
-
-    This is the .arguments[] list without placeholders that belong to an outer, not
-    yet completed @Function def.'
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.signature
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.test
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: test(minibatch_source, minibatch_size=32, streams=None, model_inputs_to_streams=None,
-    callbacks=None)
+      of the corresponding attribute.'
+    isRequired: true
+    types:
+    - <xref:float in case of 'dropoutRate'>, <xref:int for 'rngSeed'>
+- uid: cntk.ops.functions.Function.test
+  name: test
   summary: 'Measures the performance of a model, given by its criterion function,
     in the form of
 
@@ -1067,106 +668,45 @@ items:
 
 
     This is a convenience wrapper around <xref:cntk.eval.evaluator.Evaluator>.'
-  syntax:
-    content: test(minibatch_source, minibatch_size=32, streams=None, model_inputs_to_streams=None,
-      callbacks=None)
-    parameters:
-    - description: minibatch source for the test data
-      id: minibatch_source
-      type:
-      - <xref:cntk.io.MinibatchSource>
-    - defaultValue: '32'
-      description: minibatch size for evaluation
-      id: minibatch_size
-      type:
-      - <xref:cntk.cntk_py.minibatch_size_schedule>
-      - int
-    - defaultValue: None
-      description: the streams of the minibatch_source in argument order
-      id: streams
-      type:
-      - tuple
-    - defaultValue: None
-      description: mapping between input variables and input streams
-      id: model_inputs_to_streams
-      type:
-      - dict
-    - defaultValue: None
-      description: 'optionally, list of
+  signature: test(minibatch_source, minibatch_size=32, streams=None, model_inputs_to_streams=None,
+    callbacks=None)
+  parameters:
+  - name: minibatch_source
+    description: minibatch source for the test data
+    isRequired: true
+    types:
+    - <xref:cntk.io.MinibatchSource>
+  - name: minibatch_size
+    description: minibatch size for evaluation
+    defaultValue: '32'
+    types:
+    - <xref:cntk.cntk_py.minibatch_size_schedule>
+    - <xref:int>
+  - name: streams
+    description: the streams of the minibatch_source in argument order
+    defaultValue: None
+    types:
+    - <xref:tuple>
+  - name: model_inputs_to_streams
+    description: mapping between input variables and input streams
+    defaultValue: None
+    types:
+    - <xref:dict>
+  - name: callbacks
+    description: 'optionally, list of
 
-        progress writers from <xref:cntk.logging> to automatically track training
+      progress writers from <xref:cntk.logging> to automatically track training
 
-        progress.'
-      id: callbacks
-      type:
-      - progress writer
-      - list of them
-    return:
-      description: An object *test_summary* with *test_summary.metric* being the average
-        metric, and *test_summary.samples* the number of labels in the test set.
-  type: method
-  uid: cntk.ops.functions.Function.test
-- class: cntk.ops.functions.Function
-  example:
-  - '
-
-    ```
-
-
-    >>> # a simple logistic-regression model
-
-    >>> N = 250
-
-    >>> np.random.seed(0)
-
-    >>> Y = np.random.randint(size=N, low=0, high=2)  # labels
-
-    >>> X = (np.random.randn(N, 2)+3) * (Y[:,None]+1)   # data
-
-    >>> # Our model expects float32 features, and cross-entropy expects one-hot encoded
-    labels.
-
-    >>> import scipy.sparse
-
-    >>> Y = scipy.sparse.csr_matrix((np.ones(N,np.float32), (range(N), Y)), shape=(N,
-    2))
-
-    >>> X = X.astype(np.float32)
-
-    >>> model = cntk.layers.Dense(2, activation=None) # model function
-
-    >>> import cntk.layers
-
-    >>> @cntk.Function.with_signature(cntk.layers.Tensor[2], cntk.layers.SparseTensor[2])
-    # criterion function
-
-    ... def criterion(data, label_one_hot):
-
-    ...     z = model(data)  # apply model. Computes a non-normalized log probability
-    for every output class.
-
-    ...     return cntk.cross_entropy_with_softmax(z, label_one_hot)
-
-    >>> learner = cntk.sgd(model.parameters, 0.1)
-
-    >>> progress = criterion.train((X, Y), minibatch_size=25, max_epochs=2, epoch_size=125,
-    parameter_learners=[learner])
-
-    >>> print("%.2f" % progress.epoch_summaries[-1].loss) # get the final epoch''s
-    loss value
-
-    0.68
-
-    ```
-
-    '
-  fullName: cntk.ops.functions.Function.train
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: train(minibatch_source, minibatch_size=32, streams=None, model_inputs_to_streams=None,
-    parameter_learners=[], callbacks=[], progress_frequency=None, max_epochs=None,
-    epoch_size=None, max_samples=None)
+      progress.'
+    defaultValue: None
+    types:
+    - <xref:progress writer>
+    - <xref:list of them>
+  return:
+    description: An object *test_summary* with *test_summary.metric* being the average
+      metric, and *test_summary.samples* the number of labels in the test set.
+- uid: cntk.ops.functions.Function.train
+  name: train
   summary: 'Trains a model, given by its criterion function, using the specified training
     parameters and configs.
 
@@ -1256,64 +796,91 @@ items:
 
 
     This is a convenience wrapper around <xref:cntk.train.trainer.Trainer> <xref:cntk.train.training_session.TrainingSession>.'
-  syntax:
-    content: train(minibatch_source, minibatch_size=32, streams=None, model_inputs_to_streams=None,
-      parameter_learners=[], callbacks=[], progress_frequency=None, max_epochs=None,
-      epoch_size=None, max_samples=None)
-    parameters:
-    - id: minibatch_source
-    - defaultValue: '32'
-      id: minibatch_size
-    - defaultValue: None
-      id: streams
-    - defaultValue: None
-      id: model_inputs_to_streams
-    - defaultValue: '[]'
-      id: parameter_learners
-    - defaultValue: '[]'
-      id: callbacks
-    - defaultValue: None
-      id: progress_frequency
-    - defaultValue: None
-      id: max_epochs
-    - defaultValue: None
-      id: epoch_size
-    - defaultValue: None
-      id: max_samples
-    return:
-      description: "An object *progress* with *progress.epoch_summaries* and *progress.updates*\
-        \ being the progressions of av loss, av metric, and number of labels\n   for\
-        \ epochs and updates (groups of minibatches), respectively. If a *TestConfig*\
-        \ was given, then *progress.test_summary*\n   includes the result (.metric\
-        \ and .samples)"
-  type: method
-  uid: cntk.ops.functions.Function.train
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.type
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: type
-  summary: Get type of a Function's output.
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.type
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.uid
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: uid
-  summary: The internally generated unique name of the function.
-  syntax: {}
-  type: attribute
-  uid: cntk.ops.functions.Function.uid
-- class: cntk.ops.functions.Function
-  fullName: cntk.ops.functions.Function.update_signature
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: update_signature(*arg_types, **kwarg_types)
+  signature: train(minibatch_source, minibatch_size=32, streams=None, model_inputs_to_streams=None,
+    parameter_learners=[], callbacks=[], progress_frequency=None, max_epochs=None,
+    epoch_size=None, max_samples=None)
+  parameters:
+  - name: minibatch_source
+    isRequired: true
+  - name: minibatch_size
+    defaultValue: '32'
+  - name: streams
+    defaultValue: None
+  - name: model_inputs_to_streams
+    defaultValue: None
+  - name: parameter_learners
+    defaultValue: '[]'
+  - name: callbacks
+    defaultValue: '[]'
+  - name: progress_frequency
+    defaultValue: None
+  - name: max_epochs
+    defaultValue: None
+  - name: epoch_size
+    defaultValue: None
+  - name: max_samples
+    defaultValue: None
+  return:
+    description: "An object *progress* with *progress.epoch_summaries* and *progress.updates*\
+      \ being the progressions of av loss, av metric, and number of labels\n   for\
+      \ epochs and updates (groups of minibatches), respectively. If a *TestConfig*\
+      \ was given, then *progress.test_summary*\n   includes the result (.metric and\
+      \ .samples)"
+  examples:
+  - '
+
+    ```
+
+
+    >>> # a simple logistic-regression model
+
+    >>> N = 250
+
+    >>> np.random.seed(0)
+
+    >>> Y = np.random.randint(size=N, low=0, high=2)  # labels
+
+    >>> X = (np.random.randn(N, 2)+3) * (Y[:,None]+1)   # data
+
+    >>> # Our model expects float32 features, and cross-entropy expects one-hot encoded
+    labels.
+
+    >>> import scipy.sparse
+
+    >>> Y = scipy.sparse.csr_matrix((np.ones(N,np.float32), (range(N), Y)), shape=(N,
+    2))
+
+    >>> X = X.astype(np.float32)
+
+    >>> model = cntk.layers.Dense(2, activation=None) # model function
+
+    >>> import cntk.layers
+
+    >>> @cntk.Function.with_signature(cntk.layers.Tensor[2], cntk.layers.SparseTensor[2])
+    # criterion function
+
+    ... def criterion(data, label_one_hot):
+
+    ...     z = model(data)  # apply model. Computes a non-normalized log probability
+    for every output class.
+
+    ...     return cntk.cross_entropy_with_softmax(z, label_one_hot)
+
+    >>> learner = cntk.sgd(model.parameters, 0.1)
+
+    >>> progress = criterion.train((X, Y), minibatch_size=25, max_epochs=2, epoch_size=125,
+    parameter_learners=[learner])
+
+    >>> print("%.2f" % progress.epoch_summaries[-1].loss) # get the final epoch''s
+    loss value
+
+    0.68
+
+    ```
+
+    '
+- uid: cntk.ops.functions.Function.update_signature
+  name: update_signature
   summary: 'Defines input shapes, in-place
 
     e.g.
@@ -1323,13 +890,13 @@ items:
     pass a list of objects that define the dimensions etc. of the placeholders
 
     Currently you can pass an int, a tuple, an Input, or a dict created with Type()'
-  syntax:
-    content: update_signature(*arg_types, **kwarg_types)
-    parameters: []
-  type: method
-  uid: cntk.ops.functions.Function.update_signature
-- class: cntk.ops.functions.Function
-  example:
+  signature: update_signature(*arg_types, **kwarg_types)
+- uid: cntk.ops.functions.Function.with_signature
+  name: with_signature
+  summary: Decorator for defining a @Function with a given signature. Same as @Function
+    followed by @Signature.
+  signature: with_signature(*args, **kwargs)
+  examples:
   - '
 
     ```
@@ -1364,369 +931,132 @@ items:
     ```
 
     '
-  fullName: cntk.ops.functions.Function.with_signature
-  langs:
-  - python
-  module: cntk.ops.functions
-  name: with_signature(*args, **kwargs)
-  summary: Decorator for defining a @Function with a given signature. Same as @Function
-    followed by @Signature.
-  syntax:
-    content: with_signature(*args, **kwargs)
-  type: method
-  uid: cntk.ops.functions.Function.with_signature
-references:
-- fullName: cntk.ops.functions.Function.argument_map
-  isExternal: false
-  name: argument_map(*args, **kwargs)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.argument_map
-- fullName: cntk.ops.functions.Function.arguments
-  isExternal: false
+attributes:
+- uid: cntk.ops.functions.Function.arguments
   name: arguments
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.arguments
-- fullName: cntk.ops.functions.Function.attributes
-  isExternal: false
+  summary: 'List of all input variables of the Function that are not of type Parameter
+    or Constant.
+
+
+    Note that due to the different matrix storage format in C++(column major) and
+    Python(row major),
+
+    the order of arguments for some ops(Times, TransposeTimes, and Gemm) in C++ and
+    Python are not the same.
+
+    In previous CNTK versions, the default for this api was to return arguments in
+    C++ order.
+
+    Now the default for this api is set to python order. This way it will return arguments
+    in the same order as they are fed into ops.
+
+    If you wish to still get arguments in C++ order, you can simply override the global
+    option.'
+  examples:
+  - "\n```\n\n>>> import cntk as C\n>>> a = C.input_variable((3,4), name='a')\n>>>\
+    \ b = C.input_variable((4,5), name='b')\n>>> c = C.times(a, b)\n>>> c.arguments\
+    \    # python order\n    (Input('a', [#], [3 x 4]), Input('b', [#], [4 x 5]))\n\
+    ```\n\n\n```\n\n>>> from cntk.default_options import set_global_option\n>>> set_global_option('python_operand_order',\
+    \ False)\n>>> c.arguments    # C++ order\n    (Input('b', [#], [4 x 5]), Input('a',\
+    \ [#], [3 x 4]))\n```\n"
+- uid: cntk.ops.functions.Function.attributes
   name: attributes
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.attributes
-- fullName: cntk.ops.functions.Function.backward
-  isExternal: false
-  name: backward(state, root_gradients, variables, as_numpy=True)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.backward
-- fullName: cntk.ops.functions.Function.block_arguments_mapping
-  isExternal: false
+  summary: List of the attributes of the function
+- uid: cntk.ops.functions.Function.block_arguments_mapping
   name: block_arguments_mapping
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.block_arguments_mapping
-- fullName: cntk.ops.functions.Function.block_root
-  isExternal: false
+  summary: 'Returns the mapping from the arguments of the composite underlying this
+    block function
+
+    to the Variables that they are bound to in the outer graph of Functions that this
+
+    block Function is part of.'
+- uid: cntk.ops.functions.Function.block_root
   name: block_root
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.block_root
-- fullName: cntk.ops.functions.Function.clone
-  isExternal: false
-  name: clone(method, substitutions=None)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.clone
-- fullName: cntk.ops.functions.Function.constants
-  isExternal: false
+  summary: 'Returns the root of the Function graph underlying this block Function.
+
+    Throws an exception if this is not a block Function.'
+- uid: cntk.ops.functions.Function.constants
   name: constants
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.constants
-- fullName: cntk.ops.functions.Function.custom_attributes
-  isExternal: false
+  summary: List of all *Constant* variables of this <xref:cntk.ops.functions.Function>
+- uid: cntk.ops.functions.Function.custom_attributes
   name: custom_attributes
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.custom_attributes
-- fullName: cntk.ops.functions.Function.declare_args
-  isExternal: false
-  name: declare_args(*arg_types)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.declare_args
-- fullName: cntk.ops.functions.Function.eval
-  isExternal: false
-  name: eval(arguments=None, outputs=None, device=None, as_numpy=True)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.eval
-- fullName: cntk.ops.functions.Function.find_all_with_name
-  isExternal: false
-  name: find_all_with_name(name, depth=0)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.find_all_with_name
-- fullName: cntk.ops.functions.Function.find_by_name
-  isExternal: false
-  name: find_by_name(name, depth=0)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.find_by_name
-- fullName: cntk.ops.functions.Function.forward
-  isExternal: false
-  name: forward(arguments, outputs=None, keep_for_backward=None, device=None, as_numpy=True)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.forward
-- fullName: cntk.ops.functions.Function.grad
-  isExternal: false
-  name: grad(at, wrt=None, outputs=None, device=None, as_numpy=True, grad_root=None)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.grad
-- fullName: cntk.ops.functions.Function.inputs
-  isExternal: false
+  summary: Get function custom attributes in cntk_py.Dictionary for both read and
+    write.
+- uid: cntk.ops.functions.Function.inputs
   name: inputs
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.inputs
-- fullName: cntk.ops.functions.Function.is_block
-  isExternal: false
+  summary: 'List of variables that are inputs of this function.
+
+    Note that ''inputs'' here denotes all Variables that feed into this Function
+
+    including any Parameter/Constant Variables that are children of this Function.'
+- uid: cntk.ops.functions.Function.is_block
   name: is_block
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.is_block
-- fullName: cntk.ops.functions.Function.is_composite
-  isExternal: false
+  summary: 'Returns a boolean indicating if this Function is a block function which
+    is basically
+
+    a composite encapsulated as an opaque block which appears as a primitive during
+
+    traversing the graph of Functions that this block is part of.'
+- uid: cntk.ops.functions.Function.is_composite
   name: is_composite
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.is_composite
-- fullName: cntk.ops.functions.Function.is_primitive
-  isExternal: false
+  summary: 'Returns a boolean indicating if this Function is a composite Function.
+
+    A composite Function is a Function that is composed of primitive Functions.'
+- uid: cntk.ops.functions.Function.is_primitive
   name: is_primitive
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.is_primitive
-- fullName: cntk.ops.functions.Function.load
-  isExternal: false
-  name: 'load(model, device=None, format=<ModelFormat.CNTKv2: 0>)'
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.load
-- fullName: cntk.ops.functions.Function.name
-  isExternal: false
+  summary: 'Returns a boolean indicating if this Function is a primitive Function.
+
+    A primitive Function is the lowest level building block for composite Function
+
+    graphs and is either a CNTK built-in operator, a composite Function encapsulated
+
+    as a Block or a user-defined Function'
+- uid: cntk.ops.functions.Function.name
   name: name
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.name
-- fullName: cntk.ops.functions.Function.op_name
-  isExternal: false
+  summary: Name of this function
+  parameters:
+  - name: getter
+    description: returns the name of the function.
+    types:
+    - <xref:str>
+  - name: setter
+    description: 'sets the name of the function. Setting the name of a
+
+      Function is only allowed if the Function does not already have a
+
+      name. Calling this method, when this Function already has a name,
+
+      results in an exception.'
+    types:
+    - <xref:str>
+- uid: cntk.ops.functions.Function.op_name
   name: op_name
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.op_name
-- fullName: cntk.ops.functions.Function.output
-  isExternal: false
+  summary: Name of the operation that this Function performs
+- uid: cntk.ops.functions.Function.output
   name: output
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.output
-- fullName: cntk.ops.functions.Function.outputs
-  isExternal: false
+  summary: The single output variable if there is only one, or raises an exception.
+- uid: cntk.ops.functions.Function.outputs
   name: outputs
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.outputs
-- fullName: cntk.ops.functions.Function.parameters
-  isExternal: false
+  summary: List consisting of all output variables of this function.
+- uid: cntk.ops.functions.Function.parameters
   name: parameters
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.parameters
-- fullName: cntk.ops.functions.Function.placeholders
-  isExternal: false
+  summary: List of all parameter variables of this function.
+- uid: cntk.ops.functions.Function.placeholders
   name: placeholders
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.placeholders
-- fullName: cntk.ops.functions.Function.print_node_timing
-  isExternal: false
-  name: print_node_timing()
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.print_node_timing
-- fullName: cntk.ops.functions.Function.register_udf_deserialize_callback
-  isExternal: false
-  name: register_udf_deserialize_callback(op_name, callback)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.register_udf_deserialize_callback
-- fullName: cntk.ops.functions.Function.replace_placeholder
-  isExternal: false
-  name: replace_placeholder(substitution)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.replace_placeholder
-- fullName: cntk.ops.functions.Function.replace_placeholders
-  isExternal: false
-  name: replace_placeholders(substitutions)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.replace_placeholders
-- fullName: cntk.ops.functions.Function.restore
-  isExternal: false
-  name: restore(filename)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.restore
-- fullName: cntk.ops.functions.Function.root_function
-  isExternal: false
+  summary: List of all placeholders variables of this function.
+- uid: cntk.ops.functions.Function.root_function
   name: root_function
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.root_function
-- fullName: cntk.ops.functions.Function.save
-  isExternal: false
-  name: 'save(filename, format=<ModelFormat.CNTKv2: 0>, use_external_files_to_store_parameters=False)'
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.save
-- fullName: cntk.ops.functions.Function.set_attribute
-  isExternal: false
-  name: set_attribute(name, value)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.set_attribute
-- fullName: cntk.ops.functions.Function.signature
-  isExternal: false
+  summary: The primitive function at the root of the graph of functions underlying
+    this function.
+- uid: cntk.ops.functions.Function.signature
   name: signature
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.signature
-- fullName: cntk.ops.functions.Function.test
-  isExternal: false
-  name: test(minibatch_source, minibatch_size=32, streams=None, model_inputs_to_streams=None,
-    callbacks=None)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.test
-- fullName: cntk.ops.functions.Function.train
-  isExternal: false
-  name: train(minibatch_source, minibatch_size=32, streams=None, model_inputs_to_streams=None,
-    parameter_learners=[], callbacks=[], progress_frequency=None, max_epochs=None,
-    epoch_size=None, max_samples=None)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.train
-- fullName: cntk.ops.functions.Function.type
-  isExternal: false
+  summary: 'Returns the signature of a Function.
+
+    This is the .arguments[] list without placeholders that belong to an outer, not
+    yet completed @Function def.'
+- uid: cntk.ops.functions.Function.type
   name: type
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.type
-- fullName: cntk.ops.functions.Function.uid
-  isExternal: false
+  summary: Get type of a Function's output.
+- uid: cntk.ops.functions.Function.uid
   name: uid
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.uid
-- fullName: cntk.ops.functions.Function.update_signature
-  isExternal: false
-  name: update_signature(*arg_types, **kwarg_types)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.update_signature
-- fullName: cntk.ops.functions.Function.with_signature
-  isExternal: false
-  name: with_signature(*args, **kwargs)
-  parent: cntk.ops.functions.Function
-  uid: cntk.ops.functions.Function.with_signature
-- fullName: int, default 0
-  name: int, default 0
-  spec.python:
-  - fullName: int
-    name: int
-    uid: int
-  - fullName: ', '
-    name: ', '
-  - fullName: default 0
-    name: default 0
-    uid: default 0
-  uid: int, default 0
-- fullName: iterable, optional
-  name: iterable, optional
-  spec.python:
-  - fullName: iterable
-    name: iterable
-    uid: iterable
-  - fullName: ', '
-    name: ', '
-  - fullName: optional
-    name: optional
-    uid: optional
-  uid: iterable, optional
-- fullName: set, default None
-  name: set, default None
-  spec.python:
-  - fullName: set
-    name: set
-    uid: set
-  - fullName: ', '
-    name: ', '
-  - fullName: default None
-    name: default None
-    uid: default None
-  uid: set, default None
-- fullName: <xref:cntk.device.DeviceDescriptor>, default None
-  name: DeviceDescriptor>, default None
-  spec.python:
-  - fullName: <xref:cntk.device.DeviceDescriptor>
-    name: DeviceDescriptor>
-    uid: <xref:cntk.device.DeviceDescriptor>
-  - fullName: ', '
-    name: ', '
-  - fullName: default None
-    name: default None
-    uid: default None
-  uid: <xref:cntk.device.DeviceDescriptor>, default None
-- fullName: list, default None
-  name: list, default None
-  spec.python:
-  - fullName: list
-    name: list
-    uid: list
-  - fullName: ', '
-    name: ', '
-  - fullName: default None
-    name: default None
-    uid: default None
-  uid: list, default None
-- fullName: bool, default True
-  name: bool, default True
-  spec.python:
-  - fullName: bool
-    name: bool
-    uid: bool
-  - fullName: ', '
-    name: ', '
-  - fullName: default True
-    name: default True
-    uid: default True
-  uid: bool, default True
-- fullName: <xref:cntk.variables.Variable>, optional
-  name: Variable>, optional
-  spec.python:
-  - fullName: <xref:cntk.variables.Variable>
-    name: Variable>
-    uid: <xref:cntk.variables.Variable>
-  - fullName: ', '
-    name: ', '
-  - fullName: optional
-    name: optional
-    uid: optional
-  uid: <xref:cntk.variables.Variable>, optional
-- fullName: str, bytes
-  name: str, bytes
-  spec.python:
-  - fullName: str
-    name: str
-    uid: str
-  - fullName: ', '
-    name: ', '
-  - fullName: bytes
-    name: bytes
-    uid: bytes
-  uid: str, bytes
-- fullName: <xref:cntk.device.DeviceDescriptor>, defaults to the current globally
-    default device
-  name: DeviceDescriptor>, defaults to the current globally default device
-  spec.python:
-  - fullName: <xref:cntk.device.DeviceDescriptor>
-    name: DeviceDescriptor>
-    uid: <xref:cntk.device.DeviceDescriptor>
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to the current globally default device
-    name: defaults to the current globally default device
-    uid: defaults to the current globally default device
-  uid: <xref:cntk.device.DeviceDescriptor>, defaults to the current globally default
-    device
-- fullName: <xref:cntk.ModelFormat>, defaults to CNTKv2 format
-  name: ModelFormat>, defaults to CNTKv2 format
-  spec.python:
-  - fullName: <xref:cntk.ModelFormat>
-    name: ModelFormat>
-    uid: <xref:cntk.ModelFormat>
-  - fullName: ', '
-    name: ', '
-  - fullName: defaults to CNTKv2 format
-    name: defaults to CNTKv2 format
-    uid: defaults to CNTKv2 format
-  uid: <xref:cntk.ModelFormat>, defaults to CNTKv2 format
-- fullName: bool, optional
-  name: bool, optional
-  spec.python:
-  - fullName: bool
-    name: bool
-    uid: bool
-  - fullName: ', '
-    name: ', '
-  - fullName: optional
-    name: optional
-    uid: optional
-  uid: bool, optional
-- fullName: float in case of 'dropoutRate', int for 'rngSeed'
-  name: float in case of 'dropoutRate', int for 'rngSeed'
-  spec.python:
-  - fullName: float in case of 'dropoutRate'
-    name: float in case of 'dropoutRate'
-    uid: float in case of 'dropoutRate'
-  - fullName: ', '
-    name: ', '
-  - fullName: int for 'rngSeed'
-    name: int for 'rngSeed'
-    uid: int for 'rngSeed'
-  uid: float in case of 'dropoutRate', int for 'rngSeed'
+  summary: The internally generated unique name of the function.

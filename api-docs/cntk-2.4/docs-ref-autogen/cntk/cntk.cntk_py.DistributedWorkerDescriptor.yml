@@ -1,38 +1,13 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py.DistributedWorkerDescriptor.is_main
-  class: cntk.cntk_py.DistributedWorkerDescriptor
-  fullName: cntk.cntk_py.DistributedWorkerDescriptor
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: DistributedWorkerDescriptor
-  summary: '
-
-
-    '
-  syntax:
-    content: DistributedWorkerDescriptor()
-  type: class
-  uid: cntk.cntk_py.DistributedWorkerDescriptor
-- class: cntk.cntk_py.DistributedWorkerDescriptor
-  fullName: cntk.cntk_py.DistributedWorkerDescriptor.is_main
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: is_main()
-  syntax:
-    content: is_main()
-    parameters: []
-  type: method
-  uid: cntk.cntk_py.DistributedWorkerDescriptor.is_main
-references:
-- fullName: cntk.cntk_py.DistributedWorkerDescriptor.is_main
-  isExternal: false
-  name: is_main()
-  parent: cntk.cntk_py.DistributedWorkerDescriptor
-  uid: cntk.cntk_py.DistributedWorkerDescriptor.is_main
+### YamlMime:PythonClass
+uid: cntk.cntk_py.DistributedWorkerDescriptor
+name: DistributedWorkerDescriptor
+fullName: cntk.cntk_py.DistributedWorkerDescriptor
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: DistributedWorkerDescriptor()
+methods:
+- uid: cntk.cntk_py.DistributedWorkerDescriptor.is_main
+  name: is_main
+  signature: is_main()

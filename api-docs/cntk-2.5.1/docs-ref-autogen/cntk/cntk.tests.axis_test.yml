@@ -1,87 +1,20 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.tests.axis_test.test_axis
-  - cntk.tests.axis_test.test_axis_comparison
-  - cntk.tests.axis_test.test_axis_str
-  - cntk.tests.axis_test.test_default_axis
-  - cntk.tests.axis_test.test_dyn_axis
-  fullName: cntk.tests.axis_test
-  langs:
-  - python
-  module: cntk.tests.axis_test
-  name: axis_test
-  type: module
-  uid: cntk.tests.axis_test
-- fullName: cntk.tests.axis_test.test_axis
-  langs:
-  - python
-  module: cntk.tests.axis_test
-  name: test_axis()
-  syntax:
-    content: test_axis()
-  type: function
-  uid: cntk.tests.axis_test.test_axis
-- fullName: cntk.tests.axis_test.test_axis_comparison
-  langs:
-  - python
-  module: cntk.tests.axis_test
-  name: test_axis_comparison()
-  syntax:
-    content: test_axis_comparison()
-  type: function
-  uid: cntk.tests.axis_test.test_axis_comparison
-- fullName: cntk.tests.axis_test.test_axis_str
-  langs:
-  - python
-  module: cntk.tests.axis_test
-  name: test_axis_str()
-  syntax:
-    content: test_axis_str()
-  type: function
-  uid: cntk.tests.axis_test.test_axis_str
-- fullName: cntk.tests.axis_test.test_default_axis
-  langs:
-  - python
-  module: cntk.tests.axis_test
-  name: test_default_axis()
-  syntax:
-    content: test_default_axis()
-  type: function
-  uid: cntk.tests.axis_test.test_default_axis
-- fullName: cntk.tests.axis_test.test_dyn_axis
-  langs:
-  - python
-  module: cntk.tests.axis_test
-  name: test_dyn_axis()
-  syntax:
-    content: test_dyn_axis()
-  type: function
-  uid: cntk.tests.axis_test.test_dyn_axis
-references:
-- fullName: cntk.tests.axis_test.test_axis
-  isExternal: false
-  name: test_axis()
-  parent: cntk.tests.axis_test
-  uid: cntk.tests.axis_test.test_axis
-- fullName: cntk.tests.axis_test.test_axis_comparison
-  isExternal: false
-  name: test_axis_comparison()
-  parent: cntk.tests.axis_test
-  uid: cntk.tests.axis_test.test_axis_comparison
-- fullName: cntk.tests.axis_test.test_axis_str
-  isExternal: false
-  name: test_axis_str()
-  parent: cntk.tests.axis_test
-  uid: cntk.tests.axis_test.test_axis_str
-- fullName: cntk.tests.axis_test.test_default_axis
-  isExternal: false
-  name: test_default_axis()
-  parent: cntk.tests.axis_test
-  uid: cntk.tests.axis_test.test_default_axis
-- fullName: cntk.tests.axis_test.test_dyn_axis
-  isExternal: false
-  name: test_dyn_axis()
-  parent: cntk.tests.axis_test
-  uid: cntk.tests.axis_test.test_dyn_axis
+### YamlMime:PythonModule
+uid: cntk.tests.axis_test
+name: axis_test
+fullName: cntk.tests.axis_test
+functions:
+- uid: cntk.tests.axis_test.test_axis
+  name: test_axis
+  signature: test_axis()
+- uid: cntk.tests.axis_test.test_axis_comparison
+  name: test_axis_comparison
+  signature: test_axis_comparison()
+- uid: cntk.tests.axis_test.test_axis_str
+  name: test_axis_str
+  signature: test_axis_str()
+- uid: cntk.tests.axis_test.test_default_axis
+  name: test_default_axis
+  signature: test_default_axis()
+- uid: cntk.tests.axis_test.test_dyn_axis
+  name: test_dyn_axis
+  signature: test_dyn_axis()

@@ -1,19 +1,7 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.losses.tests.h_softmax_test
-  fullName: cntk.losses.tests
-  kind: import
-  langs:
-  - python
-  module: cntk.losses.tests
-  name: tests
-  type: package
-  uid: cntk.losses.tests
-references:
-- fullName: cntk.losses.tests.h_softmax_test
-  isExternal: false
-  name: h_softmax_test
-  parent: cntk.losses.tests
-  uid: cntk.losses.tests.h_softmax_test
+### YamlMime:PythonPackage
+uid: cntk.losses.tests
+name: tests
+fullName: cntk.losses.tests
+type: import
+modules:
+- cntk.losses.tests.h_softmax_test

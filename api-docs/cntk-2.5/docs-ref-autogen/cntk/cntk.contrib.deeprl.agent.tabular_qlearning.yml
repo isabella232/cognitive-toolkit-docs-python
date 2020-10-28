@@ -1,21 +1,7 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.agent.tabular_qlearning.TabularQLearning
-  fullName: cntk.contrib.deeprl.agent.tabular_qlearning
-  langs:
-  - python
-  module: cntk.contrib.deeprl.agent.tabular_qlearning
-  name: tabular_qlearning
-  summary: 'Tabular Q-learning.
-
-    '
-  type: module
-  uid: cntk.contrib.deeprl.agent.tabular_qlearning
-references:
-- fullName: cntk.contrib.deeprl.agent.tabular_qlearning.TabularQLearning
-  isExternal: false
-  name: TabularQLearning
-  parent: cntk.contrib.deeprl.agent.tabular_qlearning
-  uid: cntk.contrib.deeprl.agent.tabular_qlearning.TabularQLearning
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.agent.tabular_qlearning
+name: tabular_qlearning
+fullName: cntk.contrib.deeprl.agent.tabular_qlearning
+summary: Tabular Q-learning.
+classes:
+- cntk.contrib.deeprl.agent.tabular_qlearning.TabularQLearning

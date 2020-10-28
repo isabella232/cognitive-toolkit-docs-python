@@ -1,36 +1,9 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.tests.spaces.Box
-  - cntk.contrib.deeprl.tests.spaces.Discrete
-  - cntk.contrib.deeprl.tests.spaces.MultiBinary
-  - cntk.contrib.deeprl.tests.spaces.Tuple
-  fullName: cntk.contrib.deeprl.tests.spaces
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.spaces
-  name: spaces
-  type: module
-  uid: cntk.contrib.deeprl.tests.spaces
-references:
-- fullName: cntk.contrib.deeprl.tests.spaces.Box
-  isExternal: false
-  name: Box
-  parent: cntk.contrib.deeprl.tests.spaces
-  uid: cntk.contrib.deeprl.tests.spaces.Box
-- fullName: cntk.contrib.deeprl.tests.spaces.Discrete
-  isExternal: false
-  name: Discrete
-  parent: cntk.contrib.deeprl.tests.spaces
-  uid: cntk.contrib.deeprl.tests.spaces.Discrete
-- fullName: cntk.contrib.deeprl.tests.spaces.MultiBinary
-  isExternal: false
-  name: MultiBinary
-  parent: cntk.contrib.deeprl.tests.spaces
-  uid: cntk.contrib.deeprl.tests.spaces.MultiBinary
-- fullName: cntk.contrib.deeprl.tests.spaces.Tuple
-  isExternal: false
-  name: Tuple
-  parent: cntk.contrib.deeprl.tests.spaces
-  uid: cntk.contrib.deeprl.tests.spaces.Tuple
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.spaces
+name: spaces
+fullName: cntk.contrib.deeprl.tests.spaces
+classes:
+- cntk.contrib.deeprl.tests.spaces.Box
+- cntk.contrib.deeprl.tests.spaces.Discrete
+- cntk.contrib.deeprl.tests.spaces.MultiBinary
+- cntk.contrib.deeprl.tests.spaces.Tuple

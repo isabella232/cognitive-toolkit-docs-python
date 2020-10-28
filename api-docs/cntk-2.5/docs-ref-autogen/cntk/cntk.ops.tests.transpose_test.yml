@@ -1,32 +1,11 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.ops.tests.transpose_test.test_transpose
-  fullName: cntk.ops.tests.transpose_test
-  langs:
-  - python
-  module: cntk.ops.tests.transpose_test
-  name: transpose_test
-  type: module
-  uid: cntk.ops.tests.transpose_test
-- fullName: cntk.ops.tests.transpose_test.test_transpose
-  langs:
-  - python
-  module: cntk.ops.tests.transpose_test
-  name: test_transpose()
+### YamlMime:PythonModule
+uid: cntk.ops.tests.transpose_test
+name: transpose_test
+fullName: cntk.ops.tests.transpose_test
+functions:
+- uid: cntk.ops.tests.transpose_test.test_transpose
+  name: test_transpose
   summary: 'Test for transpose()
 
-    :return: Nothing
-
-    '
-  syntax:
-    content: test_transpose()
-  type: function
-  uid: cntk.ops.tests.transpose_test.test_transpose
-references:
-- fullName: cntk.ops.tests.transpose_test.test_transpose
-  isExternal: false
-  name: test_transpose()
-  parent: cntk.ops.tests.transpose_test
-  uid: cntk.ops.tests.transpose_test.test_transpose
+    :return: Nothing'
+  signature: test_transpose()

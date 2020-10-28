@@ -1,37 +1,11 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.internal.sanitize
-  - cntk.internal.swig_helper
-  - cntk.internal.utils
-  - cntk.internal.tests
-  fullName: cntk.internal
-  kind: import
-  langs:
-  - python
-  module: cntk.internal
-  name: internal
-  type: package
-  uid: cntk.internal
-references:
-- fullName: cntk.internal.sanitize
-  isExternal: false
-  name: sanitize
-  parent: cntk.internal
-  uid: cntk.internal.sanitize
-- fullName: cntk.internal.swig_helper
-  isExternal: false
-  name: swig_helper
-  parent: cntk.internal
-  uid: cntk.internal.swig_helper
-- fullName: cntk.internal.utils
-  isExternal: false
-  name: utils
-  parent: cntk.internal
-  uid: cntk.internal.utils
-- fullName: cntk.internal.tests
-  isExternal: false
-  name: tests
-  parent: cntk.internal
-  uid: cntk.internal.tests
+### YamlMime:PythonPackage
+uid: cntk.internal
+name: internal
+fullName: cntk.internal
+type: import
+packages:
+- cntk.internal.tests
+modules:
+- cntk.internal.sanitize
+- cntk.internal.swig_helper
+- cntk.internal.utils

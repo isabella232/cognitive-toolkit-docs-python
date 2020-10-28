@@ -1,20 +1,9 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.cntk_py.SequenceKey
-  fullName: cntk.cntk_py.SequenceKey
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: SequenceKey
-  summary: '
-
-    '
-  syntax:
-    content: SequenceKey(*args)
-  type: class
-  uid: cntk.cntk_py.SequenceKey
-references: []
+### YamlMime:PythonClass
+uid: cntk.cntk_py.SequenceKey
+name: SequenceKey
+fullName: cntk.cntk_py.SequenceKey
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: SequenceKey(*args)

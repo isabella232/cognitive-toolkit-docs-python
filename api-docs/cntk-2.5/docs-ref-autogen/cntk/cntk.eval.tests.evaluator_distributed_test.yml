@@ -1,45 +1,14 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.eval.tests.evaluator_distributed_test.mpiexec_execute
-  - cntk.eval.tests.evaluator_distributed_test.test_distributed_eval
-  fullName: cntk.eval.tests.evaluator_distributed_test
-  langs:
-  - python
-  module: cntk.eval.tests.evaluator_distributed_test
-  name: evaluator_distributed_test
-  type: module
-  uid: cntk.eval.tests.evaluator_distributed_test
-- fullName: cntk.eval.tests.evaluator_distributed_test.mpiexec_execute
-  langs:
-  - python
-  module: cntk.eval.tests.evaluator_distributed_test
-  name: mpiexec_execute(script, mpiexec_params)
-  syntax:
-    content: mpiexec_execute(script, mpiexec_params)
-    parameters:
-    - id: script
-    - id: mpiexec_params
-  type: function
-  uid: cntk.eval.tests.evaluator_distributed_test.mpiexec_execute
-- fullName: cntk.eval.tests.evaluator_distributed_test.test_distributed_eval
-  langs:
-  - python
-  module: cntk.eval.tests.evaluator_distributed_test
-  name: test_distributed_eval()
-  syntax:
-    content: test_distributed_eval()
-  type: function
-  uid: cntk.eval.tests.evaluator_distributed_test.test_distributed_eval
-references:
-- fullName: cntk.eval.tests.evaluator_distributed_test.mpiexec_execute
-  isExternal: false
-  name: mpiexec_execute(script, mpiexec_params)
-  parent: cntk.eval.tests.evaluator_distributed_test
-  uid: cntk.eval.tests.evaluator_distributed_test.mpiexec_execute
-- fullName: cntk.eval.tests.evaluator_distributed_test.test_distributed_eval
-  isExternal: false
-  name: test_distributed_eval()
-  parent: cntk.eval.tests.evaluator_distributed_test
-  uid: cntk.eval.tests.evaluator_distributed_test.test_distributed_eval
+### YamlMime:PythonModule
+uid: cntk.eval.tests.evaluator_distributed_test
+name: evaluator_distributed_test
+fullName: cntk.eval.tests.evaluator_distributed_test
+functions:
+- uid: cntk.eval.tests.evaluator_distributed_test.mpiexec_execute
+  name: mpiexec_execute
+  signature: mpiexec_execute(script, mpiexec_params)
+  parameters:
+  - name: script
+  - name: mpiexec_params
+- uid: cntk.eval.tests.evaluator_distributed_test.test_distributed_eval
+  name: test_distributed_eval
+  signature: test_distributed_eval()

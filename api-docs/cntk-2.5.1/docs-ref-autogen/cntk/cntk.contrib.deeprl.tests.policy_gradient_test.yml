@@ -1,18 +1,6 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: policy_gradient_test
-  type: module
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test
-references:
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  isExternal: false
-  name: PolicyGradientTest
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.policy_gradient_test
+name: policy_gradient_test
+fullName: cntk.contrib.deeprl.tests.policy_gradient_test
+classes:
+- cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest

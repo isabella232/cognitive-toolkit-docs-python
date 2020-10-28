@@ -1,18 +1,6 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
-  fullName: cntk.contrib.deeprl.tests.cntk_utils_test
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.cntk_utils_test
-  name: cntk_utils_test
-  type: module
-  uid: cntk.contrib.deeprl.tests.cntk_utils_test
-references:
-- fullName: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
-  isExternal: false
-  name: CNTKUtilsTest
-  parent: cntk.contrib.deeprl.tests.cntk_utils_test
-  uid: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.cntk_utils_test
+name: cntk_utils_test
+fullName: cntk.contrib.deeprl.tests.cntk_utils_test
+classes:
+- cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
