@@ -1,43 +1,12 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py_init.cntk_check_distro_info
-  - cntk.cntk_py_init.cntk_check_libs
-  fullName: cntk.cntk_py_init
-  langs:
-  - python
-  module: cntk.cntk_py_init
-  name: cntk_py_init
-  summary: Check OS requirements before running CNTK for Python.
-  type: module
-  uid: cntk.cntk_py_init
-- fullName: cntk.cntk_py_init.cntk_check_distro_info
-  langs:
-  - python
-  module: cntk.cntk_py_init
-  name: cntk_check_distro_info()
-  syntax:
-    content: cntk_check_distro_info()
-  type: function
-  uid: cntk.cntk_py_init.cntk_check_distro_info
-- fullName: cntk.cntk_py_init.cntk_check_libs
-  langs:
-  - python
-  module: cntk.cntk_py_init
-  name: cntk_check_libs()
-  syntax:
-    content: cntk_check_libs()
-  type: function
-  uid: cntk.cntk_py_init.cntk_check_libs
-references:
-- fullName: cntk.cntk_py_init.cntk_check_distro_info
-  isExternal: false
-  name: cntk_check_distro_info()
-  parent: cntk.cntk_py_init
-  uid: cntk.cntk_py_init.cntk_check_distro_info
-- fullName: cntk.cntk_py_init.cntk_check_libs
-  isExternal: false
-  name: cntk_check_libs()
-  parent: cntk.cntk_py_init
-  uid: cntk.cntk_py_init.cntk_check_libs
+### YamlMime:PythonModule
+uid: cntk.cntk_py_init
+name: cntk_py_init
+fullName: cntk.cntk_py_init
+summary: Check OS requirements before running CNTK for Python.
+functions:
+- uid: cntk.cntk_py_init.cntk_check_distro_info
+  name: cntk_check_distro_info
+  signature: cntk_check_distro_info()
+- uid: cntk.cntk_py_init.cntk_check_libs
+  name: cntk_check_libs
+  signature: cntk_check_libs()

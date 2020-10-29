@@ -1,25 +1,12 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.crosstalk.RnnAttr
-  fullName: cntk.contrib.crosstalk.RnnAttr
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: builtins.tuple
-    type: cntk.contrib.crosstalk.RnnAttr
-  langs:
-  - python
-  module: cntk.contrib.crosstalk
-  name: RnnAttr
-  summary: "Attribute for RNN variable\n\nbidirectional\n   True for bidirectional\
-    \ RNN, False for unidirection. Currently only support bidirectional=True\n\nop_type\n\
-    \   RNN cell type, currently only support 'lstm'\n\ninput_dim\n   Input dimension\n\
-    \nhidden_dim\n   Hidden dimension in RNN cell\n\nforget_bias\n   forget gate bias\
-    \ in LSTM\n"
-  syntax: {}
-  type: class
-  uid: cntk.contrib.crosstalk.RnnAttr
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalk.RnnAttr
+name: RnnAttr
+fullName: cntk.contrib.crosstalk.RnnAttr
+module: cntk.contrib.crosstalk
+inheritances:
+- cntk.contrib.crosstalk.RnnAttr
+summary: "Attribute for RNN variable\n\nbidirectional\n   True for bidirectional RNN,\
+  \ False for unidirection. Currently only support bidirectional=True\n\nop_type\n\
+  \   RNN cell type, currently only support 'lstm'\n\ninput_dim\n   Input dimension\n\
+  \nhidden_dim\n   Hidden dimension in RNN cell\n\nforget_bias\n   forget gate bias\
+  \ in LSTM"

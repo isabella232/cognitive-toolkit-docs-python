@@ -1,39 +1,17 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save
-  class: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
-  fullName: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.deeprl.agent.shared.qlearning_parameters
-  name: QLearningParameters
-  summary: 'Parameters used by Q learning algorithm.
-
-
-    '
-  syntax:
-    content: QLearningParameters(config_file)
-  type: class
-  uid: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
-- class: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
-  fullName: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save
-  langs:
-  - python
-  module: cntk.contrib.deeprl.agent.shared.qlearning_parameters
-  name: save(config_file)
-  syntax:
-    content: save(config_file)
-    parameters:
-    - id: config_file
-  type: method
-  uid: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save
-references:
-- fullName: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save
-  isExternal: false
-  name: save(config_file)
-  parent: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
-  uid: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
+name: QLearningParameters
+fullName: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
+module: cntk.contrib.deeprl.agent.shared.qlearning_parameters
+inheritances:
+- builtins.object
+summary: Parameters used by Q learning algorithm.
+constructor:
+  syntax: QLearningParameters(config_file)
+methods:
+- uid: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save
+  name: save
+  signature: save(config_file)
+  parameters:
+  - name: config_file
+    isRequired: true

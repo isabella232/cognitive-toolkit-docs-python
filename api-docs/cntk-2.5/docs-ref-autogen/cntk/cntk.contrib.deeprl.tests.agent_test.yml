@@ -1,24 +1,7 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  - cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
-  fullName: cntk.contrib.deeprl.tests.agent_test
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.agent_test
-  name: agent_test
-  type: module
-  uid: cntk.contrib.deeprl.tests.agent_test
-references:
-- fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  isExternal: false
-  name: AgentBaseClassTest
-  parent: cntk.contrib.deeprl.tests.agent_test
-  uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-- fullName: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
-  isExternal: false
-  name: FakeAgentBaseClass
-  parent: cntk.contrib.deeprl.tests.agent_test
-  uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.agent_test
+name: agent_test
+fullName: cntk.contrib.deeprl.tests.agent_test
+classes:
+- cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
+- cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass

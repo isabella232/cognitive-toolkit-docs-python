@@ -1,112 +1,26 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_box_observation_space
-  - cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_discrete_observation_space
-  - cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_multibinary_observation_space
-  - cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_action_space
-  - cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_observation_space
-  class: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: unittest.case.TestCase
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.agent_test
-  name: AgentBaseClassTest
-  summary: 'Unit tests for AgentBaseClass.
-
-
-
-
-
-
-    '
-  syntax:
-    content: AgentBaseClassTest(methodName='runTest')
-  type: class
-  uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-- class: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_box_observation_space
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.agent_test
-  name: test_init_box_observation_space()
-  syntax:
-    content: test_init_box_observation_space()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_box_observation_space
-- class: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_discrete_observation_space
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.agent_test
-  name: test_init_discrete_observation_space()
-  syntax:
-    content: test_init_discrete_observation_space()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_discrete_observation_space
-- class: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_multibinary_observation_space
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.agent_test
-  name: test_init_multibinary_observation_space()
-  syntax:
-    content: test_init_multibinary_observation_space()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_multibinary_observation_space
-- class: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_action_space
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.agent_test
-  name: test_init_unsupported_action_space()
-  syntax:
-    content: test_init_unsupported_action_space()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_action_space
-- class: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_observation_space
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.agent_test
-  name: test_init_unsupported_observation_space()
-  syntax:
-    content: test_init_unsupported_observation_space()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_observation_space
-references:
-- fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_box_observation_space
-  isExternal: false
-  name: test_init_box_observation_space()
-  parent: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_box_observation_space
-- fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_discrete_observation_space
-  isExternal: false
-  name: test_init_discrete_observation_space()
-  parent: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_discrete_observation_space
-- fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_multibinary_observation_space
-  isExternal: false
-  name: test_init_multibinary_observation_space()
-  parent: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_multibinary_observation_space
-- fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_action_space
-  isExternal: false
-  name: test_init_unsupported_action_space()
-  parent: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_action_space
-- fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_observation_space
-  isExternal: false
-  name: test_init_unsupported_observation_space()
-  parent: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
-  uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_observation_space
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
+name: AgentBaseClassTest
+fullName: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
+module: cntk.contrib.deeprl.tests.agent_test
+inheritances:
+- unittest.case.TestCase
+summary: Unit tests for AgentBaseClass.
+constructor:
+  syntax: AgentBaseClassTest(methodName='runTest')
+methods:
+- uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_box_observation_space
+  name: test_init_box_observation_space
+  signature: test_init_box_observation_space()
+- uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_discrete_observation_space
+  name: test_init_discrete_observation_space
+  signature: test_init_discrete_observation_space()
+- uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_multibinary_observation_space
+  name: test_init_multibinary_observation_space
+  signature: test_init_multibinary_observation_space()
+- uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_action_space
+  name: test_init_unsupported_action_space
+  signature: test_init_unsupported_action_space()
+- uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest.test_init_unsupported_observation_space
+  name: test_init_unsupported_observation_space
+  signature: test_init_unsupported_observation_space()

@@ -1,18 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkModelDescription
-  fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkModelDescription
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
-  name: CntkModelDescription
-  summary: Record the basic information of model
-  syntax:
-    content: CntkModelDescription()
-  type: class
-  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkModelDescription
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkModelDescription
+name: CntkModelDescription
+fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkModelDescription
+module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+inheritances:
+- builtins.object
+summary: Record the basic information of model
+constructor:
+  syntax: CntkModelDescription()

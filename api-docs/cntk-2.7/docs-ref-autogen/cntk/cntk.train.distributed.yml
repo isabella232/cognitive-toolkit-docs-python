@@ -1,32 +1,11 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.train.distributed.Communicator
-  - cntk.train.distributed.DistributedLearner
-  - cntk.train.distributed.WorkerDescriptor
-  - cntk.train.distributed.block_momentum_distributed_learner
-  - cntk.train.distributed.data_parallel_distributed_learner
-  - cntk.train.distributed.mpi_communicator
-  fullName: cntk.train.distributed
-  langs:
-  - python
-  module: cntk.train.distributed
-  name: distributed
-  summary: Distributed learners manage learners in distributed environment.
-  type: module
-  uid: cntk.train.distributed
-- fullName: cntk.train.distributed.block_momentum_distributed_learner
-  langs:
-  - python
-  module: cntk.train.distributed
-  name: block_momentum_distributed_learner(learner, block_size, block_momentum_as_time_constant=None,
-    use_nestrov_momentum=True, reset_sgd_momentum_after_aggregation=True, block_learning_rate=1.0,
-    distributed_after=0)
-  seealsoContent: "  [1] K. Chen and Q. Huo. [Scalable training of deep learning machines\n\
-    \  by incremental block training with intra-block parallel optimization\n  and\
-    \ blockwise model-update filtering](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/0005880.pdf).\n\
-    \  Proceedings of ICASSP, 2016.\n"
+### YamlMime:PythonModule
+uid: cntk.train.distributed
+name: distributed
+fullName: cntk.train.distributed
+summary: Distributed learners manage learners in distributed environment.
+functions:
+- uid: cntk.train.distributed.block_momentum_distributed_learner
+  name: block_momentum_distributed_learner
   summary: 'Creates a block momentum distributed learner. See [1] for more
 
     information.
@@ -40,111 +19,69 @@ items:
     During training, a random, unprocessed block is randomly taken by the trainer
 
     and the N partitions of this block are dispatched on the workers.'
-  syntax:
-    content: block_momentum_distributed_learner(learner, block_size, block_momentum_as_time_constant=None,
-      use_nestrov_momentum=True, reset_sgd_momentum_after_aggregation=True, block_learning_rate=1.0,
-      distributed_after=0)
-    parameters:
-    - description: a local learner (i.e. sgd)
-      id: learner
-    - description: size of the partition in samples
-      id: block_size
-      type:
-      - int
-    - description: block momentum as time constant
-      id: block_momentum_as_time_constant
-      type:
-      - float
-    - description: use nestrov momentum
-      id: use_nestrov_momentum
-      type:
-      - bool
-    - description: reset SGD momentum after aggregation
-      id: reset_sgd_momentum_after_aggregation
-      type:
-      - bool
-    - description: block learning rate
-      id: block_learning_rate
-      type:
-      - float
-    - description: number of samples after which distributed training starts
-      id: distributed_after
-      type:
-      - int
-    return:
-      description: a distributed learner instance
-  type: function
-  uid: cntk.train.distributed.block_momentum_distributed_learner
-- fullName: cntk.train.distributed.data_parallel_distributed_learner
-  langs:
-  - python
-  module: cntk.train.distributed
-  name: data_parallel_distributed_learner(learner, distributed_after=0, num_quantization_bits=32,
-    use_async_buffered_parameter_update=False)
-  summary: Creates a data parallel distributed learner
-  syntax:
-    content: data_parallel_distributed_learner(learner, distributed_after=0, num_quantization_bits=32,
-      use_async_buffered_parameter_update=False)
-    parameters:
-    - description: a local learner (i.e. sgd)
-      id: learner
-    - description: number of samples after which distributed training starts
-      id: distributed_after
-      type:
-      - int
-    - description: number of bits for quantization (1 to 32)
-      id: num_quantization_bits
-      type:
-      - int
-    - description: use async buffered parameter update, currently must be False
-      id: use_async_buffered_parameter_update
-      type:
-      - bool
-    return:
-      description: a distributed learner instance
-  type: function
-  uid: cntk.train.distributed.data_parallel_distributed_learner
-- fullName: cntk.train.distributed.mpi_communicator
-  langs:
-  - python
-  module: cntk.train.distributed
-  name: mpi_communicator()
-  summary: Creates a non quantized MPI communicator.
-  syntax:
-    content: mpi_communicator()
-  type: function
-  uid: cntk.train.distributed.mpi_communicator
-references:
-- fullName: cntk.train.distributed.Communicator
-  isExternal: false
-  name: Communicator
-  parent: cntk.train.distributed
-  uid: cntk.train.distributed.Communicator
-- fullName: cntk.train.distributed.DistributedLearner
-  isExternal: false
-  name: DistributedLearner
-  parent: cntk.train.distributed
-  uid: cntk.train.distributed.DistributedLearner
-- fullName: cntk.train.distributed.WorkerDescriptor
-  isExternal: false
-  name: WorkerDescriptor
-  parent: cntk.train.distributed
-  uid: cntk.train.distributed.WorkerDescriptor
-- fullName: cntk.train.distributed.block_momentum_distributed_learner
-  isExternal: false
-  name: block_momentum_distributed_learner(learner, block_size, block_momentum_as_time_constant=None,
+  signature: block_momentum_distributed_learner(learner, block_size, block_momentum_as_time_constant=None,
     use_nestrov_momentum=True, reset_sgd_momentum_after_aggregation=True, block_learning_rate=1.0,
     distributed_after=0)
-  parent: cntk.train.distributed
-  uid: cntk.train.distributed.block_momentum_distributed_learner
-- fullName: cntk.train.distributed.data_parallel_distributed_learner
-  isExternal: false
-  name: data_parallel_distributed_learner(learner, distributed_after=0, num_quantization_bits=32,
+  parameters:
+  - name: learner
+    description: a local learner (i.e. sgd)
+  - name: block_size
+    description: size of the partition in samples
+    types:
+    - <xref:int>
+  - name: block_momentum_as_time_constant
+    description: block momentum as time constant
+    types:
+    - <xref:float>
+  - name: use_nestrov_momentum
+    description: use nestrov momentum
+    types:
+    - <xref:bool>
+  - name: reset_sgd_momentum_after_aggregation
+    description: reset SGD momentum after aggregation
+    types:
+    - <xref:bool>
+  - name: block_learning_rate
+    description: block learning rate
+    types:
+    - <xref:float>
+  - name: distributed_after
+    description: number of samples after which distributed training starts
+    types:
+    - <xref:int>
+  return:
+    description: a distributed learner instance
+  seeAlsoContent: "  [1] K. Chen and Q. Huo. [Scalable training of deep learning machines\n\
+    \  by incremental block training with intra-block parallel optimization\n  and\
+    \ blockwise model-update filtering](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/0005880.pdf).\n\
+    \  Proceedings of ICASSP, 2016.\n"
+- uid: cntk.train.distributed.data_parallel_distributed_learner
+  name: data_parallel_distributed_learner
+  summary: Creates a data parallel distributed learner
+  signature: data_parallel_distributed_learner(learner, distributed_after=0, num_quantization_bits=32,
     use_async_buffered_parameter_update=False)
-  parent: cntk.train.distributed
-  uid: cntk.train.distributed.data_parallel_distributed_learner
-- fullName: cntk.train.distributed.mpi_communicator
-  isExternal: false
-  name: mpi_communicator()
-  parent: cntk.train.distributed
-  uid: cntk.train.distributed.mpi_communicator
+  parameters:
+  - name: learner
+    description: a local learner (i.e. sgd)
+  - name: distributed_after
+    description: number of samples after which distributed training starts
+    types:
+    - <xref:int>
+  - name: num_quantization_bits
+    description: number of bits for quantization (1 to 32)
+    types:
+    - <xref:int>
+  - name: use_async_buffered_parameter_update
+    description: use async buffered parameter update, currently must be False
+    types:
+    - <xref:bool>
+  return:
+    description: a distributed learner instance
+- uid: cntk.train.distributed.mpi_communicator
+  name: mpi_communicator
+  summary: Creates a non quantized MPI communicator.
+  signature: mpi_communicator()
+classes:
+- cntk.train.distributed.Communicator
+- cntk.train.distributed.DistributedLearner
+- cntk.train.distributed.WorkerDescriptor

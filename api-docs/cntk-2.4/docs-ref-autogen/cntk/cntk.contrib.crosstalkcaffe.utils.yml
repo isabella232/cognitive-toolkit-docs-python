@@ -1,25 +1,8 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.crosstalkcaffe.utils.format
-  - cntk.contrib.crosstalkcaffe.utils.globalconf
-  fullName: cntk.contrib.crosstalkcaffe.utils
-  kind: import
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.utils
-  name: utils
-  type: package
-  uid: cntk.contrib.crosstalkcaffe.utils
-references:
-- fullName: cntk.contrib.crosstalkcaffe.utils.format
-  isExternal: false
-  name: format
-  parent: cntk.contrib.crosstalkcaffe.utils
-  uid: cntk.contrib.crosstalkcaffe.utils.format
-- fullName: cntk.contrib.crosstalkcaffe.utils.globalconf
-  isExternal: false
-  name: globalconf
-  parent: cntk.contrib.crosstalkcaffe.utils
-  uid: cntk.contrib.crosstalkcaffe.utils.globalconf
+### YamlMime:PythonPackage
+uid: cntk.contrib.crosstalkcaffe.utils
+name: utils
+fullName: cntk.contrib.crosstalkcaffe.utils
+type: import
+modules:
+- cntk.contrib.crosstalkcaffe.utils.format
+- cntk.contrib.crosstalkcaffe.utils.globalconf

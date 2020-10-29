@@ -1,142 +1,79 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_summary
-  - cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_update
-  - cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_summary
-  - cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_update
-  - cntk.logging.progress_print.TrainingSummaryProgressCallback.write
-  class: cntk.logging.progress_print.TrainingSummaryProgressCallback
-  fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.cntk_py.ProgressWriter
-  langs:
-  - python
-  module: cntk.logging.progress_print
-  name: TrainingSummaryProgressCallback
-  summary: 'Helper to pass a callback function to be called after each training epoch
+### YamlMime:PythonClass
+uid: cntk.logging.progress_print.TrainingSummaryProgressCallback
+name: TrainingSummaryProgressCallback
+fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback
+module: cntk.logging.progress_print
+inheritances:
+- cntk.cntk_py.ProgressWriter
+summary: 'Helper to pass a callback function to be called after each training epoch
 
-    to <xref:cntk.train.trainer.Trainer>,
+  to <xref:cntk.train.trainer.Trainer>,
 
-    <xref:cntk.eval.evaluator.Evaluator>, and <xref:cntk.train.training_session.TrainingSession>,
+  <xref:cntk.eval.evaluator.Evaluator>, and <xref:cntk.train.training_session.TrainingSession>,
 
-    as well a <xref:cntk.ops.functions.Function.train>, <xref:cntk.ops.functions.Function.test>.
+  as well a <xref:cntk.ops.functions.Function.train>, <xref:cntk.ops.functions.Function.test>.
 
 
-    This allows the user to add additional logging after each training epoch.'
-  syntax:
-    content: TrainingSummaryProgressCallback(epoch_size, callback)
-    parameters:
-    - description: periodically call the callback after processing this many samples
-      id: epoch_size
-      type:
-      - int
-    - description: function(epoch_index, epoch_loss, epoch_metric, epoch_samples)
-      id: callback
-      type:
-      - function
-  type: class
-  uid: cntk.logging.progress_print.TrainingSummaryProgressCallback
-- class: cntk.logging.progress_print.TrainingSummaryProgressCallback
-  fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_summary
-  langs:
-  - python
-  module: cntk.logging.progress_print
-  name: on_write_test_summary(samples, updates, summaries, aggregate_metric, elapsed_milliseconds)
-  syntax:
-    content: on_write_test_summary(samples, updates, summaries, aggregate_metric,
-      elapsed_milliseconds)
-    parameters:
-    - id: samples
-    - id: updates
-    - id: summaries
-    - id: aggregate_metric
-    - id: elapsed_milliseconds
-  type: method
-  uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_summary
-- class: cntk.logging.progress_print.TrainingSummaryProgressCallback
-  fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_update
-  langs:
-  - python
-  module: cntk.logging.progress_print
-  name: on_write_test_update(*args, **kwargs)
-  syntax:
-    content: on_write_test_update(*args, **kwargs)
-    parameters: []
-  type: method
-  uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_update
-- class: cntk.logging.progress_print.TrainingSummaryProgressCallback
-  fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_summary
-  langs:
-  - python
-  module: cntk.logging.progress_print
-  name: on_write_training_summary(samples, updates, summaries, aggregate_loss, aggregate_metric,
+  This allows the user to add additional logging after each training epoch.'
+constructor:
+  syntax: TrainingSummaryProgressCallback(epoch_size, callback)
+  parameters:
+  - name: epoch_size
+    description: periodically call the callback after processing this many samples
+    types:
+    - <xref:int>
+  - name: callback
+    description: function(epoch_index, epoch_loss, epoch_metric, epoch_samples)
+    types:
+    - <xref:function>
+methods:
+- uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_summary
+  name: on_write_test_summary
+  signature: on_write_test_summary(samples, updates, summaries, aggregate_metric,
     elapsed_milliseconds)
-  syntax:
-    content: on_write_training_summary(samples, updates, summaries, aggregate_loss,
-      aggregate_metric, elapsed_milliseconds)
-    parameters:
-    - id: samples
-    - id: updates
-    - id: summaries
-    - id: aggregate_loss
-    - id: aggregate_metric
-    - id: elapsed_milliseconds
-  type: method
-  uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_summary
-- class: cntk.logging.progress_print.TrainingSummaryProgressCallback
-  fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_update
-  langs:
-  - python
-  module: cntk.logging.progress_print
-  name: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
-  syntax:
-    content: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
-    parameters:
-    - id: samples
-    - id: updates
-    - id: aggregate_loss
-    - id: aggregate_metric
-  type: method
-  uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_update
-- class: cntk.logging.progress_print.TrainingSummaryProgressCallback
-  fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.write
-  langs:
-  - python
-  module: cntk.logging.progress_print
-  name: write(*args, **kwargs)
-  syntax:
-    content: write(*args, **kwargs)
-    parameters: []
-  type: method
-  uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.write
-references:
-- fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_summary
-  isExternal: false
-  name: on_write_test_summary(samples, updates, summaries, aggregate_metric, elapsed_milliseconds)
-  parent: cntk.logging.progress_print.TrainingSummaryProgressCallback
-  uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_summary
-- fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_update
-  isExternal: false
-  name: on_write_test_update(*args, **kwargs)
-  parent: cntk.logging.progress_print.TrainingSummaryProgressCallback
-  uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_update
-- fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_summary
-  isExternal: false
-  name: on_write_training_summary(samples, updates, summaries, aggregate_loss, aggregate_metric,
-    elapsed_milliseconds)
-  parent: cntk.logging.progress_print.TrainingSummaryProgressCallback
-  uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_summary
-- fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_update
-  isExternal: false
-  name: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
-  parent: cntk.logging.progress_print.TrainingSummaryProgressCallback
-  uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_update
-- fullName: cntk.logging.progress_print.TrainingSummaryProgressCallback.write
-  isExternal: false
-  name: write(*args, **kwargs)
-  parent: cntk.logging.progress_print.TrainingSummaryProgressCallback
-  uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.write
+  parameters:
+  - name: samples
+    isRequired: true
+  - name: updates
+    isRequired: true
+  - name: summaries
+    isRequired: true
+  - name: aggregate_metric
+    isRequired: true
+  - name: elapsed_milliseconds
+    isRequired: true
+- uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_test_update
+  name: on_write_test_update
+  signature: on_write_test_update(*args, **kwargs)
+- uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_summary
+  name: on_write_training_summary
+  signature: on_write_training_summary(samples, updates, summaries, aggregate_loss,
+    aggregate_metric, elapsed_milliseconds)
+  parameters:
+  - name: samples
+    isRequired: true
+  - name: updates
+    isRequired: true
+  - name: summaries
+    isRequired: true
+  - name: aggregate_loss
+    isRequired: true
+  - name: aggregate_metric
+    isRequired: true
+  - name: elapsed_milliseconds
+    isRequired: true
+- uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.on_write_training_update
+  name: on_write_training_update
+  signature: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
+  parameters:
+  - name: samples
+    isRequired: true
+  - name: updates
+    isRequired: true
+  - name: aggregate_loss
+    isRequired: true
+  - name: aggregate_metric
+    isRequired: true
+- uid: cntk.logging.progress_print.TrainingSummaryProgressCallback.write
+  name: write
+  signature: write(*args, **kwargs)

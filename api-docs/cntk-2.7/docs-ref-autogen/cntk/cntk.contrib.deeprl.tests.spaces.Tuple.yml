@@ -1,18 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.deeprl.tests.spaces.Tuple
-  fullName: cntk.contrib.deeprl.tests.spaces.Tuple
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.spaces
-  name: Tuple
-  summary: Fake gym.spaces.tuple_space.Tuple to remove dependency on OpenAI gym.
-  syntax:
-    content: Tuple(spaces)
-  type: class
-  uid: cntk.contrib.deeprl.tests.spaces.Tuple
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.spaces.Tuple
+name: Tuple
+fullName: cntk.contrib.deeprl.tests.spaces.Tuple
+module: cntk.contrib.deeprl.tests.spaces
+inheritances:
+- builtins.object
+summary: Fake gym.spaces.tuple_space.Tuple to remove dependency on OpenAI gym.
+constructor:
+  syntax: Tuple(spaces)

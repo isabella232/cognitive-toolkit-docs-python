@@ -1,22 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.deeprl.tests.tabular_qlearning_test.FakeTabularQLearning
-  fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.FakeTabularQLearning
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: cntk.contrib.deeprl.agent.agent.AgentBaseClass
-    type: cntk.contrib.deeprl.agent.tabular_qlearning.TabularQLearning
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.tabular_qlearning_test
-  name: FakeTabularQLearning
-  summary: Override TabularQLearning for unittest.
-  syntax:
-    content: FakeTabularQLearning(cfg_filename, o_space, a_space)
-  type: class
-  uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.FakeTabularQLearning
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.FakeTabularQLearning
+name: FakeTabularQLearning
+fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test.FakeTabularQLearning
+module: cntk.contrib.deeprl.tests.tabular_qlearning_test
+inheritances:
+- cntk.contrib.deeprl.agent.tabular_qlearning.TabularQLearning
+summary: Override TabularQLearning for unittest.
+constructor:
+  syntax: FakeTabularQLearning(cfg_filename, o_space, a_space)

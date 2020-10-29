@@ -1,42 +1,18 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer.discretize
-  class: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer
-  fullName: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.deeprl.agent.shared.discretize
-  name: BoxSpaceDiscretizer
-  summary: 'Discretize Box space.
-
-
-    '
-  syntax:
-    content: BoxSpaceDiscretizer(space, resolution)
-  type: class
-  uid: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer
-- class: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer
-  fullName: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer.discretize
-  langs:
-  - python
-  module: cntk.contrib.deeprl.agent.shared.discretize
-  name: discretize(value)
-  summary: 'Discretize box space observation.
-
-    '
-  syntax:
-    content: discretize(value)
-    parameters:
-    - id: value
-  type: method
-  uid: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer.discretize
-references:
-- fullName: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer.discretize
-  isExternal: false
-  name: discretize(value)
-  parent: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer
-  uid: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer.discretize
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer
+name: BoxSpaceDiscretizer
+fullName: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer
+module: cntk.contrib.deeprl.agent.shared.discretize
+inheritances:
+- builtins.object
+summary: Discretize Box space.
+constructor:
+  syntax: BoxSpaceDiscretizer(space, resolution)
+methods:
+- uid: cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer.discretize
+  name: discretize
+  summary: Discretize box space observation.
+  signature: discretize(value)
+  parameters:
+  - name: value
+    isRequired: true

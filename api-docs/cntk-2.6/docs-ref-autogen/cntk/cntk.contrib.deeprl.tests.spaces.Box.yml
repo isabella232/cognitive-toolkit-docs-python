@@ -1,21 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.deeprl.tests.spaces.Box
-  fullName: cntk.contrib.deeprl.tests.spaces.Box
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.spaces
-  name: Box
-  summary: 'Fake gym.spaces.box.Box to remove dependency on OpenAI gym.
-
-
-    '
-  syntax:
-    content: Box(low, high, shape=None)
-  type: class
-  uid: cntk.contrib.deeprl.tests.spaces.Box
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.spaces.Box
+name: Box
+fullName: cntk.contrib.deeprl.tests.spaces.Box
+module: cntk.contrib.deeprl.tests.spaces
+inheritances:
+- builtins.object
+summary: Fake gym.spaces.box.Box to remove dependency on OpenAI gym.
+constructor:
+  syntax: Box(low, high, shape=None)

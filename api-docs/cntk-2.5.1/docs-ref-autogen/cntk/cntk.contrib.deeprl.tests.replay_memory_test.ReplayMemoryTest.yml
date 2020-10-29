@@ -1,58 +1,17 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_prioritized_sampling
-  - cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_uniform_sampling
-  class: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
-  fullName: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: unittest.case.TestCase
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.replay_memory_test
-  name: ReplayMemoryTest
-  summary: 'Unit tests for ReplayMemory.
-
-
-
-    '
-  syntax:
-    content: ReplayMemoryTest(methodName='runTest')
-  type: class
-  uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
-- class: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
-  fullName: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_prioritized_sampling
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.replay_memory_test
-  name: test_prioritized_sampling()
-  syntax:
-    content: test_prioritized_sampling()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_prioritized_sampling
-- class: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
-  fullName: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_uniform_sampling
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.replay_memory_test
-  name: test_uniform_sampling()
-  syntax:
-    content: test_uniform_sampling()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_uniform_sampling
-references:
-- fullName: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_prioritized_sampling
-  isExternal: false
-  name: test_prioritized_sampling()
-  parent: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
-  uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_prioritized_sampling
-- fullName: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_uniform_sampling
-  isExternal: false
-  name: test_uniform_sampling()
-  parent: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
-  uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_uniform_sampling
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
+name: ReplayMemoryTest
+fullName: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
+module: cntk.contrib.deeprl.tests.replay_memory_test
+inheritances:
+- unittest.case.TestCase
+summary: Unit tests for ReplayMemory.
+constructor:
+  syntax: ReplayMemoryTest(methodName='runTest')
+methods:
+- uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_prioritized_sampling
+  name: test_prioritized_sampling
+  signature: test_prioritized_sampling()
+- uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_uniform_sampling
+  name: test_uniform_sampling
+  signature: test_uniform_sampling()

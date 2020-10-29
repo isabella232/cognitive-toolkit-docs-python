@@ -1,71 +1,42 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate
-  - cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate_in_place
-  class: cntk.cntk_py.QuantizedDistributedCommunicator
-  fullName: cntk.cntk_py.QuantizedDistributedCommunicator
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.cntk_py.DistributedCommunicator
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: QuantizedDistributedCommunicator
-  summary: ''
-  syntax:
-    content: QuantizedDistributedCommunicator(*args, **kwargs)
-  type: class
-  uid: cntk.cntk_py.QuantizedDistributedCommunicator
-- class: cntk.cntk_py.QuantizedDistributedCommunicator
-  fullName: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: quantized_aggregate(inValues, valueQuantizationResidues, stripeQuantizationResidues,
+### YamlMime:PythonClass
+uid: cntk.cntk_py.QuantizedDistributedCommunicator
+name: QuantizedDistributedCommunicator
+fullName: cntk.cntk_py.QuantizedDistributedCommunicator
+module: cntk.cntk_py
+inheritances:
+- cntk.cntk_py.DistributedCommunicator
+constructor:
+  syntax: QuantizedDistributedCommunicator(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate
+  name: quantized_aggregate
+  signature: quantized_aggregate(inValues, valueQuantizationResidues, stripeQuantizationResidues,
     aggregatedOutputs, newQuantizationResidues, newStripeQuantizationResidues, sendToWorkers)
-  syntax:
-    content: quantized_aggregate(inValues, valueQuantizationResidues, stripeQuantizationResidues,
-      aggregatedOutputs, newQuantizationResidues, newStripeQuantizationResidues, sendToWorkers)
-    parameters:
-    - id: inValues
-    - id: valueQuantizationResidues
-    - id: stripeQuantizationResidues
-    - id: aggregatedOutputs
-    - id: newQuantizationResidues
-    - id: newStripeQuantizationResidues
-    - id: sendToWorkers
-  type: method
-  uid: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate
-- class: cntk.cntk_py.QuantizedDistributedCommunicator
-  fullName: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate_in_place
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: quantized_aggregate_in_place(inValues, valueQuantizationResidues, stripeQuantizationResidues,
+  parameters:
+  - name: inValues
+    isRequired: true
+  - name: valueQuantizationResidues
+    isRequired: true
+  - name: stripeQuantizationResidues
+    isRequired: true
+  - name: aggregatedOutputs
+    isRequired: true
+  - name: newQuantizationResidues
+    isRequired: true
+  - name: newStripeQuantizationResidues
+    isRequired: true
+  - name: sendToWorkers
+    isRequired: true
+- uid: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate_in_place
+  name: quantized_aggregate_in_place
+  signature: quantized_aggregate_in_place(inValues, valueQuantizationResidues, stripeQuantizationResidues,
     sendToWorkers)
-  syntax:
-    content: quantized_aggregate_in_place(inValues, valueQuantizationResidues, stripeQuantizationResidues,
-      sendToWorkers)
-    parameters:
-    - id: inValues
-    - id: valueQuantizationResidues
-    - id: stripeQuantizationResidues
-    - id: sendToWorkers
-  type: method
-  uid: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate_in_place
-references:
-- fullName: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate
-  isExternal: false
-  name: quantized_aggregate(inValues, valueQuantizationResidues, stripeQuantizationResidues,
-    aggregatedOutputs, newQuantizationResidues, newStripeQuantizationResidues, sendToWorkers)
-  parent: cntk.cntk_py.QuantizedDistributedCommunicator
-  uid: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate
-- fullName: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate_in_place
-  isExternal: false
-  name: quantized_aggregate_in_place(inValues, valueQuantizationResidues, stripeQuantizationResidues,
-    sendToWorkers)
-  parent: cntk.cntk_py.QuantizedDistributedCommunicator
-  uid: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate_in_place
+  parameters:
+  - name: inValues
+    isRequired: true
+  - name: valueQuantizationResidues
+    isRequired: true
+  - name: stripeQuantizationResidues
+    isRequired: true
+  - name: sendToWorkers
+    isRequired: true

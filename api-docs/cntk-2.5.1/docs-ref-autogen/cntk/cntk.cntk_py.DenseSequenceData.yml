@@ -1,19 +1,9 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.cntk_py.DenseSequenceData
-  fullName: cntk.cntk_py.DenseSequenceData
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.cntk_py.SequenceDataBase
-  langs:
-  - python
-  module: cntk.cntk_py
-  name: DenseSequenceData
-  syntax:
-    content: DenseSequenceData(*args, **kwargs)
-  type: class
-  uid: cntk.cntk_py.DenseSequenceData
-references: []
+### YamlMime:PythonClass
+uid: cntk.cntk_py.DenseSequenceData
+name: DenseSequenceData
+fullName: cntk.cntk_py.DenseSequenceData
+module: cntk.cntk_py
+inheritances:
+- cntk.cntk_py.SequenceDataBase
+constructor:
+  syntax: DenseSequenceData(*args, **kwargs)

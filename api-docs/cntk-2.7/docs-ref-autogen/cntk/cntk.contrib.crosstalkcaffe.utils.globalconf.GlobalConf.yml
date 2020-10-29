@@ -1,18 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.crosstalkcaffe.utils.globalconf.GlobalConf
-  fullName: cntk.contrib.crosstalkcaffe.utils.globalconf.GlobalConf
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.utils.globalconf
-  name: GlobalConf
-  summary: The definition of global configuration
-  syntax:
-    content: GlobalConf()
-  type: class
-  uid: cntk.contrib.crosstalkcaffe.utils.globalconf.GlobalConf
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.utils.globalconf.GlobalConf
+name: GlobalConf
+fullName: cntk.contrib.crosstalkcaffe.utils.globalconf.GlobalConf
+module: cntk.contrib.crosstalkcaffe.utils.globalconf
+inheritances:
+- builtins.object
+summary: The definition of global configuration
+constructor:
+  syntax: GlobalConf()

@@ -1,13 +1,5 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  fullName: cntk.internal.tests
-  kind: import
-  langs:
-  - python
-  module: cntk.internal.tests
-  name: tests
-  type: package
-  uid: cntk.internal.tests
-references: []
+### YamlMime:PythonPackage
+uid: cntk.internal.tests
+name: tests
+fullName: cntk.internal.tests
+type: import

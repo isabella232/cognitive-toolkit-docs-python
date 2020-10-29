@@ -1,230 +1,47 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_customized_model
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_from_existing_model
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_preprocess
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_shared_representation
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_unsupported_model
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_process_accumulated_trajectory
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_process_accumulated_trajectory_keep_last
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout_preprocess
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout_with_update
-  - cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_update_policy_and_value_function
-  class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: unittest.case.TestCase
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: PolicyGradientTest
-  summary: 'Unit tests for policy gradient.
-
-
-
-
-
-
-
-
-
-
-
-
-
-    '
-  syntax:
-    content: PolicyGradientTest(methodName='runTest')
-  type: class
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-- class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: test_init(mock_model)
-  syntax:
-    content: test_init(mock_model)
-  type: method
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init
-- class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_customized_model
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: test_init_customized_model(mock_parameters, mock_model)
-  syntax:
-    content: test_init_customized_model(mock_parameters, mock_model)
-  type: method
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_customized_model
-- class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_from_existing_model
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: test_init_from_existing_model(mock_parameters)
-  syntax:
-    content: test_init_from_existing_model(mock_parameters)
-  type: method
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_from_existing_model
-- class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_preprocess
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: test_init_preprocess(mock_parameters, mock_model)
-  syntax:
-    content: test_init_preprocess(mock_parameters, mock_model)
-  type: method
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_preprocess
-- class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_shared_representation
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: test_init_shared_representation(mock_parameters)
-  syntax:
-    content: test_init_shared_representation(mock_parameters)
-  type: method
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_shared_representation
-- class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_unsupported_model
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: test_init_unsupported_model(mock_parameters)
-  syntax:
-    content: test_init_unsupported_model(mock_parameters)
-  type: method
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_unsupported_model
-- class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_process_accumulated_trajectory
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: test_process_accumulated_trajectory()
-  syntax:
-    content: test_process_accumulated_trajectory()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_process_accumulated_trajectory
-- class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_process_accumulated_trajectory_keep_last
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: test_process_accumulated_trajectory_keep_last()
-  syntax:
-    content: test_process_accumulated_trajectory_keep_last()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_process_accumulated_trajectory_keep_last
-- class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: test_rollout()
-  syntax:
-    content: test_rollout()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout
-- class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout_preprocess
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: test_rollout_preprocess(mock_parameters)
-  syntax:
-    content: test_rollout_preprocess(mock_parameters)
-  type: method
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout_preprocess
-- class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout_with_update
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: test_rollout_with_update(mock_parameters)
-  syntax:
-    content: test_rollout_with_update(mock_parameters)
-  type: method
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout_with_update
-- class: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_update_policy_and_value_function
-  langs:
-  - python
-  module: cntk.contrib.deeprl.tests.policy_gradient_test
-  name: test_update_policy_and_value_function()
-  syntax:
-    content: test_update_policy_and_value_function()
-    parameters: []
-  type: method
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_update_policy_and_value_function
-references:
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init
-  isExternal: false
-  name: test_init(mock_model)
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_customized_model
-  isExternal: false
-  name: test_init_customized_model(mock_parameters, mock_model)
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_customized_model
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_from_existing_model
-  isExternal: false
-  name: test_init_from_existing_model(mock_parameters)
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_from_existing_model
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_preprocess
-  isExternal: false
-  name: test_init_preprocess(mock_parameters, mock_model)
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_preprocess
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_shared_representation
-  isExternal: false
-  name: test_init_shared_representation(mock_parameters)
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_shared_representation
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_unsupported_model
-  isExternal: false
-  name: test_init_unsupported_model(mock_parameters)
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_unsupported_model
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_process_accumulated_trajectory
-  isExternal: false
-  name: test_process_accumulated_trajectory()
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_process_accumulated_trajectory
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_process_accumulated_trajectory_keep_last
-  isExternal: false
-  name: test_process_accumulated_trajectory_keep_last()
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_process_accumulated_trajectory_keep_last
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout
-  isExternal: false
-  name: test_rollout()
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout_preprocess
-  isExternal: false
-  name: test_rollout_preprocess(mock_parameters)
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout_preprocess
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout_with_update
-  isExternal: false
-  name: test_rollout_with_update(mock_parameters)
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout_with_update
-- fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_update_policy_and_value_function
-  isExternal: false
-  name: test_update_policy_and_value_function()
-  parent: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
-  uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_update_policy_and_value_function
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
+name: PolicyGradientTest
+fullName: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
+module: cntk.contrib.deeprl.tests.policy_gradient_test
+inheritances:
+- unittest.case.TestCase
+summary: Unit tests for policy gradient.
+constructor:
+  syntax: PolicyGradientTest(methodName='runTest')
+methods:
+- uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init
+  name: test_init
+  signature: test_init(mock_model)
+- uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_customized_model
+  name: test_init_customized_model
+  signature: test_init_customized_model(mock_parameters, mock_model)
+- uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_from_existing_model
+  name: test_init_from_existing_model
+  signature: test_init_from_existing_model(mock_parameters)
+- uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_preprocess
+  name: test_init_preprocess
+  signature: test_init_preprocess(mock_parameters, mock_model)
+- uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_shared_representation
+  name: test_init_shared_representation
+  signature: test_init_shared_representation(mock_parameters)
+- uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_init_unsupported_model
+  name: test_init_unsupported_model
+  signature: test_init_unsupported_model(mock_parameters)
+- uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_process_accumulated_trajectory
+  name: test_process_accumulated_trajectory
+  signature: test_process_accumulated_trajectory()
+- uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_process_accumulated_trajectory_keep_last
+  name: test_process_accumulated_trajectory_keep_last
+  signature: test_process_accumulated_trajectory_keep_last()
+- uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout
+  name: test_rollout
+  signature: test_rollout()
+- uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout_preprocess
+  name: test_rollout_preprocess
+  signature: test_rollout_preprocess(mock_parameters)
+- uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_rollout_with_update
+  name: test_rollout_with_update
+  signature: test_rollout_with_update(mock_parameters)
+- uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest.test_update_policy_and_value_function
+  name: test_update_policy_and_value_function
+  signature: test_update_policy_and_value_function()

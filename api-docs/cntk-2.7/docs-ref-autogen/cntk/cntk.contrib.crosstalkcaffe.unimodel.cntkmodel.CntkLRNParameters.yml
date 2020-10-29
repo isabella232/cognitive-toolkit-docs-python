@@ -1,20 +1,10 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLRNParameters
-  fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLRNParameters
-  inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
-  langs:
-  - python
-  module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
-  name: CntkLRNParameters
-  summary: The parameter definition of LRN op
-  syntax:
-    content: CntkLRNParameters()
-  type: class
-  uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLRNParameters
-references: []
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLRNParameters
+name: CntkLRNParameters
+fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLRNParameters
+module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+inheritances:
+- cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
+summary: The parameter definition of LRN op
+constructor:
+  syntax: CntkLRNParameters()
