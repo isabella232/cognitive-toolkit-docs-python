@@ -7,7 +7,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-conceptual/2.4",
-        "version": "cntk-py-2.4",
+        "group": "cntk-py-2.4",
         "dest": "cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -20,7 +20,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-conceptual/2.5",
-        "version": "cntk-py-2.5",
+        "group": "cntk-py-2.5",
         "dest": "cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -33,7 +33,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-conceptual/2.5.1",
-        "version": "cntk-py-2.5.1",
+        "group": "cntk-py-2.5.1",
         "dest": "cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -46,7 +46,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-conceptual/2.6",
-        "version": "cntk-py-2.6",
+        "group": "cntk-py-2.6",
         "dest": "cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -59,7 +59,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-conceptual/2.7",
-        "version": "cntk-py-2.7",
+        "group": "cntk-py-2.7",
         "dest": "cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -71,7 +71,7 @@
           "**/*.yml"
         ],
         "src": "api-docs/cntk-2.4/docs-ref-autogen",
-        "version": "cntk-py-2.4",
+        "group": "cntk-py-2.4",
         "dest": "api",
         "exclude": [
           "**/obj/**",
@@ -84,7 +84,7 @@
           "**/*.yml"
         ],
         "src": "api-docs/cntk-2.5/docs-ref-autogen",
-        "version": "cntk-py-2.5",
+        "group": "cntk-py-2.5",
         "dest": "api",
         "exclude": [
           "**/obj/**",
@@ -97,7 +97,7 @@
           "**/*.yml"
         ],
         "src": "api-docs/cntk-2.5.1/docs-ref-autogen",
-        "version": "cntk-py-2.5.1",
+        "group": "cntk-py-2.5.1",
         "dest": "api",
         "exclude": [
           "**/obj/**",
@@ -110,7 +110,7 @@
           "**/*.yml"
         ],
         "src": "api-docs/cntk-2.6/docs-ref-autogen",
-        "version": "cntk-py-2.6",
+        "group": "cntk-py-2.6",
         "dest": "api",
         "exclude": [
           "**/obj/**",
@@ -123,7 +123,7 @@
           "**/*.yml"
         ],
         "src": "api-docs/cntk-2.7/docs-ref-autogen",
-        "version": "cntk-py-2.7",
+        "group": "cntk-py-2.7",
         "dest": "api",
         "exclude": [
           "**/obj/**",
@@ -136,7 +136,7 @@
           "**/toc.yml"
         ],
         "src": "api-docs/cntk-2.4/docs-ref-autogen",
-        "version": "cntk-py-2.4",
+        "group": "cntk-py-2.4",
         "dest": "api/cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -148,7 +148,7 @@
           "**/toc.yml"
         ],
         "src": "api-docs/cntk-2.5/docs-ref-autogen",
-        "version": "cntk-py-2.5",
+        "group": "cntk-py-2.5",
         "dest": "api/cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -160,7 +160,7 @@
           "**/toc.yml"
         ],
         "src": "api-docs/cntk-2.5.1/docs-ref-autogen",
-        "version": "cntk-py-2.5.1",
+        "group": "cntk-py-2.5.1",
         "dest": "api/cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -172,7 +172,7 @@
           "**/toc.yml"
         ],
         "src": "api-docs/cntk-2.6/docs-ref-autogen",
-        "version": "cntk-py-2.6",
+        "group": "cntk-py-2.6",
         "dest": "api/cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -184,7 +184,7 @@
           "**/toc.yml"
         ],
         "src": "api-docs/cntk-2.7/docs-ref-autogen",
-        "version": "cntk-py-2.7",
+        "group": "cntk-py-2.7",
         "dest": "api/cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -197,55 +197,7 @@
         ],
         "src": "breadcrumb",
         "dest": "cntk_py_breadcrumb",
-        "version": "cntk-py-2.4",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ]
-      },
-      {
-        "files": [
-          "**/*.yml"
-        ],
-        "src": "breadcrumb",
-        "dest": "cntk_py_breadcrumb",
-        "version": "cntk-py-2.5",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ]
-      },
-      {
-        "files": [
-          "**/*.yml"
-        ],
-        "src": "breadcrumb",
-        "dest": "cntk_py_breadcrumb",
-        "version": "cntk-py-2.5.1",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ]
-      },
-      {
-        "files": [
-          "**/*.yml"
-        ],
-        "src": "breadcrumb",
-        "dest": "cntk_py_breadcrumb",
-        "version": "cntk-py-2.6",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ]
-      },
-      {
-        "files": [
-          "**/*.yml"
-        ],
-        "src": "breadcrumb",
-        "dest": "cntk_py_breadcrumb",
-        "version": "cntk-py-2.7",
+        "group": "cntk-py",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -259,7 +211,7 @@
           "**/*.jpg"
         ],
         "src": "docs-ref-conceptual/2.4",
-        "version": "cntk-py-2.4",
+        "group": "cntk-py-2.4",
         "dest": "cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -271,7 +223,7 @@
           "**/*.png",
           "**/*.jpg"
         ],
-        "src": "docs-ref-conceptual/2.5",
+        "group": "docs-ref-conceptual/2.5",
         "version": "cntk-py-2.5",
         "dest": "cognitive-toolkit",
         "exclude": [
@@ -285,7 +237,7 @@
           "**/*.jpg"
         ],
         "src": "docs-ref-conceptual/2.5.1",
-        "version": "cntk-py-2.5.1",
+        "group": "cntk-py-2.5.1",
         "dest": "cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -298,7 +250,7 @@
           "**/*.jpg"
         ],
         "src": "docs-ref-conceptual/2.6",
-        "version": "cntk-py-2.6",
+        "group": "cntk-py-2.6",
         "dest": "cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -311,7 +263,7 @@
           "**/*.jpg"
         ],
         "src": "docs-ref-conceptual/2.7",
-        "version": "cntk-py-2.7",
+        "group": "cntk-py-2.7",
         "dest": "cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -319,21 +271,24 @@
         ]
       }
     ],
-    "versions": {
+    "groups": {
       "cntk-py-2.4": {
-        "dest": "cntk-py-2.4"
+        "moniker_range": "cntk-py-2.4"
       },
       "cntk-py-2.5": {
-        "dest": "cntk-py-2.5"
+        "moniker_range": "cntk-py-2.5"
       },
       "cntk-py-2.5.1": {
-        "dest": "cntk-py-2.5.1"
+        "moniker_range": "cntk-py-2.5.1"
       },
       "cntk-py-2.6": {
-        "dest": "cntk-py-2.6"
+        "moniker_range": "cntk-py-2.6"
       },
       "cntk-py-2.7": {
-        "dest": "cntk-py-2.7"
+        "moniker_range": "cntk-py-2.7"
+      },
+      "cntk-py": {
+        "moniker_range": ">=cntk-py-2.4"
       }
     },
     "overwrite": [],
@@ -362,9 +317,9 @@
         "api-docs/cntk-2.6/**": [
           "cntk-py-2.6"
         ],
-		"api-docs/cntk-2.7/**": [
+        "api-docs/cntk-2.7/**": [
           "cntk-py-2.7"
-        ],		
+        ],    
         "docs-ref-conceptual/2.4/**": [
           "cntk-py-2.4"
         ],
