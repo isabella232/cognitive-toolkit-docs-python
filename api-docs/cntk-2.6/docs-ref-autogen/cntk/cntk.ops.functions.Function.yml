@@ -1010,6 +1010,7 @@ attributes:
   parameters:
   - name: getter
     description: returns the name of the function.
+    isRequired: true
     types:
     - <xref:str>
   - name: setter
@@ -1020,6 +1021,7 @@ attributes:
       name. Calling this method, when this Function already has a name,
 
       results in an exception.'
+    isRequired: true
     types:
     - <xref:str>
 - uid: cntk.ops.functions.Function.op_name

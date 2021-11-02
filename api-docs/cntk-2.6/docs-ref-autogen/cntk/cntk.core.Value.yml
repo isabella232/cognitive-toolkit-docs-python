@@ -13,6 +13,7 @@ constructor:
     description: "batch input for *var*.\nIt can be:\n\n   * a pure Python structure\
       \ (list of lists, ...), \n\n   * a list of NumPy arrays or SciPy sparse CSR\
       \ matrices \n\n   * a <xref:cntk.core.Value> object (e.g. returned by <xref:cntk.core.Value.one_hot>)"
+    isRequired: true
   - name: seq_starts
     description: 'if None, every sequence is
 
@@ -23,6 +24,7 @@ constructor:
       continuation of the sequence in the same slot of the previous
 
       minibatch (*False*)'
+    isRequired: true
     types:
     - <xref:list of bools>
     - <xref:None>
@@ -30,6 +32,7 @@ constructor:
     description: 'device this value
 
       should be put on'
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>
 methods:

@@ -13,10 +13,13 @@ functions:
   parameters:
   - name: root_func
     description: a root function of a graph to be cloned and converted
+    isRequired: true
   - name: filter
     description: a lambda for filtering out the Functions to be converted
+    isRequired: true
   - name: converter
     description: a lambda for obtaining the substitute for each of the Functions to
       be converted
+    isRequired: true
   return:
     description: Cloned and converted Function (graph)

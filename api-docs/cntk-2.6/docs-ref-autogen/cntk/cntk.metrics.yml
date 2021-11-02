@@ -23,19 +23,23 @@ functions:
   parameters:
   - name: output_vector
     description: the output values from the network
+    isRequired: true
   - name: target_vector
     description: 'it is one-hot vector where the hot bit corresponds to
 
       the label index.'
+    isRequired: true
   - name: axis
     description: 'axis along which the
 
       classification error will be computed.'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -124,25 +128,33 @@ functions:
   parameters:
   - name: input_a
     description: first input sequence
+    isRequired: true
   - name: input_b
     description: second input sequence
+    isRequired: true
   - name: subPen
     description: substitution penalty
+    isRequired: true
   - name: delPen
     description: deletion penalty
+    isRequired: true
   - name: insPen
     description: insertion penalty
+    isRequired: true
   - name: squashInputs
     description: 'whether to merge sequences of identical samples (in both input sequences).
       If true and tokensToIgnore contains label ''-'' then
 
       given first input sequence as s1="a-ab-" and second as s2="-aa--abb" the edit
       distance will be computed against s1'' = "aab" and s2'' = "aab".'
+    isRequired: true
   - name: tokensToIgnore
     description: list of indices of samples to ignore during edit distance evaluation
       (in both sequences)
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -198,12 +210,16 @@ functions:
   parameters:
   - name: output
     description: score of each sample
+    isRequired: true
   - name: gain
     description: gain of each sample
+    isRequired: true
   - name: group
     description: group of each sample
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:

@@ -14,25 +14,30 @@ functions:
   parameters:
   - name: shape
     description: shape of the output (entries are independent random draws)
+    isRequired: true
     types:
     - <xref:tuple>
   - name: dtype
     description: data type. Default is np.float32.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: mean
     description: success probability
+    isRequired: true
     types:
     - <xref:float>
   - name: seed
     description: 'pseudo random number generator seed (default: automatically select
       a unique seed)'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -51,17 +56,21 @@ functions:
   - name: x
     description: cntk variable (input, output, parameter, or constant) from which
       to copy the shape, data type, and dynamic axes.
+    isRequired: true
   - name: mean
     description: success probability
+    isRequired: true
     types:
     - <xref:float>
   - name: seed
     description: 'pseudo random number generator seed (default: automatically select
       a unique seed)'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -82,29 +91,35 @@ functions:
   parameters:
   - name: shape
     description: shape of the output (entries are independent random draws)
+    isRequired: true
     types:
     - <xref:tuple>
   - name: dtype
     description: data type. Default is np.float32.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: loc
     description: location of the distribution
+    isRequired: true
     types:
     - <xref:float>
   - name: scale
     description: scale of the distribution
+    isRequired: true
     types:
     - <xref:float>
   - name: seed
     description: 'pseudo random number generator seed (default: automatically select
       a unique seed)'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -126,21 +141,26 @@ functions:
   - name: x
     description: cntk variable (input, output, parameter, or constant) from which
       to copy the shape, data type, and dynamic axes.
+    isRequired: true
   - name: loc
     description: location of the distribution
+    isRequired: true
     types:
     - <xref:float>
   - name: scale
     description: scale of the distribution
+    isRequired: true
     types:
     - <xref:float>
   - name: seed
     description: 'pseudo random number generator seed (default: automatically select
       a unique seed)'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -166,29 +186,35 @@ functions:
   parameters:
   - name: shape
     description: shape of the output (entries are independent random draws)
+    isRequired: true
     types:
     - <xref:tuple>
   - name: dtype
     description: data type. Default is np.float32.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: mean
     description: mean of the distribution
+    isRequired: true
     types:
     - <xref:float>
   - name: scale
     description: scale (standard deviation) of the distribution
+    isRequired: true
     types:
     - <xref:float>
   - name: seed
     description: 'pseudo random number generator seed (default: automatically select
       a unique seed)'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -207,21 +233,26 @@ functions:
   - name: x
     description: cntk variable (input, output, parameter, or constant) from which
       to copy the shape, data type, and dynamic axes.
+    isRequired: true
   - name: mean
     description: mean of the distribution
+    isRequired: true
     types:
     - <xref:float>
   - name: scale
     description: scale (standard deviation) of the distribution
+    isRequired: true
     types:
     - <xref:float>
   - name: seed
     description: 'pseudo random number generator seed (default: automatically select
       a unique seed)'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -243,29 +274,35 @@ functions:
   parameters:
   - name: shape
     description: shape of the output (entries are independent random draws)
+    isRequired: true
     types:
     - <xref:tuple>
   - name: dtype
     description: data type. Default is np.float32.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: low
     description: lower end of the range of the random numbers
+    isRequired: true
     types:
     - <xref:float>
   - name: high
     description: upper end of the range of the random numbers
+    isRequired: true
     types:
     - <xref:float>
   - name: seed
     description: 'pseudo random number generator seed (default: automatically select
       a unique seed)'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -283,21 +320,26 @@ functions:
   - name: x
     description: cntk variable (input, output, parameter, or constant) from which
       to copy the shape, data type, and dynamic axes.
+    isRequired: true
   - name: low
     description: lower end of the range of the random numbers
+    isRequired: true
     types:
     - <xref:float>
   - name: high
     description: upper end of the range of the random numbers
+    isRequired: true
     types:
     - <xref:float>
   - name: seed
     description: 'pseudo random number generator seed (default: automatically select
       a unique seed)'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:

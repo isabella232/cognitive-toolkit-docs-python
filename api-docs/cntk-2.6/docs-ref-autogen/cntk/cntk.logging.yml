@@ -20,6 +20,7 @@ functions:
   parameters:
   - name: value
     description: required verbosity level.
+    isRequired: true
     types:
     - <xref:cntk.logging.TraceLevel>
 packages:
