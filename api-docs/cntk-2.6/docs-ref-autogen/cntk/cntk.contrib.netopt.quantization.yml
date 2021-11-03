@@ -12,6 +12,7 @@ functions:
   parameters:
   - name: model
     description: model that needs convolutions to be optimized.
+    isRequired: true
   - name: train_function
     description: 'this is a two step process. First, convert the model
 
@@ -22,6 +23,7 @@ functions:
       we need to train the model to get the best results.
 
       train_function provides this functionality.'
+    isRequired: true
   - name: filter_function
     description: filter layers in the model to apply the binarization.
     defaultValue: None
@@ -36,6 +38,7 @@ functions:
   parameters:
   - name: filter_shape
     description: shape of the filter
+    isRequired: true
   - name: num_filters
     description: number of filters to use
     defaultValue: '1'
@@ -45,7 +48,7 @@ functions:
   - name: pad
     description: padding enabled or not for the filter
     defaultValue: <cntk.cntk_py.Dictionary; proxy of <Swig Object of type 'CNTK::ImageTransform
-      *' at 0x00000203BBD39D80> >
+      *' at 0x000002241961EF60> >
   - name: strides
     description: overlap for this filter
     defaultValue: 'False'
@@ -69,6 +72,7 @@ functions:
   parameters:
   - name: model
     description: model that needs to be binarized.
+    isRequired: true
   - name: filter_function
     description: filter layers in the model to apply the binarization
     defaultValue: None
@@ -89,5 +93,6 @@ functions:
   parameters:
   - name: model
     description: model that needs convolutions to be substituted.
+    isRequired: true
   return:
     description: A model with Halid operators.

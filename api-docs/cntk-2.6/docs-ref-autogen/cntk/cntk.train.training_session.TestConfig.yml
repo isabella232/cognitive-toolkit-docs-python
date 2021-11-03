@@ -5,40 +5,6 @@ fullName: cntk.train.training_session.TestConfig
 module: cntk.train.training_session
 inheritances:
 - cntk.cntk_py.TestConfig
-summary: A test configuration for the training session.
 constructor:
   syntax: TestConfig(minibatch_source=None, minibatch_size=32, model_inputs_to_streams=None,
     criterion=None, source=None, mb_size=None)
-  parameters:
-  - name: minibatch_source
-    description: minibatch source used for cross validation
-    types:
-    - <xref:cntk.io.MinibatchSource>
-  - name: minibatch_size
-    description: minibatch schedule for cross validation
-    types:
-    - <xref:int>
-    - <xref:cntk.cntk_py.minibatch_size_schedule>, <xref:defaults to 32>
-  - name: model_inputs_to_streams
-    description: 'mapping between input variables and input streams
-
-      If None, the mapping provided to the training session constructor is used.
-
-      Don''t specify this if *minibatch_source* is a tuple of numpy/scipy arrays.'
-    types:
-    - <xref:dict>
-  - name: criterion
-    description: 'criterion function.
-
-      Must be specified if *minibatch_source* is a tuple of numpy/scipy arrays.'
-    types:
-    - <xref:cntk.ops.functions.Function>
-  - name: source
-    description: DEPRECATED, use minibatch_source instead
-    types:
-    - <xref:cntk.io.MinibatchSource>
-  - name: mb_size
-    description: DEPRECATED, use minibatch_size instead
-    types:
-    - <xref:int>
-    - <xref:cntk.cntk_py.minibatch_size_schedule>, <xref:defaults to 32>

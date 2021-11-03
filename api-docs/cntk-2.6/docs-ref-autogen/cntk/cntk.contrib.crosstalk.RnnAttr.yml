@@ -10,3 +10,5 @@ summary: "Attribute for RNN variable\n\nbidirectional\n   True for bidirectional
   \   RNN cell type, currently only support 'lstm'\n\ninput_dim\n   Input dimension\n\
   \nhidden_dim\n   Hidden dimension in RNN cell\n\nforget_bias\n   forget gate bias\
   \ in LSTM"
+constructor:
+  syntax: RnnAttr(bidirectional, op_type, input_dim, hidden_dim, forget_bias)
