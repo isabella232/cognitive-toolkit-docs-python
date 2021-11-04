@@ -15,8 +15,8 @@ constructor:
     description: deserializers to be used in the composite reader
     isRequired: true
     types:
-    - <xref:<xref:a single deserializer>>
-    - <xref:<xref:a list>>
+    - <xref:a single deserializer>
+    - <xref:a list>
   - name: max_samples
     description: 'The maximum number of input samples
 
@@ -36,7 +36,7 @@ constructor:
       for a description of input and label samples.'
     isRequired: true
     types:
-    - <xref:int>, <xref:defaults to cntk.io.INFINITELY_REPEAT>
+    - <xref:int>, <xref:defaults to <xref:cntk.io.INFINITELY_REPEAT>>
   - name: max_sweeps
     description: 'The maximum number of sweeps over
 
@@ -49,7 +49,7 @@ constructor:
       an exception will be raised if both have non-default values.'
     isRequired: true
     types:
-    - <xref:int>, <xref:defaults to cntk.io.INFINITELY_REPEAT>
+    - <xref:int>, <xref:defaults to <xref:cntk.io.INFINITELY_REPEAT>>
   - name: randomization_window_in_chunks
     description: 'size of the randomization window in chunks, non-zero value enables
       randomization.
@@ -86,7 +86,7 @@ constructor:
       the current logging verbosity level given by <xref:cntk.logging.get_trace_level>.'
     isRequired: true
     types:
-    - an instance of <xref:cntk.logging.TraceLevel>
+    - <xref:an instance of cntk.logging.TraceLevel>
   - name: multithreaded_deserializer
     description: 'specifies if the deserialization should be
 

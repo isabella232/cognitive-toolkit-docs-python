@@ -33,24 +33,23 @@ constructor:
       accepted.'
     isRequired: true
     types:
-    - tuple of <xref:cntk.ops.functions.Function>
+    - <xref:tuple of cntk.ops.functions.Function>
     - <xref:cntk.variables.Variable>
   - name: parameter_learners
-    description: list of learners from <xref:cntk.learners#module-cntk.learners>
+    description: list of learners from <xref:cntk.learners>
     isRequired: true
     types:
     - <xref:list>
   - name: progress_writers
     description: 'optionally, list of
 
-      progress writers from <xref:cntk.logging#module-cntk.logging> to automatically
-      track training
+      progress writers from <xref:cntk.logging> to automatically track training
 
       progress.'
     isRequired: true
     types:
-    - <xref:<xref:progress writer>>
-    - <xref:<xref:list of them>>
+    - <xref:progress writer>
+    - <xref:list of them>
 methods:
 - uid: cntk.train.trainer.Trainer.print_node_timing
   name: print_node_timing
@@ -134,7 +133,7 @@ methods:
 
       tested minibatch.'
     types:
-    - <xref:<xref:*float*>>
+    - <xref:*float*>
 - uid: cntk.train.trainer.Trainer.train_minibatch
   name: train_minibatch
   summary: 'Optimize model parameters using the specified ''arguments'' minibatch
@@ -172,8 +171,8 @@ methods:
 
       maps the variables in *outputs* to their respective NumPy arrays.'
     types:
-    - <xref:<xref:*bool*>>
-    - <xref:<xref:*tuple*>>
+    - <xref:*bool*>
+    - <xref:*tuple*>
 attributes:
 - uid: cntk.train.trainer.Trainer.evaluation_function
   name: evaluation_function

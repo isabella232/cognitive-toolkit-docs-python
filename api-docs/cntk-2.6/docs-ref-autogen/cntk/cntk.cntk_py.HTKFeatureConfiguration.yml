@@ -7,20 +7,3 @@ inheritances:
 - builtins.object
 constructor:
   syntax: HTKFeatureConfiguration(*args)
-attributes:
-- uid: cntk.cntk_py.HTKFeatureConfiguration.m_broadcast
-  name: m_broadcast
-- uid: cntk.cntk_py.HTKFeatureConfiguration.m_defines_mb_size
-  name: m_defines_mb_size
-- uid: cntk.cntk_py.HTKFeatureConfiguration.m_dim
-  name: m_dim
-- uid: cntk.cntk_py.HTKFeatureConfiguration.m_left
-  name: m_left
-- uid: cntk.cntk_py.HTKFeatureConfiguration.m_max_sequence_length
-  name: m_max_sequence_length
-- uid: cntk.cntk_py.HTKFeatureConfiguration.m_right
-  name: m_right
-- uid: cntk.cntk_py.HTKFeatureConfiguration.m_scp
-  name: m_scp
-- uid: cntk.cntk_py.HTKFeatureConfiguration.m_stream_name
-  name: m_stream_name

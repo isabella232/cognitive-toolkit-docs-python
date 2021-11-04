@@ -45,7 +45,7 @@ functions:
       These can be obtained by the root operator''s `parameters`.'
     isRequired: true
     types:
-    - <xref:<xref:list of parameters>>
+    - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
@@ -97,7 +97,7 @@ functions:
       with truncation'
     isRequired: true
     types:
-    - <xref:bool>, <xref:default `True`>
+    - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
@@ -124,7 +124,7 @@ functions:
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
     types:
-    - <xref:int>, <xref:default `None`>
+    - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate. See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
@@ -151,7 +151,7 @@ functions:
       These can be obtained by the root operator''s `parameters`.'
     isRequired: true
     types:
-    - <xref:<xref:list of parameters>>
+    - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
@@ -197,7 +197,7 @@ functions:
       with truncation'
     isRequired: true
     types:
-    - <xref:bool>, <xref:default `True`>
+    - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
@@ -224,7 +224,7 @@ functions:
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
     types:
-    - <xref:int>, <xref:default `None`>
+    - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate. See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
@@ -245,10 +245,10 @@ functions:
     more
 
     information.'
-  signature: adam(parameters, lr, momentum, unit_gain=default_unit_gain_value(), variance_momentum=momentum_schedule_per_sample(0.9999986111120757),
-    l1_regularization_weight=0, l2_regularization_weight=0, gaussian_noise_injection_std_dev=0,
-    gradient_clipping_threshold_per_sample=np.inf, gradient_clipping_with_truncation=True,
-    epsilon=1e-8, adamax=False)
+  signature: 'adam(parameters, lr, momentum, unit_gain=default_unit_gain_value(),
+    variance_momentum=momentum_schedule_per_sample(0.9999986111120757), l1_regularization_weight=0,
+    l2_regularization_weight=0, gaussian_noise_injection_std_dev=0, gradient_clipping_threshold_per_sample=np.inf,
+    gradient_clipping_with_truncation=True, epsilon=1e-8, adamax=False)'
   parameters:
   - name: parameters
     description: 'list of network parameters to tune.
@@ -256,7 +256,7 @@ functions:
       These can be obtained by the root operator''s `parameters`.'
     isRequired: true
     types:
-    - <xref:<xref:list of parameters>>
+    - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
@@ -318,7 +318,7 @@ functions:
       with truncation'
     isRequired: true
     types:
-    - <xref:bool>, <xref:default `True`>
+    - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
@@ -358,7 +358,7 @@ functions:
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
     types:
-    - <xref:int>, <xref:default `None`>
+    - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate, momentum
       and variance_momentum. See also:  <xref:cntk.learners.learning_parameter_schedule>'
@@ -391,7 +391,7 @@ functions:
       These can be obtained by the root operator''s `parameters`.'
     isRequired: true
     types:
-    - <xref:<xref:list of parameters>>
+    - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
@@ -452,7 +452,7 @@ functions:
       with truncation'
     isRequired: true
     types:
-    - <xref:bool>, <xref:default `True`>
+    - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
@@ -479,7 +479,7 @@ functions:
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
     types:
-    - <xref:int>, <xref:default `None`>
+    - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate, momentum
       and variance_momentum. See also:  <xref:cntk.learners.learning_parameter_schedule>'
@@ -641,20 +641,18 @@ functions:
     \ same semantics as <xref:cntk.learners.training_parameter_schedule>\nwith *unit=UnitType.sample*).\n\
     \nDeprecated:: 2.2\n   This is for legacy API.\n   In this legacy API,:\n\n  \
     \ <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-    : [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\": \"default\"\
-    , \"force\": false, \"linenos\": false} -->\n\n   ````default\n\n      #assume\
+    : [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n   ````\n\n      #assume\
     \ the desired minibatch size invariant constant momentum rate is: momentum_rate\n\
     \      momentum_time_constant = -minibatch_size/np.log(momentum_rate)\n      momentum\
     \ = momentum_as_time_constant_schedule(momentum_time_constant)\n      ````\n\n\
     \   The equivalent code in the latest API,\n\n   <!-- literal_block {\"ids\":\
     \ [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
-    : \"preserve\", \"language\": \"default\", \"force\": false, \"linenos\": false}\
-    \ -->\n\n   ````default\n\n      momentum = momentum_schedule(momentum_rate, minibatch_size\
-    \ = minibatch_size)\n      ````\n\nCNTK specifies momentum in a minibatch-size\
-    \ agnostic way as the time\nconstant (in samples) of a unit-gain 1st-order IIR\
-    \ filter. The value\nspecifies the number of samples after which a gradient has\
-    \ an effect of\n1/e=37%.\n\nIf you want to specify the momentum per N samples\
-    \ (or per minibatch),\nuse <xref:cntk.learners.momentum_schedule>."
+    : \"preserve\"} -->\n\n   ````\n\n      momentum = momentum_schedule(momentum_rate,\
+    \ minibatch_size = minibatch_size)\n      ````\n\nCNTK specifies momentum in a\
+    \ minibatch-size agnostic way as the time\nconstant (in samples) of a unit-gain\
+    \ 1st-order IIR filter. The value\nspecifies the number of samples after which\
+    \ a gradient has an effect of\n1/e=37%.\n\nIf you want to specify the momentum\
+    \ per N samples (or per minibatch),\nuse <xref:cntk.learners.momentum_schedule>."
   signature: momentum_as_time_constant_schedule(momentum, epoch_size=None)
   return:
     description: momentum as time constant schedule
@@ -781,21 +779,21 @@ functions:
       These can be obtained by the root operator''s `parameters`.'
     isRequired: true
     types:
-    - <xref:<xref:list of parameters>>
+    - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
     types:
-    - <xref:float>, <xref:list>, <xref:output of cntk.learners.learning_parameter_schedule>
+    - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
   - name: momentum
     description: 'momentum schedule.
 
       For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).'
     isRequired: true
     types:
-    - <xref:float>, <xref:list>, <xref:output of cntk.learners.momentum_schedule>
+    - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.momentum_schedule>>
   - name: unit_gain
     description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
@@ -835,7 +833,7 @@ functions:
       with truncation'
     isRequired: true
     types:
-    - <xref:bool>, <xref:default `True`>
+    - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
@@ -862,7 +860,7 @@ functions:
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
     types:
-    - <xref:int>, <xref:default `None`>
+    - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate and momentum.
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
@@ -893,21 +891,21 @@ functions:
       These can be obtained by the root operator''s `parameters`.'
     isRequired: true
     types:
-    - <xref:<xref:list of parameters>>
+    - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
     types:
-    - <xref:float>, <xref:list>, <xref:output of cntk.learners.learning_parameter_schedule>
+    - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
   - name: momentum
     description: 'momentum schedule.
 
       For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).'
     isRequired: true
     types:
-    - <xref:float>, <xref:list>, <xref:output of cntk.learners.momentum_schedule>
+    - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.momentum_schedule>>
   - name: unit_gain
     description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
@@ -947,7 +945,7 @@ functions:
       with truncation'
     isRequired: true
     types:
-    - <xref:bool>, <xref:default `True`>
+    - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
@@ -974,7 +972,7 @@ functions:
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
     types:
-    - <xref:int>, <xref:default `None`>
+    - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate and momentum.
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
@@ -1005,17 +1003,17 @@ functions:
       These can be obtained by the root operator''s `parameters`.'
     isRequired: true
     types:
-    - <xref:<xref:list of parameters>>
+    - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
     types:
-    - <xref:float>, <xref:list>, <xref:output of cntk.learners.learning_parameter_schedule>
+    - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
   - name: gamma
-    description: Trade-off factor for current and previous gradients. Common value
-      is 0.95. Should be in range (0.0, 1.0)
+    description: 'Trade-off factor for current and previous gradients. Common value
+      is 0.95. Should be in range (0.0, 1.0)'
     isRequired: true
     types:
     - <xref:float>
@@ -1046,7 +1044,7 @@ functions:
   - name: need_ave_multiplier
     isRequired: true
     types:
-    - <xref:bool>, <xref:default `True`>
+    - <xref:bool>, <xref:default True>
   - name: l1_regularization_weight
     description: 'the L1 regularization weight per sample,
 
@@ -1081,7 +1079,7 @@ functions:
       with truncation'
     isRequired: true
     types:
-    - <xref:bool>, <xref:default `True`>
+    - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
@@ -1108,7 +1106,7 @@ functions:
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
     types:
-    - <xref:int>, <xref:default `None`>
+    - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate. See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
@@ -1143,14 +1141,14 @@ functions:
       operator.'
     isRequired: true
     types:
-    - <xref:<xref:list of parameters>>
+    - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
     types:
-    - <xref:float>, <xref:list>, <xref:output of cntk.learners.learning_parameter_schedule>
+    - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
   - name: l1_regularization_weight
     description: 'the L1 regularization weight per sample,
 
@@ -1185,7 +1183,7 @@ functions:
       with truncation'
     isRequired: true
     types:
-    - <xref:bool>, <xref:default `True`>
+    - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
@@ -1212,7 +1210,7 @@ functions:
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true
     types:
-    - <xref:int>, <xref:default `None`>
+    - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate. See also:  <xref:cntk.learners.learning_parameter_schedule>'
     isRequired: true

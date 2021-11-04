@@ -40,7 +40,7 @@ methods:
 - uid: cntk.contrib.crosstalk.Crosstalk.compare
   name: compare
   summary: Compare var with name to value in file in working directory
-  signature: compare(name, compare_name=None, rtol=1e-05, atol=1e-08, equal_nan=False)
+  signature: 'compare(name, compare_name=None, rtol=1e-05, atol=1e-08, equal_nan=False)'
   parameters:
   - name: name
     description: Name of the variable to compare
@@ -54,12 +54,12 @@ methods:
     - <xref:str>
   - name: rtol
     description: The relative tolerance parameter, as in numpy.isclose()
-    defaultValue: 1e-05
+    defaultValue: '1e-05'
     types:
     - <xref:float>
   - name: atol
     description: The absolute tolerance parameter, as in numpy.isclose()
-    defaultValue: 1e-08
+    defaultValue: '1e-08'
     types:
     - <xref:float>
   - name: equal_nan

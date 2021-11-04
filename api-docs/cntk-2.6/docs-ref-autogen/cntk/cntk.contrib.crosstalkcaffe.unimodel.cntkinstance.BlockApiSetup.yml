@@ -6,8 +6,6 @@ module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
 inheritances:
 - builtins.object
 summary: Implement some special requirement ops
-constructor:
-  syntax: BlockApiSetup()
 methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.BlockApiSetup.convolution
   name: convolution

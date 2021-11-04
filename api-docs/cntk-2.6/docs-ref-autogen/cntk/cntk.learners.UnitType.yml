@@ -9,8 +9,6 @@ summary: 'Deprecated:: 2.2
 
   per-minibatch basis.'
 module: cntk.learners
-constructor:
-  syntax: UnitType(value)
 inheritances:
 - enum.Enum
 fields:

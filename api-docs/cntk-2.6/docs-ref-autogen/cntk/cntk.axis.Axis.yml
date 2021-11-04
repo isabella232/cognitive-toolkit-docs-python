@@ -32,8 +32,7 @@ constructor:
 methods:
 - uid: cntk.axis.Axis.all_axes
   name: all_axes
-  summary: "Axis object representing all the axes\u2013static and dynamic\u2013of\
-    \ an operand."
+  summary: Axis object representing all the axes--static and dynamic--of an operand.
   signature: all_axes()
   return:
     description: all axes

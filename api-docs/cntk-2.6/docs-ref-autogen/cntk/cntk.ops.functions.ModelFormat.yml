@@ -4,8 +4,6 @@ name: ModelFormat
 fullName: cntk.ops.functions.ModelFormat
 summary: Describes the supported disk format for CNTK model.
 module: cntk.ops.functions
-constructor:
-  syntax: ModelFormat(value)
 inheritances:
 - enum.Enum
 fields:

@@ -5,8 +5,6 @@ fullName: cntk.tensor.ArrayMixin
 module: cntk.tensor
 inheritances:
 - builtins.object
-constructor:
-  syntax: ArrayMixin()
 methods:
 - uid: cntk.tensor.ArrayMixin.asarray
   name: asarray

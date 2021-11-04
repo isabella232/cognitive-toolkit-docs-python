@@ -4,8 +4,6 @@ name: CntkLayerType
 fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLayerType
 summary: The enumate of CNTK ops
 module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
-constructor:
-  syntax: CntkLayerType(value)
 inheritances:
 - enum.Enum
 fields:

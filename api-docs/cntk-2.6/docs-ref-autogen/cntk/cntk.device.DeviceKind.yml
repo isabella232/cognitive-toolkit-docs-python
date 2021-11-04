@@ -4,8 +4,6 @@ name: DeviceKind
 fullName: cntk.device.DeviceKind
 summary: Describes different device kinds like CPU or GPU.
 module: cntk.device
-constructor:
-  syntax: DeviceKind(value)
 inheritances:
 - enum.Enum
 fields:

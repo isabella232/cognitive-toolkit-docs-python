@@ -26,8 +26,6 @@ methods:
   - name: func
     isRequired: true
 attributes:
-- uid: cntk.cntk_py.training_double_parameter_schedule.minibatch_size
-  name: minibatch_size
 - uid: cntk.cntk_py.training_double_parameter_schedule.full_data_sweep
   name: full_data_sweep
   signature: full_data_sweep = 0

@@ -171,9 +171,9 @@ functions:
     \ this is tested on multiple platforms; leave it unspecified in your code\n>>>\
     \ np.round(s, 4)\narray([[[-0.9877, -0.5223,  0.4259, -1.0196],\n        [ 5.4352,\
     \  1.5861,  5.0608,  2.0668],\n        [-0.2135,  1.0139,  3.1217, -1.4834]],\n\
-    \n       [[ 0.4507,  0.6325,  2.1682,  0.4463],\n        [-0.6583,  0.1147, -0.3144,\
-    \ -0.7925],\n        [ 1.9773, -0.3627, -0.4566, -0.2368]]], dtype=float32)\n\
-    ```\n"
+    <BLANKLINE>\n       [[ 0.4507,  0.6325,  2.1682,  0.4463],\n        [-0.6583,\
+    \  0.1147, -0.3144, -0.7925],\n        [ 1.9773, -0.3627, -0.4566, -0.2368]]],\
+    \ dtype=float32)\n```\n"
   seeAlsoContent: '  [The Gumbel-Max Trick](https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/).
 
     '
@@ -262,8 +262,8 @@ functions:
     >>> z.eval(device=C.cpu()) # explicitly setting cpu because this is tested on\
     \ multiple platforms; leave it unspecified in your code\narray([[[ 1.803254, \
     \ 0.995395, -0.631974, -1.736721],\n        [ 0.005615, -0.340025, -0.011913,\
-    \ -0.236371],\n        [-1.207685, -0.495846,  0.037022, -1.220596]],\n\n    \
-    \   [[ 0.872981,  0.654405, -0.111421, -0.544074],\n        [ 1.543746, -0.63555\
+    \ -0.236371],\n        [-1.207685, -0.495846,  0.037022, -1.220596]],\n<BLANKLINE>\n\
+    \       [[ 0.872981,  0.654405, -0.111421, -0.544074],\n        [ 1.543746, -0.63555\
     \ , -1.072869, -0.379701],\n        [ 0.592069, -1.035192,  1.679303, -0.391963]]],\
     \ dtype=float32)\n```\n"
 - uid: cntk.random.uniform

@@ -7,10 +7,3 @@ inheritances:
 - builtins.object
 constructor:
   syntax: ChunkInfo()
-attributes:
-- uid: cntk.cntk_py.ChunkInfo.m_id
-  name: m_id
-- uid: cntk.cntk_py.ChunkInfo.m_number_of_samples
-  name: m_number_of_samples
-- uid: cntk.cntk_py.ChunkInfo.m_number_of_sequences
-  name: m_number_of_sequences

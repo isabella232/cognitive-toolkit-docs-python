@@ -14,7 +14,7 @@ functions:
     types:
     - <xref:str>
   return:
-    description: <xref:cntk.contrib.crosstalkcaffe.utils.GlobalConf>
+    description: cntk.contrib.crosstalkcaffe.utils.GlobalConf
 classes:
 - cntk.contrib.crosstalkcaffe.utils.globalconf.GlobalConf
 - cntk.contrib.crosstalkcaffe.utils.globalconf.ModelSolverConf

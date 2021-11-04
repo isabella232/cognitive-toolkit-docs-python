@@ -8,5 +8,3 @@ inheritances:
 summary: "Args inside Conv2D variable. Conv2D output is in NCHW format\n\nW\n   The\
   \ numpy ndarray of filter parameter in shape (num_filters, filter_w, filter_h,))\n\
   \nb\n   The numpy ndarray of bias parameter in shape (num_filters,)"
-constructor:
-  syntax: Conv2DArgs(W, b)
