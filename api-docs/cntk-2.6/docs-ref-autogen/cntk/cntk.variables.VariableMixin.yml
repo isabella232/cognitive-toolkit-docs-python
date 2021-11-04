@@ -8,6 +8,8 @@ inheritances:
 summary: 'Standard properties for <xref:cntk.variables.Variable> and its derived classes
 
   <xref:cntk.variables.Parameter> and <xref:cntk.variables.Constant>.'
+constructor:
+  syntax: VariableMixin()
 attributes:
 - uid: cntk.variables.VariableMixin.dtype
   name: dtype

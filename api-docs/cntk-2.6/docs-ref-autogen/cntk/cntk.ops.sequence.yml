@@ -17,25 +17,28 @@ functions:
   parameters:
   - name: operand
     description: the symbolic tensor whose value will be broadcast
+    isRequired: true
   - name: broadcast_as_operand
     description: 'the symbolic tensor whose dynamic axes will
 
       be used to broadcast the operand'
+    isRequired: true
   - name: name
     description: the name of the node in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> x = C.sequence.input_variable(shape=(3,2))\n>>> t = C.sequence.last(x)\n\
     >>> b = C.sequence.is_first(x)\n>>> y = C.sequence.broadcast_as(t, b)\n>>> # create\
     \ one sequence of 4 tensors each with shape (3,2)\n>>> x0 = np.reshape(np.arange(24.0,dtype=np.float32),(1,4,3,2))\n\
     >>> y.eval({x:x0})\n[array([[[ 18.,  19.],\n         [ 20.,  21.],\n         [\
-    \ 22.,  23.]],\n<BLANKLINE>\n        [[ 18.,  19.],\n         [ 20.,  21.],\n\
-    \         [ 22.,  23.]],\n<BLANKLINE>\n        [[ 18.,  19.],\n         [ 20.,\
-    \  21.],\n         [ 22.,  23.]],\n<BLANKLINE>\n        [[ 18.,  19.],\n     \
-    \    [ 20.,  21.],\n         [ 22.,  23.]]], dtype=float32)]\n```\n"
+    \ 22.,  23.]],\n\n        [[ 18.,  19.],\n         [ 20.,  21.],\n         [ 22.,\
+    \  23.]],\n\n        [[ 18.,  19.],\n         [ 20.,  21.],\n         [ 22., \
+    \ 23.]],\n\n        [[ 18.,  19.],\n         [ 20.,  21.],\n         [ 22.,  23.]]],\
+    \ dtype=float32)]\n```\n"
 - uid: cntk.ops.sequence.delay
   name: delay
   summary: 'This function combines <xref:cntk.ops.sequence.past_value> and <xref:cntk.ops.sequence.future_value>
@@ -47,6 +50,7 @@ functions:
   parameters:
   - name: x
     description: the tensor (or its name) from which the past value is obtained
+    isRequired: true
   - name: initial_state
     description: tensor or scalar representing the initial value to be used when the
       input tensor is shifted in time.
@@ -59,6 +63,7 @@ functions:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
 - uid: cntk.ops.sequence.first
@@ -68,12 +73,14 @@ functions:
   parameters:
   - name: seq
     description: the symbolic tensor denoting a sequence
+    isRequired: true
   - name: name
     description: the name of the node in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> x = C.sequence.input_variable(shape=(3,2))\n>>> y = C.sequence.first(x)\n\
     >>> # create one sequence of 4 tensors each with shape (3,2)\n>>> x0 = np.reshape(np.arange(24.0,dtype=np.float32),(1,4,3,2))\n\
@@ -103,28 +110,32 @@ functions:
   parameters:
   - name: x
     description: the tensor (or its name) from which the future value is obtained.
+    isRequired: true
   - name: initial_state
     description: tensor or scalar representing the initial value to be used when the
       input tensor is shifted in time.
+    isRequired: true
   - name: time_step
     description: the number of time steps to look into the future (default 1)
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> x = C.sequence.input_variable(shape=(3,2))\n>>> # Create one sequence\
     \ with 4 tensors of shape (3, 2)\n>>> x0 = np.reshape(np.arange(24,dtype=np.float32),(1,4,3,2))\n\
     >>> y = C.sequence.future_value(x) # using initial state of 0 by default\n>>>\
     \ y.eval({x:x0})\n[array([[[  6.,   7.],\n         [  8.,   9.],\n         [ 10.,\
-    \  11.]],\n<BLANKLINE>\n        [[ 12.,  13.],\n         [ 14.,  15.],\n     \
-    \    [ 16.,  17.]],\n<BLANKLINE>\n        [[ 18.,  19.],\n         [ 20.,  21.],\n\
-    \         [ 22.,  23.]],\n<BLANKLINE>\n        [[  0.,   0.],\n         [  0.,\
-    \   0.],\n         [  0.,   0.]]], dtype=float32)]\n```\n"
+    \  11.]],\n\n        [[ 12.,  13.],\n         [ 14.,  15.],\n         [ 16., \
+    \ 17.]],\n\n        [[ 18.,  19.],\n         [ 20.,  21.],\n         [ 22.,  23.]],\n\
+    \n        [[  0.,   0.],\n         [  0.,   0.],\n         [  0.,   0.]]], dtype=float32)]\n\
+    ```\n"
 - uid: cntk.ops.sequence.gather
   name: gather
   summary: 'Takes two sequences of the same length and returns a new sequence whose
@@ -139,10 +150,12 @@ functions:
   parameters:
   - name: seq
     description: the symbolic sequence from which elements will be selected
+    isRequired: true
   - name: condition
     description: 'the symbolic sequence of booleans which indicate which
 
       elements should be selected'
+    isRequired: true
   - name: new_sequence_axis_typeinfo
     description: 'tuple of integers indicating
 
@@ -153,19 +166,21 @@ functions:
       to be used for the output of the gather operation. If this argument is left
 
       unspecified, a new independent sequence axis is created.'
+    isRequired: true
   - name: name
     description: the name of the node in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> x = C.sequence.input_variable(shape=(3,2))\n>>> z = C.greater(C.reduce_sum(x),60)\n\
     >>> y = C.sequence.gather(x,z)\n>>> # create one sequence of 4 tensors each with\
     \ shape (3,2)\n>>> x0 = np.reshape(np.arange(24.0,dtype=np.float32),(1,4,3,2))\n\
     >>> y.eval({x:x0})\n[array([[[ 12.,  13.],\n         [ 14.,  15.],\n         [\
-    \ 16.,  17.]],\n<BLANKLINE>\n        [[ 18.,  19.],\n         [ 20.,  21.],\n\
-    \         [ 22.,  23.]]], dtype=float32)]\n```\n"
+    \ 16.,  17.]],\n\n        [[ 18.,  19.],\n         [ 20.,  21.],\n         [ 22.,\
+    \  23.]]], dtype=float32)]\n```\n"
 - uid: cntk.ops.sequence.input
   name: input
   summary: 'DEPRECATED.
@@ -180,33 +195,39 @@ functions:
   parameters:
   - name: shape
     description: the shape of the input tensor
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>
   - name: dtype
     description: data type. Default is np.float32.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: needs_gradients
     description: whether to back-propagates to it or not. False by default.
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: is_sparse
     description: whether the variable is sparse (*False* by default)
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: sequence_axis
     description: a dynamic axis (e.g., default_dynamic_axis())
+    isRequired: true
     types:
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.variables.Variable
+    description: <xref:cntk.variables.Variable>
 - uid: cntk.ops.sequence.input_variable
   name: input_variable
   summary: 'It creates an input in the network: a place where data,
@@ -217,33 +238,39 @@ functions:
   parameters:
   - name: shape
     description: the shape of the input tensor
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>
   - name: dtype
     description: data type. Default is np.float32.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: needs_gradients
     description: whether to back-propagates to it or not. False by default.
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: is_sparse
     description: whether the variable is sparse (*False* by default)
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: sequence_axis
     description: a dynamic axis (e.g., default_dynamic_axis())
+    isRequired: true
     types:
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.variables.Variable
+    description: <xref:cntk.variables.Variable>
 - uid: cntk.ops.sequence.is_first
   name: is_first
   summary: 'Returns a symbolic sequence of booleans with the same length as `seq`.
@@ -254,12 +281,14 @@ functions:
   parameters:
   - name: seq
     description: the symbolic tensor denoting a sequence
+    isRequired: true
   - name: name
     description: the name of the node in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -291,12 +320,14 @@ functions:
   parameters:
   - name: seq
     description: the symbolic tensor denoting a sequence
+    isRequired: true
   - name: name
     description: the name of the node in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -325,12 +356,14 @@ functions:
   parameters:
   - name: seq
     description: the symbolic tensor denoting a sequence
+    isRequired: true
   - name: name
     description: the name of the node in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> x = C.sequence.input_variable(shape=(3,2))\n>>> y = C.sequence.last(x)\n\
     >>> # create one sequence of 4 tensors each with shape (3,2)\n>>> x0 = np.reshape(np.arange(24.0,dtype=np.float32),(1,4,3,2))\n\
@@ -360,45 +393,48 @@ functions:
   parameters:
   - name: x
     description: the tensor (or its name) from which the past value is obtained
+    isRequired: true
   - name: initial_state
     description: tensor or scalar representing the initial value to be used when the
       input tensor is shifted in time.
+    isRequired: true
   - name: time_step
     description: the number of time steps to look into the past (default 1)
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> # create example input: one sequence with 4 tensors of shape (3,\
     \ 2)\n>>> from cntk.layers.typing import Tensor, Sequence\n>>> x = C.sequence.input_variable((3,2))\n\
     >>> x0 = np.reshape(np.arange(24,dtype=np.float32),(1,4,3,2))\n>>> x0\narray([[[[\
-    \  0.,   1.],\n         [  2.,   3.],\n         [  4.,   5.]],\n<BLANKLINE>\n\
-    \        [[  6.,   7.],\n         [  8.,   9.],\n         [ 10.,  11.]],\n<BLANKLINE>\n\
-    \        [[ 12.,  13.],\n         [ 14.,  15.],\n         [ 16.,  17.]],\n<BLANKLINE>\n\
-    \        [[ 18.,  19.],\n         [ 20.,  21.],\n         [ 22.,  23.]]]], dtype=float32)\n\
-    ```\n\n\n```\n\n>>> # this demonstrates how past_value shifts the sequence by\
-    \ one, padding with initial_state\n>>> y = C.sequence.past_value(x) # initial_state\
+    \  0.,   1.],\n         [  2.,   3.],\n         [  4.,   5.]],\n\n        [[ \
+    \ 6.,   7.],\n         [  8.,   9.],\n         [ 10.,  11.]],\n\n        [[ 12.,\
+    \  13.],\n         [ 14.,  15.],\n         [ 16.,  17.]],\n\n        [[ 18., \
+    \ 19.],\n         [ 20.,  21.],\n         [ 22.,  23.]]]], dtype=float32)\n```\n\
+    \n\n```\n\n>>> # this demonstrates how past_value shifts the sequence by one,\
+    \ padding with initial_state\n>>> y = C.sequence.past_value(x) # initial_state\
     \ is 0 by default\n>>> y.eval({x:x0})\n[array([[[  0.,   0.],\n         [  0.,\
-    \   0.],\n         [  0.,   0.]],\n<BLANKLINE>\n        [[  0.,   1.],\n     \
-    \    [  2.,   3.],\n         [  4.,   5.]],\n<BLANKLINE>\n        [[  6.,   7.],\n\
-    \         [  8.,   9.],\n         [ 10.,  11.]],\n<BLANKLINE>\n        [[ 12.,\
-    \  13.],\n         [ 14.,  15.],\n         [ 16.,  17.]]], dtype=float32)]\n```\n\
-    \n\n```\n\n>>> # here, we pass a the initial_state as input data (e.g. sequence-to-sequence)\n\
-    >>> s = C.input_variable((3,2))  # not a sequence, e.g. a final encoder hidden\
-    \ state\n>>> s0 = np.reshape(np.arange(6,dtype=np.float32)/2,(1,3,2))\n>>> s0\n\
-    array([[[ 0. ,  0.5],\n        [ 1. ,  1.5],\n        [ 2. ,  2.5]]], dtype=float32)\n\
-    >>> y = C.sequence.past_value(x, initial_state=s)\n>>> y.eval({x:x0, s:s0}) #\
-    \ same as the previous example except for the first time step\n[array([[[  0.\
-    \ ,   0.5],\n         [  1. ,   1.5],\n         [  2. ,   2.5]],\n<BLANKLINE>\n\
-    \        [[  0. ,   1. ],\n         [  2. ,   3. ],\n         [  4. ,   5. ]],\n\
-    <BLANKLINE>\n        [[  6. ,   7. ],\n         [  8. ,   9. ],\n         [ 10.\
-    \ ,  11. ]],\n<BLANKLINE>\n        [[ 12. ,  13. ],\n         [ 14. ,  15. ],\n\
-    \         [ 16. ,  17. ]]], dtype=float32)]\n```\n"
+    \   0.],\n         [  0.,   0.]],\n\n        [[  0.,   1.],\n         [  2., \
+    \  3.],\n         [  4.,   5.]],\n\n        [[  6.,   7.],\n         [  8.,  \
+    \ 9.],\n         [ 10.,  11.]],\n\n        [[ 12.,  13.],\n         [ 14.,  15.],\n\
+    \         [ 16.,  17.]]], dtype=float32)]\n```\n\n\n```\n\n>>> # here, we pass\
+    \ a the initial_state as input data (e.g. sequence-to-sequence)\n>>> s = C.input_variable((3,2))\
+    \  # not a sequence, e.g. a final encoder hidden state\n>>> s0 = np.reshape(np.arange(6,dtype=np.float32)/2,(1,3,2))\n\
+    >>> s0\narray([[[ 0. ,  0.5],\n        [ 1. ,  1.5],\n        [ 2. ,  2.5]]],\
+    \ dtype=float32)\n>>> y = C.sequence.past_value(x, initial_state=s)\n>>> y.eval({x:x0,\
+    \ s:s0}) # same as the previous example except for the first time step\n[array([[[\
+    \  0. ,   0.5],\n         [  1. ,   1.5],\n         [  2. ,   2.5]],\n\n     \
+    \   [[  0. ,   1. ],\n         [  2. ,   3. ],\n         [  4. ,   5. ]],\n\n\
+    \        [[  6. ,   7. ],\n         [  8. ,   9. ],\n         [ 10. ,  11. ]],\n\
+    \n        [[ 12. ,  13. ],\n         [ 14. ,  15. ],\n         [ 16. ,  17. ]]],\
+    \ dtype=float32)]\n```\n"
 - uid: cntk.ops.sequence.reduce_max
   name: reduce_max
   summary: Computes the max of the input sequence's elements across the sequence axis.
@@ -406,12 +442,14 @@ functions:
   parameters:
   - name: seq
     description: sequence input tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.sequence.reduce_sum
   name: reduce_sum
   summary: Computes the sum of the input sequence's elements across the sequence axis.
@@ -419,12 +457,14 @@ functions:
   parameters:
   - name: seq
     description: sequence input tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> x = C.sequence.input_variable(shape=(3,2))\n>>> # create one sequence\
     \ of 4 tensors each with shape (3,2)\n>>> x0 = np.reshape(np.arange(24.0,dtype=np.float32),(1,4,3,2))\n\
@@ -449,10 +489,12 @@ functions:
     description: 'the symbolic sequence from which elements will be copied in the
 
       output'
+    isRequired: true
   - name: condition
     description: 'the symbolic sequence which denotes the locations where
 
       elements should be copied'
+    isRequired: true
   - name: new_sequence_axis_typeinfo
     description: 'tuple of integers indicating
 
@@ -463,21 +505,23 @@ functions:
       to be used for the output of the gather operation. If this argument is left
 
       unspecified a new independent sequence axis is created.'
+    isRequired: true
   - name: name
     description: the name of the node in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> x = C.sequence.input_variable(shape=(3,2))\n>>> t = C.sequence.last(x)\n\
     >>> b = C.sequence.is_first(x)\n>>> y = C.sequence.scatter(t, b)\n>>> # create\
     \ one sequence of 4 tensors each with shape (3,2)\n>>> x0 = np.reshape(np.arange(24.0,dtype=np.float32),(1,4,3,2))\n\
     >>> y.eval({x:x0})\n[array([[[ 18.,  19.],\n         [ 20.,  21.],\n         [\
-    \ 22.,  23.]],\n<BLANKLINE>\n        [[  0.,   0.],\n         [  0.,   0.],\n\
-    \         [  0.,   0.]],\n<BLANKLINE>\n        [[  0.,   0.],\n         [  0.,\
-    \   0.],\n         [  0.,   0.]],\n<BLANKLINE>\n        [[  0.,   0.],\n     \
-    \    [  0.,   0.],\n         [  0.,   0.]]], dtype=float32)]\n```\n"
+    \ 22.,  23.]],\n\n        [[  0.,   0.],\n         [  0.,   0.],\n         [ \
+    \ 0.,   0.]],\n\n        [[  0.,   0.],\n         [  0.,   0.],\n         [  0.,\
+    \   0.]],\n\n        [[  0.,   0.],\n         [  0.,   0.],\n         [  0., \
+    \  0.]]], dtype=float32)]\n```\n"
 - uid: cntk.ops.sequence.slice
   name: slice
   summary: Slice the input sequence.
@@ -494,12 +538,14 @@ functions:
   parameters:
   - name: seq
     description: sequence input tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.sequence.unpack
   name: unpack
   summary: 'This function unpacks the specified sequence operand ''x'' along the most
@@ -516,8 +562,10 @@ functions:
   parameters:
   - name: x
     description: the sequence tensor (or its name) which is unpacked
+    isRequired: true
   - name: padding_value
     description: The value to pad gaps in the unpacked tensor with.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
@@ -527,10 +575,12 @@ functions:
 
       gaps in the unpacked output due to differences across lengths of the sequences
       in the operand.'
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -554,12 +604,14 @@ functions:
   - name: condition
     description: sequence of 0 or 1 values for filtering, or other positive values
       for repetition (also fractional)
+    isRequired: true
   - name: name
     description: the name of the node in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> x = C.sequence.input_variable(shape=(3,2))\n>>> z = C.greater(C.reduce_sum(x),\
     \ 60)\n>>> # create one sequence of 4 tensors each with shape (3,2)\n>>> x0 =\

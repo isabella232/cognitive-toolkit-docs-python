@@ -6,6 +6,8 @@ module: cntk.contrib.crosstalkcaffe.validation.validcaffe
 inheritances:
 - cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
 summary: Validation module of Caffe side.
+constructor:
+  syntax: CaffeValidCore()
 methods:
 - uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.CaffeValidCore.execute
   name: execute
