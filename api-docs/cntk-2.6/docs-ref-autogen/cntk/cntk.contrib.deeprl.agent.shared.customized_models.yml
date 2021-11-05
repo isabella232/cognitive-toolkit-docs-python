@@ -30,10 +30,12 @@ functions:
   parameters:
   - name: shape_of_inputs
     description: tuple of array (input) dimensions.
+    isRequired: true
   - name: number_of_outputs
     description: 'dimension of output, equals the number of
 
       possible actions.'
+    isRequired: true
   - name: loss_function
     description: if not specified, use squared loss by default.
     defaultValue: None

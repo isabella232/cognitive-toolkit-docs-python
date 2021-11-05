@@ -10,6 +10,7 @@ functions:
   parameters:
   - name: conf_path
     description: the path to global configuration file
+    isRequired: true
     types:
     - <xref:str>
   return:
