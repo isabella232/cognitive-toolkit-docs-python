@@ -1,7 +1,0 @@
-### YamlMime:PythonModule
-uid: cntk.contrib.deeprl.agent.qlearning
-name: qlearning
-fullName: cntk.contrib.deeprl.agent.qlearning
-summary: Deep Q-learning and its variants.
-classes:
-- cntk.contrib.deeprl.agent.qlearning.QLearning

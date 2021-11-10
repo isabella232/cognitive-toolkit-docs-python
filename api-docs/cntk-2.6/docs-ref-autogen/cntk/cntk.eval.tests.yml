@@ -1,8 +1,0 @@
-### YamlMime:PythonPackage
-uid: cntk.eval.tests
-name: tests
-fullName: cntk.eval.tests
-type: import
-modules:
-- cntk.eval.tests.evaluator_distributed_test
-- cntk.eval.tests.evaluator_test

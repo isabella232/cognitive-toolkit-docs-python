@@ -1,9 +1,0 @@
-### YamlMime:PythonClass
-uid: cntk.cntk_py.CrossValidationConfig
-name: CrossValidationConfig
-fullName: cntk.cntk_py.CrossValidationConfig
-module: cntk.cntk_py
-inheritances:
-- builtins.object
-constructor:
-  syntax: CrossValidationConfig(*args)

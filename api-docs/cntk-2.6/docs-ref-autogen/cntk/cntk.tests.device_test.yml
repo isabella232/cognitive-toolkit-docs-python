@@ -1,9 +1,0 @@
-### YamlMime:PythonModule
-uid: cntk.tests.device_test
-name: device_test
-fullName: cntk.tests.device_test
-summary: Unit tests for the device module
-functions:
-- uid: cntk.tests.device_test.test_device_kind
-  name: test_device_kind
-  signature: test_device_kind()

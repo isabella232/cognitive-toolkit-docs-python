@@ -1,7 +1,0 @@
-### YamlMime:PythonPackage
-uid: cntk.layers.tests
-name: tests
-fullName: cntk.layers.tests
-type: import
-modules:
-- cntk.layers.tests.models_tests

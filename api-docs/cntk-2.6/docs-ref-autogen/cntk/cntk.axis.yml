@@ -1,7 +1,0 @@
-### YamlMime:PythonModule
-uid: cntk.axis
-name: axis
-fullName: cntk.axis
-summary: Axis for CNTK variables on data binding.
-classes:
-- cntk.axis.Axis

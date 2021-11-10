@@ -1,9 +1,0 @@
-### YamlMime:PythonClass
-uid: cntk.cntk_py.SwigMinibatchSource
-name: SwigMinibatchSource
-fullName: cntk.cntk_py.SwigMinibatchSource
-module: cntk.cntk_py
-inheritances:
-- cntk.cntk_py.MinibatchSource
-constructor:
-  syntax: SwigMinibatchSource()

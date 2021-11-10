@@ -1,6 +1,0 @@
-### YamlMime:PythonModule
-uid: cntk.contrib.deeprl.tests.cntk_utils_test
-name: cntk_utils_test
-fullName: cntk.contrib.deeprl.tests.cntk_utils_test
-classes:
-- cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
