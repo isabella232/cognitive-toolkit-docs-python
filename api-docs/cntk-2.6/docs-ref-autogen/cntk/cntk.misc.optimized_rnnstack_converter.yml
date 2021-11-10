@@ -5,15 +5,6 @@ fullName: cntk.misc.optimized_rnnstack_converter
 functions:
 - uid: cntk.misc.optimized_rnnstack_converter.convert_optimized_rnnstack
   name: convert_optimized_rnnstack
-  summary: 'Converts model that contains cudnn optimized_rnnstack to use non-cudnn
-    functions,
-
-    so it can be used in non-CUDA environment'
   signature: convert_optimized_rnnstack(cudnn_model)
   parameters:
   - name: cudnn_model
-    description: a model that contains optimized_rnnstacks
-    isRequired: true
-  return:
-    description: Converted model on GEMM based implementation of rnn that can be used
-      on CPU

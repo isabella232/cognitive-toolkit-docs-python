@@ -24,13 +24,13 @@ constructor:
     types:
     - <xref:tuple>
   - name: init
-    description: '<xref:module-cntk.initializer>: Initial value.
+    description: '<xref:cntk.initializer>: Initial value.
 
       If a numpy array is specified the shape argument is ignored and
 
       the tensor gets the shape of this argument. Alternatively, an
 
-      initializer from <xref:module-cntk.initializer> can be specified.'
+      initializer from <xref:cntk.initializer> can be specified.'
     isRequired: true
     types:
     - <xref:value >(<xref:np.ndarray>, <xref:list>, <xref:float>, <xref:int>

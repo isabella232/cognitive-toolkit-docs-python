@@ -2,10 +2,9 @@
 uid: cntk.ops.functions.CloneMethod
 name: CloneMethod
 fullName: cntk.ops.functions.CloneMethod
-summary: 'Describes different ways how <xref:cntk.ops.functions.Function.clone>
-
-  works.'
 module: cntk.ops.functions
+constructor:
+  syntax: CloneMethod(value)
 inheritances:
 - enum.Enum
 fields:

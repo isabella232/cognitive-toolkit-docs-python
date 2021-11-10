@@ -30,7 +30,7 @@ constructor:
     description: data type
     isRequired: true
     types:
-    - <xref:NumPy type>
+    - <xref:<xref:NumPy type>>
   - name: shape
     description: shape of the elements
     isRequired: true
@@ -43,3 +43,6 @@ constructor:
     isRequired: true
     types:
     - <xref:bool>, <xref:default to False>
+attributes:
+- uid: cntk.io.StreamInformation.name
+  name: name

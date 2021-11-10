@@ -40,7 +40,7 @@ functions:
       minibatch (*False*)'
     defaultValue: None
     types:
-    - <xref:list of bools>
+    - <xref:<xref:list of bools>>
     - <xref:None>
   - name: precision
     description: 'precision being ''float32'', ''float64'', ''float16'', or

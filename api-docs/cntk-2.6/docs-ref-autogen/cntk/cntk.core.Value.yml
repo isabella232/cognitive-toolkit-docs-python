@@ -26,7 +26,7 @@ constructor:
       minibatch (*False*)'
     isRequired: true
     types:
-    - <xref:list of bools>
+    - <xref:<xref:list of bools>>
     - <xref:None>
   - name: device
     description: 'device this value
@@ -80,7 +80,7 @@ methods:
       minibatch (*False*)'
     isRequired: true
     types:
-    - <xref:list of bools>
+    - <xref:<xref:list of bools>>
     - <xref:None>
   - name: device
     description: 'device
@@ -109,7 +109,7 @@ methods:
     description: batch input data of indices
     isRequired: true
     types:
-    - <xref:list of lists of integers>
+    - <xref:<xref:list of lists of integers>>
   - name: sample_shape
     description: 'number of classes or shape of each
 

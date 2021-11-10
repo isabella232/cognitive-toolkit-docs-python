@@ -69,7 +69,7 @@ functions:
       \ axis \n\n* None: denote all available axes"
     isRequired: true
     types:
-    - <xref:list of cntk.axis.Axis>
+    - list of <xref:cntk.axis.Axis>
     - <xref:int>
     - <xref:None>
 - uid: cntk.internal.sanitize.sanitize_batch
@@ -102,7 +102,7 @@ functions:
       in the same slot of the previous minibatch (*False*)'
     isRequired: true
     types:
-    - <xref:list of bools>
+    - <xref:<xref:list of bools>>
     - <xref:None>
   - name: device
     description: 'device
@@ -164,7 +164,7 @@ functions:
     description: fallback dtype in case `arg` is a list
     defaultValue: <class 'numpy.float32'>
     types:
-    - <xref:NumPy dtype>
+    - <xref:<xref:NumPy dtype>>
   - name: reshape
     defaultValue: None
   return:
@@ -185,7 +185,7 @@ functions:
       \ axis \n\n* None: denote all available axes"
     isRequired: true
     types:
-    - <xref:list of cntk.axis.Axis>
+    - list of <xref:cntk.axis.Axis>
     - <xref:int>
     - <xref:None>
 - uid: cntk.internal.sanitize.sanitize_permutation
@@ -264,7 +264,7 @@ functions:
     isRequired: true
     types:
     - <xref:None>
-    - <xref:value that can be cast to NumPy array>
+    - <xref:<xref:value that can be cast to NumPy array>>
   - name: dtype
     description: data type (np.float32 or np.float64)
     isRequired: true
