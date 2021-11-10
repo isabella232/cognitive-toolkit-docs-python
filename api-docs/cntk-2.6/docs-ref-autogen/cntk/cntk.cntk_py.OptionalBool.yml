@@ -1,0 +1,25 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.OptionalBool
+name: OptionalBool
+fullName: cntk.cntk_py.OptionalBool
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: OptionalBool(*args)
+methods:
+- uid: cntk.cntk_py.OptionalBool.get
+  name: get
+  signature: get()
+- uid: cntk.cntk_py.OptionalBool.is_initialized
+  name: is_initialized
+  signature: is_initialized()
+- uid: cntk.cntk_py.OptionalBool.reset
+  name: reset
+  signature: reset()
+- uid: cntk.cntk_py.OptionalBool.set
+  name: set
+  signature: set(value)
+  parameters:
+  - name: value
+    isRequired: true

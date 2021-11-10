@@ -1,0 +1,9 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.DenseSequenceData
+name: DenseSequenceData
+fullName: cntk.cntk_py.DenseSequenceData
+module: cntk.cntk_py
+inheritances:
+- cntk.cntk_py.SequenceDataBase
+constructor:
+  syntax: DenseSequenceData(*args, **kwargs)

@@ -1,0 +1,30 @@
+### YamlMime:PythonPackage
+uid: cntk.logging
+name: logging
+fullName: cntk.logging
+summary: Utilities for logging.
+type: import
+functions:
+- uid: cntk.logging.get_trace_level
+  name: get_trace_level
+  summary: Returns current logging verbosity level.
+  signature: get_trace_level()
+  return:
+    description: current verbosity level.
+    types:
+    - <xref:cntk.logging.TraceLevel>
+- uid: cntk.logging.set_trace_level
+  name: set_trace_level
+  summary: Specifies global logging verbosity level.
+  signature: set_trace_level(value)
+  parameters:
+  - name: value
+    description: required verbosity level.
+    isRequired: true
+    types:
+    - <xref:cntk.logging.TraceLevel>
+modules:
+- cntk.logging.graph
+- cntk.logging.progress_print
+enums:
+- cntk.logging.TraceLevel

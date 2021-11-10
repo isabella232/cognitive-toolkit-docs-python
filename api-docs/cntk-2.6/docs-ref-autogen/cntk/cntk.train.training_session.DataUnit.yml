@@ -1,0 +1,24 @@
+### YamlMime:PythonClass
+uid: cntk.train.training_session.DataUnit
+name: DataUnit
+fullName: cntk.train.training_session.DataUnit
+module: cntk.train.training_session
+inheritances:
+- enum.IntEnum
+summary: Indicates that whether the processing steps in the training data is counted
+  by samples, minibatch or epoch.
+constructor:
+  syntax: DataUnit(value)
+attributes:
+- uid: cntk.train.training_session.DataUnit.minibatch
+  name: minibatch
+  summary: Steps on data are counted by samples.
+  signature: minibatch = 2
+- uid: cntk.train.training_session.DataUnit.sample
+  name: sample
+  summary: Steps on data are counted by samples.
+  signature: sample = 1
+- uid: cntk.train.training_session.DataUnit.sweep
+  name: sweep
+  summary: Steps on data are counted by sweeps of epochs.
+  signature: sweep = 0

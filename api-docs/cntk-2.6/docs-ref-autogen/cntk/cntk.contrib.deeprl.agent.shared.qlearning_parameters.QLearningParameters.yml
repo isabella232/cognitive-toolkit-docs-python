@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
+name: QLearningParameters
+fullName: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters
+module: cntk.contrib.deeprl.agent.shared.qlearning_parameters
+inheritances:
+- builtins.object
+summary: Parameters used by Q learning algorithm.
+constructor:
+  syntax: QLearningParameters(config_file)
+methods:
+- uid: cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters.save
+  name: save
+  signature: save(config_file)
+  parameters:
+  - name: config_file
+    isRequired: true

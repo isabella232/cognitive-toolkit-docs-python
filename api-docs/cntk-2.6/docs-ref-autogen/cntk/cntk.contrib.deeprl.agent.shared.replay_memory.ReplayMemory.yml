@@ -1,0 +1,48 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.agent.shared.replay_memory.ReplayMemory
+name: ReplayMemory
+fullName: cntk.contrib.deeprl.agent.shared.replay_memory.ReplayMemory
+module: cntk.contrib.deeprl.agent.shared.replay_memory
+inheritances:
+- builtins.object
+summary: 'Replay memory to store samples of experience.
+
+
+  Each transition is represented as (state, action, reward, next_state,
+
+  priority) tuple. ''priority'' is ignored for non-prioritized experience
+
+  replay.'
+constructor:
+  syntax: ReplayMemory(capacity, prioritized=False)
+methods:
+- uid: cntk.contrib.deeprl.agent.shared.replay_memory.ReplayMemory.sample_minibatch
+  name: sample_minibatch
+  summary: Sample minibatch of size batch_size.
+  signature: sample_minibatch(batch_size)
+  parameters:
+  - name: batch_size
+    isRequired: true
+- uid: cntk.contrib.deeprl.agent.shared.replay_memory.ReplayMemory.size
+  name: size
+  summary: Return the current number of transitions.
+  signature: size()
+- uid: cntk.contrib.deeprl.agent.shared.replay_memory.ReplayMemory.store
+  name: store
+  summary: 'Store a transition in replay memory.
+
+
+    If the memory is full, the oldest one gets overwritten.'
+  signature: store(*args)
+- uid: cntk.contrib.deeprl.agent.shared.replay_memory.ReplayMemory.update_priority
+  name: update_priority
+  summary: Update priority of transitions.
+  signature: update_priority(map_from_position_to_priority)
+  parameters:
+  - name: map_from_position_to_priority
+    description: 'dictionary mapping position of
+
+      transition to its new priority. position should come from
+
+      tuples returned by sample_minibatch().'
+    isRequired: true

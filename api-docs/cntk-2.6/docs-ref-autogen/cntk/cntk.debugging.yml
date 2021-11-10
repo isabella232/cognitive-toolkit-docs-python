@@ -1,0 +1,34 @@
+### YamlMime:PythonPackage
+uid: cntk.debugging
+name: debugging
+fullName: cntk.debugging
+type: import
+functions:
+- uid: cntk.debugging.dump_function
+  name: dump_function
+  signature: dump_function(root, tag=None)
+  parameters:
+  - name: root
+  - name: tag
+    defaultValue: None
+- uid: cntk.debugging.dump_signature
+  name: dump_signature
+  summary: Debug helper that prints the signature of a Function.
+  signature: dump_signature(root, tag=None)
+  parameters:
+  - name: root
+  - name: tag
+    defaultValue: None
+- uid: cntk.debugging.force_deterministic
+  name: force_deterministic
+  summary: Force most of the computation nodes to run deterministically.
+  signature: force_deterministic(seed)
+  parameters:
+  - name: seed
+    description: set the random seed for all random ops in the graph and readers.
+    isRequired: true
+    types:
+    - <xref:int>
+modules:
+- cntk.debugging.debug
+- cntk.debugging.profiler

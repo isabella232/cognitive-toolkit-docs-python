@@ -1,0 +1,201 @@
+### YamlMime:PythonClass
+uid: cntk.core.NDArrayView
+name: NDArrayView
+fullName: cntk.core.NDArrayView
+module: cntk.core
+inheritances:
+- cntk.cntk_py.NDArrayView
+summary: 'Creates an empty dense internal data representation of a
+
+  <xref:cntk.core.Value> object.
+
+  To create an NDArrayView from a NumPy array, use <xref:cntk.core.NDArrayView.from_dense>.
+
+  To create an NDArrayView from a sparse array, use <xref:cntk.core.NDArrayView.from_csr>.'
+constructor:
+  syntax: NDArrayView(shape, data_type, device=None)
+  parameters:
+  - name: shape
+    description: shape of the data
+    isRequired: true
+    types:
+    - <xref:tuple>
+  - name: data_type
+    description: data type of the data
+    isRequired: true
+    types:
+    - <xref:np.float32>, <xref:np.float64>, <xref:np.float16>
+  - name: device
+    description: 'device this value
+
+      should be put on'
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>
+methods:
+- uid: cntk.core.NDArrayView.from_csr
+  name: from_csr
+  summary: 'Create an <xref:cntk.core.NDArrayView> instance from a SciPy sparse array
+    in CSR
+
+    format.'
+  signature: from_csr(csr_array, device=None, read_only=False, borrow=False, shape=None)
+  parameters:
+  - name: csr_array
+    description: 'SciPy sparse matrix in CSR
+
+      format'
+    isRequired: true
+    types:
+    - <xref:scipy.sparse.csr_matrix>
+  - name: device
+    description: 'device this value
+
+      should be put on'
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>
+  - name: read_only
+    description: 'whether the data can be modified or
+
+      not (default False)'
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:optional>
+  - name: borrow
+    description: 'whether nd_array memory can be
+
+      borrowed internally to speed up the data creation'
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:default False>
+  - name: shape
+    description: 'shape of the created NDArrayView.
+
+      If unspecified, the created NDArrayView has the same shape as the csr_matrix.
+
+      Otherwise, an NDArrayView object of specified shape is created using csr_data.
+
+      The total size and number of rows of csr_data must match specified NDArrayView
+      shape.'
+    isRequired: true
+    types:
+    - <xref:tuple>, <xref:default None>
+  return:
+    description: <xref:cntk.core.NDArrayView> instance
+- uid: cntk.core.NDArrayView.from_data
+  name: from_data
+  summary: 'Create an <xref:cntk.core.NDArrayView> instance from a NumPy or SciPy
+    sparse
+
+    array in CSR format.'
+  signature: from_data(data, device=None, read_only=False, borrow=False)
+  parameters:
+  - name: data
+    description: data
+    isRequired: true
+    types:
+    - <xref:numpy.ndarray>
+    - <xref:scipy.sparse.csr_matrix>
+  - name: device
+    description: 'device this value
+
+      should be put on'
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>
+  - name: read_only
+    description: 'whether the data can be modified or
+
+      not (default False)'
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:optional>
+  - name: borrow
+    description: 'whether nd_array memory can be
+
+      borrowed internally to speed up the data creation'
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:default False>
+  return:
+    description: <xref:cntk.core.NDArrayView> instance
+- uid: cntk.core.NDArrayView.from_dense
+  name: from_dense
+  summary: Create an <xref:cntk.core.NDArrayView> instance from a NumPy array.
+  signature: from_dense(np_array, device=None, read_only=False, borrow=False)
+  parameters:
+  - name: np_array
+    description: NumPy array
+    isRequired: true
+    types:
+    - <xref:numpy.ndarray>
+  - name: device
+    description: 'device this value
+
+      should be put on'
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>
+  - name: borrow
+    description: 'whether nd_array memory can be
+
+      borrowed internally to speed up the data creation'
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:default False>
+  - name: read_only
+    description: 'whether the data can be modified or
+
+      not (default False)'
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:optional>
+  return:
+    description: <xref:cntk.core.NDArrayView> instance
+- uid: cntk.core.NDArrayView.slice_view
+  name: slice_view
+  summary: Returns a sliced view of the instance.
+  signature: slice_view(start_offset, extent, read_only=True)
+  parameters:
+  - name: start_offset
+    description: 'shape of the same rank as this Value
+
+      instance that denotes the start of the slicing'
+    isRequired: true
+    types:
+    - <xref:tuple>
+    - <xref:list>
+  - name: extent
+    description: shape of the right-aligned extent to keep
+    isRequired: true
+    types:
+    - <xref:tuple>
+    - <xref:list>
+  - name: read_only
+    description: whether the returned slice is read only or not
+    isRequired: true
+    types:
+    - <xref:bool>
+  examples:
+  - "\n```\n\n>>> # Creating an array of shape (1, 1, 2, 3)\n>>> np_array = np.asarray([[[[10,\
+    \ 20, 30], [40, 50, 60]]]],                                       dtype=np.float32)\n\
+    >>> nd = NDArrayView.from_dense(np_array)\n>>> sliced = nd.slice_view([0, 0, 0,\
+    \ 0], [2, 3])\n>>> np_sliced = sliced.asarray()\n>>> # Result is an array of shape\
+    \ (2, 3)\n>>> print(np_sliced)\n[[10. 20. 30.]\n [40. 50. 60.]]\n```\n"
+attributes:
+- uid: cntk.core.NDArrayView.device
+  name: device
+  summary: Retrieves the <xref:cntk.device.DeviceDescriptor> instance.
+- uid: cntk.core.NDArrayView.dtype
+  name: dtype
+  summary: NumPy data type of the instance
+- uid: cntk.core.NDArrayView.is_read_only
+  name: is_read_only
+  summary: Whether the data is read-only
+- uid: cntk.core.NDArrayView.is_sparse
+  name: is_sparse
+  summary: Whether the data is sparse or dense
+- uid: cntk.core.NDArrayView.shape
+  name: shape
+  summary: The shape of this instance.

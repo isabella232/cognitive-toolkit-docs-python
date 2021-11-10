@@ -3,5 +3,5 @@ uid: project-cntk
 name: cntk
 fullName: cntk
 type: distribution
-modules:
-- cntk.cntk_py_init
+packages:
+- cntk

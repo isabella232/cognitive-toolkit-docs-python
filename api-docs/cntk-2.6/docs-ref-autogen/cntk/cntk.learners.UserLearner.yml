@@ -1,0 +1,50 @@
+### YamlMime:PythonClass
+uid: cntk.learners.UserLearner
+name: UserLearner
+fullName: cntk.learners.UserLearner
+module: cntk.learners
+inheritances:
+- cntk.cntk_py.Learner
+summary: 'Base class of all user-defined learners. To implement your own learning
+
+  algorithm, derive from this class and override the <xref:cntk.learners.UserLearner.update>.
+
+
+  Certain optimizers (such as AdaGrad) require additional storage.
+
+  This can be allocated and initialized during construction.'
+constructor:
+  syntax: UserLearner(parameters, lr_schedule, as_numpy=True)
+methods:
+- uid: cntk.learners.UserLearner.update
+  name: update
+  summary: Update the parameters associated with this learner.
+  signature: update(gradient_values, training_sample_count, sweep_end)
+  parameters:
+  - name: gradient_values
+    description: 'maps <xref:cntk.variables.Parameter> to
+
+      a NumPy array containing the first order gradient values for the
+
+      Parameter w.r.t. the training objective.'
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: training_sample_count
+    description: number of samples in the minibatch
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: sweep_end
+    description: 'if the data is fed by a conforming reader, this indicates
+
+      whether a full pass over the dataset has just occurred.'
+    isRequired: true
+    types:
+    - <xref:bool>
+  return:
+    description: '*False* to indicate that learning has stopped for all of the
+
+      parameters associated with this learner'
+    types:
+    - <xref:bool>

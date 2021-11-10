@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters.PolicyGradientParameters
+name: PolicyGradientParameters
+fullName: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters.PolicyGradientParameters
+module: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters
+inheritances:
+- builtins.object
+summary: Parameters used by Policy Gradient algorithms.
+constructor:
+  syntax: PolicyGradientParameters(config_file)
+methods:
+- uid: cntk.contrib.deeprl.agent.shared.policy_gradient_parameters.PolicyGradientParameters.save
+  name: save
+  signature: save(config_file)
+  parameters:
+  - name: config_file
+    isRequired: true

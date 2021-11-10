@@ -1,0 +1,10 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.utils.globalconf.GlobalConf
+name: GlobalConf
+fullName: cntk.contrib.crosstalkcaffe.utils.globalconf.GlobalConf
+module: cntk.contrib.crosstalkcaffe.utils.globalconf
+inheritances:
+- builtins.object
+summary: The definition of global configuration
+constructor:
+  syntax: GlobalConf()

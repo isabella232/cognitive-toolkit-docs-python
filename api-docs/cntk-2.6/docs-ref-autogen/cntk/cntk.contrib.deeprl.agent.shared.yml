@@ -1,0 +1,14 @@
+### YamlMime:PythonPackage
+uid: cntk.contrib.deeprl.agent.shared
+name: shared
+fullName: cntk.contrib.deeprl.agent.shared
+type: import
+modules:
+- cntk.contrib.deeprl.agent.shared.cntk_utils
+- cntk.contrib.deeprl.agent.shared.customized_models
+- cntk.contrib.deeprl.agent.shared.discretize
+- cntk.contrib.deeprl.agent.shared.models
+- cntk.contrib.deeprl.agent.shared.policy_gradient_parameters
+- cntk.contrib.deeprl.agent.shared.preprocessing
+- cntk.contrib.deeprl.agent.shared.qlearning_parameters
+- cntk.contrib.deeprl.agent.shared.replay_memory

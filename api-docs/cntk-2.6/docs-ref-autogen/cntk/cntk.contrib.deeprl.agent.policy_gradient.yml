@@ -1,0 +1,7 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.agent.policy_gradient
+name: policy_gradient
+fullName: cntk.contrib.deeprl.agent.policy_gradient
+summary: Actor-Critic Policy Gradient.
+classes:
+- cntk.contrib.deeprl.agent.policy_gradient.ActorCritic

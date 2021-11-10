@@ -1,0 +1,22 @@
+### YamlMime:PythonModule
+uid: cntk.internal.swig_helper
+name: swig_helper
+fullName: cntk.internal.swig_helper
+functions:
+- uid: cntk.internal.swig_helper.map_if_possible
+  name: map_if_possible
+  signature: map_if_possible(obj)
+  parameters:
+  - name: obj
+- uid: cntk.internal.swig_helper.typemap
+  name: typemap
+  summary: 'Decorator that upcasts return types from Swig types to cntk types that
+
+    inherit from Swig. It does so recursively, e.g. if the return type is a
+
+    tuple containing a dictionary, it will try to upcast every element in the
+
+    tuple and all the keys and values in the dictionary.'
+  signature: typemap(f)
+  parameters:
+  - name: f

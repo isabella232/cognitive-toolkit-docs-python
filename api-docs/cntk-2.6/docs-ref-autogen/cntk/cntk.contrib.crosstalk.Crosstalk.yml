@@ -1,0 +1,171 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalk.Crosstalk
+name: Crosstalk
+fullName: cntk.contrib.crosstalk.Crosstalk
+module: cntk.contrib.crosstalk
+inheritances:
+- builtins.object
+summary: 'Base class of Crosstalk.
+
+  Please refer to crosstalk unittests for examples of how to exchange/compare values
+  between different toolkits.'
+constructor:
+  syntax: Crosstalk()
+methods:
+- uid: cntk.contrib.crosstalk.Crosstalk.assign
+  name: assign
+  summary: Set value to var, with option to load from working directory
+  signature: assign(name, value=None, load=False, load_name=None)
+  parameters:
+  - name: name
+    description: Name of the variable to assign
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: value
+    description: Numpy ndarray of dict of numpy ndarray data to assign to the variable
+    defaultValue: None
+  - name: load
+    description: True to Load the data from working directory with the matching name,
+      instead of using value. value has to be None when load=True
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+  - name: load_name
+    description: None to load data with the same name, otherwise load with overrided
+      load_name
+    defaultValue: None
+    types:
+    - <xref:str>
+- uid: cntk.contrib.crosstalk.Crosstalk.compare
+  name: compare
+  summary: Compare var with name to value in file in working directory
+  signature: compare(name, compare_name=None, rtol=1e-05, atol=1e-08, equal_nan=False)
+  parameters:
+  - name: name
+    description: Name of the variable to compare
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: compare_name
+    description: Compare to file with compare_name if specified
+    defaultValue: None
+    types:
+    - <xref:str>
+  - name: rtol
+    description: The relative tolerance parameter, as in numpy.isclose()
+    defaultValue: 1e-05
+    types:
+    - <xref:float>
+  - name: atol
+    description: The absolute tolerance parameter, as in numpy.isclose()
+    defaultValue: 1e-08
+    types:
+    - <xref:float>
+  - name: equal_nan
+    description: Whether to compare NaNs as equal, as in numpy.isclose()
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+- uid: cntk.contrib.crosstalk.Crosstalk.fetch
+  name: fetch
+  summary: Fetch/evaluate var with name and optionally save to working directory
+  signature: fetch(name, save=False)
+  parameters:
+  - name: name
+    description: Name of the variable to fetch
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: save
+    description: Save the data to working directory
+    defaultValue: 'False'
+    types:
+    - <xref:bool>
+- uid: cntk.contrib.crosstalk.Crosstalk.load
+  name: load
+  summary: Load variables in list of names
+  signature: load(names)
+  parameters:
+  - name: names
+    description: List of *str* of variable names to load
+    isRequired: true
+- uid: cntk.contrib.crosstalk.Crosstalk.load_raw_value
+  name: load_raw_value
+  summary: Load raw value from npy|pkl file in working directory
+  signature: load_raw_value(name)
+  parameters:
+  - name: name
+    description: Name of the file to load
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: loaded data in numpy ndarray or dict of numpy ndarray
+- uid: cntk.contrib.crosstalk.Crosstalk.next_pass
+  name: next_pass
+  summary: Bump up passes so save won't overwrite existing files
+  signature: next_pass()
+- uid: cntk.contrib.crosstalk.Crosstalk.register_funcs
+  name: register_funcs
+  summary: Register setter/getter functions for a given variable type
+  signature: register_funcs(var_type, setter=None, getter=None)
+  parameters:
+  - name: var_type
+    description: Type of the variable
+    isRequired: true
+  - name: setter
+    description: Lambda function to set value
+    defaultValue: None
+  - name: getter
+    description: Lambda function to get value
+    defaultValue: None
+- uid: cntk.contrib.crosstalk.Crosstalk.reset
+  name: reset
+  summary: Reset all variables and passes, setter/getter functions for variable types
+    are kept
+  signature: reset()
+- uid: cntk.contrib.crosstalk.Crosstalk.save
+  name: save
+  summary: Save variables in list of names
+  signature: save(names)
+  parameters:
+  - name: names
+    description: List of *str* of variable names to save
+    isRequired: true
+- uid: cntk.contrib.crosstalk.Crosstalk.save_all
+  name: save_all
+  summary: Save all variables
+  signature: save_all()
+- uid: cntk.contrib.crosstalk.Crosstalk.set_workdir
+  name: set_workdir
+  summary: Set up a working directory for save/load numpy values(.npy) or python data
+    (.pkl)
+  signature: set_workdir(dir)
+  parameters:
+  - name: dir
+    description: Working directory
+    isRequired: true
+    types:
+    - <xref:str>
+- uid: cntk.contrib.crosstalk.Crosstalk.watch
+  name: watch
+  summary: Add variables to watch with a unique name.
+  signature: watch(var, name, var_type=None, attr=None)
+  parameters:
+  - name: var
+    description: Variable to watch. The type is toolkit specific
+    isRequired: true
+  - name: name
+    description: A unique name of the watched variable
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: var_type
+    description: Variable type for set/get value callback. would be type of var if
+      None is specified
+    defaultValue: None
+  - name: attr
+    description: attributes for the variable that would be used when getting/setting
+      values. Could be one of Conv2DAttr/EmbedAttr/RnnAttr
+    defaultValue: None

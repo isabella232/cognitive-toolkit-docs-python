@@ -1,0 +1,7 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.agent.agent
+name: agent
+fullName: cntk.contrib.deeprl.agent.agent
+summary: Base class for defining an agent.
+classes:
+- cntk.contrib.deeprl.agent.agent.AgentBaseClass

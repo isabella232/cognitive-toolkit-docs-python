@@ -1,0 +1,91 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.ProgressWriter
+name: ProgressWriter
+fullName: cntk.cntk_py.ProgressWriter
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: ProgressWriter(trainingUpdateWriteFrequency, trainingFirstUpdatesToWrite,
+    testUpdateWriteFrequency, testFirstUpdatesToWrite, distributedSyncUpdateWriteFrequency,
+    distributedSyncFirstUpdatesToWrite)
+methods:
+- uid: cntk.cntk_py.ProgressWriter.on_training_update_end
+  name: on_training_update_end
+  signature: on_training_update_end()
+- uid: cntk.cntk_py.ProgressWriter.on_write_distributed_sync_update
+  name: on_write_distributed_sync_update
+  signature: on_write_distributed_sync_update(arg0, arg1, arg2)
+  parameters:
+  - name: arg0
+    isRequired: true
+  - name: arg1
+    isRequired: true
+  - name: arg2
+    isRequired: true
+- uid: cntk.cntk_py.ProgressWriter.on_write_test_summary
+  name: on_write_test_summary
+  signature: on_write_test_summary(arg0, arg1, arg2, arg3, arg4)
+  parameters:
+  - name: arg0
+    isRequired: true
+  - name: arg1
+    isRequired: true
+  - name: arg2
+    isRequired: true
+  - name: arg3
+    isRequired: true
+  - name: arg4
+    isRequired: true
+- uid: cntk.cntk_py.ProgressWriter.on_write_test_update
+  name: on_write_test_update
+  signature: on_write_test_update(arg0, arg1, arg2)
+  parameters:
+  - name: arg0
+    isRequired: true
+  - name: arg1
+    isRequired: true
+  - name: arg2
+    isRequired: true
+- uid: cntk.cntk_py.ProgressWriter.on_write_training_summary
+  name: on_write_training_summary
+  signature: on_write_training_summary(arg0, arg1, arg2, arg3, arg4, arg5)
+  parameters:
+  - name: arg0
+    isRequired: true
+  - name: arg1
+    isRequired: true
+  - name: arg2
+    isRequired: true
+  - name: arg3
+    isRequired: true
+  - name: arg4
+    isRequired: true
+  - name: arg5
+    isRequired: true
+- uid: cntk.cntk_py.ProgressWriter.on_write_training_update
+  name: on_write_training_update
+  signature: on_write_training_update(arg0, arg1, arg2, arg3)
+  parameters:
+  - name: arg0
+    isRequired: true
+  - name: arg1
+    isRequired: true
+  - name: arg2
+    isRequired: true
+  - name: arg3
+    isRequired: true
+- uid: cntk.cntk_py.ProgressWriter.total_test_updates
+  name: total_test_updates
+  signature: total_test_updates()
+- uid: cntk.cntk_py.ProgressWriter.total_training_updates
+  name: total_training_updates
+  signature: total_training_updates()
+- uid: cntk.cntk_py.ProgressWriter.write
+  name: write
+  signature: write(arg0, arg1)
+  parameters:
+  - name: arg0
+    isRequired: true
+  - name: arg1
+    isRequired: true

@@ -1,0 +1,33 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.validation.validcore.Validator
+name: Validator
+fullName: cntk.contrib.crosstalkcaffe.validation.validcore.Validator
+module: cntk.contrib.crosstalkcaffe.validation.validcore
+inheritances:
+- builtins.object
+summary: The validation module to check the difference between original Caffe and
+  converted CNTK models
+constructor:
+  syntax: Validator(global_conf, functions)
+methods:
+- uid: cntk.contrib.crosstalkcaffe.validation.validcore.Validator.activate
+  name: activate
+  summary: The function executes target validation core
+  signature: activate()
+  parameters:
+  - name: None
+    isRequired: true
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.validation.validcore.Validator.val_network
+  name: val_network
+  summary: "The function executes CNTK forward and dumps watched nodes into temporary\
+    \ files with\n      numpy.mat formats"
+  signature: val_network()
+  parameters:
+  - name: None
+    isRequired: true
+  return:
+    description: whether to validate the network
+    types:
+    - <xref:bool>

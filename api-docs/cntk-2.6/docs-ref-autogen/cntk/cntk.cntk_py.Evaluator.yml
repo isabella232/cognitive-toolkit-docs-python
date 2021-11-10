@@ -1,0 +1,28 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.Evaluator
+name: Evaluator
+fullName: cntk.cntk_py.Evaluator
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: Evaluator(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.Evaluator.evaluation_function
+  name: evaluation_function
+  signature: evaluation_function()
+- uid: cntk.cntk_py.Evaluator.print_node_timing
+  name: print_node_timing
+  signature: print_node_timing()
+- uid: cntk.cntk_py.Evaluator.progress_writers
+  name: progress_writers
+  signature: progress_writers()
+- uid: cntk.cntk_py.Evaluator.summarize_test_progress
+  name: summarize_test_progress
+  signature: summarize_test_progress()
+- uid: cntk.cntk_py.Evaluator.test_minibatch
+  name: test_minibatch
+  signature: test_minibatch(*args)
+- uid: cntk.cntk_py.Evaluator.test_minibatch_overload_for_minibatchdata
+  name: test_minibatch_overload_for_minibatchdata
+  signature: test_minibatch_overload_for_minibatchdata(*args)

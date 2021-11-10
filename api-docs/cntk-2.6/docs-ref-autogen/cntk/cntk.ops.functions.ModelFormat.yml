@@ -1,0 +1,15 @@
+### YamlMime:PythonEnum
+uid: cntk.ops.functions.ModelFormat
+name: ModelFormat
+fullName: cntk.ops.functions.ModelFormat
+summary: Describes the supported disk format for CNTK model.
+module: cntk.ops.functions
+constructor:
+  syntax: ModelFormat(value)
+inheritances:
+- enum.Enum
+fields:
+- name: CNTKv2
+  uid: cntk.ops.functions.ModelFormat.CNTKv2
+- name: ONNX
+  uid: cntk.ops.functions.ModelFormat.ONNX

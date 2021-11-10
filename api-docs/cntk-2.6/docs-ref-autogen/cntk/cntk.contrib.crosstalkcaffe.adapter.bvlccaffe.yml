@@ -1,0 +1,9 @@
+### YamlMime:PythonPackage
+uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe
+name: bvlccaffe
+fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe
+type: import
+modules:
+- cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffe_pb2
+- cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
+- cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeimpl

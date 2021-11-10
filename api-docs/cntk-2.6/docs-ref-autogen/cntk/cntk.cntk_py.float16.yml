@@ -1,0 +1,12 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.float16
+name: float16
+fullName: cntk.cntk_py.float16
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: float16(*args)
+methods:
+- uid: cntk.cntk_py.float16.create
+  name: create

@@ -1,0 +1,7 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.agent.shared.models
+name: models
+fullName: cntk.contrib.deeprl.agent.shared.models
+summary: A set of predefined models used by Q learning or Actor-Critic.
+classes:
+- cntk.contrib.deeprl.agent.shared.models.Models

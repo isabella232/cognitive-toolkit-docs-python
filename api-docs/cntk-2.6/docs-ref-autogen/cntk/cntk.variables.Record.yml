@@ -1,0 +1,31 @@
+### YamlMime:PythonClass
+uid: cntk.variables.Record
+name: Record
+fullName: cntk.variables.Record
+module: cntk.variables
+inheritances:
+- builtins.dict
+summary: Easy construction of a record (=immutable singleton class) from keyword arguments.
+constructor:
+  syntax: Record(**args_dict)
+  parameters:
+  - name: kwargs
+    description: keyword arguments to turn into the record members
+    isRequired: true
+examples:
+- "\n```\n\n>>> r = Record(x = 13, y = 42)\n>>> r.x\n    13\n```\n"
+methods:
+- uid: cntk.variables.Record.updated_with
+  name: updated_with
+  summary: Create a new Record from an existing one with members modified or added.
+  signature: updated_with(**kwargs)
+  parameters:
+  - name: kwargs
+    description: keyword arguments to turn into the record members
+    isRequired: true
+  return:
+    description: A singleton class instance that has all passed kw args as immutable
+      class members.
+  examples:
+  - "\n```\n\n>>> r = Record(x = 13)\n>>> r.x\n    13\n>>> r2 = r.updated_with(x =\
+    \ 42)\n>>> r2.x\n    42\n```\n"

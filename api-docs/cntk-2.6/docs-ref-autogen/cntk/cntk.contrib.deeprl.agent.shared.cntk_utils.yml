@@ -1,0 +1,25 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.agent.shared.cntk_utils
+name: cntk_utils
+fullName: cntk.contrib.deeprl.agent.shared.cntk_utils
+summary: Utility functions.
+functions:
+- uid: cntk.contrib.deeprl.agent.shared.cntk_utils.huber_loss
+  name: huber_loss
+  summary: 'See [https://en.wikipedia.org/wiki/Huber_loss](https://en.wikipedia.org/wiki/Huber_loss)
+    for definition.
+
+
+    delta is set to 1. This is not the right definition if output and target
+
+    differ in more than one dimension.'
+  signature: huber_loss(output, target)
+  parameters:
+  - name: output
+  - name: target
+- uid: cntk.contrib.deeprl.agent.shared.cntk_utils.negative_of_entropy_with_softmax
+  name: negative_of_entropy_with_softmax
+  summary: See [https://en.wikipedia.org/wiki/Entropy_(information_theory](https://en.wikipedia.org/wiki/Entropy_(information_theory)).
+  signature: negative_of_entropy_with_softmax(p)
+  parameters:
+  - name: p

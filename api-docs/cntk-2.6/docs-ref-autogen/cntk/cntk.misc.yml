@@ -1,0 +1,10 @@
+### YamlMime:PythonPackage
+uid: cntk.misc
+name: misc
+fullName: cntk.misc
+summary: Miscellaneous utilities for CNTK, e.g. filtering and converting nodes in
+  CNTK computation graph.
+type: import
+modules:
+- cntk.misc.converter
+- cntk.misc.optimized_rnnstack_converter

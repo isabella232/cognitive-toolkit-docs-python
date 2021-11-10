@@ -1,0 +1,84 @@
+### YamlMime:PythonClass
+uid: cntk.io.UserMinibatchSource
+name: UserMinibatchSource
+fullName: cntk.io.UserMinibatchSource
+module: cntk.io
+inheritances:
+- cntk.cntk_py.SwigMinibatchSource
+summary: Base class of all user minibatch sources.
+constructor:
+  syntax: UserMinibatchSource()
+methods:
+- uid: cntk.io.UserMinibatchSource.get_checkpoint_state
+  name: get_checkpoint_state
+  summary: 'Returns a dictionary describing the current state of the minibatch
+
+    source. Needs to be overwritten if the state of the minibatch source
+
+    needs to be stored to and later restored from the checkpoint.'
+  signature: get_checkpoint_state()
+  return:
+    description: dictionary, that can be later used on <xref:cntk.io.UserMinibatchSource.restore_from_checkpoint>.
+- uid: cntk.io.UserMinibatchSource.is_infinite
+  name: is_infinite
+  summary: Should return true if the user has not specified any limit on the number
+    of sweeps and samples.
+  signature: is_infinite()
+- uid: cntk.io.UserMinibatchSource.next_minibatch
+  name: next_minibatch
+  summary: Function to be implemented by the user.
+  signature: next_minibatch(num_samples, number_of_workers, worker_rank, device=None)
+  parameters:
+  - name: num_samples
+    description: number of samples to return
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: number_of_workers
+    description: number of workers in total
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: worker_rank
+    description: worker for which the data is to be returned
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: device
+    description: 'the device
+
+      descriptor that contains the type and id of the device on which the
+
+      computation is performed. If *None*, the default device is used.'
+    defaultValue: None
+    types:
+    - <xref:DeviceDescriptor>, <xref:defaults to None>
+  return:
+    description: mapping of <xref:cntk.io.StreamInformation> to <xref:cntk.io.MinibatchData>
+- uid: cntk.io.UserMinibatchSource.restore_from_checkpoint
+  name: restore_from_checkpoint
+  summary: Sets the state of the checkpoint.
+  signature: restore_from_checkpoint(state)
+  parameters:
+  - name: state
+    description: dictionary containing the state
+    isRequired: true
+    types:
+    - <xref:dict>
+- uid: cntk.io.UserMinibatchSource.stream_info
+  name: stream_info
+  summary: 'Gets the description of the stream with given name.
+
+    Throws an exception if there are none or multiple streams with this
+
+    same name.'
+  signature: stream_info(name)
+  parameters:
+  - name: name
+    isRequired: true
+- uid: cntk.io.UserMinibatchSource.stream_infos
+  name: stream_infos
+  summary: Function to be implemented by the user.
+  signature: stream_infos()
+  return:
+    description: list of <xref:cntk.io.StreamInformation> instances

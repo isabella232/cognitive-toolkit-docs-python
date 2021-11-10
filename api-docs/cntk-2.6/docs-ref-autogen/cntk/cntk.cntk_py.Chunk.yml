@@ -1,0 +1,24 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.Chunk
+name: Chunk
+fullName: cntk.cntk_py.Chunk
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: Chunk(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.Chunk.get_sequence
+  name: get_sequence
+  signature: get_sequence(sequenceIndex, result)
+  parameters:
+  - name: sequenceIndex
+    isRequired: true
+  - name: result
+    isRequired: true
+- uid: cntk.cntk_py.Chunk.sequence_infos
+  name: sequence_infos
+  signature: sequence_infos(arg2)
+  parameters:
+  - name: arg2
+    isRequired: true

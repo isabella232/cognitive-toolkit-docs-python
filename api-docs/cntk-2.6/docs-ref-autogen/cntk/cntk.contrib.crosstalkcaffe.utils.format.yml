@@ -1,0 +1,32 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.crosstalkcaffe.utils.format
+name: format
+fullName: cntk.contrib.crosstalkcaffe.utils.format
+summary: The script contains some basic format ops
+functions:
+- uid: cntk.contrib.crosstalkcaffe.utils.format.camel_to_snake
+  name: camel_to_snake
+  summary: Convert a string from camel style to snake style
+  signature: camel_to_snake(camel_string)
+  parameters:
+  - name: camel_string
+    description: the camel style string
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: the snake style string
+    types:
+    - (<xref:str>)
+- uid: cntk.contrib.crosstalkcaffe.utils.format.json_parser
+  name: json_parser
+  summary: Parse a json file into dict
+  signature: json_parser(path)
+  parameters:
+  - name: path
+    description: the path to json file
+    isRequired: true
+  return:
+    description: the parsed dict
+    types:
+    - (<xref:dict>)

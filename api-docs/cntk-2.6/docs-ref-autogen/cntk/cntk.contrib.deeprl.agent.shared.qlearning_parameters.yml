@@ -1,0 +1,7 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.agent.shared.qlearning_parameters
+name: qlearning_parameters
+fullName: cntk.contrib.deeprl.agent.shared.qlearning_parameters
+summary: Q learning parameters.
+classes:
+- cntk.contrib.deeprl.agent.shared.qlearning_parameters.QLearningParameters

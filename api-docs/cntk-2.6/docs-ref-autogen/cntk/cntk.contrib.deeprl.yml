@@ -1,0 +1,7 @@
+### YamlMime:PythonPackage
+uid: cntk.contrib.deeprl
+name: deeprl
+fullName: cntk.contrib.deeprl
+type: import
+packages:
+- cntk.contrib.deeprl.agent

@@ -1,0 +1,11 @@
+### YamlMime:PythonPackage
+uid: cntk.contrib
+name: contrib
+fullName: cntk.contrib
+summary: Extra utilities for CNTK, e.g. utilities that bridge to other deep learning
+  toolkits.
+type: import
+packages:
+- cntk.contrib.crosstalk
+- cntk.contrib.crosstalkcaffe
+- cntk.contrib.deeprl

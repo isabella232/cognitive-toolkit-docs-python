@@ -1,0 +1,82 @@
+### YamlMime:PythonClass
+uid: cntk.train.training_session.CrossValidationConfig
+name: CrossValidationConfig
+fullName: cntk.train.training_session.CrossValidationConfig
+module: cntk.train.training_session
+inheritances:
+- cntk.cntk_py.CrossValidationConfig
+summary: A cross validation configuration for the training session.
+constructor:
+  syntax: CrossValidationConfig(minibatch_source=None, frequency=None, minibatch_size=32,
+    callback=None, max_samples=None, model_inputs_to_streams=None, criterion=None,
+    source=None, mb_size=None)
+  parameters:
+  - name: minibatch_source
+    description: minibatch source used for cross validation
+    isRequired: true
+    types:
+    - <xref:cntk.io.MinibatchSource>
+  - name: frequency
+    description: 'frequency in samples for cross validation
+
+      If None or `sys.maxsize`, a single cross validation is performed at the end
+      of training.
+
+      If a tuple of (*frequency*, <xref:cntk.train.training_session.DataUnit>), the
+      *frequency* is in terms of either *DataUnit.sample*, *DataUnit.minibatch* or
+      *DataUnit.sweep*.
+
+      See <xref:cntk.train.training_session.DataUnit> for more information on frequency
+      data unit.'
+    isRequired: true
+    types:
+    - <xref:int>, <xref:tuple>
+  - name: minibatch_size
+    description: minibatch schedule for cross validation
+    isRequired: true
+    types:
+    - <xref:int>
+    - <xref:cntk.cntk_py.minibatch_size_schedule>, <xref:defaults to 32>
+  - name: callback
+    description: 'Callback that will
+
+      be called with frequency which can implement custom cross validation logic,
+
+      returns False if training should be stopped.'
+    isRequired: true
+    types:
+    - <xref:func >(<xref:index>, <xref:average_error>, <xref:cv_num_samples>, <xref:cv_num_minibatches>)
+  - name: max_samples
+    description: 'number of samples to perform
+
+      cross-validation on. If None, all samples are taken.'
+    isRequired: true
+    types:
+    - <xref:int>, <xref:default None>
+  - name: model_inputs_to_streams
+    description: 'mapping between input variables and input streams
+
+      If None, the mapping provided to the training session constructor is used.
+
+      Don''t specify this if *minibatch_source* is a tuple of numpy/scipy arrays.'
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: criterion
+    description: 'criterion function.
+
+      Must be specified if *minibatch_source* is a tuple of numpy/scipy arrays.'
+    isRequired: true
+    types:
+    - <xref:cntk.ops.functions.Function>
+  - name: source
+    description: DEPRECATED, use minibatch_source instead
+    isRequired: true
+    types:
+    - <xref:cntk.io.MinibatchSource>
+  - name: mb_size
+    description: DEPRECATED, use minibatch_size instead
+    isRequired: true
+    types:
+    - <xref:int>
+    - <xref:cntk.cntk_py.minibatch_size_schedule>, <xref:defaults to 32>

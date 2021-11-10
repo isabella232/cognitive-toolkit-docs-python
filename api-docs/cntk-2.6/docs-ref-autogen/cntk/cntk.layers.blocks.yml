@@ -1,0 +1,396 @@
+### YamlMime:PythonModule
+uid: cntk.layers.blocks
+name: blocks
+fullName: cntk.layers.blocks
+summary: 'Basic building blocks that are semantically not layers (not used in a layered
+  fashion),
+
+  e.g. the LSTM block.'
+functions:
+- uid: cntk.layers.blocks.ForwardDeclaration
+  name: ForwardDeclaration
+  summary: 'Helper for recurrent network declarations.
+
+    Returns a placeholder variable with an added method `resolve_to()` to be called
+
+    at the end to close the loop.
+
+    This is used for explicit graph building with recurrent connections.'
+  signature: ForwardDeclaration(name='forward_declaration')
+  parameters:
+  - name: name
+    defaultValue: forward_declaration
+  return:
+    description: a placeholder variable with a method `resolve_to()` that resolves
+      it to another variable
+    types:
+    - <xref:cntk.variables.Variable>
+  examples:
+  - "\n```\n\n>>> # create a graph with a recurrent loop to compute the length of\
+    \ an input sequence\n>>> from cntk.layers.typing import *\n>>> x = C.input_variable(**Sequence[Tensor[2]])\n\
+    >>> ones_like_input = C.sequence.broadcast_as(1, x)  # sequence of scalar ones\
+    \ of same length as input\n>>> out_fwd = ForwardDeclaration()  # placeholder for\
+    \ the state variables\n>>> out = C.sequence.past_value(out_fwd, initial_state=0)\
+    \ + ones_like_input\n>>> out_fwd.resolve_to(out)\n>>> length = C.sequence.last(out)\n\
+    >>> x0 = np.reshape(np.arange(6,dtype=np.float32),(1,3,2))\n>>> x0\n    array([[[\
+    \ 0.,  1.],\n            [ 2.,  3.],\n            [ 4.,  5.]]], dtype=float32)\n\
+    >>> length(x0)\n    array([ 3.], dtype=float32)\n```\n"
+- uid: cntk.layers.blocks.GRU
+  name: GRU
+  summary: 'Layer factory function to create a GRU block for use inside a recurrence.
+
+    The GRU block implements one step of the recurrence and is stateless. It accepts
+    the previous state as its first argument,
+
+    and outputs its new state.'
+  signature: GRU(shape, cell_shape=None, activation=tanh, init=glorot_uniform(), init_bias=0,
+    enable_self_stabilization=False, name='')
+  parameters:
+  - name: shape
+    description: vector or tensor dimension of the output of this layer
+    isRequired: true
+    types:
+    - <xref:int>
+    - <xref:<xref:tuple of ints>>
+  - name: cell_shape
+    description: 'if given, then the output state is first computed at *cell_shape*
+
+      and linearly projected to *shape*'
+    defaultValue: None
+    types:
+    - <xref:tuple>, <xref:defaults to None>
+  - name: activation
+    description: function to apply at the end, e.g. *relu*
+    isRequired: true
+    types:
+    - <xref:cntk.ops.functions.Function>, <xref:defaults to cntk.ops.tanh>
+  - name: init
+    description: initial value of weights *W*
+    isRequired: true
+    types:
+    - <xref:scalar>
+    - <xref:<xref:NumPy array>>
+    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to glorot_uniform>>
+  - name: init_bias
+    description: initial value of weights *b*
+    isRequired: true
+    types:
+    - <xref:scalar>
+    - <xref:<xref:NumPy array>>
+    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to 0>>
+  - name: enable_self_stabilization
+    description: 'if *True* then add a <xref:cntk.layers.blocks.Stabilizer>
+
+      to all state-related projections (but not the data input)'
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:defaults to False>
+  - name: name
+    description: the name of the Function instance in the network
+    isRequired: true
+    types:
+    - <xref:str>, <xref:defaults to ''>
+  return:
+    description: A function `(prev_h, input) -> h` that implements one step of a recurrent
+      GRU layer.
+    types:
+    - <xref:cntk.ops.functions.Function>
+  examples:
+  - '
+
+    ```
+
+
+    >>> # a gated recurrent layer
+
+    >>> from cntk.layers import *
+
+    >>> gru_layer = Recurrence(GRU(500))
+
+    ```
+
+    '
+- uid: cntk.layers.blocks.LSTM
+  name: LSTM
+  summary: 'Layer factory function to create an LSTM block for use inside a recurrence.
+
+    The LSTM block implements one step of the recurrence and is stateless. It accepts
+    the previous state as its first two arguments,
+
+    and outputs its new state as a two-valued tuple `(h,c)`.'
+  signature: LSTM(shape, cell_shape=None, activation=tanh, use_peepholes=False, init=glorot_uniform(),
+    init_bias=0, enable_self_stabilization=False, name='')
+  parameters:
+  - name: shape
+    description: vector or tensor dimension of the output of this layer
+    isRequired: true
+    types:
+    - <xref:int>
+    - <xref:<xref:tuple of ints>>
+  - name: cell_shape
+    description: 'if given, then the output state is first computed at *cell_shape*
+
+      and linearly projected to *shape*'
+    defaultValue: None
+    types:
+    - <xref:tuple>, <xref:defaults to None>
+  - name: activation
+    description: function to apply at the end, e.g. *relu*
+    isRequired: true
+    types:
+    - <xref:cntk.ops.functions.Function>, <xref:defaults to cntk.ops.tanh>
+  - name: use_peepholes
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:defaults to False>
+  - name: init
+    description: initial value of weights *W*
+    isRequired: true
+    types:
+    - <xref:scalar>
+    - <xref:<xref:NumPy array>>
+    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to glorot_uniform>>
+  - name: init_bias
+    description: initial value of weights *b*
+    isRequired: true
+    types:
+    - <xref:scalar>
+    - <xref:<xref:NumPy array>>
+    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to 0>>
+  - name: enable_self_stabilization
+    description: 'if *True* then add a <xref:cntk.layers.blocks.Stabilizer>
+
+      to all state-related projections (but not the data input)'
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:defaults to False>
+  - name: name
+    description: the name of the Function instance in the network
+    isRequired: true
+    types:
+    - <xref:str>, <xref:defaults to ''>
+  return:
+    description: A function `(prev_h, prev_c, input) -> (h, c)` that implements one
+      step of a recurrent LSTM layer.
+    types:
+    - <xref:cntk.ops.functions.Function>
+  examples:
+  - '
+
+    ```
+
+
+    >>> # a typical recurrent LSTM layer
+
+    >>> from cntk.layers import *
+
+    >>> lstm_layer = Recurrence(LSTM(500))
+
+    ```
+
+    '
+- uid: cntk.layers.blocks.RNNStep
+  name: RNNStep
+  summary: 'Layer factory function to create a plain RNN block for use inside a recurrence.
+
+    The RNN block implements one step of the recurrence and is stateless. It accepts
+    the previous state as its first argument,
+
+    and outputs its new state.'
+  signature: RNNStep(shape, cell_shape=None, activation=sigmoid, init=glorot_uniform(),
+    init_bias=0, enable_self_stabilization=False, name='')
+  parameters:
+  - name: shape
+    description: vector or tensor dimension of the output of this layer
+    isRequired: true
+    types:
+    - <xref:int>
+    - <xref:<xref:tuple of ints>>
+  - name: cell_shape
+    description: 'if given, then the output state is first computed at *cell_shape*
+
+      and linearly projected to *shape*'
+    defaultValue: None
+    types:
+    - <xref:tuple>, <xref:defaults to None>
+  - name: activation
+    description: function to apply at the end, e.g. *relu*
+    isRequired: true
+    types:
+    - <xref:cntk.ops.functions.Function>, <xref:defaults to signmoid>
+  - name: init
+    description: initial value of weights *W*
+    isRequired: true
+    types:
+    - <xref:scalar>
+    - <xref:<xref:NumPy array>>
+    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to glorot_uniform>>
+  - name: init_bias
+    description: initial value of weights *b*
+    isRequired: true
+    types:
+    - <xref:scalar>
+    - <xref:<xref:NumPy array>>
+    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to 0>>
+  - name: enable_self_stabilization
+    description: 'if *True* then add a <xref:cntk.layers.blocks.Stabilizer>
+
+      to all state-related projections (but not the data input)'
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:defaults to False>
+  - name: name
+    description: the name of the Function instance in the network
+    isRequired: true
+    types:
+    - <xref:str>, <xref:defaults to ''>
+  return:
+    description: A function `(prev_h, input) -> h` where `h = activation(input @ W
+      + prev_h @ R + b)`
+    types:
+    - <xref:cntk.ops.functions.Function>
+  examples:
+  - '
+
+    ```
+
+
+    >>> # a plain relu RNN layer
+
+    >>> from cntk.layers import *
+
+    >>> relu_rnn_layer = Recurrence(RNNStep(500, activation=C.relu))
+
+    ```
+
+    '
+- uid: cntk.layers.blocks.RNNUnit
+  name: RNNUnit
+  summary: This is a deprecated name for <xref:cntk.layers.blocks.RNNStep>. Use that
+    name instead.
+  signature: RNNUnit(shape, cell_shape=None, activation=sigmoid, init=glorot_uniform(),
+    init_bias=0, enable_self_stabilization=False, name='')
+  parameters:
+  - name: shape
+  - name: cell_shape
+    defaultValue: None
+  - name: activation
+  - name: init
+  - name: init_bias
+  - name: enable_self_stabilization
+  - name: name
+- uid: cntk.layers.blocks.Stabilizer
+  name: Stabilizer
+  summary: 'Layer factory function to create a [Droppo self-stabilizer](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/SelfLR.pdf).
+
+    It multiplies its input with a scalar that is learned.
+
+
+    This takes *enable_self_stabilization* as a flag that allows to disable itself.
+    Useful if this is a global default.
+
+
+
+    > [!NOTE]
+
+    > Some other layers (specifically, recurrent units like <xref:cntk.layers.blocks.LSTM>)
+    also have the option to
+
+    >
+
+    > use the Stabilizer() layer internally. That is enabled by passing enable_self_stabilization=True
+
+    >
+
+    > to those layers. In conjunction with those, the rule is that an explicit Stabilizer()
+    must be
+
+    >
+
+    > inserted by the user for the main data input, whereas the recurrent layer will
+    own the stabilizer(s)
+
+    >
+
+    > for the internal recurrent connection(s).
+
+    >
+
+
+
+    > [!NOTE]
+
+    > Unlike the original paper, which proposed a linear or exponential scalar,
+
+    >
+
+    > CNTK uses a sharpened Softplus: 1/steepness ln(1+e^{steepness*beta}).
+
+    >
+
+    > The softplus behaves linear for weights around and above 1 (like the linear
+    scalar) while guaranteeing
+
+    >
+
+    > positiveness (like the exponentional variant) but is also more robust by avoiding
+    exploding gradients.
+
+    >'
+  signature: Stabilizer(steepness=4, enable_self_stabilization=True, name='')
+  parameters:
+  - name: steepness
+    defaultValue: '4'
+    types:
+    - <xref:int>, <xref:defaults to 4>
+  - name: enable_self_stabilization
+    description: a flag that allows to disable itself. Useful if this is a global
+      default
+    isRequired: true
+    types:
+    - <xref:bool>, <xref:defaults to False>
+  - name: name
+    description: the name of the Function instance in the network
+    isRequired: true
+    types:
+    - <xref:str>, <xref:defaults to ''>
+  return:
+    description: A function
+    types:
+    - <xref:cntk.ops.functions.Function>
+  examples:
+  - '
+
+    ```
+
+
+    >>> # recurrent model with self-stabilization
+
+    >>> from cntk.layers import *
+
+    >>> with default_options(enable_self_stabilization=True): # enable stabilizers
+    by default for LSTM()
+
+    ...     model = Sequential([
+
+    ...         Embedding(300),
+
+    ...         Stabilizer(),           # stabilizer for main data input of recurrence
+
+    ...         Recurrence(LSTM(512)),  # LSTM owns its own stabilizers for the recurrent
+    connections
+
+    ...         Stabilizer(),
+
+    ...         Dense(10)
+
+    ...     ])
+
+    ```
+
+    '
+- uid: cntk.layers.blocks.UntestedBranchError
+  name: UntestedBranchError
+  signature: UntestedBranchError(name)
+  parameters:
+  - name: name

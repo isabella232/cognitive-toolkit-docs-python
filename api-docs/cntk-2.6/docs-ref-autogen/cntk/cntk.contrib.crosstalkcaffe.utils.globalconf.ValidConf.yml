@@ -1,0 +1,10 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.utils.globalconf.ValidConf
+name: ValidConf
+fullName: cntk.contrib.crosstalkcaffe.utils.globalconf.ValidConf
+module: cntk.contrib.crosstalkcaffe.utils.globalconf
+inheritances:
+- builtins.object
+summary: The validation solver
+constructor:
+  syntax: ValidConf()

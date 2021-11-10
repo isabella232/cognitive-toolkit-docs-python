@@ -1,0 +1,8 @@
+### YamlMime:PythonPackage
+uid: cntk.eval
+name: eval
+fullName: cntk.eval
+summary: Utilities for model evaluation.
+type: import
+modules:
+- cntk.eval.evaluator

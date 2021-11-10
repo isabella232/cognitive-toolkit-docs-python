@@ -1,0 +1,52 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.SwigPyIterator
+name: SwigPyIterator
+fullName: cntk.cntk_py.SwigPyIterator
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: SwigPyIterator(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.SwigPyIterator.advance
+  name: advance
+  signature: advance(n)
+  parameters:
+  - name: n
+    isRequired: true
+- uid: cntk.cntk_py.SwigPyIterator.copy
+  name: copy
+  signature: copy()
+- uid: cntk.cntk_py.SwigPyIterator.decr
+  name: decr
+  signature: decr(n=1)
+  parameters:
+  - name: n
+    defaultValue: '1'
+- uid: cntk.cntk_py.SwigPyIterator.distance
+  name: distance
+  signature: distance(x)
+  parameters:
+  - name: x
+    isRequired: true
+- uid: cntk.cntk_py.SwigPyIterator.equal
+  name: equal
+  signature: equal(x)
+  parameters:
+  - name: x
+    isRequired: true
+- uid: cntk.cntk_py.SwigPyIterator.incr
+  name: incr
+  signature: incr(n=1)
+  parameters:
+  - name: n
+    defaultValue: '1'
+- uid: cntk.cntk_py.SwigPyIterator.next
+  name: next
+  signature: next()
+- uid: cntk.cntk_py.SwigPyIterator.previous
+  name: previous
+  signature: previous()
+- uid: cntk.cntk_py.SwigPyIterator.value
+  name: value
+  signature: value()

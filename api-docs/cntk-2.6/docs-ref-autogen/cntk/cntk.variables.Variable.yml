@@ -1,0 +1,61 @@
+### YamlMime:PythonClass
+uid: cntk.variables.Variable
+name: Variable
+fullName: cntk.variables.Variable
+module: cntk.variables
+inheritances:
+- cntk.variables.VariableMixin
+- cntk.tensor.TensorOpsMixin
+- cntk.cntk_py.Variable
+summary: Denotes a symbolic entity corresponding to the inputs and outputs of a Function.
+constructor:
+  syntax: Variable(shape=None, dtype=None, needs_gradient=False, is_sparse=False,
+    dynamic_axes=[Axis.default_batch_axis(), Axis.default_dynamic_axis()], name='')
+  parameters:
+  - name: shape
+    description: the shape of this variable.
+    isRequired: true
+    types:
+    - <xref:tuple>
+  - name: dtype
+    description: 'data type of the values that will be bound to this variable.
+
+      Default is np.float32'
+    isRequired: true
+    types:
+    - <xref:np.float32>
+    - <xref:np.float64>
+    - <xref:np.float16>
+  - name: needs_gradient
+    description: 'if set to True any expression that contains this variable
+
+      will also be differentiated with respect to this variable.'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: is_sparse
+    description: whether this is a sparse or dense input (or output)
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: dynamic_axes
+    description: 'the dynamic axes of this variable. These
+
+      express dimensions that can vary across examples or minibatches.'
+    isRequired: true
+    types:
+    - list of <xref:cntk.axis.Axis>
+  - name: name
+    description: an optional name for this parameter.
+    isRequired: true
+    types:
+    - <xref:str>
+methods:
+- uid: cntk.variables.Variable.as_constant
+  name: as_constant
+  summary: Converts this instance into a <xref:cntk.variables.Constant>
+  signature: as_constant()
+- uid: cntk.variables.Variable.as_parameter
+  name: as_parameter
+  summary: Converts this instance into a <xref:cntk.variables.Parameter>
+  signature: as_parameter()

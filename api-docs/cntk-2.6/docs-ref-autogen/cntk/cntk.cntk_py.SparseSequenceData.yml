@@ -1,0 +1,16 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.SparseSequenceData
+name: SparseSequenceData
+fullName: cntk.cntk_py.SparseSequenceData
+module: cntk.cntk_py
+inheritances:
+- cntk.cntk_py.SequenceDataBase
+constructor:
+  syntax: SparseSequenceData(*args, **kwargs)
+attributes:
+- uid: cntk.cntk_py.SparseSequenceData.m_indices
+  name: m_indices
+- uid: cntk.cntk_py.SparseSequenceData.m_nnz_counts
+  name: m_nnz_counts
+- uid: cntk.cntk_py.SparseSequenceData.m_total_nnz_count
+  name: m_total_nnz_count

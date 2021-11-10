@@ -1,0 +1,11 @@
+### YamlMime:PythonClass
+uid: cntk.layers.typing.SequenceOver
+name: SequenceOver
+fullName: cntk.layers.typing.SequenceOver
+module: cntk.layers.typing
+inheritances:
+- builtins.object
+summary: 'Meta-meta-meta class to denote a sequence of data tensors over a custom
+  axis. Example: `userAxis = Axis(); SequenceOver[userAxis][Tensor[13,42]]`'
+constructor:
+  syntax: SequenceOver()

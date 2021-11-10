@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.Parameter
+name: Parameter
+fullName: cntk.cntk_py.Parameter
+module: cntk.cntk_py
+inheritances:
+- cntk.cntk_py.Variable
+constructor:
+  syntax: Parameter(*args)
+methods:
+- uid: cntk.cntk_py.Parameter.asarray
+  name: asarray
+  summary: Converts the instance's data to a NumPy array.
+  signature: asarray()
+- uid: cntk.cntk_py.Parameter.record_value_update
+  name: record_value_update
+  signature: record_value_update()
+- uid: cntk.cntk_py.Parameter.set_value
+  name: set_value
+  signature: set_value(value)
+  parameters:
+  - name: value
+    isRequired: true
+- uid: cntk.cntk_py.Parameter.value
+  name: value
+  signature: value()

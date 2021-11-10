@@ -1,0 +1,10 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkPoolingParameters
+name: CntkPoolingParameters
+fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkPoolingParameters
+module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+inheritances:
+- cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
+summary: The parameter definition of pooling op
+constructor:
+  syntax: CntkPoolingParameters()

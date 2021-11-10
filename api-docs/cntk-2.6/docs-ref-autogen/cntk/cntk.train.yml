@@ -1,0 +1,10 @@
+### YamlMime:PythonPackage
+uid: cntk.train
+name: train
+fullName: cntk.train
+summary: Utilities for training.
+type: import
+modules:
+- cntk.train.distributed
+- cntk.train.trainer
+- cntk.train.training_session

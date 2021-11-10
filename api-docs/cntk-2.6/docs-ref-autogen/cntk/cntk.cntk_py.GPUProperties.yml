@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.GPUProperties
+name: GPUProperties
+fullName: cntk.cntk_py.GPUProperties
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: GPUProperties()
+attributes:
+- uid: cntk.cntk_py.GPUProperties.cuda_cores
+  name: cuda_cores
+- uid: cntk.cntk_py.GPUProperties.device_id
+  name: device_id
+- uid: cntk.cntk_py.GPUProperties.name
+  name: name
+- uid: cntk.cntk_py.GPUProperties.total_memory
+  name: total_memory
+- uid: cntk.cntk_py.GPUProperties.version_major
+  name: version_major
+- uid: cntk.cntk_py.GPUProperties.version_minor
+  name: version_minor
