@@ -1,0 +1,40 @@
+### YamlMime:PythonModule
+uid: cntk.internal.tests.types_test
+name: types_test
+fullName: cntk.internal.tests.types_test
+functions:
+- uid: cntk.internal.tests.types_test.delete_if_file_exists
+  name: delete_if_file_exists
+  signature: delete_if_file_exists(file)
+  parameters:
+  - name: file
+- uid: cntk.internal.tests.types_test.test_custom_op_with_int16_params
+  name: test_custom_op_with_int16_params
+  signature: test_custom_op_with_int16_params(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.internal.tests.types_test.test_custom_op_with_int8_params
+  name: test_custom_op_with_int8_params
+  signature: test_custom_op_with_int8_params(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.internal.tests.types_test.test_saving_and_loading_int16_ndarray_as_attribute
+  name: test_saving_and_loading_int16_ndarray_as_attribute
+  signature: test_saving_and_loading_int16_ndarray_as_attribute(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.internal.tests.types_test.test_saving_and_loading_int8_ndarray_as_attribute
+  name: test_saving_and_loading_int8_ndarray_as_attribute
+  signature: test_saving_and_loading_int8_ndarray_as_attribute(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.internal.tests.types_test.test_saving_int16_ndarray
+  name: test_saving_int16_ndarray
+  signature: test_saving_int16_ndarray(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.internal.tests.types_test.test_saving_int8_ndarray
+  name: test_saving_int8_ndarray
+  signature: test_saving_int8_ndarray(tmpdir)
+  parameters:
+  - name: tmpdir

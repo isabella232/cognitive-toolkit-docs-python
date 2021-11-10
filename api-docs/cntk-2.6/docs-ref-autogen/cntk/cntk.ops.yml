@@ -4917,5 +4917,6 @@ functions:
     ```\n"
 packages:
 - cntk.ops.sequence
+- cntk.ops.tests
 modules:
 - cntk.ops.functions

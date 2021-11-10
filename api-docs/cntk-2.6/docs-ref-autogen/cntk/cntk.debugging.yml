@@ -29,6 +29,8 @@ functions:
     isRequired: true
     types:
     - <xref:int>
+packages:
+- cntk.debugging.tests
 modules:
 - cntk.debugging.debug
 - cntk.debugging.profiler

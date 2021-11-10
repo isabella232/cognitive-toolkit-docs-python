@@ -265,5 +265,7 @@ classes:
 - cntk.io.StreamInformation
 - cntk.io.UserDeserializer
 - cntk.io.UserMinibatchSource
+packages:
+- cntk.io.tests
 modules:
 - cntk.io.transforms

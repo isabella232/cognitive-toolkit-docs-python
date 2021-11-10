@@ -1,0 +1,7 @@
+### YamlMime:PythonPackage
+uid: cntk.random.tests
+name: tests
+fullName: cntk.random.tests
+type: import
+modules:
+- cntk.random.tests.random_ops_tests

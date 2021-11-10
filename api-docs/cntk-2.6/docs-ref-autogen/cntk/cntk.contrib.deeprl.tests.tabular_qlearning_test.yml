@@ -1,0 +1,7 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.tabular_qlearning_test
+name: tabular_qlearning_test
+fullName: cntk.contrib.deeprl.tests.tabular_qlearning_test
+classes:
+- cntk.contrib.deeprl.tests.tabular_qlearning_test.FakeTabularQLearning
+- cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest

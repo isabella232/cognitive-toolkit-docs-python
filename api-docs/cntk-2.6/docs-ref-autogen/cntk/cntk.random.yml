@@ -351,3 +351,5 @@ functions:
     \ it unspecified in your code\narray([[ 0.931785,  0.814722,  0.479606,  0.937468],\n\
     \       [ 0.004351,  0.185131,  0.00632 ,  0.118901],\n       [ 0.710054,  0.304273,\
     \  0.043126,  0.987818]], dtype=float32)\n```\n"
+packages:
+- cntk.random.tests

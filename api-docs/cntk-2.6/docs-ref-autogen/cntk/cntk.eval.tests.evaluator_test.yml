@@ -1,0 +1,8 @@
+### YamlMime:PythonModule
+uid: cntk.eval.tests.evaluator_test
+name: evaluator_test
+fullName: cntk.eval.tests.evaluator_test
+functions:
+- uid: cntk.eval.tests.evaluator_test.test_eval
+  name: test_eval
+  signature: test_eval()

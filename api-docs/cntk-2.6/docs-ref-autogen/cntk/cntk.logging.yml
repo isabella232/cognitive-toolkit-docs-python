@@ -23,6 +23,8 @@ functions:
     isRequired: true
     types:
     - <xref:cntk.logging.TraceLevel>
+packages:
+- cntk.logging.tests
 modules:
 - cntk.logging.graph
 - cntk.logging.progress_print

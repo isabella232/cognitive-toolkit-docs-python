@@ -1403,5 +1403,7 @@ functions:
 classes:
 - cntk.learners.Learner
 - cntk.learners.UserLearner
+packages:
+- cntk.learners.tests
 enums:
 - cntk.learners.UnitType

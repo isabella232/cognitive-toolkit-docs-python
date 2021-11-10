@@ -204,6 +204,12 @@
           name: cntk.contrib.crosstalkcaffe.convert
         - items:
           - name: Overview
+            uid: cntk.contrib.crosstalkcaffe.tests
+          - name: cntk.contrib.crosstalkcaffe.tests.op2cntk_test
+            uid: cntk.contrib.crosstalkcaffe.tests.op2cntk_test
+          name: cntk.contrib.crosstalkcaffe.tests
+        - items:
+          - name: Overview
             uid: cntk.contrib.crosstalkcaffe.unimodel
           - items:
             - name: Overview
@@ -372,6 +378,80 @@
               uid: cntk.contrib.deeprl.agent.tabular_qlearning.TabularQLearning
             name: cntk.contrib.deeprl.agent.tabular_qlearning
           name: cntk.contrib.deeprl.agent
+        - items:
+          - name: Overview
+            uid: cntk.contrib.deeprl.tests
+          - items:
+            - name: Overview
+              uid: cntk.contrib.deeprl.tests.agent_test
+            - name: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
+              uid: cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
+            - name: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
+              uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
+            name: cntk.contrib.deeprl.tests.agent_test
+          - items:
+            - name: Overview
+              uid: cntk.contrib.deeprl.tests.cntk_utils_test
+            - name: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
+              uid: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
+            name: cntk.contrib.deeprl.tests.cntk_utils_test
+          - items:
+            - name: Overview
+              uid: cntk.contrib.deeprl.tests.discretize_test
+            - name: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
+              uid: cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest
+            name: cntk.contrib.deeprl.tests.discretize_test
+          - items:
+            - name: Overview
+              uid: cntk.contrib.deeprl.tests.models_test
+            - name: cntk.contrib.deeprl.tests.models_test.ModelsTest
+              uid: cntk.contrib.deeprl.tests.models_test.ModelsTest
+            name: cntk.contrib.deeprl.tests.models_test
+          - items:
+            - name: Overview
+              uid: cntk.contrib.deeprl.tests.policy_gradient_test
+            - name: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
+              uid: cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest
+            name: cntk.contrib.deeprl.tests.policy_gradient_test
+          - items:
+            - name: Overview
+              uid: cntk.contrib.deeprl.tests.preprocessing_test
+            - name: cntk.contrib.deeprl.tests.preprocessing_test.AtariPreprocessingTest
+              uid: cntk.contrib.deeprl.tests.preprocessing_test.AtariPreprocessingTest
+            name: cntk.contrib.deeprl.tests.preprocessing_test
+          - items:
+            - name: Overview
+              uid: cntk.contrib.deeprl.tests.qlearning_test
+            - name: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest
+              uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest
+            name: cntk.contrib.deeprl.tests.qlearning_test
+          - items:
+            - name: Overview
+              uid: cntk.contrib.deeprl.tests.replay_memory_test
+            - name: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
+              uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
+            name: cntk.contrib.deeprl.tests.replay_memory_test
+          - items:
+            - name: Overview
+              uid: cntk.contrib.deeprl.tests.spaces
+            - name: cntk.contrib.deeprl.tests.spaces.Box
+              uid: cntk.contrib.deeprl.tests.spaces.Box
+            - name: cntk.contrib.deeprl.tests.spaces.Discrete
+              uid: cntk.contrib.deeprl.tests.spaces.Discrete
+            - name: cntk.contrib.deeprl.tests.spaces.MultiBinary
+              uid: cntk.contrib.deeprl.tests.spaces.MultiBinary
+            - name: cntk.contrib.deeprl.tests.spaces.Tuple
+              uid: cntk.contrib.deeprl.tests.spaces.Tuple
+            name: cntk.contrib.deeprl.tests.spaces
+          - items:
+            - name: Overview
+              uid: cntk.contrib.deeprl.tests.tabular_qlearning_test
+            - name: cntk.contrib.deeprl.tests.tabular_qlearning_test.FakeTabularQLearning
+              uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.FakeTabularQLearning
+            - name: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
+              uid: cntk.contrib.deeprl.tests.tabular_qlearning_test.TabularQLearningTest
+            name: cntk.contrib.deeprl.tests.tabular_qlearning_test
+          name: cntk.contrib.deeprl.tests
         name: cntk.contrib.deeprl
       name: cntk.contrib
     - items:
@@ -389,6 +469,26 @@
         uid: cntk.debugging.debug
       - name: cntk.debugging.profiler
         uid: cntk.debugging.profiler
+      - items:
+        - name: Overview
+          uid: cntk.debugging.tests
+        - items:
+          - name: Overview
+            uid: cntk.debugging.tests.debug_test
+          - name: cntk.debugging.tests.debug_test.InStream
+            uid: cntk.debugging.tests.debug_test.InStream
+          - name: cntk.debugging.tests.debug_test.OutStream
+            uid: cntk.debugging.tests.debug_test.OutStream
+          name: cntk.debugging.tests.debug_test
+        - items:
+          - name: Overview
+            uid: cntk.debugging.tests.userlearner_test
+          - name: cntk.debugging.tests.userlearner_test.MySgdFast
+            uid: cntk.debugging.tests.userlearner_test.MySgdFast
+          - name: cntk.debugging.tests.userlearner_test.MySgdNaive
+            uid: cntk.debugging.tests.userlearner_test.MySgdNaive
+          name: cntk.debugging.tests.userlearner_test
+        name: cntk.debugging.tests
       name: cntk.debugging
     - items:
       - name: Overview
@@ -413,6 +513,14 @@
         - name: cntk.eval.evaluator.Evaluator
           uid: cntk.eval.evaluator.Evaluator
         name: cntk.eval.evaluator
+      - items:
+        - name: Overview
+          uid: cntk.eval.tests
+        - name: cntk.eval.tests.evaluator_distributed_test
+          uid: cntk.eval.tests.evaluator_distributed_test
+        - name: cntk.eval.tests.evaluator_test
+          uid: cntk.eval.tests.evaluator_test
+        name: cntk.eval.tests
       name: cntk.eval
     - name: cntk.initializer
       uid: cntk.initializer
@@ -423,12 +531,40 @@
         uid: cntk.internal.sanitize
       - name: cntk.internal.swig_helper
         uid: cntk.internal.swig_helper
+      - items:
+        - name: Overview
+          uid: cntk.internal.tests
+        - name: cntk.internal.tests.sanitize
+          uid: cntk.internal.tests.sanitize
+        - name: cntk.internal.tests.swig_helper_tests
+          uid: cntk.internal.tests.swig_helper_tests
+        - name: cntk.internal.tests.types_test
+          uid: cntk.internal.tests.types_test
+        - name: cntk.internal.tests.utils_test
+          uid: cntk.internal.tests.utils_test
+        name: cntk.internal.tests
       - name: cntk.internal.utils
         uid: cntk.internal.utils
       name: cntk.internal
     - items:
       - name: Overview
         uid: cntk.io
+      - items:
+        - name: Overview
+          uid: cntk.io.tests
+        - items:
+          - name: Overview
+            uid: cntk.io.tests.io_tests
+          - name: cntk.io.tests.io_tests.GenDeserializer
+            uid: cntk.io.tests.io_tests.GenDeserializer
+          - name: cntk.io.tests.io_tests.MyDataSource
+            uid: cntk.io.tests.io_tests.MyDataSource
+          - name: cntk.io.tests.io_tests.MyDataSourceWithCheckpoint
+            uid: cntk.io.tests.io_tests.MyDataSourceWithCheckpoint
+          - name: cntk.io.tests.io_tests.SimpleDeserailizer
+            uid: cntk.io.tests.io_tests.SimpleDeserailizer
+          name: cntk.io.tests.io_tests
+        name: cntk.io.tests
       - name: cntk.io.transforms
         uid: cntk.io.transforms
       - name: cntk.io.MinibatchData
@@ -465,6 +601,16 @@
         uid: cntk.layers.sequence
       - items:
         - name: Overview
+          uid: cntk.layers.tests
+        - name: cntk.layers.tests.higher_order_layers_test
+          uid: cntk.layers.tests.higher_order_layers_test
+        - name: cntk.layers.tests.layers_test
+          uid: cntk.layers.tests.layers_test
+        - name: cntk.layers.tests.models_tests
+          uid: cntk.layers.tests.models_tests
+        name: cntk.layers.tests
+      - items:
+        - name: Overview
           uid: cntk.layers.typing
         - name: cntk.layers.typing.ParameterTensor
           uid: cntk.layers.typing.ParameterTensor
@@ -483,6 +629,42 @@
     - items:
       - name: Overview
         uid: cntk.learners
+      - items:
+        - name: Overview
+          uid: cntk.learners.tests
+        - items:
+          - name: Overview
+            uid: cntk.learners.tests.bmuf_metrics_aggregation_test
+          - name: cntk.learners.tests.bmuf_metrics_aggregation_test.SimpleBMUFTrainer
+            uid: cntk.learners.tests.bmuf_metrics_aggregation_test.SimpleBMUFTrainer
+          name: cntk.learners.tests.bmuf_metrics_aggregation_test
+        - items:
+          - name: Overview
+            uid: cntk.learners.tests.distributed_learner_test
+          - name: cntk.learners.tests.distributed_learner_test.BlockMomentumConfig
+            uid: cntk.learners.tests.distributed_learner_test.BlockMomentumConfig
+          - name: cntk.learners.tests.distributed_learner_test.DataParallelConfig
+            uid: cntk.learners.tests.distributed_learner_test.DataParallelConfig
+          - name: cntk.learners.tests.distributed_learner_test.SimpleTrainer
+            uid: cntk.learners.tests.distributed_learner_test.SimpleTrainer
+          name: cntk.learners.tests.distributed_learner_test
+        - items:
+          - name: Overview
+            uid: cntk.learners.tests.distributed_multi_learner_test
+          - name: cntk.learners.tests.distributed_multi_learner_test.MultiLearnerTrainer
+            uid: cntk.learners.tests.distributed_multi_learner_test.MultiLearnerTrainer
+          - name: cntk.learners.tests.distributed_multi_learner_test.SingleDataParallelTrainer
+            uid: cntk.learners.tests.distributed_multi_learner_test.SingleDataParallelTrainer
+          - name: cntk.learners.tests.distributed_multi_learner_test.TwoDataParallelTrainer
+            uid: cntk.learners.tests.distributed_multi_learner_test.TwoDataParallelTrainer
+          name: cntk.learners.tests.distributed_multi_learner_test
+        - items:
+          - name: Overview
+            uid: cntk.learners.tests.learner_test
+          - name: cntk.learners.tests.learner_test.TestProgressWriter
+            uid: cntk.learners.tests.learner_test.TestProgressWriter
+          name: cntk.learners.tests.learner_test
+        name: cntk.learners.tests
       - name: cntk.learners.Learner
         uid: cntk.learners.Learner
       - name: cntk.learners.UnitType
@@ -505,13 +687,47 @@
         - name: cntk.logging.progress_print.TrainingSummaryProgressCallback
           uid: cntk.logging.progress_print.TrainingSummaryProgressCallback
         name: cntk.logging.progress_print
+      - items:
+        - name: Overview
+          uid: cntk.logging.tests
+        - name: cntk.logging.tests.graph_test
+          uid: cntk.logging.tests.graph_test
+        - name: cntk.logging.tests.progress_print_test
+          uid: cntk.logging.tests.progress_print_test
+        name: cntk.logging.tests
       - name: cntk.logging.TraceLevel
         uid: cntk.logging.TraceLevel
       name: cntk.logging
-    - name: cntk.losses
-      uid: cntk.losses
-    - name: cntk.metrics
-      uid: cntk.metrics
+    - items:
+      - name: Overview
+        uid: cntk.losses
+      - items:
+        - name: Overview
+          uid: cntk.losses.tests
+        - items:
+          - name: Overview
+            uid: cntk.losses.tests.cosine_distance_test
+          - name: cntk.losses.tests.cosine_distance_test.numpy_cos
+            uid: cntk.losses.tests.cosine_distance_test.numpy_cos
+          name: cntk.losses.tests.cosine_distance_test
+        - name: cntk.losses.tests.fmeasure_test
+          uid: cntk.losses.tests.fmeasure_test
+        - name: cntk.losses.tests.h_softmax_test
+          uid: cntk.losses.tests.h_softmax_test
+        - name: cntk.losses.tests.losses_test
+          uid: cntk.losses.tests.losses_test
+        name: cntk.losses.tests
+      name: cntk.losses
+    - items:
+      - name: Overview
+        uid: cntk.metrics
+      - items:
+        - name: Overview
+          uid: cntk.metrics.tests
+        - name: cntk.metrics.tests.metrics_test
+          uid: cntk.metrics.tests.metrics_test
+        name: cntk.metrics.tests
+      name: cntk.metrics
     - items:
       - name: Overview
         uid: cntk.misc
@@ -537,9 +753,105 @@
         name: cntk.ops.functions
       - name: cntk.ops.sequence
         uid: cntk.ops.sequence
+      - items:
+        - name: Overview
+          uid: cntk.ops.tests
+        - name: cntk.ops.tests.assign_test
+          uid: cntk.ops.tests.assign_test
+        - name: cntk.ops.tests.block_test
+          uid: cntk.ops.tests.block_test
+        - name: cntk.ops.tests.combine_test
+          uid: cntk.ops.tests.combine_test
+        - name: cntk.ops.tests.comparison_test
+          uid: cntk.ops.tests.comparison_test
+        - name: cntk.ops.tests.evaluation_test
+          uid: cntk.ops.tests.evaluation_test
+        - name: cntk.ops.tests.fp16_test
+          uid: cntk.ops.tests.fp16_test
+        - items:
+          - name: Overview
+            uid: cntk.ops.tests.free_static_axis_test
+          - name: cntk.ops.tests.free_static_axis_test.MultiFreeDimensionOutputUserFunction
+            uid: cntk.ops.tests.free_static_axis_test.MultiFreeDimensionOutputUserFunction
+          name: cntk.ops.tests.free_static_axis_test
+        - name: cntk.ops.tests.function_tests
+          uid: cntk.ops.tests.function_tests
+        - name: cntk.ops.tests.kernel_test
+          uid: cntk.ops.tests.kernel_test
+        - name: cntk.ops.tests.linear_test
+          uid: cntk.ops.tests.linear_test
+        - name: cntk.ops.tests.non_diff_test
+          uid: cntk.ops.tests.non_diff_test
+        - name: cntk.ops.tests.non_linear_test
+          uid: cntk.ops.tests.non_linear_test
+        - name: cntk.ops.tests.ops_test_utils
+          uid: cntk.ops.tests.ops_test_utils
+        - name: cntk.ops.tests.random_sample_test
+          uid: cntk.ops.tests.random_sample_test
+        - name: cntk.ops.tests.recurrent_test
+          uid: cntk.ops.tests.recurrent_test
+        - name: cntk.ops.tests.reduction_test
+          uid: cntk.ops.tests.reduction_test
+        - name: cntk.ops.tests.reshaping_test
+          uid: cntk.ops.tests.reshaping_test
+        - items:
+          - name: Overview
+            uid: cntk.ops.tests.sequence_test
+          - name: cntk.ops.tests.sequence_test.UtteranceBatchReshape
+            uid: cntk.ops.tests.sequence_test.UtteranceBatchReshape
+          name: cntk.ops.tests.sequence_test
+        - name: cntk.ops.tests.sparse_test
+          uid: cntk.ops.tests.sparse_test
+        - name: cntk.ops.tests.stop_gradient_test
+          uid: cntk.ops.tests.stop_gradient_test
+        - name: cntk.ops.tests.transpose_test
+          uid: cntk.ops.tests.transpose_test
+        - items:
+          - name: Overview
+            uid: cntk.ops.tests.userfunction_complex_test
+          - name: cntk.ops.tests.userfunction_complex_test.MySigmoid
+            uid: cntk.ops.tests.userfunction_complex_test.MySigmoid
+          name: cntk.ops.tests.userfunction_complex_test
+        - items:
+          - name: Overview
+            uid: cntk.ops.tests.userfunction_test
+          - name: cntk.ops.tests.userfunction_test.DummyLayer
+            uid: cntk.ops.tests.userfunction_test.DummyLayer
+          - name: cntk.ops.tests.userfunction_test.FaultyUserFunc
+            uid: cntk.ops.tests.userfunction_test.FaultyUserFunc
+          - name: cntk.ops.tests.userfunction_test.LambdaFunc
+            uid: cntk.ops.tests.userfunction_test.LambdaFunc
+          - name: cntk.ops.tests.userfunction_test.MultiOutputUserFunction
+            uid: cntk.ops.tests.userfunction_test.MultiOutputUserFunction
+          - name: cntk.ops.tests.userfunction_test.MyArgumentPreservingPlus
+            uid: cntk.ops.tests.userfunction_test.MyArgumentPreservingPlus
+          - name: cntk.ops.tests.userfunction_test.MyPlus
+            uid: cntk.ops.tests.userfunction_test.MyPlus
+          - name: cntk.ops.tests.userfunction_test.MyPlusPlus
+            uid: cntk.ops.tests.userfunction_test.MyPlusPlus
+          - name: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientNeededForOutput
+            uid: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientNeededForOutput
+          - name: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientToRightOperand
+            uid: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientToRightOperand
+          - name: cntk.ops.tests.userfunction_test.PlusAndLast
+            uid: cntk.ops.tests.userfunction_test.PlusAndLast
+          - name: cntk.ops.tests.userfunction_test.SimpleRecurrentNode
+            uid: cntk.ops.tests.userfunction_test.SimpleRecurrentNode
+          - name: cntk.ops.tests.userfunction_test.SimpleUdf
+            uid: cntk.ops.tests.userfunction_test.SimpleUdf
+          name: cntk.ops.tests.userfunction_test
+        name: cntk.ops.tests
       name: cntk.ops
-    - name: cntk.random
-      uid: cntk.random
+    - items:
+      - name: Overview
+        uid: cntk.random
+      - items:
+        - name: Overview
+          uid: cntk.random.tests
+        - name: cntk.random.tests.random_ops_tests
+          uid: cntk.random.tests.random_ops_tests
+        name: cntk.random.tests
+      name: cntk.random
     - name: cntk.sample_installer
       uid: cntk.sample_installer
     - items:
@@ -550,6 +862,34 @@
       - name: cntk.tensor.TensorOpsMixin
         uid: cntk.tensor.TensorOpsMixin
       name: cntk.tensor
+    - items:
+      - name: Overview
+        uid: cntk.tests
+      - name: cntk.tests.attributes_test
+        uid: cntk.tests.attributes_test
+      - name: cntk.tests.axis_test
+        uid: cntk.tests.axis_test
+      - name: cntk.tests.device_test
+        uid: cntk.tests.device_test
+      - name: cntk.tests.function_test
+        uid: cntk.tests.function_test
+      - name: cntk.tests.initializer_test
+        uid: cntk.tests.initializer_test
+      - name: cntk.tests.misc_test
+        uid: cntk.tests.misc_test
+      - name: cntk.tests.onnx_format_test
+        uid: cntk.tests.onnx_format_test
+      - name: cntk.tests.persist_test
+        uid: cntk.tests.persist_test
+      - name: cntk.tests.tensor_test
+        uid: cntk.tests.tensor_test
+      - name: cntk.tests.test_utils
+        uid: cntk.tests.test_utils
+      - name: cntk.tests.value_test
+        uid: cntk.tests.value_test
+      - name: cntk.tests.variables_test
+        uid: cntk.tests.variables_test
+      name: cntk.tests
     - items:
       - name: Overview
         uid: cntk.train
@@ -563,6 +903,20 @@
         - name: cntk.train.distributed.WorkerDescriptor
           uid: cntk.train.distributed.WorkerDescriptor
         name: cntk.train.distributed
+      - items:
+        - name: Overview
+          uid: cntk.train.tests
+        - name: cntk.train.tests.distributed_test
+          uid: cntk.train.tests.distributed_test
+        - name: cntk.train.tests.trainer_test
+          uid: cntk.train.tests.trainer_test
+        - items:
+          - name: Overview
+            uid: cntk.train.tests.training_session_test
+          - name: cntk.train.tests.training_session_test.MockProgressWriter
+            uid: cntk.train.tests.training_session_test.MockProgressWriter
+          name: cntk.train.tests.training_session_test
+        name: cntk.train.tests
       - items:
         - name: Overview
           uid: cntk.train.trainer

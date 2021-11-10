@@ -1,0 +1,39 @@
+### YamlMime:PythonClass
+uid: cntk.io.tests.io_tests.SimpleDeserailizer
+name: SimpleDeserailizer
+fullName: cntk.io.tests.io_tests.SimpleDeserailizer
+module: cntk.io.tests.io_tests
+inheritances:
+- cntk.io.UserDeserializer
+constructor:
+  syntax: SimpleDeserailizer(stream_infos, chunk_data)
+methods:
+- uid: cntk.io.tests.io_tests.SimpleDeserailizer.get_chunk
+  name: get_chunk
+  summary: 'Should return a dictionary of stream name -> data of the chunk, where
+    data is csr_matrix/numpy array in sample mode,
+
+    or a list of csr_matrix/numpy array in sequence mode.'
+  signature: get_chunk(chunk_id)
+  parameters:
+  - name: chunk_id
+    description: id of the chunk to be read, 0 <= chunk_id < num_chunks
+    isRequired: true
+    types:
+    - <xref:int>
+  return:
+    description: dict containing the data
+- uid: cntk.io.tests.io_tests.SimpleDeserailizer.num_chunks
+  name: num_chunks
+  summary: Should return the total number of chunks.
+  signature: num_chunks()
+- uid: cntk.io.tests.io_tests.SimpleDeserailizer.stream_infos
+  name: stream_infos
+  summary: 'Should return a list of meta information <xref:cntk.io.tests.io_tests.StreamInformation>
+    about all
+
+    streams exposed by the deserializer.'
+  signature: stream_infos()
+  return:
+    description: list of <xref:cntk.io.tests.io_tests.StreamInformation> exposed by
+      the deserializer

@@ -540,3 +540,5 @@ functions:
     - <xref:str>, <xref:optional>
   return:
     description: <xref:cntk.ops.functions.Function>
+packages:
+- cntk.losses.tests

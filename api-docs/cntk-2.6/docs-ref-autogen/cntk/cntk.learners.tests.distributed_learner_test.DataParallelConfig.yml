@@ -1,0 +1,16 @@
+### YamlMime:PythonClass
+uid: cntk.learners.tests.distributed_learner_test.DataParallelConfig
+name: DataParallelConfig
+fullName: cntk.learners.tests.distributed_learner_test.DataParallelConfig
+module: cntk.learners.tests.distributed_learner_test
+inheritances:
+- builtins.tuple
+constructor:
+  syntax: DataParallelConfig(num_quantization_bits, distributed_after)
+attributes:
+- uid: cntk.learners.tests.distributed_learner_test.DataParallelConfig.distributed_after
+  name: distributed_after
+  summary: Alias for field number 1
+- uid: cntk.learners.tests.distributed_learner_test.DataParallelConfig.num_quantization_bits
+  name: num_quantization_bits
+  summary: Alias for field number 0

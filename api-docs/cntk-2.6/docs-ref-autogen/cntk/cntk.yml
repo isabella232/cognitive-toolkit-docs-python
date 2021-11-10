@@ -17,6 +17,7 @@ packages:
 - cntk.misc
 - cntk.ops
 - cntk.random
+- cntk.tests
 - cntk.train
 modules:
 - cntk.axis

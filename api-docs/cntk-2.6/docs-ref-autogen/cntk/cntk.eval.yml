@@ -4,5 +4,7 @@ name: eval
 fullName: cntk.eval
 summary: Utilities for model evaluation.
 type: import
+packages:
+- cntk.eval.tests
 modules:
 - cntk.eval.evaluator

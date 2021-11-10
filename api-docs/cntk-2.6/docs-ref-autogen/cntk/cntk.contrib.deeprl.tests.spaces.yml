@@ -1,0 +1,9 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.spaces
+name: spaces
+fullName: cntk.contrib.deeprl.tests.spaces
+classes:
+- cntk.contrib.deeprl.tests.spaces.Box
+- cntk.contrib.deeprl.tests.spaces.Discrete
+- cntk.contrib.deeprl.tests.spaces.MultiBinary
+- cntk.contrib.deeprl.tests.spaces.Tuple

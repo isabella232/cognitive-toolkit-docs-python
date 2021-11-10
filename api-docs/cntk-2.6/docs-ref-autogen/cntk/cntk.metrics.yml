@@ -226,3 +226,5 @@ functions:
     ```
 
     '
+packages:
+- cntk.metrics.tests

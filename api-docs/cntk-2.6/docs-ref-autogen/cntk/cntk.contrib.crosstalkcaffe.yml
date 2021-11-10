@@ -5,6 +5,7 @@ fullName: cntk.contrib.crosstalkcaffe
 type: import
 packages:
 - cntk.contrib.crosstalkcaffe.adapter
+- cntk.contrib.crosstalkcaffe.tests
 - cntk.contrib.crosstalkcaffe.unimodel
 - cntk.contrib.crosstalkcaffe.utils
 - cntk.contrib.crosstalkcaffe.validation

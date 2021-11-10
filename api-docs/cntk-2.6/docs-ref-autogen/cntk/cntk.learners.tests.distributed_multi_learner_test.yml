@@ -1,0 +1,41 @@
+### YamlMime:PythonModule
+uid: cntk.learners.tests.distributed_multi_learner_test
+name: distributed_multi_learner_test
+fullName: cntk.learners.tests.distributed_multi_learner_test
+summary: This test extends the bmuf_metrics_aggregation_test and tests multiple learners
+  in the distributed training.
+functions:
+- uid: cntk.learners.tests.distributed_multi_learner_test.get_loss_perepoch_perworker
+  name: get_loss_perepoch_perworker
+  signature: get_loss_perepoch_perworker(log_line, num_workers)
+  parameters:
+  - name: log_line
+  - name: num_workers
+- uid: cntk.learners.tests.distributed_multi_learner_test.mpi_worker_multi_learner
+  name: mpi_worker_multi_learner
+  signature: mpi_worker_multi_learner(trainer, working_dir, checkpoint_dir, mb_source)
+  parameters:
+  - name: trainer
+  - name: working_dir
+  - name: checkpoint_dir
+  - name: mb_source
+- uid: cntk.learners.tests.distributed_multi_learner_test.test_multi_learner_bmuf_correct_metrics_averaging
+  name: test_multi_learner_bmuf_correct_metrics_averaging
+  signature: test_multi_learner_bmuf_correct_metrics_averaging(tmpdir, device_id,
+    mb_source)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+  - name: mb_source
+- uid: cntk.learners.tests.distributed_multi_learner_test.test_single_data_parallel_learner_vs_two_data_parallel_learners
+  name: test_single_data_parallel_learner_vs_two_data_parallel_learners
+  signature: test_single_data_parallel_learner_vs_two_data_parallel_learners(tmpdir,
+    device_id, mb_source)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+  - name: mb_source
+classes:
+- cntk.learners.tests.distributed_multi_learner_test.MultiLearnerTrainer
+- cntk.learners.tests.distributed_multi_learner_test.SingleDataParallelTrainer
+- cntk.learners.tests.distributed_multi_learner_test.TwoDataParallelTrainer
