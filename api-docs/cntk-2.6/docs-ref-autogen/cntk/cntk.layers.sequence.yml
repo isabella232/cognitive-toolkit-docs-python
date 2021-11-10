@@ -51,8 +51,7 @@ functions:
     \ recurrently over an input sequence,\nand returns the final state.\nThis is often\
     \ used for embeddings of sequences, e.g. in a sequence-to-sequence model.\nPseudo-code:\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-    : [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\": \"default\"\
-    , \"force\": false, \"linenos\": false} -->\n\n````default\n\n   # pseudo-code\
+    : [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   # pseudo-code\
     \ for h = Fold(step_function)(x)\n   #  x: input sequence of tensors along the\
     \ dynamic axis\n   #  h: resulting final step-function output tensor that no longer\
     \ has a dynamic axis\n   h = initial_state   # h = output of previous step (\"\
@@ -82,13 +81,13 @@ functions:
     isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:<xref:equivalent Python function>>
+    - <xref:equivalent Python function>
   - name: go_backwards
     description: if `True` then run the recurrence from the end of the sequence to
       the start.
     isRequired: true
     types:
-    - <xref:bool>, <xref:defaults to `False`>
+    - <xref:bool>, <xref:defaults to False>
   - name: initial_state
     description: 'the initial value for the state. This can be a constant or a learnable
       parameter.
@@ -99,8 +98,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:tensor without batch dimension;>>
-    - <xref:<xref:a tuple thereof>>
+    - <xref:tensor without batch dimension;>
+    - <xref:a tuple thereof>
   - name: return_full_state
     description: 'if `True` and the step function has more than one
 
@@ -111,7 +110,7 @@ functions:
       variables is returned to the caller.'
     defaultValue: 'False'
     types:
-    - <xref:bool>, <xref:defaults to `False`>
+    - <xref:bool>, <xref:defaults to False>
   - name: name
     description: the name of the Function instance in the network
     isRequired: true
@@ -209,8 +208,7 @@ functions:
     \ output of the\nprevious step.\nThe following pseudo-code repesents what happens\
     \ when you call a *Recurrence()* layer:\n\n<!-- literal_block {\"ids\": [], \"\
     classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
-    : \"preserve\", \"language\": \"default\", \"force\": false, \"linenos\": false}\
-    \ -->\n\n````default\n\n   # pseudo-code for y = Recurrence(step_function)(x)\n\
+    : \"preserve\"} -->\n\n````\n\n   # pseudo-code for y = Recurrence(step_function)(x)\n\
     \   #  x: input sequence of tensors along the dynamic axis\n   #  y: resulting\
     \ sequence of outputs along the same dynamic axis\n   y = []              # result\
     \ sequence goes here\n   s = initial_state   # s = output of previous step (\"\
@@ -253,13 +251,13 @@ functions:
     isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:<xref:equivalent Python function>>
+    - <xref:equivalent Python function>
   - name: go_backwards
     description: if `True` then run the recurrence from the end of the sequence to
       the start.
     isRequired: true
     types:
-    - <xref:bool>, <xref:defaults to `False`>
+    - <xref:bool>, <xref:defaults to False>
   - name: initial_state
     description: 'the initial value for the state. This can be a constant or a learnable
       parameter.
@@ -270,8 +268,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:tensor without batch dimension;>>
-    - <xref:<xref:a tuple thereof>>
+    - <xref:tensor without batch dimension;>
+    - <xref:a tuple thereof>
   - name: return_full_state
     description: 'if `True` and the step function has more than one
 
@@ -281,7 +279,7 @@ functions:
       the caller.'
     defaultValue: 'False'
     types:
-    - <xref:bool>, <xref:defaults to `False`>
+    - <xref:bool>, <xref:defaults to False>
   - name: name
     description: the name of the Function instance in the network
     isRequired: true
@@ -321,19 +319,18 @@ functions:
     This form is meant for use in sequence-to-sequence scenarios.\nThis documentation\
     \ only covers this case; for additional information on parameters, see <xref:cntk.layers.sequence.Recurrence>.\n\
     In pseudo-code:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
-    : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\"\
-    : \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\n  \
-    \ # pseudo-code for y = RecurrenceFrom(step_function)(s,x)\n   #  x: input sequence\
-    \ of tensors along the dynamic axis\n   #  s: initial state for the recurrence\
-    \ (computed from input data elsewhew)\n   #  y: resulting sequence of outputs\
-    \ along the same dynamic axis\n   y = []              # result sequence goes here\n\
-    \   for x_n in x:       # pseudo-code for looping over all steps of input sequence\
-    \ along its dynamic axis\n       s = step_function(s, x_n)  # pass previous state\
-    \ and new data to step_function -> new state\n       y.append(s)\n   ````\n\n\
-    The layer function returned by this factory function accepts the initial state\
-    \ as data argument(s).\nThe initial state can be non-sequential data, as one would\
-    \ have for a plain sequence-to-sequence model,\nor sequential data. In the latter\
-    \ case, the last item is the initial state."
+    : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n\
+    ````\n\n   # pseudo-code for y = RecurrenceFrom(step_function)(s,x)\n   #  x:\
+    \ input sequence of tensors along the dynamic axis\n   #  s: initial state for\
+    \ the recurrence (computed from input data elsewhew)\n   #  y: resulting sequence\
+    \ of outputs along the same dynamic axis\n   y = []              # result sequence\
+    \ goes here\n   for x_n in x:       # pseudo-code for looping over all steps of\
+    \ input sequence along its dynamic axis\n       s = step_function(s, x_n)  # pass\
+    \ previous state and new data to step_function -> new state\n       y.append(s)\n\
+    \   ````\n\nThe layer function returned by this factory function accepts the initial\
+    \ state as data argument(s).\nThe initial state can be non-sequential data, as\
+    \ one would have for a plain sequence-to-sequence model,\nor sequential data.\
+    \ In the latter case, the last item is the initial state."
   signature: RecurrenceFrom(step_function, go_backwards=False, return_full_state=False,
     name='')
   parameters:
@@ -345,13 +342,13 @@ functions:
     isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:<xref:equivalent Python function>>
+    - <xref:equivalent Python function>
   - name: go_backwards
     description: if `True` then run the recurrence from the end of the sequence to
       the start.
     isRequired: true
     types:
-    - <xref:bool>, <xref:defaults to `False`>
+    - <xref:bool>, <xref:defaults to False>
   - name: initial_state
     description: 'the initial value for the state. This can be a constant or a learnable
       parameter.
@@ -362,8 +359,8 @@ functions:
     defaultValue: 'False'
     types:
     - <xref:scalar>
-    - <xref:<xref:tensor without batch dimension;>>
-    - <xref:<xref:a tuple thereof>>
+    - <xref:tensor without batch dimension;>
+    - <xref:a tuple thereof>
   - name: return_full_state
     description: 'if `True` and the step function has more than one
 
@@ -373,7 +370,7 @@ functions:
       the caller.'
     isRequired: true
     types:
-    - <xref:bool>, <xref:defaults to `False`>
+    - <xref:bool>, <xref:defaults to False>
   - name: name
     description: the name of the Function instance in the network
     isRequired: true
@@ -450,9 +447,8 @@ functions:
     \ to True for the current output.\nThe maximum number of steps is based on a second\
     \ input from which only the dynamic-axis information is used.\nThis is best explained\
     \ in pseudo-code:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
-    : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\"\
-    : \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\n  \
-    \ # pseudo-code for y = UnfoldFrom(generator_function, until_predicate)(s,axis_like)\n\
+    : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n\
+    ````\n\n   # pseudo-code for y = UnfoldFrom(generator_function, until_predicate)(s,axis_like)\n\
     \   #  s:         initial state for the recurrence (computed from input data elsewhew),\n\
     \   #  axis_like: any input with a dynamic axis, unfold will happen along the\
     \ same dynamic axis,\n   #  y:         resulting sequence of outputs along the\
@@ -490,7 +486,7 @@ functions:
     isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:<xref:equivalent Python function>>
+    - <xref:equivalent Python function>
   - name: until_predicate
     description: 'A function that denotes when the last element of the unfold has
       been emitted.
@@ -508,7 +504,7 @@ functions:
     defaultValue: None
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:<xref:equivalent Python function>>
+    - <xref:equivalent Python function>
   - name: length_increase
     description: 'the maximum number of output items is equal to the
 

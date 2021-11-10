@@ -36,7 +36,7 @@ methods:
     description: learning rate to reset to
     isRequired: true
     types:
-    - output of <xref:cntk.learners.learning_parameter_schedule>
+    - <xref:output of cntk.learners.learning_parameter_schedule>
 - uid: cntk.learners.Learner.update
   name: update
   summary: Update the parameters associated with this learner.

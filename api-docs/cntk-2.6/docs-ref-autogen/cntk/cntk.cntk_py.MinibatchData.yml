@@ -15,12 +15,3 @@ methods:
   name: asarray
   summary: Converts the instance's data to a NumPy array.
   signature: asarray()
-attributes:
-- uid: cntk.cntk_py.MinibatchData.data
-  name: data
-- uid: cntk.cntk_py.MinibatchData.number_of_samples
-  name: number_of_samples
-- uid: cntk.cntk_py.MinibatchData.number_of_sequences
-  name: number_of_sequences
-- uid: cntk.cntk_py.MinibatchData.sweep_end
-  name: sweep_end

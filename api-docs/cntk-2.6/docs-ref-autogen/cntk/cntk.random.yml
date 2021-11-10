@@ -7,31 +7,349 @@ type: import
 functions:
 - uid: cntk.random.bernoulli
   name: bernoulli
+  summary: Generates samples from the Bernoulli distribution with success probability
+    *mean*.
   signature: bernoulli(shape, dtype=default_override_or(np.float32), mean=0.5, seed=auto_select,
     name='')
+  parameters:
+  - name: shape
+    description: shape of the output (entries are independent random draws)
+    isRequired: true
+    types:
+    - <xref:tuple>
+  - name: dtype
+    description: data type. Default is np.float32.
+    isRequired: true
+    types:
+    - <xref:np.float32>
+    - <xref:np.float64>
+    - <xref:np.float16>
+  - name: mean
+    description: success probability
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: seed
+    description: 'pseudo random number generator seed (default: automatically select
+      a unique seed)'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: name
+    description: the name of the Function instance in the network
+    isRequired: true
+    types:
+    - <xref:str>, <xref:optional>
+  return:
+    description: <xref:cntk.ops.functions.Function>
+  examples:
+  - "\n```\n\n>>> b = C.random.bernoulli((2,3), seed=98052)\n>>> b.eval(device=C.cpu())\
+    \ # explicitly setting cpu because this is tested on multiple platforms; leave\
+    \ it unspecified in your code\narray([[ 1.,  1.,  0.],\n       [ 1.,  0.,  0.]],\
+    \ dtype=float32)\n```\n"
 - uid: cntk.random.bernoulli_like
   name: bernoulli_like
+  summary: Generates samples from the Bernoulli distribution with success probability
+    *mean*.
   signature: bernoulli_like(x, mean=0.5, seed=auto_select, name='')
+  parameters:
+  - name: x
+    description: cntk variable (input, output, parameter, or constant) from which
+      to copy the shape, data type, and dynamic axes.
+    isRequired: true
+  - name: mean
+    description: success probability
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: seed
+    description: 'pseudo random number generator seed (default: automatically select
+      a unique seed)'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: name
+    description: the name of the Function instance in the network
+    isRequired: true
+    types:
+    - <xref:str>, <xref:optional>
+  return:
+    description: <xref:cntk.ops.functions.Function>
+  examples:
+  - "\n```\n\n>>> p = C.placeholder()\n>>> bp = C.random.bernoulli_like(p, seed=98052)\n\
+    >>> x = C.sequence.input_variable(1)\n>>> bx = bp.replace_placeholders({p:x})\n\
+    >>> x0 = np.zeros((1,3,1), dtype=np.float32)\n>>> bx.eval({x:x0}, device=C.cpu())\
+    \ # explicitly setting cpu because this is tested on multiple platforms; leave\
+    \ it unspecified in your code\n[array([[ 1.],\n       [ 1.],\n       [ 0.]], dtype=float32)]\n\
+    ```\n"
 - uid: cntk.random.gumbel
   name: gumbel
+  summary: Generates samples from the Gumbel distribution with location *loc* and
+    scale *scale*.
   signature: gumbel(shape, dtype=default_override_or(np.float32), loc=0.0, scale=1.0,
     seed=auto_select, name='')
+  parameters:
+  - name: shape
+    description: shape of the output (entries are independent random draws)
+    isRequired: true
+    types:
+    - <xref:tuple>
+  - name: dtype
+    description: data type. Default is np.float32.
+    isRequired: true
+    types:
+    - <xref:np.float32>
+    - <xref:np.float64>
+    - <xref:np.float16>
+  - name: loc
+    description: location of the distribution
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: scale
+    description: scale of the distribution
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: seed
+    description: 'pseudo random number generator seed (default: automatically select
+      a unique seed)'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: name
+    description: the name of the Function instance in the network
+    isRequired: true
+    types:
+    - <xref:str>, <xref:optional>
+  return:
+    description: <xref:cntk.ops.functions.Function>
+  examples:
+  - "\n```\n\n>>> g = C.random.gumbel((2,3), seed=98052)\n>>> g.eval(device=C.cpu())\
+    \ # explicitly setting cpu because this is tested on multiple platforms; leave\
+    \ it unspecified in your code\narray([[-0.987713, -0.522298,  0.425918],\n   \
+    \    [-1.019599,  5.435177,  1.586071]], dtype=float32)\n```\n"
+  seeAlsoContent: '  [The Gumbel-Max Trick](https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/).
+
+    '
 - uid: cntk.random.gumbel_like
   name: gumbel_like
+  summary: Generates samples from the Gumbel distribution with location *loc* and
+    scale *scale*.
   signature: gumbel_like(x, mean=0.0, scale=1.0, seed=auto_select, name='')
+  parameters:
+  - name: x
+    description: cntk variable (input, output, parameter, or constant) from which
+      to copy the shape, data type, and dynamic axes.
+    isRequired: true
+  - name: loc
+    description: location of the distribution
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: scale
+    description: scale of the distribution
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: seed
+    description: 'pseudo random number generator seed (default: automatically select
+      a unique seed)'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: name
+    description: the name of the Function instance in the network
+    isRequired: true
+    types:
+    - <xref:str>, <xref:optional>
+  return:
+    description: <xref:cntk.ops.functions.Function>
+  examples:
+  - "\n```\n\n>>> x = C.constant(np.zeros((2,3,4), dtype=np.float32))\n>>> g = C.random.gumbel_like(x,\
+    \ seed=98052)\n>>> s = g.eval(device=C.cpu()) # explicitly setting cpu because\
+    \ this is tested on multiple platforms; leave it unspecified in your code\n>>>\
+    \ np.round(s, 4)\narray([[[-0.9877, -0.5223,  0.4259, -1.0196],\n        [ 5.4352,\
+    \  1.5861,  5.0608,  2.0668],\n        [-0.2135,  1.0139,  3.1217, -1.4834]],\n\
+    <BLANKLINE>\n       [[ 0.4507,  0.6325,  2.1682,  0.4463],\n        [-0.6583,\
+    \  0.1147, -0.3144, -0.7925],\n        [ 1.9773, -0.3627, -0.4566, -0.2368]]],\
+    \ dtype=float32)\n```\n"
+  seeAlsoContent: '  [The Gumbel-Max Trick](https://hips.seas.harvard.edu/blog/2013/04/06/the-gumbel-max-trick-for-discrete-distributions/).
+
+    '
 - uid: cntk.random.normal
   name: normal
+  summary: Generates samples from the normal distribution with mean *mean* and standard
+    deviation *scale*.
   signature: normal(shape, dtype=default_override_or(np.float32), mean=0.0, scale=1.0,
     seed=auto_select, name='')
+  parameters:
+  - name: shape
+    description: shape of the output (entries are independent random draws)
+    isRequired: true
+    types:
+    - <xref:tuple>
+  - name: dtype
+    description: data type. Default is np.float32.
+    isRequired: true
+    types:
+    - <xref:np.float32>
+    - <xref:np.float64>
+    - <xref:np.float16>
+  - name: mean
+    description: mean of the distribution
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: scale
+    description: scale (standard deviation) of the distribution
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: seed
+    description: 'pseudo random number generator seed (default: automatically select
+      a unique seed)'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: name
+    description: the name of the Function instance in the network
+    isRequired: true
+    types:
+    - <xref:str>, <xref:optional>
+  return:
+    description: <xref:cntk.ops.functions.Function>
+  examples:
+  - "\n```\n\n>>> z = C.random.normal((2,3), seed=98052)\n>>> z.eval(device=C.cpu())\
+    \ # explicitly setting cpu because this is tested on multiple platforms; leave\
+    \ it unspecified in your code\narray([[ 1.803254,  0.995395, -0.631974],\n   \
+    \    [-1.736721,  0.005615, -0.340025]], dtype=float32)\n```\n"
 - uid: cntk.random.normal_like
   name: normal_like
+  summary: Generates samples from the normal distribution with mean *mean* and standard
+    deviation *scale*.
   signature: normal_like(x, mean=0.0, scale=1.0, seed=auto_select, name='')
+  parameters:
+  - name: x
+    description: cntk variable (input, output, parameter, or constant) from which
+      to copy the shape, data type, and dynamic axes.
+    isRequired: true
+  - name: mean
+    description: mean of the distribution
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: scale
+    description: scale (standard deviation) of the distribution
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: seed
+    description: 'pseudo random number generator seed (default: automatically select
+      a unique seed)'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: name
+    description: the name of the Function instance in the network
+    isRequired: true
+    types:
+    - <xref:str>, <xref:optional>
+  return:
+    description: <xref:cntk.ops.functions.Function>
+  examples:
+  - "\n```\n\n>>> x = C.parameter((2,3,4))\n>>> z = C.random.normal_like(x, seed=98052)\n\
+    >>> z.eval(device=C.cpu()) # explicitly setting cpu because this is tested on\
+    \ multiple platforms; leave it unspecified in your code\narray([[[ 1.803254, \
+    \ 0.995395, -0.631974, -1.736721],\n        [ 0.005615, -0.340025, -0.011913,\
+    \ -0.236371],\n        [-1.207685, -0.495846,  0.037022, -1.220596]],\n<BLANKLINE>\n\
+    \       [[ 0.872981,  0.654405, -0.111421, -0.544074],\n        [ 1.543746, -0.63555\
+    \ , -1.072869, -0.379701],\n        [ 0.592069, -1.035192,  1.679303, -0.391963]]],\
+    \ dtype=float32)\n```\n"
 - uid: cntk.random.uniform
   name: uniform
+  summary: Generates samples from the uniform distribution in the interval [*low*,`high`).
   signature: uniform(shape, dtype=default_override_or(np.float32), low=0.0, high=1.0,
     seed=auto_select, name='')
+  parameters:
+  - name: shape
+    description: shape of the output (entries are independent random draws)
+    isRequired: true
+    types:
+    - <xref:tuple>
+  - name: dtype
+    description: data type. Default is np.float32.
+    isRequired: true
+    types:
+    - <xref:np.float32>
+    - <xref:np.float64>
+    - <xref:np.float16>
+  - name: low
+    description: lower end of the range of the random numbers
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: high
+    description: upper end of the range of the random numbers
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: seed
+    description: 'pseudo random number generator seed (default: automatically select
+      a unique seed)'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: name
+    description: the name of the Function instance in the network
+    isRequired: true
+    types:
+    - <xref:str>, <xref:optional>
+  return:
+    description: <xref:cntk.ops.functions.Function>
+  examples:
+  - "\n```\n\n>>> u = C.random.uniform((2,3), seed=98052)\n>>> u.eval(device=C.cpu())\
+    \ # explicitly setting cpu because this is tested on multiple platforms; leave\
+    \ it unspecified in your code\narray([[ 0.931785,  0.814722,  0.479606],\n   \
+    \    [ 0.937468,  0.004351,  0.185131]], dtype=float32)\n```\n"
 - uid: cntk.random.uniform_like
   name: uniform_like
+  summary: Generates samples from the uniform distribution in the interval [*low*,`high`).
   signature: uniform_like(x, low=0.0, high=1.0, seed=auto_select, name='')
+  parameters:
+  - name: x
+    description: cntk variable (input, output, parameter, or constant) from which
+      to copy the shape, data type, and dynamic axes.
+    isRequired: true
+  - name: low
+    description: lower end of the range of the random numbers
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: high
+    description: upper end of the range of the random numbers
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: seed
+    description: 'pseudo random number generator seed (default: automatically select
+      a unique seed)'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: name
+    description: the name of the Function instance in the network
+    isRequired: true
+    types:
+    - <xref:str>, <xref:optional>
+  return:
+    description: <xref:cntk.ops.functions.Function>
+  examples:
+  - "\n```\n\n>>> x = C.input_variable(4)\n>>> x0 = np.zeros((3,4), dtype=np.float32)\n\
+    >>> u = C.random.uniform_like(x, seed=98052)\n>>> u.eval({x:x0}, device=C.cpu())\
+    \ # explicitly setting cpu because this is tested on multiple platforms; leave\
+    \ it unspecified in your code\narray([[ 0.931785,  0.814722,  0.479606,  0.937468],\n\
+    \       [ 0.004351,  0.185131,  0.00632 ,  0.118901],\n       [ 0.710054,  0.304273,\
+    \  0.043126,  0.987818]], dtype=float32)\n```\n"
 packages:
 - cntk.random.tests

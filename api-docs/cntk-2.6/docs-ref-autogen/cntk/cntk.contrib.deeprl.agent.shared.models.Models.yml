@@ -11,8 +11,6 @@ summary: 'A set of predefined models to approximate Q or log of pi (policy).
   The loss function needs to be ''cross_entropy_with_softmax'' for policy
 
   gradient methods.'
-constructor:
-  syntax: Models()
 methods:
 - uid: cntk.contrib.deeprl.agent.shared.models.Models.dueling_network
   name: dueling_network

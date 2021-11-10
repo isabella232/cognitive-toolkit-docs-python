@@ -7,5 +7,3 @@ inheritances:
 - builtins.object
 summary: Meta class to denote a parameter tensor (no batch axis). Use with dimensions,
   e.g. `ParameterTensor[512,256]`.
-constructor:
-  syntax: ParameterTensor()

@@ -48,8 +48,9 @@ constructor:
     - <xref:string>
     - <xref:None>, <xref:default None>
   - name: rank
-    description: "set this to distributed.rank if you are using distributed\nparallelism\
-      \ \u2013 each rank's log will go to separate file."
+    description: 'set this to distributed.rank if you are using distributed
+
+      parallelism -- each rank''s log will go to separate file.'
     isRequired: true
     types:
     - <xref:int>

@@ -63,7 +63,7 @@ methods:
 
       tested minibatch.'
     types:
-    - <xref:<xref:*float*>>
+    - <xref:*float*>
 attributes:
 - uid: cntk.eval.evaluator.Evaluator.evaluation_function
   name: evaluation_function

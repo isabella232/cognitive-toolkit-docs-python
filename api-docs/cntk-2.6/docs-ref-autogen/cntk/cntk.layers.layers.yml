@@ -75,19 +75,19 @@ functions:
   signature: AveragePooling(filter_shape, strides=1, pad=False, name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     isRequired: true
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>>
+    - <xref:tuple of ints>
   - name: strides
     description: stride (increment when sliding over the input). Use a *tuple* to
       specify a per-axis value.
     defaultValue: '1'
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>, <xref:defaults to 1>>
+    - <xref:tuple of ints>, <xref:defaults to 1>
   - name: pad
     description: 'if *False*, then the pooling operation will be shifted over the
       "valid"
@@ -102,15 +102,15 @@ functions:
     isRequired: true
     types:
     - <xref:bool>
-    - <xref:<xref:tuple of bools>, <xref:defaults to False>>
+    - <xref:tuple of bools>, <xref:defaults to False>
   - name: name
     description: the name of the function instance in the network
     isRequired: true
     types:
     - <xref:str>, <xref:defaults to ''>
   return:
-    description: A function that accepts one argument and applies the average-pooling
-      operation to it
+    description: 'A function that accepts one argument and applies the average-pooling
+      operation to it'
     types:
     - <xref:cntk.ops.functions.Function>
   examples:
@@ -159,7 +159,7 @@ functions:
     isRequired: true
     types:
     - <xref:1>
-    - <xref:<xref:`None`>>
+    - <xref:None>
   - name: init_scale
     description: initial value for the `scale` parameter
     defaultValue: '1'
@@ -180,12 +180,12 @@ functions:
     description: if `True` then use CNTK's own engine instead of NVidia's.
     isRequired: true
     types:
-    - <xref:bool>, <xref:default `False`>
+    - <xref:bool>, <xref:default False>
   - name: disable_regularization
     description: if `True` then disable regularization in BatchNormalization
     isRequired: true
     types:
-    - <xref:bool>, <xref:default `False`>
+    - <xref:bool>, <xref:default False>
   - name: name
     description: the name of the function instance in the network
     isRequired: true
@@ -274,15 +274,15 @@ functions:
     op_name='Convolution', name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     isRequired: true
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>>
+    - <xref:tuple of ints>
   - name: num_filters
-    description: number of filters (output feature-map depth), or `()` to denote scalar
-      output items (output shape will have no depth axis).
+    description: 'number of filters (output feature-map depth), or `()` to denote
+      scalar output items (output shape will have no depth axis).'
     defaultValue: None
     types:
     - <xref:int>, <xref:defaults to None>
@@ -302,8 +302,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to cntk.initializer.glorot_uniform>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to cntk.initializer.glorot_uniform>
   - name: pad
     description: 'if *False*, then the filter will be shifted over the "valid"
 
@@ -317,14 +317,14 @@ functions:
     isRequired: true
     types:
     - <xref:bool>
-    - <xref:<xref:tuple of bools>, <xref:defaults to False>>
+    - <xref:tuple of bools>, <xref:defaults to False>
   - name: strides
     description: stride of the convolution (increment when sliding the filter over
       the input). Use a *tuple* to specify a per-axis value.
     defaultValue: '1'
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>, <xref:defaults to 1>>
+    - <xref:tuple of ints>, <xref:defaults to 1>
   - name: sharing
     description: When *True*, every position uses the same Convolution kernel.  When
       *False*, you can have a different Convolution kernel per position, but *False*
@@ -342,8 +342,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to 0>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to 0>
   - name: reduction_rank
     description: 'set to 0 if input items are scalars (input has no depth axis), e.g.
       an audio signal or a black-and-white image
@@ -424,15 +424,15 @@ functions:
     pad=False, strides=1, bias=True, init_bias=0, reduction_rank=1, name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     isRequired: true
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>>
+    - <xref:tuple of ints>
   - name: num_filters
-    description: number of filters (output feature-map depth), or `()` to denote scalar
-      output items (output shape will have no depth axis).
+    description: 'number of filters (output feature-map depth), or `()` to denote
+      scalar output items (output shape will have no depth axis).'
     defaultValue: None
     types:
     - <xref:int>, <xref:defaults to None>
@@ -446,8 +446,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to cntk.initializer.glorot_uniform>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to cntk.initializer.glorot_uniform>
   - name: pad
     description: 'if *False*, then the filter will be shifted over the "valid"
 
@@ -461,14 +461,14 @@ functions:
     isRequired: true
     types:
     - <xref:bool>
-    - <xref:<xref:tuple of bools>, <xref:defaults to False>>
+    - <xref:tuple of bools>, <xref:defaults to False>
   - name: strides
     description: stride of the convolution (increment when sliding the filter over
       the input). Use a *tuple* to specify a per-axis value.
     defaultValue: '1'
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>, <xref:defaults to 1>>
+    - <xref:tuple of ints>, <xref:defaults to 1>
   - name: bias
     description: the layer will have no bias if *False* is passed here
     isRequired: true
@@ -479,8 +479,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to 0>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to 0>
   - name: reduction_rank
     description: 'set to 0 if input items are scalars (input has no depth axis), e.g.
       an audio signal or a black-and-white image
@@ -516,15 +516,15 @@ functions:
     pad=False, strides=1, bias=True, init_bias=0, reduction_rank=1, name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     isRequired: true
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>>
+    - <xref:tuple of ints>
   - name: num_filters
-    description: number of filters (output feature-map depth), or `()` to denote scalar
-      output items (output shape will have no depth axis).
+    description: 'number of filters (output feature-map depth), or `()` to denote
+      scalar output items (output shape will have no depth axis).'
     defaultValue: None
     types:
     - <xref:int>, <xref:defaults to None>
@@ -538,8 +538,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to cntk.initializer.glorot_uniform>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to cntk.initializer.glorot_uniform>
   - name: pad
     description: 'if *False*, then the filter will be shifted over the "valid"
 
@@ -553,14 +553,14 @@ functions:
     isRequired: true
     types:
     - <xref:bool>
-    - <xref:<xref:tuple of bools>, <xref:defaults to False>>
+    - <xref:tuple of bools>, <xref:defaults to False>
   - name: strides
     description: stride of the convolution (increment when sliding the filter over
       the input). Use a *tuple* to specify a per-axis value.
     defaultValue: '1'
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>, <xref:defaults to 1>>
+    - <xref:tuple of ints>, <xref:defaults to 1>
   - name: bias
     description: the layer will have no bias if *False* is passed here
     isRequired: true
@@ -571,8 +571,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to 0>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to 0>
   - name: reduction_rank
     description: 'set to 0 if input items are scalars (input has no depth axis), e.g.
       an audio signal or a black-and-white image
@@ -623,15 +623,15 @@ functions:
     pad=False, strides=1, bias=True, init_bias=0, reduction_rank=1, name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     isRequired: true
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>>
+    - <xref:tuple of ints>
   - name: num_filters
-    description: number of filters (output feature-map depth), or `()` to denote scalar
-      output items (output shape will have no depth axis).
+    description: 'number of filters (output feature-map depth), or `()` to denote
+      scalar output items (output shape will have no depth axis).'
     defaultValue: None
     types:
     - <xref:int>, <xref:defaults to None>
@@ -645,8 +645,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to cntk.initializer.glorot_uniform>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to cntk.initializer.glorot_uniform>
   - name: pad
     description: 'if *False*, then the filter will be shifted over the "valid"
 
@@ -660,14 +660,14 @@ functions:
     isRequired: true
     types:
     - <xref:bool>
-    - <xref:<xref:tuple of bools>, <xref:defaults to False>>
+    - <xref:tuple of bools>, <xref:defaults to False>
   - name: strides
     description: stride of the convolution (increment when sliding the filter over
       the input). Use a *tuple* to specify a per-axis value.
     defaultValue: '1'
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>, <xref:defaults to 1>>
+    - <xref:tuple of ints>, <xref:defaults to 1>
   - name: bias
     description: the layer will have no bias if *False* is passed here
     isRequired: true
@@ -678,8 +678,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to 0>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to 0>
   - name: reduction_rank
     description: 'set to 0 if input items are scalars (input has no depth axis), e.g.
       an audio signal or a black-and-white image
@@ -784,15 +784,15 @@ functions:
     output_shape=None, reduction_rank=1, max_temp_mem_size_in_samples=0, name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     isRequired: true
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>>
+    - <xref:tuple of ints>
   - name: num_filters
-    description: number of filters (output feature-map depth), or `()` to denote scalar
-      output items (output shape will have no depth axis).
+    description: 'number of filters (output feature-map depth), or `()` to denote
+      scalar output items (output shape will have no depth axis).'
     isRequired: true
     types:
     - <xref:int>
@@ -806,7 +806,7 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:default cntk.initializer.glorot_uniform>>
+    - <xref:cntk>, <xref:default cntk.initializer.glorot_uniform>
   - name: pad
     description: 'if *False*, then the filter will be shifted over the "valid"
 
@@ -820,14 +820,14 @@ functions:
     isRequired: true
     types:
     - <xref:bool>
-    - <xref:<xref:tuple of bools>, <xref:default False>>
+    - <xref:tuple of bools>, <xref:default False>
   - name: strides
     description: stride of the convolution (increment when sliding the filter over
       the input). Use a *tuple* to specify a per-axis value.
     defaultValue: '1'
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>, <xref:default 1>>
+    - <xref:tuple of ints>, <xref:default 1>
   - name: sharing
     description: weight sharing, must be True for now.
     defaultValue: 'True'
@@ -843,8 +843,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>>
+    - <xref:NumPy array>
+    - <xref:cntk>
   - name: output_shape
     description: 'output shape. When strides > 2, the output shape is non-deterministic.
       User can specify the wanted output shape. Note the
@@ -857,7 +857,7 @@ functions:
     defaultValue: None
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>>
+    - <xref:tuple of ints>
   - name: reduction_rank
     description: set to 0 if input items are scalars (input has no depth axis), e.g.
       an audio signal or a black-and-white image.
@@ -1017,7 +1017,7 @@ functions:
     isRequired: true
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>>
+    - <xref:tuple of ints>
   - name: activation
     description: optional function to apply at the end, e.g. *relu*
     isRequired: true
@@ -1028,8 +1028,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to cntk.initializer.glorot_uniform>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to cntk.initializer.glorot_uniform>
   - name: input_rank
     description: number of inferred axes to add to W (*map_rank* must not be given)
     defaultValue: None
@@ -1051,8 +1051,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to 0>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to 0>
   - name: name
     description: the name of the function instance in the network
     isRequired: true
@@ -1205,12 +1205,11 @@ functions:
     unless a user-specified one is supplied through the `weights` parameter.\nFor\
     \ example, to use an existing embedding table from a file in numpy format, use\
     \ this:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
-    dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\": \"\
-    default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\n   Embedding(weights=np.load('PATH.npy'))\n\
-    \   ````\n\nTo initialize a learnable lookup table with a given numpy array that\
-    \ is to be used as\nthe initial value, pass that array to the `init` parameter\
-    \ (not `weights`).\n\nAn `Embedding` instance owns its weight parameter tensor\
-    \ *E*, and exposes it as an attribute `.E`."
+    dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n````\n\n\
+    \   Embedding(weights=np.load('PATH.npy'))\n   ````\n\nTo initialize a learnable\
+    \ lookup table with a given numpy array that is to be used as\nthe initial value,\
+    \ pass that array to the `init` parameter (not `weights`).\n\nAn `Embedding` instance\
+    \ owns its weight parameter tensor *E*, and exposes it as an attribute `.E`."
   signature: Embedding(shape=None, init=glorot_uniform(), weights=None, name='')
   parameters:
   - name: shape
@@ -1218,14 +1217,14 @@ functions:
     defaultValue: None
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>>
+    - <xref:tuple of ints>
   - name: init
     description: (learnable embedding only) initial value of weights *E*
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to cntk.initializer.glorot_uniform>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to cntk.initializer.glorot_uniform>
   - name: weights
     description: '(user-supplied embedding only) the lookup table.
 
@@ -1233,8 +1232,7 @@ functions:
       that corresponds to input category *i*.'
     defaultValue: None
     types:
-    - <xref:<xref:NumPy array>, <xref:mutually exclusive with `init`>, <xref:defuats
-      to None>>
+    - <xref:NumPy array>, <xref:mutually exclusive with init>, <xref:defuats to None>
   - name: name
     description: the name of the function instance in the network
     isRequired: true
@@ -1392,19 +1390,19 @@ functions:
   signature: MaxPooling(filter_shape, strides=1, pad=False, name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     isRequired: true
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>>
+    - <xref:tuple of ints>
   - name: strides
     description: stride (increment when sliding over the input). Use a *tuple* to
       specify a per-axis value.
     defaultValue: '1'
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>, <xref:defaults to 1>>
+    - <xref:tuple of ints>, <xref:defaults to 1>
   - name: pad
     description: 'if *False*, then the pooling operation will be shifted over the
       "valid"
@@ -1419,7 +1417,7 @@ functions:
     isRequired: true
     types:
     - <xref:bool>
-    - <xref:<xref:tuple of bools>, <xref:defaults to False>>
+    - <xref:tuple of bools>, <xref:defaults to False>
   - name: name
     description: the name of the function instance in the network
     isRequired: true
@@ -1496,15 +1494,15 @@ functions:
     op_name='Convolution', name='')
   parameters:
   - name: filter_shape
-    description: shape (spatial extent) of the receptive field, *not* including the
-      input feature-map depth. E.g. (3,3) for a 2D convolution.
+    description: 'shape (spatial extent) of the receptive field, *not* including the
+      input feature-map depth. E.g. (3,3) for a 2D convolution.'
     isRequired: true
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>>
+    - <xref:tuple of ints>
   - name: num_filters
-    description: number of filters (output feature-map depth), or `()` to denote scalar
-      output items (output shape will have no depth axis).
+    description: 'number of filters (output feature-map depth), or `()` to denote
+      scalar output items (output shape will have no depth axis).'
     defaultValue: None
     types:
     - <xref:int>, <xref:defaults to None>
@@ -1518,8 +1516,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to cntk.initializer.glorot_uniform>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to cntk.initializer.glorot_uniform>
   - name: pad
     description: 'if *False*, then the filter will be shifted over the "valid"
 
@@ -1533,14 +1531,14 @@ functions:
     isRequired: true
     types:
     - <xref:bool>
-    - <xref:<xref:tuple of bools>, <xref:defaults to False>>
+    - <xref:tuple of bools>, <xref:defaults to False>
   - name: strides
     description: stride of the convolution (increment when sliding the filter over
       the input). Use a *tuple* to specify a per-axis value.
     defaultValue: '1'
     types:
     - <xref:int>
-    - <xref:<xref:tuple of ints>, <xref:defaults to 1>>
+    - <xref:tuple of ints>, <xref:defaults to 1>
   - name: sharing
     description: When *True*, every position uses the same Convolution kernel.  When
       *False*, you can have a different Convolution kernel per position, but *False*
@@ -1558,8 +1556,8 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:<xref:NumPy array>>
-    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to 0>>
+    - <xref:NumPy array>
+    - <xref:cntk>, <xref:defaults to 0>
   - name: reduction_rank
     description: 'set to 0 if input items are scalars (input has no depth axis), e.g.
       an audio signal or a black-and-white image

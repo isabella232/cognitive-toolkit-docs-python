@@ -34,8 +34,8 @@ functions:
     description: lambda that constructs a layer
     isRequired: true
     types:
-    - <xref:<xref:Python function/lambda with 1>>
-    - <xref:<xref:0 arguments>>
+    - <xref:Python function/lambda with 1>
+    - <xref:0 arguments>
   - name: name
   return:
     description: A function that accepts one argument and applies the layers as constructed
@@ -75,7 +75,7 @@ functions:
     isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:<xref:equivalent Python function>>
+    - <xref:equivalent Python function>
   - name: name
   return:
     description: A function that accepts one argument, applies `f` to it, and adds
@@ -134,9 +134,9 @@ functions:
       An item that is a list will be flattened.'
     isRequired: true
     types:
-    - <xref:<xref:list of cntk.ops.functions.Function>, <xref:equivalent Python functions>,
-      <xref:tuples of functions,>>
-    - <xref:<xref:lists thereof>>
+    - <xref:list of cntk.ops.functions.Function>, <xref:equivalent Python functions>,
+      <xref:tuples of functions,>
+    - <xref:lists thereof>
   - name: name
   return:
     description: A function that accepts one argument and applies the given `functions`
@@ -189,7 +189,7 @@ functions:
     isRequired: true
     types:
     - <xref:single>
-    - list of <xref:cntk.ops.functions.Function>
+    - <xref:list of cntk.ops.functions.Function>
   - name: name
   return:
     description: A function that accepts one argument and applies the sequence of
