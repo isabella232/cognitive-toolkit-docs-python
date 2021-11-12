@@ -1,0 +1,8 @@
+### YamlMime:PythonModule
+uid: cntk.internal.tests.swig_helper_tests
+name: swig_helper_tests
+fullName: cntk.internal.tests.swig_helper_tests
+functions:
+- uid: cntk.internal.tests.swig_helper_tests.test_typemap
+  name: test_typemap
+  signature: test_typemap()

@@ -14,8 +14,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -44,8 +46,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -67,8 +71,10 @@ functions:
   parameters:
   - name: operand
     description: The Function/Variable to alias
+    isRequired: true
   - name: name
     description: the name of the Alias Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -85,16 +91,19 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -118,16 +127,19 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -155,15 +167,19 @@ functions:
   parameters:
   - name: composite
     description: The composite Function that the block encapsulates
+    isRequired: true
   - name: block_arguments_map
     description: 'A list of tuples, mapping from block''s underlying composite''s
       arguments to
 
       actual variables they are connected to'
+    isRequired: true
   - name: block_op_name
     description: Name of the op that the block represents
+    isRequired: true
   - name: block_instance_name
     description: the name of the block Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -178,8 +194,10 @@ functions:
   - name: root_function
     description: Root Function, the graph underlying which, the newly created composite
       encapsulates
+    isRequired: true
   - name: name
     description: the name of the Alias Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -195,8 +213,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -215,8 +235,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -271,10 +293,13 @@ functions:
   parameters:
   - name: ref
     description: 'class: *~cntk.variables.Constant* or *~cntk.variables.Parameter*.'
+    isRequired: true
   - name: input
     description: class:*~cntk.ops.functions.Function* that outputs a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -304,10 +329,13 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -382,8 +410,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -403,8 +433,10 @@ functions:
   parameters:
   - name: operand
     description: input of the batch normalization operation
+    isRequired: true
   - name: scale
     description: 'parameter tensor that holds the learned componentwise-scaling factors'
+    isRequired: true
   - name: bias
     description: 'parameter tensor that holds the learned bias. `scale` and `bias`
       must have the same
@@ -413,6 +445,7 @@ functions:
       = False or
 
       number of output convolution feature maps in case of `spatial` = True'
+    isRequired: true
   - name: running_mean
     description: 'running mean which is used during evaluation phase and might be
       used during
@@ -421,45 +454,55 @@ functions:
       same dimensions
 
       as `scale` and `bias`'
+    isRequired: true
   - name: running_inv_std
     description: running variance. Represented as `running_mean`
+    isRequired: true
   - name: running_count
     description: 'Denotes the total number of samples that have been used so far to
       compute
 
       the `running_mean` and `running_inv_std` parameters. You must pass a scalar
       (either rank-0 `constant(val)`).'
+    isRequired: true
   - name: spatial
     description: 'flag that indicates whether to compute mean/var for each feature
       in a minibatch
 
       independently or, in case of convolutional layers, per future map'
+    isRequired: true
     types:
     - <xref:bool>
   - name: normalization_time_constant
     description: 'time constant for computing running average of
 
       mean and variance as a low-pass filtered version of the batch statistics.'
+    isRequired: true
     types:
     - <xref:float>, <xref:default 5000>
   - name: blend_time_constant
     description: 'constant for smoothing batch estimates with the running
 
       statistics'
+    isRequired: true
     types:
     - <xref:float>, <xref:default 0>
   - name: epsilon
     description: conditioner constant added to the variance when computing the inverse
       standard deviation
+    isRequired: true
   - name: use_cudnn_engine
+    isRequired: true
     types:
     - <xref:bool>, <xref:default True>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   - name: disable_regularization
     description: turn off regularization in batch normalization
+    isRequired: true
     types:
     - <xref:bool>, <xref:default False>
   return:
@@ -472,11 +515,14 @@ functions:
   parameters:
   - name: node_input
     description: class:*~cntk.input_variable* that needs the dtype conversion
+    isRequired: true
   - name: dtype
     description: 'data_type (np.float32, np.float64, np.float16): data type of the
       converted output'
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -491,8 +537,10 @@ functions:
   parameters:
   - name: arg
     description: input tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network (optional)
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -515,11 +563,13 @@ functions:
   parameters:
   - name: x
     description: tensor to be clipped
+    isRequired: true
   - name: min_value
     description: 'a scalar or a tensor which represents the minimum value to clip
       element
 
       values to'
+    isRequired: true
     types:
     - <xref:float>
   - name: max_value
@@ -527,10 +577,12 @@ functions:
       element
 
       values to'
+    isRequired: true
     types:
     - <xref:float>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -573,10 +625,12 @@ functions:
   parameters:
   - name: operands
     description: list of functions or their variables to combine
+    isRequired: true
     types:
     - <xref:list>
   - name: name
     description: the name of the Combine Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -603,6 +657,7 @@ functions:
       every element in the tensor or NumPy array.
 
       If `None`, the tensor will be initialized uniformly random.'
+    isRequired: true
     types:
     - <xref:scalar>
     - <xref:NumPy array>, <xref:optional>
@@ -610,6 +665,7 @@ functions:
     description: 'the shape of the input tensor. If not provided, it will
 
       be inferred from `value`.'
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>, <xref:optional>
@@ -618,14 +674,17 @@ functions:
 
       are given, then data will be converted if needed. If none given, it will default
       to `np.float32`.'
+    isRequired: true
     types:
     - <xref:optional>
   - name: device
     description: instance of DeviceDescriptor
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -677,8 +736,10 @@ functions:
     description: 'convolution filter weights, stored as a tensor of dimensions ,
 
       where  must be the kernel dimensions (spatial extent of the filter).'
+    isRequired: true
   - name: operand
     description: convolution input. A tensor with dimensions .
+    isRequired: true
   - name: strides
     description: 'stride dimensions. If strides[i] > 1 then only pixel positions that
       are multiples of strides[i] are computed.
@@ -687,10 +748,12 @@ functions:
       stride dimension that lines up with the number
 
       of input channels can be set to any non-zero value.'
+    isRequired: true
     types:
     - <xref:tuple>, <xref:optional>
   - name: sharing
     description: sharing flags for each input dimension
+    isRequired: true
     types:
     - <xref:bool>
   - name: auto_padding
@@ -708,15 +771,18 @@ functions:
 
       the input dimension. The last value that lines up with the number of input channels
       must be false.'
+    isRequired: true
     types:
     - <xref:bool>
   - name: dilation
     description: the dilation value along each axis, default 1 mean no dilation.
+    isRequired: true
     types:
     - <xref:tuple>, <xref:optional>
   - name: reduction_rank
     description: must be 0 or 1, 0 mean no depth or channel dimension in the input
       and 1 mean the input has channel or depth dimension.
+    isRequired: true
     types:
     - <xref:int>, <xref:default 1>
   - name: groups
@@ -731,6 +797,7 @@ functions:
 
       Number of input and output channels must be divisble by value of groups argument.
       Also, value of this argument must be strictly positive, i.e. groups > 0.'
+    isRequired: true
     types:
     - <xref:int>, <xref:default 1>
   - name: max_temp_mem_size_in_samples
@@ -744,10 +811,12 @@ functions:
       Default is 0 which means the same as the input
 
       samples.'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -806,8 +875,10 @@ functions:
     description: 'convolution filter weights, stored as a tensor of dimensions ,
 
       where  must be the kernel dimensions (spatial extent of the filter).'
+    isRequired: true
   - name: operand
     description: convolution input. A tensor with dimensions .
+    isRequired: true
   - name: strides
     description: 'stride dimensions. If strides[i] > 1 then only pixel positions that
       are multiples of strides[i] are computed.
@@ -816,10 +887,12 @@ functions:
       stride dimension that lines up with the number
 
       of input channels can be set to any non-zero value.'
+    isRequired: true
     types:
     - <xref:tuple>, <xref:optional>
   - name: sharing
     description: sharing flags for each input dimension
+    isRequired: true
     types:
     - <xref:bool>
   - name: auto_padding
@@ -837,17 +910,21 @@ functions:
 
       the input dimension. The last value that lines up with the number of input channels
       must be false.'
+    isRequired: true
     types:
     - <xref:bool>
   - name: output_shape
     description: user expected output shape after convolution transpose.
+    isRequired: true
   - name: dilation
     description: the dilation value along each axis, default 1 mean no dilation.
+    isRequired: true
     types:
     - <xref:tuple>, <xref:optional>
   - name: reduction_rank
     description: must be 0 or 1, 0 mean no depth or channel dimension in the input
       and 1 mean the input has channel or depth dimension.
+    isRequired: true
     types:
     - <xref:int>, <xref:default 1>
   - name: max_temp_mem_size_in_samples
@@ -861,10 +938,12 @@ functions:
       Default is 0 which means the same as the input
 
       samples.'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -888,8 +967,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -908,8 +989,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -938,10 +1021,13 @@ functions:
   - name: node_input
     description: class:*~cntk.ops.functions.Function* that outputs the tensor to be
       cropped
+    isRequired: true
   - name: node_referent
     description: class:*~cntk.ops.functions.Function* that outputs the reference tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -984,18 +1070,23 @@ functions:
   - name: node_input
     description: class:*~cntk.ops.functions.Function* that outputs the tensor to be
       cropped
+    isRequired: true
   - name: node_referent
     description: class:*~cntk.ops.functions.Function* that outputs the reference tensor
+    isRequired: true
   - name: ancestor_input
     description: class:*~cntk.ops.functions.Function* that outputs ancestor of node_input
+    isRequired: true
     types:
     - <xref:optional>
   - name: ancestor_referent
     description: class:*~cntk.ops.functions.Function* that outputs ancestor of node_referent
+    isRequired: true
     types:
     - <xref:optional>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1011,18 +1102,23 @@ functions:
   - name: node_input
     description: class:*~cntk.ops.functions.Function* that outputs the tensor to be
       cropped
+    isRequired: true
   - name: node_referent
     description: class:*~cntk.ops.functions.Function* that outputs the reference tensor
+    isRequired: true
   - name: offset_x
     description: horizontal crop offset
+    isRequired: true
     types:
     - <xref:int>
   - name: offset_y
     description: vertical crop offset
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1044,6 +1140,7 @@ functions:
   parameters:
   - name: operand
     description: Input tensor, with dimensions .
+    isRequired: true
   - name: block_size
     description: 'Integer value. This defines the size of the spatial block where
       the
@@ -1051,10 +1148,12 @@ functions:
       depth elements move to. Number of channels, C, in the input tensor must be divisible
 
       by math:*(block_size times block_size)*'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1093,16 +1192,20 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: dropout_rate
     description: probability that an element of `x` will be set to zero
+    isRequired: true
     types:
     - <xref:float>, [<xref:0,1>)
   - name: seed
     description: random seed.
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:cntk.ops.str>, <xref:optional>
   return:
@@ -1121,8 +1224,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1149,10 +1254,13 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1191,12 +1299,16 @@ functions:
   parameters:
   - name: arg1
     description: left side tensor
+    isRequired: true
   - name: arg2
     description: right side tensor
+    isRequired: true
   - name: '*more_args'
     description: additional inputs
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1211,12 +1323,16 @@ functions:
   parameters:
   - name: arg1
     description: left side tensor
+    isRequired: true
   - name: arg2
     description: right side tensor
+    isRequired: true
   - name: '*more_args'
     description: additional inputs
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1229,10 +1345,12 @@ functions:
   - name: y
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
     types:
     - <xref:x,>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1258,10 +1376,12 @@ functions:
   - name: y
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
     types:
     - <xref:x,>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1291,12 +1411,16 @@ functions:
   parameters:
   - name: flag
     description: condition tensor
+    isRequired: true
   - name: value_if_true
     description: true branch tensor
+    isRequired: true
   - name: value_if_false
     description: false branch tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1325,12 +1449,16 @@ functions:
   parameters:
   - name: arg1
     description: left side tensor
+    isRequired: true
   - name: arg2
     description: right side tensor
+    isRequired: true
   - name: '*more_args'
     description: additional inputs
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1378,10 +1506,12 @@ functions:
   - name: y
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
     types:
     - <xref:x,>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1412,11 +1542,13 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -1444,10 +1576,13 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1484,8 +1619,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1510,10 +1647,13 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: The position to insert the singleton axis.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1534,13 +1674,16 @@ functions:
   parameters:
   - name: x
     description: Input tensor.
+    isRequired: true
   - name: axis
     description: (Default to 0) Indicates up to which input dimensions (exclusive)
       should be flattened to the outer dimension of the output
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1562,8 +1705,10 @@ functions:
   parameters:
   - name: arg
     description: input tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network (optional)
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1587,16 +1732,20 @@ functions:
   parameters:
   - name: graph
     description: labels graph
+    isRequired: true
   - name: features
     description: network output
+    isRequired: true
   - name: blankTokenId
     description: id of the CTC blank label
+    isRequired: true
   - name: delayConstraint
     description: label output delay constraint introduced during training that allows
       to have shorter delay during inference. This is using the original time information
       to enforce that CTC tokens only get aligned within a time margin. Setting this
       parameter smaller will result in shorted delay between label output during decoding,
       yet may hurt accuracy. delayConstraint=-1 means no constraint
+    isRequired: true
   return:
     description: cntk.ops.functions.Function
 - uid: cntk.ops.gather
@@ -1606,13 +1755,17 @@ functions:
   parameters:
   - name: reference
     description: A tensor of values
+    isRequired: true
   - name: indices
     description: A tensor of indices
+    isRequired: true
   - name: axis
     description: The axis along which the indices refer to. Default (None) means the  first
       axis.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1631,10 +1784,13 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1671,10 +1827,13 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1712,16 +1871,20 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: alpha
     description: the alpha term of the above equation.
+    isRequired: true
     types:
     - <xref:float>
   - name: beta
     description: the beta term of the above equation.
+    isRequired: true
     types:
     - <xref:float>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1755,8 +1918,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -1792,15 +1957,18 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: scalar
     description: Scalar channel factor.
+    isRequired: true
     types:
     - <xref:float>
   - name: bias
     description: Bias values for each channel.
+    isRequired: true
     types:
     - <xref:numpy array>
   return:
@@ -1821,30 +1989,36 @@ functions:
   parameters:
   - name: shape
     description: the shape of the input tensor
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>
   - name: dtype
     description: data type. Default is np.float32.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: needs_gradient
     description: whether to back-propagates to it or not. False by default.
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: is_sparse
     description: whether the variable is sparse (*False* by default)
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: dynamic_axes
     description: a list of dynamic axis (e.g., batch axis, sequence axis)
+    isRequired: true
     types:
     - <xref:list>
     - <xref:tuple>, <xref:default>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1859,30 +2033,36 @@ functions:
   parameters:
   - name: shape
     description: the shape of the input tensor
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>
   - name: dtype
     description: data type. Default is np.float32.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: needs_gradient
     description: whether to back-propagates to it or not. False by default.
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: is_sparse
     description: whether the variable is sparse (*False* by default)
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: dynamic_axes
     description: a list of dynamic axis (e.g., batch axis, time axis)
+    isRequired: true
     types:
     - <xref:list>
     - <xref:tuple>, <xref:default>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1898,6 +2078,7 @@ functions:
   parameters:
   - name: labels
     description: input training labels
+    isRequired: true
   return:
     description: cntk.ops.functions.Function
   examples:
@@ -1928,15 +2109,18 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: alpha
     description: the alpha term of the above equation.
+    isRequired: true
     types:
     - <xref:float>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -1964,10 +2148,13 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2004,10 +2191,13 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2049,24 +2239,30 @@ functions:
   parameters:
   - name: operand
     description: input of the Local Response Normalization.
+    isRequired: true
   - name: depth_radius
     description: the radius on the channel dimension to apply the normalization.
+    isRequired: true
     types:
     - <xref:int>
   - name: bias
     description: a bias term to avoid divide by zero.
+    isRequired: true
     types:
     - <xref:double>
   - name: alpha
     description: the alpha term of the above equation.
+    isRequired: true
     types:
     - <xref:double>
   - name: beta
     description: the beta term of the above equation.
+    isRequired: true
     types:
     - <xref:double>
   - name: name
     description: the name of the Function instance in the network.
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2099,8 +2295,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2127,12 +2325,16 @@ functions:
   parameters:
   - name: arg1
     description: left side tensor
+    isRequired: true
   - name: arg2
     description: right side tensor
+    isRequired: true
   - name: '*more_args'
     description: additional inputs
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2165,12 +2367,15 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: axis
     description: the axis of the inputs when coerced to 2D
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2183,10 +2388,12 @@ functions:
   parameters:
   - name: operands
     description: list of functions
+    isRequired: true
     types:
     - <xref:list>
   - name: name
     description: the name of the mean Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2234,24 +2441,29 @@ functions:
   parameters:
   - name: operand
     description: Input tensor, with dimensions .
+    isRequired: true
   - name: epsilon
     description: epsilon added to the standard deviation to avoid division by 0.
+    isRequired: true
     types:
     - <xref:double>, <xref:default 0.00001>
   - name: use_stats_across_channels
     description: 'If False, mean and variance are computed per channel.
 
       If True, mean and variance are computed over the entire tensor (all axes).'
+    isRequired: true
     types:
     - <xref:bool>
   - name: do_variance_scaling
     description: 'If False, only the mean is subtracted. If True, it is also
 
       scaled by inverse of standard deviation.'
+    isRequired: true
     types:
     - <xref:bool>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2272,10 +2484,13 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2292,8 +2507,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2319,10 +2536,13 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2358,14 +2578,19 @@ functions:
   parameters:
   - name: x
     description: input tensor, the value must be positive integer and less than num_class
+    isRequired: true
   - name: num_classes
     description: the number of class in one hot tensor
+    isRequired: true
   - name: sparse_output
     description: if set as True, we will create the one hot tensor as sparse.
+    isRequired: true
   - name: axis
     description: 'The axis to fill (default: -1, a new inner-most axis).'
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>, <xref:keyword only>
   return:
@@ -2384,8 +2609,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2425,22 +2652,26 @@ functions:
   parameters:
   - name: shape
     description: the shape of the input tensor
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>
   - name: dtype
     description: data type
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: dynamic_axes
     description: a list of dynamic axis (e.g., batch axis, time axis)
+    isRequired: true
     types:
     - <xref:list>
     - <xref:tuple>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2454,20 +2685,25 @@ functions:
   parameters:
   - name: x
     description: tensor to be padded.
+    isRequired: true
   - name: pattern
     description: how many values to add before and after the contents of the tensor
       in each dimension.
+    isRequired: true
     types:
     - <xref:list of tuple with 2 integers>
   - name: mode
     description: 'padding mode: C.ops.CONSTANT_PAD, C.ops.REFLECT_PAD and C.ops.SYMMETRIC_PAD'
+    isRequired: true
     types:
     - <xref:int>
   - name: constant_value
     description: the value used to fill the padding cells, only meaningful under CONSTANT
       mode.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2498,15 +2734,18 @@ functions:
   parameters:
   - name: alpha
     description: same shape as x
+    isRequired: true
     types:
     - <xref:cntk.variables.Parameter>
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -2537,6 +2776,7 @@ functions:
     description: 'the shape of the input tensor. If not provided, it
 
       will be inferred from `value`.'
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>, <xref:optional>
@@ -2552,6 +2792,7 @@ functions:
       the first forward pass. If *None*, the tensor will be initialized
 
       with 0.'
+    isRequired: true
     types:
     - <xref:scalar>
     - <xref:NumPy array>
@@ -2561,14 +2802,17 @@ functions:
 
       are given, then data will be converted if needed. If none given, it will default
       to `np.float32`.'
+    isRequired: true
     types:
     - <xref:optional>
   - name: device
     description: instance of DeviceDescriptor
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>
   - name: name
     description: the name of the Parameter instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2585,16 +2829,20 @@ functions:
   parameters:
   - name: operand
     description: the variable to be normalized
+    isRequired: true
   - name: mean
     description: per dimension mean to use for the normalization
+    isRequired: true
     types:
     - <xref:NumPy array>
   - name: inv_stddev
     description: per dimension standard deviation to use for the normalization
+    isRequired: true
     types:
     - <xref:NumPy array>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2614,15 +2862,18 @@ functions:
   parameters:
   - name: shape
     description: the shape of the variable tensor
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>
   - name: dynamic_axes
     description: the list of dynamic axes that the actual variable uses
+    isRequired: true
     types:
     - <xref:list>
   - name: name
     description: the name of the placeholder variable in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2635,12 +2886,16 @@ functions:
   parameters:
   - name: arg1
     description: left side tensor
+    isRequired: true
   - name: arg2
     description: right side tensor
+    isRequired: true
   - name: '*more_args'
     description: additional inputs
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2707,28 +2962,36 @@ functions:
   parameters:
   - name: operand
     description: pooling input
+    isRequired: true
   - name: pooling_type
     description: one of <xref:cntk.ops.MAX_POOLING> or <xref:cntk.ops.AVG_POOLING>
+    isRequired: true
   - name: pooling_window_shape
     description: dimensions of the pooling window
+    isRequired: true
   - name: strides
     description: strides.
+    isRequired: true
     types:
     - <xref:default 1>
   - name: auto_padding
     description: automatic padding flags for each input dimension.
+    isRequired: true
     types:
     - <xref:default >[<xref:False,>]
   - name: ceil_out_dim
     description: ceiling while computing output size
+    isRequired: true
     types:
     - <xref:default False>
   - name: include_pad
     description: include pad while average pooling
+    isRequired: true
     types:
     - <xref:default False>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2756,10 +3019,13 @@ functions:
   parameters:
   - name: base
     description: base tensor
+    isRequired: true
   - name: exponent
     description: exponent tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2799,22 +3065,27 @@ functions:
     description: 'input vector of sampling weights which should be
 
       non-negative numbers.'
+    isRequired: true
   - name: num_samples
     description: number of expected samples
+    isRequired: true
     types:
     - <xref:int>
   - name: allow_duplicates
     description: 'If sampling is done
 
       with replacement (*True*) or without (*False*).'
+    isRequired: true
     types:
     - <xref:bool>
   - name: seed
     description: random seed.
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network.
+    isRequired: true
     types:
     - <xref:cntk.ops.str>, <xref:optional>
   return:
@@ -2897,8 +3168,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2927,12 +3200,15 @@ functions:
   parameters:
   - name: x
     description: The Function/Variable, whose dynamic axes are to be reconciled
+    isRequired: true
   - name: dynamic_axes_as
     description: 'The Function/Variable, to whose dynamic axes the
 
       operand ''x''''s dynamic axes are reconciled to.'
+    isRequired: true
   - name: name
     description: the name of the reconcile_dynamic_axes Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2949,8 +3225,10 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
@@ -2959,6 +3237,7 @@ functions:
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -2979,8 +3258,10 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
@@ -2989,6 +3270,7 @@ functions:
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -3009,8 +3291,10 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
@@ -3019,6 +3303,7 @@ functions:
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -3048,8 +3333,10 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
@@ -3058,6 +3345,7 @@ functions:
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -3080,8 +3368,10 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
@@ -3090,6 +3380,7 @@ functions:
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3119,8 +3410,10 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
@@ -3128,6 +3421,7 @@ functions:
     - <xref:a list of cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -3158,8 +3452,10 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
@@ -3168,6 +3464,7 @@ functions:
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -3207,8 +3504,10 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
@@ -3217,6 +3516,7 @@ functions:
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3244,8 +3544,10 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
@@ -3254,6 +3556,7 @@ functions:
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -3274,8 +3577,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3305,6 +3610,7 @@ functions:
   parameters:
   - name: x
     description: tensor to be reshaped
+    isRequired: true
   - name: shape
     description: 'a tuple defining the resulting shape. The specified shape tuple
 
@@ -3315,6 +3621,7 @@ functions:
       with the product of the dimensions of all the non-inferred axes of the replacement
 
       shape.'
+    isRequired: true
     types:
     - <xref:tuple>
   - name: begin_axis
@@ -3324,6 +3631,7 @@ functions:
       shape tuple,
 
       pass *Axis.new_leading_axis()*.'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:None>
@@ -3332,11 +3640,13 @@ functions:
 
       Negative values are counting from the end. *None* refers to the end of the shape
       tuple.'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:None>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3375,17 +3685,23 @@ functions:
   parameters:
   - name: operand
     description: a convolutional feature map as the input volume ([W x H x C x N]).
+    isRequired: true
   - name: pooling_type
     description: only <xref:cntk.ops.MAX_POOLING>
+    isRequired: true
   - name: rois
     description: the coordinates of the ROIs per image ([4 x roisPerImage x N]), each
       ROI is (x1, y1, x2, y2) absolute to original image size.
+    isRequired: true
   - name: roi_output_shape
     description: dimensions (width x height) of the ROI pooling output shape
+    isRequired: true
   - name: spatial_scale
     description: the scale of operand from the original image size.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3406,8 +3722,10 @@ functions:
   parameters:
   - name: arg
     description: input tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network (optional)
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3432,11 +3750,13 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -3468,8 +3788,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3498,8 +3820,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3518,8 +3842,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3591,13 +3917,16 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: axis
     description: axis along which the softmax operation will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3629,15 +3958,18 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: steepness
     description: optional steepness factor
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -3680,8 +4012,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3722,6 +4056,7 @@ functions:
   parameters:
   - name: operand
     description: Input tensor, with dimensions .
+    isRequired: true
   - name: block_size
     description: 'Integer value. This defines the size of the spatial block whose
       elements
@@ -3730,10 +4065,12 @@ functions:
       tensor
 
       must be divisible by math:*block_size*'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3757,15 +4094,18 @@ functions:
   parameters:
   - name: inputs
     description: one or more input tensors
+    isRequired: true
   - name: axis
     description: 'axis along which the
 
       concatenation will be performed'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>, <xref:optional>, <xref:keyword only>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>, <xref:keyword only>
   return:
@@ -3801,8 +4141,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3828,8 +4170,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3855,10 +4199,13 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axes
     description: 'The axes to squeeze out (default: all static axes).'
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3876,8 +4223,10 @@ functions:
   parameters:
   - name: input
     description: class:*~cntk.ops.functions.Function* that outputs a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3890,10 +4239,12 @@ functions:
   parameters:
   - name: operands
     description: list of functions
+    isRequired: true
     types:
     - <xref:list>
   - name: name
     description: the name of the sum Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3929,18 +4280,22 @@ functions:
   parameters:
   - name: x
     description: tensor to be transposed
+    isRequired: true
   - name: axis1
     description: the axis to swap with `axis2`
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
   - name: axis2
     description: the axis to swap with `axis1`
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3959,8 +4314,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3986,22 +4343,27 @@ functions:
   parameters:
   - name: left
     description: left side matrix or tensor
+    isRequired: true
   - name: right
     description: right side matrix or tensor
+    isRequired: true
   - name: output_rank
     description: 'in case we have tensors as arguments, output_rank represents
 
       the number of axes to be collapsed in order to transform the tensors
 
       into matrices, perform the operation and then reshape back (explode the axes)'
+    isRequired: true
     types:
     - <xref:int>
   - name: infer_input_rank_to_map
     description: meant for internal use only. Always use default value
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -4032,10 +4394,13 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side matrix or vector
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -4065,9 +4430,11 @@ functions:
   parameters:
   - name: x
     description: a tensor with dynamic axis
+    isRequired: true
   - name: name
     description: '(str, optional, keyword only): the name of the Function instance
       in the network'
+    isRequired: true
   return:
     description: cntk.ops.functions.Function
   examples:
@@ -4106,18 +4473,22 @@ functions:
   parameters:
   - name: x
     description: the tensor (or its name) which is converted to a sequence
+    isRequired: true
   - name: sequence_lengths
     description: 'Optional tensor operand representing the sequence lengths.
 
       if unspecified, all sequences are assumed to be of the same length;
 
       i.e. dimensionality of the most significant static axis.'
+    isRequired: true
   - name: sequence_axis_name_prefix
     description: prefix of the new sequence axis name.
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -4133,14 +4504,17 @@ functions:
   parameters:
   - name: x
     description: the tensor (or its name) which is converted to a sequence
+    isRequired: true
   - name: dynamic_axes_like
     description: 'Tensor operand used to obtain the lengths of
 
       the generated sequences. The dynamic axes of the generated sequence
 
       tensor match the dynamic axes of the ''dynamic_axes_like'' operand.'
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -4162,14 +4536,18 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: k
     description: number of top items to return
+    isRequired: true
     types:
     - <xref:int>
   - name: axis
     description: 'axis along which to perform the operation (default: -1)'
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -4209,12 +4587,15 @@ functions:
   parameters:
   - name: x
     description: tensor to be transposed
+    isRequired: true
   - name: perm
     description: the permutation to apply to the axes.
+    isRequired: true
     types:
     - <xref:list>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -4244,9 +4625,11 @@ functions:
   parameters:
   - name: x
     description: a tensor with dynamic axis
+    isRequired: true
   - name: name
     description: '(str, optional, keyword only): the name of the Function instance
       in the network'
+    isRequired: true
   return:
     description: cntk.ops.functions.Function
   examples:
@@ -4271,20 +4654,27 @@ functions:
   parameters:
   - name: operand
     description: unpooling input
+    isRequired: true
   - name: pooling_input
     description: input to the corresponding pooling operation
+    isRequired: true
   - name: unpooling_type
     description: only <xref:cntk.ops.MAX_UNPOOLING> is supported now
+    isRequired: true
   - name: unpooling_window_shape
     description: dimensions of the unpooling window
+    isRequired: true
   - name: strides
     description: strides.
+    isRequired: true
     types:
     - <xref:default 1>
   - name: auto_padding
     description: automatic padding flags for each input dimension.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -4304,8 +4694,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:

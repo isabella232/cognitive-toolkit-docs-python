@@ -9,6 +9,7 @@ modules:
 - cntk.contrib.deeprl.tests.discretize_test
 - cntk.contrib.deeprl.tests.models_test
 - cntk.contrib.deeprl.tests.policy_gradient_test
+- cntk.contrib.deeprl.tests.preprocessing_test
 - cntk.contrib.deeprl.tests.qlearning_test
 - cntk.contrib.deeprl.tests.replay_memory_test
 - cntk.contrib.deeprl.tests.spaces

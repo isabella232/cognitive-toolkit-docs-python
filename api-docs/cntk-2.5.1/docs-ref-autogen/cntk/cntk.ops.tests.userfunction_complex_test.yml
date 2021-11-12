@@ -1,0 +1,79 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.userfunction_complex_test
+name: userfunction_complex_test
+fullName: cntk.ops.tests.userfunction_complex_test
+summary: Unit tests for function extension
+functions:
+- uid: cntk.ops.tests.userfunction_complex_test.dense_layer
+  name: dense_layer
+  signature: dense_layer(inp, output_dim, nonlinearity)
+  parameters:
+  - name: inp
+  - name: output_dim
+  - name: nonlinearity
+- uid: cntk.ops.tests.userfunction_complex_test.fully_connected_classifier_net
+  name: fully_connected_classifier_net
+  signature: fully_connected_classifier_net(inp, num_output_classes, hidden_layer_dim,
+    num_hidden_layers, nonlinearity)
+  parameters:
+  - name: inp
+  - name: num_output_classes
+  - name: hidden_layer_dim
+  - name: num_hidden_layers
+  - name: nonlinearity
+- uid: cntk.ops.tests.userfunction_complex_test.generate_random_data_sample
+  name: generate_random_data_sample
+  signature: generate_random_data_sample(sample_size, feature_dim, num_classes)
+  parameters:
+  - name: sample_size
+  - name: feature_dim
+  - name: num_classes
+- uid: cntk.ops.tests.userfunction_complex_test.linear_layer
+  name: linear_layer
+  signature: linear_layer(input_var, output_dim)
+  parameters:
+  - name: input_var
+  - name: output_dim
+- uid: cntk.ops.tests.userfunction_complex_test.measure_runtime
+  name: measure_runtime
+  signature: measure_runtime(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.userfunction_complex_test.mem_leak_check
+  name: mem_leak_check
+  signature: mem_leak_check(nonlinearity, num_hidden_layers, device_id, minibatch_size=1,
+    num_samples=10000)
+  parameters:
+  - name: nonlinearity
+  - name: num_hidden_layers
+  - name: device_id
+  - name: minibatch_size
+    defaultValue: '1'
+  - name: num_samples
+    defaultValue: '10000'
+- uid: cntk.ops.tests.userfunction_complex_test.print_training_progress
+  name: print_training_progress
+  signature: print_training_progress(trainer, mb, frequency)
+  parameters:
+  - name: trainer
+  - name: mb
+  - name: frequency
+- uid: cntk.ops.tests.userfunction_complex_test.test_ext_user_sigmoid
+  name: test_ext_user_sigmoid
+  signature: test_ext_user_sigmoid(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.userfunction_complex_test.train
+  name: train
+  signature: train(nonlinearity, num_hidden_layers, device_id, minibatch_size=10,
+    num_samples=1000)
+  parameters:
+  - name: nonlinearity
+  - name: num_hidden_layers
+  - name: device_id
+  - name: minibatch_size
+    defaultValue: '10'
+  - name: num_samples
+    defaultValue: '1000'
+classes:
+- cntk.ops.tests.userfunction_complex_test.MySigmoid

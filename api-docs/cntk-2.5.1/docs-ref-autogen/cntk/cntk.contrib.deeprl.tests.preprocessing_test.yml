@@ -1,0 +1,6 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.preprocessing_test
+name: preprocessing_test
+fullName: cntk.contrib.deeprl.tests.preprocessing_test
+classes:
+- cntk.contrib.deeprl.tests.preprocessing_test.AtariPreprocessingTest

@@ -14,10 +14,13 @@ functions:
   - name: output
     description: the computed posterior probability for a variable to be 1 from the
       network (typ. a `sigmoid`)
+    isRequired: true
   - name: target
     description: ground-truth label, 0 or 1
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -30,8 +33,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -73,16 +78,21 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: y
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: shift
     description: non-zero positive integer representing number of shift to generate
       a negative sample
+    isRequired: true
   - name: num_negative_samples
     description: number of negative samples to generate, a non-zero positive integer
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -118,21 +128,25 @@ functions:
   parameters:
   - name: output_vector
     description: the unscaled computed output values from the network
+    isRequired: true
   - name: target_vector
     description: 'usually it is one-hot vector where the hot bit
 
       corresponds to the label index. But it can be any probability
 
       distribution over the labels.'
+    isRequired: true
   - name: axis
     description: 'if given, cross entropy will be computed
 
       along this axis'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>, <xref:optional>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -168,12 +182,16 @@ functions:
   parameters:
   - name: input_var
     description: 'Variable with shape: [#,*](dim_x)'
+    isRequired: true
   - name: label_index
     description: 'index of label''s category:  [#,*](1)'
+    isRequired: true
   - name: label_dim
     description: number of the label categories
+    isRequired: true
   - name: label_classes
     description: number of classes of the label categories
+    isRequired: true
   return:
     description: 'the probability of the given label [#,*](1)
 
@@ -217,12 +235,16 @@ functions:
   parameters:
   - name: output
     description: score of each sample
+    isRequired: true
   - name: gain
     description: gain of each sample
+    isRequired: true
   - name: group
     description: group of each sample
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -284,18 +306,22 @@ functions:
       which inputs will be multiplied. Its shape must be
 
       (number of classes, dimension of input)'
+    isRequired: true
   - name: biases
     description: 'parameter (or variable in general) containing the biases that
 
       will be added to the product of weights and inputs. Its shape must be
 
       (number of classes, 1)'
+    isRequired: true
   - name: inputs
     description: 'vector of inputs to this layer. Multiplying by the weights and
 
       adding the biases gives the logits.'
+    isRequired: true
   - name: labels
     description: 'a one-hot vector with the ground-truth labels.'
+    isRequired: true
   - name: noise_distribution
     description: 'a constant vector with dimension equal to the number
 
@@ -304,10 +330,12 @@ functions:
       sum to 1. random labels will be drawn according to the normalized
 
       distribution.'
+    isRequired: true
   - name: num_samples
     description: 'number of random labels that will be drawn from the
 
       *noise_distribution*.'
+    isRequired: true
   - name: allow_duplicates
     description: 'boolean. If True (default), the random labels can
 
@@ -316,10 +344,13 @@ functions:
       but the quality of the approximations is slightly worse for the same
 
       number of samples.'
+    isRequired: true
   - name: seed
     description: random seed. The default value selects a unique random seed.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -403,12 +434,15 @@ functions:
   parameters:
   - name: output
     description: the output values from the network
+    isRequired: true
   - name: target
     description: 'it is usually a one-hot vector where the hot bit
 
       corresponds to the label index'
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -451,12 +485,16 @@ functions:
   parameters:
   - name: output
     description: the computed posterior probability from the network
+    isRequired: true
   - name: target
     description: ground-truth label, 0 or 1
+    isRequired: true
   - name: weight
     description: weight of each example
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:

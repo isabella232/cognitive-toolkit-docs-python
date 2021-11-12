@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: cntk.debugging.tests.userlearner_test.MySgdNaive
+name: MySgdNaive
+fullName: cntk.debugging.tests.userlearner_test.MySgdNaive
+module: cntk.debugging.tests.userlearner_test
+inheritances:
+- cntk.learners.UserLearner
+constructor:
+  syntax: MySgdNaive(parameters, lr_schedule)
+methods:
+- uid: cntk.debugging.tests.userlearner_test.MySgdNaive.update
+  name: update
+  signature: update(gradient_values, training_sample_count, sweep_end)
+  parameters:
+  - name: gradient_values
+    isRequired: true
+  - name: training_sample_count
+    isRequired: true
+  - name: sweep_end
+    isRequired: true

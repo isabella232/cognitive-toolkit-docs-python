@@ -1,14 +1,15 @@
 ### YamlMime:PythonClass
-uid: cntk.contrib.netopt.custom_convolution_ops.pySign
-name: pySign
-fullName: cntk.contrib.netopt.custom_convolution_ops.pySign
-module: cntk.contrib.netopt.custom_convolution_ops
+uid: cntk.ops.tests.userfunction_test.LambdaFunc
+name: LambdaFunc
+fullName: cntk.ops.tests.userfunction_test.LambdaFunc
+module: cntk.ops.tests.userfunction_test
 inheritances:
 - cntk.ops.functions.UserFunction
 constructor:
-  syntax: pySign(arg, name='pySign')
+  syntax: LambdaFunc(arg, when=<function LambdaFunc.<lambda>>, execute=<function LambdaFunc.<lambda>>,
+    name='')
 methods:
-- uid: cntk.contrib.netopt.custom_convolution_ops.pySign.backward
+- uid: cntk.ops.tests.userfunction_test.LambdaFunc.backward
   name: backward
   signature: backward(state, root_gradients)
   parameters:
@@ -16,7 +17,7 @@ methods:
     isRequired: true
   - name: root_gradients
     isRequired: true
-- uid: cntk.contrib.netopt.custom_convolution_ops.pySign.forward
+- uid: cntk.ops.tests.userfunction_test.LambdaFunc.forward
   name: forward
   signature: forward(argument, device=None, outputs_to_retain=None)
   parameters:
@@ -26,6 +27,6 @@ methods:
     defaultValue: None
   - name: outputs_to_retain
     defaultValue: None
-- uid: cntk.contrib.netopt.custom_convolution_ops.pySign.infer_outputs
+- uid: cntk.ops.tests.userfunction_test.LambdaFunc.infer_outputs
   name: infer_outputs
   signature: infer_outputs()

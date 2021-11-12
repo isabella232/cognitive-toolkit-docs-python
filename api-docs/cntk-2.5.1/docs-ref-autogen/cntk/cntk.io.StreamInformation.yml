@@ -13,21 +13,26 @@ constructor:
   parameters:
   - name: name
     description: name of the stream
+    isRequired: true
     types:
     - <xref:str>
   - name: stream_id
     description: unique ID of the stream
+    isRequired: true
     types:
     - <xref:int>
   - name: storage_format
     description: '''dense'' or ''sparse'''
+    isRequired: true
     types:
     - <xref:str>
   - name: dtype
     description: data type
+    isRequired: true
     types:
     - <xref:NumPy type>
   - name: shape
     description: shape of the elements
+    isRequired: true
     types:
     - <xref:tuple>

@@ -1,0 +1,186 @@
+### YamlMime:PythonModule
+uid: cntk.io.tests.io_tests
+name: io_tests
+fullName: cntk.io.tests.io_tests
+functions:
+- uid: cntk.io.tests.io_tests.check_default_config_keys
+  name: check_default_config_keys
+  signature: check_default_config_keys(d)
+  parameters:
+  - name: d
+- uid: cntk.io.tests.io_tests.create_config
+  name: create_config
+  signature: create_config(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.create_ctf_deserializer
+  name: create_ctf_deserializer
+  signature: create_ctf_deserializer(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.create_temp_file
+  name: create_temp_file
+  signature: create_temp_file(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.get_cbf_header
+  name: get_cbf_header
+  signature: get_cbf_header(streams)
+  parameters:
+  - name: streams
+- uid: cntk.io.tests.io_tests.test_base64_image_deserializer
+  name: test_base64_image_deserializer
+  signature: test_base64_image_deserializer(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_base64_is_equal_image
+  name: test_base64_is_equal_image
+  signature: test_base64_is_equal_image(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_compare_cbf_and_ctf
+  name: test_compare_cbf_and_ctf
+  signature: test_compare_cbf_and_ctf(input_pair, device_id, tmpdir)
+  parameters:
+  - name: input_pair
+  - name: device_id
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_composite_source_synced_transforms
+  name: test_composite_source_synced_transforms
+  signature: test_composite_source_synced_transforms(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_create_two_image_deserializers
+  name: test_create_two_image_deserializers
+  signature: test_create_two_image_deserializers(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_crop_dimensionality
+  name: test_crop_dimensionality
+  signature: test_crop_dimensionality(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_full_sweep_minibatch
+  name: test_full_sweep_minibatch
+  signature: test_full_sweep_minibatch(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_image
+  name: test_image
+  signature: test_image(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_image_with_crop_range
+  name: test_image_with_crop_range
+  signature: test_image_with_crop_range()
+- uid: cntk.io.tests.io_tests.test_index_caching
+  name: test_index_caching
+  signature: test_index_caching(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_is_tensor
+  name: test_is_tensor
+  signature: test_is_tensor(data, expected)
+  parameters:
+  - name: data
+  - name: expected
+- uid: cntk.io.tests.io_tests.test_large_minibatch
+  name: test_large_minibatch
+  signature: test_large_minibatch(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_max_samples
+  name: test_max_samples
+  signature: test_max_samples(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_max_samples_over_several_sweeps
+  name: test_max_samples_over_several_sweeps
+  signature: test_max_samples_over_several_sweeps(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_max_sweeps
+  name: test_max_sweeps
+  signature: test_max_sweeps(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_minibatch_defined_by_labels
+  name: test_minibatch_defined_by_labels
+  signature: test_minibatch_defined_by_labels(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_minibatch_source_config_constructor
+  name: test_minibatch_source_config_constructor
+  signature: test_minibatch_source_config_constructor(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_minibatch_source_config_other_properties
+  name: test_minibatch_source_config_other_properties
+  signature: test_minibatch_source_config_other_properties(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_minibatch_source_config_randomization
+  name: test_minibatch_source_config_randomization
+  signature: test_minibatch_source_config_randomization(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_minibatch_source_config_sweeps_and_samples
+  name: test_minibatch_source_config_sweeps_and_samples
+  signature: test_minibatch_source_config_sweeps_and_samples(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_one_sweep
+  name: test_one_sweep
+  signature: test_one_sweep(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_prefetch_with_unpacking
+  name: test_prefetch_with_unpacking
+  signature: test_prefetch_with_unpacking(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_random_seed
+  name: test_random_seed
+  signature: test_random_seed(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_sequence_conversion_dense
+  name: test_sequence_conversion_dense
+  signature: test_sequence_conversion_dense(idx, alias_tensor_map, expected)
+  parameters:
+  - name: idx
+  - name: alias_tensor_map
+  - name: expected
+- uid: cntk.io.tests.io_tests.test_sequence_conversion_exceptions
+  name: test_sequence_conversion_exceptions
+  signature: test_sequence_conversion_exceptions(idx, alias_tensor_map, expected)
+  parameters:
+  - name: idx
+  - name: alias_tensor_map
+  - name: expected
+- uid: cntk.io.tests.io_tests.test_text_format
+  name: test_text_format
+  signature: test_text_format(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_user_deserializer_sample_mode
+  name: test_user_deserializer_sample_mode
+  signature: test_user_deserializer_sample_mode()
+- uid: cntk.io.tests.io_tests.test_user_deserializer_sequence_mode
+  name: test_user_deserializer_sequence_mode
+  signature: test_user_deserializer_sequence_mode()
+- uid: cntk.io.tests.io_tests.test_usermbsource
+  name: test_usermbsource
+  signature: test_usermbsource(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.io.tests.io_tests.test_usermbsource_training
+  name: test_usermbsource_training
+  signature: test_usermbsource_training(tmpdir, with_checkpoint_impl)
+  parameters:
+  - name: tmpdir
+  - name: with_checkpoint_impl
+classes:
+- cntk.io.tests.io_tests.GenDeserializer
+- cntk.io.tests.io_tests.MyDataSource
+- cntk.io.tests.io_tests.MyDataSourceWithCheckpoint
