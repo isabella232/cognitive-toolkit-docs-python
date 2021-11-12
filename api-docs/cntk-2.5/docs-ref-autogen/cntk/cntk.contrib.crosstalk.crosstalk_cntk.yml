@@ -13,6 +13,7 @@ functions:
   parameters:
   - name: func
     description: The function to search parameter for
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
   - name: name

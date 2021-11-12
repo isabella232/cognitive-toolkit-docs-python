@@ -1,0 +1,32 @@
+### YamlMime:PythonModule
+uid: cntk.debugging.tests.userlearner_test
+name: userlearner_test
+fullName: cntk.debugging.tests.userlearner_test
+functions:
+- uid: cntk.debugging.tests.userlearner_test.ffnet
+  name: ffnet
+  signature: ffnet(optimizer, num_minibatches_to_train, learning_rate_func, lr_args,
+    learner_kwargs)
+  parameters:
+  - name: optimizer
+  - name: num_minibatches_to_train
+  - name: learning_rate_func
+  - name: lr_args
+  - name: learner_kwargs
+- uid: cntk.debugging.tests.userlearner_test.generate_random_data
+  name: generate_random_data
+  signature: generate_random_data(sample_size, feature_dim, num_classes)
+  parameters:
+  - name: sample_size
+  - name: feature_dim
+  - name: num_classes
+- uid: cntk.debugging.tests.userlearner_test.test_user_learner
+  name: test_user_learner
+  signature: test_user_learner(lr_func, lr_args, learner_kwargs)
+  parameters:
+  - name: lr_func
+  - name: lr_args
+  - name: learner_kwargs
+classes:
+- cntk.debugging.tests.userlearner_test.MySgdFast
+- cntk.debugging.tests.userlearner_test.MySgdNaive

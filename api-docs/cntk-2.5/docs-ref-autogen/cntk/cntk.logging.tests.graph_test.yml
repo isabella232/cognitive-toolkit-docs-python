@@ -1,0 +1,26 @@
+### YamlMime:PythonModule
+uid: cntk.logging.tests.graph_test
+name: graph_test
+fullName: cntk.logging.tests.graph_test
+functions:
+- uid: cntk.logging.tests.graph_test.test_depth_first_search
+  name: test_depth_first_search
+  summary: For graphs without blocks, depth should not make any difference.
+  signature: test_depth_first_search(depth)
+  parameters:
+  - name: depth
+- uid: cntk.logging.tests.graph_test.test_depth_first_search_blocks
+  name: test_depth_first_search_blocks
+  signature: test_depth_first_search_blocks(depth, prefix_count)
+  parameters:
+  - name: depth
+  - name: prefix_count
+- uid: cntk.logging.tests.graph_test.test_find_nodes
+  name: test_find_nodes
+  signature: test_find_nodes()
+- uid: cntk.logging.tests.graph_test.test_find_nodes_returning_proper_types
+  name: test_find_nodes_returning_proper_types
+  signature: test_find_nodes_returning_proper_types()
+- uid: cntk.logging.tests.graph_test.test_plot
+  name: test_plot
+  signature: test_plot()

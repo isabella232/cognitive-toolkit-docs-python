@@ -1,0 +1,13 @@
+### YamlMime:PythonClass
+uid: cntk.learners.tests.distributed_multi_learner_test.TwoDataParallelTrainer
+name: TwoDataParallelTrainer
+fullName: cntk.learners.tests.distributed_multi_learner_test.TwoDataParallelTrainer
+module: cntk.learners.tests.distributed_multi_learner_test
+inheritances:
+- cntk.learners.tests.distributed_multi_learner_test.SingleDataParallelTrainer
+constructor:
+  syntax: TwoDataParallelTrainer(frame_mode=False)
+methods:
+- uid: cntk.learners.tests.distributed_multi_learner_test.TwoDataParallelTrainer.create_trainer
+  name: create_trainer
+  signature: create_trainer()

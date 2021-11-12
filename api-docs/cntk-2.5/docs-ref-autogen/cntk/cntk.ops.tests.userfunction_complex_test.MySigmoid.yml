@@ -1,0 +1,31 @@
+### YamlMime:PythonClass
+uid: cntk.ops.tests.userfunction_complex_test.MySigmoid
+name: MySigmoid
+fullName: cntk.ops.tests.userfunction_complex_test.MySigmoid
+module: cntk.ops.tests.userfunction_complex_test
+inheritances:
+- cntk.ops.functions.UserFunction
+constructor:
+  syntax: MySigmoid(arg, name='MySigmoid')
+methods:
+- uid: cntk.ops.tests.userfunction_complex_test.MySigmoid.backward
+  name: backward
+  signature: backward(state, root_gradients)
+  parameters:
+  - name: state
+    isRequired: true
+  - name: root_gradients
+    isRequired: true
+- uid: cntk.ops.tests.userfunction_complex_test.MySigmoid.forward
+  name: forward
+  signature: forward(argument, device=None, outputs_to_retain=None)
+  parameters:
+  - name: argument
+    isRequired: true
+  - name: device
+    defaultValue: None
+  - name: outputs_to_retain
+    defaultValue: None
+- uid: cntk.ops.tests.userfunction_complex_test.MySigmoid.infer_outputs
+  name: infer_outputs
+  signature: infer_outputs()

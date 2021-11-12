@@ -22,8 +22,10 @@ functions:
   - name: initial_state
     description: tensor or scalar representing the initial value to be used when the
       input tensor is shifted in time.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -76,12 +78,14 @@ functions:
       number of state variables
 
       (typically 1 for GRU and plain RNNs, and 2 for LSTMs).'
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:equivalent Python function>
   - name: go_backwards
     description: if `True` then run the recurrence from the end of the sequence to
       the start.
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to False>
   - name: initial_state
@@ -91,6 +95,7 @@ functions:
       In the latter case, if the step function has more than 1 state variable,
 
       this parameter must be a tuple providing one initial state for every state variable.'
+    isRequired: true
     types:
     - <xref:scalar>
     - <xref:tensor without batch dimension;>
@@ -108,6 +113,7 @@ functions:
     - <xref:bool>, <xref:defaults to False>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -155,17 +161,20 @@ functions:
   parameters:
   - name: window_size
     description: maximum number of items in sequences. The *axis* will have this dimension.
+    isRequired: true
     types:
     - <xref:int>
   - name: axis
     description: 'axis along which the
 
       concatenation will be performed'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>, <xref:optional>, <xref:keyword only>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>, <xref:keyword only>
   - name: name
@@ -239,12 +248,14 @@ functions:
       number of state variables
 
       (typically 1 for GRU and plain RNNs, and 2 for LSTMs).'
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:equivalent Python function>
   - name: go_backwards
     description: if `True` then run the recurrence from the end of the sequence to
       the start.
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to False>
   - name: initial_state
@@ -254,6 +265,7 @@ functions:
       In the latter case, if the step function has more than 1 state variable,
 
       this parameter must be a tuple providing one initial state for every state variable.'
+    isRequired: true
     types:
     - <xref:scalar>
     - <xref:tensor without batch dimension;>
@@ -270,6 +282,7 @@ functions:
     - <xref:bool>, <xref:defaults to False>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -326,12 +339,14 @@ functions:
       number of state variables
 
       (typically 1 for GRU and plain RNNs, and 2 for LSTMs).'
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:equivalent Python function>
   - name: go_backwards
     description: if `True` then run the recurrence from the end of the sequence to
       the start.
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to False>
   - name: initial_state
@@ -353,10 +368,12 @@ functions:
 
       whereas if not given or `False`, only the first state variable is returned to
       the caller.'
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to False>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -466,6 +483,7 @@ functions:
 
       a tuple of N+1 outputs, where the first output is the value to emit, while the
       others are the state.'
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:equivalent Python function>
@@ -500,6 +518,7 @@ functions:
     - <xref:float>, <xref:defaults to 1>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:

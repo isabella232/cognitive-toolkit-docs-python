@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: cntk.learners.tests.bmuf_metrics_aggregation_test.SimpleBMUFTrainer
+name: SimpleBMUFTrainer
+fullName: cntk.learners.tests.bmuf_metrics_aggregation_test.SimpleBMUFTrainer
+module: cntk.learners.tests.bmuf_metrics_aggregation_test
+inheritances:
+- builtins.object
+constructor:
+  syntax: SimpleBMUFTrainer(frame_mode=False)
+methods:
+- uid: cntk.learners.tests.bmuf_metrics_aggregation_test.SimpleBMUFTrainer.create_model
+  name: create_model
+  signature: create_model(frame_mode=False)
+  parameters:
+  - name: frame_mode
+    defaultValue: 'False'
+- uid: cntk.learners.tests.bmuf_metrics_aggregation_test.SimpleBMUFTrainer.create_trainer
+  name: create_trainer
+  signature: create_trainer()

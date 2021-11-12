@@ -1,0 +1,72 @@
+### YamlMime:PythonModule
+uid: cntk.train.tests.trainer_test
+name: trainer_test
+fullName: cntk.train.tests.trainer_test
+functions:
+- uid: cntk.train.tests.trainer_test.test_disallow_seq_starts_with_Value_objects
+  name: test_disallow_seq_starts_with_Value_objects
+  signature: test_disallow_seq_starts_with_Value_objects()
+- uid: cntk.train.tests.trainer_test.test_empty_minibatch
+  name: test_empty_minibatch
+  signature: test_empty_minibatch()
+- uid: cntk.train.tests.trainer_test.test_epochsize_wrn_for_momentum_time_constant
+  name: test_epochsize_wrn_for_momentum_time_constant
+  signature: test_epochsize_wrn_for_momentum_time_constant()
+- uid: cntk.train.tests.trainer_test.test_epochsize_wrn_for_parameter_schedule
+  name: test_epochsize_wrn_for_parameter_schedule
+  signature: test_epochsize_wrn_for_parameter_schedule()
+- uid: cntk.train.tests.trainer_test.test_eval_one_hot_bad
+  name: test_eval_one_hot_bad
+  signature: test_eval_one_hot_bad(one_hot_batch, dim, device_id)
+  parameters:
+  - name: one_hot_batch
+  - name: dim
+  - name: device_id
+- uid: cntk.train.tests.trainer_test.test_eval_one_hot_seq
+  name: test_eval_one_hot_seq
+  signature: test_eval_one_hot_seq(one_hot_batch, device_id)
+  parameters:
+  - name: one_hot_batch
+  - name: device_id
+- uid: cntk.train.tests.trainer_test.test_eval_sparse_dense
+  name: test_eval_sparse_dense
+  signature: test_eval_sparse_dense(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.trainer_test.test_eval_sparse_no_seq
+  name: test_eval_sparse_no_seq
+  signature: test_eval_sparse_no_seq(batch_index_data, device_id)
+  parameters:
+  - name: batch_index_data
+  - name: device_id
+- uid: cntk.train.tests.trainer_test.test_eval_sparse_seq_1
+  name: test_eval_sparse_seq_1
+  signature: test_eval_sparse_seq_1(batch, device_id)
+  parameters:
+  - name: batch
+  - name: device_id
+- uid: cntk.train.tests.trainer_test.test_model_not_criterion_subset
+  name: test_model_not_criterion_subset
+  signature: test_model_not_criterion_subset()
+- uid: cntk.train.tests.trainer_test.test_model_one_output_of_multi_output_function
+  name: test_model_one_output_of_multi_output_function
+  signature: test_model_one_output_of_multi_output_function()
+- uid: cntk.train.tests.trainer_test.test_output_to_retain
+  name: test_output_to_retain
+  signature: test_output_to_retain()
+- uid: cntk.train.tests.trainer_test.test_scalar_input
+  name: test_scalar_input
+  signature: test_scalar_input()
+- uid: cntk.train.tests.trainer_test.test_scalar_loss_function
+  name: test_scalar_loss_function
+  signature: test_scalar_loss_function()
+- uid: cntk.train.tests.trainer_test.test_trainer
+  name: test_trainer
+  signature: test_trainer(tmpdir, no_eval_function)
+  parameters:
+  - name: tmpdir
+  - name: no_eval_function
+- uid: cntk.train.tests.trainer_test.test_trainer_with_some_params_not_learned
+  name: test_trainer_with_some_params_not_learned
+  signature: test_trainer_with_some_params_not_learned()

@@ -16,6 +16,7 @@ constructor:
   parameters:
   - name: inputs
     description: inputs to this function
+    isRequired: true
     types:
     - <xref:list>
   - name: as_numpy
@@ -24,10 +25,12 @@ constructor:
       converted from and to NumPy. Defaults to True. Specifying this as
 
       *False* passes the data as CNTK Value objects.'
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: name
     description: name of this function
+    isRequired: true
     types:
     - <xref:str>
 methods:

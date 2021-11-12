@@ -13,6 +13,7 @@ functions:
   parameters:
   - name: op
     description: operation to evaluate
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
   - name: arguments
@@ -69,6 +70,7 @@ functions:
       compute a backward ouptut. By default (None) all entries from
 
       ''arguments'' are used'
+    isRequired: true
     types:
     - <xref:dict>
     - <xref:None>
@@ -85,6 +87,7 @@ functions:
   parameters:
   - name: args
     description: input
+    isRequired: true
     types:
     - <xref:number>, <xref:list>, <xref:NumPy array>, <xref:cntk.variables.Variable,>
     - <xref:cntk.ops.functions.Function>

@@ -1,0 +1,51 @@
+### YamlMime:PythonModule
+uid: cntk.metrics.tests.metrics_test
+name: metrics_test
+fullName: cntk.metrics.tests.metrics_test
+summary: 'Unit tests for evaluation operations, each operation is tested for
+
+  the forward and the backward pass'
+functions:
+- uid: cntk.metrics.tests.metrics_test.test_edit_distance_error
+  name: test_edit_distance_error
+  signature: test_edit_distance_error(left_input, right_input, subPen, delPen, insPen,
+    squashInputs, tokensToIgnore, result, device_id, precision)
+  parameters:
+  - name: left_input
+  - name: right_input
+  - name: subPen
+  - name: delPen
+  - name: insPen
+  - name: squashInputs
+  - name: tokensToIgnore
+  - name: result
+  - name: device_id
+  - name: precision
+- uid: cntk.metrics.tests.metrics_test.test_ndcg
+  name: test_ndcg
+  signature: test_ndcg(value, output, gain, device_id, precision)
+  parameters:
+  - name: value
+  - name: output
+  - name: gain
+  - name: device_id
+  - name: precision
+- uid: cntk.metrics.tests.metrics_test.test_op_classification_error
+  name: test_op_classification_error
+  signature: test_op_classification_error(output_vector, target_vector, device_id,
+    precision)
+  parameters:
+  - name: output_vector
+  - name: target_vector
+  - name: device_id
+  - name: precision
+- uid: cntk.metrics.tests.metrics_test.test_op_classification_error_with_axis
+  name: test_op_classification_error_with_axis
+  signature: test_op_classification_error_with_axis(output_vector, target_vector,
+    axis, device_id, precision)
+  parameters:
+  - name: output_vector
+  - name: target_vector
+  - name: axis
+  - name: device_id
+  - name: precision

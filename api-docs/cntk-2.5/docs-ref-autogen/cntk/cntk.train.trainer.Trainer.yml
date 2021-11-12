@@ -20,6 +20,7 @@ constructor:
   parameters:
   - name: model
     description: root node of the function to train
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
   - name: criterion
@@ -30,11 +31,13 @@ constructor:
       is also
 
       accepted.'
+    isRequired: true
     types:
     - <xref:tuple of cntk.ops.functions.Function>
     - <xref:cntk.variables.Variable>
   - name: parameter_learners
     description: list of learners from <xref:cntk.learners>
+    isRequired: true
     types:
     - <xref:list>
   - name: progress_writers
@@ -43,6 +46,7 @@ constructor:
       progress writers from <xref:cntk.logging> to automatically track training
 
       progress.'
+    isRequired: true
     types:
     - <xref:progress writer>
     - <xref:list of them>

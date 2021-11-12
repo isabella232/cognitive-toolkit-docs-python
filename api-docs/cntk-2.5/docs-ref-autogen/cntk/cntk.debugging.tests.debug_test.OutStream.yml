@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: cntk.debugging.tests.debug_test.OutStream
+name: OutStream
+fullName: cntk.debugging.tests.debug_test.OutStream
+module: cntk.debugging.tests.debug_test
+inheritances:
+- builtins.object
+constructor:
+  syntax: OutStream()
+methods:
+- uid: cntk.debugging.tests.debug_test.OutStream.flush
+  name: flush
+  signature: flush()
+- uid: cntk.debugging.tests.debug_test.OutStream.write
+  name: write
+  signature: write(text)
+  parameters:
+  - name: text
+    isRequired: true

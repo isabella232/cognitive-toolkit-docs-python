@@ -1,0 +1,193 @@
+### YamlMime:PythonModule
+uid: cntk.train.tests.training_session_test
+name: training_session_test
+fullName: cntk.train.tests.training_session_test
+functions:
+- uid: cntk.train.tests.training_session_test.create_sample_model
+  name: create_sample_model
+  signature: create_sample_model(device, writer=None, lr_per_sample=<cntk.cntk_py.training_double_parameter_schedule;
+    proxy of <Swig Object of type 'std::shared_ptr< CNTK::TrainingParameterSchedule<
+    double > > *'> >)
+  parameters:
+  - name: device
+  - name: writer
+    defaultValue: None
+  - name: lr_per_sample
+    defaultValue: <cntk.cntk_py.training_double_parameter_schedule; proxy of <Swig
+      Object of type 'std::shared_ptr< CNTK::TrainingParameterSchedule< double > >
+      *' at 0x0000017A5F97C4B0> >
+- uid: cntk.train.tests.training_session_test.mb_source
+  name: mb_source
+  signature: mb_source(tmpdir, fileprefix, max_samples=18446744073709551614, ctf='0\\t|S0
+    3:1 |# <s>\\t|S1 3:1 |# <s>\\n0\\t|S0 4:1 |# A\\t|S1 32:1 |# ~AH\\n0\\t|S0 5:1
+    |# B\\t|S1 36:1 |# ~B\\n0\\t|S0 4:1 |# A\\t|S1 31:1 |# ~AE\\n0\\t|S0 7:1 |# D\\t|S1
+    38:1 |# ~D\\n0\\t|S0 12:1 |# I\\t|S1 47:1 |# ~IY\\n0\\t|S0 1:1 |# </s>\\t|S1 1:1
+    |# </s>\\n2\\t|S0 60:1 |# <s>\\t|S1 3:1 |# <s>\\n2\\t|S0 61:1 |# A\\t|S1 32:1
+    |# ~AH\\n3\\t|S0 60:1 |# <s>\\t|S1 3:1 |# <s>\\n3\\t|S0 61:1 |# A\\t|S1 32:1 |#
+    ~AH\\n4\\t|S0 60:1 |# <s>\\t|S1 3:1 |# <s>\\n4\\t|S0 61:1 |# A\\t|S1 32:1 |# ~AH\\n5\\t|S0
+    60:1 |# <s>\\t|S1 3:1 |# <s>\\n5\\t|S0 61:1 |# A\\t|S1 32:1 |# ~AH\\n6\\t|S0 60:1
+    |# <s>\\t|S1 3:1 |# <s>\\n6\\t|S0 61:1 |# A\\t|S1 32:1 |# ~AH\\n7\\t|S0 60:1 |#
+    <s>\\t|S1 3:1 |# <s>\\n7\\t|S0 61:1 |# A\\t|S1 32:1 |# ~AH\\n8\\t|S0 60:1 |# <s>\\t|S1
+    3:1 |# <s>\\n8\\t|S0 61:1 |# A\\t|S1 32:1 |# ~AH\\n9\\t|S0 60:1 |# <s>\\t|S1 3:1
+    |# <s>\\n9\\t|S0 61:1 |# A\\t|S1 32:1 |# ~AH\\n10\\t|S0 60:1 |# <s>\\t|S1 3:1
+    |# <s>\\n10\\t|S0 61:1 |# A\\t|S1 32:1 |# ~AH\\n', streams=['S0', 'S1'], max_sweeps=None)
+  parameters:
+  - name: tmpdir
+  - name: fileprefix
+  - name: max_samples
+    defaultValue: '18446744073709551614'
+  - name: ctf
+    defaultValue: "0\t|S0 3:1 |# <s>\t|S1 3:1 |# <s>\n0\t|S0 4:1 |# A\t|S1 32:1 |#\
+      \ ~AH\n0\t|S0 5:1 |# B\t|S1 36:1 |# ~B\n0\t|S0 4:1 |# A\t|S1 31:1 |# ~AE\n0\t\
+      |S0 7:1 |# D\t|S1 38:1 |# ~D\n0\t|S0 12:1 |# I\t|S1 47:1 |# ~IY\n0\t|S0 1:1\
+      \ |# </s>\t|S1 1:1 |# </s>\n2\t|S0 60:1 |# <s>\t|S1 3:1 |# <s>\n2\t|S0 61:1\
+      \ |# A\t|S1 32:1 |# ~AH\n3\t|S0 60:1 |# <s>\t|S1 3:1 |# <s>\n3\t|S0 61:1 |#\
+      \ A\t|S1 32:1 |# ~AH\n4\t|S0 60:1 |# <s>\t|S1 3:1 |# <s>\n4\t|S0 61:1 |# A\t\
+      |S1 32:1 |# ~AH\n5\t|S0 60:1 |# <s>\t|S1 3:1 |# <s>\n5\t|S0 61:1 |# A\t|S1 32:1\
+      \ |# ~AH\n6\t|S0 60:1 |# <s>\t|S1 3:1 |# <s>\n6\t|S0 61:1 |# A\t|S1 32:1 |#\
+      \ ~AH\n7\t|S0 60:1 |# <s>\t|S1 3:1 |# <s>\n7\t|S0 61:1 |# A\t|S1 32:1 |# ~AH\n\
+      8\t|S0 60:1 |# <s>\t|S1 3:1 |# <s>\n8\t|S0 61:1 |# A\t|S1 32:1 |# ~AH\n9\t|S0\
+      \ 60:1 |# <s>\t|S1 3:1 |# <s>\n9\t|S0 61:1 |# A\t|S1 32:1 |# ~AH\n10\t|S0 60:1\
+      \ |# <s>\t|S1 3:1 |# <s>\n10\t|S0 61:1 |# A\t|S1 32:1 |# ~AH\n"
+  - name: streams
+    defaultValue: '[''S0'', ''S1'']'
+  - name: max_sweeps
+    defaultValue: None
+- uid: cntk.train.tests.training_session_test.run_simple_training
+  name: run_simple_training
+  signature: run_simple_training(tmpdir, device_id, test_config_factory)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+  - name: test_config_factory
+- uid: cntk.train.tests.training_session_test.test_session_cross_validation_3_times
+  name: test_session_cross_validation_3_times
+  signature: test_session_cross_validation_3_times(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_cross_validation_3_times_checkpoints_2_save_all
+  name: test_session_cross_validation_3_times_checkpoints_2_save_all
+  signature: test_session_cross_validation_3_times_checkpoints_2_save_all(tmpdir,
+    device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_cross_validation_3_times_checkpoints_2_save_all_on_minibatch_unit
+  name: test_session_cross_validation_3_times_checkpoints_2_save_all_on_minibatch_unit
+  signature: test_session_cross_validation_3_times_checkpoints_2_save_all_on_minibatch_unit(tmpdir,
+    device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_cross_validation_3_times_checkpoints_2_save_all_on_sweep_unit
+  name: test_session_cross_validation_3_times_checkpoints_2_save_all_on_sweep_unit
+  signature: test_session_cross_validation_3_times_checkpoints_2_save_all_on_sweep_unit(tmpdir,
+    device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_cross_validation_3_times_on_minibatch_unit
+  name: test_session_cross_validation_3_times_on_minibatch_unit
+  signature: test_session_cross_validation_3_times_on_minibatch_unit(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_cross_validation_3_times_on_sweep_unit
+  name: test_session_cross_validation_3_times_on_sweep_unit
+  signature: test_session_cross_validation_3_times_on_sweep_unit(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_cross_validation_at_end
+  name: test_session_cross_validation_at_end
+  signature: test_session_cross_validation_at_end(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_cv_callback_3_times
+  name: test_session_cv_callback_3_times
+  signature: test_session_cv_callback_3_times(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_cv_callback_early_exit
+  name: test_session_cv_callback_early_exit
+  signature: test_session_cv_callback_early_exit(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_cv_callback_with_cross_validation_3_times
+  name: test_session_cv_callback_with_cross_validation_3_times
+  signature: test_session_cv_callback_with_cross_validation_3_times(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_max_samples
+  name: test_session_max_samples
+  signature: test_session_max_samples(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_progress_print
+  name: test_session_progress_print
+  signature: test_session_progress_print(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_progress_print_on_minibatch_unit
+  name: test_session_progress_print_on_minibatch_unit
+  signature: test_session_progress_print_on_minibatch_unit(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_progress_print_on_sweep_unit
+  name: test_session_progress_print_on_sweep_unit
+  signature: test_session_progress_print_on_sweep_unit(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_restart_from_checkpoint_preserve_all
+  name: test_session_restart_from_checkpoint_preserve_all
+  signature: test_session_restart_from_checkpoint_preserve_all(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_restart_from_end_checkpoint
+  name: test_session_restart_from_end_checkpoint
+  signature: test_session_restart_from_end_checkpoint(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_sanity_check
+  name: test_session_sanity_check
+  signature: test_session_sanity_check(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_with_legacy_api
+  name: test_session_with_legacy_api
+  signature: test_session_with_legacy_api(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_with_own_test_inputs
+  name: test_session_with_own_test_inputs
+  signature: test_session_with_own_test_inputs(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_session_with_test
+  name: test_session_with_test
+  signature: test_session_with_test(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.train.tests.training_session_test.test_training_session_with_infinite_samples
+  name: test_training_session_with_infinite_samples
+  signature: test_training_session_with_infinite_samples(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+classes:
+- cntk.train.tests.training_session_test.MockProgressWriter

@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: cntk.io.tests.io_tests.MyDataSourceWithCheckpoint
+name: MyDataSourceWithCheckpoint
+fullName: cntk.io.tests.io_tests.MyDataSourceWithCheckpoint
+module: cntk.io.tests.io_tests
+inheritances:
+- cntk.io.tests.io_tests.MyDataSource
+constructor:
+  syntax: MyDataSourceWithCheckpoint(f_dim, l_dim)
+methods:
+- uid: cntk.io.tests.io_tests.MyDataSourceWithCheckpoint.get_checkpoint_state
+  name: get_checkpoint_state
+  signature: get_checkpoint_state()
+- uid: cntk.io.tests.io_tests.MyDataSourceWithCheckpoint.restore_from_checkpoint
+  name: restore_from_checkpoint
+  signature: restore_from_checkpoint(state)
+  parameters:
+  - name: state
+    isRequired: true
