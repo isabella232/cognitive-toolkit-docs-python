@@ -44,6 +44,7 @@ functions:
   parameters:
   - name: model
     description: root node until which the nodes are to be debugged
+    isRequired: true
     types:
     - <xref:root node>
   - name: in_stream
@@ -57,6 +58,7 @@ functions:
     description: '*write()*
 
       and *flush()* will be called on it to output debug info to the user'
+    isRequired: true
     types:
     - <xref:object behaving like sys.stdout>, <xref:default stdout>
   - name: exit_func
@@ -77,10 +79,12 @@ functions:
   parameters:
   - name: root_op
     description: op of the graph to save
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
   - name: filename
     description: filename to store the model in.
+    isRequired: true
     types:
     - <xref:str>
 - uid: cntk.debugging.debug.set_checked_mode
@@ -94,6 +98,7 @@ functions:
   parameters:
   - name: enable
     description: whether to enable checked mode (with performance impact)
+    isRequired: true
     types:
     - <xref:bool>
 - uid: cntk.debugging.debug.set_computation_network_trace_level
@@ -107,5 +112,6 @@ functions:
   parameters:
   - name: level
     description: trace level
+    isRequired: true
     types:
     - <xref:int>

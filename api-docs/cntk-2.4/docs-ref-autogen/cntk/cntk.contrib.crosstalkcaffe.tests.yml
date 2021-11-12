@@ -3,3 +3,5 @@ uid: cntk.contrib.crosstalkcaffe.tests
 name: tests
 fullName: cntk.contrib.crosstalkcaffe.tests
 type: import
+modules:
+- cntk.contrib.crosstalkcaffe.tests.op2cntk_test

@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: cntk.debugging.tests.userlearner_test.MySgdFast
+name: MySgdFast
+fullName: cntk.debugging.tests.userlearner_test.MySgdFast
+module: cntk.debugging.tests.userlearner_test
+inheritances:
+- cntk.learners.UserLearner
+constructor:
+  syntax: MySgdFast(parameters, lr_schedule)
+methods:
+- uid: cntk.debugging.tests.userlearner_test.MySgdFast.update
+  name: update
+  signature: update(gradient_values, training_sample_count, sweep_end)
+  parameters:
+  - name: gradient_values
+    isRequired: true
+  - name: training_sample_count
+    isRequired: true
+  - name: sweep_end
+    isRequired: true

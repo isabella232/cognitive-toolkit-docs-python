@@ -34,6 +34,7 @@ functions:
   parameters:
   - name: x
     description: a scalar number or a tuple of length 2 that contains the 2D values.
+    isRequired: true
   return:
     description: A tuple of length two.
 - uid: cntk.internal.sanitize.sanitize_Function_attributes
@@ -51,6 +52,7 @@ functions:
       \ directly (will convert row- to col-major in case of static axis). \n\n* int:\
       \ if positive, use it as static axis. If negative, count from last to first\
       \ axis \n\n* None: denote all available axes"
+    isRequired: true
     types:
     - <xref:cntk.axis.Axis>
     - <xref:int>
@@ -65,6 +67,7 @@ functions:
       \ directly (will convert row- to col-major in case of static axis). \n\n* int:\
       \ if positive, use it as static axis. If negative, count from last to first\
       \ axis \n\n* None: denote all available axes"
+    isRequired: true
     types:
     - <xref:list of cntk.axis.Axis>
     - <xref:int>
@@ -78,6 +81,7 @@ functions:
     description: 'input variable into which
 
       `batch` is passed'
+    isRequired: true
     types:
     - <xref:cntk.variables.Variable>
   - name: batch
@@ -85,6 +89,7 @@ functions:
       \ the full minibatch \n\n* a list of NumPy arrays or SciPy sparse CSR matrices\
       \ each representing a sequence \n\n* a <xref:cntk.core.Value> object (e.g. returned\
       \ by <xref:cntk.core.Value.one_hot>)"
+    isRequired: true
   - name: seq_starts
     description: 'if None, every sequence is
 
@@ -95,6 +100,7 @@ functions:
       sequence is a new sequence (*True*) or a continuation of the sequence
 
       in the same slot of the previous minibatch (*False*)'
+    isRequired: true
     types:
     - <xref:list of bools>
     - <xref:None>
@@ -102,6 +108,7 @@ functions:
     description: 'device
 
       this value should be put on'
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>, <xref:default None>
   return:
@@ -149,6 +156,7 @@ functions:
   parameters:
   - name: arg
     description: input
+    isRequired: true
     types:
     - <xref:number>, <xref:NumPy array>, <xref:cntk.variables.Variable,>
     - <xref:cntk.ops.functions.Function>
@@ -175,6 +183,7 @@ functions:
       \ directly (will convert row- to col-major in case of static axis). \n\n* int:\
       \ if positive, use it as static axis. If negative, count from last to first\
       \ axis \n\n* None: denote all available axes"
+    isRequired: true
     types:
     - <xref:list of cntk.axis.Axis>
     - <xref:int>
@@ -200,6 +209,7 @@ functions:
     description: 'precision, if string
 
       it can be one of ''float'' ''float32, ''double'', ''float64'' or ''float16'''
+    isRequired: true
     types:
     - <xref:str>
     - <xref:np.float16>
@@ -223,6 +233,7 @@ functions:
   parameters:
   - name: x
     description: a scalar number or a tuple of length 2 that contains the range values.
+    isRequired: true
   return:
     description: 'A tuple of length two where the first element is less than or equal
       to the
@@ -243,21 +254,25 @@ functions:
   parameters:
   - name: shape
     description: shape of the value
+    isRequired: true
     types:
     - <xref:tuple>
   - name: value
     description: 'the value to
 
       be converted'
+    isRequired: true
     types:
     - <xref:None>
     - <xref:value that can be cast to NumPy array>
   - name: dtype
     description: data type (np.float32 or np.float64)
+    isRequired: true
   - name: device
     description: 'device this value should be put
 
       on'
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>
   return:
@@ -287,6 +302,7 @@ functions:
       is typically *op.arguments*, in
 
       <xref:cntk.ops.functions.Function.backward> pass it is *op.outputs*'
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
   - name: arguments
@@ -307,6 +323,7 @@ functions:
       \ a new one (*True*) or a continuation of the sequence in the same slot of the\
       \ previous minibatch (*False*). This will be applied to all batches. \n\nData\
       \ should be either NumPy arrays or a\n<xref:cntk.io.MinibatchData> instance."
+    isRequired: true
   - name: precision
     description: 'if string it can be
 

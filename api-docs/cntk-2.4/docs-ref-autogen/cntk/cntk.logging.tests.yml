@@ -4,4 +4,5 @@ name: tests
 fullName: cntk.logging.tests
 type: import
 modules:
+- cntk.logging.tests.graph_test
 - cntk.logging.tests.progress_print_test

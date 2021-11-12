@@ -40,6 +40,7 @@ constructor:
   parameters:
   - name: data_streams
     description: 'name-value pairs'
+    isRequired: true
   - name: max_samples
     description: 'The maximum number of samples
 
@@ -57,6 +58,7 @@ constructor:
       Click [here](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-epochSize-and-Python-epoch_size-in-CNTK)
 
       for a description of input and label samples.'
+    isRequired: true
     types:
     - <xref:int>, <xref:defaults to <xref:cntk.io.INFINITELY_REPEAT>>
 examples:

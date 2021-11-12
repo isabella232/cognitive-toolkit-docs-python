@@ -1,0 +1,33 @@
+### YamlMime:PythonClass
+uid: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientNeededForOutput
+name: MyPlusWithNoGradientNeededForOutput
+fullName: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientNeededForOutput
+module: cntk.ops.tests.userfunction_test
+inheritances:
+- cntk.ops.functions.UserFunction
+constructor:
+  syntax: MyPlusWithNoGradientNeededForOutput(arg1, arg2, name='f1')
+methods:
+- uid: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientNeededForOutput.backward
+  name: backward
+  signature: backward(state, root_gradients, input_gradients)
+  parameters:
+  - name: state
+    isRequired: true
+  - name: root_gradients
+    isRequired: true
+  - name: input_gradients
+    isRequired: true
+- uid: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientNeededForOutput.forward
+  name: forward
+  signature: forward(arguments, device=None, outputs_to_retain=None)
+  parameters:
+  - name: arguments
+    isRequired: true
+  - name: device
+    defaultValue: None
+  - name: outputs_to_retain
+    defaultValue: None
+- uid: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientNeededForOutput.infer_outputs
+  name: infer_outputs
+  signature: infer_outputs()

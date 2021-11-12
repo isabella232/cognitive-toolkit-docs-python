@@ -7,4 +7,13 @@ modules:
 - cntk.tests.attributes_test
 - cntk.tests.axis_test
 - cntk.tests.device_test
+- cntk.tests.function_test
+- cntk.tests.initializer_test
+- cntk.tests.misc_test
+- cntk.tests.onnx_format_test
+- cntk.tests.onnx_op_test
 - cntk.tests.persist_test
+- cntk.tests.tensor_test
+- cntk.tests.test_utils
+- cntk.tests.value_test
+- cntk.tests.variables_test

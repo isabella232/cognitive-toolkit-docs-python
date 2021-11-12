@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: cntk.ops.tests.userfunction_test.MyPlusPlus
+name: MyPlusPlus
+fullName: cntk.ops.tests.userfunction_test.MyPlusPlus
+module: cntk.ops.tests.userfunction_test
+inheritances:
+- cntk.ops.tests.userfunction_test.MyPlus
+constructor:
+  syntax: MyPlusPlus(inputs, name, state={})
+methods:
+- uid: cntk.ops.tests.userfunction_test.MyPlusPlus.deserialize
+  name: deserialize
+  signature: deserialize(*args)
+- uid: cntk.ops.tests.userfunction_test.MyPlusPlus.forward
+  name: forward
+  signature: forward(*args, **kwargs)
+- uid: cntk.ops.tests.userfunction_test.MyPlusPlus.serialize
+  name: serialize
+  signature: serialize()

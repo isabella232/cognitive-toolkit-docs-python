@@ -1,0 +1,19 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.comparison_test
+name: comparison_test
+fullName: cntk.ops.tests.comparison_test
+summary: 'Unit tests for comparison operations, each operation is tested for
+
+  the forward and the backward pass'
+functions:
+- uid: cntk.ops.tests.comparison_test.test_op_comparison
+  name: test_op_comparison
+  signature: test_op_comparison(left_operand, right_operand, cntk_function, numpy_function,
+    device_id, precision)
+  parameters:
+  - name: left_operand
+  - name: right_operand
+  - name: cntk_function
+  - name: numpy_function
+  - name: device_id
+  - name: precision

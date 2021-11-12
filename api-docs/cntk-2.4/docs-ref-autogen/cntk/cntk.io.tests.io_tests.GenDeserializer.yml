@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: cntk.io.tests.io_tests.GenDeserializer
+name: GenDeserializer
+fullName: cntk.io.tests.io_tests.GenDeserializer
+module: cntk.io.tests.io_tests
+inheritances:
+- cntk.io.UserDeserializer
+constructor:
+  syntax: GenDeserializer(stream_infos, num_chunks, num_sequences, max_sequence_len=1)
+methods:
+- uid: cntk.io.tests.io_tests.GenDeserializer.get_chunk
+  name: get_chunk
+  signature: get_chunk(chunk_id)
+  parameters:
+  - name: chunk_id
+    isRequired: true
+- uid: cntk.io.tests.io_tests.GenDeserializer.num_chunks
+  name: num_chunks
+  signature: num_chunks()
+- uid: cntk.io.tests.io_tests.GenDeserializer.stream_infos
+  name: stream_infos
+  signature: stream_infos()

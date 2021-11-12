@@ -1,0 +1,58 @@
+### YamlMime:PythonModule
+uid: cntk.tests.onnx_format_test
+name: onnx_format_test
+fullName: cntk.tests.onnx_format_test
+functions:
+- uid: cntk.tests.onnx_format_test.test_batch_norm_model
+  name: test_batch_norm_model
+  signature: test_batch_norm_model(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_format_test.test_conv3d_model
+  name: test_conv3d_model
+  signature: test_conv3d_model(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_format_test.test_conv_model
+  name: test_conv_model
+  signature: test_conv_model(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_format_test.test_convolution
+  name: test_convolution
+  signature: test_convolution(tmpdir, auto_padding)
+  parameters:
+  - name: tmpdir
+  - name: auto_padding
+- uid: cntk.tests.onnx_format_test.test_convolution_transpose
+  name: test_convolution_transpose
+  signature: test_convolution_transpose(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_format_test.test_dense_layer
+  name: test_dense_layer
+  signature: test_dense_layer(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_format_test.test_load_save_constant
+  name: test_load_save_constant
+  signature: test_load_save_constant(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_format_test.test_pooling
+  name: test_pooling
+  signature: test_pooling(tmpdir, auto_padding, pooling_type)
+  parameters:
+  - name: tmpdir
+  - name: auto_padding
+  - name: pooling_type
+- uid: cntk.tests.onnx_format_test.test_resnet_model
+  name: test_resnet_model
+  signature: test_resnet_model(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_format_test.test_vgg9_model
+  name: test_vgg9_model
+  signature: test_vgg9_model(tmpdir)
+  parameters:
+  - name: tmpdir

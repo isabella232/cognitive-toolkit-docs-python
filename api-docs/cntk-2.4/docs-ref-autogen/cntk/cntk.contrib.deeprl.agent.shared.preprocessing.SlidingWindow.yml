@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.agent.shared.preprocessing.SlidingWindow
+name: SlidingWindow
+fullName: cntk.contrib.deeprl.agent.shared.preprocessing.SlidingWindow
+module: cntk.contrib.deeprl.agent.shared.preprocessing
+inheritances:
+- cntk.contrib.deeprl.agent.shared.preprocessing.Preprocessing
+summary: Stack windowed inputs (x(t-m+1), ... x(t)).
+constructor:
+  syntax: SlidingWindow(input_shape, history_len=4, dtype=<class 'numpy.float32'>)
+methods:
+- uid: cntk.contrib.deeprl.agent.shared.preprocessing.SlidingWindow.output_shape
+  name: output_shape
+  summary: Return shape of preprocessed input.
+  signature: output_shape()
+- uid: cntk.contrib.deeprl.agent.shared.preprocessing.SlidingWindow.preprocess
+  name: preprocess
+  summary: Return preprocessed input x.
+  signature: preprocess(x)
+  parameters:
+  - name: x
+    isRequired: true
+- uid: cntk.contrib.deeprl.agent.shared.preprocessing.SlidingWindow.reset
+  name: reset
+  summary: Reset preprocessing pipeline for new episode.
+  signature: reset()
