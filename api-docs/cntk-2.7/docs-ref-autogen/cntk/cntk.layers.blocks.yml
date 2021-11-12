@@ -48,6 +48,7 @@ functions:
   parameters:
   - name: shape
     description: vector or tensor dimension of the output of this layer
+    isRequired: true
     types:
     - <xref:int>
     - <xref:tuple of ints>
@@ -60,16 +61,19 @@ functions:
     - <xref:tuple>, <xref:defaults to None>
   - name: activation
     description: function to apply at the end, e.g. *relu*
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>, <xref:defaults to cntk.ops.tanh>
   - name: init
     description: initial value of weights *W*
+    isRequired: true
     types:
     - <xref:scalar>
     - <xref:NumPy array>
     - <xref:cntk>, <xref:defaults to glorot_uniform>
   - name: init_bias
     description: initial value of weights *b*
+    isRequired: true
     types:
     - <xref:scalar>
     - <xref:NumPy array>
@@ -78,10 +82,12 @@ functions:
     description: 'if *True* then add a <xref:cntk.layers.blocks.Stabilizer>
 
       to all state-related projections (but not the data input)'
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to False>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:defaults to ''>
   return:
@@ -117,6 +123,7 @@ functions:
   parameters:
   - name: shape
     description: vector or tensor dimension of the output of this layer
+    isRequired: true
     types:
     - <xref:int>
     - <xref:tuple of ints>
@@ -129,19 +136,23 @@ functions:
     - <xref:tuple>, <xref:defaults to None>
   - name: activation
     description: function to apply at the end, e.g. *relu*
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>, <xref:defaults to cntk.ops.tanh>
   - name: use_peepholes
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to False>
   - name: init
     description: initial value of weights *W*
+    isRequired: true
     types:
     - <xref:scalar>
     - <xref:NumPy array>
     - <xref:cntk>, <xref:defaults to glorot_uniform>
   - name: init_bias
     description: initial value of weights *b*
+    isRequired: true
     types:
     - <xref:scalar>
     - <xref:NumPy array>
@@ -150,10 +161,12 @@ functions:
     description: 'if *True* then add a <xref:cntk.layers.blocks.Stabilizer>
 
       to all state-related projections (but not the data input)'
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to False>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:defaults to ''>
   return:
@@ -189,6 +202,7 @@ functions:
   parameters:
   - name: shape
     description: vector or tensor dimension of the output of this layer
+    isRequired: true
     types:
     - <xref:int>
     - <xref:tuple of ints>
@@ -201,16 +215,19 @@ functions:
     - <xref:tuple>, <xref:defaults to None>
   - name: activation
     description: function to apply at the end, e.g. *relu*
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>, <xref:defaults to signmoid>
   - name: init
     description: initial value of weights *W*
+    isRequired: true
     types:
     - <xref:scalar>
     - <xref:NumPy array>
     - <xref:cntk>, <xref:defaults to glorot_uniform>
   - name: init_bias
     description: initial value of weights *b*
+    isRequired: true
     types:
     - <xref:scalar>
     - <xref:NumPy array>
@@ -219,10 +236,12 @@ functions:
     description: 'if *True* then add a <xref:cntk.layers.blocks.Stabilizer>
 
       to all state-related projections (but not the data input)'
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to False>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:defaults to ''>
   return:
@@ -327,10 +346,12 @@ functions:
   - name: enable_self_stabilization
     description: a flag that allows to disable itself. Useful if this is a global
       default
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to False>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:defaults to ''>
   return:

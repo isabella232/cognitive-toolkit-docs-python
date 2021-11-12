@@ -95,11 +95,13 @@ functions:
   - name: '*args'
     description: types of arguments of the function that this decorator is applied
       to, in the same order.
+    isRequired: true
   - name: '**kwargs'
     description: 'types of arguments with optional names, e.g. *x=Tensor[42]*. Use
       this second form for
 
       longer argument lists.'
+    isRequired: true
 classes:
 - cntk.layers.typing.ParameterTensor
 - cntk.layers.typing.Sequence

@@ -1,0 +1,26 @@
+### YamlMime:PythonModule
+uid: cntk.conftest
+name: conftest
+fullName: cntk.conftest
+functions:
+- uid: cntk.conftest.add_namespace
+  name: add_namespace
+  signature: add_namespace(doctest_namespace)
+- uid: cntk.conftest.pytest_addoption
+  name: pytest_addoption
+  signature: pytest_addoption(parser)
+  parameters:
+  - name: parser
+- uid: cntk.conftest.pytest_generate_tests
+  name: pytest_generate_tests
+  signature: pytest_generate_tests(metafunc)
+  parameters:
+  - name: metafunc
+- uid: cntk.conftest.reset_random_seed
+  name: reset_random_seed
+  signature: reset_random_seed()
+- uid: cntk.conftest.version
+  name: version
+  signature: version(v)
+  parameters:
+  - name: v

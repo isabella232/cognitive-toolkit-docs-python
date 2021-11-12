@@ -18,22 +18,26 @@ constructor:
       None indicates that progress is logged only at the end of training.
 
       Must be a positive integer otherwise.'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:None>, <xref:default None>
   - name: log_dir
     description: directory where to create a TensorBoard event file.
+    isRequired: true
     types:
     - <xref:string>, <xref:default '.'>
   - name: rank
     description: 'rank of a worker when using distributed training, or *None* if
 
       training locally. If not *None*, event files will be created only by rank 0.'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:None>, <xref:default None>
   - name: model
     description: model graph to plot.
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:None>, <xref:default None>

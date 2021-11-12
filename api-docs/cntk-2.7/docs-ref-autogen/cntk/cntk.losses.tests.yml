@@ -4,4 +4,7 @@ name: tests
 fullName: cntk.losses.tests
 type: import
 modules:
+- cntk.losses.tests.cosine_distance_test
+- cntk.losses.tests.fmeasure_test
 - cntk.losses.tests.h_softmax_test
+- cntk.losses.tests.losses_test

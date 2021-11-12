@@ -1,0 +1,35 @@
+### YamlMime:PythonModule
+uid: cntk.layers.tests.higher_order_layers_test
+name: higher_order_layers_test
+fullName: cntk.layers.tests.higher_order_layers_test
+functions:
+- uid: cntk.layers.tests.higher_order_layers_test.test_failing_for_constructor
+  name: test_failing_for_constructor
+  signature: test_failing_for_constructor()
+- uid: cntk.layers.tests.higher_order_layers_test.test_for_constructor_layer
+  name: test_for_constructor_layer
+  signature: test_for_constructor_layer(layers_count, dense_units)
+  parameters:
+  - name: layers_count
+  - name: dense_units
+- uid: cntk.layers.tests.higher_order_layers_test.test_resnet_block
+  name: test_resnet_block
+  signature: test_resnet_block(input_data)
+  parameters:
+  - name: input_data
+- uid: cntk.layers.tests.higher_order_layers_test.test_sequential_clique_with_functions
+  name: test_sequential_clique_with_functions
+  signature: test_sequential_clique_with_functions(input_data)
+  parameters:
+  - name: input_data
+- uid: cntk.layers.tests.higher_order_layers_test.test_sequential_clique_with_layers
+  name: test_sequential_clique_with_layers
+  signature: test_sequential_clique_with_layers(input_elements, expected)
+  parameters:
+  - name: input_elements
+  - name: expected
+- uid: cntk.layers.tests.higher_order_layers_test.test_sequential_constructor
+  name: test_sequential_constructor
+  signature: test_sequential_constructor(input_data)
+  parameters:
+  - name: input_data

@@ -1,0 +1,9 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.agent.shared.preprocessing
+name: preprocessing
+fullName: cntk.contrib.deeprl.agent.shared.preprocessing
+summary: Base class for defining preprocessing, as well as two concrete examples.
+classes:
+- cntk.contrib.deeprl.agent.shared.preprocessing.AtariPreprocessing
+- cntk.contrib.deeprl.agent.shared.preprocessing.Preprocessing
+- cntk.contrib.deeprl.agent.shared.preprocessing.SlidingWindow

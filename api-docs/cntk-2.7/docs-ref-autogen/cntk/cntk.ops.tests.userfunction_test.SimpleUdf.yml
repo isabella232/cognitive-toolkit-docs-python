@@ -1,0 +1,48 @@
+### YamlMime:PythonClass
+uid: cntk.ops.tests.userfunction_test.SimpleUdf
+name: SimpleUdf
+fullName: cntk.ops.tests.userfunction_test.SimpleUdf
+module: cntk.ops.tests.userfunction_test
+inheritances:
+- cntk.ops.functions.UserFunction
+constructor:
+  syntax: SimpleUdf(x, name='SimpleUdf')
+methods:
+- uid: cntk.ops.tests.userfunction_test.SimpleUdf.backward
+  name: backward
+  signature: backward(state, root_gradients, variables=None, as_numpy=True)
+  parameters:
+  - name: state
+    isRequired: true
+  - name: root_gradients
+    isRequired: true
+  - name: variables
+    defaultValue: None
+  - name: as_numpy
+    defaultValue: 'True'
+- uid: cntk.ops.tests.userfunction_test.SimpleUdf.deserialize
+  name: deserialize
+  signature: deserialize(inputs, name, state)
+  parameters:
+  - name: inputs
+    isRequired: true
+  - name: name
+    isRequired: true
+  - name: state
+    isRequired: true
+- uid: cntk.ops.tests.userfunction_test.SimpleUdf.forward
+  name: forward
+  signature: forward(arguments, device=None, as_numpy=True)
+  parameters:
+  - name: arguments
+    isRequired: true
+  - name: device
+    defaultValue: None
+  - name: as_numpy
+    defaultValue: 'True'
+- uid: cntk.ops.tests.userfunction_test.SimpleUdf.infer_outputs
+  name: infer_outputs
+  signature: infer_outputs()
+- uid: cntk.ops.tests.userfunction_test.SimpleUdf.serialize
+  name: serialize
+  signature: serialize()

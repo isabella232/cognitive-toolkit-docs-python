@@ -3,3 +3,8 @@ uid: cntk.learners.tests
 name: tests
 fullName: cntk.learners.tests
 type: import
+modules:
+- cntk.learners.tests.bmuf_metrics_aggregation_test
+- cntk.learners.tests.distributed_learner_test
+- cntk.learners.tests.distributed_multi_learner_test
+- cntk.learners.tests.learner_test

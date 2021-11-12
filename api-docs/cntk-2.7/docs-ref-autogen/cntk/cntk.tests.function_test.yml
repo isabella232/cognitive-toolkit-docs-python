@@ -1,0 +1,20 @@
+### YamlMime:PythonModule
+uid: cntk.tests.function_test
+name: function_test
+fullName: cntk.tests.function_test
+functions:
+- uid: cntk.tests.function_test.test_0d_data_1d_sample_shape
+  name: test_0d_data_1d_sample_shape
+  signature: test_0d_data_1d_sample_shape()
+- uid: cntk.tests.function_test.test_1d_NDArrayView_copy
+  name: test_1d_NDArrayView_copy
+  signature: test_1d_NDArrayView_copy()
+- uid: cntk.tests.function_test.test_clone_freeze
+  name: test_clone_freeze
+  signature: test_clone_freeze()
+- uid: cntk.tests.function_test.test_outputs
+  name: test_outputs
+  signature: test_outputs()
+- uid: cntk.tests.function_test.test_sequences_packed_in_single_ndarray
+  name: test_sequences_packed_in_single_ndarray
+  signature: test_sequences_packed_in_single_ndarray()

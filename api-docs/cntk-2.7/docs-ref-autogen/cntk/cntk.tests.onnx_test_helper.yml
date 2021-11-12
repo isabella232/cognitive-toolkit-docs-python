@@ -1,0 +1,105 @@
+### YamlMime:PythonModule
+uid: cntk.tests.onnx_test_helper
+name: onnx_test_helper
+fullName: cntk.tests.onnx_test_helper
+functions:
+- uid: cntk.tests.onnx_test_helper.compare_model_for_output_data_transpose
+  name: compare_model_for_output_data_transpose
+  signature: compare_model_for_output_data_transpose(model_output, loaded_model_output)
+  parameters:
+  - name: model_output
+  - name: loaded_model_output
+- uid: cntk.tests.onnx_test_helper.compare_output_for_data_transpose
+  name: compare_output_for_data_transpose
+  signature: compare_output_for_data_transpose(variable, onnx_value_info_proto)
+  parameters:
+  - name: variable
+  - name: onnx_value_info_proto
+- uid: cntk.tests.onnx_test_helper.create_and_populate_onnx_test_case_with_model_conversion
+  name: create_and_populate_onnx_test_case_with_model_conversion
+  signature: create_and_populate_onnx_test_case_with_model_conversion(model, tmpdir,
+    name, loaded_model, resave=True, bypass_load_into_cntk=False, use_external_files_to_store_parameters=False)
+  parameters:
+  - name: model
+  - name: tmpdir
+  - name: name
+  - name: loaded_model
+  - name: resave
+    defaultValue: 'True'
+  - name: bypass_load_into_cntk
+    defaultValue: 'False'
+  - name: use_external_files_to_store_parameters
+    defaultValue: 'False'
+- uid: cntk.tests.onnx_test_helper.create_or_purge_folder
+  name: create_or_purge_folder
+  signature: create_or_purge_folder(test_onnx_path, create=True)
+  parameters:
+  - name: test_onnx_path
+  - name: create
+    defaultValue: 'True'
+- uid: cntk.tests.onnx_test_helper.find_onnx_value_info_proto_with_matching_name
+  name: find_onnx_value_info_proto_with_matching_name
+  signature: find_onnx_value_info_proto_with_matching_name(onnx_outputs, cntk_output_uid,
+    fallback_onnx_output)
+  parameters:
+  - name: onnx_outputs
+  - name: cntk_output_uid
+  - name: fallback_onnx_output
+- uid: cntk.tests.onnx_test_helper.get_onnx_free_dimension_index
+  name: get_onnx_free_dimension_index
+  signature: get_onnx_free_dimension_index(onnx_value_info_proto)
+  parameters:
+  - name: onnx_value_info_proto
+- uid: cntk.tests.onnx_test_helper.get_sequence_axis_index
+  name: get_sequence_axis_index
+  signature: get_sequence_axis_index(output_variable)
+  parameters:
+  - name: output_variable
+- uid: cntk.tests.onnx_test_helper.is_list_of_sparse
+  name: is_list_of_sparse
+  signature: is_list_of_sparse(data)
+  parameters:
+  - name: data
+- uid: cntk.tests.onnx_test_helper.save_cntk_data_as_onnx_tensor
+  name: save_cntk_data_as_onnx_tensor
+  signature: save_cntk_data_as_onnx_tensor(file_path, variable, data, onnx_value_info_proto)
+  parameters:
+  - name: file_path
+  - name: variable
+  - name: data
+  - name: onnx_value_info_proto
+- uid: cntk.tests.onnx_test_helper.save_onnx_model_with_validation_data
+  name: save_onnx_model_with_validation_data
+  signature: save_onnx_model_with_validation_data(tmpdir, model, data, name, device=None,
+    use_external_files_to_store_parameters=False)
+  parameters:
+  - name: tmpdir
+  - name: model
+  - name: data
+  - name: name
+  - name: device
+    defaultValue: None
+  - name: use_external_files_to_store_parameters
+    defaultValue: 'False'
+- uid: cntk.tests.onnx_test_helper.save_test_data
+  name: save_test_data
+  signature: save_test_data(model, onnx_model, test_data_path, input_data, output_data,
+    name, tmpdir)
+  parameters:
+  - name: model
+  - name: onnx_model
+  - name: test_data_path
+  - name: input_data
+  - name: output_data
+  - name: name
+  - name: tmpdir
+- uid: cntk.tests.onnx_test_helper.sparse_to_dense
+  name: sparse_to_dense
+  signature: sparse_to_dense(sparse_data)
+  parameters:
+  - name: sparse_data
+- uid: cntk.tests.onnx_test_helper.transpose_dynamic_axis
+  name: transpose_dynamic_axis
+  signature: transpose_dynamic_axis(data)
+  parameters:
+  - name: data

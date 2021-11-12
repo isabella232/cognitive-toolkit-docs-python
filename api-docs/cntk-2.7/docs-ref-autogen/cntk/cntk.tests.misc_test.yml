@@ -1,0 +1,68 @@
+### YamlMime:PythonModule
+uid: cntk.tests.misc_test
+name: misc_test
+fullName: cntk.tests.misc_test
+functions:
+- uid: cntk.tests.misc_test.get_dropout_rng_seed
+  name: get_dropout_rng_seed
+  signature: get_dropout_rng_seed(seed=None)
+  parameters:
+  - name: seed
+    defaultValue: None
+- uid: cntk.tests.misc_test.get_random_parameter_value
+  name: get_random_parameter_value
+  signature: get_random_parameter_value(initializer, seed=None)
+  parameters:
+  - name: initializer
+  - name: seed
+    defaultValue: None
+- uid: cntk.tests.misc_test.is_locked
+  name: is_locked
+  signature: is_locked(device)
+  parameters:
+  - name: device
+- uid: cntk.tests.misc_test.is_locked_cross_process
+  name: is_locked_cross_process
+  signature: is_locked_cross_process(queue, device_id)
+  parameters:
+  - name: queue
+  - name: device_id
+- uid: cntk.tests.misc_test.test_all_devices
+  name: test_all_devices
+  signature: test_all_devices()
+- uid: cntk.tests.misc_test.test_callstack1
+  name: test_callstack1
+  signature: test_callstack1()
+- uid: cntk.tests.misc_test.test_callstack2
+  name: test_callstack2
+  signature: test_callstack2()
+- uid: cntk.tests.misc_test.test_cpu_and_gpu_devices
+  name: test_cpu_and_gpu_devices
+  signature: test_cpu_and_gpu_devices()
+- uid: cntk.tests.misc_test.test_gpu_properties
+  name: test_gpu_properties
+  signature: test_gpu_properties()
+- uid: cntk.tests.misc_test.test_rng_seeding_in_dropout
+  name: test_rng_seeding_in_dropout
+  signature: test_rng_seeding_in_dropout()
+- uid: cntk.tests.misc_test.test_rng_seeding_in_parameter_initialization
+  name: test_rng_seeding_in_parameter_initialization
+  signature: test_rng_seeding_in_parameter_initialization()
+- uid: cntk.tests.misc_test.test_set_cpu_as_default_device
+  name: test_set_cpu_as_default_device
+  signature: test_set_cpu_as_default_device()
+- uid: cntk.tests.misc_test.test_set_excluded_devices
+  name: test_set_excluded_devices
+  signature: test_set_excluded_devices()
+- uid: cntk.tests.misc_test.test_set_gpu_as_default_device
+  name: test_set_gpu_as_default_device
+  signature: test_set_gpu_as_default_device()
+- uid: cntk.tests.misc_test.test_setting_py_value_to_dict
+  name: test_setting_py_value_to_dict
+  signature: test_setting_py_value_to_dict()
+- uid: cntk.tests.misc_test.test_setting_trace_level
+  name: test_setting_trace_level
+  signature: test_setting_trace_level()
+- uid: cntk.tests.misc_test.test_use_default_device
+  name: test_use_default_device
+  signature: test_use_default_device()

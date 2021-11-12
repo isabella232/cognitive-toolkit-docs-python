@@ -1,0 +1,31 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.block_test
+name: block_test
+fullName: cntk.ops.tests.block_test
+summary: Unit tests for as_block operation, only forward pass is tested
+functions:
+- uid: cntk.ops.tests.block_test.test_as_block_with_function_in_arguments_map
+  name: test_as_block_with_function_in_arguments_map
+  signature: test_as_block_with_function_in_arguments_map()
+- uid: cntk.ops.tests.block_test.test_block_clone
+  name: test_block_clone
+  signature: test_block_clone()
+- uid: cntk.ops.tests.block_test.test_block_with_duplicate_inputs
+  name: test_block_with_duplicate_inputs
+  signature: test_block_with_duplicate_inputs()
+- uid: cntk.ops.tests.block_test.test_combine_op_as_block
+  name: test_combine_op_as_block
+  signature: test_combine_op_as_block()
+- uid: cntk.ops.tests.block_test.test_op_as_block
+  name: test_op_as_block
+  signature: test_op_as_block(input_shape, output_shape, expected_output_shape, device_id,
+    precision)
+  parameters:
+  - name: input_shape
+  - name: output_shape
+  - name: expected_output_shape
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.block_test.test_root_block_clone
+  name: test_root_block_clone
+  signature: test_root_block_clone()

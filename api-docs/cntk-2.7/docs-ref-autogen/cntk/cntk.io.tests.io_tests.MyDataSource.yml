@@ -1,0 +1,25 @@
+### YamlMime:PythonClass
+uid: cntk.io.tests.io_tests.MyDataSource
+name: MyDataSource
+fullName: cntk.io.tests.io_tests.MyDataSource
+module: cntk.io.tests.io_tests
+inheritances:
+- cntk.io.UserMinibatchSource
+constructor:
+  syntax: MyDataSource(f_dim, l_dim)
+methods:
+- uid: cntk.io.tests.io_tests.MyDataSource.next_minibatch
+  name: next_minibatch
+  signature: next_minibatch(num_samples, number_of_workers, worker_rank, device=None)
+  parameters:
+  - name: num_samples
+    isRequired: true
+  - name: number_of_workers
+    isRequired: true
+  - name: worker_rank
+    isRequired: true
+  - name: device
+    defaultValue: None
+- uid: cntk.io.tests.io_tests.MyDataSource.stream_infos
+  name: stream_infos
+  signature: stream_infos()

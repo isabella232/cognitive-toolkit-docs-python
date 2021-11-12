@@ -1,0 +1,59 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.non_diff_test
+name: non_diff_test
+fullName: cntk.ops.tests.non_diff_test
+summary: Unit tests for operations that are not differentiable.
+functions:
+- uid: cntk.ops.tests.non_diff_test.test_eye_like
+  name: test_eye_like
+  signature: test_eye_like(operand, sparse_output, device_id, precision)
+  parameters:
+  - name: operand
+  - name: sparse_output
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_diff_test.test_input_variable
+  name: test_input_variable
+  signature: test_input_variable()
+- uid: cntk.ops.tests.non_diff_test.test_ones_like
+  name: test_ones_like
+  signature: test_ones_like(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_diff_test.test_op_ceil
+  name: test_op_ceil
+  signature: test_op_ceil(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_diff_test.test_op_floor
+  name: test_op_floor
+  signature: test_op_floor(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_diff_test.test_op_round
+  name: test_op_round
+  signature: test_op_round(operand, expected, device_id, precision)
+  parameters:
+  - name: operand
+  - name: expected
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_diff_test.test_zeros_like
+  name: test_zeros_like
+  signature: test_zeros_like(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_diff_test.test_zeros_like_empty_shape
+  name: test_zeros_like_empty_shape
+  signature: test_zeros_like_empty_shape(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision

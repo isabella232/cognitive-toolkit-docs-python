@@ -43,55 +43,65 @@ functions:
     description: 'list of network parameters to tune.
 
       These can be obtained by the root operator''s `parameters`.'
+    isRequired: true
     types:
     - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of cntk.learners.learning_parameter_schedule>
   - name: rho
     description: exponential smooth factor for each minibatch.
+    isRequired: true
     types:
     - <xref:float>
   - name: epsilon
     description: epsilon for sqrt.
+    isRequired: true
     types:
     - <xref:float>
   - name: l1_regularization_weight
     description: 'the L1 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: l2_regularization_weight
     description: 'the L2 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gaussian_noise_injection_std_dev
     description: 'the standard deviation
 
       of the Gaussian noise added to parameters post update, defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_threshold_per_sample
     description: 'clipping threshold
 
       per sample, defaults to infinity'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_with_truncation
     description: 'use gradient clipping
 
       with truncation'
+    isRequired: true
     types:
     - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: minibatch_size
@@ -112,10 +122,12 @@ functions:
 
       will have the learner apply as it is preventing CNTK performing any hyper-parameter
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:optional>, <xref:int>
   return:
@@ -137,50 +149,59 @@ functions:
     description: 'list of network parameters to tune.
 
       These can be obtained by the root operator''s `parameters`.'
+    isRequired: true
     types:
     - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of cntk.learners.learning_parameter_schedule>
   - name: need_ave_multiplier
+    isRequired: true
     types:
     - <xref:bool>, <xref:default>
   - name: l1_regularization_weight
     description: 'the L1 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: l2_regularization_weight
     description: 'the L2 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gaussian_noise_injection_std_dev
     description: 'the standard deviation
 
       of the Gaussian noise added to parameters post update, defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_threshold_per_sample
     description: 'clipping threshold
 
       per sample, defaults to infinity'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_with_truncation
     description: 'use gradient clipping
 
       with truncation'
+    isRequired: true
     types:
     - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: minibatch_size
@@ -201,10 +222,12 @@ functions:
 
       will have the learner apply as it is preventing CNTK performing any hyper-parameter
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:optional>, <xref:int>
   return:
@@ -231,12 +254,14 @@ functions:
     description: 'list of network parameters to tune.
 
       These can be obtained by the root operator''s `parameters`.'
+    isRequired: true
     types:
     - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of cntk.learners.learning_parameter_schedule>
   - name: momentum
@@ -244,57 +269,67 @@ functions:
       Adam paper [1].
 
       For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of cntk.learners.momentum_schedule>
   - name: unit_gain
     description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
       to the value returned by <xref:cntk.learners.default_unit_gain_value>.'
+    isRequired: true
   - name: variance_momentum
     description: 'variance momentum schedule.
 
       Note that this is the beta2 parameter in the Adam paper [1]. Defaults to `momentum_schedule_per_sample(0.9999986111120757)`.'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of cntk.learners.momentum_schedule>
   - name: l1_regularization_weight
     description: 'the L1 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: l2_regularization_weight
     description: 'the L2 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gaussian_noise_injection_std_dev
     description: 'the standard deviation
 
       of the Gaussian noise added to parameters post update, defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_threshold_per_sample
     description: 'clipping threshold
 
       per sample, defaults to infinity'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_with_truncation
     description: 'use gradient clipping
 
       with truncation'
+    isRequired: true
     types:
     - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: epsilon
     description: 'numerical stability constant,
 
       defaults to 1e-8'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: adamax
@@ -302,6 +337,7 @@ functions:
       of L2. Defaults
 
       to False'
+    isRequired: true
   - name: minibatch_size
     description: 'The minibatch size that the learner''s parameters are designed or
       pre-tuned for. This
@@ -320,11 +356,13 @@ functions:
 
       will have the learner apply as it is preventing CNTK performing any hyper-parameter
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate, momentum
       and variance_momentum. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:optional>, <xref:int>
   return:
@@ -351,63 +389,74 @@ functions:
     description: 'list of network parameters to tune.
 
       These can be obtained by the root operator''s `parameters`.'
+    isRequired: true
     types:
     - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of cntk.learners.learning_parameter_schedule>
   - name: momentum
     description: 'momentum schedule.
 
       For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of cntk.learners.momentum_schedule>
   - name: unit_gain
     description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
       to the value returned by <xref:cntk.learners.default_unit_gain_value>.'
+    isRequired: true
   - name: variance_momentum
     description: 'variance momentum schedule. Defaults
 
       to `momentum_schedule_per_sample(0.9999986111120757)`.'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of cntk.learners.momentum_schedule>
   - name: l1_regularization_weight
     description: 'the L1 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: l2_regularization_weight
     description: 'the L2 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gaussian_noise_injection_std_dev
     description: 'the standard deviation
 
       of the Gaussian noise added to parameters post update, defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_threshold_per_sample
     description: 'clipping threshold
 
       per sample, defaults to infinity'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_with_truncation
     description: 'use gradient clipping
 
       with truncation'
+    isRequired: true
     types:
     - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: minibatch_size
@@ -428,11 +477,13 @@ functions:
 
       will have the learner apply as it is preventing CNTK performing any hyper-parameter
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate, momentum
       and variance_momentum. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:optional>, <xref:int>
   return:
@@ -463,6 +514,7 @@ functions:
 
       (`epoch_size` * num_epoch_i)-th sample (taking num_epoch_0 = 0 as a special
       initialization).'
+    isRequired: true
     types:
     - <xref:float>
     - <xref:list>
@@ -475,6 +527,7 @@ functions:
 
       to match the designed effect. If it is not specified, CNTK will set to the special
       value <xref:cntk.learners.IGNORE>.'
+    isRequired: true
     types:
     - <xref:int>
   - name: epoch_size
@@ -491,6 +544,7 @@ functions:
       change their values on the sweep-by-sweep basis specified by the
 
       `schedule`.'
+    isRequired: true
     types:
     - <xref:optional>, <xref:int>
   return:
@@ -520,6 +574,7 @@ functions:
 
       (`epoch_size` * num_epoch_i)-th sample (taking num_epoch_0 = 0 as a special
       initialization).'
+    isRequired: true
     types:
     - <xref:float>
     - <xref:list>
@@ -537,6 +592,7 @@ functions:
       change their values on the sweep-by-sweep basis specified by the
 
       `schedule`.'
+    isRequired: true
     types:
     - <xref:optional>, <xref:int>
   return:
@@ -556,6 +612,7 @@ functions:
     description: 'see parameter `schedule` in
 
       <xref:cntk.learners.training_parameter_schedule>.'
+    isRequired: true
     types:
     - <xref:float>
     - <xref:list>
@@ -563,12 +620,14 @@ functions:
     description: "see parameter\n`unit` in <xref:cntk.learners.training_parameter_schedule>.\n\
       \n   deprecated:: 2.2\n      Use minibatch_size parameter to specify the reference\
       \ minbiatch size instead."
+    isRequired: true
     types:
     - <xref:cntk.learners.UnitType>
   - name: epoch_size
     description: 'see parameter `epoch_size` in
 
       <xref:cntk.learners.training_parameter_schedule>.'
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -694,6 +753,7 @@ functions:
     description: 'see parameter `schedule` in
 
       <xref:cntk.learners.training_parameter_schedule>.'
+    isRequired: true
     types:
     - <xref:float>
     - <xref:list>
@@ -701,6 +761,7 @@ functions:
     description: 'see parameter `epoch_size` in
 
       <xref:cntk.learners.momentum_schedule>.'
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -716,57 +777,67 @@ functions:
     description: 'list of network parameters to tune.
 
       These can be obtained by the root operator''s `parameters`.'
+    isRequired: true
     types:
     - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
   - name: momentum
     description: 'momentum schedule.
 
       For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.momentum_schedule>>
   - name: unit_gain
     description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
       to the value returned by <xref:cntk.learners.default_unit_gain_value>.'
+    isRequired: true
   - name: l1_regularization_weight
     description: 'the L1 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: l2_regularization_weight
     description: 'the L2 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gaussian_noise_injection_std_dev
     description: 'the standard deviation
 
       of the Gaussian noise added to parameters post update, defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_threshold_per_sample
     description: 'clipping threshold
 
       per sample, defaults to infinity'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_with_truncation
     description: 'use gradient clipping
 
       with truncation'
+    isRequired: true
     types:
     - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: minibatch_size
@@ -787,11 +858,13 @@ functions:
 
       will have the learner apply as it is preventing CNTK performing any hyper-parameter
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate and momentum.
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:optional>, <xref:int>
   return:
@@ -816,57 +889,67 @@ functions:
     description: 'list of network parameters to tune.
 
       These can be obtained by the root operator''s `parameters`.'
+    isRequired: true
     types:
     - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
   - name: momentum
     description: 'momentum schedule.
 
       For additional information, please refer to the [this CNTK Wiki article](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-SGD-Block#converting-learning-rate-and-momentum-parameters-from-other-toolkits).'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.momentum_schedule>>
   - name: unit_gain
     description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
       to the value returned by <xref:cntk.learners.default_unit_gain_value>.'
+    isRequired: true
   - name: l1_regularization_weight
     description: 'the L1 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: l2_regularization_weight
     description: 'the L2 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gaussian_noise_injection_std_dev
     description: 'the standard deviation
 
       of the Gaussian noise added to parameters post update, defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_threshold_per_sample
     description: 'clipping threshold
 
       per sample, defaults to infinity'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_with_truncation
     description: 'use gradient clipping
 
       with truncation'
+    isRequired: true
     types:
     - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: minibatch_size
@@ -887,11 +970,13 @@ functions:
 
       will have the learner apply as it is preventing CNTK performing any hyper-parameter
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate and momentum.
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:optional>, <xref:int>
   return:
@@ -916,75 +1001,89 @@ functions:
     description: 'list of network parameters to tune.
 
       These can be obtained by the root operator''s `parameters`.'
+    isRequired: true
     types:
     - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
   - name: gamma
     description: 'Trade-off factor for current and previous gradients. Common value
       is 0.95. Should be in range (0.0, 1.0)'
+    isRequired: true
     types:
     - <xref:float>
   - name: inc
     description: Increasing factor when trying to adjust current learning_rate. Should
       be greater than 1
+    isRequired: true
     types:
     - <xref:float>
   - name: dec
     description: Decreasing factor when trying to adjust current learning_rate. Should
       be in range (0.0, 1.0)
+    isRequired: true
     types:
     - <xref:float>
   - name: max
     description: Maximum scale allowed for the initial learning_rate. Should be greater
       than zero and min
+    isRequired: true
     types:
     - <xref:float>
   - name: min
     description: Minimum scale allowed for the initial learning_rate. Should be greater
       than zero
+    isRequired: true
     types:
     - <xref:float>
   - name: need_ave_multiplier
+    isRequired: true
     types:
     - <xref:bool>, <xref:default True>
   - name: l1_regularization_weight
     description: 'the L1 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: l2_regularization_weight
     description: 'the L2 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gaussian_noise_injection_std_dev
     description: 'the standard deviation
 
       of the Gaussian noise added to parameters post update, defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_threshold_per_sample
     description: 'clipping threshold
 
       per sample, defaults to infinity'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_with_truncation
     description: 'use gradient clipping
 
       with truncation'
+    isRequired: true
     types:
     - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: minibatch_size
@@ -1005,10 +1104,12 @@ functions:
 
       will have the learner apply as it is preventing CNTK performing any hyper-parameter
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:optional>, <xref:int>
   return:
@@ -1038,47 +1139,55 @@ functions:
       These can be obtained by the ''.parameters()'' method of the root
 
       operator.'
+    isRequired: true
     types:
     - <xref:list of parameters>
   - name: lr
     description: 'a learning rate in float, or a learning rate schedule.
 
       See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:float>, <xref:list>, <xref:output of <xref:cntk.learners.learning_parameter_schedule>>
   - name: l1_regularization_weight
     description: 'the L1 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: l2_regularization_weight
     description: 'the L2 regularization weight per sample,
 
       defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gaussian_noise_injection_std_dev
     description: 'the standard deviation
 
       of the Gaussian noise added to parameters post update, defaults to 0.0'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_threshold_per_sample
     description: 'clipping threshold
 
       per sample, defaults to infinity'
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: gradient_clipping_with_truncation
     description: 'use gradient clipping
 
       with truncation'
+    isRequired: true
     types:
     - <xref:bool>, <xref:default True>
   - name: use_mean_gradient
     description: "use averaged gradient as input to learner.\n\ndeprecated:: 2.2\n\
       \   Use minibatch_size parameter to specify the reference minibatch size."
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: minibatch_size
@@ -1099,10 +1208,12 @@ functions:
 
       will have the learner apply as it is preventing CNTK performing any hyper-parameter
       scaling. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:int>, <xref:default None>
   - name: epoch_size
     description: 'number of samples as a scheduling unit for learning rate. See also:  <xref:cntk.learners.learning_parameter_schedule>'
+    isRequired: true
     types:
     - <xref:optional>, <xref:int>
   return:
@@ -1132,6 +1243,7 @@ functions:
       values for `epoch_size` samples. If list contains pair, the second element is
 
       used as a value for (`epoch_size` x first element) samples'
+    isRequired: true
     types:
     - <xref:float>
     - <xref:list>
@@ -1140,6 +1252,7 @@ functions:
       \ values\n* `minibatch`: the returned schedule contains per-minibatch values.\n\
       \n   deprecated:: 2.2\n      Use minibatch_size parameter to specify the reference\
       \ minbiatch size."
+    isRequired: true
     types:
     - <xref:cntk.learners.UnitType>
   - name: epoch_size
@@ -1156,6 +1269,7 @@ functions:
       change their values on the sweep-by-sweep basis specified by the
 
       `schedule`.'
+    isRequired: true
     types:
     - <xref:optional>, <xref:int>
   return:
@@ -1229,10 +1343,12 @@ functions:
       If `update_func` does not contain <xref:cntk.ops.assign> operations
 
       the parameters will not be updated.'
+    isRequired: true
   - name: parameters
     description: 'list of network parameters to tune.
 
       These can be obtained by the root operator''s *parameters*.'
+    isRequired: true
     types:
     - <xref:list>
   return:
