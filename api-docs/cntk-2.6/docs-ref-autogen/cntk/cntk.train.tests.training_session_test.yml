@@ -15,7 +15,7 @@ functions:
   - name: lr_per_sample
     defaultValue: <cntk.cntk_py.training_double_parameter_schedule; proxy of <Swig
       Object of type 'std::shared_ptr< CNTK::TrainingParameterSchedule< double > >
-      *' at 0x000001E4138863C0> >
+      *' at 0x000001E23BB23360> >
 - uid: cntk.train.tests.training_session_test.mb_source
   name: mb_source
   signature: mb_source(tmpdir, fileprefix, max_samples=18446744073709551614, ctf='0\t|S0
