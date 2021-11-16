@@ -1,0 +1,33 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.agent.shared.preprocessing.AtariPreprocessing
+name: AtariPreprocessing
+fullName: cntk.contrib.deeprl.agent.shared.preprocessing.AtariPreprocessing
+module: cntk.contrib.deeprl.agent.shared.preprocessing
+inheritances:
+- cntk.contrib.deeprl.agent.shared.preprocessing.Preprocessing
+summary: 'Preprocess screen images from Atari 2600 games.
+
+
+  The image is represented by an array of shape (210, 160, 3). See
+
+  [https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+
+  for more details.'
+constructor:
+  syntax: AtariPreprocessing(input_shape, history_len=4)
+methods:
+- uid: cntk.contrib.deeprl.agent.shared.preprocessing.AtariPreprocessing.output_shape
+  name: output_shape
+  summary: Return shape of preprocessed Atari images.
+  signature: output_shape()
+- uid: cntk.contrib.deeprl.agent.shared.preprocessing.AtariPreprocessing.preprocess
+  name: preprocess
+  summary: Return preprocessed screen images from Atari 2600 games.
+  signature: preprocess(image)
+  parameters:
+  - name: image
+    isRequired: true
+- uid: cntk.contrib.deeprl.agent.shared.preprocessing.AtariPreprocessing.reset
+  name: reset
+  summary: Reset preprocessing pipeline for new episode.
+  signature: reset()

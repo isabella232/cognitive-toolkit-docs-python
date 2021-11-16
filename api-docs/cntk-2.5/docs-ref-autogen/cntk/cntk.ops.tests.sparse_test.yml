@@ -1,0 +1,54 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.sparse_test
+name: sparse_test
+fullName: cntk.ops.tests.sparse_test
+summary: Unit tests for reshaping operations.
+functions:
+- uid: cntk.ops.tests.sparse_test.test_2d_non_sequence_sparse_one_hot
+  name: test_2d_non_sequence_sparse_one_hot
+  signature: test_2d_non_sequence_sparse_one_hot()
+- uid: cntk.ops.tests.sparse_test.test_2d_sequence_sparse_one_hot
+  name: test_2d_sequence_sparse_one_hot
+  signature: test_2d_sequence_sparse_one_hot()
+- uid: cntk.ops.tests.sparse_test.test_2d_sparse_csr_batch_input
+  name: test_2d_sparse_csr_batch_input
+  signature: test_2d_sparse_csr_batch_input(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sparse_test.test_gather_2D_using_one_hot_and_times
+  name: test_gather_2D_using_one_hot_and_times
+  signature: test_gather_2D_using_one_hot_and_times()
+- uid: cntk.ops.tests.sparse_test.test_gather_implementation_using_one_hot_and_times
+  name: test_gather_implementation_using_one_hot_and_times
+  signature: test_gather_implementation_using_one_hot_and_times()
+- uid: cntk.ops.tests.sparse_test.test_non_sequence_sparse_one_hot
+  name: test_non_sequence_sparse_one_hot
+  signature: test_non_sequence_sparse_one_hot()
+- uid: cntk.ops.tests.sparse_test.test_sparse_block_row_input
+  name: test_sparse_block_row_input
+  signature: test_sparse_block_row_input(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sparse_test.test_times_2d_sparse_operand
+  name: test_times_2d_sparse_operand
+  signature: test_times_2d_sparse_operand(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sparse_test.test_times_2d_sparse_sequence_operand
+  name: test_times_2d_sparse_sequence_operand
+  signature: test_times_2d_sparse_sequence_operand(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sparse_test.test_times_sparse_operand_reduce_multiple_axes
+  name: test_times_sparse_operand_reduce_multiple_axes
+  signature: test_times_sparse_operand_reduce_multiple_axes()
+- uid: cntk.ops.tests.sparse_test.test_training_2d_sparse_sequence_operand
+  name: test_training_2d_sparse_sequence_operand
+  signature: test_training_2d_sparse_sequence_operand(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sparse_test.test_training_3d_sparse_sequence_with_recurrence
+  name: test_training_3d_sparse_sequence_with_recurrence
+  signature: test_training_3d_sparse_sequence_with_recurrence(device_id)
+  parameters:
+  - name: device_id

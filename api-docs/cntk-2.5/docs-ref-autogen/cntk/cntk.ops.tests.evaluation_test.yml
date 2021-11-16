@@ -1,0 +1,33 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.evaluation_test
+name: evaluation_test
+fullName: cntk.ops.tests.evaluation_test
+summary: Unit tests for evaluation operations (grad and eval)
+functions:
+- uid: cntk.ops.tests.evaluation_test.test_constant_eval
+  name: test_constant_eval
+  signature: test_constant_eval()
+- uid: cntk.ops.tests.evaluation_test.test_eval_not_all_outputs
+  name: test_eval_not_all_outputs
+  signature: test_eval_not_all_outputs()
+- uid: cntk.ops.tests.evaluation_test.test_grad_after_eval
+  name: test_grad_after_eval
+  signature: test_grad_after_eval()
+- uid: cntk.ops.tests.evaluation_test.test_grad_custimized_root
+  name: test_grad_custimized_root
+  signature: test_grad_custimized_root()
+- uid: cntk.ops.tests.evaluation_test.test_grad_with_no_arguments_needing_gradients
+  name: test_grad_with_no_arguments_needing_gradients
+  signature: test_grad_with_no_arguments_needing_gradients()
+- uid: cntk.ops.tests.evaluation_test.test_input_without_dynamic_axes
+  name: test_input_without_dynamic_axes
+  signature: test_input_without_dynamic_axes()
+- uid: cntk.ops.tests.evaluation_test.test_sequence_grad_as_numpy_false
+  name: test_sequence_grad_as_numpy_false
+  signature: test_sequence_grad_as_numpy_false(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.evaluation_test.test_validation_before_eval
+  name: test_validation_before_eval
+  signature: test_validation_before_eval()

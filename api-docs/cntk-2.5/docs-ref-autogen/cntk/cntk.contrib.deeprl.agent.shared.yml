@@ -9,5 +9,6 @@ modules:
 - cntk.contrib.deeprl.agent.shared.discretize
 - cntk.contrib.deeprl.agent.shared.models
 - cntk.contrib.deeprl.agent.shared.policy_gradient_parameters
+- cntk.contrib.deeprl.agent.shared.preprocessing
 - cntk.contrib.deeprl.agent.shared.qlearning_parameters
 - cntk.contrib.deeprl.agent.shared.replay_memory

@@ -6,6 +6,8 @@ module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
 inheritances:
 - builtins.object
 summary: Setup CNTK ops with given parameters
+constructor:
+  syntax: ApiSetup()
 methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.batch_norm
   name: batch_norm

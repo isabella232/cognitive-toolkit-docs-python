@@ -1,0 +1,30 @@
+### YamlMime:PythonClass
+uid: cntk.io.tests.io_tests.MyDataSourceWithCheckpoint
+name: MyDataSourceWithCheckpoint
+fullName: cntk.io.tests.io_tests.MyDataSourceWithCheckpoint
+module: cntk.io.tests.io_tests
+inheritances:
+- cntk.io.tests.io_tests.MyDataSource
+constructor:
+  syntax: MyDataSourceWithCheckpoint(f_dim, l_dim)
+methods:
+- uid: cntk.io.tests.io_tests.MyDataSourceWithCheckpoint.get_checkpoint_state
+  name: get_checkpoint_state
+  summary: 'Returns a dictionary describing the current state of the minibatch
+
+    source. Needs to be overwritten if the state of the minibatch source
+
+    needs to be stored to and later restored from the checkpoint.'
+  signature: get_checkpoint_state()
+  return:
+    description: dictionary, that can be later used on <xref:cntk.io.tests.io_tests.MyDataSourceWithCheckpoint.restore_from_checkpoint>.
+- uid: cntk.io.tests.io_tests.MyDataSourceWithCheckpoint.restore_from_checkpoint
+  name: restore_from_checkpoint
+  summary: Sets the state of the checkpoint.
+  signature: restore_from_checkpoint(state)
+  parameters:
+  - name: state
+    description: dictionary containing the state
+    isRequired: true
+    types:
+    - <xref:dict>
