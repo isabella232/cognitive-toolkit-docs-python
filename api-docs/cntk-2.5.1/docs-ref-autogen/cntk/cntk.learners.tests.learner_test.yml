@@ -1,0 +1,101 @@
+### YamlMime:PythonModule
+uid: cntk.learners.tests.learner_test
+name: learner_test
+fullName: cntk.learners.tests.learner_test
+functions:
+- uid: cntk.learners.tests.learner_test.ffnet
+  name: ffnet
+  signature: ffnet(learner, trainer=None)
+  parameters:
+  - name: learner
+  - name: trainer
+    defaultValue: None
+- uid: cntk.learners.tests.learner_test.generate_random_data
+  name: generate_random_data
+  signature: generate_random_data(sample_size, feature_dim, num_classes)
+  parameters:
+  - name: sample_size
+  - name: feature_dim
+  - name: num_classes
+- uid: cntk.learners.tests.learner_test.sweep_based_schedule_fails
+  name: sweep_based_schedule_fails
+  signature: sweep_based_schedule_fails()
+- uid: cntk.learners.tests.learner_test.test_0d_1d_parameter_set_value
+  name: test_0d_1d_parameter_set_value
+  signature: test_0d_1d_parameter_set_value()
+- uid: cntk.learners.tests.learner_test.test_learner_empy_parameters_list
+  name: test_learner_empy_parameters_list
+  signature: test_learner_empy_parameters_list()
+- uid: cntk.learners.tests.learner_test.test_learner_init
+  name: test_learner_init
+  signature: test_learner_init()
+- uid: cntk.learners.tests.learner_test.test_learner_init_legacy
+  name: test_learner_init_legacy
+  signature: test_learner_init_legacy()
+- uid: cntk.learners.tests.learner_test.test_learner_logging
+  name: test_learner_logging
+  signature: test_learner_logging()
+- uid: cntk.learners.tests.learner_test.test_learner_update
+  name: test_learner_update
+  signature: test_learner_update()
+- uid: cntk.learners.tests.learner_test.test_learner_update_legacy
+  name: test_learner_update_legacy
+  signature: test_learner_update_legacy()
+- uid: cntk.learners.tests.learner_test.test_learning_parameter_schedule
+  name: test_learning_parameter_schedule
+  signature: test_learning_parameter_schedule(params, expectation, minibatch_size)
+  parameters:
+  - name: params
+  - name: expectation
+  - name: minibatch_size
+- uid: cntk.learners.tests.learner_test.test_learning_rate_schedule
+  name: test_learning_rate_schedule
+  signature: test_learning_rate_schedule(params, expectation, minibatch_size)
+  parameters:
+  - name: params
+  - name: expectation
+  - name: minibatch_size
+- uid: cntk.learners.tests.learner_test.test_momentum_schedule
+  name: test_momentum_schedule
+  signature: test_momentum_schedule()
+- uid: cntk.learners.tests.learner_test.test_momentum_schedule_per_sample
+  name: test_momentum_schedule_per_sample
+  signature: test_momentum_schedule_per_sample(params, expectation)
+  parameters:
+  - name: params
+  - name: expectation
+- uid: cntk.learners.tests.learner_test.test_noise_injection_with_checkpointing
+  name: test_noise_injection_with_checkpointing
+  signature: test_noise_injection_with_checkpointing()
+- uid: cntk.learners.tests.learner_test.test_restore_from_checkpoint
+  name: test_restore_from_checkpoint
+  signature: test_restore_from_checkpoint(tmpdir, learner)
+  parameters:
+  - name: tmpdir
+  - name: learner
+- uid: cntk.learners.tests.learner_test.test_sgd_with_noise
+  name: test_sgd_with_noise
+  signature: test_sgd_with_noise()
+- uid: cntk.learners.tests.learner_test.test_sparse_vs_dense_updates
+  name: test_sparse_vs_dense_updates
+  signature: test_sparse_vs_dense_updates(tmpdir, learner, gpu_only, checkpoint, device_id)
+  parameters:
+  - name: tmpdir
+  - name: learner
+  - name: gpu_only
+  - name: checkpoint
+  - name: device_id
+- uid: cntk.learners.tests.learner_test.test_sweep_based_schedule
+  name: test_sweep_based_schedule
+  signature: test_sweep_based_schedule(tmpdir, device_id)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+- uid: cntk.learners.tests.learner_test.test_training_parameter_schedule
+  name: test_training_parameter_schedule
+  signature: test_training_parameter_schedule()
+- uid: cntk.learners.tests.learner_test.test_universal
+  name: test_universal
+  signature: test_universal()
+classes:
+- cntk.learners.tests.learner_test.TestProgressWriter

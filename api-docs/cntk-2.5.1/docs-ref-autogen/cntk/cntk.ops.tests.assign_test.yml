@@ -1,0 +1,41 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.assign_test
+name: assign_test
+fullName: cntk.ops.tests.assign_test
+summary: Unit tests for the assign operation.
+functions:
+- uid: cntk.ops.tests.assign_test.test_assign_dependency
+  name: test_assign_dependency
+  signature: test_assign_dependency(input_data, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.assign_test.test_assign_gradient
+  name: test_assign_gradient
+  signature: test_assign_gradient(input_data, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.assign_test.test_assign_timestamp_bump
+  name: test_assign_timestamp_bump
+  signature: test_assign_timestamp_bump(input_data, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.assign_test.test_assign_to_constant
+  name: test_assign_to_constant
+  signature: test_assign_to_constant(input_data, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.assign_test.test_assign_to_param
+  name: test_assign_to_param
+  signature: test_assign_to_param(input_data, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: device_id
+  - name: precision

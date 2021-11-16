@@ -1,0 +1,54 @@
+### YamlMime:PythonClass
+uid: cntk.train.tests.training_session_test.MockProgressWriter
+name: MockProgressWriter
+fullName: cntk.train.tests.training_session_test.MockProgressWriter
+module: cntk.train.tests.training_session_test
+inheritances:
+- cntk.cntk_py.ProgressWriter
+constructor:
+  syntax: MockProgressWriter(expected_test_summary=None, training_summary_counter=0)
+methods:
+- uid: cntk.train.tests.training_session_test.MockProgressWriter.on_write_test_summary
+  name: on_write_test_summary
+  signature: on_write_test_summary(samples, updates, summaries, aggregate_metric,
+    elapsed_milliseconds)
+  parameters:
+  - name: samples
+    isRequired: true
+  - name: updates
+    isRequired: true
+  - name: summaries
+    isRequired: true
+  - name: aggregate_metric
+    isRequired: true
+  - name: elapsed_milliseconds
+    isRequired: true
+- uid: cntk.train.tests.training_session_test.MockProgressWriter.on_write_training_summary
+  name: on_write_training_summary
+  signature: on_write_training_summary(samples, updates, summaries, aggregate_loss,
+    aggregate_metric, elapsed_milliseconds)
+  parameters:
+  - name: samples
+    isRequired: true
+  - name: updates
+    isRequired: true
+  - name: summaries
+    isRequired: true
+  - name: aggregate_loss
+    isRequired: true
+  - name: aggregate_metric
+    isRequired: true
+  - name: elapsed_milliseconds
+    isRequired: true
+- uid: cntk.train.tests.training_session_test.MockProgressWriter.on_write_training_update
+  name: on_write_training_update
+  signature: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
+  parameters:
+  - name: samples
+    isRequired: true
+  - name: updates
+    isRequired: true
+  - name: aggregate_loss
+    isRequired: true
+  - name: aggregate_metric
+    isRequired: true

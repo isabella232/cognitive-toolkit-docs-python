@@ -1,0 +1,71 @@
+### YamlMime:PythonModule
+uid: cntk.losses.tests.losses_test
+name: losses_test
+fullName: cntk.losses.tests.losses_test
+summary: 'Unit tests for evaluation operations, each operation is tested for
+
+  the forward and the backward pass'
+functions:
+- uid: cntk.losses.tests.losses_test.test_lambda_rank
+  name: test_lambda_rank
+  signature: test_lambda_rank(grad, value, output, gain, device_id, precision)
+  parameters:
+  - name: grad
+  - name: value
+  - name: output
+  - name: gain
+  - name: device_id
+  - name: precision
+- uid: cntk.losses.tests.losses_test.test_nce_backward_indices
+  name: test_nce_backward_indices
+  summary: Simple test that makes sure that the derivatives have the correct sparsity
+    pattern
+  signature: test_nce_backward_indices(classes, xdim, batch, expected_value, device_id,
+    precision)
+  parameters:
+  - name: classes
+  - name: xdim
+  - name: batch
+  - name: expected_value
+  - name: device_id
+  - name: precision
+- uid: cntk.losses.tests.losses_test.test_nce_loss
+  name: test_nce_loss
+  signature: test_nce_loss(classes, xdim, batch, expected_value, device_id, precision)
+  parameters:
+  - name: classes
+  - name: xdim
+  - name: batch
+  - name: expected_value
+  - name: device_id
+  - name: precision
+- uid: cntk.losses.tests.losses_test.test_op_cross_entropy_with_soft_max
+  name: test_op_cross_entropy_with_soft_max
+  signature: test_op_cross_entropy_with_soft_max(output_vector, target_vector, device_id,
+    precision)
+  parameters:
+  - name: output_vector
+  - name: target_vector
+  - name: device_id
+  - name: precision
+- uid: cntk.losses.tests.losses_test.test_op_cross_entropy_with_soft_max_and_axis
+  name: test_op_cross_entropy_with_soft_max_and_axis
+  signature: test_op_cross_entropy_with_soft_max_and_axis(output_vector, target_vector,
+    axis, device_id, precision)
+  parameters:
+  - name: output_vector
+  - name: target_vector
+  - name: axis
+  - name: device_id
+  - name: precision
+- uid: cntk.losses.tests.losses_test.test_op_squared_error
+  name: test_op_squared_error
+  signature: test_op_squared_error(output_vector, target_vector, device_id, precision)
+  parameters:
+  - name: output_vector
+  - name: target_vector
+  - name: device_id
+  - name: precision
+- uid: cntk.losses.tests.losses_test.test_weighted_binary_cross_entropy_with_reduced_sequences
+  name: test_weighted_binary_cross_entropy_with_reduced_sequences
+  signature: test_weighted_binary_cross_entropy_with_reduced_sequences()

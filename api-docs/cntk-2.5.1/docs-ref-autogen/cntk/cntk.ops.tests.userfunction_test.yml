@@ -1,0 +1,114 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.userfunction_test
+name: userfunction_test
+fullName: cntk.ops.tests.userfunction_test
+summary: Unit tests for function extension
+functions:
+- uid: cntk.ops.tests.userfunction_test.build_test_function
+  name: build_test_function
+  signature: build_test_function()
+- uid: cntk.ops.tests.userfunction_test.test_both_flavors_of_user_functions
+  name: test_both_flavors_of_user_functions
+  signature: test_both_flavors_of_user_functions(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.ops.tests.userfunction_test.test_ext_backpropstate
+  name: test_ext_backpropstate
+  signature: test_ext_backpropstate(payload)
+  parameters:
+  - name: payload
+- uid: cntk.ops.tests.userfunction_test.test_ext_eval_1
+  name: test_ext_eval_1
+  signature: test_ext_eval_1()
+- uid: cntk.ops.tests.userfunction_test.test_ext_eval_2_only_param
+  name: test_ext_eval_2_only_param
+  signature: test_ext_eval_2_only_param()
+- uid: cntk.ops.tests.userfunction_test.test_ext_eval_3_no_input
+  name: test_ext_eval_3_no_input
+  signature: test_ext_eval_3_no_input()
+- uid: cntk.ops.tests.userfunction_test.test_ext_eval_4_a_inside_graph
+  name: test_ext_eval_4_a_inside_graph
+  signature: test_ext_eval_4_a_inside_graph()
+- uid: cntk.ops.tests.userfunction_test.test_ext_eval_4_b_inside_graph
+  name: test_ext_eval_4_b_inside_graph
+  signature: test_ext_eval_4_b_inside_graph()
+- uid: cntk.ops.tests.userfunction_test.test_ext_eval_5_times
+  name: test_ext_eval_5_times
+  signature: test_ext_eval_5_times()
+- uid: cntk.ops.tests.userfunction_test.test_ext_eval_6_clone
+  name: test_ext_eval_6_clone
+  signature: test_ext_eval_6_clone()
+- uid: cntk.ops.tests.userfunction_test.test_ext_eval_7_placeholder
+  name: test_ext_eval_7_placeholder
+  signature: test_ext_eval_7_placeholder()
+- uid: cntk.ops.tests.userfunction_test.test_ext_eval_freedimension_input
+  name: test_ext_eval_freedimension_input
+  signature: test_ext_eval_freedimension_input()
+- uid: cntk.ops.tests.userfunction_test.test_ext_lambdafunc
+  name: test_ext_lambdafunc
+  signature: test_ext_lambdafunc(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.ops.tests.userfunction_test.test_ext_train
+  name: test_ext_train
+  signature: test_ext_train(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.ops.tests.userfunction_test.test_multioutput_udf
+  name: test_multioutput_udf
+  signature: test_multioutput_udf()
+- uid: cntk.ops.tests.userfunction_test.test_native_user_function
+  name: test_native_user_function
+  signature: test_native_user_function(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.ops.tests.userfunction_test.test_no_deadlock_init_outputs
+  name: test_no_deadlock_init_outputs
+  signature: test_no_deadlock_init_outputs()
+- uid: cntk.ops.tests.userfunction_test.test_override_deserialize
+  name: test_override_deserialize
+  signature: test_override_deserialize(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.ops.tests.userfunction_test.test_override_serialize
+  name: test_override_serialize
+  signature: test_override_serialize(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.ops.tests.userfunction_test.test_udf_checkpointing
+  name: test_udf_checkpointing
+  signature: test_udf_checkpointing(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.ops.tests.userfunction_test.test_udf_clone
+  name: test_udf_clone
+  signature: test_udf_clone()
+- uid: cntk.ops.tests.userfunction_test.test_udf_in_recurrent_loop
+  name: test_udf_in_recurrent_loop
+  signature: test_udf_in_recurrent_loop()
+- uid: cntk.ops.tests.userfunction_test.test_udf_input_values_no_sharing
+  name: test_udf_input_values_no_sharing
+  signature: test_udf_input_values_no_sharing()
+- uid: cntk.ops.tests.userfunction_test.test_udf_no_gradient_for_some_inputs
+  name: test_udf_no_gradient_for_some_inputs
+  signature: test_udf_no_gradient_for_some_inputs()
+- uid: cntk.ops.tests.userfunction_test.test_udf_op_name
+  name: test_udf_op_name
+  signature: test_udf_op_name()
+- uid: cntk.ops.tests.userfunction_test.test_udf_output_needs_no_gradient
+  name: test_udf_output_needs_no_gradient
+  signature: test_udf_output_needs_no_gradient()
+- uid: cntk.ops.tests.userfunction_test.test_udf_plus_and_last
+  name: test_udf_plus_and_last
+  signature: test_udf_plus_and_last()
+classes:
+- cntk.ops.tests.userfunction_test.DummyLayer
+- cntk.ops.tests.userfunction_test.FaultyUserFunc
+- cntk.ops.tests.userfunction_test.LambdaFunc
+- cntk.ops.tests.userfunction_test.MultiOutputUserFunction
+- cntk.ops.tests.userfunction_test.MyArgumentPreservingPlus
+- cntk.ops.tests.userfunction_test.MyPlus
+- cntk.ops.tests.userfunction_test.MyPlusPlus
+- cntk.ops.tests.userfunction_test.MyPlusWithNoGradientNeededForOutput
+- cntk.ops.tests.userfunction_test.MyPlusWithNoGradientToRightOperand
+- cntk.ops.tests.userfunction_test.PlusAndLast

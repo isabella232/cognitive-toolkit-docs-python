@@ -1,0 +1,48 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.random_sample_test
+name: random_sample_test
+fullName: cntk.ops.tests.random_sample_test
+summary: Unit tests random sampling related operations
+functions:
+- uid: cntk.ops.tests.random_sample_test.test_random_sample_inclusion_frequency
+  name: test_random_sample_inclusion_frequency
+  signature: test_random_sample_inclusion_frequency(weights, num_samples, allow_duplicates,
+    expected, tolerance, raises_exception, device_id, precision)
+  parameters:
+  - name: weights
+  - name: num_samples
+  - name: allow_duplicates
+  - name: expected
+  - name: tolerance
+  - name: raises_exception
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.random_sample_test.test_random_sample_with_explicit_seed
+  name: test_random_sample_with_explicit_seed
+  signature: test_random_sample_with_explicit_seed(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.random_sample_test.test_random_sample_with_replacement
+  name: test_random_sample_with_replacement
+  signature: test_random_sample_with_replacement(weights, num_samples, tolerance,
+    raises_exception, device_id, precision)
+  parameters:
+  - name: weights
+  - name: num_samples
+  - name: tolerance
+  - name: raises_exception
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.random_sample_test.test_random_sample_without_replacement
+  name: test_random_sample_without_replacement
+  signature: test_random_sample_without_replacement(weights, num_samples, expected_count,
+    tolerance, raises_exception, device_id, precision)
+  parameters:
+  - name: weights
+  - name: num_samples
+  - name: expected_count
+  - name: tolerance
+  - name: raises_exception
+  - name: device_id
+  - name: precision

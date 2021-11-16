@@ -1,0 +1,34 @@
+### YamlMime:PythonModule
+uid: cntk.learners.tests.bmuf_metrics_aggregation_test
+name: bmuf_metrics_aggregation_test
+fullName: cntk.learners.tests.bmuf_metrics_aggregation_test
+summary: This tests the metrics averaging functionality in BMUF. All workers should
+  be reporting the same loss and eval metrics.
+functions:
+- uid: cntk.learners.tests.bmuf_metrics_aggregation_test.get_minibatch
+  name: get_minibatch
+  signature: get_minibatch(bmuf, working_dir, mb_source, num_data_partitions=1, partition_index=0)
+  parameters:
+  - name: bmuf
+  - name: working_dir
+  - name: mb_source
+  - name: num_data_partitions
+    defaultValue: '1'
+  - name: partition_index
+    defaultValue: '0'
+- uid: cntk.learners.tests.bmuf_metrics_aggregation_test.mpi_worker
+  name: mpi_worker
+  signature: mpi_worker(working_dir, mb_source, gpu)
+  parameters:
+  - name: working_dir
+  - name: mb_source
+  - name: gpu
+- uid: cntk.learners.tests.bmuf_metrics_aggregation_test.test_bmuf_correct_metrics_averaging
+  name: test_bmuf_correct_metrics_averaging
+  signature: test_bmuf_correct_metrics_averaging(tmpdir, device_id, mb_source)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+  - name: mb_source
+classes:
+- cntk.learners.tests.bmuf_metrics_aggregation_test.SimpleBMUFTrainer

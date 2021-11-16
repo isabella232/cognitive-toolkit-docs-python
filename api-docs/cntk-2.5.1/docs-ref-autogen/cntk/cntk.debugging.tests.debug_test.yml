@@ -1,0 +1,18 @@
+### YamlMime:PythonModule
+uid: cntk.debugging.tests.debug_test
+name: debug_test
+fullName: cntk.debugging.tests.debug_test
+functions:
+- uid: cntk.debugging.tests.debug_test.test_debug_1
+  name: test_debug_1
+  signature: test_debug_1(train_f)
+  parameters:
+  - name: train_f
+- uid: cntk.debugging.tests.debug_test.test_debug_multi_output
+  name: test_debug_multi_output
+  signature: test_debug_multi_output(train_f)
+  parameters:
+  - name: train_f
+classes:
+- cntk.debugging.tests.debug_test.InStream
+- cntk.debugging.tests.debug_test.OutStream

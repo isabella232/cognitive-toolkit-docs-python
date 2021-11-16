@@ -1,0 +1,47 @@
+### YamlMime:PythonModule
+uid: cntk.internal.tests.utils_test
+name: utils_test
+fullName: cntk.internal.tests.utils_test
+functions:
+- uid: cntk.internal.tests.utils_test.test_axes
+  name: test_axes
+  signature: test_axes()
+- uid: cntk.internal.tests.utils_test.test_get_data_type
+  name: test_get_data_type
+  signature: test_get_data_type()
+- uid: cntk.internal.tests.utils_test.test_mask
+  name: test_mask
+  signature: test_mask(batch, seq_starts, expected)
+  parameters:
+  - name: batch
+  - name: seq_starts
+  - name: expected
+- uid: cntk.internal.tests.utils_test.test_one_hot_int_types
+  name: test_one_hot_int_types
+  signature: test_one_hot_int_types(dtype)
+  parameters:
+  - name: dtype
+- uid: cntk.internal.tests.utils_test.test_one_hot_raises
+  name: test_one_hot_raises
+  signature: test_one_hot_raises()
+- uid: cntk.internal.tests.utils_test.test_one_hot_skip
+  name: test_one_hot_skip
+  signature: test_one_hot_skip()
+- uid: cntk.internal.tests.utils_test.test_sanitize_batch_contiguity
+  name: test_sanitize_batch_contiguity
+  signature: test_sanitize_batch_contiguity()
+- uid: cntk.internal.tests.utils_test.test_sanitize_batch_sparse
+  name: test_sanitize_batch_sparse
+  signature: test_sanitize_batch_sparse()
+- uid: cntk.internal.tests.utils_test.test_sanitize_dtype_cntk
+  name: test_sanitize_dtype_cntk
+  signature: test_sanitize_dtype_cntk()
+- uid: cntk.internal.tests.utils_test.test_sanitize_dtype_numpy
+  name: test_sanitize_dtype_numpy
+  signature: test_sanitize_dtype_numpy()
+- uid: cntk.internal.tests.utils_test.test_sanitize_input
+  name: test_sanitize_input
+  signature: test_sanitize_input(data, dtype)
+  parameters:
+  - name: data
+  - name: dtype

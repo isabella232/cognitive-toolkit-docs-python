@@ -1,0 +1,48 @@
+### YamlMime:PythonModule
+uid: cntk.tests.variables_test
+name: variables_test
+fullName: cntk.tests.variables_test
+summary: Unit tests for Variable and its descendents.
+functions:
+- uid: cntk.tests.variables_test.test_constant
+  name: test_constant
+  signature: test_constant()
+- uid: cntk.tests.variables_test.test_constant_shape_inf
+  name: test_constant_shape_inf
+  signature: test_constant_shape_inf()
+- uid: cntk.tests.variables_test.test_constant_value
+  name: test_constant_value
+  signature: test_constant_value(value)
+  parameters:
+  - name: value
+- uid: cntk.tests.variables_test.test_convert_to_variable_dtype
+  name: test_convert_to_variable_dtype
+  signature: test_convert_to_variable_dtype()
+- uid: cntk.tests.variables_test.test_dtype
+  name: test_dtype
+  signature: test_dtype(variable_type)
+  parameters:
+  - name: variable_type
+- uid: cntk.tests.variables_test.test_getitem
+  name: test_getitem
+  signature: test_getitem()
+- uid: cntk.tests.variables_test.test_initializer_scale
+  name: test_initializer_scale
+  signature: test_initializer_scale()
+- uid: cntk.tests.variables_test.test_parameter_set_value
+  name: test_parameter_set_value
+  signature: test_parameter_set_value()
+- uid: cntk.tests.variables_test.test_parameter_value
+  name: test_parameter_value
+  signature: test_parameter_value(value)
+  parameters:
+  - name: value
+- uid: cntk.tests.variables_test.test_placeholder
+  name: test_placeholder
+  signature: test_placeholder()
+- uid: cntk.tests.variables_test.test_variable_shape
+  name: test_variable_shape
+  signature: test_variable_shape(variable_type, shape)
+  parameters:
+  - name: variable_type
+  - name: shape

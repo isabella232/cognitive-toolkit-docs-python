@@ -1,0 +1,106 @@
+### YamlMime:PythonModule
+uid: cntk.layers.tests.layers_test
+name: layers_test
+fullName: cntk.layers.tests.layers_test
+functions:
+- uid: cntk.layers.tests.layers_test.assert_list_of_arrays_equal
+  name: assert_list_of_arrays_equal
+  signature: assert_list_of_arrays_equal(r, exp, err_msg)
+  parameters:
+  - name: r
+  - name: exp
+  - name: err_msg
+- uid: cntk.layers.tests.layers_test.test_1D_convolution_without_reduction_dim
+  name: test_1D_convolution_without_reduction_dim
+  signature: test_1D_convolution_without_reduction_dim()
+- uid: cntk.layers.tests.layers_test.test_Function
+  name: test_Function
+  signature: test_Function()
+- uid: cntk.layers.tests.layers_test.test_cloned_parameters_are_identical
+  name: test_cloned_parameters_are_identical
+  signature: test_cloned_parameters_are_identical()
+- uid: cntk.layers.tests.layers_test.test_convolution_consistency_in_different_evals
+  name: test_convolution_consistency_in_different_evals
+  signature: test_convolution_consistency_in_different_evals()
+- uid: cntk.layers.tests.layers_test.test_default_options
+  name: test_default_options
+  signature: test_default_options()
+- uid: cntk.layers.tests.layers_test.test_failing_convolution
+  name: test_failing_convolution
+  signature: test_failing_convolution()
+- uid: cntk.layers.tests.layers_test.test_failing_convolution_transpose
+  name: test_failing_convolution_transpose
+  signature: test_failing_convolution_transpose()
+- uid: cntk.layers.tests.layers_test.test_layers_batch_normalization
+  name: test_layers_batch_normalization
+  signature: test_layers_batch_normalization()
+- uid: cntk.layers.tests.layers_test.test_layers_conv_pool_unpool_deconv
+  name: test_layers_conv_pool_unpool_deconv
+  signature: test_layers_conv_pool_unpool_deconv()
+- uid: cntk.layers.tests.layers_test.test_layers_convolution_1d
+  name: test_layers_convolution_1d
+  signature: test_layers_convolution_1d()
+- uid: cntk.layers.tests.layers_test.test_layers_convolution_2d
+  name: test_layers_convolution_2d
+  signature: test_layers_convolution_2d()
+- uid: cntk.layers.tests.layers_test.test_layers_convolution_3d
+  name: test_layers_convolution_3d
+  signature: test_layers_convolution_3d()
+- uid: cntk.layers.tests.layers_test.test_layers_convolution_shape
+  name: test_layers_convolution_shape
+  signature: test_layers_convolution_shape()
+- uid: cntk.layers.tests.layers_test.test_layers_convolution_transpose
+  name: test_layers_convolution_transpose
+  signature: test_layers_convolution_transpose()
+- uid: cntk.layers.tests.layers_test.test_layers_convolution_value
+  name: test_layers_convolution_value
+  signature: test_layers_convolution_value()
+- uid: cntk.layers.tests.layers_test.test_layers_dense
+  name: test_layers_dense
+  signature: test_layers_dense(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.layers.tests.layers_test.test_layers_dropout
+  name: test_layers_dropout
+  signature: test_layers_dropout()
+- uid: cntk.layers.tests.layers_test.test_layers_embedding
+  name: test_layers_embedding
+  signature: test_layers_embedding()
+- uid: cntk.layers.tests.layers_test.test_layers_layer_normalization
+  name: test_layers_layer_normalization
+  signature: test_layers_layer_normalization()
+- uid: cntk.layers.tests.layers_test.test_layers_name
+  name: test_layers_name
+  signature: test_layers_name()
+- uid: cntk.layers.tests.layers_test.test_layers_stabilizer
+  name: test_layers_stabilizer
+  signature: test_layers_stabilizer()
+- uid: cntk.layers.tests.layers_test.test_lookup
+  name: test_lookup
+  signature: test_lookup()
+- uid: cntk.layers.tests.layers_test.test_recurrence
+  name: test_recurrence
+  signature: test_recurrence()
+- uid: cntk.layers.tests.layers_test.test_recurrence_fun
+  name: test_recurrence_fun
+  signature: test_recurrence_fun()
+- uid: cntk.layers.tests.layers_test.test_recurrence_step_fun
+  name: test_recurrence_step_fun
+  signature: test_recurrence_step_fun()
+- uid: cntk.layers.tests.layers_test.test_recurrent_block
+  name: test_recurrent_block
+  signature: test_recurrent_block(block_type, block_outputs_count, block_size, W_mult,
+    H_mult, expected_res)
+  parameters:
+  - name: block_type
+  - name: block_outputs_count
+  - name: block_size
+  - name: W_mult
+  - name: H_mult
+  - name: expected_res
+- uid: cntk.layers.tests.layers_test.test_sequential_convolution_without_reduction_dim
+  name: test_sequential_convolution_without_reduction_dim
+  signature: test_sequential_convolution_without_reduction_dim()
+- uid: cntk.layers.tests.layers_test.test_unfold
+  name: test_unfold
+  signature: test_unfold()
