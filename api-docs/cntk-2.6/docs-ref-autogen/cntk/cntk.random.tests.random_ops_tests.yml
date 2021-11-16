@@ -1,0 +1,60 @@
+### YamlMime:PythonModule
+uid: cntk.random.tests.random_ops_tests
+name: random_ops_tests
+fullName: cntk.random.tests.random_ops_tests
+summary: Unit tests for random number generation operations; forward only of course
+functions:
+- uid: cntk.random.tests.random_ops_tests.test_normal_diff_along_batch
+  name: test_normal_diff_along_batch
+  signature: test_normal_diff_along_batch(arg0, arg1, device_id, precision)
+  parameters:
+  - name: arg0
+  - name: arg1
+  - name: device_id
+  - name: precision
+- uid: cntk.random.tests.random_ops_tests.test_normal_diff_along_sequence
+  name: test_normal_diff_along_sequence
+  signature: test_normal_diff_along_sequence(arg0, arg1, device_id, precision)
+  parameters:
+  - name: arg0
+  - name: arg1
+  - name: device_id
+  - name: precision
+- uid: cntk.random.tests.random_ops_tests.test_normal_pair
+  name: test_normal_pair
+  signature: test_normal_pair(arg0, arg1, device_id, precision)
+  parameters:
+  - name: arg0
+  - name: arg1
+  - name: device_id
+  - name: precision
+- uid: cntk.random.tests.random_ops_tests.test_placeholder
+  name: test_placeholder
+  signature: test_placeholder(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.random.tests.random_ops_tests.test_random_moments
+  name: test_random_moments
+  signature: test_random_moments(arg0, arg1, device_id, precision)
+  parameters:
+  - name: arg0
+  - name: arg1
+  - name: device_id
+  - name: precision
+- uid: cntk.random.tests.random_ops_tests.test_randomlike_moments
+  name: test_randomlike_moments
+  signature: test_randomlike_moments(arg0, arg1, device_id, precision)
+  parameters:
+  - name: arg0
+  - name: arg1
+  - name: device_id
+  - name: precision
+- uid: cntk.random.tests.random_ops_tests.test_two_times_n_vs_one_time_2n
+  name: test_two_times_n_vs_one_time_2n
+  signature: test_two_times_n_vs_one_time_2n(arg0, arg1, device_id, precision)
+  parameters:
+  - name: arg0
+  - name: arg1
+  - name: device_id
+  - name: precision

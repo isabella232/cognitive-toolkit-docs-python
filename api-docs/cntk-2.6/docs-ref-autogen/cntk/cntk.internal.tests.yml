@@ -3,3 +3,8 @@ uid: cntk.internal.tests
 name: tests
 fullName: cntk.internal.tests
 type: import
+modules:
+- cntk.internal.tests.sanitize
+- cntk.internal.tests.swig_helper_tests
+- cntk.internal.tests.types_test
+- cntk.internal.tests.utils_test

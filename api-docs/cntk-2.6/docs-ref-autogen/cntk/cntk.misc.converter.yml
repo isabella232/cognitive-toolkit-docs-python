@@ -5,8 +5,21 @@ fullName: cntk.misc.converter
 functions:
 - uid: cntk.misc.converter.convert
   name: convert
+  summary: 'Clones the graph underlying root_func and in the clone substitutes
+
+    all Functions obtained by applying ''filter'', with a new Function obtained by
+    calling the specified ''converter'''
   signature: convert(root_func, filter, converter)
   parameters:
   - name: root_func
+    description: a root function of a graph to be cloned and converted
+    isRequired: true
   - name: filter
+    description: a lambda for filtering out the Functions to be converted
+    isRequired: true
   - name: converter
+    description: a lambda for obtaining the substitute for each of the Functions to
+      be converted
+    isRequired: true
+  return:
+    description: Cloned and converted Function (graph)

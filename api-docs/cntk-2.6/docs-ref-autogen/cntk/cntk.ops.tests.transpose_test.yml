@@ -5,4 +5,7 @@ fullName: cntk.ops.tests.transpose_test
 functions:
 - uid: cntk.ops.tests.transpose_test.test_transpose
   name: test_transpose
+  summary: 'Test for transpose()
+
+    :return: Nothing'
   signature: test_transpose()

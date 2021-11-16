@@ -1,0 +1,11 @@
+### YamlMime:PythonModule
+uid: cntk.internal.tests.sanitize
+name: sanitize
+fullName: cntk.internal.tests.sanitize
+functions:
+- uid: cntk.internal.tests.sanitize.test_sanitize_number_of_parameters
+  name: test_sanitize_number_of_parameters
+  signature: test_sanitize_number_of_parameters()
+- uid: cntk.internal.tests.sanitize.test_sanitize_permutation
+  name: test_sanitize_permutation
+  signature: test_sanitize_permutation()

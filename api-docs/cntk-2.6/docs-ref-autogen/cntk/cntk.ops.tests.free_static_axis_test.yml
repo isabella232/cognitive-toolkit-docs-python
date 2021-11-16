@@ -1,0 +1,67 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.free_static_axis_test
+name: free_static_axis_test
+fullName: cntk.ops.tests.free_static_axis_test
+summary: 'Unit tests for the ability to leave some static axes of an input free
+
+  and inferred from the bound value during compute.'
+functions:
+- uid: cntk.ops.tests.free_static_axis_test.test_free_and_inferred_static_dimension
+  name: test_free_and_inferred_static_dimension
+  signature: test_free_and_inferred_static_dimension()
+- uid: cntk.ops.tests.free_static_axis_test.test_free_dimension_broadcast
+  name: test_free_dimension_broadcast
+  signature: test_free_dimension_broadcast()
+- uid: cntk.ops.tests.free_static_axis_test.test_free_static_axis_in_recurrence
+  name: test_free_static_axis_in_recurrence
+  signature: test_free_static_axis_in_recurrence()
+- uid: cntk.ops.tests.free_static_axis_test.test_free_static_axis_times_free_static_axis
+  name: test_free_static_axis_times_free_static_axis
+  signature: test_free_static_axis_times_free_static_axis(output_rank, x_input_shape,
+    x_data, y_input_shape, y_data)
+  parameters:
+  - name: output_rank
+  - name: x_input_shape
+  - name: x_data
+  - name: y_input_shape
+  - name: y_data
+- uid: cntk.ops.tests.free_static_axis_test.test_free_static_dimension_basic
+  name: test_free_static_dimension_basic
+  signature: test_free_static_dimension_basic()
+- uid: cntk.ops.tests.free_static_axis_test.test_free_static_pooling
+  name: test_free_static_pooling
+  signature: test_free_static_pooling(input_shape, pooling_type, window_shape, strides,
+    expected)
+  parameters:
+  - name: input_shape
+  - name: pooling_type
+  - name: window_shape
+  - name: strides
+  - name: expected
+- uid: cntk.ops.tests.free_static_axis_test.test_free_static_times
+  name: test_free_static_times
+  signature: test_free_static_times()
+- uid: cntk.ops.tests.free_static_axis_test.test_inferred_static_axis_in_recurrence
+  name: test_inferred_static_axis_in_recurrence
+  signature: test_inferred_static_axis_in_recurrence()
+- uid: cntk.ops.tests.free_static_axis_test.test_multi_freedim_output_udf
+  name: test_multi_freedim_output_udf
+  signature: test_multi_freedim_output_udf()
+- uid: cntk.ops.tests.free_static_axis_test.test_reshape_free_static_axis
+  name: test_reshape_free_static_axis
+  signature: test_reshape_free_static_axis()
+- uid: cntk.ops.tests.free_static_axis_test.test_slice_with_inferred_static_axis
+  name: test_slice_with_inferred_static_axis
+  signature: test_slice_with_inferred_static_axis()
+- uid: cntk.ops.tests.free_static_axis_test.test_unpack_axis_times_transpose_unpack_axis
+  name: test_unpack_axis_times_transpose_unpack_axis
+  signature: test_unpack_axis_times_transpose_unpack_axis(output_rank, x_input_shape,
+    x_data, y_input_shape, y_data)
+  parameters:
+  - name: output_rank
+  - name: x_input_shape
+  - name: x_data
+  - name: y_input_shape
+  - name: y_data
+classes:
+- cntk.ops.tests.free_static_axis_test.MultiFreeDimensionOutputUserFunction

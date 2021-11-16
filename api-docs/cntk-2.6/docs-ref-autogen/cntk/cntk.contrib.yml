@@ -9,4 +9,3 @@ packages:
 - cntk.contrib.crosstalk
 - cntk.contrib.crosstalkcaffe
 - cntk.contrib.deeprl
-- cntk.contrib.netopt

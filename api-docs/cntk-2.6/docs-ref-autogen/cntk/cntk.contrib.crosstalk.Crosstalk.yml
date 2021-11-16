@@ -54,12 +54,12 @@ methods:
     - <xref:str>
   - name: rtol
     description: The relative tolerance parameter, as in numpy.isclose()
-    defaultValue: 1e-05
+    defaultValue: '1e-05'
     types:
     - <xref:float>
   - name: atol
     description: The absolute tolerance parameter, as in numpy.isclose()
-    defaultValue: 1e-08
+    defaultValue: '1e-08'
     types:
     - <xref:float>
   - name: equal_nan

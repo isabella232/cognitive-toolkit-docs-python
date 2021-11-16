@@ -5,62 +5,199 @@ fullName: cntk.train.trainer.Trainer
 module: cntk.train.trainer
 inheritances:
 - cntk.cntk_py.Trainer
+summary: 'Class for training the model parameters of a models'' specified loss function,
+  using the
+
+  specified set of `parameter_learners` for updating the model''s parameters
+
+  using computed gradients.
+
+  An optional specified metric function, which can be non-differentiable,
+
+  can be used for tracking the trained model''s quality.'
 constructor:
   syntax: Trainer(model, criterion, parameter_learners, progress_writers=None)
+  parameters:
+  - name: model
+    description: root node of the function to train
+    isRequired: true
+    types:
+    - <xref:cntk.ops.functions.Function>
+  - name: criterion
+    description: 'Function with one or two outputs, representing loss and, if given,
+      evaluation metric
+
+      (in this order). Alternatively, a tuple(loss Function, evaluation Function)
+      is also
+
+      accepted.'
+    isRequired: true
+    types:
+    - tuple of <xref:cntk.ops.functions.Function>
+    - <xref:cntk.variables.Variable>
+  - name: parameter_learners
+    description: list of learners from <xref:cntk.learners#module-cntk.learners>
+    isRequired: true
+    types:
+    - <xref:list>
+  - name: progress_writers
+    description: 'optionally, list of
+
+      progress writers from <xref:cntk.logging#module-cntk.logging> to automatically
+      track training
+
+      progress.'
+    isRequired: true
+    types:
+    - <xref:<xref:progress writer>>
+    - <xref:<xref:list of them>>
 methods:
 - uid: cntk.train.trainer.Trainer.print_node_timing
   name: print_node_timing
+  summary: 'Prints per-node average timing per-minibatch for each primitive function
+
+    statistics would reset after print'
   signature: print_node_timing()
 - uid: cntk.train.trainer.Trainer.restore_from_checkpoint
   name: restore_from_checkpoint
+  summary: 'Restores a checkpoint of the model and Trainer state from the
+
+    specified file location.'
   signature: restore_from_checkpoint(filename)
   parameters:
   - name: filename
+    description: filename to restore the checkpoint from
+    isRequired: true
+    types:
+    - <xref:str>
 - uid: cntk.train.trainer.Trainer.save_checkpoint
   name: save_checkpoint
+  summary: 'Saves a checkpoint of the model and other Trainer state at the
+
+    specified file location.
+
+
+    In distributed environment the checkpointing is done by
+
+    the main worker.'
   signature: save_checkpoint(filename, external_state={})
   parameters:
   - name: filename
+    description: filename to store the checkpoint.
+    isRequired: true
+    types:
+    - <xref:str>
   - name: external_state
+    description: additional external state, default is empty.
     defaultValue: '{}'
+    types:
+    - <xref:dict>
 - uid: cntk.train.trainer.Trainer.summarize_test_progress
   name: summarize_test_progress
+  summary: 'Updates the progress writers with the summary of test progress since start
+    and resets the internal
+
+    accumulators.'
   signature: summarize_test_progress()
 - uid: cntk.train.trainer.Trainer.summarize_training_progress
   name: summarize_training_progress
+  summary: 'Updates the progress writers with the summary of training progress since
+    start and resets the internal
+
+    accumulators.'
   signature: summarize_training_progress()
 - uid: cntk.train.trainer.Trainer.test_minibatch
   name: test_minibatch
+  summary: 'Test the model on the specified batch of samples using the evaluation
+
+    Function specified during construction of the Trainer.
+
+
+
+    > [!NOTE]
+
+    > See <xref:cntk.ops.functions.Function.forward> for examples on
+
+    >
+
+    > passing input data.
+
+    >'
   signature: test_minibatch(arguments, device=None)
   parameters:
   - name: arguments
+    isRequired: true
   - name: device
     defaultValue: None
+  return:
+    description: 'the average evaluation criterion value per sample for the
+
+      tested minibatch.'
+    types:
+    - <xref:<xref:*float*>>
 - uid: cntk.train.trainer.Trainer.train_minibatch
   name: train_minibatch
+  summary: 'Optimize model parameters using the specified ''arguments'' minibatch
+    of training samples.
+
+
+
+    > [!NOTE]
+
+    > See <xref:cntk.ops.functions.Function.forward> for examples on
+
+    >
+
+    > passing input data.
+
+    >'
   signature: train_minibatch(arguments, outputs=None, device=None, is_sweep_end=None)
   parameters:
   - name: arguments
+    isRequired: true
   - name: outputs
     defaultValue: None
   - name: device
     defaultValue: None
   - name: is_sweep_end
     defaultValue: None
+  return:
+    description: 'If `outputs` have not been provided, the returned value is *True*
+
+      if updates have been performed, *False* if all parameter learners
+
+      indicate end of learning (through their update). Otherwise, the
+
+      return value is a tuple of the that *bool* and a dictionary that
+
+      maps the variables in *outputs* to their respective NumPy arrays.'
+    types:
+    - <xref:<xref:*bool*>>
+    - <xref:<xref:*tuple*>>
 attributes:
 - uid: cntk.train.trainer.Trainer.evaluation_function
   name: evaluation_function
+  summary: The evaluation function that the trainer is using.
 - uid: cntk.train.trainer.Trainer.loss_function
   name: loss_function
+  summary: The loss function that the trainer is using.
 - uid: cntk.train.trainer.Trainer.model
   name: model
+  summary: The model that the trainer is training.
 - uid: cntk.train.trainer.Trainer.parameter_learners
   name: parameter_learners
+  summary: The parameter learners that the trainer is using.
 - uid: cntk.train.trainer.Trainer.previous_minibatch_evaluation_average
   name: previous_minibatch_evaluation_average
+  summary: The average evaluation criterion value per sample for the last minibatch
+    trained
 - uid: cntk.train.trainer.Trainer.previous_minibatch_loss_average
   name: previous_minibatch_loss_average
+  summary: The average training loss per sample for the last minibatch trained
 - uid: cntk.train.trainer.Trainer.previous_minibatch_sample_count
   name: previous_minibatch_sample_count
+  summary: The number of samples in the last minibatch trained with
 - uid: cntk.train.trainer.Trainer.total_number_of_samples_seen
   name: total_number_of_samples_seen
+  summary: The number of samples seen globally between all workers from the beginning
+    of training.

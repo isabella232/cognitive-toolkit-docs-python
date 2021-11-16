@@ -1,0 +1,34 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.crosstalkcaffe.tests.op2cntk_test
+name: op2cntk_test
+fullName: cntk.contrib.crosstalkcaffe.tests.op2cntk_test
+functions:
+- uid: cntk.contrib.crosstalkcaffe.tests.op2cntk_test.test_batch_norm_setup
+  name: test_batch_norm_setup
+  signature: test_batch_norm_setup(op_type, parameters, weights, input_data, expected_out)
+  parameters:
+  - name: op_type
+  - name: parameters
+  - name: weights
+  - name: input_data
+  - name: expected_out
+- uid: cntk.contrib.crosstalkcaffe.tests.op2cntk_test.test_conv_setup
+  name: test_conv_setup
+  summary: The function to test conv api setup
+  signature: test_conv_setup(op_type, parameters, weights, input_data, expected_out)
+  parameters:
+  - name: op_type
+  - name: parameters
+  - name: weights
+  - name: input_data
+  - name: expected_out
+- uid: cntk.contrib.crosstalkcaffe.tests.op2cntk_test.test_dense_setup
+  name: test_dense_setup
+  summary: The function to test dense api setup
+  signature: test_dense_setup(op_type, parameters, weights, input_data, expected_out)
+  parameters:
+  - name: op_type
+  - name: parameters
+  - name: weights
+  - name: input_data
+  - name: expected_out

@@ -1,0 +1,70 @@
+### YamlMime:PythonModule
+uid: cntk.tests.value_test
+name: value_test
+fullName: cntk.tests.value_test
+functions:
+- uid: cntk.tests.value_test.test_2d_sparse_sequences_value
+  name: test_2d_sparse_sequences_value
+  signature: test_2d_sparse_sequences_value(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.tests.value_test.test_as_shape_to_1d
+  name: test_as_shape_to_1d
+  signature: test_as_shape_to_1d(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.tests.value_test.test_asarray_method
+  name: test_asarray_method
+  signature: test_asarray_method()
+- uid: cntk.tests.value_test.test_dense_failing_value_to_ndarray
+  name: test_dense_failing_value_to_ndarray
+  signature: test_dense_failing_value_to_ndarray(data, num_of_dynamic_axes, expected_value_shape,
+    expected_array_shapes)
+  parameters:
+  - name: data
+  - name: num_of_dynamic_axes
+  - name: expected_value_shape
+  - name: expected_array_shapes
+- uid: cntk.tests.value_test.test_dense_value_to_ndarray
+  name: test_dense_value_to_ndarray
+  signature: test_dense_value_to_ndarray(data, num_of_dynamic_axes, expected_value_shape,
+    expected_array_shapes)
+  parameters:
+  - name: data
+  - name: num_of_dynamic_axes
+  - name: expected_value_shape
+  - name: expected_array_shapes
+- uid: cntk.tests.value_test.test_is_valid
+  name: test_is_valid
+  signature: test_is_valid(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.tests.value_test.test_ndarray_properties
+  name: test_ndarray_properties
+  signature: test_ndarray_properties()
+- uid: cntk.tests.value_test.test_ndarrayview_from_csr
+  name: test_ndarrayview_from_csr
+  signature: test_ndarrayview_from_csr(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.tests.value_test.test_sparse_failing_value_to_csr
+  name: test_sparse_failing_value_to_csr
+  signature: test_sparse_failing_value_to_csr(data, num_of_dynamic_axes, expected_value_shape,
+    expected_csr_shapes)
+  parameters:
+  - name: data
+  - name: num_of_dynamic_axes
+  - name: expected_value_shape
+  - name: expected_csr_shapes
+- uid: cntk.tests.value_test.test_sparse_value_to_csr
+  name: test_sparse_value_to_csr
+  signature: test_sparse_value_to_csr(data, num_of_dynamic_axes, expected_value_shape,
+    expected_csr_shapes)
+  parameters:
+  - name: data
+  - name: num_of_dynamic_axes
+  - name: expected_value_shape
+  - name: expected_csr_shapes
+- uid: cntk.tests.value_test.test_value_properties
+  name: test_value_properties
+  signature: test_value_properties()

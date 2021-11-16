@@ -1,0 +1,29 @@
+### YamlMime:PythonModule
+uid: cntk.losses.tests.cosine_distance_test
+name: cosine_distance_test
+fullName: cntk.losses.tests.cosine_distance_test
+summary: Unit tests for the cosine distance class.
+functions:
+- uid: cntk.losses.tests.cosine_distance_test.test_cos_distane_backward
+  name: test_cos_distane_backward
+  signature: test_cos_distane_backward()
+- uid: cntk.losses.tests.cosine_distance_test.test_cos_distane_backward2
+  name: test_cos_distane_backward2
+  signature: test_cos_distane_backward2()
+- uid: cntk.losses.tests.cosine_distance_test.test_cos_distane_backward3
+  name: test_cos_distane_backward3
+  signature: test_cos_distane_backward3()
+- uid: cntk.losses.tests.cosine_distance_test.test_cosine_distance
+  name: test_cosine_distance
+  signature: test_cosine_distance()
+- uid: cntk.losses.tests.cosine_distance_test.test_cosine_distance_with_negative_samples
+  name: test_cosine_distance_with_negative_samples
+  signature: test_cosine_distance_with_negative_samples()
+- uid: cntk.losses.tests.cosine_distance_test.test_cosine_distance_with_negative_samples_with_reduced_sequence
+  name: test_cosine_distance_with_negative_samples_with_reduced_sequence
+  signature: test_cosine_distance_with_negative_samples_with_reduced_sequence()
+- uid: cntk.losses.tests.cosine_distance_test.test_rank0_output
+  name: test_rank0_output
+  signature: test_rank0_output()
+classes:
+- cntk.losses.tests.cosine_distance_test.numpy_cos

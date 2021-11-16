@@ -1,0 +1,16 @@
+### YamlMime:PythonModule
+uid: cntk.tests.test_utils
+name: test_utils
+fullName: cntk.tests.test_utils
+summary: Utils for unit tests
+functions:
+- uid: cntk.tests.test_utils.precision
+  name: precision
+  signature: precision(request)
+- uid: cntk.tests.test_utils.set_device_from_pytest_env
+  name: set_device_from_pytest_env
+  summary: 'Helper function to select the right target device when this notebook is
+    being tested.
+
+    Call this at the start of all Jupyter notebooks.'
+  signature: set_device_from_pytest_env()

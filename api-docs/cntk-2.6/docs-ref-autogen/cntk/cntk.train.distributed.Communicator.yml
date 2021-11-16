@@ -5,27 +5,48 @@ fullName: cntk.train.distributed.Communicator
 module: cntk.train.distributed
 inheritances:
 - cntk.cntk_py.DistributedCommunicator
+summary: 'A communicator interface exposing communication primitives that serve as
+  building blocks
+
+  for distributed training.'
 constructor:
   syntax: Communicator(*args, **kwargs)
 methods:
 - uid: cntk.train.distributed.Communicator.barrier
   name: barrier
+  summary: Sync point to make sure all workers reach the same state.
   signature: barrier()
 - uid: cntk.train.distributed.Communicator.current_worker
   name: current_worker
+  summary: Returns worker descriptor of current process.
   signature: current_worker()
+  return:
+    description: descriptor of current process.
+    types:
+    - <xref:cntk.train.distributed.WorkerDescriptor>
 - uid: cntk.train.distributed.Communicator.finalize
   name: finalize
+  summary: Should be called when all communication is finished. No more communication
+    should happen after this call.
   signature: finalize()
 - uid: cntk.train.distributed.Communicator.is_main
   name: is_main
+  summary: Indicates if the current communicator is instantiated on the main node.
+    The node with rank 0 is considered the main.
   signature: is_main()
 - uid: cntk.train.distributed.Communicator.num_workers
   name: num_workers
+  summary: Returns information about all MPI workers.
   signature: num_workers()
 - uid: cntk.train.distributed.Communicator.rank
   name: rank
+  summary: Returns rank of current process.
   signature: rank()
 - uid: cntk.train.distributed.Communicator.workers
   name: workers
+  summary: Returns workers in this communicator.
   signature: workers()
+  return:
+    description: workers in this communicator.
+    types:
+    - '<xref:(<xref:*list*>)<xref: of cntk.train.distributed.WorkerDescriptor>>'

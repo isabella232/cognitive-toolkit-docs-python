@@ -1,0 +1,23 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.combine_test
+name: combine_test
+fullName: cntk.ops.tests.combine_test
+summary: Unit tests for combine operation, only forward pass is tested
+functions:
+- uid: cntk.ops.tests.combine_test.test_op_combine
+  name: test_op_combine
+  signature: test_op_combine(left_operand, right_operand, operations, expected_results,
+    device_id, precision)
+  parameters:
+  - name: left_operand
+  - name: right_operand
+  - name: operations
+  - name: expected_results
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.combine_test.test_op_combine_input_var
+  name: test_op_combine_input_var
+  signature: test_op_combine_input_var()
+- uid: cntk.ops.tests.combine_test.test_op_combine_subscript
+  name: test_op_combine_subscript
+  signature: test_op_combine_subscript()
