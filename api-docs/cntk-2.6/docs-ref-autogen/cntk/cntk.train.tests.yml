@@ -1,0 +1,7 @@
+### YamlMime:PythonPackage
+uid: cntk.train.tests
+name: tests
+fullName: cntk.train.tests
+type: import
+modules:
+- cntk.train.tests.distributed_test

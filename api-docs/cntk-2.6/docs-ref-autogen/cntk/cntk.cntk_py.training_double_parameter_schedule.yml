@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.training_double_parameter_schedule
+name: training_double_parameter_schedule
+fullName: cntk.cntk_py.training_double_parameter_schedule
+module: cntk.cntk_py
+inheritances:
+- cntk.cntk_py.IDictionarySerializable
+constructor:
+  syntax: training_double_parameter_schedule(*args)
+methods:
+- uid: cntk.cntk_py.training_double_parameter_schedule.current_version
+  name: current_version
+  signature: current_version()
+- uid: cntk.cntk_py.training_double_parameter_schedule.deserialize
+  name: deserialize
+- uid: cntk.cntk_py.training_double_parameter_schedule.is_sweep_based
+  name: is_sweep_based
+  signature: is_sweep_based()
+- uid: cntk.cntk_py.training_double_parameter_schedule.serialize
+  name: serialize
+  signature: serialize()
+- uid: cntk.cntk_py.training_double_parameter_schedule.transform
+  name: transform
+  signature: transform(func)
+  parameters:
+  - name: func
+    isRequired: true
+attributes:
+- uid: cntk.cntk_py.training_double_parameter_schedule.full_data_sweep
+  name: full_data_sweep
+  signature: full_data_sweep = 0
+- uid: cntk.cntk_py.training_double_parameter_schedule.ignored_minibatch_size
+  name: ignored_minibatch_size
+  signature: ignored_minibatch_size = 0

@@ -1,0 +1,8 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
+name: cntkinstance
+fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
+classes:
+- cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup
+- cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.BlockApiSetup
+- cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.CntkApiInstance

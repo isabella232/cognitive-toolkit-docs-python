@@ -1,0 +1,43 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+name: SignWithEstimation
+fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+module: cntk.contrib.netopt.custom_convolution_ops
+inheritances:
+- cntk.ops.functions.UserFunction
+constructor:
+  syntax: SignWithEstimation(arg, name='SignWithEstimation')
+methods:
+- uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.backward
+  name: backward
+  signature: backward(state, root_gradients)
+  parameters:
+  - name: state
+    isRequired: true
+  - name: root_gradients
+    isRequired: true
+- uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.forward
+  name: forward
+  signature: forward(argument, device, outputs_to_retain)
+  parameters:
+  - name: argument
+    isRequired: true
+  - name: device
+    isRequired: true
+  - name: outputs_to_retain
+    isRequired: true
+- uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.gradFunc
+  name: gradFunc
+  signature: gradFunc(arg)
+  parameters:
+  - name: arg
+    isRequired: true
+- uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.infer_outputs
+  name: infer_outputs
+  signature: infer_outputs()
+- uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.signFunc
+  name: signFunc
+  signature: signFunc(arg)
+  parameters:
+  - name: arg
+    isRequired: true

@@ -1,0 +1,383 @@
+### YamlMime:PythonModule
+uid: cntk.internal.sanitize
+name: sanitize
+fullName: cntk.internal.sanitize
+functions:
+- uid: cntk.internal.sanitize.bounded_cache
+  name: bounded_cache
+  signature: bounded_cache(maxsize)
+  parameters:
+  - name: maxsize
+- uid: cntk.internal.sanitize.data_type_to_dtype
+  name: data_type_to_dtype
+  signature: data_type_to_dtype(data_type)
+  parameters:
+  - name: data_type
+- uid: cntk.internal.sanitize.is_byte_buffer
+  name: is_byte_buffer
+  summary: 'Tests whether `s` is a byte buffer (not a string) in a way that
+
+    works on Python 2 and 3.'
+  signature: is_byte_buffer(s)
+  parameters:
+  - name: s
+- uid: cntk.internal.sanitize.is_string
+  name: is_string
+  summary: Tests whether `s` is a string in a way that works on Python 2 and 3.
+  signature: is_string(s)
+  parameters:
+  - name: s
+- uid: cntk.internal.sanitize.sanitize_2d_number
+  name: sanitize_2d_number
+  summary: Convert `x` to a tuple.
+  signature: sanitize_2d_number(x)
+  parameters:
+  - name: x
+    description: a scalar number or a tuple of length 2 that contains the 2D values.
+    isRequired: true
+  return:
+    description: A tuple of length two.
+- uid: cntk.internal.sanitize.sanitize_Function_attributes
+  name: sanitize_Function_attributes
+  signature: sanitize_Function_attributes(attributes)
+  parameters:
+  - name: attributes
+- uid: cntk.internal.sanitize.sanitize_axis
+  name: sanitize_axis
+  summary: Sanitizes the axis.
+  signature: sanitize_axis(axis)
+  parameters:
+  - name: axis
+    description: "the axis to be used.\n\n* <xref:cntk.axis.Axis>: use axis instance\
+      \ directly (will convert row- to col-major in case of static axis). \n\n* int:\
+      \ if positive, use it as static axis. If negative, count from last to first\
+      \ axis \n\n* None: denote all available axes"
+    isRequired: true
+    types:
+    - <xref:cntk.axis.Axis>
+    - <xref:int>
+    - <xref:None>
+- uid: cntk.internal.sanitize.sanitize_axis_list
+  name: sanitize_axis_list
+  summary: Sanitizes a list of axes.
+  signature: sanitize_axis_list(axes)
+  parameters:
+  - name: axes
+    description: "the axes to be used.\n\n* <xref:cntk.axis.Axis>: use axis instance\
+      \ directly (will convert row- to col-major in case of static axis). \n\n* int:\
+      \ if positive, use it as static axis. If negative, count from last to first\
+      \ axis \n\n* None: denote all available axes"
+    isRequired: true
+    types:
+    - <xref:list of cntk.axis.Axis>
+    - <xref:int>
+    - <xref:None>
+- uid: cntk.internal.sanitize.sanitize_batch
+  name: sanitize_batch
+  summary: Convert to <xref:cntk.core.Value>.
+  signature: sanitize_batch(var, batch, seq_starts=None, device=None)
+  parameters:
+  - name: var
+    description: 'input variable into which
+
+      `batch` is passed'
+    isRequired: true
+    types:
+    - <xref:cntk.variables.Variable>
+  - name: batch
+    description: "batch input for *var*. It can be\n\n* a single NumPy array denoting\
+      \ the full minibatch \n\n* a list of NumPy arrays or SciPy sparse CSR matrices\
+      \ each representing a sequence \n\n* a <xref:cntk.core.Value> object (e.g. returned\
+      \ by <xref:cntk.core.Value.one_hot>)"
+    isRequired: true
+  - name: seq_starts
+    description: 'if None, every sequence is
+
+      treated as a new sequence. Otherwise, it is interpreted as a list of
+
+      Booleans one for each sequence in the batch that tell whether a
+
+      sequence is a new sequence (*True*) or a continuation of the sequence
+
+      in the same slot of the previous minibatch (*False*)'
+    isRequired: true
+    types:
+    - <xref:list of bools>
+    - <xref:None>
+  - name: device
+    description: 'device
+
+      this value should be put on'
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>, <xref:default None>
+  return:
+    description: 'batch converted to a <xref:cntk.core.Value> instance that can be
+
+      passed to the core API'
+- uid: cntk.internal.sanitize.sanitize_convolution_args
+  name: sanitize_convolution_args
+  signature: sanitize_convolution_args(strides, sharing, auto_padding)
+  parameters:
+  - name: strides
+  - name: sharing
+  - name: auto_padding
+- uid: cntk.internal.sanitize.sanitize_dtype_cntk
+  name: sanitize_dtype_cntk
+  signature: sanitize_dtype_cntk(dtype)
+  parameters:
+  - name: dtype
+- uid: cntk.internal.sanitize.sanitize_dtype_numpy
+  name: sanitize_dtype_numpy
+  signature: sanitize_dtype_numpy(dtype)
+  parameters:
+  - name: dtype
+- uid: cntk.internal.sanitize.sanitize_dynamic_axes
+  name: sanitize_dynamic_axes
+  signature: sanitize_dynamic_axes(axes)
+  parameters:
+  - name: axes
+- uid: cntk.internal.sanitize.sanitize_function
+  name: sanitize_function
+  summary: 'Tries to retrieve a Function from the argument or raises a TypeError if
+
+    that''s not possible.'
+  signature: sanitize_function(arg)
+  parameters:
+  - name: arg
+- uid: cntk.internal.sanitize.sanitize_input
+  name: sanitize_input
+  summary: "Convert to <xref:cntk.variables.Variable> so that it can be passed\nas\
+    \ Variable to the CNTK operators.\n\n   * If `arg` is a NumPy array and its type\
+    \ is not among (*np.float32*, *np.float64*, *np.float16*), it sets it to *np.float32*.\
+    \ \n\n   * If `arg` is an op, it is assumed that it has only one output, which\
+    \ will be returned."
+  signature: sanitize_input(arg, fallback_dtype=np.float32, reshape=None)
+  parameters:
+  - name: arg
+    description: input
+    isRequired: true
+    types:
+    - <xref:number>, <xref:NumPy array>, <xref:cntk.variables.Variable,>
+    - <xref:cntk.ops.functions.Function>
+  - name: fallback_dtype
+    description: fallback dtype in case `arg` is a list
+    defaultValue: <class 'numpy.float32'>
+    types:
+    - <xref:NumPy dtype>
+  - name: reshape
+    defaultValue: None
+  return:
+    description: 'Leaves Constant, Parameter, and Variable as is. Returns Constant,
+      if
+
+      `arg` is a number or NumPy array. Variable otherwise.'
+- uid: cntk.internal.sanitize.sanitize_multi_axis_reduction_list
+  name: sanitize_multi_axis_reduction_list
+  summary: Sanitizes a list of axes for multi-axis reduction which can not contain
+    sequence axis.
+  signature: sanitize_multi_axis_reduction_list(axes)
+  parameters:
+  - name: axes
+    description: "the axes to be used.\n\n* <xref:cntk.axis.Axis>: use axis instance\
+      \ directly (will convert row- to col-major in case of static axis). \n\n* int:\
+      \ if positive, use it as static axis. If negative, count from last to first\
+      \ axis \n\n* None: denote all available axes"
+    isRequired: true
+    types:
+    - <xref:list of cntk.axis.Axis>
+    - <xref:int>
+    - <xref:None>
+- uid: cntk.internal.sanitize.sanitize_permutation
+  name: sanitize_permutation
+  signature: sanitize_permutation(perm)
+  parameters:
+  - name: perm
+- uid: cntk.internal.sanitize.sanitize_pooling_args
+  name: sanitize_pooling_args
+  signature: sanitize_pooling_args(pooling_window_shape, strides, auto_padding)
+  parameters:
+  - name: pooling_window_shape
+  - name: strides
+  - name: auto_padding
+- uid: cntk.internal.sanitize.sanitize_precision
+  name: sanitize_precision
+  summary: Converts precision to NumPy precision
+  signature: sanitize_precision(precision)
+  parameters:
+  - name: precision
+    description: 'precision, if string
+
+      it can be one of ''float'' ''float32, ''double'', ''float64'' or ''float16'''
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:np.float16>
+    - <xref:np.float32>
+    - <xref:np.float64>
+  return:
+    description: NumPy precision
+- uid: cntk.internal.sanitize.sanitize_random_args
+  name: sanitize_random_args
+  signature: sanitize_random_args(shape, dtype)
+  parameters:
+  - name: shape
+  - name: dtype
+- uid: cntk.internal.sanitize.sanitize_range
+  name: sanitize_range
+  summary: 'Convert `x` to a tuple such as the first element is less than or equal
+    to the
+
+    second element.'
+  signature: sanitize_range(x)
+  parameters:
+  - name: x
+    description: a scalar number or a tuple of length 2 that contains the range values.
+    isRequired: true
+  return:
+    description: 'A tuple of length two where the first element is less than or equal
+      to the
+
+      second element.'
+- uid: cntk.internal.sanitize.sanitize_shape
+  name: sanitize_shape
+  summary: If shape is scalar, it creates a tuple out of it.
+  signature: sanitize_shape(shape)
+  parameters:
+  - name: shape
+- uid: cntk.internal.sanitize.sanitize_value
+  name: sanitize_value
+  summary: 'Converts a given `value` to an <xref:cntk.core.NDArrayView> object
+
+    that can be passed to the CNTK core.'
+  signature: sanitize_value(shape, value, dtype, device)
+  parameters:
+  - name: shape
+    description: shape of the value
+    isRequired: true
+    types:
+    - <xref:tuple>
+  - name: value
+    description: 'the value to
+
+      be converted'
+    isRequired: true
+    types:
+    - <xref:None>
+    - <xref:value that can be cast to NumPy array>
+  - name: dtype
+    description: data type (np.float32 or np.float64)
+    isRequired: true
+  - name: device
+    description: 'device this value should be put
+
+      on'
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>
+  return:
+    description: <xref:cntk.core.NDArrayView> object representing `value`
+- uid: cntk.internal.sanitize.sanitize_var_map
+  name: sanitize_var_map
+  summary: 'Sanitizes a dictionary of *Variable* s to input data such that it can
+    be
+
+    handed off to the evaluation methods
+
+    (<xref:cntk.ops.functions.Function.forward>,
+
+    <xref:cntk.ops.functions.Function.backward>,
+
+    <xref:cntk.train.trainer.Trainer.train_minibatch> and
+
+    <xref:cntk.train.trainer.Trainer.test_minibatch>).'
+  signature: sanitize_var_map(op_arguments, arguments, precision=None, device=None,
+    extract_values_from_minibatch_data=True)
+  parameters:
+  - name: op_arguments
+    description: 'arguments of the
+
+      root function. In <xref:cntk.ops.functions.Function.forward> pass it
+
+      is typically *op.arguments*, in
+
+      <xref:cntk.ops.functions.Function.backward> pass it is *op.outputs*'
+    isRequired: true
+    types:
+    - <xref:cntk.ops.functions.Function>
+  - name: arguments
+    description: "maps variables to their input data. The interpretation\ndepends\
+      \ on the input type:\n\n   * dict: keys are input variable or names, and values\
+      \ are the input data. \n\n   * any other type: if node has a unique input, arguments\
+      \ is mapped to this input. \n\nFor nodes with more than one input, only dict\
+      \ is allowed.\n\nIn both cases, every sample in the data will be interpreted\n\
+      as a new sequence.\n\nSequences can be marked as continuations of the same sequence\
+      \ in\nthe previous minibatch (that is the sequence in the same slot).\nThere\
+      \ are two possibilities for this:\n\n   * specifying arguments as a *tuple*\
+      \ where the first element is used as arguments and the second one will be used\
+      \ as a list of bools, denoting whether a sequence is a new one (*True*) or a\
+      \ continuation of the sequence in the same slot of the previous minibatch (*False*).\
+      \ This will be applied to all batches. \n\n   * specifying arguments as a dictionary\
+      \ of variables to tuples where the first element is used as arguments and the\
+      \ second one will be used as a list of bools, denoting whether a sequence is\
+      \ a new one (*True*) or a continuation of the sequence in the same slot of the\
+      \ previous minibatch (*False*). This will be applied to all batches. \n\nData\
+      \ should be either NumPy arrays or a\n<xref:cntk.io.MinibatchData> instance."
+    isRequired: true
+  - name: precision
+    description: 'if string it can be
+
+      one of ''float'' ''float32, ''double'', ''float64'', ''float16'', or None'
+    defaultValue: None
+    types:
+    - <xref:str>
+    - <xref:np.float32>
+    - <xref:np.float64>
+    - <xref:np.float16>
+  - name: device
+    description: 'device
+
+      this value should be put on'
+    defaultValue: None
+    types:
+    - <xref:cntk.device.DeviceDescriptor>, <xref:default None>
+  - name: extract_values_from_minibatch_data
+    description: 'specifies if <xref:cntk.io.MinibatchData> instances in the arguments
+
+      map are converted to the underlying value (<xref:cntk.core.Value>)
+
+      instances (default), or if they should remain intact, as they contain
+
+      additional meta information required by the Trainer (specifically, by
+
+      the <xref:cntk.train.trainer.Trainer.train_minibatch> method).'
+    defaultValue: 'True'
+    types:
+    - <xref:bool>, <xref:defaults to True>
+  return:
+    description: '*dict* that maps variables to sanitized batches'
+- uid: cntk.internal.sanitize.sanitize_variable_or_function
+  name: sanitize_variable_or_function
+  summary: 'Tries to retrieve a Variable or Function from the argument or raises a
+
+    TypeError if that''s not possible.'
+  signature: sanitize_variable_or_function(arg)
+  parameters:
+  - name: arg
+- uid: cntk.internal.sanitize.sanitize_variable_value_dict
+  name: sanitize_variable_value_dict
+  signature: sanitize_variable_value_dict(var_value_dict)
+  parameters:
+  - name: var_value_dict
+- uid: cntk.internal.sanitize.sanitize_variables_or_functions
+  name: sanitize_variables_or_functions
+  summary: 'Tries to retrieve a list of Variables or Functions from the argument or
+
+    throws an exception if that''s not possible. If *arg* is not an iterable, it
+
+    tries to return a list of a single item of the Variable or Function, or
+
+    raises a TypeError, if that''s possible.'
+  signature: sanitize_variables_or_functions(arg)
+  parameters:
+  - name: arg

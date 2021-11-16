@@ -1,0 +1,48 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
+name: FakeAgentBaseClass
+fullName: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass
+module: cntk.contrib.deeprl.tests.agent_test
+inheritances:
+- cntk.contrib.deeprl.agent.agent.AgentBaseClass
+summary: Subclass AgentBaseClass for unittest.
+constructor:
+  syntax: FakeAgentBaseClass(o_space, a_space)
+methods:
+- uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.end
+  name: end
+  signature: end(reward, next_state)
+  parameters:
+  - name: reward
+    isRequired: true
+  - name: next_state
+    isRequired: true
+- uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.save
+  name: save
+  signature: save(filename)
+  parameters:
+  - name: filename
+    isRequired: true
+- uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.save_parameter_settings
+  name: save_parameter_settings
+  signature: save_parameter_settings(filename)
+  parameters:
+  - name: filename
+    isRequired: true
+- uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.set_as_best_model
+  name: set_as_best_model
+  signature: set_as_best_model()
+- uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.start
+  name: start
+  signature: start(state)
+  parameters:
+  - name: state
+    isRequired: true
+- uid: cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass.step
+  name: step
+  signature: step(reward, next_state)
+  parameters:
+  - name: reward
+    isRequired: true
+  - name: next_state
+    isRequired: true

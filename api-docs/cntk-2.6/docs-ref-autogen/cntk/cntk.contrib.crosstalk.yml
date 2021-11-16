@@ -1,0 +1,26 @@
+### YamlMime:PythonPackage
+uid: cntk.contrib.crosstalk
+name: crosstalk
+fullName: cntk.contrib.crosstalk
+summary: 'Crosstalk (Contrib) for debugging/conversion among toolkits
+
+
+
+  It is the utility to manage variables for debugging/conversion across scripts in
+  different toolkits.
+
+  With crosstalk, user can define named watch points to variables or parameters, and
+  setting up a work dir.
+
+  Then crosstalk can save/load variables to corresponding files from python debugger,
+  and compare values using numpy.'
+type: import
+classes:
+- cntk.contrib.crosstalk.Conv2DArgs
+- cntk.contrib.crosstalk.Conv2DAttr
+- cntk.contrib.crosstalk.Crosstalk
+- cntk.contrib.crosstalk.EmbedAttr
+- cntk.contrib.crosstalk.RnnArgs
+- cntk.contrib.crosstalk.RnnAttr
+modules:
+- cntk.contrib.crosstalk.crosstalk_cntk

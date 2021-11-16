@@ -1,0 +1,16 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.SequenceDataBase
+name: SequenceDataBase
+fullName: cntk.cntk_py.SequenceDataBase
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: SequenceDataBase(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.SequenceDataBase.get_data_buffer
+  name: get_data_buffer
+  signature: get_data_buffer()
+- uid: cntk.cntk_py.SequenceDataBase.get_sample_shape
+  name: get_sample_shape
+  signature: get_sample_shape()

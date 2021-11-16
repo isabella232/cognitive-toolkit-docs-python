@@ -1,0 +1,9 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.GilStateGuard
+name: GilStateGuard
+fullName: cntk.cntk_py.GilStateGuard
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: GilStateGuard()

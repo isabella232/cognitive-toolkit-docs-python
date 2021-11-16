@@ -1,0 +1,5 @@
+### YamlMime:PythonPackage
+uid: cntk.metrics.tests
+name: tests
+fullName: cntk.metrics.tests
+type: import

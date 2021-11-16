@@ -1,0 +1,15 @@
+### YamlMime:PythonEnum
+uid: cntk.logging.TraceLevel
+name: TraceLevel
+fullName: cntk.logging.TraceLevel
+summary: Describes different logging verbosity levels.
+module: cntk.logging
+inheritances:
+- enum.Enum
+fields:
+- name: Error
+  uid: cntk.logging.TraceLevel.Error
+- name: Info
+  uid: cntk.logging.TraceLevel.Info
+- name: Warning
+  uid: cntk.logging.TraceLevel.Warning

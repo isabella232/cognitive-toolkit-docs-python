@@ -1,0 +1,55 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.NDMask
+name: NDMask
+fullName: cntk.cntk_py.NDMask
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: NDMask(*args)
+methods:
+- uid: cntk.cntk_py.NDMask.alias
+  name: alias
+  signature: alias()
+- uid: cntk.cntk_py.NDMask.asarray
+  name: asarray
+  summary: Converts the instance's data to a NumPy array.
+  signature: asarray()
+- uid: cntk.cntk_py.NDMask.clear
+  name: clear
+  signature: clear()
+- uid: cntk.cntk_py.NDMask.copy_from
+  name: copy_from
+  signature: copy_from(source)
+  parameters:
+  - name: source
+    isRequired: true
+- uid: cntk.cntk_py.NDMask.data_buffer
+  name: data_buffer
+  signature: data_buffer()
+- uid: cntk.cntk_py.NDMask.deep_clone
+  name: deep_clone
+  signature: deep_clone(*args)
+- uid: cntk.cntk_py.NDMask.device
+  name: device
+  signature: device()
+- uid: cntk.cntk_py.NDMask.invalidate_section
+  name: invalidate_section
+  signature: invalidate_section(sectionOffset, sectionShape)
+  parameters:
+  - name: sectionOffset
+    isRequired: true
+  - name: sectionShape
+    isRequired: true
+- uid: cntk.cntk_py.NDMask.mark_sequence_begin
+  name: mark_sequence_begin
+  signature: mark_sequence_begin(*args)
+- uid: cntk.cntk_py.NDMask.masked_count
+  name: masked_count
+  signature: masked_count()
+- uid: cntk.cntk_py.NDMask.shape
+  name: shape
+  signature: shape()
+- uid: cntk.cntk_py.NDMask.to_ndarray
+  name: to_ndarray
+  signature: to_ndarray()

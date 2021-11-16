@@ -1,0 +1,98 @@
+### YamlMime:PythonModule
+uid: cntk.cntk_py
+name: cntk_py
+fullName: cntk.cntk_py
+functions:
+- uid: cntk.cntk_py.ConstantDouble
+  name: ConstantDouble
+  signature: ConstantDouble(*args)
+- uid: cntk.cntk_py.ConstantFloat
+  name: ConstantFloat
+  signature: ConstantFloat(*args)
+- uid: cntk.cntk_py.DictionaryValueFromDict
+  name: DictionaryValueFromDict
+  signature: DictionaryValueFromDict(value)
+  parameters:
+  - name: value
+- uid: cntk.cntk_py.DictionaryValueFromNDArrayView
+  name: DictionaryValueFromNDArrayView
+  signature: DictionaryValueFromNDArrayView(value)
+  parameters:
+  - name: value
+- uid: cntk.cntk_py.DictionaryValueFromTrainingDoubleParameterSchedule
+  name: DictionaryValueFromTrainingDoubleParameterSchedule
+  signature: DictionaryValueFromTrainingDoubleParameterSchedule(value)
+  parameters:
+  - name: value
+- uid: cntk.cntk_py.NDArrayViewDouble
+  name: NDArrayViewDouble
+  signature: NDArrayViewDouble(*args)
+- uid: cntk.cntk_py.NDArrayViewFloat
+  name: NDArrayViewFloat
+  signature: NDArrayViewFloat(*args)
+- uid: cntk.cntk_py.ParameterDouble
+  name: ParameterDouble
+  signature: ParameterDouble(*args)
+- uid: cntk.cntk_py.ParameterFloat
+  name: ParameterFloat
+  signature: ParameterFloat(*args)
+classes:
+- cntk.cntk_py.AdditionalLearningOptions
+- cntk.cntk_py.Axis
+- cntk.cntk_py.BackPropState
+- cntk.cntk_py.CheckpointConfig
+- cntk.cntk_py.Chunk
+- cntk.cntk_py.ChunkInfo
+- cntk.cntk_py.Constant
+- cntk.cntk_py.CrossValidationConfig
+- cntk.cntk_py.DataDeserializer
+- cntk.cntk_py.DenseDataFromPy
+- cntk.cntk_py.DenseSequenceData
+- cntk.cntk_py.DeserializerFactory
+- cntk.cntk_py.DeviceDescriptor
+- cntk.cntk_py.Dictionary
+- cntk.cntk_py.DictionaryValue
+- cntk.cntk_py.DistributedCommunicator
+- cntk.cntk_py.DistributedLearner
+- cntk.cntk_py.DistributedWorkerDescriptor
+- cntk.cntk_py.Evaluator
+- cntk.cntk_py.Function
+- cntk.cntk_py.GPUProperties
+- cntk.cntk_py.GilStateGuard
+- cntk.cntk_py.HTKFeatureConfiguration
+- cntk.cntk_py.IDictionarySerializable
+- cntk.cntk_py.Learner
+- cntk.cntk_py.MinibatchData
+- cntk.cntk_py.MinibatchInfo
+- cntk.cntk_py.MinibatchSource
+- cntk.cntk_py.MinibatchSourceConfig
+- cntk.cntk_py.NDArrayView
+- cntk.cntk_py.NDMask
+- cntk.cntk_py.NDShape
+- cntk.cntk_py.OptionalBool
+- cntk.cntk_py.Parameter
+- cntk.cntk_py.ProgressWriter
+- cntk.cntk_py.QuantizedDistributedCommunicator
+- cntk.cntk_py.SequenceDataBase
+- cntk.cntk_py.SequenceInfo
+- cntk.cntk_py.SequenceKey
+- cntk.cntk_py.SizeTWrapper
+- cntk.cntk_py.SparseDataFromPy
+- cntk.cntk_py.SparseSequenceData
+- cntk.cntk_py.StreamConfiguration
+- cntk.cntk_py.StreamInformation
+- cntk.cntk_py.SwigChunk
+- cntk.cntk_py.SwigDataDeserializer
+- cntk.cntk_py.SwigMinibatchSource
+- cntk.cntk_py.SwigPyIterator
+- cntk.cntk_py.TensorBoardFileWriter
+- cntk.cntk_py.TestConfig
+- cntk.cntk_py.Trainer
+- cntk.cntk_py.TrainingSession
+- cntk.cntk_py.UDFDeserializeCallbackWrapper
+- cntk.cntk_py.UserBackPropState
+- cntk.cntk_py.Value
+- cntk.cntk_py.Variable
+- cntk.cntk_py.float16
+- cntk.cntk_py.minibatch_size_schedule
+- cntk.cntk_py.training_double_parameter_schedule

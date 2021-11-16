@@ -1,0 +1,7 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.agent.random_agent
+name: random_agent
+fullName: cntk.contrib.deeprl.agent.random_agent
+summary: Baseline agent that selects action uniformly randomly.
+classes:
+- cntk.contrib.deeprl.agent.random_agent.RandomAgent

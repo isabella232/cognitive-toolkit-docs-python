@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
+name: ReplayMemoryTest
+fullName: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest
+module: cntk.contrib.deeprl.tests.replay_memory_test
+inheritances:
+- unittest.case.TestCase
+summary: Unit tests for ReplayMemory.
+constructor:
+  syntax: ReplayMemoryTest(methodName='runTest')
+methods:
+- uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_prioritized_sampling
+  name: test_prioritized_sampling
+  signature: test_prioritized_sampling()
+- uid: cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest.test_uniform_sampling
+  name: test_uniform_sampling
+  signature: test_uniform_sampling()

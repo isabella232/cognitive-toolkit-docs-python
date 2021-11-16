@@ -1,0 +1,32 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter
+name: CaffeAdapter
+fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter
+module: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
+inheritances:
+- cntk.contrib.crosstalkcaffe.adapter.baseadapter.Adapter
+summary: Adapt Caffe prototxt and weights into uniform format
+constructor:
+  syntax: CaffeAdapter()
+methods:
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter.adapt_solver
+  name: adapt_solver
+  summary: Adapt Caffe solver into CNTK format
+  signature: adapt_solver()
+  parameters:
+  - name: None
+    isRequired: true
+  return:
+    description: None
+- uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter.load_model
+  name: load_model
+  summary: Load prototxt and weights of Caffe, parsing them into uniform model
+  signature: load_model(global_conf)
+  parameters:
+  - name: global_conf
+    description: The global configurations
+    isRequired: true
+    types:
+    - <xref:cntk.contrib.crosstalkcaffe.utils.globalconf.GlobalConf>
+  return:
+    description: None

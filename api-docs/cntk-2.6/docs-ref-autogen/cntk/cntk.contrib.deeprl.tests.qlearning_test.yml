@@ -1,0 +1,6 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.qlearning_test
+name: qlearning_test
+fullName: cntk.contrib.deeprl.tests.qlearning_test
+classes:
+- cntk.contrib.deeprl.tests.qlearning_test.QLearningTest

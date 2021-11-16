@@ -1,0 +1,10 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.utils.globalconf.ScriptSolverConf
+name: ScriptSolverConf
+fullName: cntk.contrib.crosstalkcaffe.utils.globalconf.ScriptSolverConf
+module: cntk.contrib.crosstalkcaffe.utils.globalconf
+inheritances:
+- builtins.object
+summary: The script solver
+constructor:
+  syntax: ScriptSolverConf()

@@ -1,0 +1,36 @@
+### YamlMime:PythonModule
+uid: cntk.debugging.profiler
+name: profiler
+fullName: cntk.debugging.profiler
+functions:
+- uid: cntk.debugging.profiler.disable_profiler
+  name: disable_profiler
+  summary: Disable profiler from gathering data.
+  signature: disable_profiler()
+- uid: cntk.debugging.profiler.enable_profiler
+  name: enable_profiler
+  summary: Enable profiler to gather data. Note that in training_session, profiler
+    would be enabled automatically after the first check point
+  signature: enable_profiler()
+- uid: cntk.debugging.profiler.start_profiler
+  name: start_profiler
+  summary: 'Start profiler to prepare performance statistics gathering. Note that
+
+    the profiler is not enabled after start
+
+    ([example](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-and-Python-Performance-Profiler#for-python)).'
+  signature: start_profiler(dir='profiler', sync_gpu=True, reserve_mem=33554432)
+  parameters:
+  - name: dir
+    description: directory for profiler output
+    defaultValue: profiler
+  - name: sync_gpu
+    description: whether profiler syncs CPU with GPU when timing
+    defaultValue: 'True'
+  - name: reserve_mem
+    description: size in byte for profiler memory reserved
+    defaultValue: '33554432'
+- uid: cntk.debugging.profiler.stop_profiler
+  name: stop_profiler
+  summary: Stop profiler from gathering performance statistics and flush them to file
+  signature: stop_profiler()

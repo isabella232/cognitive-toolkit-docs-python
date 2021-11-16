@@ -1,0 +1,42 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.Dictionary
+name: Dictionary
+fullName: cntk.cntk_py.Dictionary
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: Dictionary(*args)
+methods:
+- uid: cntk.cntk_py.Dictionary.add
+  name: add
+  signature: add(*args)
+- uid: cntk.cntk_py.Dictionary.begin
+  name: begin
+  signature: begin()
+- uid: cntk.cntk_py.Dictionary.cbegin
+  name: cbegin
+  signature: cbegin()
+- uid: cntk.cntk_py.Dictionary.cend
+  name: cend
+  signature: cend()
+- uid: cntk.cntk_py.Dictionary.contains
+  name: contains
+  signature: contains(*args)
+- uid: cntk.cntk_py.Dictionary.end
+  name: end
+  signature: end()
+- uid: cntk.cntk_py.Dictionary.keys
+  name: keys
+  signature: keys()
+- uid: cntk.cntk_py.Dictionary.load
+  name: load
+- uid: cntk.cntk_py.Dictionary.save
+  name: save
+  signature: save(filename)
+  parameters:
+  - name: filename
+    isRequired: true
+- uid: cntk.cntk_py.Dictionary.size
+  name: size
+  signature: size()

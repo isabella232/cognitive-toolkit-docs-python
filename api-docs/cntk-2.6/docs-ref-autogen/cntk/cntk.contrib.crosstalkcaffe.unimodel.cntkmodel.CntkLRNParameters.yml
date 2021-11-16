@@ -1,0 +1,10 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLRNParameters
+name: CntkLRNParameters
+fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkLRNParameters
+module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+inheritances:
+- cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkParameters
+summary: The parameter definition of LRN op
+constructor:
+  syntax: CntkLRNParameters()

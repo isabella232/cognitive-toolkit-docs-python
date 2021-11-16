@@ -1,0 +1,7 @@
+### YamlMime:PythonClass
+uid: cntk.layers.typing.SequenceOverMeta
+name: SequenceOverMeta
+fullName: cntk.layers.typing.SequenceOverMeta
+module: cntk.layers.typing
+inheritances:
+- builtins.type

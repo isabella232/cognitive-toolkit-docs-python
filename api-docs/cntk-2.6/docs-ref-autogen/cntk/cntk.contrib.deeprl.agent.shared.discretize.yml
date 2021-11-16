@@ -1,0 +1,7 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.agent.shared.discretize
+name: discretize
+fullName: cntk.contrib.deeprl.agent.shared.discretize
+summary: Discretize continuous environment space.
+classes:
+- cntk.contrib.deeprl.agent.shared.discretize.BoxSpaceDiscretizer

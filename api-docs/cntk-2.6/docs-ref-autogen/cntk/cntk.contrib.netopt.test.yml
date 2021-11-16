@@ -1,0 +1,6 @@
+### YamlMime:PythonPackage
+uid: cntk.contrib.netopt.test
+name: test
+fullName: cntk.contrib.netopt.test
+summary: Tests for netowrk optimization alogorithms.
+type: import

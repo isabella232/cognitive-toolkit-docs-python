@@ -1,0 +1,10 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.utils.globalconf.SourceSolverConf
+name: SourceSolverConf
+fullName: cntk.contrib.crosstalkcaffe.utils.globalconf.SourceSolverConf
+module: cntk.contrib.crosstalkcaffe.utils.globalconf
+inheritances:
+- builtins.object
+summary: The source solver
+constructor:
+  syntax: SourceSolverConf()

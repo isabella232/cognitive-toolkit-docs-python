@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.CaffeValidCore
+name: CaffeValidCore
+fullName: cntk.contrib.crosstalkcaffe.validation.validcaffe.CaffeValidCore
+module: cntk.contrib.crosstalkcaffe.validation.validcaffe
+inheritances:
+- cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
+summary: Validation module of Caffe side.
+methods:
+- uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.CaffeValidCore.execute
+  name: execute
+  summary: Execute the validation in Caffe side.
+  signature: execute(source_solver, valid_dir)
+  parameters:
+  - name: source_solver
+    description: the source solver instanced from global configuration
+    isRequired: true
+    types:
+    - <xref:cntk.contrib.crosstalkcaffe.utils.globalconf.SourceSolverConf>
+  - name: valid_dir
+    description: the path to save temporary CNTK forward results
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: None

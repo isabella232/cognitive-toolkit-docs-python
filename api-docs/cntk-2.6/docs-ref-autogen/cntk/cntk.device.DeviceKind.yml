@@ -1,0 +1,13 @@
+### YamlMime:PythonEnum
+uid: cntk.device.DeviceKind
+name: DeviceKind
+fullName: cntk.device.DeviceKind
+summary: Describes different device kinds like CPU or GPU.
+module: cntk.device
+inheritances:
+- enum.Enum
+fields:
+- name: CPU
+  uid: cntk.device.DeviceKind.CPU
+- name: GPU
+  uid: cntk.device.DeviceKind.GPU

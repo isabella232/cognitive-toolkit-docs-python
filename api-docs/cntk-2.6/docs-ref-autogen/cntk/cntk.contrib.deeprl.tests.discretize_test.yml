@@ -1,0 +1,6 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.discretize_test
+name: discretize_test
+fullName: cntk.contrib.deeprl.tests.discretize_test
+classes:
+- cntk.contrib.deeprl.tests.discretize_test.BoxSpaceDiscretizerTest

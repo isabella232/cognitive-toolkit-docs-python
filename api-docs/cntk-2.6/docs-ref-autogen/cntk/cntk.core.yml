@@ -1,0 +1,39 @@
+### YamlMime:PythonModule
+uid: cntk.core
+name: core
+fullName: cntk.core
+summary: 'Core numerical constructs.
+
+
+
+  * <xref:NDArrayView>
+
+  * <xref:Value>'
+functions:
+- uid: cntk.core.asarray
+  name: asarray
+  summary: Converts a Value object to a sequence of NumPy arrays (if dense) or CSR
+    arrays (if sparse).
+  signature: asarray(value, dtype=None)
+  parameters:
+  - name: value
+  - name: dtype
+    defaultValue: None
+- uid: cntk.core.asvalue
+  name: asvalue
+  summary: Converts a sequence of NumPy arrays or CSR arrays to a Value object.
+  signature: asvalue(variable, data_array)
+  parameters:
+  - name: variable
+  - name: data_array
+- uid: cntk.core.user_function
+  name: user_function
+  summary: 'Wraps the passed Function to create a composite representing the
+
+    composite Function graph rooted at the passed root Function.'
+  signature: user_function(user_func)
+  parameters:
+  - name: user_func
+classes:
+- cntk.core.NDArrayView
+- cntk.core.Value

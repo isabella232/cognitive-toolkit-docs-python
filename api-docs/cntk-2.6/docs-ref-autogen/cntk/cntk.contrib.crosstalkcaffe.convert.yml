@@ -1,0 +1,6 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.crosstalkcaffe.convert
+name: convert
+fullName: cntk.contrib.crosstalkcaffe.convert
+classes:
+- cntk.contrib.crosstalkcaffe.convert.CaffeConverter

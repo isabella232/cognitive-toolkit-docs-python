@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.BackPropState
+name: BackPropState
+fullName: cntk.cntk_py.BackPropState
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: BackPropState(*args)
+methods:
+- uid: cntk.cntk_py.BackPropState.device
+  name: device
+  signature: device()
+- uid: cntk.cntk_py.BackPropState.function
+  name: function
+  signature: function()
+- uid: cntk.cntk_py.BackPropState.saved_forward_prop_values
+  name: saved_forward_prop_values
+  signature: saved_forward_prop_values()

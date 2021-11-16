@@ -1,0 +1,14 @@
+### YamlMime:PythonModule
+uid: cntk.eval.tests.evaluator_distributed_test
+name: evaluator_distributed_test
+fullName: cntk.eval.tests.evaluator_distributed_test
+functions:
+- uid: cntk.eval.tests.evaluator_distributed_test.mpiexec_execute
+  name: mpiexec_execute
+  signature: mpiexec_execute(script, mpiexec_params)
+  parameters:
+  - name: script
+  - name: mpiexec_params
+- uid: cntk.eval.tests.evaluator_distributed_test.test_distributed_eval
+  name: test_distributed_eval
+  signature: test_distributed_eval()

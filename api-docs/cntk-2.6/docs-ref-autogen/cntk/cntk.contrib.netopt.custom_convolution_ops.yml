@@ -1,0 +1,36 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.netopt.custom_convolution_ops
+name: custom_convolution_ops
+fullName: cntk.contrib.netopt.custom_convolution_ops
+functions:
+- uid: cntk.contrib.netopt.custom_convolution_ops.CustomMultibit
+  name: CustomMultibit
+  signature: CustomMultibit(input, bit_map, mean_bits=None)
+  parameters:
+  - name: input
+  - name: bit_map
+  - name: mean_bits
+    defaultValue: None
+- uid: cntk.contrib.netopt.custom_convolution_ops.CustomMultibitKernel
+  name: CustomMultibitKernel
+  signature: CustomMultibitKernel(input, bit_map, mean_bits=None)
+  parameters:
+  - name: input
+  - name: bit_map
+  - name: mean_bits
+    defaultValue: None
+- uid: cntk.contrib.netopt.custom_convolution_ops.CustomPySign
+  name: CustomPySign
+  signature: CustomPySign(input)
+  parameters:
+  - name: input
+- uid: cntk.contrib.netopt.custom_convolution_ops.CustomSign
+  name: CustomSign
+  signature: CustomSign(input)
+  parameters:
+  - name: input
+classes:
+- cntk.contrib.netopt.custom_convolution_ops.Multibit
+- cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+- cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+- cntk.contrib.netopt.custom_convolution_ops.pySign

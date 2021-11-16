@@ -1,0 +1,85 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.agent.policy_gradient.ActorCritic
+name: ActorCritic
+fullName: cntk.contrib.deeprl.agent.policy_gradient.ActorCritic
+module: cntk.contrib.deeprl.agent.policy_gradient
+inheritances:
+- cntk.contrib.deeprl.agent.agent.AgentBaseClass
+summary: 'Actor-Critic Policy Gradient.
+
+
+  See [https://arxiv.org/pdf/1602.01783.pdf](https://arxiv.org/pdf/1602.01783.pdf)
+  for a description of algorithm.'
+constructor:
+  syntax: ActorCritic(config_filename, o_space, a_space)
+methods:
+- uid: cntk.contrib.deeprl.agent.policy_gradient.ActorCritic.end
+  name: end
+  summary: Last observed reward/state of the episode (which then terminates).
+  signature: end(reward, next_state)
+  parameters:
+  - name: reward
+    description: amount of reward returned after previous action.
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: next_state
+    description: observation provided by the environment.
+    isRequired: true
+    types:
+    - <xref:object>
+- uid: cntk.contrib.deeprl.agent.policy_gradient.ActorCritic.save
+  name: save
+  summary: Save model to file.
+  signature: save(filename)
+  parameters:
+  - name: filename
+    isRequired: true
+- uid: cntk.contrib.deeprl.agent.policy_gradient.ActorCritic.save_parameter_settings
+  name: save_parameter_settings
+  summary: Save parameter settings to file.
+  signature: save_parameter_settings(filename)
+  parameters:
+  - name: filename
+    isRequired: true
+- uid: cntk.contrib.deeprl.agent.policy_gradient.ActorCritic.set_as_best_model
+  name: set_as_best_model
+  summary: Copy current model to best model.
+  signature: set_as_best_model()
+- uid: cntk.contrib.deeprl.agent.policy_gradient.ActorCritic.start
+  name: start
+  summary: Start a new episode.
+  signature: start(state)
+  parameters:
+  - name: state
+    description: observation provided by the environment.
+    isRequired: true
+    types:
+    - <xref:object>
+  return:
+    description: 'action choosen by agent.
+
+      debug_info (dict): auxiliary diagnostic information.'
+    types:
+    - <xref:action >(<xref:int>)
+- uid: cntk.contrib.deeprl.agent.policy_gradient.ActorCritic.step
+  name: step
+  summary: Observe one transition and choose an action.
+  signature: step(reward, next_state)
+  parameters:
+  - name: reward
+    description: amount of reward returned after previous action.
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: next_state
+    description: observation provided by the environment.
+    isRequired: true
+    types:
+    - <xref:object>
+  return:
+    description: 'action choosen by agent.
+
+      debug_info (dict): auxiliary diagnostic information.'
+    types:
+    - <xref:action >(<xref:int>)

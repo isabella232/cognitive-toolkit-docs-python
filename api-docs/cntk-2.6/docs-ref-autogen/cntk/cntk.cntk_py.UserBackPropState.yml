@@ -1,0 +1,14 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.UserBackPropState
+name: UserBackPropState
+fullName: cntk.cntk_py.UserBackPropState
+module: cntk.cntk_py
+inheritances:
+- cntk.cntk_py.BackPropState
+constructor:
+  syntax: UserBackPropState(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.UserBackPropState.create
+  name: create
+- uid: cntk.cntk_py.UserBackPropState.data
+  name: data

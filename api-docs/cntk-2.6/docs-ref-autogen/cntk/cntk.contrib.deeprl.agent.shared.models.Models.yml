@@ -1,0 +1,80 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.agent.shared.models.Models
+name: Models
+fullName: cntk.contrib.deeprl.agent.shared.models.Models
+module: cntk.contrib.deeprl.agent.shared.models
+inheritances:
+- builtins.object
+summary: 'A set of predefined models to approximate Q or log of pi (policy).
+
+
+  The loss function needs to be ''cross_entropy_with_softmax'' for policy
+
+  gradient methods.'
+methods:
+- uid: cntk.contrib.deeprl.agent.shared.models.Models.dueling_network
+  name: dueling_network
+  summary: "Dueling network to approximate Q function.\n\nSee paper at [https://arxiv.org/pdf/1511.06581.pdf](https://arxiv.org/pdf/1511.06581.pdf).\n\
+    \nReturns: a Python dictionary with string-valued keys including\n   'inputs',\
+    \ 'outputs', 'loss' and 'f'."
+  signature: dueling_network(shape_of_inputs, number_of_outputs, model_hidden_layers,
+    loss_function=None, use_placeholder_for_input=False)
+  parameters:
+  - name: shape_of_inputs
+    description: tuple of array (input) dimensions.
+    isRequired: true
+  - name: number_of_outputs
+    description: 'dimension of output, equals the number of
+
+      possible actions.'
+    isRequired: true
+  - name: model_hidden_layers
+    description: 'in the form of "[comma-separated integers,
+
+      [comma-separated integers], [comma-separated integers]]". Each
+
+      integer is the number of nodes in a hidden layer.The
+
+      first set of integers represent the shared component in dueling
+
+      network. The second set correponds to the state value function
+
+      V and the third set correponds to the advantage function A.'
+    isRequired: true
+  - name: loss_function
+    description: if not specified, use squared loss by default.
+    defaultValue: None
+  - name: use_placeholder_for_input
+    description: 'if true, inputs have to be replaced
+
+      later with actual input_variable.'
+    defaultValue: 'False'
+- uid: cntk.contrib.deeprl.agent.shared.models.Models.feedforward_network
+  name: feedforward_network
+  summary: "Feedforward network to approximate Q or log of pi.\n\nReturns: a Python\
+    \ dictionary with string valued keys including\n   'inputs', 'outputs', 'loss'\
+    \ and 'f'."
+  signature: feedforward_network(shape_of_inputs, number_of_outputs, model_hidden_layers,
+    loss_function=None, use_placeholder_for_input=False)
+  parameters:
+  - name: shape_of_inputs
+    description: tuple of array (input) dimensions.
+    isRequired: true
+  - name: number_of_outputs
+    description: 'dimension of output, equals the number of
+
+      possible actions.'
+    isRequired: true
+  - name: model_hidden_layers
+    description: 'string representing a list of integers
+
+      corresponding to number of nodes in each hidden layer.'
+    isRequired: true
+  - name: loss_function
+    description: if not specified, use squared loss by default.
+    defaultValue: None
+  - name: use_placeholder_for_input
+    description: 'if true, inputs have to be replaced
+
+      later with actual input_variable.'
+    defaultValue: 'False'

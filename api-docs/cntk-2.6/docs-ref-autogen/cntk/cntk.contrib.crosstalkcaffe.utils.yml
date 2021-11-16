@@ -1,0 +1,8 @@
+### YamlMime:PythonPackage
+uid: cntk.contrib.crosstalkcaffe.utils
+name: utils
+fullName: cntk.contrib.crosstalkcaffe.utils
+type: import
+modules:
+- cntk.contrib.crosstalkcaffe.utils.format
+- cntk.contrib.crosstalkcaffe.utils.globalconf

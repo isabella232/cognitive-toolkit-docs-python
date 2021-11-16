@@ -1,0 +1,55 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.Trainer
+name: Trainer
+fullName: cntk.cntk_py.Trainer
+module: cntk.cntk_py
+inheritances:
+- cntk.cntk_py.Evaluator
+constructor:
+  syntax: Trainer(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.Trainer.loss_function
+  name: loss_function
+  signature: loss_function()
+- uid: cntk.cntk_py.Trainer.model
+  name: model
+  signature: model()
+- uid: cntk.cntk_py.Trainer.parameter_learners
+  name: parameter_learners
+  signature: parameter_learners()
+- uid: cntk.cntk_py.Trainer.previous_minibatch_evaluation_average
+  name: previous_minibatch_evaluation_average
+  signature: previous_minibatch_evaluation_average()
+- uid: cntk.cntk_py.Trainer.previous_minibatch_loss_average
+  name: previous_minibatch_loss_average
+  signature: previous_minibatch_loss_average()
+- uid: cntk.cntk_py.Trainer.previous_minibatch_sample_count
+  name: previous_minibatch_sample_count
+  signature: previous_minibatch_sample_count()
+- uid: cntk.cntk_py.Trainer.print_node_timing
+  name: print_node_timing
+  signature: print_node_timing()
+- uid: cntk.cntk_py.Trainer.restore_from_checkpoint
+  name: restore_from_checkpoint
+  signature: restore_from_checkpoint(filePath)
+  parameters:
+  - name: filePath
+    isRequired: true
+- uid: cntk.cntk_py.Trainer.save_checkpoint
+  name: save_checkpoint
+  signature: save_checkpoint(*args)
+- uid: cntk.cntk_py.Trainer.summarize_training_progress
+  name: summarize_training_progress
+  signature: summarize_training_progress()
+- uid: cntk.cntk_py.Trainer.total_number_of_samples_seen
+  name: total_number_of_samples_seen
+  signature: total_number_of_samples_seen()
+- uid: cntk.cntk_py.Trainer.total_number_of_units_seen
+  name: total_number_of_units_seen
+  signature: total_number_of_units_seen(*args)
+- uid: cntk.cntk_py.Trainer.train_minibatch
+  name: train_minibatch
+  signature: train_minibatch(*args)
+- uid: cntk.cntk_py.Trainer.train_minibatch_overload_for_minibatchdata
+  name: train_minibatch_overload_for_minibatchdata
+  signature: train_minibatch_overload_for_minibatchdata(*args)

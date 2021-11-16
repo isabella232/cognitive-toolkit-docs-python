@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
+name: CNTKUtilsTest
+fullName: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest
+module: cntk.contrib.deeprl.tests.cntk_utils_test
+inheritances:
+- unittest.case.TestCase
+summary: Unit tests for cntk_utils.
+constructor:
+  syntax: CNTKUtilsTest(methodName='runTest')
+methods:
+- uid: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_entropy
+  name: test_entropy
+  signature: test_entropy()
+- uid: cntk.contrib.deeprl.tests.cntk_utils_test.CNTKUtilsTest.test_huber_loss
+  name: test_huber_loss
+  signature: test_huber_loss()

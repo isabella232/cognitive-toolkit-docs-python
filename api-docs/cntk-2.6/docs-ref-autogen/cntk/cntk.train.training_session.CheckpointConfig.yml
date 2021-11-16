@@ -1,0 +1,44 @@
+### YamlMime:PythonClass
+uid: cntk.train.training_session.CheckpointConfig
+name: CheckpointConfig
+fullName: cntk.train.training_session.CheckpointConfig
+module: cntk.train.training_session
+inheritances:
+- cntk.cntk_py.CheckpointConfig
+summary: A checkpoint configuration for the training session.
+constructor:
+  syntax: CheckpointConfig(filename, frequency=None, restore=True, preserve_all=False)
+  parameters:
+  - name: filename
+    description: checkpoint file name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: frequency
+    description: 'checkpointing period (number samples between checkpoints).
+
+      If *None*, no checkpointing takes place.
+
+      If `sys.maxsize`, a single checkpoint is taken at the end of the training.
+
+      If a tuple of (*frequency*, <xref:cntk.train.training_session.DataUnit>), the
+      *frequency* is in terms of either *DataUnit.sample*, *DataUnit.minibatch* or
+      *DataUnit.sweep*.
+
+      See <xref:cntk.train.training_session.DataUnit> for more information on frequency
+      data unit.'
+    isRequired: true
+    types:
+    - <xref:int>, <xref:tuple>
+  - name: restore
+    description: flag, indicating whether to restore from available checkpoint before
+      the start of the training
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: preserve_all
+    description: saves all checkpoints, using `filename` as prefix and checkpoint
+      index as a suffix.
+    isRequired: true
+    types:
+    - <xref:bool>

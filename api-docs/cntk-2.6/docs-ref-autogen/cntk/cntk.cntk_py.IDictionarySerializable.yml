@@ -1,0 +1,16 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.IDictionarySerializable
+name: IDictionarySerializable
+fullName: cntk.cntk_py.IDictionarySerializable
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: IDictionarySerializable(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.IDictionarySerializable.current_version
+  name: current_version
+  signature: current_version()
+- uid: cntk.cntk_py.IDictionarySerializable.serialize
+  name: serialize
+  signature: serialize()

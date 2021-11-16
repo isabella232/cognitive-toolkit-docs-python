@@ -1,0 +1,150 @@
+### YamlMime:PythonModule
+uid: cntk.train.training_session
+name: training_session
+fullName: cntk.train.training_session
+summary: A training session encapsulates a typical training loop and binds together
+  a minibatch source that is used for training, a <xref:cntk.train.trainer.Trainer>
+  and an optional cross validation minibatch source. A training session takes care
+  of consistent checkpointing and progress printing with specified frequencies.
+functions:
+- uid: cntk.train.training_session.minibatch_size_schedule
+  name: minibatch_size_schedule
+  summary: Creates a minibatch size schedule.
+  signature: minibatch_size_schedule(schedule, epoch_size=1)
+  parameters:
+  - name: schedule
+    description: 'if integer, this minibatch size will be used for the whole training.
+
+      In case of list of integers, the elements are used as the values for `epoch_size`
+      samples.
+
+      If list contains pair, the second element is used as a value for (`epoch_size`
+      x first element) samples'
+    isRequired: true
+    types:
+    - <xref:int>
+    - <xref:list>
+  - name: epoch_size
+    description: number of samples as a scheduling unit.
+    isRequired: true
+    types:
+    - <xref:int>
+  return:
+    description: training parameter schedule
+  examples:
+  - '
+
+    ```
+
+
+    >>> # Use a fixed value 32 for all minibatches
+
+    >>> s = minibatch_size_schedule(32)
+
+    >>> s[0], s[1]
+
+    (32, 32)
+
+    ```
+
+
+
+    ```
+
+
+    >>> # Use minibatches of size 32 for the first 1000 samples, then 64 for the remaining
+    ones
+
+    >>> s = minibatch_size_schedule([32, 64], 1000)
+
+    >>> s[0], s[1], s[1000], s[1001]
+
+    (32, 32, 64, 64)
+
+    ```
+
+
+
+    ```
+
+
+    >>> # Use 32 for the first 12 epochs, then 64 for the next 15,
+
+    >>> # followed by 128 for the remaining ones, with a 100 samples in an epoch
+
+    >>> s = minibatch_size_schedule([(12, 32), (15, 64), (1, 128)], 100)
+
+    >>> s[0], s[1199], s[1200], s[2699], s[2700], s[5000]
+
+    (32, 32, 64, 64, 128, 128)
+
+    ```
+
+    '
+- uid: cntk.train.training_session.training_session
+  name: training_session
+  summary: A factory function to create a training session object.
+  signature: training_session(trainer, mb_source, mb_size, model_inputs_to_streams,
+    progress_frequency=None, max_samples=None, checkpoint_config=None, cv_config=None,
+    test_config=None)
+  parameters:
+  - name: trainer
+    description: trainer
+    isRequired: true
+    types:
+    - <xref:cntk.train.trainer.Trainer>
+  - name: mb_source
+    description: minibatch source used for training
+    isRequired: true
+    types:
+    - <xref:cntk.io.MinibatchSource>
+  - name: mb_size
+    description: minibatch schedule for training
+    isRequired: true
+    types:
+    - <xref:cntk.cntk_py.minibatch_size_schedule>
+  - name: model_inputs_to_streams
+    description: mapping between input variables and input streams
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: progress_frequency
+    description: 'frequency in samples for aggregated progress printing
+
+      If a tuple of (*frequency*, <xref:cntk.train.training_session.DataUnit>), the
+      *frequency* is in terms of either *DataUnit.sample*, *DataUnit.minibatch* or
+      *DataUnit.sweep*.
+
+      See <xref:cntk.train.training_session.DataUnit> for more information on frequency
+      data unit.'
+    isRequired: true
+    types:
+    - <xref:int>, <xref:tuple>
+  - name: max_samples
+    description: maximum number of samples used for training
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: checkpoint_config
+    description: checkpoint configuration
+    isRequired: true
+    types:
+    - <xref:cntk.train.training_session.CheckpointConfig>
+  - name: cv_config
+    description: cross validation configuration
+    isRequired: true
+    types:
+    - <xref:cntk.train.training_session.CrossValidationConfig>
+  - name: test_config
+    description: test configuration
+    isRequired: true
+    types:
+    - <xref:cntk.train.training_session.TestConfig>
+  return:
+    description: Instance of <xref:cntk.train.training_session.TrainingSession>
+classes:
+- cntk.train.training_session.CheckpointConfig
+- cntk.train.training_session.CrossValidationConfig
+- cntk.train.training_session.DataUnit
+- cntk.train.training_session.TestConfig
+- cntk.train.training_session.TrainingSession

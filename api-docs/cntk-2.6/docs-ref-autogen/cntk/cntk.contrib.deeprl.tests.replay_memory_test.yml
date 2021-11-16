@@ -1,0 +1,6 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.replay_memory_test
+name: replay_memory_test
+fullName: cntk.contrib.deeprl.tests.replay_memory_test
+classes:
+- cntk.contrib.deeprl.tests.replay_memory_test.ReplayMemoryTest

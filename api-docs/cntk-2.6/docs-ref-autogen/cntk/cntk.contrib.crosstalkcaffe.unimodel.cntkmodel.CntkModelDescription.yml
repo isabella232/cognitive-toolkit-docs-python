@@ -1,0 +1,10 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkModelDescription
+name: CntkModelDescription
+fullName: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel.CntkModelDescription
+module: cntk.contrib.crosstalkcaffe.unimodel.cntkmodel
+inheritances:
+- builtins.object
+summary: Record the basic information of model
+constructor:
+  syntax: CntkModelDescription()

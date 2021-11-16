@@ -1,0 +1,10 @@
+### YamlMime:PythonPackage
+uid: cntk.tests
+name: tests
+fullName: cntk.tests
+type: import
+modules:
+- cntk.tests.attributes_test
+- cntk.tests.axis_test
+- cntk.tests.device_test
+- cntk.tests.persist_test

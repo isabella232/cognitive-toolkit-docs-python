@@ -1,0 +1,6 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.policy_gradient_test
+name: policy_gradient_test
+fullName: cntk.contrib.deeprl.tests.policy_gradient_test
+classes:
+- cntk.contrib.deeprl.tests.policy_gradient_test.PolicyGradientTest

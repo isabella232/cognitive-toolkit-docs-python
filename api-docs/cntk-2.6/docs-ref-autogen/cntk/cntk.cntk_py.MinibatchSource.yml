@@ -1,0 +1,41 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.MinibatchSource
+name: MinibatchSource
+fullName: cntk.cntk_py.MinibatchSource
+module: cntk.cntk_py
+inheritances:
+- builtins.object
+constructor:
+  syntax: MinibatchSource(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.MinibatchSource.get_checkpoint_state
+  name: get_checkpoint_state
+  signature: get_checkpoint_state()
+- uid: cntk.cntk_py.MinibatchSource.get_next_minibatch
+  name: get_next_minibatch
+  signature: get_next_minibatch(*args)
+- uid: cntk.cntk_py.MinibatchSource.is_infinite
+  name: is_infinite
+  signature: is_infinite()
+- uid: cntk.cntk_py.MinibatchSource.restore_from_checkpoint
+  name: restore_from_checkpoint
+  signature: restore_from_checkpoint(arg2)
+  parameters:
+  - name: arg2
+    isRequired: true
+- uid: cntk.cntk_py.MinibatchSource.stream_info
+  name: stream_info
+  signature: stream_info(*args)
+- uid: cntk.cntk_py.MinibatchSource.stream_infos
+  name: stream_infos
+  signature: stream_infos()
+attributes:
+- uid: cntk.cntk_py.MinibatchSource.default_randomization_window_in_chunks
+  name: default_randomization_window_in_chunks
+  signature: default_randomization_window_in_chunks = 128
+- uid: cntk.cntk_py.MinibatchSource.full_data_sweep
+  name: full_data_sweep
+  signature: full_data_sweep = 18446744073709551614
+- uid: cntk.cntk_py.MinibatchSource.infinitely_repeat
+  name: infinitely_repeat
+  signature: infinitely_repeat = 18446744073709551615

@@ -1,0 +1,279 @@
+### YamlMime:PythonModule
+uid: cntk.initializer
+name: initializer
+fullName: cntk.initializer
+summary: Initializers of parameters.
+functions:
+- uid: cntk.initializer.bilinear
+  name: bilinear
+  summary: initializer
+  signature: bilinear(kernel_width, kernel_height)
+  parameters:
+  - name: kernel_width
+    description: kernel width
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: kernel_height
+    description: kernel height
+    isRequired: true
+    types:
+    - <xref:int>
+  return:
+    description: 'initializer for <xref:cntk.variables.Parameter>
+
+      useful for deconvolution layer'
+- uid: cntk.initializer.glorot_normal
+  name: glorot_normal
+  summary: initializer
+  signature: glorot_normal(scale=1, output_rank=2147483647, filter_rank=2147483647,
+    seed=None)
+  parameters:
+  - name: scale
+    description: scale
+    defaultValue: '1'
+    types:
+    - <xref:float>
+  - name: output_rank
+    description: output rank
+    defaultValue: '2147483647'
+    types:
+    - <xref:int>
+  - name: filter_rank
+    description: filter rank
+    defaultValue: '2147483647'
+    types:
+    - <xref:int>
+  - name: seed
+    description: random seed
+    defaultValue: None
+    types:
+    - <xref:int>
+  return:
+    description: 'initializer for <xref:cntk.variables.Parameter>
+
+      initialized to Gaussian distribution with mean *0* and standard
+
+      deviation $$scale*sqrt(2.0/(fanIn+fanOut))$$'
+- uid: cntk.initializer.glorot_uniform
+  name: glorot_uniform
+  summary: Glorot initializer
+  signature: glorot_uniform(scale=1, output_rank=2147483647, filter_rank=2147483647,
+    seed=None)
+  parameters:
+  - name: scale
+    description: scale
+    defaultValue: '1'
+    types:
+    - <xref:float>
+  - name: output_rank
+    description: output rank
+    defaultValue: '2147483647'
+    types:
+    - <xref:int>
+  - name: filter_rank
+    description: filter rank
+    defaultValue: '2147483647'
+    types:
+    - <xref:int>
+  - name: seed
+    description: random seed
+    defaultValue: None
+    types:
+    - <xref:int>
+  return:
+    description: 'initializer for <xref:cntk.variables.Parameter>
+
+      initialized to uniform distribution between
+
+      $$scale*sqrt(6.0/(fanIn+fanOut))*[-1,1]$$'
+- uid: cntk.initializer.he_normal
+  name: he_normal
+  summary: initializer
+  signature: he_normal(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
+  parameters:
+  - name: scale
+    description: scale
+    defaultValue: '1'
+    types:
+    - <xref:float>
+  - name: output_rank
+    description: output rank
+    defaultValue: '2147483647'
+    types:
+    - <xref:int>
+  - name: filter_rank
+    description: filter rank
+    defaultValue: '2147483647'
+    types:
+    - <xref:int>
+  - name: seed
+    description: random seed
+    defaultValue: None
+    types:
+    - <xref:int>
+  return:
+    description: 'initializer for <xref:cntk.variables.Parameter>
+
+      initialized to Gaussian distribution with mean *0* and standard
+
+      deviation $$scale*sqrt(2.0/fanIn)$$'
+- uid: cntk.initializer.he_uniform
+  name: he_uniform
+  summary: initializer
+  signature: he_uniform(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
+  parameters:
+  - name: scale
+    description: scale
+    defaultValue: '1'
+    types:
+    - <xref:float>
+  - name: output_rank
+    description: output rank
+    defaultValue: '2147483647'
+    types:
+    - <xref:int>
+  - name: filter_rank
+    description: filter rank
+    defaultValue: '2147483647'
+    types:
+    - <xref:int>
+  - name: seed
+    description: random seed
+    defaultValue: None
+    types:
+    - <xref:int>
+  return:
+    description: 'initializer for <xref:cntk.variables.Parameter>
+
+      initialized to uniform distribution between
+
+      $$scale*sqrt(6.0/fanIn)*[-1,1]$$'
+- uid: cntk.initializer.initializer_with_rank
+  name: initializer_with_rank
+  summary: 'override output_rank and filter_rank specification in a random initializer
+
+    constructed without an explicit output_rank and filter_rank specification'
+  signature: initializer_with_rank(initializer, output_rank=None, filter_rank=None)
+  parameters:
+  - name: initializer
+    description: initializer whose output_rank and filter_rank parameters are to be
+      overriden
+    isRequired: true
+  - name: output_rank
+    description: new output rank value
+    defaultValue: None
+    types:
+    - <xref:int>
+  - name: filter_rank
+    description: new filter rank value
+    defaultValue: None
+    types:
+    - <xref:int>
+  return:
+    description: new initializer for <xref:cntk.variables.Parameter> with specified
+      output_rank and filter_rank
+- uid: cntk.initializer.normal
+  name: normal
+  summary: Normal initializer
+  signature: normal(scale, output_rank=2147483647, filter_rank=2147483647, seed=None)
+  parameters:
+  - name: scale
+    description: scale
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: output_rank
+    description: output rank
+    defaultValue: '2147483647'
+    types:
+    - <xref:int>
+  - name: filter_rank
+    description: filter rank
+    defaultValue: '2147483647'
+    types:
+    - <xref:int>
+  - name: seed
+    description: random seed
+    defaultValue: None
+    types:
+    - <xref:int>
+  return:
+    description: 'initializer for <xref:cntk.variables.Parameter>
+
+      initialized to normal distribution with mean *0* and standard deviation *scale*.'
+- uid: cntk.initializer.truncated_normal
+  name: truncated_normal
+  summary: 'Truncated normal initializer. The resulting values are drawn from
+
+    a truncated normal distribution and are always within two
+
+    standard deviations from the mean (which is 0).'
+  signature: truncated_normal(stdev, seed=None)
+  parameters:
+  - name: stdev
+    description: standard deviation
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: seed
+    description: random seed
+    defaultValue: None
+    types:
+    - <xref:int>
+  return:
+    description: 'initializer for <xref:cntk.variables.Parameter>
+
+      initialized to truncated Gaussian distribution between *2*stdev[-1, 1]*'
+- uid: cntk.initializer.uniform
+  name: uniform
+  summary: Uniform initializer
+  signature: uniform(scale, seed=None)
+  parameters:
+  - name: scale
+    description: scale
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: seed
+    description: random seed
+    defaultValue: None
+    types:
+    - <xref:int>
+  return:
+    description: 'initializer for <xref:cntk.variables.Parameter>
+
+      initialized to uniform distribution between *scale*[-1.0, 1.0]*.
+
+      Note: this maps to the "uniform1" distribution in BrainScript.'
+- uid: cntk.initializer.xavier
+  name: xavier
+  summary: Xavier initializer
+  signature: xavier(scale=1, output_rank=2147483647, filter_rank=2147483647, seed=None)
+  parameters:
+  - name: scale
+    description: scale
+    defaultValue: '1'
+    types:
+    - <xref:float>
+  - name: output_rank
+    description: output rank
+    defaultValue: '2147483647'
+    types:
+    - <xref:int>
+  - name: filter_rank
+    description: filter rank
+    defaultValue: '2147483647'
+    types:
+    - <xref:int>
+  - name: seed
+    description: random seed
+    defaultValue: None
+    types:
+    - <xref:int>
+  return:
+    description: 'initializer for <xref:cntk.variables.Parameter>
+
+      initialized to Gaussian distribution with mean *0* and standard
+
+      deviation $$scale*sqrt(3.0/fanIn)$$'

@@ -1,0 +1,51 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest
+name: QLearningTest
+fullName: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest
+module: cntk.contrib.deeprl.tests.qlearning_test
+inheritances:
+- unittest.case.TestCase
+summary: Unit tests for QLearning.
+constructor:
+  syntax: QLearningTest(methodName='runTest')
+methods:
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_init_customized_q
+  name: test_init_customized_q
+  signature: test_init_customized_q(mock_parameters, mock_model)
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_init_dqn
+  name: test_init_dqn
+  signature: test_init_dqn(mock_parameters, mock_model, mock_replay_memory)
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_init_dqn_huber_loss
+  name: test_init_dqn_huber_loss
+  signature: test_init_dqn_huber_loss(mock_parameters, mock_model)
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_init_dqn_preprocessing
+  name: test_init_dqn_preprocessing
+  signature: test_init_dqn_preprocessing(mock_parameters, mock_replay_memory)
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_init_dqn_prioritized_replay
+  name: test_init_dqn_prioritized_replay
+  signature: test_init_dqn_prioritized_replay(mock_parameters, mock_replay_memory)
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_init_dueling_dqn
+  name: test_init_dueling_dqn
+  signature: test_init_dueling_dqn(mock_parameters, mock_model)
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_init_unsupported_q
+  name: test_init_unsupported_q
+  signature: test_init_unsupported_q(mock_parameters)
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_populate_replay_memory
+  name: test_populate_replay_memory
+  signature: test_populate_replay_memory(mock_parameters)
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_replay_start_size
+  name: test_replay_start_size
+  signature: test_replay_start_size(mock_parameters)
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_update_q
+  name: test_update_q
+  summary: Test if _update_q_periodically() can finish successfully.
+  signature: test_update_q(mock_parameters, mock_replay_memory)
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_update_q_double_dqn
+  name: test_update_q_double_dqn
+  signature: test_update_q_double_dqn(mock_parameters, mock_replay_memory)
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_update_q_dqn
+  name: test_update_q_dqn
+  signature: test_update_q_dqn(mock_parameters, mock_replay_memory)
+- uid: cntk.contrib.deeprl.tests.qlearning_test.QLearningTest.test_update_q_dqn_prioritized_replay
+  name: test_update_q_dqn_prioritized_replay
+  signature: test_update_q_dqn_prioritized_replay(mock_parameters, mock_replay_memory)

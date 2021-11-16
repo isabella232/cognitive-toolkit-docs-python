@@ -1,0 +1,8 @@
+### YamlMime:PythonClass
+uid: cntk.layers.typing.Sequence
+name: Sequence
+fullName: cntk.layers.typing.Sequence
+module: cntk.layers.typing
+inheritances:
+- builtins.object
+summary: 'Meta-meta class to denote a sequence of data tensors. Example: `Sequence[Tensor[13,42]]`'

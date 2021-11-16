@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: cntk.train.distributed.WorkerDescriptor
+name: WorkerDescriptor
+fullName: cntk.train.distributed.WorkerDescriptor
+module: cntk.train.distributed
+inheritances:
+- cntk.cntk_py.DistributedWorkerDescriptor
+summary: Distributed worker descriptor, returned by <xref:cntk.train.distributed.Communicator>
+  instance.
+constructor:
+  syntax: WorkerDescriptor()
+attributes:
+- uid: cntk.train.distributed.WorkerDescriptor.global_rank
+  name: global_rank
+  summary: The global rank of the worker.
+- uid: cntk.train.distributed.WorkerDescriptor.host_id
+  name: host_id
+  summary: The host id of the worker.

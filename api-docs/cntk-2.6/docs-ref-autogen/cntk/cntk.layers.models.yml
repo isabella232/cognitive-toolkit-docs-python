@@ -1,0 +1,9 @@
+### YamlMime:PythonPackage
+uid: cntk.layers.models
+name: models
+fullName: cntk.layers.models
+summary: Layers and building blocks that are not generic but represent more specific
+  model types go here.
+type: import
+modules:
+- cntk.layers.models.attention

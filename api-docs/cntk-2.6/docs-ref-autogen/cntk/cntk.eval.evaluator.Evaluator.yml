@@ -1,0 +1,70 @@
+### YamlMime:PythonClass
+uid: cntk.eval.evaluator.Evaluator
+name: Evaluator
+fullName: cntk.eval.evaluator.Evaluator
+module: cntk.eval.evaluator
+inheritances:
+- cntk.cntk_py.Evaluator
+summary: Class for evaluation of minibatches against the specified evaluation function.
+constructor:
+  syntax: Evaluator(eval_function, progress_writers=None)
+  parameters:
+  - name: eval_function
+    description: evaluation function.
+    isRequired: true
+    types:
+    - <xref:cntk.ops.functions.Function>
+  - name: progress_writers
+    description: 'optionally, list of progress writers from <xref:cntk.utils> to track
+
+      training progress.'
+    isRequired: true
+    types:
+    - <xref:list>
+methods:
+- uid: cntk.eval.evaluator.Evaluator.print_node_timing
+  name: print_node_timing
+  summary: 'Prints per-node average timing per-minibatch for each primitive function
+
+    statistics would reset after print'
+  signature: print_node_timing()
+- uid: cntk.eval.evaluator.Evaluator.summarize_test_progress
+  name: summarize_test_progress
+  summary: 'Updates the progress writers with the summary of test progress since start
+    and resets the internal
+
+    accumulators.'
+  signature: summarize_test_progress()
+- uid: cntk.eval.evaluator.Evaluator.test_minibatch
+  name: test_minibatch
+  summary: 'Test the evaluation function on the specified batch of samples.
+
+
+
+    > [!NOTE]
+
+    > See <xref:cntk.ops.functions.Function.forward> for examples on
+
+    >
+
+    > passing input data.
+
+    >'
+  signature: test_minibatch(arguments, device=None, distributed=False)
+  parameters:
+  - name: arguments
+    isRequired: true
+  - name: device
+    defaultValue: None
+  - name: distributed
+    defaultValue: 'False'
+  return:
+    description: 'the average evaluation criterion value per sample for the
+
+      tested minibatch.'
+    types:
+    - <xref:*float*>
+attributes:
+- uid: cntk.eval.evaluator.Evaluator.evaluation_function
+  name: evaluation_function
+  summary: The evaluation function that the evaluator is using.

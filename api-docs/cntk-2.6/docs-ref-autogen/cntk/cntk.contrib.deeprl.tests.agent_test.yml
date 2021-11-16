@@ -1,0 +1,7 @@
+### YamlMime:PythonModule
+uid: cntk.contrib.deeprl.tests.agent_test
+name: agent_test
+fullName: cntk.contrib.deeprl.tests.agent_test
+classes:
+- cntk.contrib.deeprl.tests.agent_test.AgentBaseClassTest
+- cntk.contrib.deeprl.tests.agent_test.FakeAgentBaseClass

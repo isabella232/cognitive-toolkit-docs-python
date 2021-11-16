@@ -1,0 +1,10 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalkcaffe.utils.globalconf.ModelSolverConf
+name: ModelSolverConf
+fullName: cntk.contrib.crosstalkcaffe.utils.globalconf.ModelSolverConf
+module: cntk.contrib.crosstalkcaffe.utils.globalconf
+inheritances:
+- builtins.object
+summary: The model solver
+constructor:
+  syntax: ModelSolverConf()

@@ -1,0 +1,5 @@
+### YamlMime:PythonPackage
+uid: cntk.learners.tests
+name: tests
+fullName: cntk.learners.tests
+type: import

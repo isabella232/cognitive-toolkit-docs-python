@@ -1,0 +1,16 @@
+### YamlMime:PythonModule
+uid: cntk.logging.progress_print
+name: progress_print
+fullName: cntk.logging.progress_print
+functions:
+- uid: cntk.logging.progress_print.log_number_of_parameters
+  name: log_number_of_parameters
+  signature: log_number_of_parameters(model, trace_level=0)
+  parameters:
+  - name: model
+  - name: trace_level
+    defaultValue: '0'
+classes:
+- cntk.logging.progress_print.ProgressPrinter
+- cntk.logging.progress_print.TensorBoardProgressWriter
+- cntk.logging.progress_print.TrainingSummaryProgressCallback

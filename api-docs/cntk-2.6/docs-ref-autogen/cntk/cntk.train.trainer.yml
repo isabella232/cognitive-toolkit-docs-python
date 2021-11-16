@@ -1,0 +1,11 @@
+### YamlMime:PythonModule
+uid: cntk.train.trainer
+name: trainer
+fullName: cntk.train.trainer
+summary: 'A trainer encapsulates the overall training process and employs one or more
+
+  <xref:cntk.learners> to tune the parameters of a specified model
+
+  using gradients of parameters w.r.t. a training objective.'
+classes:
+- cntk.train.trainer.Trainer

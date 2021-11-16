@@ -1,0 +1,42 @@
+### YamlMime:PythonClass
+uid: cntk.cntk_py.QuantizedDistributedCommunicator
+name: QuantizedDistributedCommunicator
+fullName: cntk.cntk_py.QuantizedDistributedCommunicator
+module: cntk.cntk_py
+inheritances:
+- cntk.cntk_py.DistributedCommunicator
+constructor:
+  syntax: QuantizedDistributedCommunicator(*args, **kwargs)
+methods:
+- uid: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate
+  name: quantized_aggregate
+  signature: quantized_aggregate(inValues, valueQuantizationResidues, stripeQuantizationResidues,
+    aggregatedOutputs, newQuantizationResidues, newStripeQuantizationResidues, sendToWorkers)
+  parameters:
+  - name: inValues
+    isRequired: true
+  - name: valueQuantizationResidues
+    isRequired: true
+  - name: stripeQuantizationResidues
+    isRequired: true
+  - name: aggregatedOutputs
+    isRequired: true
+  - name: newQuantizationResidues
+    isRequired: true
+  - name: newStripeQuantizationResidues
+    isRequired: true
+  - name: sendToWorkers
+    isRequired: true
+- uid: cntk.cntk_py.QuantizedDistributedCommunicator.quantized_aggregate_in_place
+  name: quantized_aggregate_in_place
+  signature: quantized_aggregate_in_place(inValues, valueQuantizationResidues, stripeQuantizationResidues,
+    sendToWorkers)
+  parameters:
+  - name: inValues
+    isRequired: true
+  - name: valueQuantizationResidues
+    isRequired: true
+  - name: stripeQuantizationResidues
+    isRequired: true
+  - name: sendToWorkers
+    isRequired: true
