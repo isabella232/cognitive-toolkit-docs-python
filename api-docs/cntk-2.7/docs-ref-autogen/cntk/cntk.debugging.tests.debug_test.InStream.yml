@@ -1,0 +1,13 @@
+### YamlMime:PythonClass
+uid: cntk.debugging.tests.debug_test.InStream
+name: InStream
+fullName: cntk.debugging.tests.debug_test.InStream
+module: cntk.debugging.tests.debug_test
+inheritances:
+- builtins.object
+constructor:
+  syntax: InStream(to_be_read)
+methods:
+- uid: cntk.debugging.tests.debug_test.InStream.readline
+  name: readline
+  signature: readline()

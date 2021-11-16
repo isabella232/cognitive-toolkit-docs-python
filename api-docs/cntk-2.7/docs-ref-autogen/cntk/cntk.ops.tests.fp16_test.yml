@@ -1,0 +1,26 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.fp16_test
+name: fp16_test
+fullName: cntk.ops.tests.fp16_test
+functions:
+- uid: cntk.ops.tests.fp16_test.test_batchnorm
+  name: test_batchnorm
+  signature: test_batchnorm(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.fp16_test.test_cast
+  name: test_cast
+  signature: test_cast()
+- uid: cntk.ops.tests.fp16_test.test_rnn
+  name: test_rnn
+  signature: test_rnn(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.fp16_test.test_save_load
+  name: test_save_load
+  signature: test_save_load(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.ops.tests.fp16_test.test_sigmoid
+  name: test_sigmoid
+  signature: test_sigmoid()

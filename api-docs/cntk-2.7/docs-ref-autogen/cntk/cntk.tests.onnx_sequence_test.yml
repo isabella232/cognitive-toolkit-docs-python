@@ -1,0 +1,204 @@
+### YamlMime:PythonModule
+uid: cntk.tests.onnx_sequence_test
+name: onnx_sequence_test
+fullName: cntk.tests.onnx_sequence_test
+functions:
+- uid: cntk.tests.onnx_sequence_test.generate_sequence_data
+  name: generate_sequence_data
+  signature: generate_sequence_data(batch_size, seq_len, feature_size, input_as_index=False)
+  parameters:
+  - name: batch_size
+  - name: seq_len
+  - name: feature_size
+  - name: input_as_index
+    defaultValue: 'False'
+- uid: cntk.tests.onnx_sequence_test.generate_sequential_data
+  name: generate_sequential_data
+  signature: generate_sequential_data(tensor_shape)
+  parameters:
+  - name: tensor_shape
+- uid: cntk.tests.onnx_sequence_test.save_onnx_model_with_validation_data
+  name: save_onnx_model_with_validation_data
+  signature: save_onnx_model_with_validation_data(tmpdir, model, data, name, device=None)
+  parameters:
+  - name: tmpdir
+  - name: model
+  - name: data
+  - name: name
+  - name: device
+    defaultValue: None
+- uid: cntk.tests.onnx_sequence_test.test_AttLoopPastValueWindow
+  name: test_AttLoopPastValueWindow
+  signature: test_AttLoopPastValueWindow(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_AttLoopPastValueWindow_Alternative
+  name: test_AttLoopPastValueWindow_Alternative
+  signature: test_AttLoopPastValueWindow_Alternative(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_Delay
+  name: test_Delay
+  signature: test_Delay(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_PastFutureValue
+  name: test_PastFutureValue
+  signature: test_PastFutureValue(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_SeqeunceGather
+  name: test_SeqeunceGather
+  signature: test_SeqeunceGather(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_SequenceDelay
+  name: test_SequenceDelay
+  signature: test_SequenceDelay(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_SimpleBiDirectionRNN
+  name: test_SimpleBiDirectionRNN
+  signature: test_SimpleBiDirectionRNN(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_SimpleLoopWithLSTM
+  name: test_SimpleLoopWithLSTM
+  signature: test_SimpleLoopWithLSTM(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_SimpleRecurrence
+  name: test_SimpleRecurrence
+  signature: test_SimpleRecurrence(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_SimpleUniDirectionRNN
+  name: test_SimpleUniDirectionRNN
+  signature: test_SimpleUniDirectionRNN(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_attention_model
+  name: test_attention_model
+  signature: test_attention_model(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_lstm_over_lstm_thought_vectors
+  name: test_lstm_over_lstm_thought_vectors
+  signature: test_lstm_over_lstm_thought_vectors(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_neg_sequence_max
+  name: test_neg_sequence_max
+  signature: test_neg_sequence_max(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_op_broadcast_as_in_loop
+  name: test_op_broadcast_as_in_loop
+  signature: test_op_broadcast_as_in_loop(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_op_gather_derived_dynamic_axes_equivalence
+  name: test_op_gather_derived_dynamic_axes_equivalence
+  signature: test_op_gather_derived_dynamic_axes_equivalence(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_op_gather_dynamic_axes_equivalence
+  name: test_op_gather_dynamic_axes_equivalence
+  signature: test_op_gather_dynamic_axes_equivalence(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_op_sequence_reduce_sum
+  name: test_op_sequence_reduce_sum
+  signature: test_op_sequence_reduce_sum(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_recurrence
+  name: test_recurrence
+  signature: test_recurrence(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_recurrence_fun
+  name: test_recurrence_fun
+  signature: test_recurrence_fun(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_recurrence_step_fun
+  name: test_recurrence_step_fun
+  signature: test_recurrence_step_fun(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_recurrent_block
+  name: test_recurrent_block
+  signature: test_recurrent_block(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequence_max
+  name: test_sequence_max
+  signature: test_sequence_max(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequence_softmax
+  name: test_sequence_softmax
+  signature: test_sequence_softmax(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequence_unpack_with_broadcast_as
+  name: test_sequence_unpack_with_broadcast_as
+  signature: test_sequence_unpack_with_broadcast_as(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequence_unpack_with_convolution
+  name: test_sequence_unpack_with_convolution
+  signature: test_sequence_unpack_with_convolution(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequential_clique_with_functions
+  name: test_sequential_clique_with_functions
+  signature: test_sequential_clique_with_functions(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequential_clique_with_layers
+  name: test_sequential_clique_with_layers
+  signature: test_sequential_clique_with_layers(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequential_constructor
+  name: test_sequential_constructor
+  signature: test_sequential_constructor(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequential_convolution_1d
+  name: test_sequential_convolution_1d
+  signature: test_sequential_convolution_1d(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequential_convolution_1d_channel_filter
+  name: test_sequential_convolution_1d_channel_filter
+  signature: test_sequential_convolution_1d_channel_filter(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequential_convolution_1d_without_reduction_dim_new
+  name: test_sequential_convolution_1d_without_reduction_dim_new
+  signature: test_sequential_convolution_1d_without_reduction_dim_new(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequential_convolution_1d_without_reduction_dim_old
+  name: test_sequential_convolution_1d_without_reduction_dim_old
+  signature: test_sequential_convolution_1d_without_reduction_dim_old(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequential_convolution_2d
+  name: test_sequential_convolution_2d
+  signature: test_sequential_convolution_2d(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_sequential_convolution_2d_without_reduction_dim
+  name: test_sequential_convolution_2d_without_reduction_dim
+  signature: test_sequential_convolution_2d_without_reduction_dim(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_sequence_test.test_unfold
+  name: test_unfold
+  signature: test_unfold(tmpdir)
+  parameters:
+  - name: tmpdir

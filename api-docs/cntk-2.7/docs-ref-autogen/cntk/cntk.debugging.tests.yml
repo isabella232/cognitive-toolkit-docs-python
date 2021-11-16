@@ -3,3 +3,6 @@ uid: cntk.debugging.tests
 name: tests
 fullName: cntk.debugging.tests
 type: import
+modules:
+- cntk.debugging.tests.debug_test
+- cntk.debugging.tests.userlearner_test

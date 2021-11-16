@@ -1,0 +1,57 @@
+### YamlMime:PythonModule
+uid: cntk.tests.onnx_verify_helper
+name: onnx_verify_helper
+fullName: cntk.tests.onnx_verify_helper
+functions:
+- uid: cntk.tests.onnx_verify_helper.generate_sequence_data
+  name: generate_sequence_data
+  signature: generate_sequence_data(batch_size, seq_len, feature_size, input_as_index=False)
+  parameters:
+  - name: batch_size
+  - name: seq_len
+  - name: feature_size
+  - name: input_as_index
+    defaultValue: 'False'
+- uid: cntk.tests.onnx_verify_helper.generate_sequential_data
+  name: generate_sequential_data
+  signature: generate_sequential_data(tensor_shape)
+  parameters:
+  - name: tensor_shape
+- uid: cntk.tests.onnx_verify_helper.generate_sparse_data
+  name: generate_sparse_data
+  signature: generate_sparse_data(batch_size, seq_len, feature_size)
+  parameters:
+  - name: batch_size
+  - name: seq_len
+  - name: feature_size
+- uid: cntk.tests.onnx_verify_helper.generate_sparse_data_non_seq
+  name: generate_sparse_data_non_seq
+  signature: generate_sparse_data_non_seq(batch_size, feature_size)
+  parameters:
+  - name: batch_size
+  - name: feature_size
+- uid: cntk.tests.onnx_verify_helper.get_onnx_test_runner_callscript
+  name: get_onnx_test_runner_callscript
+  signature: get_onnx_test_runner_callscript(model_name, model_dir)
+  parameters:
+  - name: model_name
+  - name: model_dir
+- uid: cntk.tests.onnx_verify_helper.get_onnx_test_runner_path_str
+  name: get_onnx_test_runner_path_str
+  signature: get_onnx_test_runner_path_str()
+- uid: cntk.tests.onnx_verify_helper.parse_single_result_case
+  name: parse_single_result_case
+  signature: parse_single_result_case(case_str)
+  parameters:
+  - name: case_str
+- uid: cntk.tests.onnx_verify_helper.parse_verify_out_str
+  name: parse_verify_out_str
+  signature: parse_verify_out_str(content)
+  parameters:
+  - name: content
+- uid: cntk.tests.onnx_verify_helper.verify_results_with_onnxruntime
+  name: verify_results_with_onnxruntime
+  signature: verify_results_with_onnxruntime(model_name, model_dir)
+  parameters:
+  - name: model_name
+  - name: model_dir

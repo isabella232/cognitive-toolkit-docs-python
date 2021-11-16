@@ -1,0 +1,40 @@
+### YamlMime:PythonModule
+uid: cntk.learners.tests.distributed_learner_test
+name: distributed_learner_test
+fullName: cntk.learners.tests.distributed_learner_test
+functions:
+- uid: cntk.learners.tests.distributed_learner_test.distributed_worker
+  name: distributed_worker
+  signature: distributed_worker(outdir, gpu, mode, config)
+  parameters:
+  - name: outdir
+  - name: gpu
+  - name: mode
+  - name: config
+- uid: cntk.learners.tests.distributed_learner_test.mpiexec_execute
+  name: mpiexec_execute
+  signature: mpiexec_execute(script, mpiexec_params, params, timeout_seconds=300)
+  parameters:
+  - name: script
+  - name: mpiexec_params
+  - name: params
+  - name: timeout_seconds
+    defaultValue: '300'
+- uid: cntk.learners.tests.distributed_learner_test.set_np_random_seed
+  name: set_np_random_seed
+  signature: set_np_random_seed(rank, batch)
+  parameters:
+  - name: rank
+  - name: batch
+- uid: cntk.learners.tests.distributed_learner_test.test_distributed_training_accuracy
+  name: test_distributed_training_accuracy
+  signature: test_distributed_training_accuracy(tmpdir, device_id, mode, config)
+  parameters:
+  - name: tmpdir
+  - name: device_id
+  - name: mode
+  - name: config
+classes:
+- cntk.learners.tests.distributed_learner_test.BlockMomentumConfig
+- cntk.learners.tests.distributed_learner_test.DataParallelConfig
+- cntk.learners.tests.distributed_learner_test.SimpleTrainer

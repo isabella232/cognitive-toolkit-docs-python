@@ -1,0 +1,58 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.stop_gradient_test
+name: stop_gradient_test
+fullName: cntk.ops.tests.stop_gradient_test
+summary: Unit tests for the stop_gradient.
+functions:
+- uid: cntk.ops.tests.stop_gradient_test.general_no_backprop_sgd_test
+  name: general_no_backprop_sgd_test
+  signature: general_no_backprop_sgd_test(no_backprop_ops_in_lambdas, input_data,
+    precision)
+  parameters:
+  - name: no_backprop_ops_in_lambdas
+  - name: input_data
+  - name: precision
+- uid: cntk.ops.tests.stop_gradient_test.general_no_backprop_test
+  name: general_no_backprop_test
+  signature: general_no_backprop_test(no_backprop_ops_in_lambdas, input_data, precision)
+  parameters:
+  - name: no_backprop_ops_in_lambdas
+  - name: input_data
+  - name: precision
+- uid: cntk.ops.tests.stop_gradient_test.one_step_sgd
+  name: one_step_sgd
+  signature: one_step_sgd(loss, data, lr=0.1)
+  parameters:
+  - name: loss
+  - name: data
+  - name: lr
+    defaultValue: '0.1'
+- uid: cntk.ops.tests.stop_gradient_test.test_constant_like_no_backprop
+  name: test_constant_like_no_backprop
+  signature: test_constant_like_no_backprop(input_data, precision)
+  parameters:
+  - name: input_data
+  - name: precision
+- uid: cntk.ops.tests.stop_gradient_test.test_eye_like_no_backprop
+  name: test_eye_like_no_backprop
+  signature: test_eye_like_no_backprop(input_data, sparse_output, precision)
+  parameters:
+  - name: input_data
+  - name: sparse_output
+  - name: precision
+- uid: cntk.ops.tests.stop_gradient_test.test_op_reduce_no_back_prop_ops
+  name: test_op_reduce_no_back_prop_ops
+  signature: test_op_reduce_no_back_prop_ops(input_data, axis, precision)
+  parameters:
+  - name: input_data
+  - name: axis
+  - name: precision
+- uid: cntk.ops.tests.stop_gradient_test.test_stop_gradient
+  name: test_stop_gradient
+  signature: test_stop_gradient()
+- uid: cntk.ops.tests.stop_gradient_test.test_stop_gradient_no_backprop
+  name: test_stop_gradient_no_backprop
+  signature: test_stop_gradient_no_backprop(input_data, precision)
+  parameters:
+  - name: input_data
+  - name: precision

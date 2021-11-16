@@ -1,0 +1,68 @@
+### YamlMime:PythonModule
+uid: cntk.tests.onnx_model_test
+name: onnx_model_test
+fullName: cntk.tests.onnx_model_test
+functions:
+- uid: cntk.tests.onnx_model_test.Save
+  name: Save
+  signature: Save(dir, func, inputs, outputs, batch_size=1, use_external_files_to_store_parameters=False)
+  parameters:
+  - name: dir
+  - name: func
+  - name: inputs
+  - name: outputs
+  - name: batch_size
+    defaultValue: '1'
+  - name: use_external_files_to_store_parameters
+    defaultValue: 'False'
+- uid: cntk.tests.onnx_model_test.SaveData
+  name: SaveData
+  signature: SaveData(test_data_dir, prefix, onnx_variables, variables, data_list,
+    names, batch_size=1)
+  parameters:
+  - name: test_data_dir
+  - name: prefix
+  - name: onnx_variables
+  - name: variables
+  - name: data_list
+  - name: names
+  - name: batch_size
+    defaultValue: '1'
+- uid: cntk.tests.onnx_model_test.get_base_dir
+  name: get_base_dir
+  signature: get_base_dir(base_dir)
+  parameters:
+  - name: base_dir
+- uid: cntk.tests.onnx_model_test.test_cntk_model
+  name: test_cntk_model
+  signature: test_cntk_model(model_name, use_external_files_to_store_parameters)
+  parameters:
+  - name: model_name
+  - name: use_external_files_to_store_parameters
+- uid: cntk.tests.onnx_model_test.test_cntk_rnn_models
+  name: test_cntk_rnn_models
+  signature: test_cntk_rnn_models(model_name, use_external_files_to_store_parameters)
+  parameters:
+  - name: model_name
+  - name: use_external_files_to_store_parameters
+- uid: cntk.tests.onnx_model_test.test_onnx_model
+  name: test_onnx_model
+  signature: test_onnx_model(model_name, round_trip)
+  parameters:
+  - name: model_name
+  - name: round_trip
+- uid: cntk.tests.onnx_model_test.verify_model
+  name: verify_model
+  signature: verify_model(cntk_model, node_name, tmpdir, model_name, image=None, skip_round_trip_test=True,
+    use_external_files_to_store_parameters=False)
+  parameters:
+  - name: cntk_model
+  - name: node_name
+  - name: tmpdir
+  - name: model_name
+  - name: image
+    defaultValue: None
+  - name: skip_round_trip_test
+    defaultValue: 'True'
+  - name: use_external_files_to_store_parameters
+    defaultValue: 'False'

@@ -1,0 +1,35 @@
+### YamlMime:PythonClass
+uid: cntk.learners.tests.distributed_learner_test.SimpleTrainer
+name: SimpleTrainer
+fullName: cntk.learners.tests.distributed_learner_test.SimpleTrainer
+module: cntk.learners.tests.distributed_learner_test
+inheritances:
+- builtins.object
+constructor:
+  syntax: SimpleTrainer(mode, config)
+methods:
+- uid: cntk.learners.tests.distributed_learner_test.SimpleTrainer.create_distributed_learner
+  name: create_distributed_learner
+  signature: create_distributed_learner(mode, config)
+  parameters:
+  - name: mode
+    isRequired: true
+  - name: config
+    isRequired: true
+- uid: cntk.learners.tests.distributed_learner_test.SimpleTrainer.create_model
+  name: create_model
+  signature: create_model()
+- uid: cntk.learners.tests.distributed_learner_test.SimpleTrainer.create_trainer
+  name: create_trainer
+  signature: create_trainer(mode, config)
+  parameters:
+  - name: mode
+    isRequired: true
+  - name: config
+    isRequired: true
+- uid: cntk.learners.tests.distributed_learner_test.SimpleTrainer.train_minibatch
+  name: train_minibatch
+  signature: train_minibatch(input_indices)
+  parameters:
+  - name: input_indices
+    isRequired: true

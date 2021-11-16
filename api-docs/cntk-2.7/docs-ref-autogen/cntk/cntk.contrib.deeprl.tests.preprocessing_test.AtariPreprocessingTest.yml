@@ -1,0 +1,14 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.tests.preprocessing_test.AtariPreprocessingTest
+name: AtariPreprocessingTest
+fullName: cntk.contrib.deeprl.tests.preprocessing_test.AtariPreprocessingTest
+module: cntk.contrib.deeprl.tests.preprocessing_test
+inheritances:
+- unittest.case.TestCase
+summary: Unit tests for AtariPreprocessing.
+constructor:
+  syntax: AtariPreprocessingTest(methodName='runTest')
+methods:
+- uid: cntk.contrib.deeprl.tests.preprocessing_test.AtariPreprocessingTest.test_atari_preprocessing
+  name: test_atari_preprocessing
+  signature: test_atari_preprocessing()

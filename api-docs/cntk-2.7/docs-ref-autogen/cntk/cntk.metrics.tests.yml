@@ -3,3 +3,5 @@ uid: cntk.metrics.tests
 name: tests
 fullName: cntk.metrics.tests
 type: import
+modules:
+- cntk.metrics.tests.metrics_test

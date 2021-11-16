@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: cntk.learners.tests.learner_test.TestProgressWriter
+name: TestProgressWriter
+fullName: cntk.learners.tests.learner_test.TestProgressWriter
+module: cntk.learners.tests.learner_test
+inheritances:
+- cntk.cntk_py.ProgressWriter
+constructor:
+  syntax: TestProgressWriter()
+methods:
+- uid: cntk.learners.tests.learner_test.TestProgressWriter.write
+  name: write
+  signature: write(key, value)
+  parameters:
+  - name: key
+    isRequired: true
+  - name: value
+    isRequired: true

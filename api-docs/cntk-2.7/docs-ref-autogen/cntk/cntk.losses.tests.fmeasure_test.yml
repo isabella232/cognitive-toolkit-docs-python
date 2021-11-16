@@ -1,0 +1,9 @@
+### YamlMime:PythonModule
+uid: cntk.losses.tests.fmeasure_test
+name: fmeasure_test
+fullName: cntk.losses.tests.fmeasure_test
+summary: Unit tests for the fmeasure class.
+functions:
+- uid: cntk.losses.tests.fmeasure_test.test_fmeasure
+  name: test_fmeasure
+  signature: test_fmeasure()

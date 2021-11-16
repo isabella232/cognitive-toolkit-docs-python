@@ -1,0 +1,116 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.function_tests
+name: function_tests
+fullName: cntk.ops.tests.function_tests
+summary: Unit tests for the function class.
+functions:
+- uid: cntk.ops.tests.function_tests.test_MinibatchData_and_Value_as_input
+  name: test_MinibatchData_and_Value_as_input
+  signature: test_MinibatchData_and_Value_as_input(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.ops.tests.function_tests.test_as_composite
+  name: test_as_composite
+  signature: test_as_composite()
+- uid: cntk.ops.tests.function_tests.test_block_with_unused_outputs
+  name: test_block_with_unused_outputs
+  signature: test_block_with_unused_outputs()
+- uid: cntk.ops.tests.function_tests.test_clone_with_deep_rnn_chaining
+  name: test_clone_with_deep_rnn_chaining
+  signature: test_clone_with_deep_rnn_chaining()
+- uid: cntk.ops.tests.function_tests.test_clone_with_different_dynamic_axes
+  name: test_clone_with_different_dynamic_axes
+  signature: test_clone_with_different_dynamic_axes()
+- uid: cntk.ops.tests.function_tests.test_clone_with_function_in_substitution_map
+  name: test_clone_with_function_in_substitution_map
+  signature: test_clone_with_function_in_substitution_map()
+- uid: cntk.ops.tests.function_tests.test_clone_with_slice
+  name: test_clone_with_slice
+  signature: test_clone_with_slice()
+- uid: cntk.ops.tests.function_tests.test_clone_with_unfound_new_node
+  name: test_clone_with_unfound_new_node
+  signature: test_clone_with_unfound_new_node()
+- uid: cntk.ops.tests.function_tests.test_clone_with_unfound_previous_node
+  name: test_clone_with_unfound_previous_node
+  signature: test_clone_with_unfound_previous_node()
+- uid: cntk.ops.tests.function_tests.test_clone_with_wrong_type_node
+  name: test_clone_with_wrong_type_node
+  signature: test_clone_with_wrong_type_node()
+- uid: cntk.ops.tests.function_tests.test_cloning
+  name: test_cloning
+  signature: test_cloning()
+- uid: cntk.ops.tests.function_tests.test_combine_duplicated_inputs
+  name: test_combine_duplicated_inputs
+  signature: test_combine_duplicated_inputs()
+- uid: cntk.ops.tests.function_tests.test_constant_data_type_mismatch
+  name: test_constant_data_type_mismatch
+  signature: test_constant_data_type_mismatch()
+- uid: cntk.ops.tests.function_tests.test_custom_attributes
+  name: test_custom_attributes
+  signature: test_custom_attributes(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.ops.tests.function_tests.test_data_type_inference
+  name: test_data_type_inference
+  signature: test_data_type_inference()
+- uid: cntk.ops.tests.function_tests.test_eval_again_with_prev_outputs_live
+  name: test_eval_again_with_prev_outputs_live
+  signature: test_eval_again_with_prev_outputs_live(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.function_tests.test_eval_by_node_name
+  name: test_eval_by_node_name
+  signature: test_eval_by_node_name()
+- uid: cntk.ops.tests.function_tests.test_evaluating_multiple_outputs
+  name: test_evaluating_multiple_outputs
+  signature: test_evaluating_multiple_outputs()
+- uid: cntk.ops.tests.function_tests.test_exception_for_unnamed_arguments
+  name: test_exception_for_unnamed_arguments
+  signature: test_exception_for_unnamed_arguments()
+- uid: cntk.ops.tests.function_tests.test_extra_arguments_in_eval
+  name: test_extra_arguments_in_eval
+  signature: test_extra_arguments_in_eval()
+- uid: cntk.ops.tests.function_tests.test_getting_output_from_non_existent_node
+  name: test_getting_output_from_non_existent_node
+  signature: test_getting_output_from_non_existent_node()
+- uid: cntk.ops.tests.function_tests.test_input_order
+  name: test_input_order
+  signature: test_input_order()
+- uid: cntk.ops.tests.function_tests.test_output_in_intermediate_node
+  name: test_output_in_intermediate_node
+  signature: test_output_in_intermediate_node()
+- uid: cntk.ops.tests.function_tests.test_output_subset_evaluation
+  name: test_output_subset_evaluation
+  signature: test_output_subset_evaluation(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.function_tests.test_outputs_passing
+  name: test_outputs_passing
+  signature: test_outputs_passing()
+- uid: cntk.ops.tests.function_tests.test_recurrence_shape_inference
+  name: test_recurrence_shape_inference
+  signature: test_recurrence_shape_inference()
+- uid: cntk.ops.tests.function_tests.test_replace_placeholder_s
+  name: test_replace_placeholder_s
+  signature: test_replace_placeholder_s()
+- uid: cntk.ops.tests.function_tests.test_replace_placeholders
+  name: test_replace_placeholders
+  signature: test_replace_placeholders()
+- uid: cntk.ops.tests.function_tests.test_sequence_data_mismatch
+  name: test_sequence_data_mismatch
+  signature: test_sequence_data_mismatch()
+- uid: cntk.ops.tests.function_tests.test_set_dropout_rate_attribute
+  name: test_set_dropout_rate_attribute
+  signature: test_set_dropout_rate_attribute()
+- uid: cntk.ops.tests.function_tests.test_set_name
+  name: test_set_name
+  signature: test_set_name()
+- uid: cntk.ops.tests.function_tests.test_set_rng_seed_attribute
+  name: test_set_rng_seed_attribute
+  signature: test_set_rng_seed_attribute()
+- uid: cntk.ops.tests.function_tests.test_update_signature
+  name: test_update_signature
+  signature: test_update_signature()
+- uid: cntk.ops.tests.function_tests.test_variable_forwarding
+  name: test_variable_forwarding
+  signature: test_variable_forwarding()

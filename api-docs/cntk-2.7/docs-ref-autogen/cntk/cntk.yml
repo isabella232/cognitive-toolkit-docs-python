@@ -23,6 +23,7 @@ modules:
 - cntk.axis
 - cntk.cntk_py
 - cntk.cntk_py_init
+- cntk.conftest
 - cntk.core
 - cntk.default_options
 - cntk.device
