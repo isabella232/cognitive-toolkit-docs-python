@@ -1,6 +1,0 @@
-### YamlMime:PythonModule
-uid: cntk.contrib.deeprl.tests.models_test
-name: models_test
-fullName: cntk.contrib.deeprl.tests.models_test
-classes:
-- cntk.contrib.deeprl.tests.models_test.ModelsTest

@@ -1,8 +1,0 @@
-### YamlMime:PythonModule
-uid: cntk.eval.evaluator
-name: evaluator
-fullName: cntk.eval.evaluator
-summary: An evaluator provides functionality to evaluate minibatches against the specified
-  evaluation function.
-classes:
-- cntk.eval.evaluator.Evaluator

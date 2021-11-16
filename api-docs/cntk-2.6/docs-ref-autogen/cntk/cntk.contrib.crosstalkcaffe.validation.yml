@@ -1,8 +1,0 @@
-### YamlMime:PythonPackage
-uid: cntk.contrib.crosstalkcaffe.validation
-name: validation
-fullName: cntk.contrib.crosstalkcaffe.validation
-type: import
-modules:
-- cntk.contrib.crosstalkcaffe.validation.validcaffe
-- cntk.contrib.crosstalkcaffe.validation.validcore

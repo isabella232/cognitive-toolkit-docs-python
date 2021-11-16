@@ -1,9 +1,0 @@
-### YamlMime:PythonClass
-uid: cntk.contrib.crosstalk.EmbedAttr
-name: EmbedAttr
-fullName: cntk.contrib.crosstalk.EmbedAttr
-module: cntk.contrib.crosstalk
-inheritances:
-- cntk.contrib.crosstalk.EmbedAttr
-summary: "Attribute for embedding variable\n\ndict\n   The list of vocabulary of the\
-  \ embedding\n\ninput_dim\n   The input dimension of the embedding"

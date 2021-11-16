@@ -1,7 +1,0 @@
-### YamlMime:PythonModule
-uid: cntk.contrib.crosstalkcaffe.validation.validcaffe
-name: validcaffe
-fullName: cntk.contrib.crosstalkcaffe.validation.validcaffe
-classes:
-- cntk.contrib.crosstalkcaffe.validation.validcaffe.CaffeValidCore
-- cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore

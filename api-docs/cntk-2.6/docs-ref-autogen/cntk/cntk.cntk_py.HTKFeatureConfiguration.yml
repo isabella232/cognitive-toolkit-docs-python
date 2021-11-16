@@ -1,9 +1,0 @@
-### YamlMime:PythonClass
-uid: cntk.cntk_py.HTKFeatureConfiguration
-name: HTKFeatureConfiguration
-fullName: cntk.cntk_py.HTKFeatureConfiguration
-module: cntk.cntk_py
-inheritances:
-- builtins.object
-constructor:
-  syntax: HTKFeatureConfiguration(*args)

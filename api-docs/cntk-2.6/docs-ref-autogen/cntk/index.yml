@@ -1,7 +1,0 @@
-### YamlMime:PythonPackage
-uid: project-cntk
-name: cntk
-fullName: cntk
-type: distribution
-packages:
-- cntk

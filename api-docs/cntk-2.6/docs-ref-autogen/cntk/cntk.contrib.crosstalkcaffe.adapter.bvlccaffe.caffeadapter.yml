@@ -1,7 +1,0 @@
-### YamlMime:PythonModule
-uid: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-name: caffeadapter
-fullName: cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter
-classes:
-- cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.CaffeAdapter
-- cntk.contrib.crosstalkcaffe.adapter.bvlccaffe.caffeadapter.SetupCaffeParameters

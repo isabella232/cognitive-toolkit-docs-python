@@ -1,7 +1,0 @@
-### YamlMime:PythonPackage
-uid: cntk.losses.tests
-name: tests
-fullName: cntk.losses.tests
-type: import
-modules:
-- cntk.losses.tests.h_softmax_test

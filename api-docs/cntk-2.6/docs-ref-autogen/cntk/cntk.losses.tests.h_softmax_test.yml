@@ -1,9 +1,0 @@
-### YamlMime:PythonModule
-uid: cntk.losses.tests.h_softmax_test
-name: h_softmax_test
-fullName: cntk.losses.tests.h_softmax_test
-summary: Unit tests for the hierarchical softmax class.
-functions:
-- uid: cntk.losses.tests.h_softmax_test.test_h_softmax
-  name: test_h_softmax
-  signature: test_h_softmax()

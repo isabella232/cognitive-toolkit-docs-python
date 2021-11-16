@@ -1,9 +1,0 @@
-### YamlMime:PythonClass
-uid: cntk.cntk_py.SparseSequenceData
-name: SparseSequenceData
-fullName: cntk.cntk_py.SparseSequenceData
-module: cntk.cntk_py
-inheritances:
-- cntk.cntk_py.SequenceDataBase
-constructor:
-  syntax: SparseSequenceData(*args, **kwargs)

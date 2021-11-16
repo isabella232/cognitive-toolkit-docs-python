@@ -1,8 +1,0 @@
-### YamlMime:PythonModule
-uid: cntk.layers.tests.models_tests
-name: models_tests
-fullName: cntk.layers.tests.models_tests
-functions:
-- uid: cntk.layers.tests.models_tests.test_attention_model
-  name: test_attention_model
-  signature: test_attention_model()

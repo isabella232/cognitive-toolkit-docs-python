@@ -1,8 +1,0 @@
-### YamlMime:PythonModule
-uid: cntk.tensor
-name: tensor
-fullName: cntk.tensor
-summary: Tensor operations.
-classes:
-- cntk.tensor.ArrayMixin
-- cntk.tensor.TensorOpsMixin
