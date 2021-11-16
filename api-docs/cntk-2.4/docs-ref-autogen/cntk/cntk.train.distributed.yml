@@ -25,28 +25,35 @@ functions:
   parameters:
   - name: learner
     description: a local learner (i.e. sgd)
+    isRequired: true
   - name: block_size
     description: size of the partition in samples
+    isRequired: true
     types:
     - <xref:int>
   - name: block_momentum_as_time_constant
     description: block momentum as time constant
+    isRequired: true
     types:
     - <xref:float>
   - name: use_nestrov_momentum
     description: use nestrov momentum
+    isRequired: true
     types:
     - <xref:bool>
   - name: reset_sgd_momentum_after_aggregation
     description: reset SGD momentum after aggregation
+    isRequired: true
     types:
     - <xref:bool>
   - name: block_learning_rate
     description: block learning rate
+    isRequired: true
     types:
     - <xref:float>
   - name: distributed_after
     description: number of samples after which distributed training starts
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -63,16 +70,20 @@ functions:
   parameters:
   - name: learner
     description: a local learner (i.e. sgd)
+    isRequired: true
   - name: distributed_after
     description: number of samples after which distributed training starts
+    isRequired: true
     types:
     - <xref:int>
   - name: num_quantization_bits
     description: number of bits for quantization (1 to 32)
+    isRequired: true
     types:
     - <xref:int>
   - name: use_async_buffered_parameter_update
     description: use async buffered parameter update, currently must be False
+    isRequired: true
     types:
     - <xref:bool>
   return:

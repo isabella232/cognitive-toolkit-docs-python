@@ -10,10 +10,11 @@ functions:
   parameters:
   - name: conf_path
     description: the path to global configuration file
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.contrib.crosstalkcaffe.utils.GlobalConf
+    description: <xref:cntk.contrib.crosstalkcaffe.utils.GlobalConf>
 classes:
 - cntk.contrib.crosstalkcaffe.utils.globalconf.GlobalConf
 - cntk.contrib.crosstalkcaffe.utils.globalconf.ModelSolverConf
