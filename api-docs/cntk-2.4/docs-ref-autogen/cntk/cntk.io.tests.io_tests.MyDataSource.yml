@@ -1,0 +1,47 @@
+### YamlMime:PythonClass
+uid: cntk.io.tests.io_tests.MyDataSource
+name: MyDataSource
+fullName: cntk.io.tests.io_tests.MyDataSource
+module: cntk.io.tests.io_tests
+inheritances:
+- cntk.io.UserMinibatchSource
+constructor:
+  syntax: MyDataSource(f_dim, l_dim)
+methods:
+- uid: cntk.io.tests.io_tests.MyDataSource.next_minibatch
+  name: next_minibatch
+  summary: Function to be implemented by the user.
+  signature: next_minibatch(num_samples, number_of_workers, worker_rank, device=None)
+  parameters:
+  - name: num_samples
+    description: number of samples to return
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: number_of_workers
+    description: number of workers in total
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: worker_rank
+    description: worker for which the data is to be returned
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: device
+    description: 'the device
+
+      descriptor that contains the type and id of the device on which the
+
+      computation is performed. If *None*, the default device is used.'
+    defaultValue: None
+    types:
+    - <xref:DeviceDescriptor>, <xref:defaults to None>
+  return:
+    description: mapping of <xref:cntk.io.tests.io_tests.StreamInformation> to <xref:cntk.io.tests.io_tests.MinibatchData>
+- uid: cntk.io.tests.io_tests.MyDataSource.stream_infos
+  name: stream_infos
+  summary: Function to be implemented by the user.
+  signature: stream_infos()
+  return:
+    description: list of <xref:cntk.io.tests.io_tests.StreamInformation> instances

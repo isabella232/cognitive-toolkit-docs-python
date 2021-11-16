@@ -1,0 +1,10 @@
+### YamlMime:PythonModule
+uid: cntk.tests.initializer_test
+name: initializer_test
+fullName: cntk.tests.initializer_test
+functions:
+- uid: cntk.tests.initializer_test.test_initializer_init
+  name: test_initializer_init
+  signature: test_initializer_init(device_id)
+  parameters:
+  - name: device_id

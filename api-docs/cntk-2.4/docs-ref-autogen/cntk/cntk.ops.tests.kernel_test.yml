@@ -1,0 +1,267 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.kernel_test
+name: kernel_test
+fullName: cntk.ops.tests.kernel_test
+summary: Unit tests for kernel operations, tested for the forward and the backward
+  pass
+functions:
+- uid: cntk.ops.tests.kernel_test.test_asym_convolution
+  name: test_asym_convolution
+  signature: test_asym_convolution(input_size, conv_size, result, device_id, precision)
+  parameters:
+  - name: input_size
+  - name: conv_size
+  - name: result
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_avg_pooling_free_static_axes
+  name: test_avg_pooling_free_static_axes
+  signature: test_avg_pooling_free_static_axes(warmup_input_size, second_input_size,
+    pooling_window, strides, device_id, precision)
+  parameters:
+  - name: warmup_input_size
+  - name: second_input_size
+  - name: pooling_window
+  - name: strides
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_conv_cudnn_batch_size_change
+  name: test_conv_cudnn_batch_size_change
+  signature: test_conv_cudnn_batch_size_change(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.kernel_test.test_conv_free_static_and_dynamic_axes
+  name: test_conv_free_static_and_dynamic_axes
+  signature: test_conv_free_static_and_dynamic_axes(warmup_input_size, free_dimension_increment,
+    filter_size, num_output_channels, batch_size_range, device_id, precision)
+  parameters:
+  - name: warmup_input_size
+  - name: free_dimension_increment
+  - name: filter_size
+  - name: num_output_channels
+  - name: batch_size_range
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_conv_free_static_axes
+  name: test_conv_free_static_axes
+  signature: test_conv_free_static_axes(warmup_input_size, free_dimension_increment,
+    filter_size, num_output_channels, device_id, precision)
+  parameters:
+  - name: warmup_input_size
+  - name: free_dimension_increment
+  - name: filter_size
+  - name: num_output_channels
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_conv_free_static_with_sequence_unpack
+  name: test_conv_free_static_with_sequence_unpack
+  signature: test_conv_free_static_with_sequence_unpack(num_features, sequence_len,
+    filter_size, num_output_channels, batch_size, device_id, precision)
+  parameters:
+  - name: num_features
+  - name: sequence_len
+  - name: filter_size
+  - name: num_output_channels
+  - name: batch_size
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_conv_incorrect_shapes
+  name: test_conv_incorrect_shapes
+  signature: test_conv_incorrect_shapes()
+- uid: cntk.ops.tests.kernel_test.test_convolution_dilated
+  name: test_convolution_dilated
+  signature: test_convolution_dilated(input_size, conv_size, result, padding, device_id,
+    precision)
+  parameters:
+  - name: input_size
+  - name: conv_size
+  - name: result
+  - name: padding
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_convolution_transpose
+  name: test_convolution_transpose
+  signature: test_convolution_transpose(input_size, conv_size, result, device_id,
+    precision)
+  parameters:
+  - name: input_size
+  - name: conv_size
+  - name: result
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_convolution_transpose_with_output
+  name: test_convolution_transpose_with_output
+  signature: test_convolution_transpose_with_output(input_size, conv_size, result,
+    device_id, precision)
+  parameters:
+  - name: input_size
+  - name: conv_size
+  - name: result
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_group_conv
+  name: test_group_conv
+  signature: test_group_conv(groups, num_output_channels, num_input_channels, input_tensor_size,
+    filter_size, kernel_channels, batch_size, device_id, precision)
+  parameters:
+  - name: groups
+  - name: num_output_channels
+  - name: num_input_channels
+  - name: input_tensor_size
+  - name: filter_size
+  - name: kernel_channels
+  - name: batch_size
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_max_pooling_free_static_axes
+  name: test_max_pooling_free_static_axes
+  signature: test_max_pooling_free_static_axes(warmup_input_size, second_input_size,
+    pooling_window, strides, device_id, precision)
+  parameters:
+  - name: warmup_input_size
+  - name: second_input_size
+  - name: pooling_window
+  - name: strides
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_max_unpooling_free_static_axes
+  name: test_max_unpooling_free_static_axes
+  signature: test_max_unpooling_free_static_axes(warmup_input_size, second_input_size,
+    pooling_window, strides, device_id, precision)
+  parameters:
+  - name: warmup_input_size
+  - name: second_input_size
+  - name: pooling_window
+  - name: strides
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_op_average_pooling_include_pad
+  name: test_op_average_pooling_include_pad
+  signature: test_op_average_pooling_include_pad(input_size, pooling_window, strides,
+    result, device_id, precision)
+  parameters:
+  - name: input_size
+  - name: pooling_window
+  - name: strides
+  - name: result
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_op_avg_pooling
+  name: test_op_avg_pooling
+  signature: test_op_avg_pooling(input_size, pooling_window, strides, result, device_id,
+    precision)
+  parameters:
+  - name: input_size
+  - name: pooling_window
+  - name: strides
+  - name: result
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_op_convolution_without_padding
+  name: test_op_convolution_without_padding
+  signature: test_op_convolution_without_padding(convolution_map, convolution_input,
+    use_input_shape_with_inferred_dimension, device_id, precision)
+  parameters:
+  - name: convolution_map
+  - name: convolution_input
+  - name: use_input_shape_with_inferred_dimension
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_op_max_pooling
+  name: test_op_max_pooling
+  signature: test_op_max_pooling(input_size, pooling_window, strides, autopad, result,
+    device_id, precision)
+  parameters:
+  - name: input_size
+  - name: pooling_window
+  - name: strides
+  - name: autopad
+  - name: result
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_op_max_unpooling
+  name: test_op_max_unpooling
+  signature: test_op_max_unpooling(input_size, pooling_window, strides, autopad, result,
+    device_id, precision)
+  parameters:
+  - name: input_size
+  - name: pooling_window
+  - name: strides
+  - name: autopad
+  - name: result
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_op_maxroipooling
+  name: test_op_maxroipooling
+  signature: test_op_maxroipooling(input_map, input_rois, expected_fwd, expected_bkwd,
+    device_id, precision)
+  parameters:
+  - name: input_map
+  - name: input_rois
+  - name: expected_fwd
+  - name: expected_bkwd
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_op_pooling_ceil
+  name: test_op_pooling_ceil
+  signature: test_op_pooling_ceil(input_size, pooling_window, strides, result, device_id,
+    precision)
+  parameters:
+  - name: input_size
+  - name: pooling_window
+  - name: strides
+  - name: result
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_op_pooling_geometry
+  name: test_op_pooling_geometry
+  signature: test_op_pooling_geometry(input_size, pooling_window, strides, padding,
+    result, use_input_shape_with_inferred_dimension, device_id, precision)
+  parameters:
+  - name: input_size
+  - name: pooling_window
+  - name: strides
+  - name: padding
+  - name: result
+  - name: use_input_shape_with_inferred_dimension
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_reduced_output_convolution
+  name: test_reduced_output_convolution
+  signature: test_reduced_output_convolution(input_size, conv_size, result, device_id,
+    precision)
+  parameters:
+  - name: input_size
+  - name: conv_size
+  - name: result
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_spatial_convolution
+  name: test_spatial_convolution
+  signature: test_spatial_convolution(input_size, conv_size, result, device_id, precision)
+  parameters:
+  - name: input_size
+  - name: conv_size
+  - name: result
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_spatial_convolution_transpose
+  name: test_spatial_convolution_transpose
+  signature: test_spatial_convolution_transpose(input_size, conv_size, result, device_id,
+    precision)
+  parameters:
+  - name: input_size
+  - name: conv_size
+  - name: result
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.kernel_test.test_spatial_convolution_transpose_with_output
+  name: test_spatial_convolution_transpose_with_output
+  signature: test_spatial_convolution_transpose_with_output(input_size, conv_size,
+    result, device_id, precision)
+  parameters:
+  - name: input_size
+  - name: conv_size
+  - name: result
+  - name: device_id
+  - name: precision

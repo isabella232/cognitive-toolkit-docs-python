@@ -1,0 +1,131 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.sequence_test
+name: sequence_test
+fullName: cntk.ops.tests.sequence_test
+summary: Unit tests for the sequence_softmax.
+functions:
+- uid: cntk.ops.tests.sequence_test.np_softmax
+  name: np_softmax
+  signature: np_softmax(a, axis)
+  parameters:
+  - name: a
+  - name: axis
+- uid: cntk.ops.tests.sequence_test.test_lstm_over_lstm_thought_vectors
+  name: test_lstm_over_lstm_thought_vectors
+  signature: test_lstm_over_lstm_thought_vectors(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sequence_test.test_lstm_over_lstm_thought_vectors_2
+  name: test_lstm_over_lstm_thought_vectors_2
+  signature: test_lstm_over_lstm_thought_vectors_2(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sequence_test.test_neg_sequence_max
+  name: test_neg_sequence_max
+  signature: test_neg_sequence_max()
+- uid: cntk.ops.tests.sequence_test.test_op_broadcast_as
+  name: test_op_broadcast_as
+  signature: test_op_broadcast_as(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.sequence_test.test_op_broadcast_as_in_loop
+  name: test_op_broadcast_as_in_loop
+  signature: test_op_broadcast_as_in_loop(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sequence_test.test_op_gather_derived_dynamic_axes_equivalence
+  name: test_op_gather_derived_dynamic_axes_equivalence
+  signature: test_op_gather_derived_dynamic_axes_equivalence(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.sequence_test.test_op_gather_dynamic_axes_equivalence
+  name: test_op_gather_dynamic_axes_equivalence
+  signature: test_op_gather_dynamic_axes_equivalence(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.sequence_test.test_op_gather_sparse
+  name: test_op_gather_sparse
+  signature: test_op_gather_sparse(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sequence_test.test_op_scatter_sparse
+  name: test_op_scatter_sparse
+  signature: test_op_scatter_sparse(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sequence_test.test_op_sequence_reduce_sum
+  name: test_op_sequence_reduce_sum
+  signature: test_op_sequence_reduce_sum(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.sequence_test.test_sequence_max
+  name: test_sequence_max
+  signature: test_sequence_max()
+- uid: cntk.ops.tests.sequence_test.test_sequence_max_with_variable_lengths
+  name: test_sequence_max_with_variable_lengths
+  signature: test_sequence_max_with_variable_lengths()
+- uid: cntk.ops.tests.sequence_test.test_sequence_past_future_delay_value
+  name: test_sequence_past_future_delay_value
+  signature: test_sequence_past_future_delay_value()
+- uid: cntk.ops.tests.sequence_test.test_sequence_reduce_over_reduced_scalar
+  name: test_sequence_reduce_over_reduced_scalar
+  signature: test_sequence_reduce_over_reduced_scalar()
+- uid: cntk.ops.tests.sequence_test.test_sequence_reduce_sum_over_scalar
+  name: test_sequence_reduce_sum_over_scalar
+  signature: test_sequence_reduce_sum_over_scalar()
+- uid: cntk.ops.tests.sequence_test.test_sequence_softmax
+  name: test_sequence_softmax
+  signature: test_sequence_softmax()
+- uid: cntk.ops.tests.sequence_test.test_sequence_softmax_with_large_numbers
+  name: test_sequence_softmax_with_large_numbers
+  signature: test_sequence_softmax_with_large_numbers()
+- uid: cntk.ops.tests.sequence_test.test_sequence_softmax_with_variable_lengths
+  name: test_sequence_softmax_with_variable_lengths
+  signature: test_sequence_softmax_with_variable_lengths()
+- uid: cntk.ops.tests.sequence_test.test_sequence_unpack_backprop
+  name: test_sequence_unpack_backprop
+  signature: test_sequence_unpack_backprop(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sequence_test.test_sequence_unpack_basic
+  name: test_sequence_unpack_basic
+  signature: test_sequence_unpack_basic(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sequence_test.test_sequence_unpack_with_broadcast_as
+  name: test_sequence_unpack_with_broadcast_as
+  signature: test_sequence_unpack_with_broadcast_as(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.sequence_test.test_sequence_unpack_with_convolution
+  name: test_sequence_unpack_with_convolution
+  signature: test_sequence_unpack_with_convolution(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.sequence_test.test_sequence_unpack_without_primary_output
+  name: test_sequence_unpack_without_primary_output
+  signature: test_sequence_unpack_without_primary_output(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.sequence_test.test_to_sequence_backprop
+  name: test_to_sequence_backprop
+  signature: test_to_sequence_backprop(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sequence_test.test_to_sequence_basic
+  name: test_to_sequence_basic
+  signature: test_to_sequence_basic(device_id)
+  parameters:
+  - name: device_id
+- uid: cntk.ops.tests.sequence_test.test_to_sequence_error_for_operand_with_sequence_axis
+  name: test_to_sequence_error_for_operand_with_sequence_axis
+  signature: test_to_sequence_error_for_operand_with_sequence_axis()
+classes:
+- cntk.ops.tests.sequence_test.UtteranceBatchReshape

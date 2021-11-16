@@ -5,3 +5,5 @@ fullName: cntk.train.tests
 type: import
 modules:
 - cntk.train.tests.distributed_test
+- cntk.train.tests.trainer_test
+- cntk.train.tests.training_session_test

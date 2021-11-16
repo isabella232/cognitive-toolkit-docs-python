@@ -1,14 +1,14 @@
 ### YamlMime:PythonClass
-uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
-name: MultibitKernel
-fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
-module: cntk.contrib.netopt.custom_convolution_ops
+uid: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientToRightOperand
+name: MyPlusWithNoGradientToRightOperand
+fullName: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientToRightOperand
+module: cntk.ops.tests.userfunction_test
 inheritances:
 - cntk.ops.functions.UserFunction
 constructor:
-  syntax: MultibitKernel(*args, **kwargs)
+  syntax: MyPlusWithNoGradientToRightOperand(*args, **kwargs)
 methods:
-- uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.backward
+- uid: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientToRightOperand.backward
   name: backward
   summary: 'Backpropagates supplied `root_gradients` for one or more of the output
 
@@ -31,11 +31,13 @@ methods:
     > on passing input data.
 
     >'
-  signature: backward(state, root_gradients)
+  signature: backward(state, root_gradients, input_gradients)
   parameters:
   - name: state
     isRequired: true
   - name: root_gradients
+    isRequired: true
+  - name: input_gradients
     isRequired: true
   return:
     description: mapping of `variables` to NumPy arrays
@@ -70,14 +72,14 @@ methods:
     ```
 
     '
-- uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.forward
+- uid: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientToRightOperand.forward
   name: forward
   summary: 'Computes the values of speficied variables in `outputs`, using values
 
     provided in `arguments` that correspond to each input *Variable* of
 
     the function (i.e. those that have `is_input = True`).'
-  signature: forward(argument, device, outputs_to_retain)
+  signature: forward(arguments, device=None, outputs_to_retain=None)
   parameters:
   - name: arguments
     description: "maps variables to their input data. The interpretation depends on\n\
@@ -105,7 +107,7 @@ methods:
     description: 'outputs to fetch values for. If not
 
       set, all outputs of the function will be fetched.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:iterable>, <xref:optional>
   - name: keep_for_backward
@@ -115,11 +117,11 @@ methods:
 
       in a subsequent backward call. If *None*, the returned state will
 
-      be *None* and a subsequent call to <xref:cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.backward>
+      be *None* and a subsequent call to <xref:cntk.ops.tests.userfunction_test.MyPlusWithNoGradientToRightOperand.backward>
       will not be
 
       possible.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:set>, <xref:default None>
   - name: device
@@ -149,7 +151,7 @@ methods:
   return:
     description: 'A tuple (BackPropState, map of outputs to NumPy arrays). The
 
-      BackPropState is a handle taken by <xref:cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.backward>.'
+      BackPropState is a handle taken by <xref:cntk.ops.tests.userfunction_test.MyPlusWithNoGradientToRightOperand.backward>.'
   examples:
   - "\n```\n\n>>> # Doing the same, but with a CSR matrix from scipy.sparse\n>>> vocab_size\
     \ = 5\n>>> from scipy.sparse import csr_matrix\n>>> v = C.sequence.input_variable(shape=(vocab_size,),\
@@ -169,13 +171,7 @@ methods:
     \ list(fv.values())[0]\n[array([[ 0.,  1.,  0.,  0.,  0.]], dtype=float32),\n\
     \ array([[ 0.,  0.,  1.,  0.,  0.], [ 0.,  0.,  0.,  0.,  1.]], dtype=float32)]\n\
     ```\n"
-- uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.gradFunc
-  name: gradFunc
-  signature: gradFunc(arg)
-  parameters:
-  - name: arg
-    isRequired: true
-- uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.infer_outputs
+- uid: cntk.ops.tests.userfunction_test.MyPlusWithNoGradientToRightOperand.infer_outputs
   name: infer_outputs
   summary: 'Returns a list of all output variables this user-defined function
 
@@ -186,9 +182,3 @@ methods:
 
     <xref:cntk.ops.output_variable>.'
   signature: infer_outputs()
-- uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.multiFunc
-  name: multiFunc
-  signature: multiFunc(arg1)
-  parameters:
-  - name: arg1
-    isRequired: true

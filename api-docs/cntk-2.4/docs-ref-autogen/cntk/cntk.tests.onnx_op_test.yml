@@ -1,0 +1,385 @@
+### YamlMime:PythonModule
+uid: cntk.tests.onnx_op_test
+name: onnx_op_test
+fullName: cntk.tests.onnx_op_test
+functions:
+- uid: cntk.tests.onnx_op_test.save_validation_1input
+  name: save_validation_1input
+  signature: save_validation_1input(x, y, file_path)
+  parameters:
+  - name: x
+  - name: y
+  - name: file_path
+- uid: cntk.tests.onnx_op_test.save_validation_2inputs
+  name: save_validation_2inputs
+  signature: save_validation_2inputs(x1, x2, y, file_path)
+  parameters:
+  - name: x1
+  - name: x2
+  - name: y
+  - name: file_path
+- uid: cntk.tests.onnx_op_test.save_validation_no_input
+  name: save_validation_no_input
+  signature: save_validation_no_input(y, file_path)
+  parameters:
+  - name: y
+  - name: file_path
+- uid: cntk.tests.onnx_op_test.test_Abs
+  name: test_Abs
+  signature: test_Abs(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Add
+  name: test_Add
+  signature: test_Add(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_And
+  name: test_And
+  signature: test_And(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_ArgMax
+  name: test_ArgMax
+  signature: test_ArgMax(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_ArgMin
+  name: test_ArgMin
+  signature: test_ArgMin(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_AveragePool
+  name: test_AveragePool
+  signature: test_AveragePool(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_BatchNormalization
+  name: test_BatchNormalization
+  signature: test_BatchNormalization(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Ceil
+  name: test_Ceil
+  signature: test_Ceil(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Clip
+  name: test_Clip
+  signature: test_Clip(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Concat
+  name: test_Concat
+  signature: test_Concat(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_DepthToSpace
+  name: test_DepthToSpace
+  signature: test_DepthToSpace(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Div
+  name: test_Div
+  signature: test_Div(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Dropout
+  name: test_Dropout
+  signature: test_Dropout(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Elu
+  name: test_Elu
+  signature: test_Elu(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Equal
+  name: test_Equal
+  signature: test_Equal(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Exp
+  name: test_Exp
+  signature: test_Exp(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Flatten
+  name: test_Flatten
+  signature: test_Flatten(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Floor
+  name: test_Floor
+  signature: test_Floor(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Gather
+  name: test_Gather
+  signature: test_Gather(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Gather_With_Axis
+  name: test_Gather_With_Axis
+  signature: test_Gather_With_Axis(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Greater
+  name: test_Greater
+  signature: test_Greater(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_HardSigmiod
+  name: test_HardSigmiod
+  signature: test_HardSigmiod(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Hardmax
+  name: test_Hardmax
+  signature: test_Hardmax(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_ImageScaler
+  name: test_ImageScaler
+  signature: test_ImageScaler(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_LRN
+  name: test_LRN
+  signature: test_LRN(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_LeakyRelu
+  name: test_LeakyRelu
+  signature: test_LeakyRelu(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Less
+  name: test_Less
+  signature: test_Less(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Log
+  name: test_Log
+  signature: test_Log(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_LogSoftmax
+  name: test_LogSoftmax
+  signature: test_LogSoftmax(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_MatMul
+  name: test_MatMul
+  signature: test_MatMul(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Max
+  name: test_Max
+  signature: test_Max(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_MaxPool
+  name: test_MaxPool
+  signature: test_MaxPool(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_MaxRoiPool
+  name: test_MaxRoiPool
+  signature: test_MaxRoiPool(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Mean
+  name: test_Mean
+  signature: test_Mean(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Min
+  name: test_Min
+  signature: test_Min(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Mul
+  name: test_Mul
+  signature: test_Mul(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Neg
+  name: test_Neg
+  signature: test_Neg(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Not
+  name: test_Not
+  signature: test_Not(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Or
+  name: test_Or
+  signature: test_Or(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Pad
+  name: test_Pad
+  signature: test_Pad(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Pow
+  name: test_Pow
+  signature: test_Pow(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Reciprocal
+  name: test_Reciprocal
+  signature: test_Reciprocal(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_ReduceL1
+  name: test_ReduceL1
+  signature: test_ReduceL1(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_ReduceL2
+  name: test_ReduceL2
+  signature: test_ReduceL2(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_ReduceLogSum
+  name: test_ReduceLogSum
+  signature: test_ReduceLogSum(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_ReduceMax
+  name: test_ReduceMax
+  signature: test_ReduceMax(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_ReduceMean
+  name: test_ReduceMean
+  signature: test_ReduceMean(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_ReduceMin
+  name: test_ReduceMin
+  signature: test_ReduceMin(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_ReduceProd
+  name: test_ReduceProd
+  signature: test_ReduceProd(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_ReduceSum
+  name: test_ReduceSum
+  signature: test_ReduceSum(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_ReduceSumSquare
+  name: test_ReduceSumSquare
+  signature: test_ReduceSumSquare(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Relu
+  name: test_Relu
+  signature: test_Relu(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Reshape
+  name: test_Reshape
+  signature: test_Reshape(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Selu
+  name: test_Selu
+  signature: test_Selu(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Sigmoid
+  name: test_Sigmoid
+  signature: test_Sigmoid(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Slice
+  name: test_Slice
+  signature: test_Slice(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Softmax
+  name: test_Softmax
+  signature: test_Softmax(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Softplus
+  name: test_Softplus
+  signature: test_Softplus(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Softsign
+  name: test_Softsign
+  signature: test_Softsign(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_SpaceToDepth
+  name: test_SpaceToDepth
+  signature: test_SpaceToDepth(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Sqrt
+  name: test_Sqrt
+  signature: test_Sqrt(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Sub
+  name: test_Sub
+  signature: test_Sub(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Sum
+  name: test_Sum
+  signature: test_Sum(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Tanh
+  name: test_Tanh
+  signature: test_Tanh(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Transpose
+  name: test_Transpose
+  signature: test_Transpose(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_TransposeAxes
+  name: test_TransposeAxes
+  signature: test_TransposeAxes(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.test_Xor
+  name: test_Xor
+  signature: test_Xor(tmpdir)
+  parameters:
+  - name: tmpdir
+- uid: cntk.tests.onnx_op_test.verify_no_input
+  name: verify_no_input
+  signature: verify_no_input(model, tmpdir, name)
+  parameters:
+  - name: model
+  - name: tmpdir
+  - name: name
+- uid: cntk.tests.onnx_op_test.verify_one_input
+  name: verify_one_input
+  signature: verify_one_input(model, data, tmpdir, name)
+  parameters:
+  - name: model
+  - name: data
+  - name: tmpdir
+  - name: name
+- uid: cntk.tests.onnx_op_test.verify_two_input
+  name: verify_two_input
+  signature: verify_two_input(model, data1, data2, tmpdir, name)
+  parameters:
+  - name: model
+  - name: data1
+  - name: data2
+  - name: tmpdir
+  - name: name

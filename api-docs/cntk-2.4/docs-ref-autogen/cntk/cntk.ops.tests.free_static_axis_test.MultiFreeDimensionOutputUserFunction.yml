@@ -1,14 +1,14 @@
 ### YamlMime:PythonClass
-uid: cntk.contrib.netopt.custom_convolution_ops.pySign
-name: pySign
-fullName: cntk.contrib.netopt.custom_convolution_ops.pySign
-module: cntk.contrib.netopt.custom_convolution_ops
+uid: cntk.ops.tests.free_static_axis_test.MultiFreeDimensionOutputUserFunction
+name: MultiFreeDimensionOutputUserFunction
+fullName: cntk.ops.tests.free_static_axis_test.MultiFreeDimensionOutputUserFunction
+module: cntk.ops.tests.free_static_axis_test
 inheritances:
 - cntk.ops.functions.UserFunction
 constructor:
-  syntax: pySign(*args, **kwargs)
+  syntax: MultiFreeDimensionOutputUserFunction(*args, **kwargs)
 methods:
-- uid: cntk.contrib.netopt.custom_convolution_ops.pySign.backward
+- uid: cntk.ops.tests.free_static_axis_test.MultiFreeDimensionOutputUserFunction.backward
   name: backward
   summary: 'Backpropagates supplied `root_gradients` for one or more of the output
 
@@ -31,11 +31,13 @@ methods:
     > on passing input data.
 
     >'
-  signature: backward(state, root_gradients)
+  signature: backward(state, root_gradients, variables)
   parameters:
   - name: state
     isRequired: true
   - name: root_gradients
+    isRequired: true
+  - name: variables
     isRequired: true
   return:
     description: mapping of `variables` to NumPy arrays
@@ -70,14 +72,14 @@ methods:
     ```
 
     '
-- uid: cntk.contrib.netopt.custom_convolution_ops.pySign.forward
+- uid: cntk.ops.tests.free_static_axis_test.MultiFreeDimensionOutputUserFunction.forward
   name: forward
   summary: 'Computes the values of speficied variables in `outputs`, using values
 
     provided in `arguments` that correspond to each input *Variable* of
 
     the function (i.e. those that have `is_input = True`).'
-  signature: forward(argument, device=None, outputs_to_retain=None)
+  signature: forward(arguments, outputs, device=None, outputs_to_retain=None)
   parameters:
   - name: arguments
     description: "maps variables to their input data. The interpretation depends on\n\
@@ -105,7 +107,7 @@ methods:
     description: 'outputs to fetch values for. If not
 
       set, all outputs of the function will be fetched.'
-    defaultValue: None
+    isRequired: true
     types:
     - <xref:iterable>, <xref:optional>
   - name: keep_for_backward
@@ -115,7 +117,7 @@ methods:
 
       in a subsequent backward call. If *None*, the returned state will
 
-      be *None* and a subsequent call to <xref:cntk.contrib.netopt.custom_convolution_ops.pySign.backward>
+      be *None* and a subsequent call to <xref:cntk.ops.tests.free_static_axis_test.MultiFreeDimensionOutputUserFunction.backward>
       will not be
 
       possible.'
@@ -128,7 +130,7 @@ methods:
       descriptor that contains the type and id of the device on which the
 
       computation is. If *None*, the default device is used.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:cntk.device.DeviceDescriptor>, <xref:default None>
   - name: as_numpy
@@ -149,7 +151,7 @@ methods:
   return:
     description: 'A tuple (BackPropState, map of outputs to NumPy arrays). The
 
-      BackPropState is a handle taken by <xref:cntk.contrib.netopt.custom_convolution_ops.pySign.backward>.'
+      BackPropState is a handle taken by <xref:cntk.ops.tests.free_static_axis_test.MultiFreeDimensionOutputUserFunction.backward>.'
   examples:
   - "\n```\n\n>>> # Doing the same, but with a CSR matrix from scipy.sparse\n>>> vocab_size\
     \ = 5\n>>> from scipy.sparse import csr_matrix\n>>> v = C.sequence.input_variable(shape=(vocab_size,),\
@@ -169,7 +171,7 @@ methods:
     \ list(fv.values())[0]\n[array([[ 0.,  1.,  0.,  0.,  0.]], dtype=float32),\n\
     \ array([[ 0.,  0.,  1.,  0.,  0.], [ 0.,  0.,  0.,  0.,  1.]], dtype=float32)]\n\
     ```\n"
-- uid: cntk.contrib.netopt.custom_convolution_ops.pySign.infer_outputs
+- uid: cntk.ops.tests.free_static_axis_test.MultiFreeDimensionOutputUserFunction.infer_outputs
   name: infer_outputs
   summary: 'Returns a list of all output variables this user-defined function
 

@@ -3,3 +3,6 @@ uid: cntk.losses.tests
 name: tests
 fullName: cntk.losses.tests
 type: import
+modules:
+- cntk.losses.tests.cosine_distance_test
+- cntk.losses.tests.losses_test

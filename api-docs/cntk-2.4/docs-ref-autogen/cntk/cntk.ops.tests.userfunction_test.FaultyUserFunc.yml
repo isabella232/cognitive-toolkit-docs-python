@@ -1,14 +1,14 @@
 ### YamlMime:PythonClass
-uid: cntk.contrib.netopt.custom_convolution_ops.Multibit
-name: Multibit
-fullName: cntk.contrib.netopt.custom_convolution_ops.Multibit
-module: cntk.contrib.netopt.custom_convolution_ops
+uid: cntk.ops.tests.userfunction_test.FaultyUserFunc
+name: FaultyUserFunc
+fullName: cntk.ops.tests.userfunction_test.FaultyUserFunc
+module: cntk.ops.tests.userfunction_test
 inheritances:
 - cntk.ops.functions.UserFunction
 constructor:
-  syntax: Multibit(*args, **kwargs)
+  syntax: FaultyUserFunc(*args, **kwargs)
 methods:
-- uid: cntk.contrib.netopt.custom_convolution_ops.Multibit.backward
+- uid: cntk.ops.tests.userfunction_test.FaultyUserFunc.backward
   name: backward
   summary: 'Backpropagates supplied `root_gradients` for one or more of the output
 
@@ -31,11 +31,13 @@ methods:
     > on passing input data.
 
     >'
-  signature: backward(state, root_gradients)
+  signature: backward(state, root_gradients, variables)
   parameters:
   - name: state
     isRequired: true
   - name: root_gradients
+    isRequired: true
+  - name: variables
     isRequired: true
   return:
     description: mapping of `variables` to NumPy arrays
@@ -70,28 +72,7 @@ methods:
     ```
 
     '
-- uid: cntk.contrib.netopt.custom_convolution_ops.Multibit.clone
-  name: clone
-  summary: 'Creates a clone of this user-defined function.
-
-
-    It assumes that the constructor signature of the user''s implementation
-
-    of the user function takes the inputs as individual arguments followed
-
-    by the operator name. If the signature is different, then this method
-
-    needs to be overriden.'
-  signature: clone(cloned_inputs)
-  parameters:
-  - name: cloned_inputs
-    description: 'list of cloned inputs to the new user-defined
-
-      Function clone to be created.'
-    isRequired: true
-  return:
-    description: A cloned instance of this user-defined function.
-- uid: cntk.contrib.netopt.custom_convolution_ops.Multibit.deserialize
+- uid: cntk.ops.tests.userfunction_test.FaultyUserFunc.deserialize
   name: deserialize
   summary: 'A stub deserialize method for illustration purposes. User-defined functions
 
@@ -119,14 +100,14 @@ methods:
     - <xref:dict>
   return:
     description: An instance of the user-defined function.
-- uid: cntk.contrib.netopt.custom_convolution_ops.Multibit.forward
+- uid: cntk.ops.tests.userfunction_test.FaultyUserFunc.forward
   name: forward
   summary: 'Computes the values of speficied variables in `outputs`, using values
 
     provided in `arguments` that correspond to each input *Variable* of
 
     the function (i.e. those that have `is_input = True`).'
-  signature: forward(argument, device, outputs_to_retain)
+  signature: forward(arguments, device=None, outputs_to_retain=None)
   parameters:
   - name: arguments
     description: "maps variables to their input data. The interpretation depends on\n\
@@ -154,7 +135,7 @@ methods:
     description: 'outputs to fetch values for. If not
 
       set, all outputs of the function will be fetched.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:iterable>, <xref:optional>
   - name: keep_for_backward
@@ -164,11 +145,11 @@ methods:
 
       in a subsequent backward call. If *None*, the returned state will
 
-      be *None* and a subsequent call to <xref:cntk.contrib.netopt.custom_convolution_ops.Multibit.backward>
+      be *None* and a subsequent call to <xref:cntk.ops.tests.userfunction_test.FaultyUserFunc.backward>
       will not be
 
       possible.'
-    isRequired: true
+    defaultValue: None
     types:
     - <xref:set>, <xref:default None>
   - name: device
@@ -198,7 +179,7 @@ methods:
   return:
     description: 'A tuple (BackPropState, map of outputs to NumPy arrays). The
 
-      BackPropState is a handle taken by <xref:cntk.contrib.netopt.custom_convolution_ops.Multibit.backward>.'
+      BackPropState is a handle taken by <xref:cntk.ops.tests.userfunction_test.FaultyUserFunc.backward>.'
   examples:
   - "\n```\n\n>>> # Doing the same, but with a CSR matrix from scipy.sparse\n>>> vocab_size\
     \ = 5\n>>> from scipy.sparse import csr_matrix\n>>> v = C.sequence.input_variable(shape=(vocab_size,),\
@@ -218,13 +199,7 @@ methods:
     \ list(fv.values())[0]\n[array([[ 0.,  1.,  0.,  0.,  0.]], dtype=float32),\n\
     \ array([[ 0.,  0.,  1.,  0.,  0.], [ 0.,  0.,  0.,  0.,  1.]], dtype=float32)]\n\
     ```\n"
-- uid: cntk.contrib.netopt.custom_convolution_ops.Multibit.gradFunc
-  name: gradFunc
-  signature: gradFunc(arg)
-  parameters:
-  - name: arg
-    isRequired: true
-- uid: cntk.contrib.netopt.custom_convolution_ops.Multibit.infer_outputs
+- uid: cntk.ops.tests.userfunction_test.FaultyUserFunc.infer_outputs
   name: infer_outputs
   summary: 'Returns a list of all output variables this user-defined function
 
@@ -235,18 +210,3 @@ methods:
 
     <xref:cntk.ops.output_variable>.'
   signature: infer_outputs()
-- uid: cntk.contrib.netopt.custom_convolution_ops.Multibit.multiFunc
-  name: multiFunc
-  signature: multiFunc(arg1)
-  parameters:
-  - name: arg1
-    isRequired: true
-- uid: cntk.contrib.netopt.custom_convolution_ops.Multibit.serialize
-  name: serialize
-  summary: 'Generates a dictionary that captures the state of this user-defined function.
-
-
-    This method must be overridden, if a user function has any state that needs
-
-    to be preserved in the model dictionary.'
-  signature: serialize()

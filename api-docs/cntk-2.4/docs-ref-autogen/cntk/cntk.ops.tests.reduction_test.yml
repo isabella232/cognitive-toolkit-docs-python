@@ -1,0 +1,116 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.reduction_test
+name: reduction_test
+fullName: cntk.ops.tests.reduction_test
+summary: Unit tests for reduction operations, tested for the forward and the backward
+  pass
+functions:
+- uid: cntk.ops.tests.reduction_test.min_max_bwd
+  name: min_max_bwd
+  signature: min_max_bwd(x, f, dtype)
+  parameters:
+  - name: x
+  - name: f
+  - name: dtype
+- uid: cntk.ops.tests.reduction_test.reduce_batch_sequence_static_ops
+  name: reduce_batch_sequence_static_ops
+  signature: reduce_batch_sequence_static_ops(dtype)
+  parameters:
+  - name: dtype
+- uid: cntk.ops.tests.reduction_test.test_op_reduce_all
+  name: test_op_reduce_all
+  signature: test_op_reduce_all(input_data, axis, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: axis
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.reduction_test.test_op_reduce_argmax
+  name: test_op_reduce_argmax
+  signature: test_op_reduce_argmax(input_data, axis, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: axis
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.reduction_test.test_op_reduce_argmin
+  name: test_op_reduce_argmin
+  signature: test_op_reduce_argmin(input_data, axis, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: axis
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.reduction_test.test_op_reduce_batch_sequence_static_axes_together
+  name: test_op_reduce_batch_sequence_static_axes_together
+  signature: test_op_reduce_batch_sequence_static_axes_together(input_data, dynamic_axes,
+    static_axes, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: dynamic_axes
+  - name: static_axes
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.reduction_test.test_op_reduce_log_sum
+  name: test_op_reduce_log_sum
+  signature: test_op_reduce_log_sum(input_data, axis, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: axis
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.reduction_test.test_op_reduce_max
+  name: test_op_reduce_max
+  signature: test_op_reduce_max(input_data, axis, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: axis
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.reduction_test.test_op_reduce_mean
+  name: test_op_reduce_mean
+  signature: test_op_reduce_mean(input_data, axis, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: axis
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.reduction_test.test_op_reduce_mean_all_constant
+  name: test_op_reduce_mean_all_constant
+  signature: test_op_reduce_mean_all_constant(input_data, axis, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: axis
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.reduction_test.test_op_reduce_min
+  name: test_op_reduce_min
+  signature: test_op_reduce_min(input_data, axis, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: axis
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.reduction_test.test_op_reduce_over_batch_axis
+  name: test_op_reduce_over_batch_axis
+  signature: test_op_reduce_over_batch_axis(input_data, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.reduction_test.test_op_reduce_prod
+  name: test_op_reduce_prod
+  signature: test_op_reduce_prod(input_data, axis, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: axis
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.reduction_test.test_op_reduce_sum
+  name: test_op_reduce_sum
+  signature: test_op_reduce_sum(input_data, axis, device_id, precision)
+  parameters:
+  - name: input_data
+  - name: axis
+  - name: device_id
+  - name: precision
