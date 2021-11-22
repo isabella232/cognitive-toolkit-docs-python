@@ -13,12 +13,15 @@ functions:
     description: 'configure file specifying the agent type as well as
 
       training details.'
+    isRequired: true
   - name: o_space
     description: 'observation space, gym.spaces.tuple_space.Tuple is not
 
       supported.'
+    isRequired: true
   - name: a_space
     description: action space, limits to gym.spaces.discrete.Discrete.
+    isRequired: true
   return:
     description: "QLearning,\n   ActorCritic, TabularQLearning, or RandomAgent."
     types:

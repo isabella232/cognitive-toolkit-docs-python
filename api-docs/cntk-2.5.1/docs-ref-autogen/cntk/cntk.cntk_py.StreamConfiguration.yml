@@ -7,3 +7,14 @@ inheritances:
 - builtins.object
 constructor:
   syntax: StreamConfiguration(*args)
+attributes:
+- uid: cntk.cntk_py.StreamConfiguration.m_defines_mb_size
+  name: m_defines_mb_size
+- uid: cntk.cntk_py.StreamConfiguration.m_dim
+  name: m_dim
+- uid: cntk.cntk_py.StreamConfiguration.m_is_sparse
+  name: m_is_sparse
+- uid: cntk.cntk_py.StreamConfiguration.m_stream_alias
+  name: m_stream_alias
+- uid: cntk.cntk_py.StreamConfiguration.m_stream_name
+  name: m_stream_name
