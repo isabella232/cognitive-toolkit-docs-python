@@ -7,3 +7,5 @@ inheritances:
 - cntk.contrib.crosstalk.EmbedAttr
 summary: "Attribute for embedding variable\n\ndict\n   The list of vocabulary of the\
   \ embedding\n\ninput_dim\n   The input dimension of the embedding"
+constructor:
+  syntax: EmbedAttr(dict, input_dim)
