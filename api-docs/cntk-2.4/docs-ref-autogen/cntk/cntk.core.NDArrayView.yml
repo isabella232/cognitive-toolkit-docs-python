@@ -17,16 +17,19 @@ constructor:
   parameters:
   - name: shape
     description: shape of the data
+    isRequired: true
     types:
     - <xref:tuple>
   - name: data_type
     description: data type of the data
+    isRequired: true
     types:
     - <xref:np.float32>, <xref:np.float64>, <xref:np.float16>
   - name: device
     description: 'device this value
 
       should be put on'
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>
 methods:

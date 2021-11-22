@@ -11,3 +11,8 @@ methods:
 - uid: cntk.cntk_py.DistributedWorkerDescriptor.is_main
   name: is_main
   signature: is_main()
+attributes:
+- uid: cntk.cntk_py.DistributedWorkerDescriptor.m_global_rank
+  name: m_global_rank
+- uid: cntk.cntk_py.DistributedWorkerDescriptor.m_host_id
+  name: m_host_id

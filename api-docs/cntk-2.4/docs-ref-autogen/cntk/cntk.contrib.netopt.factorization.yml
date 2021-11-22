@@ -14,8 +14,10 @@ functions:
   parameters:
   - name: shapes
     description: dimensions of the input matrices.
+    isRequired: true
   - name: activation
     description: activation function used for the model.
+    isRequired: true
   - name: init
     description: the two matrices corresponding to the factorization.
     defaultValue: '{''W1'': None, ''W2'': None}'
@@ -27,10 +29,13 @@ functions:
     defaultValue: None
   - name: bias
     description: bias for the model.
+    isRequired: true
   - name: init_bias
     description: initial bias value.
+    isRequired: true
   - name: name
     description: name of the block function that creates the new model.
+    isRequired: true
   return:
     description: a model that is factored and projected (reduced).
 - uid: cntk.contrib.netopt.factorization.factor_dense
@@ -46,6 +51,7 @@ functions:
   parameters:
   - name: model
     description: dense model.
+    isRequired: true
   - name: projection_function
     description: 'determin the new size of the dense model. It can
 
@@ -70,8 +76,10 @@ functions:
   parameters:
   - name: matrix
     description: an input matrix
+    isRequired: true
   - name: k
     description: desired rank of the output matrix
+    isRequired: true
     types:
     - <xref:int>
   return:
