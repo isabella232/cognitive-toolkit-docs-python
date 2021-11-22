@@ -20,6 +20,7 @@ constructor:
   parameters:
   - name: shape
     description: the shape of the tensor holding the parameters
+    isRequired: true
     types:
     - <xref:tuple>
   - name: init
@@ -30,20 +31,24 @@ constructor:
       the tensor gets the shape of this argument. Alternatively, an
 
       initializer from <xref:module-cntk.initializer> can be specified.'
+    isRequired: true
     types:
     - <xref:value >(<xref:np.ndarray>, <xref:list>, <xref:float>, <xref:int>
   - name: dtype
     description: data type of the values stored.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: device
     description: the device on which the values should reside.
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>
   - name: name
     description: an optional name for this parameter
+    isRequired: true
     types:
     - <xref:str>
 examples:
@@ -61,5 +66,7 @@ attributes:
   parameters:
   - name: getter
     description: gets the Parameter's value as a NumPy array
+    isRequired: true
   - name: setter
     description: sets the Parameter's value to the provided NumPy array
+    isRequired: true

@@ -14,6 +14,7 @@ functions:
   parameters:
   - name: root
     description: the root to start the journey from
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:cntk.variables.Variable>
@@ -21,6 +22,7 @@ functions:
     description: 'function that takes a node as
 
       argument and returns `True` if that node should be returned.'
+    isRequired: true
     types:
     - <xref:Python function>
     - <xref:lambda>
@@ -42,11 +44,13 @@ functions:
   parameters:
   - name: node
     description: the node to start the journey from
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:cntk.variables.Variable>
   - name: node_name
     description: name for which we are search nodes
+    isRequired: true
     types:
     - <xref:str>
   - name: depth
@@ -69,11 +73,13 @@ functions:
   parameters:
   - name: node
     description: the node to start the journey from
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:cntk.variables.Variable>
   - name: node_name
     description: name for which we are search nodes
+    isRequired: true
     types:
     - <xref:str>
   - name: depth
@@ -96,11 +102,13 @@ functions:
   parameters:
   - name: node
     description: the node to start the journey from
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:cntk.variables.Variable>
   - name: node_uid
     description: uid for which we are search nodes.
+    isRequired: true
     types:
     - <xref:str>
     - <xref:unicode >(<xref:in Python 2>)
@@ -123,6 +131,7 @@ functions:
   parameters:
   - name: node
     description: the node to start the journey from
+    isRequired: true
     types:
     - <xref:graph node>
   - name: depth
@@ -142,6 +151,7 @@ functions:
   parameters:
   - name: node
     description: the node to start the journey from
+    isRequired: true
     types:
     - <xref:graph node>
   - name: filename

@@ -27,10 +27,12 @@ functions:
   parameters:
   - name: what_range
     description: a Python range to loop over
+    isRequired: true
     types:
     - <xref:range>
   - name: constructor
     description: lambda that constructs a layer
+    isRequired: true
     types:
     - <xref:Python function/lambda with 1>
     - <xref:0 arguments>
@@ -70,6 +72,7 @@ functions:
   parameters:
   - name: f
     description: the function to add the skip connection to.
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:equivalent Python function>
@@ -129,6 +132,7 @@ functions:
       A tuple aplies each of its items to the input and results in a tuple value.
 
       An item that is a list will be flattened.'
+    isRequired: true
     types:
     - <xref:list of cntk.ops.functions.Function>, <xref:equivalent Python functions>,
       <xref:tuples of functions,>
@@ -182,6 +186,7 @@ functions:
   parameters:
   - name: functions
     description: functions to be applied.
+    isRequired: true
     types:
     - <xref:single>
     - <xref:list of cntk.ops.functions.Function>

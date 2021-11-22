@@ -13,6 +13,7 @@ constructor:
   parameters:
   - name: deserializers
     description: deserializers to be used in the composite reader
+    isRequired: true
     types:
     - <xref:a single deserializer>
     - <xref:a list>
@@ -33,6 +34,7 @@ constructor:
       Click [here](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-epochSize-and-Python-epoch_size-in-CNTK)
 
       for a description of input and label samples.'
+    isRequired: true
     types:
     - <xref:int>, <xref:defaults to <xref:cntk.io.INFINITELY_REPEAT>>
   - name: max_sweeps
@@ -45,6 +47,7 @@ constructor:
       mutually exclusive,
 
       an exception will be raised if both have non-default values.'
+    isRequired: true
     types:
     - <xref:int>, <xref:defaults to <xref:cntk.io.INFINITELY_REPEAT>>
   - name: randomization_window_in_chunks
@@ -55,6 +58,7 @@ constructor:
       exclusive,
 
       an exception will be raised if both have non-zero values.'
+    isRequired: true
     types:
     - <xref:int>, <xref:defaults to cntk.io.DEFAULT_RANDOMIZATION_WINDOW_IN_CHUNKS>
   - name: randomization_window_in_samples
@@ -66,18 +70,21 @@ constructor:
       exclusive,
 
       an exception will be raised if both have non-zero values.'
+    isRequired: true
     types:
     - <xref:int>, <xref:defaults to 0>
   - name: randomization_seed
     description: 'initial randomization seed value (incremented every sweep when
 
       the input data is re-randomized).'
+    isRequired: true
     types:
     - <xref:int>, <xref:defaults to 0>
   - name: trace_level
     description: 'the output verbosity level, defaults to
 
       the current logging verbosity level given by <xref:cntk.logging.get_trace_level>.'
+    isRequired: true
     types:
     - <xref:an instance of cntk.logging.TraceLevel>
   - name: multithreaded_deserializer
@@ -90,6 +97,7 @@ constructor:
       *False* and *True*
 
       faithfully turn the multithreading off/on.'
+    isRequired: true
     types:
     - <xref:bool>
   - name: frame_mode
@@ -102,6 +110,7 @@ constructor:
       is enabled and the
 
       truncation length is non-zero).'
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to False>
   - name: truncation_length
@@ -111,6 +120,7 @@ constructor:
       will be raised
 
       if frame mode is enabled and the truncation length is non-zero).'
+    isRequired: true
     types:
     - <xref:int>, <xref:defaults to 0>
   - name: randomize
@@ -118,10 +128,12 @@ constructor:
       or
 
       randomization_window_in_samples to specify the randomization range'
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to True>
   - name: max_errors
     description: maximum number of errors in the dataset to ignore
+    isRequired: true
     types:
     - <xref:int>, <xref:defaults to 0>
 methods:
@@ -239,12 +251,14 @@ attributes:
     description: 'minibatch position on the
 
       global timeline.'
+    isRequired: true
     types:
     - <xref:cntk.cntk_py.Dictionary>
   - name: setter
     description: 'position returned by
 
       the getter'
+    isRequired: true
     types:
     - <xref:cntk.cntk_py.Dictionary>
 - uid: cntk.io.MinibatchSource.streams
