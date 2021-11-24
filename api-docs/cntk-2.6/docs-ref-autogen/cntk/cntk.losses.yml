@@ -40,7 +40,7 @@ functions:
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> a = np.asarray([-1, -1, -1, 1, 1, -1, 1, 1, -1, 1, 1, -1]).reshape(3,2,2)\n\
     >>> b = np.asarray([1, 1, -1, 1, 1, -1, 1, -1, -1, -1, -1, 1]).reshape(3,2,2)\n\
@@ -96,15 +96,15 @@ functions:
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> qry = np.asarray([1., 1., 0., 0., 0., 1., 1., 0., 0., 0., 1., 1.],\
     \ dtype=np.float32).reshape(3, 1, 4)\n>>> doc = np.asarray([1., 1., 0., 0., 0.,\
     \ 1., 1., 0., 0., 0., 1., 1.], dtype=np.float32).reshape(3, 1, 4)\n>>> x = C.sequence.input_variable(shape=(4,))\n\
     >>> y = C.sequence.input_variable(shape=(4,))\n>>> model = C.cosine_distance_with_negative_samples(x,\
     \ y, shift=1, num_negative_samples=2)\n>>> np.round(model.eval({x: qry, y: doc}),\
-    \ decimals=4)\narray([[[ 1. ,  0.5,  0. ]],\n<BLANKLINE>\n       [[ 1. ,  0.5,\
-    \  0.5]],\n<BLANKLINE>\n       [[ 1. ,  0. ,  0.5]]], dtype=float32)\n```\n"
+    \ decimals=4)\narray([[[ 1. ,  0.5,  0. ]],\n\n       [[ 1. ,  0.5,  0.5]],\n\n\
+    \       [[ 1. ,  0. ,  0.5]]], dtype=float32)\n```\n"
 - uid: cntk.losses.cross_entropy_with_softmax
   name: cross_entropy_with_softmax
   summary: 'This operation computes the cross entropy between the `target_vector`
@@ -150,7 +150,7 @@ functions:
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -199,19 +199,23 @@ functions:
     description: the output values from the network
     isRequired: true
   - name: target
-    description: 'it is usually a one-hot vector where the hot bit corresponds to
-      the label index'
+    description: it is usually a one-hot vector where the hot bit corresponds to the
+      label index
     isRequired: true
   - name: beta
     description: greater than one weights recall higher than precision, less than
       one for the opposite.
     isRequired: true
-  - name: chosen values are 0.5, 1 or 2.
+  - name: chosen values are 0.5
     isRequired: true
     types:
     - <xref:Commonly>
+  - name: or 2.
+    isRequired: true
+    types:
+    - <xref:1>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.losses.hierarchical_softmax_layer
   name: hierarchical_softmax_layer
   summary: 'A two layers hierarchical softmax function:'
@@ -285,22 +289,22 @@ functions:
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> group = C.input_variable((1,))\n>>> score = C.input_variable((1,),\
     \ needs_gradient=True)\n>>> gain  = C.input_variable((1,))\n>>> g = np.array([1,\
     \ 1, 2, 2], dtype=np.float32).reshape(4,1)\n>>> s = np.array([1, 2, 3, 4], dtype=np.float32).reshape(4,1)\n\
     >>> n = np.array([7, 1, 3, 1], dtype=np.float32).reshape(4,1)\n>>> f = C.lambda_rank(score,\
     \ gain, group)\n>>> np.round(f.grad({score:s, gain:n, group: g}, wrt=[score]),4)\n\
-    array([[-0.2121],\n<BLANKLINE>\n       [ 0.2121],\n<BLANKLINE>\n       [-0.1486],\n\
-    <BLANKLINE>\n       [ 0.1486]], dtype=float32)\n```\n"
+    array([[-0.2121],\n\n       [ 0.2121],\n\n       [-0.1486],\n\n       [ 0.1486]],\
+    \ dtype=float32)\n```\n"
 - uid: cntk.losses.lattice_sequence_with_softmax
   name: lattice_sequence_with_softmax
-  signature: 'lattice_sequence_with_softmax(label, prediction, loglikelihood, lattice,
-    symListPath, phonePath, stateListPath, transProbPath, latticeConfigPath=''LatticeNode.config'',
+  signature: lattice_sequence_with_softmax(label, prediction, loglikelihood, lattice,
+    symListPath, phonePath, stateListPath, transProbPath, latticeConfigPath='LatticeNode.config',
     hSmoothingWeight=0.95, frameDropThresh=1e-10, doReferenceAlign=False, seqGammarUsesMBR=False,
     seqGammarAMF=14.0, seqGammarLMF=14.0, seqGammarBMMIFactor=0.0, seqGammarWordPen=0.0,
-    name='''')'
+    name='')
 - uid: cntk.losses.nce_loss
   name: nce_loss
   summary: 'Computes the noise contrastive estimation loss. This implementation mostly
@@ -357,7 +361,7 @@ functions:
       adding the biases gives the logits.'
     isRequired: true
   - name: labels
-    description: 'a one-hot vector with the ground-truth labels.'
+    description: a one-hot vector with the ground-truth labels.
     isRequired: true
   - name: noise_distribution
     description: 'a constant vector with dimension equal to the number
@@ -483,7 +487,7 @@ functions:
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
