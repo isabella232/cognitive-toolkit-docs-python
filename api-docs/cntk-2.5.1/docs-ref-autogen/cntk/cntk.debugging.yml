@@ -26,6 +26,7 @@ functions:
   parameters:
   - name: seed
     description: set the random seed for all random ops in the graph and readers.
+    isRequired: true
     types:
     - <xref:int>
 packages:

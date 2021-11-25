@@ -7,6 +7,8 @@ inheritances:
 - enum.IntEnum
 summary: Indicates that whether the processing steps in the training data is counted
   by samples, minibatch or epoch.
+constructor:
+  syntax: DataUnit(value)
 attributes:
 - uid: cntk.train.training_session.DataUnit.minibatch
   name: minibatch

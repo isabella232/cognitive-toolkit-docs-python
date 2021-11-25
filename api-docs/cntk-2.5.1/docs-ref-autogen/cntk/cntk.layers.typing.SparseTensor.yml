@@ -7,3 +7,5 @@ inheritances:
 - builtins.object
 summary: Meta class to denote a sparse data tensor (with batch axis). Use with dimensions,
   e.g. `SparseTensor[129]`.
+constructor:
+  syntax: SparseTensor()
