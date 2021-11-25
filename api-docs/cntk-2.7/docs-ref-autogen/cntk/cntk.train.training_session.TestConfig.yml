@@ -12,10 +12,12 @@ constructor:
   parameters:
   - name: minibatch_source
     description: minibatch source used for cross validation
+    isRequired: true
     types:
     - <xref:cntk.io.MinibatchSource>
   - name: minibatch_size
     description: minibatch schedule for cross validation
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.cntk_py.minibatch_size_schedule>, <xref:defaults to 32>
@@ -25,20 +27,24 @@ constructor:
       If None, the mapping provided to the training session constructor is used.
 
       Don''t specify this if *minibatch_source* is a tuple of numpy/scipy arrays.'
+    isRequired: true
     types:
     - <xref:dict>
   - name: criterion
     description: 'criterion function.
 
       Must be specified if *minibatch_source* is a tuple of numpy/scipy arrays.'
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
   - name: source
     description: DEPRECATED, use minibatch_source instead
+    isRequired: true
     types:
     - <xref:cntk.io.MinibatchSource>
   - name: mb_size
     description: DEPRECATED, use minibatch_size instead
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.cntk_py.minibatch_size_schedule>, <xref:defaults to 32>

@@ -49,4 +49,4 @@ methods:
   return:
     description: workers in this communicator.
     types:
-    - '(<xref:*list*>)<xref: of <xref:cntk.train.distributed.WorkerDescriptor>>'
+    - '<xref:(<xref:*list*>)<xref: of cntk.train.distributed.WorkerDescriptor>>'

@@ -16,11 +16,13 @@ summary: "Base class of all primitive tensor operators.\n\nIf it has only one ou
   \ arguments are input variables.\n\nIf you use Python 3, Functions with types are\
   \ declared using Python annotation syntax, e.g.:\n\n<!-- literal_block {\"ids\"\
   : [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
-  : \"preserve\"} -->\n\n````\n\n   @Function\n   def f(x:Tensor[13]):\n       return\
-  \ x * x\n   ````\n\nIf you are working with Python 2.7, use CNTK's <xref:cntk.layers.typing.Signature>\
+  : \"preserve\", \"language\": \"default\", \"force\": false, \"linenos\": false}\
+  \ -->\n\n````default\n\n   @Function\n   def f(x:Tensor[13]):\n       return x *\
+  \ x\n   ````\n\nIf you are working with Python 2.7, use CNTK's <xref:cntk.layers.typing.Signature>\
   \ decorator instead:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
-  : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n````\n\
-  \n   >>> from cntk.layers.typing import *\n   >>> @Function\n   ... @Signature(Tensor[13])\n\
+  : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\"\
+  : \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\n   >>>\
+  \ from cntk.layers.typing import *\n   >>> @Function\n   ... @Signature(Tensor[13])\n\
   \   ... def f(x):\n   ...     return x * x\n   >>> print(f)\n   ElementTimes(x:\
   \ Tensor[13]) -> Tensor[13]\n   ````\n\n`make_block=True` is an internal parameter\
   \ used to implement <xref:cntk.ops.functions.BlockFunction>.\nIf *BlockFunction()*\
@@ -185,7 +187,7 @@ methods:
       output variable. A single NumPy array if there is only one output value.'
     types:
     - <xref:dict>
-    - <xref:NumPy Array>
+    - <xref:<xref:NumPy Array>>
 - uid: cntk.ops.functions.Function.find_all_with_name
   name: find_all_with_name
   summary: 'Returns a list of primitive function with `name` in the graph
@@ -194,7 +196,7 @@ methods:
 
     multiple times. If you expect only one function to be returned, use
 
-    <xref:cntk.ops.functions.find_by_name>.'
+    <xref:cntk.ops.functions.Function.find_by_name>.'
   signature: find_all_with_name(name, depth=0)
   parameters:
   - name: name
@@ -234,7 +236,7 @@ methods:
     ```
 
     '
-  seeAlsoContent: '  <xref:cntk.ops.functions.find_by_name>
+  seeAlsoContent: '  <xref:cntk.ops.functions.Function.find_by_name>
 
     '
 - uid: cntk.ops.functions.Function.find_by_name
@@ -393,8 +395,8 @@ methods:
     \ csr_matrix([[0,0,1,0,0], [0,0,0,0,1]])]\n>>> _, fv = f.forward({v:sparse_batch})\n\
     >>> list(fv.values())[0]\n[array([[ 0.,  1.,  0.,  0.,  0.]], dtype=float32),\n\
     \ array([[ 0.,  0.,  1.,  0.,  0.], [ 0.,  0.,  0.,  0.,  1.]], dtype=float32)]\n\
-    <BLANKLINE>\n>>> # Much more efficient, however, is to incrementally create CSR\
-    \ arrays.\n>>> # See https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csr_matrix.html\n\
+    \n>>> # Much more efficient, however, is to incrementally create CSR arrays.\n\
+    >>> # See https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csr_matrix.html\n\
     >>> # for more information.\n>>> def seq_to_csr_matrix(seq, vocab_size):\n...\
     \     indptr = [0]\n...     indices = []\n...     data = []\n...     for term_idx\
     \ in seq:\n...         indices.append(term_idx)\n...         data.append(1)\n\
@@ -484,13 +486,12 @@ methods:
       (such as the batch axis).'
     types:
     - <xref:dict>
-    - <xref:NumPy Array>
-    - <xref:a tuple of these>
+    - <xref:<xref:NumPy Array>>
+    - <xref:<xref:a tuple of these>>
   examples:
   - "\n```\n\n>>> x = C.input_variable(shape=(1,), needs_gradient=True)\n>>> y = C.sqrt(x)\n\
     >>> a = np.asarray([1,4,16],dtype=np.float32).reshape(3,1)\n>>> y.grad({x:a})\n\
-    array([[ 0.5  ],\n<BLANKLINE>\n       [ 0.25 ],\n<BLANKLINE>\n       [ 0.125]],\
-    \ dtype=float32)\n```\n"
+    array([[ 0.5  ],\n\n       [ 0.25 ],\n\n       [ 0.125]], dtype=float32)\n```\n"
 - uid: cntk.ops.functions.Function.load
   name: load
   summary: Load the `model`, that has been saved using <xref:cntk.ops.functions.Function.save>.
@@ -611,10 +612,10 @@ methods:
     types:
     - <xref:str>
   return:
-    description: 'this method only has the side-effect of loading the model parameters
-      from the file'
+    description: this method only has the side-effect of loading the model parameters
+      from the file
     types:
-    - <xref:*None*>
+    - <xref:<xref:*None*>>
 - uid: cntk.ops.functions.Function.save
   name: save
   summary: 'Save this function graph into a model file using the specified format.
@@ -658,7 +659,7 @@ methods:
       of the corresponding attribute.'
     isRequired: true
     types:
-    - <xref:float in case of 'dropoutRate'>, <xref:int for 'rngSeed'>
+    - <xref:<xref:float in case of 'dropoutRate'>, <xref:int for 'rngSeed'>>
 - uid: cntk.ops.functions.Function.test
   name: test
   summary: 'Measures the performance of a model, given by its criterion function,
@@ -695,13 +696,14 @@ methods:
   - name: callbacks
     description: 'optionally, list of
 
-      progress writers from <xref:cntk.logging> to automatically track training
+      progress writers from <xref:cntk.logging#module-cntk.logging> to automatically
+      track training
 
       progress.'
     defaultValue: None
     types:
-    - <xref:progress writer>
-    - <xref:list of them>
+    - <xref:<xref:progress writer>>
+    - <xref:<xref:list of them>>
   return:
     description: An object *test_summary* with *test_summary.metric* being the average
       metric, and *test_summary.samples* the number of labels in the test set.
@@ -776,7 +778,7 @@ methods:
     CNTK has a fixed set of callback types, and only those types are allowed in the
     *callbacks* list:
 
-    An object of type <xref:cntk.cntk_py.ProgressWriter> from <xref:cntk.logging>
+    An object of type <xref:cntk.cntk_py.ProgressWriter> from <xref:cntk.logging#module-cntk.logging>
     is used for progress logging;
 
     a <xref:cntk.train.training_session.CheckpointConfig> configures the checkpointing
@@ -881,16 +883,10 @@ methods:
     '
 - uid: cntk.ops.functions.Function.update_signature
   name: update_signature
-  summary: 'Defines input shapes, in-place
-
-    e.g.
-
-    model.update_signature(42)
-
-    pass a list of objects that define the dimensions etc. of the placeholders
+  summary: 'pass a list of objects that define the dimensions etc. of the placeholders
 
     Currently you can pass an int, a tuple, an Input, or a dict created with Type()'
-  signature: update_signature(*arg_types, **kwarg_types)
+  signature: update_signature(42)
 - uid: cntk.ops.functions.Function.with_signature
   name: with_signature
   summary: Decorator for defining a @Function with a given signature. Same as @Function
@@ -1017,6 +1013,7 @@ attributes:
   parameters:
   - name: getter
     description: returns the name of the function.
+    isRequired: true
     types:
     - <xref:str>
   - name: setter
@@ -1027,6 +1024,7 @@ attributes:
       name. Calling this method, when this Function already has a name,
 
       results in an exception.'
+    isRequired: true
     types:
     - <xref:str>
 - uid: cntk.ops.functions.Function.op_name

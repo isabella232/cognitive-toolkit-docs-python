@@ -7,3 +7,8 @@ inheritances:
 - builtins.object
 constructor:
   syntax: SequenceKey(*args)
+attributes:
+- uid: cntk.cntk_py.SequenceKey.m_sample
+  name: m_sample
+- uid: cntk.cntk_py.SequenceKey.m_sequence
+  name: m_sequence

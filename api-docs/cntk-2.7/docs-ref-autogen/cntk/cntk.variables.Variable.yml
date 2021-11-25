@@ -14,12 +14,14 @@ constructor:
   parameters:
   - name: shape
     description: the shape of this variable.
+    isRequired: true
     types:
     - <xref:tuple>
   - name: dtype
     description: 'data type of the values that will be bound to this variable.
 
       Default is np.float32'
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
@@ -28,20 +30,24 @@ constructor:
     description: 'if set to True any expression that contains this variable
 
       will also be differentiated with respect to this variable.'
+    isRequired: true
     types:
     - <xref:bool>
   - name: is_sparse
     description: whether this is a sparse or dense input (or output)
+    isRequired: true
     types:
     - <xref:bool>
   - name: dynamic_axes
     description: 'the dynamic axes of this variable. These
 
       express dimensions that can vary across examples or minibatches.'
+    isRequired: true
     types:
     - list of <xref:cntk.axis.Axis>
   - name: name
     description: an optional name for this parameter.
+    isRequired: true
     types:
     - <xref:str>
 methods:
