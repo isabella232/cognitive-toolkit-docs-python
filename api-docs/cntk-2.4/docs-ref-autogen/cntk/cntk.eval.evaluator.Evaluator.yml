@@ -11,12 +11,14 @@ constructor:
   parameters:
   - name: eval_function
     description: evaluation function.
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
   - name: progress_writers
     description: 'optionally, list of progress writers from <xref:cntk.utils> to track
 
       training progress.'
+    isRequired: true
     types:
     - <xref:list>
 methods:
@@ -55,7 +57,7 @@ methods:
 
       tested minibatch.'
     types:
-    - <xref:*float*>
+    - <xref:<xref:*float*>>
 attributes:
 - uid: cntk.eval.evaluator.Evaluator.evaluation_function
   name: evaluation_function

@@ -11,6 +11,7 @@ constructor:
   parameters:
   - name: filename
     description: checkpoint file name.
+    isRequired: true
     types:
     - <xref:str>
   - name: frequency
@@ -26,15 +27,18 @@ constructor:
 
       See <xref:cntk.train.training_session.DataUnit> for more information on frequency
       data unit.'
+    isRequired: true
     types:
     - <xref:int>, <xref:tuple>
   - name: restore
     description: flag, indicating whether to restore from available checkpoint before
       the start of the training
+    isRequired: true
     types:
     - <xref:bool>
   - name: preserve_all
     description: saves all checkpoints, using `filename` as prefix and checkpoint
       index as a suffix.
+    isRequired: true
     types:
     - <xref:bool>
