@@ -1,6 +1,4 @@
 {
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
       "docset_name": "cognitive-toolkit-docs-python",
@@ -26,7 +24,7 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "customized_template_paths": [
-         "_dependentPackages/uref/content"
+        "_dependentPackages/uref/content"
       ],
       "customized_tasks": {
         "docset_prebuild": [
@@ -37,17 +35,22 @@
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": null,
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
+  "contribution_branch_mappings": null,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
+  "branch_target_mapping": null,
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
   "dependent_packages": [
     {
       "id": "opbuild.templates.uref",
