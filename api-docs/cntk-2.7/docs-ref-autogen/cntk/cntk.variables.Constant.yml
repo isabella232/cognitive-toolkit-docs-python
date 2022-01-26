@@ -18,6 +18,7 @@ constructor:
   parameters:
   - name: value
     description: Initial value.
+    isRequired: true
     types:
     - <xref:np.ndarray>
     - <xref:list>
@@ -25,16 +26,19 @@ constructor:
     - <xref:int>
   - name: dtype
     description: data type to store the values as.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: device
     description: the device on which the values should reside.
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>
   - name: name
     description: an optional name for this constant.
+    isRequired: true
     types:
     - <xref:str>
 examples:
