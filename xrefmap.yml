@@ -11231,6 +11231,10 @@ references:
   href: https://docs.python.org/3/library/logging.handlers.html#logging.handlers.TimedRotatingFileHandler.emit
   name: emit
   uid: logging.handlers.TimedRotatingFileHandler.emit
+- fullName: logging.handlers.TimedRotatingFileHandler.getFilesToDelete
+  href: https://docs.python.org/3/library/logging.handlers.html#logging.handlers.TimedRotatingFileHandler.getFilesToDelete
+  name: getFilesToDelete
+  uid: logging.handlers.TimedRotatingFileHandler.getFilesToDelete
 - fullName: logging.handlers.WatchedFileHandler.emit
   href: https://docs.python.org/3/library/logging.handlers.html#logging.handlers.WatchedFileHandler.emit
   name: emit
@@ -17815,6 +17819,34 @@ references:
   href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.asyncio.subprocess.STDOUT
   name: STDOUT
   uid: asyncio.asyncio.subprocess.STDOUT
+- fullName: calendar.FRIDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.FRIDAY
+  name: FRIDAY
+  uid: calendar.FRIDAY
+- fullName: calendar.MONDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.MONDAY
+  name: MONDAY
+  uid: calendar.MONDAY
+- fullName: calendar.SATURDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.SATURDAY
+  name: SATURDAY
+  uid: calendar.SATURDAY
+- fullName: calendar.SUNDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.SUNDAY
+  name: SUNDAY
+  uid: calendar.SUNDAY
+- fullName: calendar.THURSDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.THURSDAY
+  name: THURSDAY
+  uid: calendar.THURSDAY
+- fullName: calendar.TUESDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.TUESDAY
+  name: TUESDAY
+  uid: calendar.TUESDAY
+- fullName: calendar.WEDNESDAY
+  href: https://docs.python.org/3/library/calendar.html#calendar.WEDNESDAY
+  name: WEDNESDAY
+  uid: calendar.WEDNESDAY
 - fullName: calendar.day_abbr
   href: https://docs.python.org/3/library/calendar.html#calendar.day_abbr
   name: day_abbr
@@ -21907,10 +21939,6 @@ references:
   href: https://docs.python.org/3/library/types.html#types.NotImplementedType
   name: NotImplementedType
   uid: types.NotImplementedType
-- fullName: types.UnionType
-  href: https://docs.python.org/3/library/types.html#types.UnionType
-  name: UnionType
-  uid: types.UnionType
 - fullName: types.WrapperDescriptorType
   href: https://docs.python.org/3/library/types.html#types.WrapperDescriptorType
   name: WrapperDescriptorType
@@ -35671,6 +35699,10 @@ references:
   href: https://docs.python.org/3/library/types.html#types.TracebackType
   name: TracebackType
   uid: types.TracebackType
+- fullName: types.UnionType
+  href: https://docs.python.org/3/library/types.html#types.UnionType
+  name: UnionType
+  uid: types.UnionType
 - fullName: typing.AbstractSet
   href: https://docs.python.org/3/library/typing.html#typing.AbstractSet
   name: AbstractSet
