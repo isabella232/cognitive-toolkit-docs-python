@@ -8,3 +8,5 @@ inheritances:
 summary: 'This class defines math overloads so that CNTK nodes can be written in math
 
   expressions.'
+constructor:
+  syntax: TensorOpsMixin()

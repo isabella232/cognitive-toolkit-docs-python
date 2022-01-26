@@ -20,10 +20,12 @@ constructor:
   parameters:
   - name: epoch_size
     description: periodically call the callback after processing this many samples
+    isRequired: true
     types:
     - <xref:int>
   - name: callback
     description: function(epoch_index, epoch_loss, epoch_metric, epoch_samples)
+    isRequired: true
     types:
     - <xref:function>
 methods:

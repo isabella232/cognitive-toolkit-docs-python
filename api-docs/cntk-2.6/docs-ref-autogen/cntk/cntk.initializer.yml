@@ -11,10 +11,12 @@ functions:
   parameters:
   - name: kernel_width
     description: kernel width
+    isRequired: true
     types:
     - <xref:int>
   - name: kernel_height
     description: kernel height
+    isRequired: true
     types:
     - <xref:int>
   return:
@@ -157,6 +159,7 @@ functions:
   - name: initializer
     description: initializer whose output_rank and filter_rank parameters are to be
       overriden
+    isRequired: true
   - name: output_rank
     description: new output rank value
     defaultValue: None
@@ -177,6 +180,7 @@ functions:
   parameters:
   - name: scale
     description: scale
+    isRequired: true
     types:
     - <xref:float>
   - name: output_rank
@@ -209,6 +213,7 @@ functions:
   parameters:
   - name: stdev
     description: standard deviation
+    isRequired: true
     types:
     - <xref:float>
   - name: seed
@@ -227,6 +232,7 @@ functions:
   parameters:
   - name: scale
     description: scale
+    isRequired: true
     types:
     - <xref:float>
   - name: seed
