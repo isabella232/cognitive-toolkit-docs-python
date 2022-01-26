@@ -14,3 +14,12 @@ methods:
 - uid: cntk.cntk_py.SequenceDataBase.get_sample_shape
   name: get_sample_shape
   signature: get_sample_shape()
+attributes:
+- uid: cntk.cntk_py.SequenceDataBase.m_element_type
+  name: m_element_type
+- uid: cntk.cntk_py.SequenceDataBase.m_is_valid
+  name: m_is_valid
+- uid: cntk.cntk_py.SequenceDataBase.m_key
+  name: m_key
+- uid: cntk.cntk_py.SequenceDataBase.m_number_of_samples
+  name: m_number_of_samples
