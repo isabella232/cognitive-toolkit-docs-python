@@ -22,8 +22,10 @@ functions:
   - name: initial_state
     description: tensor or scalar representing the initial value to be used when the
       input tensor is shifted in time.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -48,8 +50,9 @@ functions:
   summary: "Layer factory function to create a function that runs a step function\
     \ recurrently over an input sequence,\nand returns the final state.\nThis is often\
     \ used for embeddings of sequences, e.g. in a sequence-to-sequence model.\nPseudo-code:\n\
-    \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-    : [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   # pseudo-code\
+    <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
+    : [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\": \"default\"\
+    , \"force\": false, \"linenos\": false} -->\n\n````default\n\n   # pseudo-code\
     \ for h = Fold(step_function)(x)\n   #  x: input sequence of tensors along the\
     \ dynamic axis\n   #  h: resulting final step-function output tensor that no longer\
     \ has a dynamic axis\n   h = initial_state   # h = output of previous step (\"\
@@ -57,17 +60,17 @@ functions:
     \ looping over all steps of input sequence along its dynamic axis\n       h =\
     \ step_function(h, x_n)  # pass previous state and new data to step_function ->\
     \ new state\n   # now h is the result of the final invocation of the step function\n\
-    \   ````\n\n`Fold()` is the same as <xref:cntk.layers.sequence.Recurrence> except\
+    \   ````\n`Fold()` is the same as <xref:cntk.layers.sequence.Recurrence> except\
     \ that only the final state is returned\n(whereas `Recurrence()` returns the entire\
     \ state sequence).\nHence, this documentation will only focus on the differences\
     \ to `Recurrence()`,\nplease see <xref:cntk.layers.sequence.Recurrence> for a\
-    \ detailed information on parameters.\n\nCommonly, the `folder_function` is a\
-    \ recurrent block such as an LSTM.\nHowever, one can pass any binary function.\
-    \ E.g. passing `plus` will sum\nup all items of a sequence; while `element_max`\
-    \ would perform a max-pooling over all items of the sequence.\n\nNote: CNTK's\
-    \ Fold() is similar to the fold() catamorphism known from functional programming.\n\
-    `go_backwards=False` corresponds to a fold-left, and `True` to a fold-right,\n\
-    except that the `folder_function` signature is always the one of fold-left."
+    \ detailed information on parameters.\nCommonly, the `folder_function` is a recurrent\
+    \ block such as an LSTM.\nHowever, one can pass any binary function. E.g. passing\
+    \ `plus` will sum\nup all items of a sequence; while `element_max` would perform\
+    \ a max-pooling over all items of the sequence.\nNote: CNTK's Fold() is similar\
+    \ to the fold() catamorphism known from functional programming.\n`go_backwards=False`\
+    \ corresponds to a fold-left, and `True` to a fold-right,\nexcept that the `folder_function`\
+    \ signature is always the one of fold-left."
   signature: Fold(folder_function, go_backwards=False, initial_state=0, return_full_state=False,
     name='')
   parameters:
@@ -76,14 +79,16 @@ functions:
       number of state variables
 
       (typically 1 for GRU and plain RNNs, and 2 for LSTMs).'
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:equivalent Python function>
+    - <xref:<xref:equivalent Python function>>
   - name: go_backwards
     description: if `True` then run the recurrence from the end of the sequence to
       the start.
+    isRequired: true
     types:
-    - <xref:bool>, <xref:defaults to False>
+    - <xref:bool>, <xref:defaults to `False`>
   - name: initial_state
     description: 'the initial value for the state. This can be a constant or a learnable
       parameter.
@@ -91,10 +96,11 @@ functions:
       In the latter case, if the step function has more than 1 state variable,
 
       this parameter must be a tuple providing one initial state for every state variable.'
+    isRequired: true
     types:
     - <xref:scalar>
-    - <xref:tensor without batch dimension;>
-    - <xref:a tuple thereof>
+    - <xref:<xref:tensor without batch dimension;>>
+    - <xref:<xref:a tuple thereof>>
   - name: return_full_state
     description: 'if `True` and the step function has more than one
 
@@ -105,9 +111,10 @@ functions:
       variables is returned to the caller.'
     defaultValue: 'False'
     types:
-    - <xref:bool>, <xref:defaults to False>
+    - <xref:bool>, <xref:defaults to `False`>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -137,7 +144,6 @@ functions:
 
     It returns two matrices: a value matrix, shape=(N,dim), and a valid window, shape=(N,1).
 
-
     This is used for attention modeling. CNTK presently does not support nested dynamic
     axes.
 
@@ -155,17 +161,20 @@ functions:
   parameters:
   - name: window_size
     description: maximum number of items in sequences. The *axis* will have this dimension.
+    isRequired: true
     types:
     - <xref:int>
   - name: axis
     description: 'axis along which the
 
       concatenation will be performed'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>, <xref:optional>, <xref:keyword only>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>, <xref:keyword only>
   - name: name
@@ -197,28 +206,29 @@ functions:
     \ that runs a step function recurrently over an input sequence,\nwhere in each\
     \ step, Recurrence() will pass to the step function a data input as well as the\
     \ output of the\nprevious step.\nThe following pseudo-code repesents what happens\
-    \ when you call a *Recurrence()* layer:\n\n<!-- literal_block {\"ids\": [], \"\
-    classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
-    : \"preserve\"} -->\n\n````\n\n   # pseudo-code for y = Recurrence(step_function)(x)\n\
-    \   #  x: input sequence of tensors along the dynamic axis\n   #  y: resulting\
-    \ sequence of outputs along the same dynamic axis\n   y = []              # result\
-    \ sequence goes here\n   s = initial_state   # s = output of previous step (\"\
-    state\")\n   for x_n in x:       # pseudo-code for looping over all steps of input\
-    \ sequence along its dynamic axis\n       s = step_function(s, x_n)  # pass previous\
-    \ state and new data to step_function -> new state\n       y.append(s)\n   ````\n\
-    \nThe common step functions are <xref:cntk.layers.blocks.LSTM>, <xref:cntk.layers.blocks.GRU>,\
+    \ when you call a *Recurrence()* layer:\n<!-- literal_block {\"ids\": [], \"classes\"\
+    : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"\
+    , \"language\": \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\
+    \n   # pseudo-code for y = Recurrence(step_function)(x)\n   #  x: input sequence\
+    \ of tensors along the dynamic axis\n   #  y: resulting sequence of outputs along\
+    \ the same dynamic axis\n   y = []              # result sequence goes here\n\
+    \   s = initial_state   # s = output of previous step (\"state\")\n   for x_n\
+    \ in x:       # pseudo-code for looping over all steps of input sequence along\
+    \ its dynamic axis\n       s = step_function(s, x_n)  # pass previous state and\
+    \ new data to step_function -> new state\n       y.append(s)\n   ````\nThe common\
+    \ step functions are <xref:cntk.layers.blocks.LSTM>, <xref:cntk.layers.blocks.GRU>,\
     \ and <xref:cntk.layers.blocks.RNNStep>,\nbut the step function can be any <xref:cntk.ops.functions.Function>\
     \ or Python function.\nThe signature of a step function with a single state variable\
     \ must be\n`(h_prev, x) -> h`, where `h_prev` is the previous state, `x` is the\
     \ new\ndata input, and the output is the new state.\nThe step function will be\
     \ called item by item, resulting in a sequence of the same length as the input.\n\
-    \nStep functions can have more than one state output, e.g. <xref:cntk.layers.blocks.LSTM>.\n\
+    Step functions can have more than one state output, e.g. <xref:cntk.layers.blocks.LSTM>.\n\
     In this case, the first N arguments are the previous state, followed by one more\
     \ argument that\nis the data input; and its output must be a tuple of N values.\n\
     In this case, the recurrence operation will, by default, return the first of the\
     \ state variables\n(in the LSTM case, the `h`), while additional state variables\
     \ are internal (like the LSTM's `c`).\nIf all state variables should be returned,\
-    \ pass `return_full_state=True`.\n\nTo provide your own step function, just use\
+    \ pass `return_full_state=True`.\nTo provide your own step function, just use\
     \ any <xref:cntk.ops.functions.Function> (or equivalent Python function) that\n\
     has a signature as described above.\nFor example, a cumulative sum over a sequence\
     \ can be computed as `Recurrence(plus)`,\nwhere each step consists of *plus(s,x_n)*,\
@@ -226,10 +236,10 @@ functions:
     \ all elements up to *x_n*.\nAnother example is a GRU layer with projection, which\
     \ could be realized as `Recurrence(GRU(500) >> Dense(200))`,\nwhere the projection\
     \ is applied to the hidden state as fed back to the next step.\n`F>>G` is a short-hand\
-    \ for `Sequential([F, G])`.\n\nOptionally, the recurrence can run backwards. This\
-    \ is useful for constructing bidirectional models.\n\n`initial_state` must be\
-    \ a constant. To pass initial_state as a data input, e.g. for a sequence-to-sequence\n\
-    model, use <xref:cntk.layers.sequence.RecurrenceFrom> instead.\n\nNote: `Recurrence()`\
+    \ for `Sequential([F, G])`.\nOptionally, the recurrence can run backwards. This\
+    \ is useful for constructing bidirectional models.\n`initial_state` must be a\
+    \ constant. To pass initial_state as a data input, e.g. for a sequence-to-sequence\n\
+    model, use <xref:cntk.layers.sequence.RecurrenceFrom> instead.\nNote: `Recurrence()`\
     \ is the equivalent to what in functional programming is often called `scanl()`."
   signature: Recurrence(step_function, go_backwards=False, initial_state=0, return_full_state=False,
     name='')
@@ -239,14 +249,16 @@ functions:
       number of state variables
 
       (typically 1 for GRU and plain RNNs, and 2 for LSTMs).'
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:equivalent Python function>
+    - <xref:<xref:equivalent Python function>>
   - name: go_backwards
     description: if `True` then run the recurrence from the end of the sequence to
       the start.
+    isRequired: true
     types:
-    - <xref:bool>, <xref:defaults to False>
+    - <xref:bool>, <xref:defaults to `False`>
   - name: initial_state
     description: 'the initial value for the state. This can be a constant or a learnable
       parameter.
@@ -254,10 +266,11 @@ functions:
       In the latter case, if the step function has more than 1 state variable,
 
       this parameter must be a tuple providing one initial state for every state variable.'
+    isRequired: true
     types:
     - <xref:scalar>
-    - <xref:tensor without batch dimension;>
-    - <xref:a tuple thereof>
+    - <xref:<xref:tensor without batch dimension;>>
+    - <xref:<xref:a tuple thereof>>
   - name: return_full_state
     description: 'if `True` and the step function has more than one
 
@@ -267,9 +280,10 @@ functions:
       the caller.'
     defaultValue: 'False'
     types:
-    - <xref:bool>, <xref:defaults to False>
+    - <xref:bool>, <xref:defaults to `False`>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -305,19 +319,20 @@ functions:
     \ like *Recurrence()*, as an initialization parameter to the factory function.\n\
     This form is meant for use in sequence-to-sequence scenarios.\nThis documentation\
     \ only covers this case; for additional information on parameters, see <xref:cntk.layers.sequence.Recurrence>.\n\
-    In pseudo-code:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
-    : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n\
-    ````\n\n   # pseudo-code for y = RecurrenceFrom(step_function)(s,x)\n   #  x:\
-    \ input sequence of tensors along the dynamic axis\n   #  s: initial state for\
-    \ the recurrence (computed from input data elsewhew)\n   #  y: resulting sequence\
-    \ of outputs along the same dynamic axis\n   y = []              # result sequence\
-    \ goes here\n   for x_n in x:       # pseudo-code for looping over all steps of\
-    \ input sequence along its dynamic axis\n       s = step_function(s, x_n)  # pass\
-    \ previous state and new data to step_function -> new state\n       y.append(s)\n\
-    \   ````\n\nThe layer function returned by this factory function accepts the initial\
-    \ state as data argument(s).\nThe initial state can be non-sequential data, as\
-    \ one would have for a plain sequence-to-sequence model,\nor sequential data.\
-    \ In the latter case, the last item is the initial state."
+    In pseudo-code:\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\":\
+    \ [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\"\
+    : \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\n  \
+    \ # pseudo-code for y = RecurrenceFrom(step_function)(s,x)\n   #  x: input sequence\
+    \ of tensors along the dynamic axis\n   #  s: initial state for the recurrence\
+    \ (computed from input data elsewhew)\n   #  y: resulting sequence of outputs\
+    \ along the same dynamic axis\n   y = []              # result sequence goes here\n\
+    \   for x_n in x:       # pseudo-code for looping over all steps of input sequence\
+    \ along its dynamic axis\n       s = step_function(s, x_n)  # pass previous state\
+    \ and new data to step_function -> new state\n       y.append(s)\n   ````\nThe\
+    \ layer function returned by this factory function accepts the initial state as\
+    \ data argument(s).\nThe initial state can be non-sequential data, as one would\
+    \ have for a plain sequence-to-sequence model,\nor sequential data. In the latter\
+    \ case, the last item is the initial state."
   signature: RecurrenceFrom(step_function, go_backwards=False, return_full_state=False,
     name='')
   parameters:
@@ -326,14 +341,16 @@ functions:
       number of state variables
 
       (typically 1 for GRU and plain RNNs, and 2 for LSTMs).'
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:equivalent Python function>
+    - <xref:<xref:equivalent Python function>>
   - name: go_backwards
     description: if `True` then run the recurrence from the end of the sequence to
       the start.
+    isRequired: true
     types:
-    - <xref:bool>, <xref:defaults to False>
+    - <xref:bool>, <xref:defaults to `False`>
   - name: initial_state
     description: 'the initial value for the state. This can be a constant or a learnable
       parameter.
@@ -344,8 +361,8 @@ functions:
     defaultValue: 'False'
     types:
     - <xref:scalar>
-    - <xref:tensor without batch dimension;>
-    - <xref:a tuple thereof>
+    - <xref:<xref:tensor without batch dimension;>>
+    - <xref:<xref:a tuple thereof>>
   - name: return_full_state
     description: 'if `True` and the step function has more than one
 
@@ -353,10 +370,12 @@ functions:
 
       whereas if not given or `False`, only the first state variable is returned to
       the caller.'
+    isRequired: true
     types:
-    - <xref:bool>, <xref:defaults to False>
+    - <xref:bool>, <xref:defaults to `False`>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -429,9 +448,10 @@ functions:
     \ a maximum number of steps, or earlier when, if provided, *until_predicate* evaluates\
     \ to True for the current output.\nThe maximum number of steps is based on a second\
     \ input from which only the dynamic-axis information is used.\nThis is best explained\
-    \ in pseudo-code:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
-    : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n\
-    ````\n\n   # pseudo-code for y = UnfoldFrom(generator_function, until_predicate)(s,axis_like)\n\
+    \ in pseudo-code:\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
+    : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\"\
+    : \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\n  \
+    \ # pseudo-code for y = UnfoldFrom(generator_function, until_predicate)(s,axis_like)\n\
     \   #  s:         initial state for the recurrence (computed from input data elsewhew),\n\
     \   #  axis_like: any input with a dynamic axis, unfold will happen along the\
     \ same dynamic axis,\n   #  y:         resulting sequence of outputs along the\
@@ -440,20 +460,20 @@ functions:
     \ axis_like\n       s = generator_function(s)  # pass previous state and new data\
     \ to step_function -> new state\n       y.append(s)\n       if until_predicate(s):\n\
     \           break\n   # now y is the output of repeatedly applying generator_function()\n\
-    \   ````\n\nA typical application is the decoder of a sequence-to-sequence model,\n\
+    \   ````\nA typical application is the decoder of a sequence-to-sequence model,\n\
     the generator function `f` accepts a two-valued state, with the first\nbeing an\
     \ emitted word, and the second being an internal recurrent state.\nThe initial\
     \ state would be a tuple `(w0, h0)`\nwhere `w0` represents the sentence-start\
     \ symbol,\nand `h0` is a thought vector that encodes the input sequence (as obtained\n\
-    from a <xref:cntk.layers.sequence.Fold> operation).\n\nA variant allows the state\
+    from a <xref:cntk.layers.sequence.Fold> operation).\nA variant allows the state\
     \ and the emitted sequence to be different. In that case,\n`f` returns a tuple\
     \ (output value, new state), and\n`UnfoldFrom(f)(s)`\nwould emit the sequence\
-    \ `f(s)[0], f(f(s)[1])[0], f(f(f(s)[1])[1])[0], ...`.\n\nThe maximum length of\
-    \ the output sequence is not unlimited, but determined by the argument to\nthe\
-    \ layer function, multiplied by an optional increase factor.\n\nOptionally, a\
-    \ function can be provided to denote that the end of the sequence has been reached.\n\
-    \nNote: In the context of functional programming, the first form of this operation\
-    \ is known as the unfold() anamorphism."
+    \ `f(s)[0], f(f(s)[1])[0], f(f(f(s)[1])[1])[0], ...`.\nThe maximum length of the\
+    \ output sequence is not unlimited, but determined by the argument to\nthe layer\
+    \ function, multiplied by an optional increase factor.\nOptionally, a function\
+    \ can be provided to denote that the end of the sequence has been reached.\nNote:\
+    \ In the context of functional programming, the first form of this operation is\
+    \ known as the unfold() anamorphism."
   signature: UnfoldFrom(generator_function, until_predicate=None, length_increase=1,
     name='')
   parameters:
@@ -466,9 +486,10 @@ functions:
 
       a tuple of N+1 outputs, where the first output is the value to emit, while the
       others are the state.'
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:equivalent Python function>
+    - <xref:<xref:equivalent Python function>>
   - name: until_predicate
     description: 'A function that denotes when the last element of the unfold has
       been emitted.
@@ -486,7 +507,7 @@ functions:
     defaultValue: None
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:equivalent Python function>
+    - <xref:<xref:equivalent Python function>>
   - name: length_increase
     description: 'the maximum number of output items is equal to the
 
@@ -500,6 +521,7 @@ functions:
     - <xref:float>, <xref:defaults to 1>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:

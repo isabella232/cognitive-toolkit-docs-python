@@ -6,11 +6,13 @@ module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
 inheritances:
 - builtins.object
 summary: Setup CNTK ops with given parameters
+constructor:
+  syntax: ApiSetup()
 methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.batch_norm
   name: batch_norm
   summary: Setup batch normalization op with given parameters
-  signature: batch_norm(cntk_layer, inputs)
+  signature: static batch_norm(cntk_layer, inputs)
   parameters:
   - name: cntk_layer
     description: the layer definition of batch normalization op
@@ -31,7 +33,7 @@ methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.convolution
   name: convolution
   summary: Setup convolution op with given parameters
-  signature: convolution(cntk_layer, inputs)
+  signature: static convolution(cntk_layer, inputs)
   parameters:
   - name: cntk_layer
     description: the layer definition of convolution op
@@ -52,7 +54,7 @@ methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.dense
   name: dense
   summary: Setup dense op with given parameters
-  signature: dense(cntk_layer, inputs)
+  signature: static dense(cntk_layer, inputs)
   parameters:
   - name: cntk_layer
     description: the layer definition of dense op
@@ -73,7 +75,7 @@ methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.dropout
   name: dropout
   summary: Setup dropout op with given parameters
-  signature: dropout(cntk_layer, inputs)
+  signature: static dropout(cntk_layer, inputs)
   parameters:
   - name: cntk_layer
     description: the layer definition of dropout op
@@ -94,7 +96,7 @@ methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.lrn
   name: lrn
   summary: Setup lrn op with given parameters
-  signature: lrn(cntk_layer, inputs)
+  signature: static lrn(cntk_layer, inputs)
   parameters:
   - name: cntk_layer
     description: the layer definition of lrn op
@@ -115,7 +117,7 @@ methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.plus
   name: plus
   summary: Setup plus op with given parameters
-  signature: plus(cntk_layer, inputs)
+  signature: static plus(cntk_layer, inputs)
   parameters:
   - name: cntk_layer
     description: the layer definition of dense op
@@ -136,7 +138,7 @@ methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.pooling
   name: pooling
   summary: Setup pooling op with given parameters
-  signature: pooling(cntk_layer, inputs)
+  signature: static pooling(cntk_layer, inputs)
   parameters:
   - name: cntk_layer
     description: the layer definition of pooling op
@@ -157,7 +159,7 @@ methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.relu
   name: relu
   summary: Setup ReLU op with given parameters
-  signature: relu(cntk_layer, inputs)
+  signature: static relu(cntk_layer, inputs)
   parameters:
   - name: cntk_layer
     description: the layer definition of ReLU op
@@ -178,7 +180,7 @@ methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.softmax
   name: softmax
   summary: Setup softmax op with given parameters
-  signature: softmax(cntk_layer, inputs)
+  signature: static softmax(cntk_layer, inputs)
   parameters:
   - name: cntk_layer
     description: the layer definition of softmax op
@@ -199,7 +201,7 @@ methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.ApiSetup.splice
   name: splice
   summary: Setup splice op with given parameters
-  signature: splice(cntk_layer, inputs)
+  signature: static splice(cntk_layer, inputs)
   parameters:
   - name: cntk_layer
     description: the layer definition of splice op

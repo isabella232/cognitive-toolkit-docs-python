@@ -9,7 +9,6 @@ functions:
   summary: 'See [https://en.wikipedia.org/wiki/Huber_loss](https://en.wikipedia.org/wiki/Huber_loss)
     for definition.
 
-
     delta is set to 1. This is not the right definition if output and target
 
     differ in more than one dimension.'

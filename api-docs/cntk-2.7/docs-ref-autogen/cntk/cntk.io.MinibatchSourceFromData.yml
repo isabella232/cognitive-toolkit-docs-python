@@ -8,11 +8,9 @@ inheritances:
 summary: 'This wraps in-memory data as a CNTK MinibatchSource object (aka "reader"),
   used to feed the data into a TrainingSession.
 
-
   Use this if your data is small enough to be loaded into RAM in its entirety, and
 
   the data is already sufficiently randomized.
-
 
   While CNTK allows user code to iterate through minibatches by itself and feed data
   minibatch
@@ -24,7 +22,6 @@ summary: 'This wraps in-memory data as a CNTK MinibatchSource object (aka "reade
 
   interface, which manages a full training including checkpointing and cross validation,
   operates on this level.
-
 
   A MinibatchSource created as a *MinibatchSourceFromData* linearly iterates through
   the data provided by
@@ -39,7 +36,8 @@ constructor:
   syntax: MinibatchSourceFromData(data_streams, max_samples=18446744073709551615)
   parameters:
   - name: data_streams
-    description: 'name-value pairs'
+    description: name-value pairs
+    isRequired: true
   - name: max_samples
     description: 'The maximum number of samples
 
@@ -57,8 +55,9 @@ constructor:
       Click [here](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-epochSize-and-Python-epoch_size-in-CNTK)
 
       for a description of input and label samples.'
+    isRequired: true
     types:
-    - <xref:int>, <xref:defaults to <xref:cntk.io.INFINITELY_REPEAT>>
+    - <xref:int>, <xref:defaults to cntk.io.INFINITELY_REPEAT>
 examples:
 - "\n```\n\n>>> N = 5\n>>> X = np.arange(3*N).reshape(N,3).astype(np.float32) # 6\
   \ rows of 3 values\n>>> s = C.io.MinibatchSourceFromData(dict(x=X), max_samples=len(X))\n\
@@ -104,16 +103,35 @@ methods:
     - <xref:cntk.cntk_py.Dictionary>
 - uid: cntk.io.MinibatchSourceFromData.next_minibatch
   name: next_minibatch
+  summary: Function to be implemented by the user.
   signature: next_minibatch(num_samples, number_of_workers=1, worker_rank=0, device=None)
   parameters:
   - name: num_samples
+    description: number of samples to return
     isRequired: true
+    types:
+    - <xref:int>
   - name: number_of_workers
+    description: number of workers in total
     defaultValue: '1'
+    types:
+    - <xref:int>
   - name: worker_rank
+    description: worker for which the data is to be returned
     defaultValue: '0'
+    types:
+    - <xref:int>
   - name: device
+    description: 'the device
+
+      descriptor that contains the type and id of the device on which the
+
+      computation is performed. If *None*, the default device is used.'
     defaultValue: None
+    types:
+    - <xref:DeviceDescriptor>, <xref:defaults to None>
+  return:
+    description: mapping of <xref:cntk.io.StreamInformation> to <xref:cntk.io.MinibatchData>
 - uid: cntk.io.MinibatchSourceFromData.restore_from_checkpoint
   name: restore_from_checkpoint
   summary: Restores the MinibatchSource state from the specified checkpoint.
@@ -126,4 +144,7 @@ methods:
     - <xref:cntk.cntk_py.Dictionary>
 - uid: cntk.io.MinibatchSourceFromData.stream_infos
   name: stream_infos
+  summary: Function to be implemented by the user.
   signature: stream_infos()
+  return:
+    description: list of <xref:cntk.io.StreamInformation> instances

@@ -13,6 +13,7 @@ methods:
   signature: has_value()
 - uid: cntk.cntk_py.DictionaryValue.load
   name: load
+  signature: static load()
 - uid: cntk.cntk_py.DictionaryValue.save
   name: save
   signature: save(filename)
@@ -21,6 +22,7 @@ methods:
     isRequired: true
 - uid: cntk.cntk_py.DictionaryValue.type_name
   name: type_name
+  signature: static type_name()
 - uid: cntk.cntk_py.DictionaryValue.value_type
   name: value_type
   signature: value_type()

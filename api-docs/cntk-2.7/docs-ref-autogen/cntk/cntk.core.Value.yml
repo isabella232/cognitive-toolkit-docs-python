@@ -13,6 +13,7 @@ constructor:
     description: "batch input for *var*.\nIt can be:\n\n   * a pure Python structure\
       \ (list of lists, ...), \n\n   * a list of NumPy arrays or SciPy sparse CSR\
       \ matrices \n\n   * a <xref:cntk.core.Value> object (e.g. returned by <xref:cntk.core.Value.one_hot>)"
+    isRequired: true
   - name: seq_starts
     description: 'if None, every sequence is
 
@@ -23,13 +24,15 @@ constructor:
       continuation of the sequence in the same slot of the previous
 
       minibatch (*False*)'
+    isRequired: true
     types:
-    - <xref:list of bools>
+    - <xref:<xref:list of bools>>
     - <xref:None>
   - name: device
     description: 'device this value
 
       should be put on'
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>
 methods:
@@ -51,7 +54,7 @@ methods:
 - uid: cntk.core.Value.create
   name: create
   summary: Creates a <xref:cntk.core.Value> object.
-  signature: create(var, data, seq_starts=None, device=None, read_only=False)
+  signature: static create(var, data, seq_starts=None, device=None, read_only=False)
   parameters:
   - name: var
     description: 'variable into which
@@ -77,7 +80,7 @@ methods:
       minibatch (*False*)'
     isRequired: true
     types:
-    - <xref:list of bools>
+    - <xref:<xref:list of bools>>
     - <xref:None>
   - name: device
     description: 'device
@@ -100,13 +103,13 @@ methods:
     such that the integer data in `batch` is interpreted as the indices
 
     representing one-hot vectors. Use Value.ONE_HOT_SKIP for a zero vector'
-  signature: one_hot(batch, num_classes, dtype=None, device=None)
+  signature: static one_hot(batch, num_classes, dtype=None, device=None)
   parameters:
   - name: batch
     description: batch input data of indices
     isRequired: true
     types:
-    - <xref:list of lists of integers>
+    - <xref:<xref:list of lists of integers>>
   - name: sample_shape
     description: 'number of classes or shape of each
 
@@ -175,9 +178,8 @@ attributes:
 - uid: cntk.core.Value.mask
   name: mask
   summary: "The mask matrix of this value. Each row denotes a sequence with its\n\
-    elements describing the mask of the element:\n\n   * 2: beginning of sequence\
-    \ (e.g. an LSTM would be reset) \n\n   * 1: valid element \n\n   * 0: invalid\
-    \ element"
+    elements describing the mask of the element:\n* 2: beginning of sequence (e.g.\
+    \ an LSTM would be reset) \n\n   * 1: valid element \n\n   * 0: invalid element"
   examples:
   - 'A mask of `[[2, 1, 1], [1, 1, 0]]` describes a batch of two
 
@@ -199,6 +201,9 @@ attributes:
     of varying lengths, the shape will have the max sequence length in the
 
     sequence dimension.'
+- uid: cntk.cntk_py.Value.one_hot_skip
+  name: one_hot_skip
+  signature: one_hot_skip = 4294967295
 - uid: cntk.core.Value.ONE_HOT_SKIP
   name: ONE_HOT_SKIP
   signature: ONE_HOT_SKIP = 4294967295

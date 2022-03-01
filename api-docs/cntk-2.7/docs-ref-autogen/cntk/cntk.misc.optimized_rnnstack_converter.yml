@@ -13,6 +13,7 @@ functions:
   parameters:
   - name: cudnn_model
     description: a model that contains optimized_rnnstacks
+    isRequired: true
   return:
     description: Converted model on GEMM based implementation of rnn that can be used
       on CPU

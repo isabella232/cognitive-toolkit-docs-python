@@ -33,6 +33,7 @@ functions:
     description: 'a GPU device
 
       descriptor.'
+    isRequired: true
 - uid: cntk.device.gpu
   name: gpu
   summary: Returns GPU device descriptor
@@ -63,24 +64,25 @@ functions:
     description: 'a
 
       list of device descriptors to exclude.'
+    isRequired: true
     types:
     - list of <xref:cntk.device.DeviceDescriptor>
 - uid: cntk.device.try_set_default_device
   name: try_set_default_device
   summary: "Tries to set the specified device as the globally default, optionally\n\
     acquiring an exclusive (cooperative) lock on the device (only a GPU device\ncan\
-    \ be locked).\n\nThe default device can only be changed if it has not yet been\
-    \ frozen by\nbeing implicitly used in any previous CNTK operation.\n\nCNTK uses\
-    \ cooperative locking for the device access, whereby only a single\nprocess can\
-    \ acquire a device lock. This locking mechanism allows CNTK\nprocesses to avoid\
-    \ device oversubscription only if they collectively\nchoose so. In other words,\
-    \ the device locked by one CNTK process, can\nstill be accessed by another CNTK\
-    \ process without acquiring any locks\n(i.e, the existing device lock can be ignored\
-    \ by other CNTK processes).\nThis cooperative locking mechanism does not guarantee\
-    \ any kind of\nexclusive access to the device. The proper way to ensure exclusivity\
-    \  is\nto use tools provided by NVIDIA (nvidia smi).\n\nReturns: *False* if\n\
-    \   * the specified device appears in the list of excluded devices; \n\n   * *acquire_device_lock*\
-    \ is *True* and another process already holds a lock on the device; \n\n   * *acquire_device_lock*\
+    \ be locked).\nThe default device can only be changed if it has not yet been frozen\
+    \ by\nbeing implicitly used in any previous CNTK operation.\nCNTK uses cooperative\
+    \ locking for the device access, whereby only a single\nprocess can acquire a\
+    \ device lock. This locking mechanism allows CNTK\nprocesses to avoid device oversubscription\
+    \ only if they collectively\nchoose so. In other words, the device locked by one\
+    \ CNTK process, can\nstill be accessed by another CNTK process without acquiring\
+    \ any locks\n(i.e, the existing device lock can be ignored by other CNTK processes).\n\
+    This cooperative locking mechanism does not guarantee any kind of\nexclusive access\
+    \ to the device. The proper way to ensure exclusivity  is\nto use tools provided\
+    \ by NVIDIA (nvidia smi).\nReturns: *False* if\n   * the specified device appears\
+    \ in the list of excluded devices; \n\n   * *acquire_device_lock* is *True* and\
+    \ another process already holds a lock on the device; \n\n   * *acquire_device_lock*\
     \ is *True* and *new_default_device* corresponds to a CPU device (which cannot\
     \ be locked)."
   signature: try_set_default_device(new_default_device, acquire_device_lock=False)
@@ -89,6 +91,7 @@ functions:
     description: 'a
 
       descriptor of the device to be used as a globally default.'
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>
   - name: acquire_device_lock

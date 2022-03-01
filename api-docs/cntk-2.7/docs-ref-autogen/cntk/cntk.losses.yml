@@ -14,10 +14,13 @@ functions:
   - name: output
     description: the computed posterior probability for a variable to be 1 from the
       network (typ. a `sigmoid`)
+    isRequired: true
   - name: target
     description: ground-truth label, 0 or 1
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -30,12 +33,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> a = np.asarray([-1, -1, -1, 1, 1, -1, 1, 1, -1, 1, 1, -1]).reshape(3,2,2)\n\
     >>> b = np.asarray([1, 1, -1, 1, 1, -1, 1, -1, -1, -1, -1, 1]).reshape(3,2,2)\n\
@@ -73,28 +78,33 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: y
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: shift
     description: non-zero positive integer representing number of shift to generate
       a negative sample
+    isRequired: true
   - name: num_negative_samples
     description: number of negative samples to generate, a non-zero positive integer
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> qry = np.asarray([1., 1., 0., 0., 0., 1., 1., 0., 0., 0., 1., 1.],\
     \ dtype=np.float32).reshape(3, 1, 4)\n>>> doc = np.asarray([1., 1., 0., 0., 0.,\
     \ 1., 1., 0., 0., 0., 1., 1.], dtype=np.float32).reshape(3, 1, 4)\n>>> x = C.sequence.input_variable(shape=(4,))\n\
     >>> y = C.sequence.input_variable(shape=(4,))\n>>> model = C.cosine_distance_with_negative_samples(x,\
     \ y, shift=1, num_negative_samples=2)\n>>> np.round(model.eval({x: qry, y: doc}),\
-    \ decimals=4)\narray([[[ 1. ,  0.5,  0. ]],\n<BLANKLINE>\n       [[ 1. ,  0.5,\
-    \  0.5]],\n<BLANKLINE>\n       [[ 1. ,  0. ,  0.5]]], dtype=float32)\n```\n"
+    \ decimals=4)\narray([[[ 1. ,  0.5,  0. ]],\n\n       [[ 1. ,  0.5,  0.5]],\n\n\
+    \       [[ 1. ,  0. ,  0.5]]], dtype=float32)\n```\n"
 - uid: cntk.losses.cross_entropy_with_softmax
   name: cross_entropy_with_softmax
   summary: 'This operation computes the cross entropy between the `target_vector`
@@ -108,35 +118,36 @@ functions:
 
     the `output_vector`. Concretely,
 
-
-
-
     with the understanding that the implementation can use equivalent formulas
 
     for efficiency and numerical stability.'
-  signature: cross_entropy_with_softmax(output_vector, target_vector, axis=-1, name='')
+  signature: cross_entropy_with_softmax(output_vector, target_vector, axis=- 1, name='')
   parameters:
   - name: output_vector
     description: the unscaled computed output values from the network
+    isRequired: true
   - name: target_vector
     description: 'usually it is one-hot vector where the hot bit
 
       corresponds to the label index. But it can be any probability
 
       distribution over the labels.'
+    isRequired: true
   - name: axis
     description: 'if given, cross entropy will be computed
 
       along this axis'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>, <xref:optional>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -169,9 +180,7 @@ functions:
     its called the f1-scorce or dice similarity coefficient. f1-scorce is monotonic
     in jaccard distance.
 
-
     f-measure = (1 + beta ** 2) * precision * recall / (beta ** 2 * precision + recall)
-
 
     This loss function is frequently used in semantic segmentation of images. Works
     with imbalanced classes, for
@@ -183,17 +192,25 @@ functions:
   parameters:
   - name: output
     description: the output values from the network
+    isRequired: true
   - name: target
-    description: 'it is usually a one-hot vector where the hot bit corresponds to
-      the label index'
+    description: it is usually a one-hot vector where the hot bit corresponds to the
+      label index
+    isRequired: true
   - name: beta
     description: greater than one weights recall higher than precision, less than
       one for the opposite.
-  - name: chosen values are 0.5, 1 or 2.
+    isRequired: true
+  - name: chosen values are 0.5
+    isRequired: true
     types:
     - <xref:Commonly>
+  - name: or 2.
+    isRequired: true
+    types:
+    - <xref:1>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.losses.hierarchical_softmax_layer
   name: hierarchical_softmax_layer
   summary: 'A two layers hierarchical softmax function:'
@@ -201,12 +218,16 @@ functions:
   parameters:
   - name: input_var
     description: 'Variable with shape: [#,*](dim_x)'
+    isRequired: true
   - name: label_index
     description: 'index of label''s category:  [#,*](1)'
+    isRequired: true
   - name: label_dim
     description: number of the label categories
+    isRequired: true
   - name: label_classes
     description: number of classes of the label categories
+    isRequired: true
   return:
     description: 'the probability of the given label [#,*](1)
 
@@ -227,54 +248,52 @@ functions:
 
     the Discounted Cumulative Gain (DCG) at infinity is:
 
-
-
     where  means the gain of the -th ranked sample.
-
 
     The NDCG is just the DCG  divided by the maximum achievable DCG (obtained
 
     by placing the samples with the largest gain at the top of the ranking).
 
-
     Samples in the same group must appear in order of decreasing gain.
-
 
     It returns 1 minus the average NDCG across all the groups in the minibatch
 
     multiplied by 100 times the number of samples in the minibatch.
-
 
     In the backward direction it back-propagates LambdaRank gradients.'
   signature: lambda_rank(output, gain, group, name='')
   parameters:
   - name: output
     description: score of each sample
+    isRequired: true
   - name: gain
     description: gain of each sample
+    isRequired: true
   - name: group
     description: group of each sample
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> group = C.input_variable((1,))\n>>> score = C.input_variable((1,),\
     \ needs_gradient=True)\n>>> gain  = C.input_variable((1,))\n>>> g = np.array([1,\
     \ 1, 2, 2], dtype=np.float32).reshape(4,1)\n>>> s = np.array([1, 2, 3, 4], dtype=np.float32).reshape(4,1)\n\
     >>> n = np.array([7, 1, 3, 1], dtype=np.float32).reshape(4,1)\n>>> f = C.lambda_rank(score,\
     \ gain, group)\n>>> np.round(f.grad({score:s, gain:n, group: g}, wrt=[score]),4)\n\
-    array([[-0.2121],\n<BLANKLINE>\n       [ 0.2121],\n<BLANKLINE>\n       [-0.1486],\n\
-    <BLANKLINE>\n       [ 0.1486]], dtype=float32)\n```\n"
+    array([[-0.2121],\n\n       [ 0.2121],\n\n       [-0.1486],\n\n       [ 0.1486]],\
+    \ dtype=float32)\n```\n"
 - uid: cntk.losses.lattice_sequence_with_softmax
   name: lattice_sequence_with_softmax
-  signature: 'lattice_sequence_with_softmax(label, prediction, loglikelihood, lattice,
-    symListPath, phonePath, stateListPath, transProbPath, latticeConfigPath=''LatticeNode.config'',
+  signature: lattice_sequence_with_softmax(label, prediction, loglikelihood, lattice,
+    symListPath, phonePath, stateListPath, transProbPath, latticeConfigPath='LatticeNode.config',
     hSmoothingWeight=0.95, frameDropThresh=1e-10, doReferenceAlign=False, seqGammarUsesMBR=False,
     seqGammarAMF=14.0, seqGammarLMF=14.0, seqGammarBMMIFactor=0.0, seqGammarWordPen=0.0,
-    name='''')'
+    name='')
 - uid: cntk.losses.nce_loss
   name: nce_loss
   summary: 'Computes the noise contrastive estimation loss. This implementation mostly
@@ -295,13 +314,11 @@ functions:
 
     gradients will be sparse if the labels are sparse.
 
-
     The *noise_distribution* is read once and certain quantities are
 
     precomputed based on it. This operation will need to be reinstantiated if
 
     the *noise_distribution* changes.
-
 
     Shape inference for the weights is currently not supported when inputs are
 
@@ -317,18 +334,22 @@ functions:
       which inputs will be multiplied. Its shape must be
 
       (number of classes, dimension of input)'
+    isRequired: true
   - name: biases
     description: 'parameter (or variable in general) containing the biases that
 
       will be added to the product of weights and inputs. Its shape must be
 
       (number of classes, 1)'
+    isRequired: true
   - name: inputs
     description: 'vector of inputs to this layer. Multiplying by the weights and
 
       adding the biases gives the logits.'
+    isRequired: true
   - name: labels
-    description: 'a one-hot vector with the ground-truth labels.'
+    description: a one-hot vector with the ground-truth labels.
+    isRequired: true
   - name: noise_distribution
     description: 'a constant vector with dimension equal to the number
 
@@ -337,10 +358,12 @@ functions:
       sum to 1. random labels will be drawn according to the normalized
 
       distribution.'
+    isRequired: true
   - name: num_samples
     description: 'number of random labels that will be drawn from the
 
       *noise_distribution*.'
+    isRequired: true
   - name: allow_duplicates
     description: 'boolean. If True (default), the random labels can
 
@@ -349,10 +372,13 @@ functions:
       but the quality of the approximations is slightly worse for the same
 
       number of samples.'
+    isRequired: true
   - name: seed
     description: random seed. The default value selects a unique random seed.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -436,16 +462,19 @@ functions:
   parameters:
   - name: output
     description: the output values from the network
+    isRequired: true
   - name: target
     description: 'it is usually a one-hot vector where the hot bit
 
       corresponds to the label index'
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -484,12 +513,16 @@ functions:
   parameters:
   - name: output
     description: the computed posterior probability from the network
+    isRequired: true
   - name: target
     description: ground-truth label, 0 or 1
+    isRequired: true
   - name: weight
     description: weight of each example
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:

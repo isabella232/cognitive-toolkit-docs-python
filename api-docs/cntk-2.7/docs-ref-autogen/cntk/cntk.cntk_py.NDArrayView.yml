@@ -62,8 +62,10 @@ methods:
   signature: is_sparse()
 - uid: cntk.cntk_py.NDArrayView.random_uniform_double
   name: random_uniform_double
+  signature: static random_uniform_double()
 - uid: cntk.cntk_py.NDArrayView.random_uniform_float
   name: random_uniform_float
+  signature: static random_uniform_float()
 - uid: cntk.cntk_py.NDArrayView.set_value
   name: set_value
   signature: set_value(*args)

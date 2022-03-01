@@ -5,5 +5,7 @@ fullName: cntk.contrib.crosstalk.Conv2DAttr
 module: cntk.contrib.crosstalk
 inheritances:
 - cntk.contrib.crosstalk.Conv2DAttr
-summary: "Attribute for Conv2D variable\n\nfilter_shape\n   The filter shape\n\nnum_filters\n\
+summary: "Attribute for Conv2D variable\nfilter_shape\n   The filter shape\n\nnum_filters\n\
   \   Number of filters"
+constructor:
+  syntax: Conv2DAttr(filter_shape, num_filters)

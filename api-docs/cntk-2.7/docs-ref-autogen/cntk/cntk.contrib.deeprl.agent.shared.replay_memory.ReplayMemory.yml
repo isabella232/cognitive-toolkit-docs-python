@@ -7,7 +7,6 @@ inheritances:
 - builtins.object
 summary: 'Replay memory to store samples of experience.
 
-
   Each transition is represented as (state, action, reward, next_state,
 
   priority) tuple. ''priority'' is ignored for non-prioritized experience
@@ -30,7 +29,6 @@ methods:
 - uid: cntk.contrib.deeprl.agent.shared.replay_memory.ReplayMemory.store
   name: store
   summary: 'Store a transition in replay memory.
-
 
     If the memory is full, the oldest one gets overwritten.'
   signature: store(*args)
