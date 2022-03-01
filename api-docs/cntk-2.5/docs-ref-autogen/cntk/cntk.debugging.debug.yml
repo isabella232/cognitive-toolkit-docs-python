@@ -44,21 +44,23 @@ functions:
   parameters:
   - name: model
     description: root node until which the nodes are to be debugged
+    isRequired: true
     types:
-    - <xref:root node>
+    - <xref:<xref:root node>>
   - name: in_stream
     description: '*readline()*
 
       will be called on it to obtain user input'
     defaultValue: <_io.TextIOWrapper name='<stdin>' mode='r' encoding='cp1252'>
     types:
-    - <xref:object behaving like sys.stdin>, <xref:default stdin>
+    - <xref:<xref:object behaving like sys.stdin>, <xref:default stdin>>
   - name: out_stream
     description: '*write()*
 
       and *flush()* will be called on it to output debug info to the user'
+    isRequired: true
     types:
-    - <xref:object behaving like sys.stdout>, <xref:default stdout>
+    - <xref:<xref:object behaving like sys.stdout>, <xref:default stdout>>
   - name: exit_func
     description: 'callable that takes an exit code and is called,
 
@@ -77,36 +79,39 @@ functions:
   parameters:
   - name: root_op
     description: op of the graph to save
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
   - name: filename
     description: filename to store the model in.
+    isRequired: true
     types:
     - <xref:str>
 - uid: cntk.debugging.debug.set_checked_mode
   name: set_checked_mode
   summary: "Checked mode enables additional runtime verification such as:\n   * Tracking\
     \ NaN occurrences in sequence gaps. \n\n   * Function graph verification after\
-    \ binding of free static axes to actual values at runtime \n\nEnabling checked\
-    \ mode incurs additional runtime costs and is meant to be used as a debugging\
-    \ aid."
+    \ binding of free static axes to actual values at runtime\nEnabling checked mode\
+    \ incurs additional runtime costs and is meant to be used as a debugging aid."
   signature: set_checked_mode(enable)
   parameters:
   - name: enable
     description: whether to enable checked mode (with performance impact)
+    isRequired: true
     types:
     - <xref:bool>
 - uid: cntk.debugging.debug.set_computation_network_trace_level
   name: set_computation_network_trace_level
   summary: "Set trace level to the computation network. Currently supported values:\n\
-    \n   0\n      turn off trace\n\n   1\n      output nodes' dimensions and some\
-    \ other static info\n\n   1000\n      output each node's abs sum of elements in\
-    \ its value matrix for every forward/backward\n\n   1000000\n      output each\
-    \ node's full matrix for every forward/backward"
+    0\n      turn off trace\n\n   1\n      output nodes' dimensions and some other\
+    \ static info\n\n   1000\n      output each node's abs sum of elements in its\
+    \ value matrix for every forward/backward\n\n   1000000\n      output each node's\
+    \ full matrix for every forward/backward"
   signature: set_computation_network_trace_level(level)
   parameters:
   - name: level
     description: trace level
+    isRequired: true
     types:
     - <xref:int>
 - uid: cntk.debugging.debug.set_node_timing
@@ -119,5 +124,6 @@ functions:
   parameters:
   - name: enable
     description: whether to enable per-node timing
+    isRequired: true
     types:
     - <xref:bool>

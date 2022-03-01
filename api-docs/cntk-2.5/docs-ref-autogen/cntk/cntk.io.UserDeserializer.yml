@@ -9,15 +9,14 @@ summary: "User deserializer is a base class for all user defined deserializers.\
   To support deserialization of a custom format, please implement the public\nmethods\
   \ of this class and pass an instance of it to MinibatchSource.\nA UserDeserializer\
   \ is a plug-in to MinibatchSource for reading data in custom formats.\nReading data\
-  \ through this mechanism provides the following benefits:\n\n   * randomization\
-  \ of data too large to fit into RAM, through CNTK chunked paging algorithm \n\n\
-  \   * distributed reading - only chunks needed by a particular worker are requested\
-  \ \n\n   * composability of transforms (currently composability of user deserializers\
-  \ is not yet supported) \n\n   * transparent support of sequence/frame/truncated\
-  \ BPTT modes \n\n   * automatic chunk and minibatch prefetch \n\n   * checkpointing\
-  \ \n\nThe MinibatchSource uses the information provided by this class to build the\
-  \ timeline and move\nalong it when the next minibatch is requested. The deserializer\
-  \ itself, however, is stateless."
+  \ through this mechanism provides the following benefits:\n* randomization of data\
+  \ too large to fit into RAM, through CNTK chunked paging algorithm \n\n   * distributed\
+  \ reading - only chunks needed by a particular worker are requested \n\n   * composability\
+  \ of transforms (currently composability of user deserializers is not yet supported)\
+  \ \n\n   * transparent support of sequence/frame/truncated BPTT modes \n\n   * automatic\
+  \ chunk and minibatch prefetch \n\n   * checkpointing\nThe MinibatchSource uses\
+  \ the information provided by this class to build the timeline and move\nalong it\
+  \ when the next minibatch is requested. The deserializer itself, however, is stateless."
 constructor:
   syntax: UserDeserializer()
 methods:

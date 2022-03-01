@@ -43,22 +43,31 @@ methods:
   signature: copy_variable_value_to_float(*args)
 - uid: cntk.cntk_py.Value.create
   name: create
+  signature: static create()
 - uid: cntk.cntk_py.Value.create_batch_double
   name: create_batch_double
+  signature: static create_batch_double()
 - uid: cntk.cntk_py.Value.create_batch_float
   name: create_batch_float
+  signature: static create_batch_float()
 - uid: cntk.cntk_py.Value.create_dense_double
   name: create_dense_double
+  signature: static create_dense_double()
 - uid: cntk.cntk_py.Value.create_dense_float
   name: create_dense_float
+  signature: static create_dense_float()
 - uid: cntk.cntk_py.Value.create_one_hot_double
   name: create_one_hot_double
+  signature: static create_one_hot_double()
 - uid: cntk.cntk_py.Value.create_one_hot_float
   name: create_one_hot_float
+  signature: static create_one_hot_float()
 - uid: cntk.cntk_py.Value.create_sequence_double
   name: create_sequence_double
+  signature: static create_sequence_double()
 - uid: cntk.cntk_py.Value.create_sequence_float
   name: create_sequence_float
+  signature: static create_sequence_float()
 - uid: cntk.cntk_py.Value.data
   name: data
   signature: data()
@@ -98,7 +107,3 @@ methods:
 - uid: cntk.cntk_py.Value.unpack_variable_value
   name: unpack_variable_value
   signature: unpack_variable_value(*args)
-attributes:
-- uid: cntk.cntk_py.Value.one_hot_skip
-  name: one_hot_skip
-  signature: one_hot_skip = 4294967295

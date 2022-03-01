@@ -7,7 +7,6 @@ inheritances:
 - cntk.contrib.deeprl.agent.agent.AgentBaseClass
 summary: 'Q-learning agent.
 
-
   Including:
 
   - DQN [https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)

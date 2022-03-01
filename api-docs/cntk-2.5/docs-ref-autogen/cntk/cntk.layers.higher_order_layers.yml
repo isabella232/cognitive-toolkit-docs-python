@@ -13,7 +13,6 @@ functions:
   summary: 'Layer factory function to create a composite through a pattern similar
     to Python''s *for* statement.
 
-
     This layer factory loops over the given range and passes each value to the constructor
     function.
 
@@ -21,19 +20,20 @@ functions:
 
     `Sequential([constructor(i) for i in what_range])`.
 
-
     It is acceptable that `constructor` takes no argument.'
   signature: For(what_range, constructor, name='')
   parameters:
   - name: what_range
     description: a Python range to loop over
+    isRequired: true
     types:
     - <xref:range>
   - name: constructor
     description: lambda that constructs a layer
+    isRequired: true
     types:
-    - <xref:Python function/lambda with 1>
-    - <xref:0 arguments>
+    - <xref:<xref:Python function/lambda with 1>>
+    - <xref:<xref:0 arguments>>
   - name: name
   return:
     description: A function that accepts one argument and applies the layers as constructed
@@ -70,9 +70,10 @@ functions:
   parameters:
   - name: f
     description: the function to add the skip connection to.
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:equivalent Python function>
+    - <xref:<xref:equivalent Python function>>
   - name: name
   return:
     description: A function that accepts one argument, applies `f` to it, and adds
@@ -104,7 +105,6 @@ functions:
 
     `Sequential ([F, G, H])(x)` means the same as `H(G(F(x)))`.
 
-
     The list of functions may also include tuples of functions. In that case, each
     function
 
@@ -115,10 +115,8 @@ functions:
 
     the tuple items form the arguments to that function.
 
-
     Intermediate values in the chain can be accessed by name by inserting a `Label(name=...)`
     layer.
-
 
     Note: An equivalent way of writing `Sequential ([F, G, H])(x)` is `F >> G >> H`.'
   signature: Sequential(layers, name='')
@@ -129,10 +127,11 @@ functions:
       A tuple aplies each of its items to the input and results in a tuple value.
 
       An item that is a list will be flattened.'
+    isRequired: true
     types:
-    - <xref:list of cntk.ops.functions.Function>, <xref:equivalent Python functions>,
-      <xref:tuples of functions,>
-    - <xref:lists thereof>
+    - <xref:<xref:list of cntk.ops.functions.Function>, <xref:equivalent Python functions>,
+      <xref:tuples of functions,>>
+    - <xref:<xref:lists thereof>>
   - name: name
   return:
     description: A function that accepts one argument and applies the given `functions`
@@ -182,9 +181,10 @@ functions:
   parameters:
   - name: functions
     description: functions to be applied.
+    isRequired: true
     types:
     - <xref:single>
-    - <xref:list of cntk.ops.functions.Function>
+    - list of <xref:cntk.ops.functions.Function>
   - name: name
   return:
     description: A function that accepts one argument and applies the sequence of

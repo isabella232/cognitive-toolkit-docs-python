@@ -7,15 +7,15 @@ inheritances:
 - cntk.ops.functions.Function
 summary: 'Base class of all user extension functions.
 
-
   If it has only one output, one can invoke Variable methods on it, which it
 
   will relay to its only output.'
 constructor:
-  syntax: UserFunction(inputs, as_numpy=True, attributes=None, name='')
+  syntax: UserFunction(*args, **kwargs)
   parameters:
   - name: inputs
     description: inputs to this function
+    isRequired: true
     types:
     - <xref:list>
   - name: as_numpy
@@ -24,17 +24,18 @@ constructor:
       converted from and to NumPy. Defaults to True. Specifying this as
 
       *False* passes the data as CNTK Value objects.'
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: name
     description: name of this function
+    isRequired: true
     types:
     - <xref:str>
 methods:
 - uid: cntk.ops.functions.UserFunction.clone
   name: clone
   summary: 'Creates a clone of this user-defined function.
-
 
     It assumes that the constructor signature of the user''s implementation
 
@@ -59,7 +60,7 @@ methods:
     need to provide their own implementation in order for CNTK to be able to
 
     reconstruct them when loading a model.'
-  signature: deserialize(inputs, name, state)
+  signature: static deserialize(inputs, name, state)
   parameters:
   - name: inputs
     description: a list of inputs to the function
@@ -86,7 +87,6 @@ methods:
 
     outputs.
 
-
     Output variables are created by
 
     <xref:cntk.ops.output_variable>.'
@@ -94,7 +94,6 @@ methods:
 - uid: cntk.ops.functions.UserFunction.serialize
   name: serialize
   summary: 'Generates a dictionary that captures the state of this user-defined function.
-
 
     This method must be overridden, if a user function has any state that needs
 

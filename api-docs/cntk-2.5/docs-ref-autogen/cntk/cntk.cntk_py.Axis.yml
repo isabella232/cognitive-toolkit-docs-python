@@ -10,19 +10,25 @@ constructor:
 methods:
 - uid: cntk.cntk_py.Axis.all_axes
   name: all_axes
+  signature: static all_axes()
 - uid: cntk.cntk_py.Axis.all_static_axes
   name: all_static_axes
+  signature: static all_static_axes()
 - uid: cntk.cntk_py.Axis.as_string
   name: as_string
   signature: as_string()
 - uid: cntk.cntk_py.Axis.default_batch_axis
   name: default_batch_axis
+  signature: static default_batch_axis()
 - uid: cntk.cntk_py.Axis.default_dynamic_axis
   name: default_dynamic_axis
+  signature: static default_dynamic_axis()
 - uid: cntk.cntk_py.Axis.default_input_variable_dynamic_axes
   name: default_input_variable_dynamic_axes
+  signature: static default_input_variable_dynamic_axes()
 - uid: cntk.cntk_py.Axis.end_static_axis
   name: end_static_axis
+  signature: static end_static_axis()
 - uid: cntk.cntk_py.Axis.is_batch_axis
   name: is_batch_axis
   signature: is_batch_axis()
@@ -43,8 +49,10 @@ methods:
   signature: name()
 - uid: cntk.cntk_py.Axis.new_unique_dynamic_axis
   name: new_unique_dynamic_axis
+  signature: static new_unique_dynamic_axis()
 - uid: cntk.cntk_py.Axis.operand_sequence_axis
   name: operand_sequence_axis
+  signature: static operand_sequence_axis()
 - uid: cntk.cntk_py.Axis.static_axis_index
   name: static_axis_index
   signature: static_axis_index(checked=True)
@@ -53,3 +61,4 @@ methods:
     defaultValue: 'True'
 - uid: cntk.cntk_py.Axis.unknown_dynamic_axes
   name: unknown_dynamic_axes
+  signature: static unknown_dynamic_axes()
