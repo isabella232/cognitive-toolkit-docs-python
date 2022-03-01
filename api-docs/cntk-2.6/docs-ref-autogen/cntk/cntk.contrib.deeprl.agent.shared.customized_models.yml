@@ -23,17 +23,19 @@ functions:
 - uid: cntk.contrib.deeprl.agent.shared.customized_models.conv_dqn
   name: conv_dqn
   summary: "Example convolutional neural network for approximating the Q value function.\n\
-    \nThis is the model used in the original DQN paper\n[https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf](https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf).\n\
-    \nReturns: a Python dictionary with string-valued keys including\n   'inputs',\
-    \ 'outputs', 'loss' and 'f'."
+    This is the model used in the original DQN paper\n[https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf](https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf).\n\
+    Returns: a Python dictionary with string-valued keys including\n   'inputs', 'outputs',\
+    \ 'loss' and 'f'."
   signature: conv_dqn(shape_of_inputs, number_of_outputs, loss_function=None, use_placeholder_for_input=False)
   parameters:
   - name: shape_of_inputs
     description: tuple of array (input) dimensions.
+    isRequired: true
   - name: number_of_outputs
     description: 'dimension of output, equals the number of
 
       possible actions.'
+    isRequired: true
   - name: loss_function
     description: if not specified, use squared loss by default.
     defaultValue: None

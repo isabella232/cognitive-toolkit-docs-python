@@ -8,17 +8,19 @@ functions:
 - uid: cntk.io.Base64ImageDeserializer
   name: Base64ImageDeserializer
   summary: "Configures the image reader that reads base64 encoded images and corresponding\n\
-    labels from a file of the form:\n\n<!-- literal_block {\"ids\": [], \"classes\"\
+    labels from a file of the form:\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"\
-    } -->\n\n````\n\n   [sequenceId <tab>] <numerical label (0-based class id)> <tab>\
-    \ <base64 encoded image>\n   ````\n\nSimilarly to the ImageDeserializer, the sequenceId\
-    \ prefix is optional and can be omitted."
+    , \"language\": \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\
+    \n   [sequenceId <tab>] <numerical label (0-based class id)> <tab> <base64 encoded\
+    \ image>\n   ````\nSimilarly to the ImageDeserializer, the sequenceId prefix is\
+    \ optional and can be omitted."
   signature: Base64ImageDeserializer(filename, streams)
   parameters:
   - name: filename
     description: 'file name of the input file dataset that contains images
 
       and corresponding labels'
+    isRequired: true
     types:
     - <xref:str>
   - name: streams
@@ -32,6 +34,7 @@ functions:
   parameters:
   - name: filename
     description: file name containing the binary data
+    isRequired: true
     types:
     - <xref:str>
   - name: streams
@@ -47,16 +50,18 @@ functions:
 - uid: cntk.io.CTFDeserializer
   name: CTFDeserializer
   summary: "Configures the CNTK text-format reader that reads text-based files with\n\
-    lines of the form:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
-    : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n\
-    ````\n\n   [Sequence_Id] (Sample)+\n   ````\n\nwhere:\n\n<!-- literal_block {\"\
-    ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [],\
-    \ \"xml:space\": \"preserve\"} -->\n\n````\n\n   Sample=|Input_Name (Value )*\n\
-    \   ````"
+    lines of the form:\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
+    : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\"\
+    : \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\n  \
+    \ [Sequence_Id] (Sample)+\n   ````\nwhere:\n<!-- literal_block {\"ids\": [], \"\
+    classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
+    : \"preserve\", \"language\": \"default\", \"force\": false, \"linenos\": false}\
+    \ -->\n\n````default\n\n   Sample=|Input_Name (Value )*\n   ````"
   signature: CTFDeserializer(filename, streams)
   parameters:
   - name: filename
     description: file name containing the text input
+    isRequired: true
     types:
     - <xref:str>
   - name: streams
@@ -65,6 +70,7 @@ functions:
       names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
 
       an input stream.'
+    isRequired: true
   seeAlsoContent: '  [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)
 
     '
@@ -79,6 +85,7 @@ functions:
       names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
 
       a feature stream.'
+    isRequired: true
 - uid: cntk.io.HTKMLFDeserializer
   name: HTKMLFDeserializer
   summary: 'Configures an HTK label reader that reads speech HTK format MLF (Master
@@ -88,6 +95,7 @@ functions:
   parameters:
   - name: label_mapping_file
     description: path to the label mapping file
+    isRequired: true
     types:
     - <xref:str>
   - name: streams
@@ -96,6 +104,7 @@ functions:
       names to <xref:cntk.io.StreamDef> objects. Each StreamDef object configures
 
       a label stream.'
+    isRequired: true
   - name: phoneBoundaries
     description: if phone boundaries should be considered (should be set to True for
       CTC training, False otherwise)
@@ -105,18 +114,21 @@ functions:
 - uid: cntk.io.ImageDeserializer
   name: ImageDeserializer
   summary: "Configures the image reader that reads images and corresponding\nlabels\
-    \ from a file of the form:\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
+    \ from a file of the form:\n<!-- literal_block {\"ids\": [], \"classes\": [],\
     \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"\
-    } -->\n\n````\n\n   <full path to image> <tab> <numerical label (0-based class\
-    \ id)>\n   ````\n\nor:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"\
-    names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"}\
-    \ -->\n\n````\n\n   sequenceId <tab> path <tab> label\n   ````"
+    , \"language\": \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\
+    \n   <full path to image> <tab> <numerical label (0-based class id)>\n   ````\n\
+    or:\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
+    : [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\": \"default\"\
+    , \"force\": false, \"linenos\": false} -->\n\n````default\n\n   sequenceId <tab>\
+    \ path <tab> label\n   ````"
   signature: ImageDeserializer(filename, streams)
   parameters:
   - name: filename
     description: 'file name of the map file that associates images to
 
       classes'
+    isRequired: true
     types:
     - <xref:str>
   - name: streams
@@ -131,6 +143,7 @@ functions:
   - name: lattice_index_file
     description: path to the file containing list of lattice TOC (table of content)
       files
+    isRequired: true
     types:
     - <xref:str>
   - name: streams
@@ -230,16 +243,18 @@ functions:
   parameters:
   - name: seq_idx
     description: number of current sequence
+    isRequired: true
     types:
     - <xref:int>
   - name: alias_tensor_map
     description: 'maps alias (str) to tensor (ndarray). Tensors
 
       are assumed to have dynamic axis.'
+    isRequired: true
     types:
     - <xref:dict>
   return:
-    description: 'String representation in [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)'
+    description: String representation in [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)
     types:
     - <xref:str>
 classes:

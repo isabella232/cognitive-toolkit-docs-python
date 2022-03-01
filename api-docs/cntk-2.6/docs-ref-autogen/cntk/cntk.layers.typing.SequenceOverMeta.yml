@@ -5,3 +5,5 @@ fullName: cntk.layers.typing.SequenceOverMeta
 module: cntk.layers.typing
 inheritances:
 - builtins.type
+constructor:
+  syntax: SequenceOverMeta()

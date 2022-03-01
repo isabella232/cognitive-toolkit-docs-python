@@ -31,6 +31,7 @@ methods:
   signature: keys()
 - uid: cntk.cntk_py.Dictionary.load
   name: load
+  signature: static load()
 - uid: cntk.cntk_py.Dictionary.save
   name: save
   signature: save(filename)
