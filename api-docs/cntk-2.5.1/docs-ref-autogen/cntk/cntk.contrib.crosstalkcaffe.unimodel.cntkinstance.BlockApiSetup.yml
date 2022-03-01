@@ -6,12 +6,14 @@ module: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance
 inheritances:
 - builtins.object
 summary: Implement some special requirement ops
+constructor:
+  syntax: BlockApiSetup()
 methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.BlockApiSetup.convolution
   name: convolution
   summary: Implement convolution ops
-  signature: convolution(output, kernel, stride, pad, kernel_init, bias_init, group,
-    dilation, name)
+  signature: static convolution(output, kernel, stride, pad, kernel_init, bias_init,
+    group, dilation, name)
   parameters:
   - name: output
     description: the output channel size
@@ -65,7 +67,7 @@ methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.BlockApiSetup.linear
   name: linear
   summary: Implement linear ops, also known as full connection in Caffe
-  signature: linear(output_shape, input_shape, scale_init, bias_init, name)
+  signature: static linear(output_shape, input_shape, scale_init, bias_init, name)
   parameters:
   - name: output_shape
     description: the output channel size
@@ -99,7 +101,7 @@ methods:
 - uid: cntk.contrib.crosstalkcaffe.unimodel.cntkinstance.BlockApiSetup.lrn
   name: lrn
   summary: Implement LRN ops
-  signature: lrn(k, n, alpha, beta, name)
+  signature: static lrn(k, n, alpha, beta, name)
   parameters:
   - name: k
     description: the factor k in LRN

@@ -180,6 +180,7 @@ functions:
     description: 'file that stores the mean values for each pixel
 
       in OpenCV matrix XML format'
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -190,18 +191,21 @@ functions:
   name: scale
   summary: Scale transform that can be used to pass to *map_features* for data augmentation.
   signature: scale(width, height, channels, interpolations='linear', scale_mode='fill',
-    pad_value=-1)
+    pad_value=- 1)
   parameters:
   - name: width
     description: width of the image in pixels
+    isRequired: true
     types:
     - <xref:int>
   - name: height
     description: height of the image in pixels
+    isRequired: true
     types:
     - <xref:int>
   - name: channels
     description: channels of the image
+    isRequired: true
     types:
     - <xref:int>
   - name: interpolations

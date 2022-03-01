@@ -1,0 +1,23 @@
+### YamlMime:PythonClass
+uid: cntk.learners.tests.distributed_learner_test.BlockMomentumConfig
+name: BlockMomentumConfig
+fullName: cntk.learners.tests.distributed_learner_test.BlockMomentumConfig
+module: cntk.learners.tests.distributed_learner_test
+inheritances:
+- builtins.tuple
+constructor:
+  syntax: BlockMomentumConfig(block_momentum_as_time_constant, block_learning_rate,
+    block_size, distributed_after)
+attributes:
+- uid: cntk.learners.tests.distributed_learner_test.BlockMomentumConfig.block_learning_rate
+  name: block_learning_rate
+  summary: Alias for field number 1
+- uid: cntk.learners.tests.distributed_learner_test.BlockMomentumConfig.block_momentum_as_time_constant
+  name: block_momentum_as_time_constant
+  summary: Alias for field number 0
+- uid: cntk.learners.tests.distributed_learner_test.BlockMomentumConfig.block_size
+  name: block_size
+  summary: Alias for field number 2
+- uid: cntk.learners.tests.distributed_learner_test.BlockMomentumConfig.distributed_after
+  name: distributed_after
+  summary: Alias for field number 3

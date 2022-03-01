@@ -13,6 +13,7 @@ methods:
   signature: current_version()
 - uid: cntk.cntk_py.minibatch_size_schedule.deserialize
   name: deserialize
+  signature: static deserialize()
 - uid: cntk.cntk_py.minibatch_size_schedule.get_minibatch_size
   name: get_minibatch_size
   signature: get_minibatch_size()

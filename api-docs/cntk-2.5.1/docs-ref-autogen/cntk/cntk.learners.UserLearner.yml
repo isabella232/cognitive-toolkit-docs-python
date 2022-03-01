@@ -9,7 +9,6 @@ summary: 'Base class of all user-defined learners. To implement your own learnin
 
   algorithm, derive from this class and override the <xref:cntk.learners.UserLearner.update>.
 
-
   Certain optimizers (such as AdaGrad) require additional storage.
 
   This can be allocated and initialized during construction.'

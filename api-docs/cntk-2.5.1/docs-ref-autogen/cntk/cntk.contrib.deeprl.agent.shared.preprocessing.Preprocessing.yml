@@ -1,0 +1,28 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.deeprl.agent.shared.preprocessing.Preprocessing
+name: Preprocessing
+fullName: cntk.contrib.deeprl.agent.shared.preprocessing.Preprocessing
+module: cntk.contrib.deeprl.agent.shared.preprocessing
+inheritances:
+- builtins.object
+summary: 'Base class for defining preprocessing.
+
+  All subclass constructors will take input_shape as the first argument.'
+constructor:
+  syntax: Preprocessing(input_shape)
+methods:
+- uid: cntk.contrib.deeprl.agent.shared.preprocessing.Preprocessing.output_shape
+  name: output_shape
+  summary: Return shape of preprocessed observation.
+  signature: abstract output_shape()
+- uid: cntk.contrib.deeprl.agent.shared.preprocessing.Preprocessing.preprocess
+  name: preprocess
+  summary: Return preprocessed observation.
+  signature: abstract preprocess(observation)
+  parameters:
+  - name: observation
+    isRequired: true
+- uid: cntk.contrib.deeprl.agent.shared.preprocessing.Preprocessing.reset
+  name: reset
+  summary: Reset preprocessing pipeline for new episode.
+  signature: abstract reset()

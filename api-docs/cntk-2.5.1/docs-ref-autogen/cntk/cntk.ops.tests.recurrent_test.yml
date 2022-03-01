@@ -1,0 +1,37 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.recurrent_test
+name: recurrent_test
+fullName: cntk.ops.tests.recurrent_test
+summary: 'Unit tests for recurrent operations, each operation is tested for
+
+  the forward and the backward pass'
+functions:
+- uid: cntk.ops.tests.recurrent_test.test_op_delay_with_initial_state
+  name: test_op_delay_with_initial_state
+  signature: test_op_delay_with_initial_state(input_size, time_step, initial_state_size,
+    device_id, precision)
+  parameters:
+  - name: input_size
+  - name: time_step
+  - name: initial_state_size
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.recurrent_test.test_op_future_value
+  name: test_op_future_value
+  signature: test_op_future_value(input_size, time_step, initial_state, device_id,
+    precision)
+  parameters:
+  - name: input_size
+  - name: time_step
+  - name: initial_state
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.recurrent_test.test_op_past_value
+  name: test_op_past_value
+  signature: test_op_past_value(input_size, time_step, initial_state, device_id, precision)
+  parameters:
+  - name: input_size
+  - name: time_step
+  - name: initial_state
+  - name: device_id
+  - name: precision

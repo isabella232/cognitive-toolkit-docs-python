@@ -19,27 +19,32 @@ functions:
     It cannot be used as a training criterion though since the gradient is not
 
     defined for it.'
-  signature: classification_error(output_vector, target_vector, axis=-1, topN=1, name='')
+  signature: classification_error(output_vector, target_vector, axis=- 1, topN=1,
+    name='')
   parameters:
   - name: output_vector
     description: the output values from the network
+    isRequired: true
   - name: target_vector
     description: 'it is one-hot vector where the hot bit corresponds to
 
       the label index.'
+    isRequired: true
   - name: axis
     description: 'axis along which the
 
       classification error will be computed.'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -79,74 +84,59 @@ functions:
     '
 - uid: cntk.metrics.edit_distance_error
   name: edit_distance_error
-  summary: 'Edit distance error evaluation function with the option of specifying
-    penalty of substitution, deletion and insertion, as well as squashing the input
-    sequences and ignoring certain samples.
-
-    Using the classic DP algorithm as described in [https://en.wikipedia.org/wiki/Edit_distance](https://en.wikipedia.org/wiki/Edit_distance),
-    adjusted to take into account the penalties.
-
-
-    Each sequence in the inputs is expected to be a matrix. Prior to computation of
-    the edit distance, the operation extracts the indices of maximum element in each
-    column.
-
-    For example, a sequence matrix
-
-
-    1 2 9 1
-
-
-    3 0 3 2
-
-
-    will be represented as the vector of labels (indices) as [1, 0, 0, 1], on which
-    edit distance will be actually evaluated.
-
-
-    The function allows to squash sequences of repeating labels and ignore certain
-    labels. For example, if squashInputs is true and tokensToIgnore contains index
-    of label ''-'' then
-
-    given first input sequence as s1="1-12-" and second as s2="-11--122" the edit
-    distance will be computed against s1'' = "112" and s2'' = "112".
-
-
-    When used as an evaluation criterion, the Trainer will aggregate all values over
-    an epoch and report the average, i.e. the error rate.
-
-    Primary objective of this node is for error evaluation of CTC training, see formula
-    (1) in "Connectionist Temporal Classification: Labelling Unsegmented
-
-    Sequence Data with Recurrent Neural Networks", <xref:ftp://ftp.idsia.ch/pub/juergen/icml2006.pdf>'
+  summary: "Edit distance error evaluation function with the option of specifying\
+    \ penalty of substitution, deletion and insertion, as well as squashing the input\
+    \ sequences and ignoring certain samples.\nUsing the classic DP algorithm as described\
+    \ in [https://en.wikipedia.org/wiki/Edit_distance](https://en.wikipedia.org/wiki/Edit_distance),\
+    \ adjusted to take into account the penalties.\nEach sequence in the inputs is\
+    \ expected to be a matrix. Prior to computation of the edit distance, the operation\
+    \ extracts the indices of maximum element in each column.\nFor example, a sequence\
+    \ matrix\n1 2 9 1\n3 0 3 2\nwill be represented as the vector of labels (indices)\
+    \ as [1, 0, 0, 1], on which edit distance will be actually evaluated.\nThe function\
+    \ allows to squash sequences of repeating labels and ignore certain labels. For\
+    \ example, if squashInputs is true and tokensToIgnore contains index of label\
+    \ '-' then\ngiven first input sequence as s1=\"1-12-\" and second as s2=\"-11\u2013\
+    122\" the edit distance will be computed against s1' = \"112\" and s2' = \"112\"\
+    .\nWhen used as an evaluation criterion, the Trainer will aggregate all values\
+    \ over an epoch and report the average, i.e. the error rate.\nPrimary objective\
+    \ of this node is for error evaluation of CTC training, see formula (1) in \"\
+    Connectionist Temporal Classification: Labelling Unsegmented\nSequence Data with\
+    \ Recurrent Neural Networks\", <xref:ftp://ftp.idsia.ch/pub/juergen/icml2006.pdf>"
   signature: edit_distance_error(input_a, input_b, subPen=1, delPen=1, insPen=1, squashInputs=False,
     tokensToIgnore=[], name='')
   parameters:
   - name: input_a
     description: first input sequence
+    isRequired: true
   - name: input_b
     description: second input sequence
+    isRequired: true
   - name: subPen
     description: substitution penalty
+    isRequired: true
   - name: delPen
     description: deletion penalty
+    isRequired: true
   - name: insPen
     description: insertion penalty
+    isRequired: true
   - name: squashInputs
-    description: 'whether to merge sequences of identical samples (in both input sequences).
-      If true and tokensToIgnore contains label ''-'' then
-
-      given first input sequence as s1="a-ab-" and second as s2="-aa--abb" the edit
-      distance will be computed against s1'' = "aab" and s2'' = "aab".'
+    description: "whether to merge sequences of identical samples (in both input sequences).\
+      \ If true and tokensToIgnore contains label '-' then\ngiven first input sequence\
+      \ as s1=\"a-ab-\" and second as s2=\"-aa\u2013abb\" the edit distance will be\
+      \ computed against s1' = \"aab\" and s2' = \"aab\"."
+    isRequired: true
   - name: tokensToIgnore
     description: list of indices of samples to ignore during edit distance evaluation
       (in both sequences)
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -180,34 +170,33 @@ functions:
 
     the NDCG at 1 is:
 
-
-
     where  means the gain of the first ranked sample.
 
-
     Samples in the same group must appear in order of decreasing gain.
-
 
     It returns the average NDCG at 1 across all the groups in the minibatch
 
     multiplied by 100 times the number of samples in the minibatch.
-
 
     This is a forward-only operation, there is no gradient for it.'
   signature: ndcg_at_1(output, gain, group, name='')
   parameters:
   - name: output
     description: score of each sample
+    isRequired: true
   - name: gain
     description: gain of each sample
+    isRequired: true
   - name: group
     description: group of each sample
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 

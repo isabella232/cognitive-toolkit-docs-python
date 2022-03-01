@@ -1,0 +1,16 @@
+### YamlMime:PythonClass
+uid: cntk.losses.tests.cosine_distance_test.numpy_cos
+name: numpy_cos
+fullName: cntk.losses.tests.cosine_distance_test.numpy_cos
+module: cntk.losses.tests.cosine_distance_test
+inheritances:
+- builtins.object
+constructor:
+  syntax: numpy_cos(a, b)
+methods:
+- uid: cntk.losses.tests.cosine_distance_test.numpy_cos.backward
+  name: backward
+  signature: backward()
+- uid: cntk.losses.tests.cosine_distance_test.numpy_cos.forward
+  name: forward
+  signature: forward()

@@ -1,0 +1,40 @@
+### YamlMime:PythonClass
+uid: cntk.contrib.crosstalk.crosstalk_tensorflow.TensorFlowCrosstalk
+name: TensorFlowCrosstalk
+fullName: cntk.contrib.crosstalk.crosstalk_tensorflow.TensorFlowCrosstalk
+module: cntk.contrib.crosstalk.crosstalk_tensorflow
+inheritances:
+- cntk.contrib.crosstalk.Crosstalk
+summary: TensorFlow implementation for crosstalk
+constructor:
+  syntax: TensorFlowCrosstalk()
+methods:
+- uid: cntk.contrib.crosstalk.crosstalk_tensorflow.TensorFlowCrosstalk.is_trainable
+  name: is_trainable
+  summary: Check if variable with name is a trainable
+  signature: is_trainable(name)
+  parameters:
+  - name: name
+    description: Variable name to check
+    isRequired: true
+    types:
+    - <xref:str>
+- uid: cntk.contrib.crosstalk.crosstalk_tensorflow.TensorFlowCrosstalk.load_all_trainables
+  name: load_all_trainables
+  summary: Load all trainables from files in working directory
+  signature: load_all_trainables()
+- uid: cntk.contrib.crosstalk.crosstalk_tensorflow.TensorFlowCrosstalk.save_all_trainables
+  name: save_all_trainables
+  summary: Save all trainables to files in working directory
+  signature: save_all_trainables()
+- uid: cntk.contrib.crosstalk.crosstalk_tensorflow.TensorFlowCrosstalk.set_data
+  name: set_data
+  summary: Set session and mapped data for setter/getters
+  signature: set_data(sess, data)
+  parameters:
+  - name: sess
+    description: The tensorflow session
+    isRequired: true
+  - name: data
+    description: The input data feed dict for eval
+    isRequired: true

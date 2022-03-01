@@ -7,7 +7,6 @@ inheritances:
 - cntk.contrib.deeprl.agent.agent.AgentBaseClass
 summary: 'Actor-Critic Policy Gradient.
 
-
   See [https://arxiv.org/pdf/1602.01783.pdf](https://arxiv.org/pdf/1602.01783.pdf)
   for a description of algorithm.'
 constructor:

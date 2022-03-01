@@ -1,0 +1,42 @@
+### YamlMime:PythonClass
+uid: cntk.debugging.tests.userlearner_test.MySgdNaive
+name: MySgdNaive
+fullName: cntk.debugging.tests.userlearner_test.MySgdNaive
+module: cntk.debugging.tests.userlearner_test
+inheritances:
+- cntk.learners.UserLearner
+constructor:
+  syntax: MySgdNaive(parameters, lr_schedule)
+methods:
+- uid: cntk.debugging.tests.userlearner_test.MySgdNaive.update
+  name: update
+  summary: Update the parameters associated with this learner.
+  signature: update(gradient_values, training_sample_count, sweep_end)
+  parameters:
+  - name: gradient_values
+    description: 'maps <xref:cntk.variables.Parameter> to
+
+      a NumPy array containing the first order gradient values for the
+
+      Parameter w.r.t. the training objective.'
+    isRequired: true
+    types:
+    - <xref:dict>
+  - name: training_sample_count
+    description: number of samples in the minibatch
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: sweep_end
+    description: 'if the data is fed by a conforming reader, this indicates
+
+      whether a full pass over the dataset has just occurred.'
+    isRequired: true
+    types:
+    - <xref:bool>
+  return:
+    description: '*False* to indicate that learning has stopped for all of the
+
+      parameters associated with this learner'
+    types:
+    - <xref:bool>

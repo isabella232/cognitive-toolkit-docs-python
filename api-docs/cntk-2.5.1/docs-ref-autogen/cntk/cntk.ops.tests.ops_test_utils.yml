@@ -1,0 +1,84 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.ops_test_utils
+name: ops_test_utils
+fullName: cntk.ops.tests.ops_test_utils
+summary: Utils for operations unit tests
+functions:
+- uid: cntk.ops.tests.ops_test_utils.batch_dense_to_sparse
+  name: batch_dense_to_sparse
+  summary: 'Helper test function that converts a batch of dense tensors into sparse
+
+    representation that can be consumed by <xref:cntk.ops.sparse_input_numpy>.'
+  signature: batch_dense_to_sparse(batch, dynamic_axis='')
+  parameters:
+  - name: batch
+    description: 'list of samples. If `dynamic_axis` is given, samples are sequences
+
+      of tensors. Otherwise, they are simple tensors.'
+    isRequired: true
+    types:
+    - <xref:list>
+  - name: dynamic_axis
+    description: the dynamic axis
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:cntk.ops.dynamic_axis> instance
+  return:
+    description: (indices, values, shape)
+- uid: cntk.ops.tests.ops_test_utils.cntk_device
+  name: cntk_device
+  summary: Converts the legacy device ID as it was used in CNTK 1 to a <xref:cntk.device.DeviceDescriptor>
+    instance.
+  signature: cntk_device(device_id)
+  parameters:
+  - name: device_id
+    description: device id, -1 for CPU, 0 or higher for GPU
+    isRequired: true
+    types:
+    - <xref:int>
+  return:
+    description: <xref:cntk.device.DeviceDescriptor>
+- uid: cntk.ops.tests.ops_test_utils.compare_lists_of_np_arrays
+  name: compare_lists_of_np_arrays
+  signature: compare_lists_of_np_arrays(first_list, second_list)
+  parameters:
+  - name: first_list
+  - name: second_list
+- uid: cntk.ops.tests.ops_test_utils.mem_used
+  name: mem_used
+  summary: Return the non-swapped physical memory the Python process is using.
+  signature: mem_used(process)
+  parameters:
+  - name: process
+- uid: cntk.ops.tests.ops_test_utils.os_process
+  name: os_process
+  summary: 'Returns the process instance, which can be used e.g. to check the memory
+
+    usage.'
+  signature: os_process()
+- uid: cntk.ops.tests.ops_test_utils.remove_np_array_in_list
+  name: remove_np_array_in_list
+  signature: remove_np_array_in_list(arr, l)
+  parameters:
+  - name: arr
+  - name: l
+- uid: cntk.ops.tests.ops_test_utils.test_batch_dense_to_sparse_full
+  name: test_batch_dense_to_sparse_full
+  signature: test_batch_dense_to_sparse_full()
+- uid: cntk.ops.tests.ops_test_utils.test_batch_dense_to_sparse_zeros
+  name: test_batch_dense_to_sparse_zeros
+  signature: test_batch_dense_to_sparse_zeros()
+- uid: cntk.ops.tests.ops_test_utils.unittest_helper
+  name: unittest_helper
+  signature: unittest_helper(root_node, forward_input, expected_forward, expected_backward,
+    device_id=- 1, precision='float')
+  parameters:
+  - name: root_node
+  - name: forward_input
+  - name: expected_forward
+  - name: expected_backward
+  - name: device_id
+    defaultValue: '-1'
+  - name: precision
+    defaultValue: float

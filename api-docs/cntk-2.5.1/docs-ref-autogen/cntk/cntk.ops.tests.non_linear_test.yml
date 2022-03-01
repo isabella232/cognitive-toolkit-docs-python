@@ -1,0 +1,206 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.non_linear_test
+name: non_linear_test
+fullName: cntk.ops.tests.non_linear_test
+summary: 'Unit tests for non-linear operations. Each operation is tested for
+
+  the forward and the backward pass'
+functions:
+- uid: cntk.ops.tests.non_linear_test.test_changing_dropout_rate
+  name: test_changing_dropout_rate
+  signature: test_changing_dropout_rate()
+- uid: cntk.ops.tests.non_linear_test.test_dropout_random_mask_is_recomputed_on_forward_pass
+  name: test_dropout_random_mask_is_recomputed_on_forward_pass
+  signature: test_dropout_random_mask_is_recomputed_on_forward_pass()
+- uid: cntk.ops.tests.non_linear_test.test_local_response_normalization
+  name: test_local_response_normalization
+  signature: test_local_response_normalization(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_abs
+  name: test_op_abs
+  signature: test_op_abs(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_batch_normalization
+  name: test_op_batch_normalization
+  signature: test_op_batch_normalization(use_cudnn, sample, device_id, precision)
+  parameters:
+  - name: use_cudnn
+  - name: sample
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_batch_normalization_numpy
+  name: test_op_batch_normalization_numpy
+  signature: test_op_batch_normalization_numpy(shape, spatial, device_id, precision)
+  parameters:
+  - name: shape
+  - name: spatial
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_clip
+  name: test_op_clip
+  signature: test_op_clip(min_value, max_value, x, device_id, precision)
+  parameters:
+  - name: min_value
+  - name: max_value
+  - name: x
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_dropout
+  name: test_op_dropout
+  signature: test_op_dropout(shape, dropout_rate, device_id, precision)
+  parameters:
+  - name: shape
+  - name: dropout_rate
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_dropout_bad_input
+  name: test_op_dropout_bad_input
+  signature: test_op_dropout_bad_input(dropout_rate)
+  parameters:
+  - name: dropout_rate
+- uid: cntk.ops.tests.non_linear_test.test_op_dropout_with_explicit_seed
+  name: test_op_dropout_with_explicit_seed
+  signature: test_op_dropout_with_explicit_seed(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_elu
+  name: test_op_elu
+  signature: test_op_elu(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_exp
+  name: test_op_exp
+  signature: test_op_exp(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_hardmax
+  name: test_op_hardmax
+  signature: test_op_hardmax(sample, device_id, precision)
+  parameters:
+  - name: sample
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_leaky_relu
+  name: test_op_leaky_relu
+  signature: test_op_leaky_relu(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_log
+  name: test_op_log
+  signature: test_op_log(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_neg_pow
+  name: test_op_neg_pow
+  signature: test_op_neg_pow(base, exponent, device_id, precision)
+  parameters:
+  - name: base
+  - name: exponent
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_param_relu
+  name: test_op_param_relu
+  signature: test_op_param_relu(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_pow
+  name: test_op_pow
+  signature: test_op_pow(base, exponent, device_id, precision)
+  parameters:
+  - name: base
+  - name: exponent
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_reciprocal
+  name: test_op_reciprocal
+  signature: test_op_reciprocal(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_relu
+  name: test_op_relu
+  signature: test_op_relu(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_selu
+  name: test_op_selu
+  signature: test_op_selu(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_sigmoid
+  name: test_op_sigmoid
+  signature: test_op_sigmoid(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_softmax
+  name: test_op_softmax
+  signature: test_op_softmax(sample, device_id, precision)
+  parameters:
+  - name: sample
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_softmax_axis
+  name: test_op_softmax_axis
+  signature: test_op_softmax_axis(sample, device_id, precision)
+  parameters:
+  - name: sample
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_softmax_with_freedimension
+  name: test_op_softmax_with_freedimension
+  signature: test_op_softmax_with_freedimension(sample, device_id, precision)
+  parameters:
+  - name: sample
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_softplus
+  name: test_op_softplus
+  signature: test_op_softplus(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_sqrt
+  name: test_op_sqrt
+  signature: test_op_sqrt(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_square
+  name: test_op_square
+  signature: test_op_square(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.non_linear_test.test_op_tanh
+  name: test_op_tanh
+  signature: test_op_tanh(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision

@@ -4,11 +4,12 @@ name: UnitType
 fullName: cntk.learners.UnitType
 summary: 'Deprecated:: 2.2
 
-
   Indicates whether the values in the schedule are specified on the per-sample or
 
   per-minibatch basis.'
 module: cntk.learners
+constructor:
+  syntax: UnitType(value)
 inheritances:
 - enum.Enum
 fields:

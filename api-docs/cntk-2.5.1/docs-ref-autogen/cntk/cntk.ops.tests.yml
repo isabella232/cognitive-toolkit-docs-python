@@ -4,5 +4,26 @@ name: tests
 fullName: cntk.ops.tests
 type: import
 modules:
+- cntk.ops.tests.assign_test
+- cntk.ops.tests.block_test
+- cntk.ops.tests.combine_test
+- cntk.ops.tests.comparison_test
+- cntk.ops.tests.evaluation_test
+- cntk.ops.tests.fp16_test
+- cntk.ops.tests.free_static_axis_test
+- cntk.ops.tests.function_tests
+- cntk.ops.tests.kernel_test
+- cntk.ops.tests.linear_test
+- cntk.ops.tests.non_diff_test
+- cntk.ops.tests.non_linear_test
+- cntk.ops.tests.ops_test_utils
+- cntk.ops.tests.random_sample_test
+- cntk.ops.tests.recurrent_test
+- cntk.ops.tests.reduction_test
+- cntk.ops.tests.reshaping_test
+- cntk.ops.tests.sequence_test
+- cntk.ops.tests.sparse_test
 - cntk.ops.tests.stop_gradient_test
 - cntk.ops.tests.transpose_test
+- cntk.ops.tests.userfunction_complex_test
+- cntk.ops.tests.userfunction_test

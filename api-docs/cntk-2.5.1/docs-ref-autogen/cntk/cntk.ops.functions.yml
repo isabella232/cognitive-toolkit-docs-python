@@ -31,16 +31,19 @@ functions:
       This must be the id that was used when registering the native user-function
 
       with the ''register_native_user_function'' method.'
+    isRequired: true
     types:
     - <xref:str>
   - name: operands
     description: input operands of the new instance of the native user-defined Function.
+    isRequired: true
     types:
     - <xref:list>
   - name: user_function_instance_name
     description: 'Name of the instance of the created native
 
       user-defined Function.'
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -58,6 +61,7 @@ functions:
       This id must be unique and an error will be reported if it matches
 
       the ''op_id'' specified for any other registered native user-defined Function.'
+    isRequired: true
     types:
     - <xref:str>
   - name: module_name
@@ -69,6 +73,7 @@ functions:
       the
 
       native user-defined Function.'
+    isRequired: true
     types:
     - <xref:str>
   - name: factory_method_name
@@ -78,6 +83,7 @@ functions:
       of the
 
       specified module.'
+    isRequired: true
     types:
     - <xref:str>
 classes:

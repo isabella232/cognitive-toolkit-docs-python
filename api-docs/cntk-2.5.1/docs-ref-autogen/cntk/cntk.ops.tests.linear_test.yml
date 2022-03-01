@@ -1,0 +1,146 @@
+### YamlMime:PythonModule
+uid: cntk.ops.tests.linear_test
+name: linear_test
+fullName: cntk.ops.tests.linear_test
+summary: 'Unit tests for linear algebra operations, each operation is tested for
+
+  the forward and the backward pass'
+functions:
+- uid: cntk.ops.tests.linear_test.test_auto_broadcast_reconcile_issue
+  name: test_auto_broadcast_reconcile_issue
+  signature: test_auto_broadcast_reconcile_issue()
+- uid: cntk.ops.tests.linear_test.test_op_batch_times
+  name: test_op_batch_times
+  signature: test_op_batch_times(left_operand, right_operand, device_id, precision)
+  parameters:
+  - name: left_operand
+  - name: right_operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_batch_times_grad_with_beta_equals_to_one
+  name: test_op_batch_times_grad_with_beta_equals_to_one
+  signature: test_op_batch_times_grad_with_beta_equals_to_one(left_operand, right_operand,
+    device_id, precision)
+  parameters:
+  - name: left_operand
+  - name: right_operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_batch_times_with_inferred_axis
+  name: test_op_batch_times_with_inferred_axis
+  signature: test_op_batch_times_with_inferred_axis(left_operand, right_operand, device_id,
+    precision)
+  parameters:
+  - name: left_operand
+  - name: right_operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_element_divide
+  name: test_op_element_divide
+  signature: test_op_element_divide(left_operand, right_operand, device_id, precision)
+  parameters:
+  - name: left_operand
+  - name: right_operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_element_times
+  name: test_op_element_times
+  signature: test_op_element_times(left_operand, right_operand, device_id, precision)
+  parameters:
+  - name: left_operand
+  - name: right_operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_mean_variance_normalization
+  name: test_op_mean_variance_normalization
+  signature: test_op_mean_variance_normalization(input_operand, use_stats_across_channels,
+    do_variance_scaling, epsilon, output_ref, device_id, precision)
+  parameters:
+  - name: input_operand
+  - name: use_stats_across_channels
+  - name: do_variance_scaling
+  - name: epsilon
+  - name: output_ref
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_minus
+  name: test_op_minus
+  signature: test_op_minus(left_operand, right_operand, device_id, precision)
+  parameters:
+  - name: left_operand
+  - name: right_operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_negate
+  name: test_op_negate
+  signature: test_op_negate(operand, device_id, precision)
+  parameters:
+  - name: operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_plus
+  name: test_op_plus
+  signature: test_op_plus(left_operand, right_operand, device_id, precision)
+  parameters:
+  - name: left_operand
+  - name: right_operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_plus_gradient_accumulation
+  name: test_op_plus_gradient_accumulation
+  signature: test_op_plus_gradient_accumulation(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_plus_sequences
+  name: test_op_plus_sequences
+  signature: test_op_plus_sequences(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_plus_var_sequences_input_input
+  name: test_op_plus_var_sequences_input_input
+  signature: test_op_plus_var_sequences_input_input(left_batch, right_batch, device_id,
+    precision)
+  parameters:
+  - name: left_batch
+  - name: right_batch
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_times
+  name: test_op_times
+  signature: test_op_times(left_operand, right_operand, device_id, precision)
+  parameters:
+  - name: left_operand
+  - name: right_operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_times_reduce_sequence_axis
+  name: test_op_times_reduce_sequence_axis
+  signature: test_op_times_reduce_sequence_axis(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_times_sparse_grad
+  name: test_op_times_sparse_grad
+  signature: test_op_times_sparse_grad(device_id, precision)
+  parameters:
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_op_transpose_times
+  name: test_op_transpose_times
+  signature: test_op_transpose_times(left_operand, right_operand, device_id, precision)
+  parameters:
+  - name: left_operand
+  - name: right_operand
+  - name: device_id
+  - name: precision
+- uid: cntk.ops.tests.linear_test.test_per_dim_mean_var_norm
+  name: test_per_dim_mean_var_norm
+  signature: test_per_dim_mean_var_norm()
+- uid: cntk.ops.tests.linear_test.test_sequence_auto_broadcast
+  name: test_sequence_auto_broadcast
+  signature: test_sequence_auto_broadcast()
+- uid: cntk.ops.tests.linear_test.test_times_const_broadcast
+  name: test_times_const_broadcast
+  signature: test_times_const_broadcast()
