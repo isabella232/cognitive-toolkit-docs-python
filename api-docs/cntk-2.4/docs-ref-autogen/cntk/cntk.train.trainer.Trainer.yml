@@ -20,6 +20,7 @@ constructor:
   parameters:
   - name: model
     description: root node of the function to train
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
   - name: criterion
@@ -30,22 +31,26 @@ constructor:
       is also
 
       accepted.'
+    isRequired: true
     types:
-    - <xref:tuple of cntk.ops.functions.Function>
+    - tuple of <xref:cntk.ops.functions.Function>
     - <xref:cntk.variables.Variable>
   - name: parameter_learners
-    description: list of learners from <xref:cntk.learners>
+    description: list of learners from <xref:cntk.learners#module-cntk.learners>
+    isRequired: true
     types:
     - <xref:list>
   - name: progress_writers
     description: 'optionally, list of
 
-      progress writers from <xref:cntk.logging> to automatically track training
+      progress writers from <xref:cntk.logging#module-cntk.logging> to automatically
+      track training
 
       progress.'
+    isRequired: true
     types:
-    - <xref:progress writer>
-    - <xref:list of them>
+    - <xref:<xref:progress writer>>
+    - <xref:<xref:list of them>>
 methods:
 - uid: cntk.train.trainer.Trainer.restore_from_checkpoint
   name: restore_from_checkpoint
@@ -64,7 +69,6 @@ methods:
   summary: 'Saves a checkpoint of the model and other Trainer state at the
 
     specified file location.
-
 
     In distributed environment the checkpointing is done by
 
@@ -101,8 +105,6 @@ methods:
 
     Function specified during construction of the Trainer.
 
-
-
     > [!NOTE]
 
     > See <xref:cntk.ops.functions.Function.forward> for examples on
@@ -123,13 +125,11 @@ methods:
 
       tested minibatch.'
     types:
-    - <xref:*float*>
+    - <xref:<xref:*float*>>
 - uid: cntk.train.trainer.Trainer.train_minibatch
   name: train_minibatch
   summary: 'Optimize model parameters using the specified ''arguments'' minibatch
     of training samples.
-
-
 
     > [!NOTE]
 
@@ -161,8 +161,8 @@ methods:
 
       maps the variables in *outputs* to their respective NumPy arrays.'
     types:
-    - <xref:*bool*>
-    - <xref:*tuple*>
+    - <xref:<xref:*bool*>>
+    - <xref:<xref:*tuple*>>
 attributes:
 - uid: cntk.train.trainer.Trainer.evaluation_function
   name: evaluation_function

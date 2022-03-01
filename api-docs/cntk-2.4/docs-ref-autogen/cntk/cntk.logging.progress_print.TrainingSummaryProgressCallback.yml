@@ -13,17 +13,18 @@ summary: 'Helper to pass a callback function to be called after each training ep
 
   as well a <xref:cntk.ops.functions.Function.train>, <xref:cntk.ops.functions.Function.test>.
 
-
   This allows the user to add additional logging after each training epoch.'
 constructor:
   syntax: TrainingSummaryProgressCallback(epoch_size, callback)
   parameters:
   - name: epoch_size
     description: periodically call the callback after processing this many samples
+    isRequired: true
     types:
     - <xref:int>
   - name: callback
     description: function(epoch_index, epoch_loss, epoch_metric, epoch_samples)
+    isRequired: true
     types:
     - <xref:function>
 methods:
