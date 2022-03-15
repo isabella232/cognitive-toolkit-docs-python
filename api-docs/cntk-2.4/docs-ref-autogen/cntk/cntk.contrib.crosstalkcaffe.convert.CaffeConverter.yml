@@ -6,11 +6,13 @@ module: cntk.contrib.crosstalkcaffe.convert
 inheritances:
 - builtins.object
 summary: Convert Caffe CNN into CNTK formats
+constructor:
+  syntax: CaffeConverter()
 methods:
 - uid: cntk.contrib.crosstalkcaffe.convert.CaffeConverter.from_model
   name: from_model
   summary: Convert a Caffe model to a CNTK model
-  signature: from_model(conf_path)
+  signature: static from_model(conf_path)
   parameters:
   - name: conf_path
     description: Path to the configuration file
