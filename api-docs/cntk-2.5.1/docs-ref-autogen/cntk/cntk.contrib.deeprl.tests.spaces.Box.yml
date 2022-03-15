@@ -8,3 +8,6 @@ inheritances:
 summary: Fake gym.spaces.box.Box to remove dependency on OpenAI gym.
 constructor:
   syntax: Box(low, high, shape=None)
+attributes:
+- uid: cntk.contrib.deeprl.tests.spaces.Box.shape
+  name: shape

@@ -33,6 +33,7 @@ functions:
     description: 'a GPU device
 
       descriptor.'
+    isRequired: true
 - uid: cntk.device.gpu
   name: gpu
   summary: Returns GPU device descriptor
@@ -63,6 +64,7 @@ functions:
     description: 'a
 
       list of device descriptors to exclude.'
+    isRequired: true
     types:
     - list of <xref:cntk.device.DeviceDescriptor>
 - uid: cntk.device.try_set_default_device
@@ -89,6 +91,7 @@ functions:
     description: 'a
 
       descriptor of the device to be used as a globally default.'
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>
   - name: acquire_device_lock

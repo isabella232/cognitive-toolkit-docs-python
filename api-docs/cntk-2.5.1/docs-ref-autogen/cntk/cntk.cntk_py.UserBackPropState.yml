@@ -10,5 +10,7 @@ constructor:
 methods:
 - uid: cntk.cntk_py.UserBackPropState.create
   name: create
+  signature: static create()
 - uid: cntk.cntk_py.UserBackPropState.data
   name: data
+  signature: static data()

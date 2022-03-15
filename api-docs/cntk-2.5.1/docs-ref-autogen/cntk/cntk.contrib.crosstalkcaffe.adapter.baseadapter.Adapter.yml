@@ -12,7 +12,7 @@ methods:
 - uid: cntk.contrib.crosstalkcaffe.adapter.baseadapter.Adapter.load_model
   name: load_model
   summary: load the network weights
-  signature: load_model(global_conf)
+  signature: abstract load_model(global_conf)
   parameters:
   - name: global_conf
     isRequired: true

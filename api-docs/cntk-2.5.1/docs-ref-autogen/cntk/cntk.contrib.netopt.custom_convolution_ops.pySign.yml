@@ -6,26 +6,176 @@ module: cntk.contrib.netopt.custom_convolution_ops
 inheritances:
 - cntk.ops.functions.UserFunction
 constructor:
-  syntax: pySign(arg, name='pySign')
+  syntax: pySign(*args, **kwargs)
 methods:
 - uid: cntk.contrib.netopt.custom_convolution_ops.pySign.backward
   name: backward
+  summary: 'Backpropagates supplied `root_gradients` for one or more of the output
+
+    variables of the Function, to calculate gradients with respect to
+
+    `variables`. Formally, multiplies the values of `root_gradients` by
+
+    the Jacobian of the Function and returns the subset of the output that
+
+    corresponds to `variables`.
+
+
+    > [!NOTE]
+
+    > See <xref:cntk.ops.functions.Function.forward> for more examples
+
+    >
+
+    > on passing input data.
+
+    >'
   signature: backward(state, root_gradients)
   parameters:
   - name: state
     isRequired: true
   - name: root_gradients
     isRequired: true
+  return:
+    description: mapping of `variables` to NumPy arrays
+    types:
+    - <xref:dict>
+  examples:
+  - '
+
+    ```
+
+
+    >>> # compute the value and the derivative of the sigmoid at 0
+
+    >>> v = C.input_variable(shape=(1,), needs_gradient=True)
+
+    >>> f = C.sigmoid(v)
+
+    >>> df, fv = f.forward({v:[[0]]}, [f.output], set([f.output]))
+
+    >>> value = list(fv.values())[0]
+
+    >>> grad = f.backward(df, {f.output: np.ones_like(value)}, set([v]))
+
+    >>> value
+
+    array([[ 0.5]], dtype=float32)
+
+    >>> list(grad.values())[0]
+
+    array([[ 0.25]], dtype=float32)
+
+    ```
+
+    '
 - uid: cntk.contrib.netopt.custom_convolution_ops.pySign.forward
   name: forward
+  summary: 'Computes the values of speficied variables in `outputs`, using values
+
+    provided in `arguments` that correspond to each input *Variable* of
+
+    the function (i.e. those that have `is_input = True`).'
   signature: forward(argument, device=None, outputs_to_retain=None)
   parameters:
-  - name: argument
+  - name: arguments
+    description: "maps variables to their input data. The interpretation depends on\n\
+      the input type:\n\n   * dict: keys are input variable or names, and values are\
+      \ the input data. To specify a minibatch, provide a list of arrays. The shape\
+      \ of each array must be compatible with the shape of the dictionary key. If\
+      \ the array denotes a sequence then the elements of the sequence are grouped\
+      \ along axis 0. \n\n   * any other type: if node has a unique input, arguments\
+      \ is mapped to this input. \n\nFor nodes with more than one input, only dict\
+      \ is allowed.\n\nIn both cases, every sample in the data will be interpreted\n\
+      as a new sequence.\n\nSequences can be marked as continuations of the same sequence\
+      \ in\nthe previous minibatch (that is the sequence in the same slot).\nThere\
+      \ are two possibilities for this:\n\n   * specifying arguments as a *tuple*\
+      \ where the first element is used as arguments and the second one will be used\
+      \ as a list of bools, denoting whether a sequence is a new one (*True*) or a\
+      \ continuation of the sequence in the same slot of the previous minibatch (*False*).\
+      \ This will be applied to all batches. \n\n   * specifying arguments as a dictionary\
+      \ of variables to tuples where the first element is used as arguments and the\
+      \ second one will be used as a list of bools, denoting whether a sequence is\
+      \ a new one (*True*) or a continuation of the sequence in the same slot of the\
+      \ previous minibatch (*False*). This will be applied to all batches. \n\nData\
+      \ should be either NumPy arrays or a\n<xref:cntk.io.MinibatchData> instance."
     isRequired: true
+  - name: outputs
+    description: 'outputs to fetch values for. If not
+
+      set, all outputs of the function will be fetched.'
+    defaultValue: None
+    types:
+    - <xref:iterable>, <xref:optional>
+  - name: keep_for_backward
+    description: 'the subset of the
+
+      Function''s output variables for which gradients shall be calculated
+
+      in a subsequent backward call. If *None*, the returned state will
+
+      be *None* and a subsequent call to <xref:cntk.contrib.netopt.custom_convolution_ops.pySign.backward>
+      will not be
+
+      possible.'
+    defaultValue: None
+    types:
+    - <xref:set>, <xref:default None>
   - name: device
-    defaultValue: None
-  - name: outputs_to_retain
-    defaultValue: None
+    description: 'the device
+
+      descriptor that contains the type and id of the device on which the
+
+      computation is. If *None*, the default device is used.'
+    isRequired: true
+    types:
+    - <xref:cntk.device.DeviceDescriptor>, <xref:default None>
+  - name: as_numpy
+    description: 'whether to return the result as a NumPy array. Default True.
+
+      Specifying this as False returns a CNTK Value which avoids a
+
+      costly conversion but returns a somewhat opaque object. Also, the Value objects
+
+      are temporary and only guaranteed to be valid until the next forward/eval/backward/grad
+      call.
+
+      You must explicitly clone the temporay Value objects if they need to be accessed
+      later.'
+    isRequired: true
+    types:
+    - <xref:bool>
+  return:
+    description: 'A tuple (BackPropState, map of outputs to NumPy arrays). The
+
+      BackPropState is a handle taken by <xref:cntk.contrib.netopt.custom_convolution_ops.pySign.backward>.'
+  examples:
+  - "\n```\n\n>>> # Doing the same, but with a CSR matrix from scipy.sparse\n>>> vocab_size\
+    \ = 5\n>>> from scipy.sparse import csr_matrix\n>>> v = C.sequence.input_variable(shape=(vocab_size,),\
+    \ is_sparse=True)\n>>> f = C.times(v, np.eye(vocab_size))\n>>> # Note that csr_matrix\
+    \ automatically uses a sparse representation underneath.\n>>> sparse_batch = [csr_matrix([[0,1,0,0,0]]),\
+    \ csr_matrix([[0,0,1,0,0], [0,0,0,0,1]])]\n>>> _, fv = f.forward({v:sparse_batch})\n\
+    >>> list(fv.values())[0]\n[array([[ 0.,  1.,  0.,  0.,  0.]], dtype=float32),\n\
+    \ array([[ 0.,  0.,  1.,  0.,  0.], [ 0.,  0.,  0.,  0.,  1.]], dtype=float32)]\n\
+    \n>>> # Much more efficient, however, is to incrementally create CSR arrays.\n\
+    >>> # See https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csr_matrix.html\n\
+    >>> # for more information.\n>>> def seq_to_csr_matrix(seq, vocab_size):\n...\
+    \     indptr = [0]\n...     indices = []\n...     data = []\n...     for term_idx\
+    \ in seq:\n...         indices.append(term_idx)\n...         data.append(1)\n\
+    ...         indptr.append(len(indices))\n...     return csr_matrix((data, indices,\
+    \ indptr), shape=(len(seq), vocab_size))\n>>> sparse_batch = [seq_to_csr_matrix(seq,\
+    \ vocab_size) for seq in batch]\n>>> _, fv = f.forward({v:sparse_batch})\n>>>\
+    \ list(fv.values())[0]\n[array([[ 0.,  1.,  0.,  0.,  0.]], dtype=float32),\n\
+    \ array([[ 0.,  0.,  1.,  0.,  0.], [ 0.,  0.,  0.,  0.,  1.]], dtype=float32)]\n\
+    ```\n"
 - uid: cntk.contrib.netopt.custom_convolution_ops.pySign.infer_outputs
   name: infer_outputs
+  summary: 'Returns a list of all output variables this user-defined function
+
+    outputs.
+
+
+    Output variables are created by
+
+    <xref:cntk.ops.output_variable>.'
   signature: infer_outputs()
