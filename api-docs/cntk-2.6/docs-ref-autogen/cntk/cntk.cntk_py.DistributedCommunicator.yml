@@ -43,6 +43,7 @@ methods:
   signature: current_worker()
 - uid: cntk.cntk_py.DistributedCommunicator.finalize
   name: finalize
+  signature: static finalize()
 - uid: cntk.cntk_py.DistributedCommunicator.gather
   name: gather
   signature: gather(input, output, sendToWorkers)
