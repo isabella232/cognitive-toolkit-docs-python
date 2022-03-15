@@ -11,6 +11,7 @@ constructor:
   parameters:
   - name: name
     description: name of this stream
+    isRequired: true
     types:
     - <xref:str>
   - name: dim
@@ -19,21 +20,25 @@ constructor:
       as flat arrays. If you need different shapes you can
 
       <xref:cntk.ops.reshape> it later.'
+    isRequired: true
     types:
     - <xref:int>
   - name: is_sparse
     description: 'whether the provided data is
 
       sparse (*False* by default)'
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to False>
   - name: stream_alias
     description: name of the stream in the file
+    isRequired: true
     types:
     - <xref:str>, <xref:defaults to ''>
   - name: defines_mb_size
     description: 'whether this stream defines
 
       the minibatch size.'
+    isRequired: true
     types:
     - <xref:bool>, <xref:defaults to False>
