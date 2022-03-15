@@ -33,10 +33,12 @@ functions:
   - name: function
     description: "the function that calls this.\nFor example:\n\n<!-- literal_block\
       \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
-      : [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   def Convolution(args, init=default_override_or(glorot_uniform()),\
+      : [], \"xml:space\": \"preserve\", \"language\": \"default\", \"force\": false,\
+      \ \"linenos\": false} -->\n\n````default\n\n   def Convolution(args, init=default_override_or(glorot_uniform()),\
       \ activation=default_override_or(identity), pad=default_override_or(False)):\n\
       \   init = _get_default_override(Convolution, init=init) # pass default under\
       \ the same name\n   ````"
+    isRequired: true
 - uid: cntk.default_options.get_global_option
   name: get_global_option
   signature: get_global_option(key, default_value)

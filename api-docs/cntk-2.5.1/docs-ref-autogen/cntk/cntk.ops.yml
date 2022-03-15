@@ -14,12 +14,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -44,12 +46,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> np.round(C.acos([[1,0.5],[-0.25,-0.75]]).eval(),5)\narray([[ 0.\
     \     ,  1.0472 ],\n       [ 1.82348,  2.41886]], dtype=float32)\n```\n"
@@ -67,12 +71,14 @@ functions:
   parameters:
   - name: operand
     description: The Function/Variable to alias
+    isRequired: true
   - name: name
     description: the name of the Alias Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.argmax
   name: argmax
   summary: 'Computes the argmax of the input tensor''s elements across the specified
@@ -85,16 +91,19 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -118,16 +127,19 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -155,19 +167,23 @@ functions:
   parameters:
   - name: composite
     description: The composite Function that the block encapsulates
+    isRequired: true
   - name: block_arguments_map
     description: 'A list of tuples, mapping from block''s underlying composite''s
       arguments to
 
       actual variables they are connected to'
+    isRequired: true
   - name: block_op_name
     description: Name of the op that the block represents
+    isRequired: true
   - name: block_instance_name
     description: the name of the block Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.as_composite
   name: as_composite
   summary: "Creates a composite Function that has the specified root_function as its\
@@ -178,12 +194,14 @@ functions:
   - name: root_function
     description: Root Function, the graph underlying which, the newly created composite
       encapsulates
+    isRequired: true
   - name: name
     description: the name of the Alias Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.asin
   name: asin
   summary: 'Computes the element-wise arcsin (inverse sine) of `x`:
@@ -195,12 +213,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> np.round(C.asin([[1,0.5],[-0.25,-0.75]]).eval(),5)\narray([[ 1.5708\
     \ ,  0.5236 ],\n       [-0.25268, -0.84806]], dtype=float32)\n```\n"
@@ -215,12 +235,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> np.round(C.asinh([[1,0.5],[-0.25,-0.75]]).eval(),5)\narray([[ 0.88137,\
     \  0.48121],\n       [-0.24747, -0.69315]], dtype=float32)\n```\n"
@@ -271,14 +293,17 @@ functions:
   parameters:
   - name: ref
     description: 'class: *~cntk.variables.Constant* or *~cntk.variables.Parameter*.'
+    isRequired: true
   - name: input
     description: class:*~cntk.ops.functions.Function* that outputs a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> dest = C.constant(shape=(3,4))\n>>> data = C.parameter(shape=(3,4),\
     \ init=2)\n>>> C.assign(dest,data).eval()\narray([[ 2.,  2.,  2.,  2.],\n    \
@@ -304,14 +329,17 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -382,12 +410,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> np.round(C.atanh([[0.9,0.5],[-0.25,-0.75]]).eval(),5)\narray([[\
     \ 1.47222,  0.54931],\n       [-0.25541, -0.97296]], dtype=float32)\n```\n"
@@ -397,14 +427,16 @@ functions:
     independently
 
     and applies affine transformation to preserve representation of the layer.'
-  signature: 'batch_normalization(operand, scale, bias, running_mean, running_inv_std,
+  signature: batch_normalization(operand, scale, bias, running_mean, running_inv_std,
     spatial, normalization_time_constant=5000, blend_time_constant=0, epsilon=1e-05,
-    use_cudnn_engine=False, disable_regularization=False, name='''', running_count=None)'
+    use_cudnn_engine=False, disable_regularization=False, name='', running_count=None)
   parameters:
   - name: operand
     description: input of the batch normalization operation
+    isRequired: true
   - name: scale
-    description: 'parameter tensor that holds the learned componentwise-scaling factors'
+    description: parameter tensor that holds the learned componentwise-scaling factors
+    isRequired: true
   - name: bias
     description: 'parameter tensor that holds the learned bias. `scale` and `bias`
       must have the same
@@ -413,6 +445,7 @@ functions:
       = False or
 
       number of output convolution feature maps in case of `spatial` = True'
+    isRequired: true
   - name: running_mean
     description: 'running mean which is used during evaluation phase and might be
       used during
@@ -421,49 +454,59 @@ functions:
       same dimensions
 
       as `scale` and `bias`'
+    isRequired: true
   - name: running_inv_std
     description: running variance. Represented as `running_mean`
+    isRequired: true
   - name: running_count
     description: 'Denotes the total number of samples that have been used so far to
       compute
 
       the `running_mean` and `running_inv_std` parameters. You must pass a scalar
       (either rank-0 `constant(val)`).'
+    isRequired: true
   - name: spatial
     description: 'flag that indicates whether to compute mean/var for each feature
       in a minibatch
 
       independently or, in case of convolutional layers, per future map'
+    isRequired: true
     types:
     - <xref:bool>
   - name: normalization_time_constant
     description: 'time constant for computing running average of
 
       mean and variance as a low-pass filtered version of the batch statistics.'
+    isRequired: true
     types:
     - <xref:float>, <xref:default 5000>
   - name: blend_time_constant
     description: 'constant for smoothing batch estimates with the running
 
       statistics'
+    isRequired: true
     types:
     - <xref:float>, <xref:default 0>
   - name: epsilon
     description: conditioner constant added to the variance when computing the inverse
       standard deviation
+    isRequired: true
   - name: use_cudnn_engine
+    isRequired: true
     types:
     - <xref:bool>, <xref:default True>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   - name: disable_regularization
     description: turn off regularization in batch normalization
+    isRequired: true
     types:
     - <xref:bool>, <xref:default False>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.cast
   name: cast
   summary: cast input to dtype, with the same shape and dynamic axes. This function
@@ -472,15 +515,18 @@ functions:
   parameters:
   - name: node_input
     description: class:*~cntk.input_variable* that needs the dtype conversion
+    isRequired: true
   - name: dtype
     description: 'data_type (np.float32, np.float64, np.float16): data type of the
       converted output'
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.ceil
   name: ceil
   summary: 'The output of this operation is the element wise value rounded to the
@@ -491,12 +537,14 @@ functions:
   parameters:
   - name: arg
     description: input tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network (optional)
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> C.ceil([0.2, 1.3, 4., 5.5, 0.0]).eval()\narray([ 1.,  2.,  4., \
     \ 6.,  0.], dtype=float32)\n```\n\n\n```\n\n>>> C.ceil([[0.6, 3.3], [1.9, 5.6]]).eval()\n\
@@ -515,11 +563,13 @@ functions:
   parameters:
   - name: x
     description: tensor to be clipped
+    isRequired: true
   - name: min_value
     description: 'a scalar or a tensor which represents the minimum value to clip
       element
 
       values to'
+    isRequired: true
     types:
     - <xref:float>
   - name: max_value
@@ -527,14 +577,16 @@ functions:
       element
 
       values to'
+    isRequired: true
     types:
     - <xref:float>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -573,25 +625,26 @@ functions:
   parameters:
   - name: operands
     description: list of functions or their variables to combine
+    isRequired: true
     types:
     - <xref:list>
   - name: name
     description: the name of the Combine Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> in1 = C.input_variable((4,))\n>>> in2 = C.input_variable((4,))\n\
     ```\n\n\n```\n\n>>> in1_data = np.asarray([[1., 2., 3., 4.]], np.float32)\n>>>\
     \ in2_data = np.asarray([[0., 5., -3., 2.]], np.float32)\n```\n\n\n```\n\n>>>\
     \ plus_operation = in1 + in2\n>>> minus_operation = in1 - in2\n```\n\n\n```\n\n\
     >>> forward = C.combine([plus_operation, minus_operation]).eval({in1: in1_data,\
-    \ in2: in2_data})\n>>> len(forward)\n2\n>>> list(forward.values()) # doctest:\
-    \ +SKIP\n[array([[[ 1., -3.,  6.,  2.]]], dtype=float32),\n array([[[ 1.,  7.,\
-    \  0.,  6.]]], dtype=float32)]\n>>> x = C.input_variable((4,))\n>>> _ = C.combine(x,\
-    \ x)\n>>> _ = C.combine([x, x])\n>>> _ = C.combine((x, x))\n>>> _ = C.combine(C.combine(x,\
-    \ x), x)\n```\n"
+    \ in2: in2_data})\n>>> len(forward)\n2\n>>> list(forward.values()) \n[array([[[\
+    \ 1., -3.,  6.,  2.]]], dtype=float32),\n array([[[ 1.,  7.,  0.,  6.]]], dtype=float32)]\n\
+    >>> x = C.input_variable((4,))\n>>> _ = C.combine(x, x)\n>>> _ = C.combine([x,\
+    \ x])\n>>> _ = C.combine((x, x))\n>>> _ = C.combine(C.combine(x, x), x)\n```\n"
 - uid: cntk.ops.constant
   name: constant
   summary: It creates a constant tensor initialized from a numpy array.
@@ -603,6 +656,7 @@ functions:
       every element in the tensor or NumPy array.
 
       If `None`, the tensor will be initialized uniformly random.'
+    isRequired: true
     types:
     - <xref:scalar>
     - <xref:NumPy array>, <xref:optional>
@@ -610,6 +664,7 @@ functions:
     description: 'the shape of the input tensor. If not provided, it will
 
       be inferred from `value`.'
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>, <xref:optional>
@@ -618,18 +673,21 @@ functions:
 
       are given, then data will be converted if needed. If none given, it will default
       to `np.float32`.'
+    isRequired: true
     types:
     - <xref:optional>
   - name: device
     description: instance of DeviceDescriptor
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.variables.Constant
+    description: <xref:cntk.variables.Constant>
   examples:
   - "\n```\n\n>>> constant_data = C.constant([[1., 2.], [3., 4.], [5., 6.]])\n>>>\
     \ constant_data.value\narray([[ 1.,  2.],\n       [ 3.,  4.],\n       [ 5.,  6.]],\
@@ -677,8 +735,10 @@ functions:
     description: 'convolution filter weights, stored as a tensor of dimensions ,
 
       where  must be the kernel dimensions (spatial extent of the filter).'
+    isRequired: true
   - name: operand
     description: convolution input. A tensor with dimensions .
+    isRequired: true
   - name: strides
     description: 'stride dimensions. If strides[i] > 1 then only pixel positions that
       are multiples of strides[i] are computed.
@@ -687,10 +747,12 @@ functions:
       stride dimension that lines up with the number
 
       of input channels can be set to any non-zero value.'
+    isRequired: true
     types:
     - <xref:tuple>, <xref:optional>
   - name: sharing
     description: sharing flags for each input dimension
+    isRequired: true
     types:
     - <xref:bool>
   - name: auto_padding
@@ -708,15 +770,18 @@ functions:
 
       the input dimension. The last value that lines up with the number of input channels
       must be false.'
+    isRequired: true
     types:
     - <xref:bool>
   - name: dilation
     description: the dilation value along each axis, default 1 mean no dilation.
+    isRequired: true
     types:
     - <xref:tuple>, <xref:optional>
   - name: reduction_rank
     description: must be 0 or 1, 0 mean no depth or channel dimension in the input
       and 1 mean the input has channel or depth dimension.
+    isRequired: true
     types:
     - <xref:int>, <xref:default 1>
   - name: groups
@@ -731,6 +796,7 @@ functions:
 
       Number of input and output channels must be divisble by value of groups argument.
       Also, value of this argument must be strictly positive, i.e. groups > 0.'
+    isRequired: true
     types:
     - <xref:int>, <xref:default 1>
   - name: max_temp_mem_size_in_samples
@@ -744,14 +810,16 @@ functions:
       Default is 0 which means the same as the input
 
       samples.'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> img = np.reshape(np.arange(25.0, dtype = np.float32), (1, 5, 5))\n\
     >>> x = C.input_variable(img.shape)\n>>> filter = np.reshape(np.array([2, -1,\
@@ -806,8 +874,10 @@ functions:
     description: 'convolution filter weights, stored as a tensor of dimensions ,
 
       where  must be the kernel dimensions (spatial extent of the filter).'
+    isRequired: true
   - name: operand
     description: convolution input. A tensor with dimensions .
+    isRequired: true
   - name: strides
     description: 'stride dimensions. If strides[i] > 1 then only pixel positions that
       are multiples of strides[i] are computed.
@@ -816,10 +886,12 @@ functions:
       stride dimension that lines up with the number
 
       of input channels can be set to any non-zero value.'
+    isRequired: true
     types:
     - <xref:tuple>, <xref:optional>
   - name: sharing
     description: sharing flags for each input dimension
+    isRequired: true
     types:
     - <xref:bool>
   - name: auto_padding
@@ -837,17 +909,21 @@ functions:
 
       the input dimension. The last value that lines up with the number of input channels
       must be false.'
+    isRequired: true
     types:
     - <xref:bool>
   - name: output_shape
     description: user expected output shape after convolution transpose.
+    isRequired: true
   - name: dilation
     description: the dilation value along each axis, default 1 mean no dilation.
+    isRequired: true
     types:
     - <xref:tuple>, <xref:optional>
   - name: reduction_rank
     description: must be 0 or 1, 0 mean no depth or channel dimension in the input
       and 1 mean the input has channel or depth dimension.
+    isRequired: true
     types:
     - <xref:int>, <xref:default 1>
   - name: max_temp_mem_size_in_samples
@@ -861,14 +937,16 @@ functions:
       Default is 0 which means the same as the input
 
       samples.'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> img = np.reshape(np.arange(9.0, dtype = np.float32), (1, 3, 3))\n\
     >>> x = C.input_variable(img.shape)\n>>> filter = np.reshape(np.array([2, -1,\
@@ -888,12 +966,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> np.round(C.cos(np.arccos([[1,0.5],[-0.25,-0.75]])).eval(),5)\narray([[\
     \ 1.  ,  0.5 ],\n       [-0.25, -0.75]], dtype=float32)\n```\n"
@@ -908,12 +988,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> np.round(C.cosh([[1,0.5],[-0.25,-0.75]]).eval(),5)\narray([[ 1.54308,\
     \  1.12763],\n       [ 1.03141,  1.29468]], dtype=float32)\n```\n"
@@ -938,14 +1020,17 @@ functions:
   - name: node_input
     description: class:*~cntk.ops.functions.Function* that outputs the tensor to be
       cropped
+    isRequired: true
   - name: node_referent
     description: class:*~cntk.ops.functions.Function* that outputs the reference tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.crop_automatic_with_ancestors
   name: crop_automatic_with_ancestors
   summary: 'Crops input along spatial dimensions so that it matches spatial size of
@@ -984,22 +1069,27 @@ functions:
   - name: node_input
     description: class:*~cntk.ops.functions.Function* that outputs the tensor to be
       cropped
+    isRequired: true
   - name: node_referent
     description: class:*~cntk.ops.functions.Function* that outputs the reference tensor
+    isRequired: true
   - name: ancestor_input
     description: class:*~cntk.ops.functions.Function* that outputs ancestor of node_input
+    isRequired: true
     types:
     - <xref:optional>
   - name: ancestor_referent
     description: class:*~cntk.ops.functions.Function* that outputs ancestor of node_referent
+    isRequired: true
     types:
     - <xref:optional>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.crop_manual
   name: crop_manual
   summary: 'Crops input along spatial dimensions so that it matches spatial size of
@@ -1011,22 +1101,27 @@ functions:
   - name: node_input
     description: class:*~cntk.ops.functions.Function* that outputs the tensor to be
       cropped
+    isRequired: true
   - name: node_referent
     description: class:*~cntk.ops.functions.Function* that outputs the reference tensor
+    isRequired: true
   - name: offset_x
     description: horizontal crop offset
+    isRequired: true
     types:
     - <xref:int>
   - name: offset_y
     description: vertical crop offset
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.depth_to_space
   name: depth_to_space
   summary: 'Rearranges elements in the input tensor from the depth dimension into
@@ -1044,6 +1139,7 @@ functions:
   parameters:
   - name: operand
     description: Input tensor, with dimensions .
+    isRequired: true
   - name: block_size
     description: 'Integer value. This defines the size of the spatial block where
       the
@@ -1051,10 +1147,12 @@ functions:
       depth elements move to. Number of channels, C, in the input tensor must be divisible
 
       by math:*(block_size times block_size)*'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -1065,9 +1163,9 @@ functions:
     \ = C.depth_to_space(a, block_size=2)\n>>> d2s_op.eval({a:x})\narray([[[[ 0.,\
     \  1.,  0.,  1.,  0.,  1.],\n         [ 2.,  3.,  2.,  3.,  2.,  3.],\n      \
     \   [ 0.,  1.,  0.,  1.,  0.,  1.],\n         [ 2.,  3.,  2.,  3.,  2.,  3.]],\n\
-    <BLANKLINE>\n        [[ 4.,  5.,  4.,  5.,  4.,  5.],\n         [ 6.,  7.,  6.,\
-    \  7.,  6.,  7.],\n         [ 4.,  5.,  4.,  5.,  4.,  5.],\n         [ 6.,  7.,\
-    \  6.,  7.,  6.,  7.]]]], dtype=float32)\n```\n"
+    \n        [[ 4.,  5.,  4.,  5.,  4.,  5.],\n         [ 6.,  7.,  6.,  7.,  6.,\
+    \  7.],\n         [ 4.,  5.,  4.,  5.,  4.,  5.],\n         [ 6.,  7.,  6.,  7.,\
+    \  6.,  7.]]]], dtype=float32)\n```\n"
   seeAlsoContent: '  [1] W. Shi et. al. [: Real-Time Single Image and Video Super-Resolution
     Using an Efficient Sub-Pixel Convolutional Neural Network](https://arxiv.org/abs/1609.05158).
 
@@ -1093,26 +1191,29 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: dropout_rate
     description: probability that an element of `x` will be set to zero
+    isRequired: true
     types:
     - <xref:float>, [<xref:0,1>)
   - name: seed
     description: random seed.
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:cntk.ops.str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> data = [[10, 20],[30, 40],[50, 60]]\n>>> C.dropout(data, 0.5).eval()\
-    \ # doctest: +SKIP\narray([[  0.,  40.],\n       [  0.,  80.],\n       [  0.,\
-    \   0.]], dtype=float32)\n```\n\n\n```\n\n>>> C.dropout(data, 0.75).eval() # doctest:\
-    \ +SKIP\narray([[   0.,    0.],\n       [   0.,  160.],\n       [   0.,  240.]],\
-    \ dtype=float32)\n```\n"
+    \ \narray([[  0.,  40.],\n       [  0.,  80.],\n       [  0.,   0.]], dtype=float32)\n\
+    ```\n\n\n```\n\n>>> C.dropout(data, 0.75).eval() \narray([[   0.,    0.],\n  \
+    \     [   0.,  160.],\n       [   0.,  240.]], dtype=float32)\n```\n"
 - uid: cntk.ops.element_and
   name: element_and
   summary: Computes the element-wise logic AND of `x`.
@@ -1121,12 +1222,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1149,14 +1252,17 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1191,16 +1297,20 @@ functions:
   parameters:
   - name: arg1
     description: left side tensor
+    isRequired: true
   - name: arg2
     description: right side tensor
+    isRequired: true
   - name: '*more_args'
     description: additional inputs
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.element_min
   name: element_min
   summary: 'The output of this operation is the element-wise min of the two or more
@@ -1211,32 +1321,40 @@ functions:
   parameters:
   - name: arg1
     description: left side tensor
+    isRequired: true
   - name: arg2
     description: right side tensor
+    isRequired: true
   - name: '*more_args'
     description: additional inputs
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.element_not
   name: element_not
   summary: Computes the element-wise logic NOT of `x` and `y`.
   signature: element_not(x, name='')
   parameters:
+  - name: x
+    description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
+      a tensor
+    isRequired: true
   - name: y
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
-    types:
-    - <xref:x,>
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1255,17 +1373,21 @@ functions:
   summary: Computes the element-wise logic OR of `x` and `y`.
   signature: element_or(x, y, name='')
   parameters:
+  - name: x
+    description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
+      a tensor
+    isRequired: true
   - name: y
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
-    types:
-    - <xref:x,>
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1291,16 +1413,20 @@ functions:
   parameters:
   - name: flag
     description: condition tensor
+    isRequired: true
   - name: value_if_true
     description: true branch tensor
+    isRequired: true
   - name: value_if_false
     description: false branch tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1325,16 +1451,20 @@ functions:
   parameters:
   - name: arg1
     description: left side tensor
+    isRequired: true
   - name: arg2
     description: right side tensor
+    isRequired: true
   - name: '*more_args'
     description: additional inputs
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1375,17 +1505,21 @@ functions:
   summary: Computes the element-wise logic XOR of `x` and `y`.
   signature: element_xor(x, y, name='')
   parameters:
+  - name: x
+    description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
+      a tensor
+    isRequired: true
   - name: y
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
-    types:
-    - <xref:x,>
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1412,11 +1546,13 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -1444,14 +1580,17 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1484,12 +1623,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1510,20 +1651,22 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: The position to insert the singleton axis.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> x0 = np.arange(12).reshape((2, 2, 3)).astype('f')\n>>> x = C.input_variable((2,\
-    \ 3))\n>>> C.expand_dims(x, 0).eval({x: x0})\narray([[[[  0.,   1.,   2.]],\n\
-    <BLANKLINE>\n        [[  3.,   4.,   5.]]],\n<BLANKLINE>\n<BLANKLINE>\n      \
-    \ [[[  6.,   7.,   8.]],\n<BLANKLINE>\n        [[  9.,  10.,  11.]]]], dtype=float32)\n\
-    ```\n"
+    \ 3))\n>>> C.expand_dims(x, 0).eval({x: x0})\narray([[[[  0.,   1.,   2.]],\n\n\
+    \        [[  3.,   4.,   5.]]],\n\n\n       [[[  6.,   7.,   8.]],\n\n       \
+    \ [[  9.,  10.,  11.]]]], dtype=float32)\n```\n"
 - uid: cntk.ops.flatten
   name: flatten
   summary: 'Flattens the input tensor into a 2D matrix.
@@ -1534,17 +1677,20 @@ functions:
   parameters:
   - name: x
     description: Input tensor.
+    isRequired: true
   - name: axis
     description: (Default to 0) Indicates up to which input dimensions (exclusive)
       should be flattened to the outer dimension of the output
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> # create 2x3x4 matrix, flatten the matrix at axis = 1\n>>> shape\
     \ = (2, 3, 4)\n>>> data = np.reshape(np.arange(np.prod(shape), dtype = np.float32),\
@@ -1562,12 +1708,14 @@ functions:
   parameters:
   - name: arg
     description: input tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network (optional)
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> C.floor([0.2, 1.3, 4., 5.5, 0.0]).eval()\narray([ 0.,  1.,  4.,\
     \  5.,  0.], dtype=float32)\n```\n\n\n```\n\n>>> C.floor([[0.6, 3.3], [1.9, 5.6]]).eval()\n\
@@ -1587,18 +1735,22 @@ functions:
   parameters:
   - name: graph
     description: labels graph
+    isRequired: true
   - name: features
     description: network output
+    isRequired: true
   - name: blankTokenId
     description: id of the CTC blank label
+    isRequired: true
   - name: delayConstraint
     description: label output delay constraint introduced during training that allows
       to have shorter delay during inference. This is using the original time information
       to enforce that CTC tokens only get aligned within a time margin. Setting this
       parameter smaller will result in shorted delay between label output during decoding,
       yet may hurt accuracy. delayConstraint=-1 means no constraint
+    isRequired: true
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.gather
   name: gather
   summary: Retrieves the elements of indices in the tensor reference.
@@ -1606,23 +1758,26 @@ functions:
   parameters:
   - name: reference
     description: A tensor of values
+    isRequired: true
   - name: indices
     description: A tensor of indices
+    isRequired: true
   - name: axis
     description: The axis along which the indices refer to. Default (None) means the  first
       axis.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> c = np.asarray([[[0],[1]],[[4],[5]]]).astype('f')\n>>> x = C.input_variable((2,1))\n\
     >>> d = np.arange(12).reshape(6,2).astype('f')\n>>> y = C.constant(d)\n>>> C.gather(y,\
-    \ x).eval({x:c})\narray([[[[  0.,   1.]],\n<BLANKLINE>\n        [[  2.,   3.]]],\n\
-    <BLANKLINE>\n<BLANKLINE>\n       [[[  8.,   9.]],\n<BLANKLINE>\n        [[ 10.,\
-    \  11.]]]], dtype=float32)\n```\n"
+    \ x).eval({x:c})\narray([[[[  0.,   1.]],\n\n        [[  2.,   3.]]],\n\n\n  \
+    \     [[[  8.,   9.]],\n\n        [[ 10.,  11.]]]], dtype=float32)\n```\n"
 - uid: cntk.ops.greater
   name: greater
   summary: Elementwise 'greater' comparison of two tensors. Result is 1 if left >
@@ -1631,14 +1786,17 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1671,14 +1829,17 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1712,20 +1873,24 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: alpha
     description: the alpha term of the above equation.
+    isRequired: true
     types:
     - <xref:float>
   - name: beta
     description: the beta term of the above equation.
+    isRequired: true
     types:
     - <xref:float>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1755,12 +1920,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1792,17 +1959,20 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: scalar
     description: Scalar channel factor.
+    isRequired: true
     types:
     - <xref:float>
   - name: bias
     description: Bias values for each channel.
+    isRequired: true
     types:
-    - <xref:numpy array>
+    - <xref:<xref:numpy array>>
   return:
     description: An instance of <xref:cntk.ops.functions.Function>
     types:
@@ -1821,34 +1991,40 @@ functions:
   parameters:
   - name: shape
     description: the shape of the input tensor
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>
   - name: dtype
     description: data type. Default is np.float32.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: needs_gradient
     description: whether to back-propagates to it or not. False by default.
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: is_sparse
     description: whether the variable is sparse (*False* by default)
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: dynamic_axes
     description: a list of dynamic axis (e.g., batch axis, sequence axis)
+    isRequired: true
     types:
     - <xref:list>
     - <xref:tuple>, <xref:default>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.variables.Variable
+    description: <xref:cntk.variables.Variable>
 - uid: cntk.ops.input_variable
   name: input_variable
   summary: 'It creates an input in the network: a place where data,
@@ -1859,34 +2035,40 @@ functions:
   parameters:
   - name: shape
     description: the shape of the input tensor
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>
   - name: dtype
     description: data type. Default is np.float32.
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: needs_gradient
     description: whether to back-propagates to it or not. False by default.
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: is_sparse
     description: whether the variable is sparse (*False* by default)
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: dynamic_axes
     description: a list of dynamic axis (e.g., batch axis, time axis)
+    isRequired: true
     types:
     - <xref:list>
     - <xref:tuple>, <xref:default>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.variables.Variable
+    description: <xref:cntk.variables.Variable>
 - uid: cntk.ops.labels_to_graph
   name: labels_to_graph
   summary: 'Conversion node from labels to graph. Typically used as an input to ForwardBackward
@@ -1898,8 +2080,9 @@ functions:
   parameters:
   - name: labels
     description: input training labels
+    isRequired: true
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -1928,15 +2111,18 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: alpha
     description: the alpha term of the above equation.
+    isRequired: true
     types:
     - <xref:float>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -1964,14 +2150,17 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -2004,14 +2193,17 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -2049,28 +2241,34 @@ functions:
   parameters:
   - name: operand
     description: input of the Local Response Normalization.
+    isRequired: true
   - name: depth_radius
     description: the radius on the channel dimension to apply the normalization.
+    isRequired: true
     types:
     - <xref:int>
   - name: bias
     description: a bias term to avoid divide by zero.
+    isRequired: true
     types:
     - <xref:double>
   - name: alpha
     description: the alpha term of the above equation.
+    isRequired: true
     types:
     - <xref:double>
   - name: beta
     description: the beta term of the above equation.
+    isRequired: true
     types:
     - <xref:double>
   - name: name
     description: the name of the Function instance in the network.
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.log
   name: log
   summary: 'Computes the element-wise the natural logarithm of `x`:
@@ -2099,8 +2297,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2127,16 +2327,20 @@ functions:
   parameters:
   - name: arg1
     description: left side tensor
+    isRequired: true
   - name: arg2
     description: right side tensor
+    isRequired: true
   - name: '*more_args'
     description: additional inputs
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -2165,16 +2369,19 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: axis
     description: the axis of the inputs when coerced to 2D
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.mean
   name: mean
   summary: Create a new Function instance that computes element-wise mean of input
@@ -2183,14 +2390,16 @@ functions:
   parameters:
   - name: operands
     description: list of functions
+    isRequired: true
     types:
     - <xref:list>
   - name: name
     description: the name of the mean Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -2229,41 +2438,46 @@ functions:
     the mean is subtracted,
 
     and the variance scaling is omitted.'
-  signature: 'mean_variance_normalization(operand, epsilon=1e-05, use_stats_across_channels=False,
-    do_variance_scaling=True, name='''')'
+  signature: mean_variance_normalization(operand, epsilon=1e-05, use_stats_across_channels=False,
+    do_variance_scaling=True, name='')
   parameters:
   - name: operand
     description: Input tensor, with dimensions .
+    isRequired: true
   - name: epsilon
     description: epsilon added to the standard deviation to avoid division by 0.
+    isRequired: true
     types:
     - <xref:double>, <xref:default 0.00001>
   - name: use_stats_across_channels
     description: 'If False, mean and variance are computed per channel.
 
       If True, mean and variance are computed over the entire tensor (all axes).'
+    isRequired: true
     types:
     - <xref:bool>
   - name: do_variance_scaling
     description: 'If False, only the mean is subtracted. If True, it is also
 
       scaled by inverse of standard deviation.'
+    isRequired: true
     types:
     - <xref:bool>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> data = np.array([[[0., 2], [4., 6.]], [[0., 4], [8., 12.]]]).astype(np.float32)\n\
-    >>> data\narray([[[  0.,   2.],\n        [  4.,   6.]],\n<BLANKLINE>\n       [[\
-    \  0.,   4.],\n        [  8.,  12.]]], dtype=float32)\n>>> saved_precision = np.get_printoptions()['precision']\n\
+    >>> data\narray([[[  0.,   2.],\n        [  4.,   6.]],\n\n       [[  0.,   4.],\n\
+    \        [  8.,  12.]]], dtype=float32)\n>>> saved_precision = np.get_printoptions()['precision']\n\
     >>> np.set_printoptions(precision=4) # For consistent display upto 4 decimals.\n\
     >>> C.mean_variance_normalization(data).eval()\narray([[[-1.3416, -0.4472],\n\
-    \        [ 0.4472,  1.3416]],\n<BLANKLINE>\n       [[-1.3416, -0.4472],\n    \
-    \    [ 0.4472,  1.3416]]], dtype=float32)\n>>> np.set_printoptions(precision=saved_precision)\
+    \        [ 0.4472,  1.3416]],\n\n       [[-1.3416, -0.4472],\n        [ 0.4472,\
+    \  1.3416]]], dtype=float32)\n>>> np.set_printoptions(precision=saved_precision)\
     \ # Reseting the display precision.\n```\n"
 - uid: cntk.ops.minus
   name: minus
@@ -2272,14 +2486,17 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> C.minus([1, 2, 3], [4, 5, 6]).eval()\narray([-3., -3., -3.], dtype=float32)\n\
     ```\n\n\n```\n\n>>> C.minus([[1,2],[3,4]], 1).eval()\narray([[ 0.,  1.],\n   \
@@ -2292,12 +2509,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -2319,14 +2538,17 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -2358,24 +2580,29 @@ functions:
   parameters:
   - name: x
     description: input tensor, the value must be positive integer and less than num_class
+    isRequired: true
   - name: num_classes
     description: the number of class in one hot tensor
+    isRequired: true
   - name: sparse_output
     description: if set as True, we will create the one hot tensor as sparse.
+    isRequired: true
   - name: axis
     description: 'The axis to fill (default: -1, a new inner-most axis).'
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>, <xref:keyword only>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> data = np.asarray([[1, 2],\n...                    [4, 5]], dtype=np.float32)\n\
     ```\n\n\n```\n\n>>> x = C.input_variable((2,))\n>>> C.one_hot(x, 6, False).eval({x:data})\n\
     array([[[ 0.,  1.,  0.,  0.,  0.,  0.],\n        [ 0.,  0.,  1.,  0.,  0.,  0.]],\n\
-    <BLANKLINE>\n        [[ 0.,  0.,  0.,  0.,  1.,  0.],\n         [ 0.,  0.,  0.,\
-    \  0.,  0.,  1.]]], dtype=float32)\n```\n"
+    \n        [[ 0.,  0.,  0.,  0.,  1.,  0.],\n         [ 0.,  0.,  0.,  0.,  0.,\
+    \  1.]]], dtype=float32)\n```\n"
 - uid: cntk.ops.ones_like
   name: ones_like
   summary: 'Creates an all-ones tensor with the same shape and dynamic axes as `x`:'
@@ -2384,18 +2611,20 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> x0 = np.arange(24).reshape((2, 3, 4)).astype('f')\n>>> x = C.input_variable((3,\
     \ 4))\n>>> C.ones_like(x).eval({x: x0})\narray([[[ 1.,  1.,  1.,  1.],\n     \
-    \   [ 1.,  1.,  1.,  1.],\n        [ 1.,  1.,  1.,  1.]],\n<BLANKLINE>\n     \
-    \  [[ 1.,  1.,  1.,  1.],\n        [ 1.,  1.,  1.,  1.],\n        [ 1.,  1., \
-    \ 1.,  1.]]], dtype=float32)\n```\n"
+    \   [ 1.,  1.,  1.,  1.],\n        [ 1.,  1.,  1.,  1.]],\n\n       [[ 1.,  1.,\
+    \  1.,  1.],\n        [ 1.,  1.,  1.,  1.],\n        [ 1.,  1.,  1.,  1.]]], dtype=float32)\n\
+    ```\n"
 - uid: cntk.ops.optimized_rnnstack
   name: optimized_rnnstack
   summary: 'An RNN implementation that uses the primitives in cuDNN.
@@ -2406,16 +2635,15 @@ functions:
   signature: optimized_rnnstack(operand, weights, hidden_size, num_layers, bidirectional=False,
     recurrent_op='lstm', name='')
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> from _cntk_py import constant_initializer\n>>> W = C.parameter((C.InferredDimension,4),\
     \ constant_initializer(0.1))\n>>> x = C.input_variable(shape=(4,))\n>>> s = np.reshape(np.arange(20.0,\
     \ dtype=np.float32), (5,4))\n>>> t = np.reshape(np.arange(12.0, dtype=np.float32),\
-    \ (3,4))\n>>> f = C.optimized_rnnstack(x, W, 8, 2) # doctest: +SKIP\n>>> r = f.eval({x:[s,t]})\
-    \                # doctest: +SKIP\n>>> len(r)                               #\
-    \ doctest: +SKIP\n2\n>>> print(*r[0].shape)                   # doctest: +SKIP\n\
-    5 8\n>>> print(*r[1].shape)                   # doctest: +SKIP\n3 8\n>>> r[0][:3,:]-r[1]\
-    \                      # doctest: +SKIP\narray([[ 0.,  0.,  0.,  0.,  0.,  0.,\
+    \ (3,4))\n>>> f = C.optimized_rnnstack(x, W, 8, 2) \n>>> r = f.eval({x:[s,t]})\
+    \                \n>>> len(r)                               \n2\n>>> print(*r[0].shape)\
+    \                   \n5 8\n>>> print(*r[1].shape)                   \n3 8\n>>>\
+    \ r[0][:3,:]-r[1]                      \narray([[ 0.,  0.,  0.,  0.,  0.,  0.,\
     \  0.,  0.],\n       [ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.],\n       [ 0., \
     \ 0.,  0.,  0.,  0.,  0.,  0.,  0.]], dtype=float32)\n```\n"
 - uid: cntk.ops.output_variable
@@ -2425,22 +2653,26 @@ functions:
   parameters:
   - name: shape
     description: the shape of the input tensor
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>
   - name: dtype
     description: data type
+    isRequired: true
     types:
     - <xref:np.float32>
     - <xref:np.float64>
     - <xref:np.float16>
   - name: dynamic_axes
     description: a list of dynamic axis (e.g., batch axis, time axis)
+    isRequired: true
     types:
     - <xref:list>
     - <xref:tuple>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -2454,24 +2686,29 @@ functions:
   parameters:
   - name: x
     description: tensor to be padded.
+    isRequired: true
   - name: pattern
     description: how many values to add before and after the contents of the tensor
       in each dimension.
+    isRequired: true
     types:
-    - <xref:list of tuple with 2 integers>
+    - <xref:<xref:list of tuple with 2 integers>>
   - name: mode
     description: 'padding mode: C.ops.CONSTANT_PAD, C.ops.REFLECT_PAD and C.ops.SYMMETRIC_PAD'
+    isRequired: true
     types:
     - <xref:int>
   - name: constant_value
     description: the value used to fill the padding cells, only meaningful under CONSTANT
       mode.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> data = np.arange(6, dtype=np.float32).reshape((2,3))\n>>> x = C.constant(value=data)\n\
     >>> C.pad(x, pattern=[(1,1),(2,2)], mode=C.ops.CONSTANT_PAD, constant_value=1).eval()\n\
@@ -2498,15 +2735,18 @@ functions:
   parameters:
   - name: alpha
     description: same shape as x
+    isRequired: true
     types:
     - <xref:cntk.variables.Parameter>
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -2537,6 +2777,7 @@ functions:
     description: 'the shape of the input tensor. If not provided, it
 
       will be inferred from `value`.'
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>, <xref:optional>
@@ -2547,36 +2788,41 @@ functions:
 
       NumPy array. If it is the output of an initializer form
 
-      <xref:cntk> it will be used to initialize the tensor at
+      <xref:cntk#module-cntk.initializer> it will be used to initialize the tensor
+      at
 
       the first forward pass. If *None*, the tensor will be initialized
 
       with 0.'
+    isRequired: true
     types:
     - <xref:scalar>
-    - <xref:NumPy array>
+    - <xref:<xref:NumPy array>>
     - <xref:initializer>
   - name: dtype
     description: 'data type of the constant. If a NumPy array and `dtype`,
 
       are given, then data will be converted if needed. If none given, it will default
       to `np.float32`.'
+    isRequired: true
     types:
     - <xref:optional>
   - name: device
     description: instance of DeviceDescriptor
+    isRequired: true
     types:
     - <xref:cntk.device.DeviceDescriptor>
   - name: name
     description: the name of the Parameter instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.variables.Parameter
+    description: <xref:cntk.variables.Parameter>
   examples:
   - "\n```\n\n>>> init_parameter = C.parameter(shape=(3,4), init=2)\n>>> np.asarray(init_parameter)\
-    \ # doctest: +SKIP\narray([[ 2.,  2.,  2.,  2.],\n       [ 2.,  2.,  2.,  2.],\n\
-    \       [ 2.,  2.,  2.,  2.]], dtype=float32)\n```\n"
+    \ \narray([[ 2.,  2.,  2.,  2.],\n       [ 2.,  2.,  2.,  2.],\n       [ 2., \
+    \ 2.,  2.,  2.]], dtype=float32)\n```\n"
 - uid: cntk.ops.per_dim_mean_variance_normalize
   name: per_dim_mean_variance_normalize
   summary: Computes per dimension mean-variance normalization of the specified input
@@ -2585,20 +2831,24 @@ functions:
   parameters:
   - name: operand
     description: the variable to be normalized
+    isRequired: true
   - name: mean
     description: per dimension mean to use for the normalization
+    isRequired: true
     types:
-    - <xref:NumPy array>
+    - <xref:<xref:NumPy array>>
   - name: inv_stddev
     description: per dimension standard deviation to use for the normalization
+    isRequired: true
     types:
-    - <xref:NumPy array>
+    - <xref:<xref:NumPy array>>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.placeholder
   name: placeholder
   summary: 'It creates a placeholder variable that has to be later bound to an actual
@@ -2614,19 +2864,22 @@ functions:
   parameters:
   - name: shape
     description: the shape of the variable tensor
+    isRequired: true
     types:
     - <xref:tuple>
     - <xref:int>
   - name: dynamic_axes
     description: the list of dynamic axes that the actual variable uses
+    isRequired: true
     types:
     - <xref:list>
   - name: name
     description: the name of the placeholder variable in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.variables.Variable
+    description: <xref:cntk.variables.Variable>
 - uid: cntk.ops.plus
   name: plus
   summary: The output of this operation is the sum of the two or more input tensors.
@@ -2635,16 +2888,20 @@ functions:
   parameters:
   - name: arg1
     description: left side tensor
+    isRequired: true
   - name: arg2
     description: right side tensor
+    isRequired: true
   - name: '*more_args'
     description: additional inputs
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -2707,32 +2964,40 @@ functions:
   parameters:
   - name: operand
     description: pooling input
+    isRequired: true
   - name: pooling_type
     description: one of <xref:cntk.ops.MAX_POOLING> or <xref:cntk.ops.AVG_POOLING>
+    isRequired: true
   - name: pooling_window_shape
     description: dimensions of the pooling window
+    isRequired: true
   - name: strides
     description: strides.
+    isRequired: true
     types:
-    - <xref:default 1>
+    - <xref:<xref:default 1>>
   - name: auto_padding
     description: automatic padding flags for each input dimension.
+    isRequired: true
     types:
     - <xref:default >[<xref:False,>]
   - name: ceil_out_dim
     description: ceiling while computing output size
+    isRequired: true
     types:
-    - <xref:default False>
+    - <xref:<xref:default False>>
   - name: include_pad
     description: include pad while average pooling
+    isRequired: true
     types:
-    - <xref:default False>
+    - <xref:<xref:default False>>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> img = np.reshape(np.arange(16, dtype = np.float32), [1, 4, 4])\n\
     >>> x = C.input_variable(img.shape)\n>>> C.pooling(x, C.AVG_POOLING, (2,2), (2,2)).eval({x\
@@ -2756,14 +3021,17 @@ functions:
   parameters:
   - name: base
     description: base tensor
+    isRequired: true
   - name: exponent
     description: exponent tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> C.pow([1, 2, -2], [3, -2, 3]).eval()\narray([ 1.  ,  0.25, -8. \
     \ ], dtype=float32)\n```\n\n\n```\n\n>>> C.pow([[0.5, 2],[4, 1]], -2).eval()\n\
@@ -2799,26 +3067,31 @@ functions:
     description: 'input vector of sampling weights which should be
 
       non-negative numbers.'
+    isRequired: true
   - name: num_samples
     description: number of expected samples
+    isRequired: true
     types:
     - <xref:int>
   - name: allow_duplicates
     description: 'If sampling is done
 
       with replacement (*True*) or without (*False*).'
+    isRequired: true
     types:
     - <xref:bool>
   - name: seed
     description: random seed.
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network.
+    isRequired: true
     types:
     - <xref:cntk.ops.str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.random_sample_inclusion_frequency
   name: random_sample_inclusion_frequency
   summary: 'For weighted sampling with the specified sample size (*num_samples*)
@@ -2841,7 +3114,7 @@ functions:
   signature: random_sample_inclusion_frequency(weights, num_samples, allow_duplicates,
     seed=4294967293, name='')
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -2897,12 +3170,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -2927,16 +3202,19 @@ functions:
   parameters:
   - name: x
     description: The Function/Variable, whose dynamic axes are to be reconciled
+    isRequired: true
   - name: dynamic_axes_as
     description: 'The Function/Variable, to whose dynamic axes the
 
       operand ''x''''s dynamic axes are reconciled to.'
+    isRequired: true
   - name: name
     description: the name of the reconcile_dynamic_axes Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.reduce_l1
   name: reduce_l1
   summary: 'Computes the L1 norm of the input tensor''s element along the provided
@@ -2949,20 +3227,23 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
-    - <xref:a list>
-    - <xref:tuple of int>
+    - a <xref:list>
+    - <xref:tuple> of int
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> C.reduce_l1([[[1,2], [3,4]],[[5,6], [7,8]],[[9,10], [11,12]]], 2,\
     \ False).eval()\narray([[  3.,   7.],\n       [ 11.,  15.],\n       [ 19.,  23.]],\
@@ -2979,20 +3260,23 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
-    - <xref:a list>
-    - <xref:tuple of int>
+    - a <xref:list>
+    - <xref:tuple> of int
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> C.reduce_l2([[[1,2], [3,4]]], 2).eval()\narray([[[ 2.236068],\n\
     \        [ 5.        ]]], dtype=float32)\n```\n"
@@ -3009,16 +3293,19 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
-    - <xref:a list>
-    - <xref:tuple of int>
+    - a <xref:list>
+    - <xref:tuple> of int
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -3048,16 +3335,19 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
-    - <xref:a list>
-    - <xref:tuple of int>
+    - a <xref:list>
+    - <xref:tuple> of int
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -3067,8 +3357,8 @@ functions:
     \ sample\n>>> data = np.array([[[5,1], [20,2]],[[30,1], [40,2]],[[55,1], [60,2]]],\
     \ dtype=np.float32)\n```\n\n\n```\n\n>>> C.reduce_max(data, 0).eval().round(4)\n\
     array([[[ 55.,   1.],\n        [ 60.,   2.]]], dtype=float32)\n>>> C.reduce_max(data,\
-    \ 1).eval().round(4)\narray([[[ 20.,   2.]],\n<BLANKLINE>\n       [[ 40.,   2.]],\n\
-    <BLANKLINE>\n       [[ 60.,   2.]]], dtype=float32)\n>>> C.reduce_max(data, (0,2)).eval().round(4)\n\
+    \ 1).eval().round(4)\narray([[[ 20.,   2.]],\n\n       [[ 40.,   2.]],\n\n   \
+    \    [[ 60.,   2.]]], dtype=float32)\n>>> C.reduce_max(data, (0,2)).eval().round(4)\n\
     array([[[ 55.],\n        [ 60.]]], dtype=float32)\n```\n\n\n```\n\n>>> x = C.input_variable((2,2))\n\
     >>> C.reduce_max( x * 1.0, (C.Axis.default_batch_axis(), 1)).eval({x: data}).round(4)\n\
     array([[ 55.],\n       [ 60.]], dtype=float32)\n```\n"
@@ -3080,20 +3370,23 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
-    - <xref:a list>
-    - <xref:tuple of int>
+    - a <xref:list>
+    - <xref:tuple> of int
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: 'cntk.ops.functions.Function
+    description: '<xref:cntk.ops.functions.Function>
 
 
       Note that CNTK keeps the shape of the resulting tensors when reducing over multiple
@@ -3104,11 +3397,11 @@ functions:
     \ dtype=np.float32)\n```\n\n\n```\n\n>>> C.reduce_mean(data, 0).eval().round(4)\n\
     array([[[ 30.,   1.],\n        [ 40.,   2.]]], dtype=float32)\n>>> np.mean(data,\
     \ axis=0).round(4)\narray([[ 30.,   1.],\n       [ 40.,   2.]], dtype=float32)\n\
-    >>> C.reduce_mean(data, 1).eval().round(4)\narray([[[ 12.5,   1.5]],\n<BLANKLINE>\n\
-    \       [[ 35. ,   1.5]],\n<BLANKLINE>\n       [[ 57.5,   1.5]]], dtype=float32)\n\
-    >>> np.mean(data, axis=1).round(4)\narray([[ 12.5,   1.5],\n       [ 35. ,   1.5],\n\
-    \       [ 57.5,   1.5]], dtype=float32)\n>>> C.reduce_mean(data, (0,2)).eval().round(4)\n\
-    array([[[ 15.5],\n        [ 21. ]]], dtype=float32)\n```\n\n\n```\n\n>>> x = C.input_variable((2,2))\n\
+    >>> C.reduce_mean(data, 1).eval().round(4)\narray([[[ 12.5,   1.5]],\n\n     \
+    \  [[ 35. ,   1.5]],\n\n       [[ 57.5,   1.5]]], dtype=float32)\n>>> np.mean(data,\
+    \ axis=1).round(4)\narray([[ 12.5,   1.5],\n       [ 35. ,   1.5],\n       [ 57.5,\
+    \   1.5]], dtype=float32)\n>>> C.reduce_mean(data, (0,2)).eval().round(4)\narray([[[\
+    \ 15.5],\n        [ 21. ]]], dtype=float32)\n```\n\n\n```\n\n>>> x = C.input_variable((2,2))\n\
     >>> C.reduce_mean( x * 1.0, (C.Axis.default_batch_axis(), 1)).eval({x: data}).round(4)\n\
     array([[ 15.5],\n       [ 21.      ]], dtype=float32)\n```\n"
 - uid: cntk.ops.reduce_min
@@ -3119,19 +3412,22 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
-    - <xref:a list of integers>
-    - <xref:a list of cntk.axis.Axis>
+    - <xref:<xref:a list of integers>>
+    - a list of <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: 'cntk.ops.functions.Function
+    description: '<xref:cntk.ops.functions.Function>
 
 
       Note that CNTK keeps the shape of the resulting tensors when reducing over multiple
@@ -3141,8 +3437,8 @@ functions:
     \ sample\n>>> data = np.array([[[5,1], [20,2]],[[30,1], [40,2]],[[55,1], [60,2]]],\
     \ dtype=np.float32)\n```\n\n\n```\n\n>>> C.reduce_min(data, 0).eval().round(4)\n\
     array([[[  5.,   1.],\n        [ 20.,   2.]]], dtype=float32)\n>>> C.reduce_min(data,\
-    \ 1).eval().round(4)\narray([[[  5.,   1.]],\n<BLANKLINE>\n       [[ 30.,   1.]],\n\
-    <BLANKLINE>\n       [[ 55.,   1.]]], dtype=float32)\n>>> C.reduce_min(data, (0,2)).eval().round(4)\n\
+    \ 1).eval().round(4)\narray([[[  5.,   1.]],\n\n       [[ 30.,   1.]],\n\n   \
+    \    [[ 55.,   1.]]], dtype=float32)\n>>> C.reduce_min(data, (0,2)).eval().round(4)\n\
     array([[[ 1.],\n        [ 2.]]], dtype=float32)\n```\n\n\n```\n\n>>> x = C.input_variable((2,2))\n\
     >>> C.reduce_min( x * 1.0, (C.Axis.default_batch_axis(), 1)).eval({x: data}).round(4)\n\
     array([[ 1.],\n       [ 2.]], dtype=float32)\n```\n"
@@ -3158,16 +3454,19 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
-    - <xref:a list>
-    - <xref:tuple of int>
+    - a <xref:list>
+    - <xref:tuple> of int
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
@@ -3177,12 +3476,12 @@ functions:
     \ sample\n>>> data = np.array([[[5,1], [20,2]],[[30,1], [40,2]],[[55,1], [60,2]]],\
     \ dtype=np.float32)\n```\n\n\n```\n\n>>> C.reduce_prod(data, 0).eval().round(4)\n\
     array([[[  8250.,      1.],\n        [ 48000.,      8.]]], dtype=float32)\n>>>\
-    \ C.reduce_prod(data, 1).eval().round(4)\narray([[[  100.,     2.]],\n<BLANKLINE>\n\
-    \       [[ 1200.,     2.]],\n<BLANKLINE>\n       [[ 3300.,     2.]]], dtype=float32)\n\
-    >>> C.reduce_prod(data, (0,2)).eval().round(4)\narray([[[   8250.],\n        [\
-    \ 384000.]]], dtype=float32)\n```\n\n\n```\n\n>>> x = C.input_variable((2,2))\n\
-    >>> C.reduce_prod( x * 1.0, (C.Axis.default_batch_axis(), 1)).eval({x: data}).round(4)\n\
-    array([[   8250.],\n       [ 384000.]], dtype=float32)\n```\n"
+    \ C.reduce_prod(data, 1).eval().round(4)\narray([[[  100.,     2.]],\n\n     \
+    \  [[ 1200.,     2.]],\n\n       [[ 3300.,     2.]]], dtype=float32)\n>>> C.reduce_prod(data,\
+    \ (0,2)).eval().round(4)\narray([[[   8250.],\n        [ 384000.]]], dtype=float32)\n\
+    ```\n\n\n```\n\n>>> x = C.input_variable((2,2))\n>>> C.reduce_prod( x * 1.0, (C.Axis.default_batch_axis(),\
+    \ 1)).eval({x: data}).round(4)\narray([[   8250.],\n       [ 384000.]], dtype=float32)\n\
+    ```\n"
 - uid: cntk.ops.reduce_sum
   name: reduce_sum
   summary: 'Computes the sum of the input tensor''s elements across one axis or a
@@ -3207,16 +3506,19 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
-    - <xref:a list>
-    - <xref:tuple of int>
+    - a <xref:list>
+    - <xref:tuple> of int
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3227,11 +3529,11 @@ functions:
     \ dtype=np.float32)\n```\n\n\n```\n\n>>> C.reduce_sum(data, 0).eval().round(4)\n\
     array([[[  90.,    3.],\n        [ 120.,    6.]]], dtype=float32)\n>>> np.sum(data,\
     \ axis=0).round(4)\narray([[  90.,    3.],\n       [ 120.,    6.]], dtype=float32)\n\
-    >>> C.reduce_sum(data, 1).eval().round(4)\narray([[[  25.,    3.]],\n<BLANKLINE>\n\
-    \       [[  70.,    3.]],\n<BLANKLINE>\n       [[ 115.,    3.]]], dtype=float32)\n\
-    >>> np.sum(data, axis=1).round(4)\narray([[  25.,    3.],\n       [  70.,    3.],\n\
-    \       [ 115.,    3.]], dtype=float32)\n>>> C.reduce_sum(data, (0,2)).eval().round(4)\n\
-    array([[[  93.],\n        [ 126.]]], dtype=float32)\n```\n"
+    >>> C.reduce_sum(data, 1).eval().round(4)\narray([[[  25.,    3.]],\n\n      \
+    \ [[  70.,    3.]],\n\n       [[ 115.,    3.]]], dtype=float32)\n>>> np.sum(data,\
+    \ axis=1).round(4)\narray([[  25.,    3.],\n       [  70.,    3.],\n       [ 115.,\
+    \    3.]], dtype=float32)\n>>> C.reduce_sum(data, (0,2)).eval().round(4)\narray([[[\
+    \  93.],\n        [ 126.]]], dtype=float32)\n```\n"
 - uid: cntk.ops.reduce_sum_square
   name: reduce_sum_square
   summary: 'Computes the sum square of the input tensor''s element along the provided
@@ -3244,20 +3546,23 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axis
     description: axis along which the reduction will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
-    - <xref:a list>
-    - <xref:tuple of int>
+    - a <xref:list>
+    - <xref:tuple> of int
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> C.reduce_sum_square([[[1,2], [3,4]]], 2).eval()\narray([[[  5.],\n\
     \        [ 25.]]], dtype=float32)\n```\n"
@@ -3274,12 +3579,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -3305,6 +3612,7 @@ functions:
   parameters:
   - name: x
     description: tensor to be reshaped
+    isRequired: true
   - name: shape
     description: 'a tuple defining the resulting shape. The specified shape tuple
 
@@ -3315,6 +3623,7 @@ functions:
       with the product of the dimensions of all the non-inferred axes of the replacement
 
       shape.'
+    isRequired: true
     types:
     - <xref:tuple>
   - name: begin_axis
@@ -3324,6 +3633,7 @@ functions:
       shape tuple,
 
       pass *Axis.new_leading_axis()*.'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:None>
@@ -3332,15 +3642,17 @@ functions:
 
       Negative values are counting from the end. *None* refers to the end of the shape
       tuple.'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:None>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> i1 = C.input_variable(shape=(3,2))\n>>> C.reshape(i1, (2,3)).eval({i1:np.asarray([[[[0.,\
     \ 1.],[2., 3.],[4., 5.]]]], dtype=np.float32)})\narray([[[ 0.,  1.,  2.],\n  \
@@ -3375,21 +3687,27 @@ functions:
   parameters:
   - name: operand
     description: a convolutional feature map as the input volume ([W x H x C x N]).
+    isRequired: true
   - name: pooling_type
     description: only <xref:cntk.ops.MAX_POOLING>
+    isRequired: true
   - name: rois
     description: the coordinates of the ROIs per image ([4 x roisPerImage x N]), each
       ROI is (x1, y1, x2, y2) absolute to original image size.
+    isRequired: true
   - name: roi_output_shape
     description: dimensions (width x height) of the ROI pooling output shape
+    isRequired: true
   - name: spatial_scale
     description: the scale of operand from the original image size.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.round
   name: round
   summary: 'The output of this operation is the element wise value rounded to the
@@ -3406,12 +3724,14 @@ functions:
   parameters:
   - name: arg
     description: input tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network (optional)
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> C.round([0.2, 1.3, 4., 5.5, 0.0]).eval()\narray([ 0.,  1.,  4.,\
     \  6.,  0.], dtype=float32)\n```\n\n\n```\n\n>>> C.round([[0.6, 3.3], [1.9, 5.6]]).eval()\n\
@@ -3432,11 +3752,13 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -3468,12 +3790,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -3498,12 +3822,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> np.round(C.sin(np.arcsin([[1,0.5],[-0.25,-0.75]])).eval(),5)\narray([[\
     \ 1.  ,  0.5 ],\n       [-0.25, -0.75]], dtype=float32)\n```\n"
@@ -3518,12 +3844,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> np.round(C.sinh([[1,0.5],[-0.25,-0.75]]).eval(),5)\narray([[ 1.1752\
     \ ,  0.5211 ],\n       [-0.25261, -0.82232]], dtype=float32)\n```\n"
@@ -3532,34 +3860,34 @@ functions:
   summary: Slice the input along one or multiple axes.
   signature: slice(x, axis, begin_index, end_index, strides=None, name='')
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> # slice using input variable\n>>> # create 2x3 matrix\n>>> x1 =\
     \ C.input_variable((2,3))\n>>> # slice index 1 (second) at first axis\n>>> C.slice(x1,\
     \ 0, 1, 2).eval({x1: np.asarray([[[1,2,-3],\n...                             \
     \                [4, 5, 6]]],dtype=np.float32)})\narray([[[ 4.,  5.,  6.]]], dtype=float32)\n\
-    <BLANKLINE>\n>>> # slice index 0 (first) at second axis\n>>> C.slice(x1, 1, 0,\
-    \ 1).eval({x1: np.asarray([[[1,2,-3],\n...                                   \
-    \          [4, 5, 6]]],dtype=np.float32)})\narray([[[ 1.],\n        [ 4.]]], dtype=float32)\n\
+    \n>>> # slice index 0 (first) at second axis\n>>> C.slice(x1, 1, 0, 1).eval({x1:\
+    \ np.asarray([[[1,2,-3],\n...                                             [4,\
+    \ 5, 6]]],dtype=np.float32)})\narray([[[ 1.],\n        [ 4.]]], dtype=float32)\n\
     >>> # slice with strides\n>>> C.slice(x1, 0, 0, 2, 2).eval({x1: np.asarray([[[1,2,-3],\n\
     ...                                                [4, 5, 6]]],dtype=np.float32)})\n\
-    array([[[ 1.,  2., -3.]]], dtype=float32)\n<BLANKLINE>\n>>> # reverse\n>>> C.slice(x1,\
-    \ 0, 0, 2, -1).eval({x1: np.asarray([[[1,2,-3],\n...                         \
-    \                        [4, 5, 6]]],dtype=np.float32)})\narray([[[ 4.,  5., \
-    \ 6.],\n[ 1.,  2., -3.]]], dtype=float32)\n<BLANKLINE>\n>>> # slice along multiple\
-    \ axes\n>>> C.slice(x1, [0,1], [1,0], [2,1]).eval({x1: np.asarray([[[1, 2, -3],\n\
-    ...                                                         [4, 5, 6]]],dtype=np.float32)})\n\
-    array([[[ 4.]]], dtype=float32)\n<BLANKLINE>\n>>> # slice using constant\n>>>\
-    \ data = np.asarray([[1, 2, -3],\n...                    [4, 5,  6]], dtype=np.float32)\n\
-    >>> x = C.constant(value=data)\n>>> C.slice(x, 0, 1, 2).eval()\narray([[ 4., \
-    \ 5.,  6.]], dtype=float32)\n>>> C.slice(x, 1, 0, 1).eval()\narray([[ 1.],\n \
-    \      [ 4.]], dtype=float32)\n>>> C.slice(x, [0,1], [1,0], [2,1]).eval()\narray([[\
-    \ 4.]], dtype=float32)\n<BLANKLINE>\n>>> # slice using the index overload\n>>>\
-    \ data = np.asarray([[1, 2, -3],\n...                    [4, 5,  6]], dtype=np.float32)\n\
-    >>> x = C.constant(value=data)\n>>> x[0].eval()\narray([[ 1.,  2.,  -3.]], dtype=float32)\n\
-    >>> x[0, [1,2]].eval()\narray([[ 2.,  -3.]], dtype=float32)\n<BLANKLINE>\n>>>\
-    \ x[1].eval()\narray([[ 4.,  5.,  6.]], dtype=float32)\n>>> x[:,:2,:].eval()\n\
-    array([[ 1.,  2.],\n       [ 4.,  5.]], dtype=float32)\n```\n"
+    array([[[ 1.,  2., -3.]]], dtype=float32)\n\n>>> # reverse\n>>> C.slice(x1, 0,\
+    \ 0, 2, -1).eval({x1: np.asarray([[[1,2,-3],\n...                            \
+    \                     [4, 5, 6]]],dtype=np.float32)})\narray([[[ 4.,  5.,  6.],\n\
+    [ 1.,  2., -3.]]], dtype=float32)\n\n>>> # slice along multiple axes\n>>> C.slice(x1,\
+    \ [0,1], [1,0], [2,1]).eval({x1: np.asarray([[[1, 2, -3],\n...               \
+    \                                          [4, 5, 6]]],dtype=np.float32)})\narray([[[\
+    \ 4.]]], dtype=float32)\n\n>>> # slice using constant\n>>> data = np.asarray([[1,\
+    \ 2, -3],\n...                    [4, 5,  6]], dtype=np.float32)\n>>> x = C.constant(value=data)\n\
+    >>> C.slice(x, 0, 1, 2).eval()\narray([[ 4.,  5.,  6.]], dtype=float32)\n>>> C.slice(x,\
+    \ 1, 0, 1).eval()\narray([[ 1.],\n       [ 4.]], dtype=float32)\n>>> C.slice(x,\
+    \ [0,1], [1,0], [2,1]).eval()\narray([[ 4.]], dtype=float32)\n\n>>> # slice using\
+    \ the index overload\n>>> data = np.asarray([[1, 2, -3],\n...                \
+    \    [4, 5,  6]], dtype=np.float32)\n>>> x = C.constant(value=data)\n>>> x[0].eval()\n\
+    array([[ 1.,  2.,  -3.]], dtype=float32)\n>>> x[0, [1,2]].eval()\narray([[ 2.,\
+    \  -3.]], dtype=float32)\n\n>>> x[1].eval()\narray([[ 4.,  5.,  6.]], dtype=float32)\n\
+    >>> x[:,:2,:].eval()\narray([[ 1.,  2.],\n       [ 4.,  5.]], dtype=float32)\n\
+    ```\n"
   seeAlsoContent: '  Indexing in NumPy: [https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html](https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html)
 
     '
@@ -3591,17 +3919,20 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: axis
     description: axis along which the softmax operation will be performed
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> C.softmax([[1, 1, 2, 3]]).eval()\narray([[ 0.082595,  0.082595,\
     \  0.224515,  0.610296]], dtype=float32)\n```\n\n\n```\n\n>>> C.softmax([1, 1]).eval()\n\
@@ -3629,15 +3960,18 @@ functions:
   parameters:
   - name: x
     description: any <xref:cntk.ops.functions.Function> that outputs a tensor.
+    isRequired: true
     types:
     - <xref:numpy.array>
     - <xref:cntk.ops.functions.Function>
   - name: steepness
     description: optional steepness factor
+    isRequired: true
     types:
     - <xref:float>, <xref:optional>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:default to ''>
   return:
@@ -3680,12 +4014,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -3722,6 +4058,7 @@ functions:
   parameters:
   - name: operand
     description: Input tensor, with dimensions .
+    isRequired: true
   - name: block_size
     description: 'Integer value. This defines the size of the spatial block whose
       elements
@@ -3730,10 +4067,12 @@ functions:
       tensor
 
       must be divisible by math:*block_size*'
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3742,10 +4081,10 @@ functions:
   - "\n```\n\n>>> np.random.seed(3)\n>>> x = np.random.randint(low=0, high=100, size=(1,\
     \ 4, 6)).astype(np.float32)\n>>> a = C.input_variable((1, 4, 6))\n>>> s2d_op =\
     \ C.space_to_depth(a, block_size=2)\n>>> s2d_op.eval({a:x})\narray([[[[ 24., \
-    \ 56.,   0.],\n         [ 96.,  44.,  39.]],\n<BLANKLINE>\n        [[  3.,  72.,\
-    \  21.],\n         [ 20.,  93.,  14.]],\n<BLANKLINE>\n        [[ 19.,  41.,  21.],\n\
-    \         [ 26.,  90.,  66.]],\n<BLANKLINE>\n        [[ 74.,  10.,  38.],\n  \
-    \       [ 81.,  22.,   2.]]]], dtype=float32)\n```\n"
+    \ 56.,   0.],\n         [ 96.,  44.,  39.]],\n\n        [[  3.,  72.,  21.],\n\
+    \         [ 20.,  93.,  14.]],\n\n        [[ 19.,  41.,  21.],\n         [ 26.,\
+    \  90.,  66.]],\n\n        [[ 74.,  10.,  38.],\n         [ 81.,  22.,   2.]]]],\
+    \ dtype=float32)\n```\n"
   seeAlsoContent: '  [1] W. Shi et. al. [: Real-Time Single Image and Video Super-Resolution
     Using an Efficient Sub-Pixel Convolutional Neural Network](https://arxiv.org/abs/1609.05158).
 
@@ -3757,19 +4096,22 @@ functions:
   parameters:
   - name: inputs
     description: one or more input tensors
+    isRequired: true
   - name: axis
     description: 'axis along which the
 
       concatenation will be performed'
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>, <xref:optional>, <xref:keyword only>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>, <xref:keyword only>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> # create 2x2 matrix in a sequence of length 1 in a batch of one\
     \ sample\n>>> data1 = np.asarray([[[1, 2],\n...                      [4, 5]]],\
@@ -3801,8 +4143,10 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -3828,12 +4172,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -3855,19 +4201,22 @@ functions:
   parameters:
   - name: x
     description: input tensor
+    isRequired: true
   - name: axes
     description: 'The axes to squeeze out (default: all static axes).'
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> x0 = np.arange(12).reshape((2, 2, 1, 3)).astype('f')\n>>> x = C.input_variable((2,\
     \ 1, 3))\n>>> C.squeeze(x).eval({x: x0})\narray([[[  0.,   1.,   2.],\n      \
-    \  [  3.,   4.,   5.]],\n<BLANKLINE>\n       [[  6.,   7.,   8.],\n        [ \
-    \ 9.,  10.,  11.]]], dtype=float32)\n```\n"
+    \  [  3.,   4.,   5.]],\n\n       [[  6.,   7.,   8.],\n        [  9.,  10., \
+    \ 11.]]], dtype=float32)\n```\n"
 - uid: cntk.ops.stop_gradient
   name: stop_gradient
   summary: Outputs its input as it is and prevents any gradient contribution from
@@ -3876,12 +4225,14 @@ functions:
   parameters:
   - name: input
     description: class:*~cntk.ops.functions.Function* that outputs a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
 - uid: cntk.ops.sum
   name: sum
   summary: Create a new Function instance that computes element-wise sum of input
@@ -3890,14 +4241,16 @@ functions:
   parameters:
   - name: operands
     description: list of functions
+    isRequired: true
     types:
     - <xref:list>
   - name: name
     description: the name of the sum Function in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -3929,22 +4282,26 @@ functions:
   parameters:
   - name: x
     description: tensor to be transposed
+    isRequired: true
   - name: axis1
     description: the axis to swap with `axis2`
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
   - name: axis2
     description: the axis to swap with `axis1`
+    isRequired: true
     types:
     - <xref:int>
     - <xref:cntk.axis.Axis>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> C.swapaxes([[[0,1],[2,3],[4,5]]], 1, 2).eval()\narray([[[ 0.,  2.,\
     \  4.],\n        [ 1.,  3.,  5.]]], dtype=float32)\n```\n"
@@ -3959,12 +4316,14 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> C.tanh([[1,2],[3,4]]).eval()\narray([[ 0.761594,  0.964028],\n \
     \      [ 0.995055,  0.999329]], dtype=float32)\n```\n"
@@ -3977,45 +4336,50 @@ functions:
     \ which is followed by sequence.reduce_sum, use\ninfer_input_rank_to_map=TIMES_REDUCE_SEQUENCE_AXIS_WITHOUT_INFERRED_INPUT_RANK,\
     \ i.e. replace following:\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
     \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"\
-    } -->\n\n````\n\n   sequence.reduce_sum(times(seq1, seq2))\n   ````\n\nwith:\n\
-    \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-    : [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n````\n\n   times(seq1,\
-    \ seq2, infer_input_rank_to_map=TIMES_REDUCE_SEQUENCE_AXIS_WITHOUT_INFERRED_INPUT_RANK)\n\
+    , \"language\": \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\
+    \n   sequence.reduce_sum(times(seq1, seq2))\n   ````\n\nwith:\n\n<!-- literal_block\
+    \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
+    : [], \"xml:space\": \"preserve\", \"language\": \"default\", \"force\": false,\
+    \ \"linenos\": false} -->\n\n````default\n\n   times(seq1, seq2, infer_input_rank_to_map=TIMES_REDUCE_SEQUENCE_AXIS_WITHOUT_INFERRED_INPUT_RANK)\n\
     \   ````"
   signature: times(left, right, output_rank=1, infer_input_rank_to_map=-1, name='')
   parameters:
   - name: left
     description: left side matrix or tensor
+    isRequired: true
   - name: right
     description: right side matrix or tensor
+    isRequired: true
   - name: output_rank
     description: 'in case we have tensors as arguments, output_rank represents
 
       the number of axes to be collapsed in order to transform the tensors
 
       into matrices, perform the operation and then reshape back (explode the axes)'
+    isRequired: true
     types:
     - <xref:int>
   - name: infer_input_rank_to_map
     description: meant for internal use only. Always use default value
+    isRequired: true
     types:
     - <xref:int>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> C.times([[1,2],[3,4]], [[5],[6]]).eval()\narray([[ 17.],\n     \
     \  [ 39.]], dtype=float32)\n```\n\n\n```\n\n>>> C.times(1.*np.reshape(np.arange(8),\
     \ (2,2,2)),1.*np.reshape(np.arange(8), (2,2,2)), output_rank=1).eval()\narray([[\
     \ 28.,  34.],\n       [ 76.,  98.]])\n```\n\n\n```\n\n>>> C.times(1.*np.reshape(np.arange(8),\
     \ (2,2,2)),1.*np.reshape(np.arange(8), (2,2,2)), output_rank=2).eval()\narray([[[[\
-    \  4.,   5.],\n         [  6.,   7.]],\n<BLANKLINE>\n        [[ 12.,  17.],\n\
-    \         [ 22.,  27.]]],\n<BLANKLINE>\n<BLANKLINE>\n       [[[ 20.,  29.],\n\
-    \         [ 38.,  47.]],\n<BLANKLINE>\n        [[ 28.,  41.],\n         [ 54.,\
-    \  67.]]]])\n```\n"
+    \  4.,   5.],\n         [  6.,   7.]],\n\n        [[ 12.,  17.],\n         [ 22.,\
+    \  27.]]],\n\n\n       [[[ 20.,  29.],\n         [ 38.,  47.]],\n\n        [[\
+    \ 28.,  41.],\n         [ 54.,  67.]]]])\n```\n"
 - uid: cntk.ops.times_transpose
   name: times_transpose
   summary: 'The output of this operation is the product of the first (`left`) argument
@@ -4032,14 +4396,17 @@ functions:
   parameters:
   - name: left
     description: left side tensor
+    isRequired: true
   - name: right
     description: right side matrix or vector
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> a=np.array([[1,2],[3,4]],dtype=np.float32)\n>>> b=np.array([2,-1],dtype=np.float32)\n\
     >>> c=np.array([[2,-1]],dtype=np.float32)\n>>> d=np.reshape(np.arange(24,dtype=np.float32),(4,3,2))\n\
@@ -4049,15 +4416,14 @@ functions:
     \ b).eval())\n[ 5.]\n>>> print(C.times_transpose(b, c).eval())\n[ 5.]\n>>> print(C.times_transpose(c,\
     \ a).eval())\n[[ 0.  2.]]\n>>> print(C.times_transpose(c, b).eval())\n[[ 5.]]\n\
     >>> print(C.times_transpose(c, c).eval())\n[[ 5.]]\n>>> print(C.times_transpose(d,\
-    \ a).eval())\n[[[   2.    4.]\n  [   8.   18.]\n  [  14.   32.]]\n<BLANKLINE>\n\
-    \ [[  20.   46.]\n  [  26.   60.]\n  [  32.   74.]]\n<BLANKLINE>\n [[  38.   88.]\n\
-    \  [  44.  102.]\n  [  50.  116.]]\n<BLANKLINE>\n [[  56.  130.]\n  [  62.  144.]\n\
-    \  [  68.  158.]]]\n>>> print(C.times_transpose(d, b).eval())\n[[[ -1.]\n  [ \
-    \ 1.]\n  [  3.]]\n<BLANKLINE>\n [[  5.]\n  [  7.]\n  [  9.]]\n<BLANKLINE>\n [[\
-    \ 11.]\n  [ 13.]\n  [ 15.]]\n<BLANKLINE>\n [[ 17.]\n  [ 19.]\n  [ 21.]]]\n>>>\
-    \ print(C.times_transpose(d, c).eval())\n[[[ -1.]\n  [  1.]\n  [  3.]]\n<BLANKLINE>\n\
-    \ [[  5.]\n  [  7.]\n  [  9.]]\n<BLANKLINE>\n [[ 11.]\n  [ 13.]\n  [ 15.]]\n<BLANKLINE>\n\
-    \ [[ 17.]\n  [ 19.]\n  [ 21.]]]\n```\n"
+    \ a).eval())\n[[[   2.    4.]\n  [   8.   18.]\n  [  14.   32.]]\n\n [[  20. \
+    \  46.]\n  [  26.   60.]\n  [  32.   74.]]\n\n [[  38.   88.]\n  [  44.  102.]\n\
+    \  [  50.  116.]]\n\n [[  56.  130.]\n  [  62.  144.]\n  [  68.  158.]]]\n>>>\
+    \ print(C.times_transpose(d, b).eval())\n[[[ -1.]\n  [  1.]\n  [  3.]]\n\n [[\
+    \  5.]\n  [  7.]\n  [  9.]]\n\n [[ 11.]\n  [ 13.]\n  [ 15.]]\n\n [[ 17.]\n  [\
+    \ 19.]\n  [ 21.]]]\n>>> print(C.times_transpose(d, c).eval())\n[[[ -1.]\n  [ \
+    \ 1.]\n  [  3.]]\n\n [[  5.]\n  [  7.]\n  [  9.]]\n\n [[ 11.]\n  [ 13.]\n  [ 15.]]\n\
+    \n [[ 17.]\n  [ 19.]\n  [ 21.]]]\n```\n"
 - uid: cntk.ops.to_batch
   name: to_batch
   summary: Concatenate the input tensor's first axis to batch axis.
@@ -4065,11 +4431,13 @@ functions:
   parameters:
   - name: x
     description: a tensor with dynamic axis
+    isRequired: true
   - name: name
     description: '(str, optional, keyword only): the name of the Function instance
       in the network'
+    isRequired: true
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -4106,18 +4474,22 @@ functions:
   parameters:
   - name: x
     description: the tensor (or its name) which is converted to a sequence
+    isRequired: true
   - name: sequence_lengths
     description: 'Optional tensor operand representing the sequence lengths.
 
       if unspecified, all sequences are assumed to be of the same length;
 
       i.e. dimensionality of the most significant static axis.'
+    isRequired: true
   - name: sequence_axis_name_prefix
     description: prefix of the new sequence axis name.
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -4133,14 +4505,17 @@ functions:
   parameters:
   - name: x
     description: the tensor (or its name) which is converted to a sequence
+    isRequired: true
   - name: dynamic_axes_like
     description: 'Tensor operand used to obtain the lengths of
 
       the generated sequences. The dynamic axes of the generated sequence
 
       tensor match the dynamic axes of the ''dynamic_axes_like'' operand.'
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
@@ -4162,18 +4537,22 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: k
     description: number of top items to return
+    isRequired: true
     types:
     - <xref:int>
   - name: axis
     description: 'axis along which to perform the operation (default: -1)'
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -4209,16 +4588,19 @@ functions:
   parameters:
   - name: x
     description: tensor to be transposed
+    isRequired: true
   - name: perm
     description: the permutation to apply to the axes.
+    isRequired: true
     types:
     - <xref:list>
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - '
 
@@ -4244,16 +4626,18 @@ functions:
   parameters:
   - name: x
     description: a tensor with dynamic axis
+    isRequired: true
   - name: name
     description: '(str, optional, keyword only): the name of the Function instance
       in the network'
+    isRequired: true
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> data = np.arange(12).reshape((3,2,2))\n>>> x = C.input((2,2))\n\
     >>> C.unpack_batch(x).eval({x:data})\narray([[[  0.,   1.],\n        [  2.,  \
-    \ 3.]],\n<BLANKLINE>\n       [[  4.,   5.],\n        [  6.,   7.]],\n<BLANKLINE>\n\
-    \       [[  8.,   9.],\n        [ 10.,  11.]]], dtype=float32)\n```\n"
+    \ 3.]],\n\n       [[  4.,   5.],\n        [  6.,   7.]],\n\n       [[  8.,   9.],\n\
+    \        [ 10.,  11.]]], dtype=float32)\n```\n"
 - uid: cntk.ops.unpooling
   name: unpooling
   summary: 'Unpools the `operand` using information from `pooling_input`. Unpooling
@@ -4271,24 +4655,31 @@ functions:
   parameters:
   - name: operand
     description: unpooling input
+    isRequired: true
   - name: pooling_input
     description: input to the corresponding pooling operation
+    isRequired: true
   - name: unpooling_type
     description: only <xref:cntk.ops.MAX_UNPOOLING> is supported now
+    isRequired: true
   - name: unpooling_window_shape
     description: dimensions of the unpooling window
+    isRequired: true
   - name: strides
     description: strides.
+    isRequired: true
     types:
-    - <xref:default 1>
+    - <xref:<xref:default 1>>
   - name: auto_padding
     description: automatic padding flags for each input dimension.
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> img = np.reshape(np.arange(16, dtype = np.float32), [1, 4, 4])\n\
     >>> x = C.input_variable(img.shape)\n>>> y = C.pooling(x, C.MAX_POOLING, (2,2),\
@@ -4304,18 +4695,20 @@ functions:
   - name: x
     description: numpy array or any <xref:cntk.ops.functions.Function> that outputs
       a tensor
+    isRequired: true
   - name: name
     description: the name of the Function instance in the network
+    isRequired: true
     types:
     - <xref:str>, <xref:optional>
   return:
-    description: cntk.ops.functions.Function
+    description: <xref:cntk.ops.functions.Function>
   examples:
   - "\n```\n\n>>> x0 = np.arange(24).reshape((2, 3, 4)).astype('f')\n>>> x = C.input_variable((3,\
     \ 4))\n>>> C.zeros_like(x).eval({x: x0})\narray([[[ 0.,  0.,  0.,  0.],\n    \
-    \    [ 0.,  0.,  0.,  0.],\n        [ 0.,  0.,  0.,  0.]],\n<BLANKLINE>\n    \
-    \   [[ 0.,  0.,  0.,  0.],\n        [ 0.,  0.,  0.,  0.],\n        [ 0.,  0.,\
-    \  0.,  0.]]], dtype=float32)\n```\n"
+    \    [ 0.,  0.,  0.,  0.],\n        [ 0.,  0.,  0.,  0.]],\n\n       [[ 0.,  0.,\
+    \  0.,  0.],\n        [ 0.,  0.,  0.,  0.],\n        [ 0.,  0.,  0.,  0.]]], dtype=float32)\n\
+    ```\n"
 packages:
 - cntk.ops.sequence
 - cntk.ops.tests
