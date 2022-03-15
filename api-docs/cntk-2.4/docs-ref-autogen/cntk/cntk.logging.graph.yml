@@ -14,6 +14,7 @@ functions:
   parameters:
   - name: root
     description: the root to start the journey from
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:cntk.variables.Variable>
@@ -21,8 +22,9 @@ functions:
     description: 'function that takes a node as
 
       argument and returns `True` if that node should be returned.'
+    isRequired: true
     types:
-    - <xref:Python function>
+    - <xref:<xref:Python function>>
     - <xref:lambda>
   - name: depth
     description: 'how deep into the block hierarchy the DFS
@@ -42,11 +44,13 @@ functions:
   parameters:
   - name: node
     description: the node to start the journey from
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:cntk.variables.Variable>
   - name: node_name
     description: name for which we are search nodes
+    isRequired: true
     types:
     - <xref:str>
   - name: depth
@@ -69,11 +73,13 @@ functions:
   parameters:
   - name: node
     description: the node to start the journey from
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
     - <xref:cntk.variables.Variable>
   - name: node_name
     description: name for which we are search nodes
+    isRequired: true
     types:
     - <xref:str>
   - name: depth
@@ -95,8 +101,9 @@ functions:
   parameters:
   - name: node
     description: the node to start the journey from
+    isRequired: true
     types:
-    - <xref:graph node>
+    - <xref:<xref:graph node>>
   - name: depth
     defaultValue: '0'
   return:
@@ -114,8 +121,9 @@ functions:
   parameters:
   - name: node
     description: the node to start the journey from
+    isRequired: true
     types:
-    - <xref:graph node>
+    - <xref:<xref:graph node>>
   - name: filename
     description: 'file with extension ''.dot'', ''png'', ''pdf'', or ''svg''
 
