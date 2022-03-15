@@ -7,3 +7,6 @@ inheritances:
 - builtins.object
 constructor:
   syntax: SizeTWrapper(*args)
+attributes:
+- uid: cntk.cntk_py.SizeTWrapper.value
+  name: value

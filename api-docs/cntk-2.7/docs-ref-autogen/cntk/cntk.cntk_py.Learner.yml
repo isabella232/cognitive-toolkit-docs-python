@@ -57,6 +57,8 @@ methods:
   name: total_number_of_sweeps_seen
   signature: total_number_of_sweeps_seen()
 attributes:
+- uid: cntk.cntk_py.Learner.minibatch_size
+  name: minibatch_size
 - uid: cntk.cntk_py.Learner.ignored_minibatch_size
   name: ignored_minibatch_size
   signature: ignored_minibatch_size = 0
