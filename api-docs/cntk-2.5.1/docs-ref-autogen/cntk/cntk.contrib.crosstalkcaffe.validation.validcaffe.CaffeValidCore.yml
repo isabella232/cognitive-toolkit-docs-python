@@ -6,11 +6,13 @@ module: cntk.contrib.crosstalkcaffe.validation.validcaffe
 inheritances:
 - cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore
 summary: Validation module of Caffe side.
+constructor:
+  syntax: CaffeValidCore()
 methods:
 - uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.CaffeValidCore.execute
   name: execute
   summary: Execute the validation in Caffe side.
-  signature: execute(source_solver, valid_dir)
+  signature: static execute(source_solver, valid_dir)
   parameters:
   - name: source_solver
     description: the source solver instanced from global configuration
