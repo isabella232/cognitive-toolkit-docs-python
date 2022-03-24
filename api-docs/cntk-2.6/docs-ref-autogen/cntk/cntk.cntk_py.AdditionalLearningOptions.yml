@@ -7,3 +7,16 @@ inheritances:
 - builtins.object
 constructor:
   syntax: AdditionalLearningOptions()
+attributes:
+- uid: cntk.cntk_py.AdditionalLearningOptions.dict_options
+  name: dict_options
+- uid: cntk.cntk_py.AdditionalLearningOptions.gaussian_noise_injection_std_dev
+  name: gaussian_noise_injection_std_dev
+- uid: cntk.cntk_py.AdditionalLearningOptions.gradient_clipping_threshold_per_sample
+  name: gradient_clipping_threshold_per_sample
+- uid: cntk.cntk_py.AdditionalLearningOptions.gradient_clipping_with_truncation
+  name: gradient_clipping_with_truncation
+- uid: cntk.cntk_py.AdditionalLearningOptions.l1_regularization_weight
+  name: l1_regularization_weight
+- uid: cntk.cntk_py.AdditionalLearningOptions.l2_regularization_weight
+  name: l2_regularization_weight

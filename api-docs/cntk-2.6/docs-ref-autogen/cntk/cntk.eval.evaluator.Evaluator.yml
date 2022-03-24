@@ -40,7 +40,6 @@ methods:
   summary: 'Test the evaluation function on the specified batch of samples.
 
 
-
     > [!NOTE]
 
     > See <xref:cntk.ops.functions.Function.forward> for examples on
@@ -63,7 +62,7 @@ methods:
 
       tested minibatch.'
     types:
-    - <xref:*float*>
+    - <xref:<xref:*float*>>
 attributes:
 - uid: cntk.eval.evaluator.Evaluator.evaluation_function
   name: evaluation_function

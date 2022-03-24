@@ -46,21 +46,21 @@ functions:
     description: root node until which the nodes are to be debugged
     isRequired: true
     types:
-    - <xref:root node>
+    - <xref:<xref:root node>>
   - name: in_stream
     description: '*readline()*
 
       will be called on it to obtain user input'
     defaultValue: <_io.TextIOWrapper name='<stdin>' mode='r' encoding='cp1252'>
     types:
-    - <xref:object behaving like sys.stdin>, <xref:default stdin>
+    - <xref:<xref:object behaving like sys.stdin>, <xref:default stdin>>
   - name: out_stream
     description: '*write()*
 
       and *flush()* will be called on it to output debug info to the user'
     isRequired: true
     types:
-    - <xref:object behaving like sys.stdout>, <xref:default stdout>
+    - <xref:<xref:object behaving like sys.stdout>, <xref:default stdout>>
   - name: exit_func
     description: 'callable that takes an exit code and is called,
 

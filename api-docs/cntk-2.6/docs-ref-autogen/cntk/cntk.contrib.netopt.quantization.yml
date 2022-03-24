@@ -48,7 +48,7 @@ functions:
   - name: pad
     description: padding enabled or not for the filter
     defaultValue: <cntk.cntk_py.Dictionary; proxy of <Swig Object of type 'CNTK::ImageTransform
-      *' at 0x0000014AA32D9F60> >
+      *' at 0x0000025BBF85D990> >
   - name: strides
     description: overlap for this filter
     defaultValue: 'False'

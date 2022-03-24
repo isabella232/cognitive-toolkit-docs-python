@@ -191,7 +191,7 @@ functions:
   name: scale
   summary: Scale transform that can be used to pass to *map_features* for data augmentation.
   signature: scale(width, height, channels, interpolations='linear', scale_mode='fill',
-    pad_value=-1)
+    pad_value=- 1)
   parameters:
   - name: width
     description: width of the image in pixels

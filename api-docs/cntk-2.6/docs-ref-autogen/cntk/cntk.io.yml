@@ -10,9 +10,10 @@ functions:
   summary: "Configures the image reader that reads base64 encoded images and corresponding\n\
     labels from a file of the form:\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"\
-    } -->\n\n````\n\n   [sequenceId <tab>] <numerical label (0-based class id)> <tab>\
-    \ <base64 encoded image>\n   ````\n\nSimilarly to the ImageDeserializer, the sequenceId\
-    \ prefix is optional and can be omitted."
+    , \"language\": \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\
+    \n   [sequenceId <tab>] <numerical label (0-based class id)> <tab> <base64 encoded\
+    \ image>\n   ````\n\nSimilarly to the ImageDeserializer, the sequenceId prefix\
+    \ is optional and can be omitted."
   signature: Base64ImageDeserializer(filename, streams)
   parameters:
   - name: filename
@@ -50,11 +51,12 @@ functions:
   name: CTFDeserializer
   summary: "Configures the CNTK text-format reader that reads text-based files with\n\
     lines of the form:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
-    : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"} -->\n\n\
-    ````\n\n   [Sequence_Id] (Sample)+\n   ````\n\nwhere:\n\n<!-- literal_block {\"\
-    ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [],\
-    \ \"xml:space\": \"preserve\"} -->\n\n````\n\n   Sample=|Input_Name (Value )*\n\
-    \   ````"
+    : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\"\
+    : \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\n  \
+    \ [Sequence_Id] (Sample)+\n   ````\n\nwhere:\n\n<!-- literal_block {\"ids\": [],\
+    \ \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
+    : \"preserve\", \"language\": \"default\", \"force\": false, \"linenos\": false}\
+    \ -->\n\n````default\n\n   Sample=|Input_Name (Value )*\n   ````"
   signature: CTFDeserializer(filename, streams)
   parameters:
   - name: filename
@@ -114,10 +116,12 @@ functions:
   summary: "Configures the image reader that reads images and corresponding\nlabels\
     \ from a file of the form:\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
     \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"\
-    } -->\n\n````\n\n   <full path to image> <tab> <numerical label (0-based class\
-    \ id)>\n   ````\n\nor:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"\
-    names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"}\
-    \ -->\n\n````\n\n   sequenceId <tab> path <tab> label\n   ````"
+    , \"language\": \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\
+    \n   <full path to image> <tab> <numerical label (0-based class id)>\n   ````\n\
+    \nor:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
+    : [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\": \"default\"\
+    , \"force\": false, \"linenos\": false} -->\n\n````default\n\n   sequenceId <tab>\
+    \ path <tab> label\n   ````"
   signature: ImageDeserializer(filename, streams)
   parameters:
   - name: filename
@@ -250,7 +254,7 @@ functions:
     types:
     - <xref:dict>
   return:
-    description: 'String representation in [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)'
+    description: String representation in [CNTKTextReader format](https://docs.microsoft.com/en-us/cognitive-toolkit/BrainScript-CNTKTextFormat-Reader)
     types:
     - <xref:str>
 classes:

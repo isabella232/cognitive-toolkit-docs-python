@@ -51,7 +51,7 @@ functions:
     isRequired: true
     types:
     - <xref:int>
-    - <xref:tuple of ints>
+    - <xref:<xref:tuple of ints>>
   - name: cell_shape
     description: 'if given, then the output state is first computed at *cell_shape*
 
@@ -69,15 +69,15 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:NumPy array>
-    - <xref:cntk>, <xref:defaults to glorot_uniform>
+    - <xref:<xref:NumPy array>>
+    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to glorot_uniform>>
   - name: init_bias
     description: initial value of weights *b*
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:NumPy array>
-    - <xref:cntk>, <xref:defaults to 0>
+    - <xref:<xref:NumPy array>>
+    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to 0>>
   - name: enable_self_stabilization
     description: 'if *True* then add a <xref:cntk.layers.blocks.Stabilizer>
 
@@ -126,7 +126,7 @@ functions:
     isRequired: true
     types:
     - <xref:int>
-    - <xref:tuple of ints>
+    - <xref:<xref:tuple of ints>>
   - name: cell_shape
     description: 'if given, then the output state is first computed at *cell_shape*
 
@@ -148,15 +148,15 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:NumPy array>
-    - <xref:cntk>, <xref:defaults to glorot_uniform>
+    - <xref:<xref:NumPy array>>
+    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to glorot_uniform>>
   - name: init_bias
     description: initial value of weights *b*
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:NumPy array>
-    - <xref:cntk>, <xref:defaults to 0>
+    - <xref:<xref:NumPy array>>
+    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to 0>>
   - name: enable_self_stabilization
     description: 'if *True* then add a <xref:cntk.layers.blocks.Stabilizer>
 
@@ -205,7 +205,7 @@ functions:
     isRequired: true
     types:
     - <xref:int>
-    - <xref:tuple of ints>
+    - <xref:<xref:tuple of ints>>
   - name: cell_shape
     description: 'if given, then the output state is first computed at *cell_shape*
 
@@ -223,15 +223,15 @@ functions:
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:NumPy array>
-    - <xref:cntk>, <xref:defaults to glorot_uniform>
+    - <xref:<xref:NumPy array>>
+    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to glorot_uniform>>
   - name: init_bias
     description: initial value of weights *b*
     isRequired: true
     types:
     - <xref:scalar>
-    - <xref:NumPy array>
-    - <xref:cntk>, <xref:defaults to 0>
+    - <xref:<xref:NumPy array>>
+    - <xref:<xref:cntk#module-cntk.initializer>, <xref:defaults to 0>>
   - name: enable_self_stabilization
     description: 'if *True* then add a <xref:cntk.layers.blocks.Stabilizer>
 
@@ -290,7 +290,6 @@ functions:
     Useful if this is a global default.
 
 
-
     > [!NOTE]
 
     > Some other layers (specifically, recurrent units like <xref:cntk.layers.blocks.LSTM>)
@@ -315,7 +314,6 @@ functions:
     > for the internal recurrent connection(s).
 
     >
-
 
 
     > [!NOTE]

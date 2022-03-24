@@ -39,7 +39,8 @@ methods:
     in CSR
 
     format.'
-  signature: from_csr(csr_array, device=None, read_only=False, borrow=False, shape=None)
+  signature: static from_csr(csr_array, device=None, read_only=False, borrow=False,
+    shape=None)
   parameters:
   - name: csr_array
     description: 'SciPy sparse matrix in CSR
@@ -89,7 +90,7 @@ methods:
     sparse
 
     array in CSR format.'
-  signature: from_data(data, device=None, read_only=False, borrow=False)
+  signature: static from_data(data, device=None, read_only=False, borrow=False)
   parameters:
   - name: data
     description: data
@@ -123,7 +124,7 @@ methods:
 - uid: cntk.core.NDArrayView.from_dense
   name: from_dense
   summary: Create an <xref:cntk.core.NDArrayView> instance from a NumPy array.
-  signature: from_dense(np_array, device=None, read_only=False, borrow=False)
+  signature: static from_dense(np_array, device=None, read_only=False, borrow=False)
   parameters:
   - name: np_array
     description: NumPy array

@@ -13,6 +13,7 @@ methods:
   signature: current_version()
 - uid: cntk.cntk_py.training_double_parameter_schedule.deserialize
   name: deserialize
+  signature: static deserialize()
 - uid: cntk.cntk_py.training_double_parameter_schedule.is_sweep_based
   name: is_sweep_based
   signature: is_sweep_based()
@@ -26,6 +27,8 @@ methods:
   - name: func
     isRequired: true
 attributes:
+- uid: cntk.cntk_py.training_double_parameter_schedule.minibatch_size
+  name: minibatch_size
 - uid: cntk.cntk_py.training_double_parameter_schedule.full_data_sweep
   name: full_data_sweep
   signature: full_data_sweep = 0

@@ -24,7 +24,7 @@ functions:
       argument and returns `True` if that node should be returned.'
     isRequired: true
     types:
-    - <xref:Python function>
+    - <xref:<xref:Python function>>
     - <xref:lambda>
   - name: depth
     description: 'how deep into the block hierarchy the DFS
@@ -133,7 +133,7 @@ functions:
     description: the node to start the journey from
     isRequired: true
     types:
-    - <xref:graph node>
+    - <xref:<xref:graph node>>
   - name: depth
     defaultValue: '0'
   return:
@@ -153,7 +153,7 @@ functions:
     description: the node to start the journey from
     isRequired: true
     types:
-    - <xref:graph node>
+    - <xref:<xref:graph node>>
   - name: filename
     description: 'file with extension ''.dot'', ''png'', ''pdf'', or ''svg''
 

@@ -26,7 +26,7 @@ constructor:
       minibatch (*False*)'
     isRequired: true
     types:
-    - <xref:list of bools>
+    - <xref:<xref:list of bools>>
     - <xref:None>
   - name: device
     description: 'device this value
@@ -54,7 +54,7 @@ methods:
 - uid: cntk.core.Value.create
   name: create
   summary: Creates a <xref:cntk.core.Value> object.
-  signature: create(var, data, seq_starts=None, device=None, read_only=False)
+  signature: static create(var, data, seq_starts=None, device=None, read_only=False)
   parameters:
   - name: var
     description: 'variable into which
@@ -80,7 +80,7 @@ methods:
       minibatch (*False*)'
     isRequired: true
     types:
-    - <xref:list of bools>
+    - <xref:<xref:list of bools>>
     - <xref:None>
   - name: device
     description: 'device
@@ -103,13 +103,13 @@ methods:
     such that the integer data in `batch` is interpreted as the indices
 
     representing one-hot vectors. Use Value.ONE_HOT_SKIP for a zero vector'
-  signature: one_hot(batch, num_classes, dtype=None, device=None)
+  signature: static one_hot(batch, num_classes, dtype=None, device=None)
   parameters:
   - name: batch
     description: batch input data of indices
     isRequired: true
     types:
-    - <xref:list of lists of integers>
+    - <xref:<xref:list of lists of integers>>
   - name: sample_shape
     description: 'number of classes or shape of each
 
