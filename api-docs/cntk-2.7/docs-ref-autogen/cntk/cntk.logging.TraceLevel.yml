@@ -4,6 +4,8 @@ name: TraceLevel
 fullName: cntk.logging.TraceLevel
 summary: Describes different logging verbosity levels.
 module: cntk.logging
+constructor:
+  syntax: TraceLevel(value)
 inheritances:
 - enum.Enum
 fields:

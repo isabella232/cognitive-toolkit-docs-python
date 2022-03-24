@@ -6,11 +6,13 @@ module: cntk.contrib.crosstalkcaffe.validation.validcaffe
 inheritances:
 - builtins.object
 summary: The abstract class to support different validation methods
+constructor:
+  syntax: ValidCore()
 methods:
 - uid: cntk.contrib.crosstalkcaffe.validation.validcaffe.ValidCore.execute
   name: execute
   summary: execute the validation
-  signature: execute(source_solver, valid_dir)
+  signature: abstract static execute(source_solver, valid_dir)
   parameters:
   - name: source_solver
     isRequired: true

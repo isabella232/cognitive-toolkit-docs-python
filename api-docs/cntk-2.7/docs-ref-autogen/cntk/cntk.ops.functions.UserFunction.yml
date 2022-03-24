@@ -12,10 +12,11 @@ summary: 'Base class of all user extension functions.
 
   will relay to its only output.'
 constructor:
-  syntax: UserFunction(inputs, as_numpy=True, attributes=None, name='')
+  syntax: UserFunction(*args, **kwargs)
   parameters:
   - name: inputs
     description: inputs to this function
+    isRequired: true
     types:
     - <xref:list>
   - name: as_numpy
@@ -24,10 +25,12 @@ constructor:
       converted from and to NumPy. Defaults to True. Specifying this as
 
       *False* passes the data as CNTK Value objects.'
+    isRequired: true
     types:
     - <xref:bool>, <xref:optional>
   - name: name
     description: name of this function
+    isRequired: true
     types:
     - <xref:str>
 methods:
@@ -59,7 +62,7 @@ methods:
     need to provide their own implementation in order for CNTK to be able to
 
     reconstruct them when loading a model.'
-  signature: deserialize(inputs, name, state)
+  signature: static deserialize(inputs, name, state)
   parameters:
   - name: inputs
     description: a list of inputs to the function

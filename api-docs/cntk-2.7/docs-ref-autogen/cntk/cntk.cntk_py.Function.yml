@@ -86,8 +86,10 @@ methods:
   signature: is_primitive()
 - uid: cntk.cntk_py.Function.load
   name: load
+  signature: static load()
 - uid: cntk.cntk_py.Function.load_from_buffer
   name: load_from_buffer
+  signature: static load_from_buffer()
 - uid: cntk.cntk_py.Function.module_name
   name: module_name
   signature: module_name()
@@ -96,6 +98,7 @@ methods:
   signature: name()
 - uid: cntk.cntk_py.Function.native_user_function
   name: native_user_function
+  signature: static native_user_function()
 - uid: cntk.cntk_py.Function.op_name
   name: op_name
   signature: op_name()
@@ -116,6 +119,7 @@ methods:
   signature: print_node_timing()
 - uid: cntk.cntk_py.Function.register_native_user_function
   name: register_native_user_function
+  signature: static register_native_user_function()
 - uid: cntk.cntk_py.Function.replace_placeholder
   name: replace_placeholder
   signature: replace_placeholder(placeholderReplacement)

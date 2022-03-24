@@ -7,3 +7,26 @@ inheritances:
 - builtins.object
 constructor:
   syntax: MinibatchSourceConfig(deserializers, randomize=True)
+attributes:
+- uid: cntk.cntk_py.MinibatchSourceConfig.deserializers
+  name: deserializers
+- uid: cntk.cntk_py.MinibatchSourceConfig.is_frame_mode_enabled
+  name: is_frame_mode_enabled
+- uid: cntk.cntk_py.MinibatchSourceConfig.is_multithreaded
+  name: is_multithreaded
+- uid: cntk.cntk_py.MinibatchSourceConfig.max_errors
+  name: max_errors
+- uid: cntk.cntk_py.MinibatchSourceConfig.max_samples
+  name: max_samples
+- uid: cntk.cntk_py.MinibatchSourceConfig.max_sweeps
+  name: max_sweeps
+- uid: cntk.cntk_py.MinibatchSourceConfig.randomization_seed
+  name: randomization_seed
+- uid: cntk.cntk_py.MinibatchSourceConfig.randomization_window_in_chunks
+  name: randomization_window_in_chunks
+- uid: cntk.cntk_py.MinibatchSourceConfig.randomization_window_in_samples
+  name: randomization_window_in_samples
+- uid: cntk.cntk_py.MinibatchSourceConfig.trace_level
+  name: trace_level
+- uid: cntk.cntk_py.MinibatchSourceConfig.truncation_length
+  name: truncation_length
