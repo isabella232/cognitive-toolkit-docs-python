@@ -28,7 +28,7 @@ methods:
   name: finalize
   summary: Should be called when all communication is finished. No more communication
     should happen after this call.
-  signature: finalize()
+  signature: static finalize()
 - uid: cntk.train.distributed.Communicator.is_main
   name: is_main
   summary: Indicates if the current communicator is instantiated on the main node.
@@ -37,11 +37,11 @@ methods:
 - uid: cntk.train.distributed.Communicator.num_workers
   name: num_workers
   summary: Returns information about all MPI workers.
-  signature: num_workers()
+  signature: static num_workers()
 - uid: cntk.train.distributed.Communicator.rank
   name: rank
   summary: Returns rank of current process.
-  signature: rank()
+  signature: static rank()
 - uid: cntk.train.distributed.Communicator.workers
   name: workers
   summary: Returns workers in this communicator.
@@ -49,4 +49,4 @@ methods:
   return:
     description: workers in this communicator.
     types:
-    - '(<xref:*list*>)<xref: of <xref:cntk.train.distributed.WorkerDescriptor>>'
+    - '<xref:(<xref:*list*>)<xref: of cntk.train.distributed.WorkerDescriptor>>'

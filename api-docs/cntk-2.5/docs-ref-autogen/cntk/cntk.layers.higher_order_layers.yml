@@ -27,13 +27,15 @@ functions:
   parameters:
   - name: what_range
     description: a Python range to loop over
+    isRequired: true
     types:
     - <xref:range>
   - name: constructor
     description: lambda that constructs a layer
+    isRequired: true
     types:
-    - <xref:Python function/lambda with 1>
-    - <xref:0 arguments>
+    - <xref:<xref:Python function/lambda with 1>>
+    - <xref:<xref:0 arguments>>
   - name: name
   return:
     description: A function that accepts one argument and applies the layers as constructed
@@ -70,9 +72,10 @@ functions:
   parameters:
   - name: f
     description: the function to add the skip connection to.
+    isRequired: true
     types:
     - <xref:cntk.ops.functions.Function>
-    - <xref:equivalent Python function>
+    - <xref:<xref:equivalent Python function>>
   - name: name
   return:
     description: A function that accepts one argument, applies `f` to it, and adds
@@ -129,10 +132,11 @@ functions:
       A tuple aplies each of its items to the input and results in a tuple value.
 
       An item that is a list will be flattened.'
+    isRequired: true
     types:
-    - <xref:list of cntk.ops.functions.Function>, <xref:equivalent Python functions>,
-      <xref:tuples of functions,>
-    - <xref:lists thereof>
+    - <xref:<xref:list of cntk.ops.functions.Function>, <xref:equivalent Python functions>,
+      <xref:tuples of functions,>>
+    - <xref:<xref:lists thereof>>
   - name: name
   return:
     description: A function that accepts one argument and applies the given `functions`
@@ -182,9 +186,10 @@ functions:
   parameters:
   - name: functions
     description: functions to be applied.
+    isRequired: true
     types:
     - <xref:single>
-    - <xref:list of cntk.ops.functions.Function>
+    - list of <xref:cntk.ops.functions.Function>
   - name: name
   return:
     description: A function that accepts one argument and applies the sequence of

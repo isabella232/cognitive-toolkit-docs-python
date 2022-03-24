@@ -23,6 +23,7 @@ methods:
   signature: record_value_update()
 - uid: cntk.cntk_py.Constant.scalar
   name: scalar
+  signature: static scalar()
 - uid: cntk.cntk_py.Constant.set_value
   name: set_value
   signature: set_value(value)
