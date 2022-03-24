@@ -10,3 +10,4 @@ constructor:
 methods:
 - uid: cntk.cntk_py.float16.create
   name: create
+  signature: static create()

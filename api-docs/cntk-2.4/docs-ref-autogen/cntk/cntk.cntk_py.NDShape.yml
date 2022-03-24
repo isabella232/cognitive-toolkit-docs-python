@@ -37,3 +37,4 @@ methods:
   signature: total_size()
 - uid: cntk.cntk_py.NDShape.unknown
   name: unknown
+  signature: static unknown()
